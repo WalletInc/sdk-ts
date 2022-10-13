@@ -5,8 +5,7 @@ name: Dockerize
 on: [push, pull_request]
 
 env:
-  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-  SQUADCAST_API_ENDPOINT: ${{ secrets.SQUADCAST_API_ENDPOINT }}
+  TEST_ENV: test
 
 jobs:
   dev:
@@ -34,13 +33,13 @@ jobs:
         run: |
           git diff --name-only ${{ github.event.before }} ${{ github.sha }} > .gitdiff-names || touch .gitdiff-names
           git log --pretty=%B --ancestry-path ${{ github.event.before }}..${{ github.sha }} > .gitdiff-commits || touch .gitdiff-commits
-          python3 scripts/slack.py .gitdiff-names .gitdiff-commits $SLACK_WEBHOOK_URL ${{ github.actor }} ${{ github.repository }} ${{ github.run_id }} $GITHUB_REF
-          # curl -X POST -H 'Content-type: application/json' --data '{"blocks": [{"type": "section", "text": {"type": "mrkdwn", "text": "New push by: ${{ github.actor }} to `${{ github.repository }}` :confetti_ball:"}}]}' $SLACK_WEBHOOK_URL
+          python3 scripts/slack.py .gitdiff-names .gitdiff-commits ${{ secrets.SLACK_WEBHOOK_URL }} ${{ github.actor }} ${{ github.repository }} ${{ github.run_id }} $GITHUB_REF
+          # curl -X POST -H 'Content-type: application/json' --data '{"blocks": [{"type": "section", "text": {"type": "mrkdwn", "text": "New push by: ${{ github.actor }} to `${{ github.repository }}` :confetti_ball:"}}]}' ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Send failure message to Slack
         if: ${{ failure() }}
         run: |
-          python3 scripts/failure.py $SLACK_WEBHOOK_URL ${{ github.actor }} ${{ github.repository }} $GITHUB_REF $SQUADCAST_API_ENDPOINT
+          python3 scripts/failure.py ${{ secrets.SLACK_WEBHOOK_URL }} ${{ github.actor }} ${{ github.repository }} $GITHUB_REF ${{ secrets.SQUADCAST_API_ENDPOINT }}
 
   test:
     # Job name is Build Docker Image
@@ -155,10 +154,10 @@ jobs:
         run: |
           git diff --name-only ${{ github.event.before }} ${{ github.sha }} > .gitdiff-names || touch .gitdiff-names
           git log --pretty=%B --ancestry-path ${{ github.event.before }}..${{ github.sha }} > .gitdiff-commits || touch .gitdiff-commits
-          python3 scripts/slack.py .gitdiff-names .gitdiff-commits $SLACK_WEBHOOK_URL ${{ github.actor }} ${{ github.repository }} ${{ github.run_id }} $GITHUB_REF
-          # curl -X POST -H 'Content-type: application/json' --data '{"blocks": [{"type": "section", "text": {"type": "mrkdwn", "text": "New push by: ${{ github.actor }} to `${{ github.repository }}` :confetti_ball:"}}]}' $SLACK_WEBHOOK_URL
+          python3 scripts/slack.py .gitdiff-names .gitdiff-commits ${{ secrets.SLACK_WEBHOOK_URL }} ${{ github.actor }} ${{ github.repository }} ${{ github.run_id }} $GITHUB_REF
+          # curl -X POST -H 'Content-type: application/json' --data '{"blocks": [{"type": "section", "text": {"type": "mrkdwn", "text": "New push by: ${{ github.actor }} to `${{ github.repository }}` :confetti_ball:"}}]}' ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Send failure message to Slack
         if: ${{ failure() }}
         run: |
-          python3 scripts/failure.py $SLACK_WEBHOOK_URL ${{ github.actor }} ${{ github.repository }} $GITHUB_REF $SQUADCAST_API_ENDPOINT
+          python3 scripts/failure.py ${{ secrets.SLACK_WEBHOOK_URL }} ${{ github.actor }} ${{ github.repository }} $GITHUB_REF ${{ secrets.SQUADCAST_API_ENDPOINT }}
