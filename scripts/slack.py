@@ -2,8 +2,6 @@ import sys
 import requests
 import time
 
-print(sys.argv)
-
 # First argument is the file name that consists of all the files that have been changed
 files_changed_f = sys.argv[1]
 
