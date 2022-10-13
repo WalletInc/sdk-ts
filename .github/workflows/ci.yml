@@ -1,0 +1,164 @@
+name: Dockerize
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: [push, pull_request]
+
+env:
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  SQUADCAST_API_ENDPOINT: ${{ secrets.SQUADCAST_API_ENDPOINT }}
+
+jobs:
+  dev:
+    # Job name is Build Docker Image
+    name: Notify on Slack
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/dev'
+    steps:
+      # Checkout latest push
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.15.3"
+          check-latest: true
+          registry-url: "https://registry.npmjs.org"
+          # scope: "@walletinc"
+
+      - name: Send message to Slack
+        run: |
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }} > .gitdiff-names || touch .gitdiff-names
+          git log --pretty=%B --ancestry-path ${{ github.event.before }}..${{ github.sha }} > .gitdiff-commits || touch .gitdiff-commits
+          python3 scripts/slack.py .gitdiff-names .gitdiff-commits $SLACK_WEBHOOK_URL ${{ github.actor }} ${{ github.repository }} ${{ github.run_id }} $GITHUB_REF
+          # curl -X POST -H 'Content-type: application/json' --data '{"blocks": [{"type": "section", "text": {"type": "mrkdwn", "text": "New push by: ${{ github.actor }} to `${{ github.repository }}` :confetti_ball:"}}]}' $SLACK_WEBHOOK_URL
+
+      - name: Send failure message to Slack
+        if: ${{ failure() }}
+        run: |
+          python3 scripts/failure.py $SLACK_WEBHOOK_URL ${{ github.actor }} ${{ github.repository }} $GITHUB_REF $SQUADCAST_API_ENDPOINT
+
+  test:
+    # Job name is Build Docker Image
+    name: Publish to npm
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      # Checkout latest push
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.15.3"
+          check-latest: true
+          registry-url: "https://registry.npmjs.org"
+          # scope: "@walletinc"
+
+      # - name: Get yarn cache directory path
+      #   id: yarn-cache-dir-path
+      #   run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      # - name: Check for yarn cache
+      #   uses: actions/cache@v2
+      #   id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+      #   with:
+      #     path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+      #     key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-yarn-
+
+      - name: Setup .npmrc
+        # run: |
+          # echo -e "\nregistry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=${{ secrets.NPMJS_AUTOMATION_TOKEN }}\nalways-auth=true" >> ~/.npmrc
+          # cp -r .npmrc ~/.npmrc
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPMJS_AUTOMATION_TOKEN }}" >> ~/.npmrc
+
+      # - name: Install NPM packages
+      #   run: npm install && echo "Installed npm dependencies"
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_REGISTRY_ACCESS_TOKEN }}
+
+      # - name: Build
+      #   run: npm run build:nodocs && echo "Build files generated"
+
+      # - name: Lint OpenAPI
+      #   run: npm run lint-openapi
+
+      # - name: Setup .env file
+      #   run: |
+      #     echo -en "DB_HOST=$DB_HOST\nDB_USER=$DB_USER\nDB_PASS=$DB_PASS\nDB_NAME=$DB_NAME" > .env
+
+      # - name: Run the tests
+      #   run: npm test
+
+      # - name: Publish to Github Packages
+      #   run: cd typescript && npm publish && cd ../
+      #   continue-on-error: true
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish package on NPM
+        run: npm publish --access public
+        continue-on-error: true
+        working-directory: typescript 
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTOMATION_TOKEN }}
+
+      # - name: Upload test coverage
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: code-cov
+      #     path: coverage/lcov-report
+
+      # - name: Get the version
+      #   id: vars
+      #   run: |
+      #     t=${{ github.sha }}
+      #     echo ::set-output name=tag::$(echo ${t:0:7})
+      #     echo ${{ steps.vars.outputs.tag }}
+
+      # - name: Setup SSH
+      #   run: |
+      #     mkdir -p ~/.ssh && echo "Created .ssh folder"
+      #     echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa && echo "Stored private SSH key"
+      #     chmod 600 ~/.ssh/id_rsa && echo "Changed permissions of SSH key"
+      #     eval "$(ssh-agent -s)"
+      #     ssh-add ~/.ssh/id_rsa
+      #     ssh-keyscan -H $DEPLOYMENT_SERVER_DOMAIN >> ~/.ssh/known_hosts && echo "Stored $$DEPLOYMENT_SERVER_DOMAIN address into known_hosts to prevent prompt"
+
+      # - name: Delete existing packages and install production only node modules
+      #   run: |
+      #     rm -rf node_modules && echo "Deleted node modules since we only need to install production packages"
+      #     npm install && echo "Installed npm dependencies"
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_REGISTRY_ACCESS_TOKEN }}
+
+      # - name: Update Deployment on $DEPLOYMENT_SERVER_DOMAIN
+      #   run: |
+      #     env DOCKER_HUB_ACCESS_USERNAME=$DOCKER_HUB_ACCESS_USERNAME DOCKER_HUB_ACCESS_PASSWORD=$DOCKER_HUB_ACCESS_PASSWORD SERVER=$DEPLOYMENT_SERVER_DOMAIN TAG=${{ steps.vars.outputs.tag }} ACTOR=${{ github.actor }} EVENT=$GITHUB_EVENT_NAME REF=$GITHUB_REF scripts/k8s.deploy.sh
+
+      # - name: Update api-clients
+      #   run: |
+      #     python3 scripts/generate-clients.py $GITHUB_REF ${{ github.actor }}
+
+      - name: Send message to Slack
+        run: |
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }} > .gitdiff-names || touch .gitdiff-names
+          git log --pretty=%B --ancestry-path ${{ github.event.before }}..${{ github.sha }} > .gitdiff-commits || touch .gitdiff-commits
+          python3 scripts/slack.py .gitdiff-names .gitdiff-commits $SLACK_WEBHOOK_URL ${{ github.actor }} ${{ github.repository }} ${{ github.run_id }} $GITHUB_REF
+          # curl -X POST -H 'Content-type: application/json' --data '{"blocks": [{"type": "section", "text": {"type": "mrkdwn", "text": "New push by: ${{ github.actor }} to `${{ github.repository }}` :confetti_ball:"}}]}' $SLACK_WEBHOOK_URL
+
+      - name: Send failure message to Slack
+        if: ${{ failure() }}
+        run: |
+          python3 scripts/failure.py $SLACK_WEBHOOK_URL ${{ github.actor }} ${{ github.repository }} $GITHUB_REF $SQUADCAST_API_ENDPOINT
