@@ -1,0 +1,17 @@
+import { LedgerEntry } from './ledgerEntry';
+export declare class InlineResponse2005 {
+    'entries': Array<LedgerEntry>;
+    'pageCount': number;
+    'totalRecords': number;
+    static discriminator: string | undefined;
+    static attributeTypeMap: Array<{
+        name: string;
+        baseName: string;
+        type: string;
+    }>;
+    static getAttributeTypeMap(): {
+        name: string;
+        baseName: string;
+        type: string;
+    }[];
+}
