@@ -37,6 +37,9 @@ for f in open(commit_messages_f, "r").read().split("\n"):
 # Trim the number of commit messages to 10, since Slack does not support large payload size
 commit_messages = commit_messages[:10]
 
+print("Files changed are: ", files_changed)
+print("\nCommit Messages are: ", commit_messages)
+
 slack_message = {}
 
 blocks = []
@@ -69,6 +72,8 @@ blocks.append({
 
 slack_message["blocks"] = blocks
 
+print("\nSlack message is: ", slack_message)
+
 retrials = 5
 for i in range(retrials):
     if i == (retrials - 1):
@@ -78,9 +83,12 @@ for i in range(retrials):
     else:
         resp = requests.post(slack_url, json=slack_message)
         if resp.status_code == 200:
+            print("Sent message to slack")
             sys.exit(0)
         else:
             print("Received status code: "+str(resp.status_code) +
                   " from slack. Expecting 200. Retrying after 5 seconds...")
+            print("Response is: \n")
+            print(resp)
             time.sleep(5)
             continue
