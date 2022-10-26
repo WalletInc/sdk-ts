@@ -83,6 +83,7 @@ for i in range(retrials):
     else:
         resp = requests.post(slack_url, json=slack_message)
         if resp.status_code == 200:
+            print("Sent message to slack")
             sys.exit(0)
         else:
             print("Received status code: "+str(resp.status_code) +
