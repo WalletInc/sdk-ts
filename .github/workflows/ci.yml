@@ -109,7 +109,7 @@ jobs:
       - name: Publish package on NPM
         run: npm publish --access public
         continue-on-error: true
-        working-directory: typescript 
+        # working-directory: typescript 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTOMATION_TOKEN }}
 
