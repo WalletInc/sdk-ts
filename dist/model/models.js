@@ -233,6 +233,7 @@ __exportStar(require("./wTInfoGenesisLookupRequestErrors"), exports);
 __exportStar(require("./wTInfoGenesisRecordFilterParameters"), exports);
 __exportStar(require("./wTInfoGenesisRoutingIDs"), exports);
 __exportStar(require("./wTInfoGenesisUniquePostingIDs"), exports);
+__exportStar(require("./wTLinkBook"), exports);
 __exportStar(require("./wTLinkBookCreateParams"), exports);
 __exportStar(require("./wTLinkBookSectionCreateParams"), exports);
 __exportStar(require("./wTLinkBookSectionUpdateParams"), exports);
@@ -511,6 +512,7 @@ const wTInfoGenesisLookupRequestErrors_1 = require("./wTInfoGenesisLookupRequest
 const wTInfoGenesisRecordFilterParameters_1 = require("./wTInfoGenesisRecordFilterParameters");
 const wTInfoGenesisRoutingIDs_1 = require("./wTInfoGenesisRoutingIDs");
 const wTInfoGenesisUniquePostingIDs_1 = require("./wTInfoGenesisUniquePostingIDs");
+const wTLinkBook_1 = require("./wTLinkBook");
 const wTLinkBookCreateParams_1 = require("./wTLinkBookCreateParams");
 const wTLinkBookSectionCreateParams_1 = require("./wTLinkBookSectionCreateParams");
 const wTLinkBookSectionUpdateParams_1 = require("./wTLinkBookSectionUpdateParams");
@@ -804,6 +806,7 @@ let typeMap = {
     "WTInfoGenesisRecordFilterParameters": wTInfoGenesisRecordFilterParameters_1.WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": wTInfoGenesisRoutingIDs_1.WTInfoGenesisRoutingIDs,
     "WTInfoGenesisUniquePostingIDs": wTInfoGenesisUniquePostingIDs_1.WTInfoGenesisUniquePostingIDs,
+    "WTLinkBook": wTLinkBook_1.WTLinkBook,
     "WTLinkBookCreateParams": wTLinkBookCreateParams_1.WTLinkBookCreateParams,
     "WTLinkBookSectionCreateParams": wTLinkBookSectionCreateParams_1.WTLinkBookSectionCreateParams,
     "WTLinkBookSectionUpdateParams": wTLinkBookSectionUpdateParams_1.WTLinkBookSectionUpdateParams,

@@ -219,6 +219,7 @@ export * from './wTInfoGenesisLookupRequestErrors';
 export * from './wTInfoGenesisRecordFilterParameters';
 export * from './wTInfoGenesisRoutingIDs';
 export * from './wTInfoGenesisUniquePostingIDs';
+export * from './wTLinkBook';
 export * from './wTLinkBookCreateParams';
 export * from './wTLinkBookSectionCreateParams';
 export * from './wTLinkBookSectionUpdateParams';

@@ -263,6 +263,7 @@ model/wTInfoGenesisLookupRequestErrors.ts
 model/wTInfoGenesisRecordFilterParameters.ts
 model/wTInfoGenesisRoutingIDs.ts
 model/wTInfoGenesisUniquePostingIDs.ts
+model/wTLinkBook.ts
 model/wTLinkBookCreateParams.ts
 model/wTLinkBookSectionCreateParams.ts
 model/wTLinkBookSectionUpdateParams.ts

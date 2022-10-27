@@ -218,6 +218,7 @@ export * from './wTInfoGenesisLookupRequestErrors';
 export * from './wTInfoGenesisRecordFilterParameters';
 export * from './wTInfoGenesisRoutingIDs';
 export * from './wTInfoGenesisUniquePostingIDs';
+export * from './wTLinkBook';
 export * from './wTLinkBookCreateParams';
 export * from './wTLinkBookSectionCreateParams';
 export * from './wTLinkBookSectionUpdateParams';
@@ -510,6 +511,7 @@ import { WTInfoGenesisLookupRequestErrors } from './wTInfoGenesisLookupRequestEr
 import { WTInfoGenesisRecordFilterParameters } from './wTInfoGenesisRecordFilterParameters';
 import { WTInfoGenesisRoutingIDs } from './wTInfoGenesisRoutingIDs';
 import { WTInfoGenesisUniquePostingIDs } from './wTInfoGenesisUniquePostingIDs';
+import { WTLinkBook } from './wTLinkBook';
 import { WTLinkBookCreateParams } from './wTLinkBookCreateParams';
 import { WTLinkBookSectionCreateParams } from './wTLinkBookSectionCreateParams';
 import { WTLinkBookSectionUpdateParams } from './wTLinkBookSectionUpdateParams';
@@ -807,6 +809,7 @@ let typeMap: {[index: string]: any} = {
     "WTInfoGenesisRecordFilterParameters": WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": WTInfoGenesisRoutingIDs,
     "WTInfoGenesisUniquePostingIDs": WTInfoGenesisUniquePostingIDs,
+    "WTLinkBook": WTLinkBook,
     "WTLinkBookCreateParams": WTLinkBookCreateParams,
     "WTLinkBookSectionCreateParams": WTLinkBookSectionCreateParams,
     "WTLinkBookSectionUpdateParams": WTLinkBookSectionUpdateParams,

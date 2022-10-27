@@ -1,6 +1,7 @@
 /// <reference types="node" />
 import http from 'http';
 import { LinkBook } from '../model/linkBook';
+import { WTLinkBook } from '../model/wTLinkBook';
 import { WTLinkBookCreateParams } from '../model/wTLinkBookCreateParams';
 import { WTLinkBookUpdateParams } from '../model/wTLinkBookUpdateParams';
 import { Authentication, Interceptor } from '../model/models';
@@ -49,6 +50,14 @@ export declare class LinkBookApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
+    }>;
+    fetchLinkBookById(id: any, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTLinkBook;
     }>;
     restoreLinkBook(id: any, options?: {
         headers: {
