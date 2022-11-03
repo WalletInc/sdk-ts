@@ -31,7 +31,7 @@ export declare class ConfigurationApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: any;
+        body: string;
     }>;
     saveWalletRecord(wTWalletConfigurationSaveWalletRecord: WTWalletConfigurationSaveWalletRecord, options?: {
         headers: {
