@@ -112,7 +112,7 @@ class ConfigurationApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "string");
                                 resolve({ response: response, body: body });
                             }
                             else {
