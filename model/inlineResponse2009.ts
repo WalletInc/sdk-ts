@@ -21,6 +21,7 @@ export class InlineResponse2009 {
     'startDate': Date;
     'title': string;
     'isRedeemed': boolean;
+    'displayValue': string;
     'offerAmountCentsDecimal': string;
     'offerAmountCents': number;
     'memberID': string;
@@ -64,6 +65,11 @@ export class InlineResponse2009 {
             "name": "isRedeemed",
             "baseName": "IsRedeemed",
             "type": "boolean"
+        },
+        {
+            "name": "displayValue",
+            "baseName": "DisplayValue",
+            "type": "string"
         },
         {
             "name": "offerAmountCentsDecimal",

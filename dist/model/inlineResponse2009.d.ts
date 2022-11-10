@@ -7,6 +7,7 @@ export declare class InlineResponse2009 {
     'startDate': Date;
     'title': string;
     'isRedeemed': boolean;
+    'displayValue': string;
     'offerAmountCentsDecimal': string;
     'offerAmountCents': number;
     'memberID': string;

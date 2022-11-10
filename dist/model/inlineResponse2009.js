@@ -45,6 +45,11 @@ InlineResponse2009.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "displayValue",
+        "baseName": "DisplayValue",
+        "type": "string"
+    },
+    {
         "name": "offerAmountCentsDecimal",
         "baseName": "OfferAmountCents_decimal",
         "type": "string"
