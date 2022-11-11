@@ -35,6 +35,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "headerImageURL",
+        "baseName": "headerImageURL",
+        "type": "string"
+    },
+    {
         "name": "welcomeMessage",
         "baseName": "welcomeMessage",
         "type": "string"

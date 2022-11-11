@@ -18,6 +18,7 @@ export class WalletConfiguration {
     'leftMenuSectionColor': string;
     'leftMenuArrowColor': string;
     'companyLogoURL': string;
+    'headerImageURL': string;
     'welcomeMessage': string;
     'isAppleEnabled': boolean;
     'isGoogleEnabled': boolean;
@@ -81,6 +82,11 @@ export class WalletConfiguration {
         {
             "name": "companyLogoURL",
             "baseName": "companyLogoURL",
+            "type": "string"
+        },
+        {
+            "name": "headerImageURL",
+            "baseName": "headerImageURL",
             "type": "string"
         },
         {
