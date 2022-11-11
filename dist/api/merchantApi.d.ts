@@ -71,7 +71,7 @@ export declare class MerchantApi {
         response: http.IncomingMessage;
         body: string;
     }>;
-    exportOutboundMessages(phoneNumberID: string, locale: string, options?: {
+    exportOutboundMessages(phoneNumberID: string, locale: string, paymentObjectBroadcastID: string, options?: {
         headers: {
             [name: string]: string;
         };

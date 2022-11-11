@@ -401,8 +401,9 @@ export class MerchantApi {
      * @summary Export outbound messages
      * @param phoneNumberID 
      * @param locale 
+     * @param paymentObjectBroadcastID 
      */
-    public async exportOutboundMessages (phoneNumberID: string, locale: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: string;  }> {
+    public async exportOutboundMessages (phoneNumberID: string, locale: string, paymentObjectBroadcastID: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: string;  }> {
         const localVarPath = this.basePath + '/v2/merchant/sms/outbound/export/{phoneNumberID}'
             .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
         let localVarQueryParameters: any = {};
@@ -426,8 +427,17 @@ export class MerchantApi {
             throw new Error('Required parameter locale was null or undefined when calling exportOutboundMessages.');
         }
 
+        // verify required parameter 'paymentObjectBroadcastID' is not null or undefined
+        if (paymentObjectBroadcastID === null || paymentObjectBroadcastID === undefined) {
+            throw new Error('Required parameter paymentObjectBroadcastID was null or undefined when calling exportOutboundMessages.');
+        }
+
         if (locale !== undefined) {
             localVarQueryParameters['locale'] = ObjectSerializer.serialize(locale, "string");
+        }
+
+        if (paymentObjectBroadcastID !== undefined) {
+            localVarQueryParameters['paymentObjectBroadcastID'] = ObjectSerializer.serialize(paymentObjectBroadcastID, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
