@@ -319,7 +319,7 @@ class MerchantApi {
             });
         });
     }
-    exportOutboundMessages(phoneNumberID, locale, options = { headers: {} }) {
+    exportOutboundMessages(phoneNumberID, locale, paymentObjectBroadcastID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/merchant/sms/outbound/export/{phoneNumberID}'
                 .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
@@ -341,6 +341,9 @@ class MerchantApi {
             }
             if (locale !== undefined) {
                 localVarQueryParameters['locale'] = models_1.ObjectSerializer.serialize(locale, "string");
+            }
+            if (paymentObjectBroadcastID !== undefined) {
+                localVarQueryParameters['paymentObjectBroadcastID'] = models_1.ObjectSerializer.serialize(paymentObjectBroadcastID, "string");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;

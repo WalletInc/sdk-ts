@@ -4,6 +4,7 @@ export declare class WalletConfiguration {
     'leftMenuSectionColor': string;
     'leftMenuArrowColor': string;
     'companyLogoURL': string;
+    'headerImageURL': string;
     'welcomeMessage': string;
     'isAppleEnabled': boolean;
     'isGoogleEnabled': boolean;
