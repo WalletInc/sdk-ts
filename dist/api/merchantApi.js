@@ -339,9 +339,6 @@ class MerchantApi {
             if (locale === null || locale === undefined) {
                 throw new Error('Required parameter locale was null or undefined when calling exportOutboundMessages.');
             }
-            if (paymentObjectBroadcastID === null || paymentObjectBroadcastID === undefined) {
-                throw new Error('Required parameter paymentObjectBroadcastID was null or undefined when calling exportOutboundMessages.');
-            }
             if (locale !== undefined) {
                 localVarQueryParameters['locale'] = models_1.ObjectSerializer.serialize(locale, "string");
             }
