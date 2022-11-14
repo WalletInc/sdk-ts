@@ -40,6 +40,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "headerCustomIcon",
+        "baseName": "headerCustomIcon",
+        "type": "string"
+    },
+    {
         "name": "welcomeMessage",
         "baseName": "welcomeMessage",
         "type": "string"

@@ -18,7 +18,8 @@ export class WalletConfiguration {
     'leftMenuSectionColor': string;
     'leftMenuArrowColor': string;
     'companyLogoURL': string;
-    'headerImageURL': string;
+    'headerImageURL'?: string;
+    'headerCustomIcon'?: string;
     'welcomeMessage': string;
     'isAppleEnabled': boolean;
     'isGoogleEnabled': boolean;
@@ -87,6 +88,11 @@ export class WalletConfiguration {
         {
             "name": "headerImageURL",
             "baseName": "headerImageURL",
+            "type": "string"
+        },
+        {
+            "name": "headerCustomIcon",
+            "baseName": "headerCustomIcon",
             "type": "string"
         },
         {

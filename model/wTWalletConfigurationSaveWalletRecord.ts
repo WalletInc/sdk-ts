@@ -18,7 +18,8 @@ export class WTWalletConfigurationSaveWalletRecord {
     'leftMenuSectionColor': string;
     'leftMenuArrowColor': string;
     'companyLogoURL': string;
-    'headerImageURL': string;
+    'headerImageURL'?: string;
+    'headerCustomIcon'?: string;
     'welcomeMessage': string;
     'isAppleEnabled': boolean;
     'isGoogleEnabled': boolean;
@@ -83,6 +84,11 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "headerImageURL",
             "baseName": "headerImageURL",
+            "type": "string"
+        },
+        {
+            "name": "headerCustomIcon",
+            "baseName": "headerCustomIcon",
             "type": "string"
         },
         {
