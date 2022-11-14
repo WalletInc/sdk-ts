@@ -5,6 +5,7 @@ export declare class WTWalletConfigurationSaveWalletRecord {
     'leftMenuArrowColor': string;
     'companyLogoURL': string;
     'headerImageURL': string;
+    'headerCustomIcon': string;
     'welcomeMessage': string;
     'isAppleEnabled': boolean;
     'isGoogleEnabled': boolean;
