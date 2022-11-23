@@ -1,7 +1,6 @@
 import { Status } from './status';
 export declare class WTStaticVoucher {
     'id': string | null;
-    'isActive': boolean;
     'campaignID': string;
     'memberID'?: string;
     'cellPhoneNumber'?: string;
@@ -22,6 +21,7 @@ export declare class WTStaticVoucher {
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'authorizedAmountDecimal': string;
     'authorizedAmountString': string;
     'offerAmountCentsDecimal': string;

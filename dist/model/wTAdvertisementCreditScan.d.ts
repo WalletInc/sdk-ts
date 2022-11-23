@@ -1,7 +1,6 @@
 import { Status } from './status';
 export declare class WTAdvertisementCreditScan {
     'id': string | null;
-    'isActive': boolean;
     'transactionType': string | null;
     'registerID': string | number | null;
     'redeemedSource': string;
@@ -16,6 +15,7 @@ export declare class WTAdvertisementCreditScan {
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'advertisementCreditID': string;
     'redeemedAmountDecimal': string;
     'redeemedAmountString': string;

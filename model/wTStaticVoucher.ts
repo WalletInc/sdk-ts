@@ -15,7 +15,6 @@ import { Status } from './status';
 
 export class WTStaticVoucher {
     'id': string | null;
-    'isActive': boolean;
     'campaignID': string;
     'memberID'?: string;
     'cellPhoneNumber'?: string;
@@ -42,6 +41,7 @@ export class WTStaticVoucher {
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'authorizedAmountDecimal': string;
     'authorizedAmountString': string;
     'offerAmountCentsDecimal': string;
@@ -60,11 +60,6 @@ export class WTStaticVoucher {
             "name": "id",
             "baseName": "id",
             "type": "string"
-        },
-        {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
         },
         {
             "name": "campaignID",
@@ -165,6 +160,11 @@ export class WTStaticVoucher {
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "authorizedAmountDecimal",

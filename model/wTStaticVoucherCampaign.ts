@@ -25,7 +25,6 @@ export class WTStaticVoucherCampaign {
     'employeeID': string;
     'reinvestmentSum': number;
     'numberOfVouchersInFile': number;
-    'isActive': boolean;
     'campaignGroupID'?: string;
     'bucket'?: string;
     'createdBySourceID': number;
@@ -33,6 +32,7 @@ export class WTStaticVoucherCampaign {
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'voucherType': number;
     'reinvestmentSumDecimal': string;
     'reinvestmentSumString': string;
@@ -103,11 +103,6 @@ export class WTStaticVoucherCampaign {
             "type": "number"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "campaignGroupID",
             "baseName": "campaignGroupID",
             "type": "string"
@@ -141,6 +136,11 @@ export class WTStaticVoucherCampaign {
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "voucherType",

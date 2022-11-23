@@ -15,11 +15,6 @@ AdvertisementCreditScan.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "isActive",
-        "baseName": "isActive",
-        "type": "boolean"
-    },
-    {
         "name": "transactionType",
         "baseName": "transactionType",
         "type": "string"
@@ -88,6 +83,11 @@ AdvertisementCreditScan.attributeTypeMap = [
         "name": "updatedAt",
         "baseName": "updatedAt",
         "type": "Date"
+    },
+    {
+        "name": "isActive",
+        "baseName": "isActive",
+        "type": "boolean"
     },
     {
         "name": "advertisementCreditID",

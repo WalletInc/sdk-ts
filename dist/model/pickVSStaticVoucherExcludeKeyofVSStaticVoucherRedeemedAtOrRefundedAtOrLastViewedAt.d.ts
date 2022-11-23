@@ -1,7 +1,6 @@
 import { Status } from './status';
 export declare class PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt {
     'id': string;
-    'isActive': boolean;
     'campaignID': string;
     'memberID'?: string;
     'cellPhoneNumber'?: string;
@@ -22,6 +21,7 @@ export declare class PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrR
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

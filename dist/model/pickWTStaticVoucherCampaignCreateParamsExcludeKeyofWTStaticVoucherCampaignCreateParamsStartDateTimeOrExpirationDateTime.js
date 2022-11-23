@@ -55,11 +55,6 @@ PickWTStaticVoucherCampaignCreateParamsExcludeKeyofWTStaticVoucherCampaignCreate
         "type": "string"
     },
     {
-        "name": "isActive",
-        "baseName": "isActive",
-        "type": "boolean"
-    },
-    {
         "name": "campaignGroupID",
         "baseName": "campaignGroupID",
         "type": "string"

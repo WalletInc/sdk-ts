@@ -18,11 +18,11 @@ import { RequestFile } from './models';
 export class PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone {
     'id': string;
     'employeeID': string;
-    'isActive': boolean;
     'status': string | null;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'body': string;
     'phoneNumberID': string;
     'mediaURLs': Array<string>;
@@ -52,11 +52,6 @@ export class PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone
             "type": "string"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "status",
             "baseName": "status",
             "type": "string"
@@ -75,6 +70,11 @@ export class PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "body",

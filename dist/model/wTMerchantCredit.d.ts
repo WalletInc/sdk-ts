@@ -1,9 +1,9 @@
 export declare class WTMerchantCredit {
     'id': string;
-    'isActive': boolean;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'mobileNumber': string;
     'creditAmount': number;
     'memberID'?: string;

@@ -20,11 +20,6 @@ OutboundSMS.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "isActive",
-        "baseName": "isActive",
-        "type": "boolean"
-    },
-    {
         "name": "status",
         "baseName": "status",
         "type": "string"
@@ -43,6 +38,11 @@ OutboundSMS.attributeTypeMap = [
         "name": "updatedAt",
         "baseName": "updatedAt",
         "type": "Date"
+    },
+    {
+        "name": "isActive",
+        "baseName": "isActive",
+        "type": "boolean"
     },
     {
         "name": "body",

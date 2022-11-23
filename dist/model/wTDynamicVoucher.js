@@ -55,11 +55,6 @@ WTDynamicVoucher.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "isActive",
-        "baseName": "isActive",
-        "type": "boolean"
-    },
-    {
         "name": "merchantID",
         "baseName": "merchantID",
         "type": "string"
@@ -73,6 +68,11 @@ WTDynamicVoucher.attributeTypeMap = [
         "name": "updatedAt",
         "baseName": "updatedAt",
         "type": "Date"
+    },
+    {
+        "name": "isActive",
+        "baseName": "isActive",
+        "type": "boolean"
     },
     {
         "name": "startingValue",

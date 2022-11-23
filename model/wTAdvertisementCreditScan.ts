@@ -15,7 +15,6 @@ import { Status } from './status';
 
 export class WTAdvertisementCreditScan {
     'id': string | null;
-    'isActive': boolean;
     /**
     * The type of the transaction - only redemption at the moment
     */
@@ -36,6 +35,7 @@ export class WTAdvertisementCreditScan {
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'advertisementCreditID': string;
     'redeemedAmountDecimal': string;
     'redeemedAmountString': string;
@@ -51,11 +51,6 @@ export class WTAdvertisementCreditScan {
             "name": "id",
             "baseName": "id",
             "type": "string"
-        },
-        {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
         },
         {
             "name": "transactionType",
@@ -126,6 +121,11 @@ export class WTAdvertisementCreditScan {
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "advertisementCreditID",

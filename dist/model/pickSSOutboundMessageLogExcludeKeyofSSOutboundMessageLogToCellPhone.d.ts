@@ -1,11 +1,11 @@
 export declare class PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone {
     'id': string;
     'employeeID': string;
-    'isActive': boolean;
     'status': string | null;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'body': string;
     'phoneNumberID': string;
     'mediaURLs': Array<string>;

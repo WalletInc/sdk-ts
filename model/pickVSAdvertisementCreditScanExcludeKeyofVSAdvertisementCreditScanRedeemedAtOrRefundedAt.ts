@@ -18,7 +18,6 @@ import { Status } from './status';
 */
 export class PickVSAdvertisementCreditScanExcludeKeyofVSAdvertisementCreditScanRedeemedAtOrRefundedAt {
     'id': string;
-    'isActive': boolean;
     /**
     * The type of the transaction - only redemption at the moment
     */
@@ -39,6 +38,7 @@ export class PickVSAdvertisementCreditScanExcludeKeyofVSAdvertisementCreditScanR
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'advertisementCreditID': string;
 
     static discriminator: string | undefined = undefined;
@@ -48,11 +48,6 @@ export class PickVSAdvertisementCreditScanExcludeKeyofVSAdvertisementCreditScanR
             "name": "id",
             "baseName": "id",
             "type": "string"
-        },
-        {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
         },
         {
             "name": "transactionType",
@@ -123,6 +118,11 @@ export class PickVSAdvertisementCreditScanExcludeKeyofVSAdvertisementCreditScanR
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "advertisementCreditID",

@@ -23,11 +23,11 @@ export class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticV
     'merchantsReferenceID'?: string;
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
-    'isActive': boolean;
     'startDateTime': Date;
     'expirationDateTime': Date;
     'memberID'?: string;
     'offerAmountCents': number;
+    'isActive': boolean;
     'cellPhone'?: string;
 
     static discriminator: string | undefined = undefined;
@@ -69,11 +69,6 @@ export class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticV
             "type": "string"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "startDateTime",
             "baseName": "startDateTime",
             "type": "Date"
@@ -92,6 +87,11 @@ export class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticV
             "name": "offerAmountCents",
             "baseName": "offerAmountCents",
             "type": "number"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "cellPhone",

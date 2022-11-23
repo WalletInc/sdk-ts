@@ -45,11 +45,6 @@ UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "isActive",
-        "baseName": "isActive",
-        "type": "boolean"
-    },
-    {
         "name": "startDateTime",
         "baseName": "startDateTime",
         "type": "Date"
@@ -68,6 +63,11 @@ UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
         "name": "offerAmountCents",
         "baseName": "offerAmountCents",
         "type": "number"
+    },
+    {
+        "name": "isActive",
+        "baseName": "isActive",
+        "type": "boolean"
     },
     {
         "name": "cellPhone",

@@ -28,7 +28,6 @@ export class PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDa
     'employeeID': string;
     'reinvestmentSum': number;
     'numberOfVouchersInFile': number;
-    'isActive': boolean;
 
     static discriminator: string | undefined = undefined;
 
@@ -92,11 +91,6 @@ export class PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDa
             "name": "numberOfVouchersInFile",
             "baseName": "numberOfVouchersInFile",
             "type": "number"
-        },
-        {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
         }    ];
 
     static getAttributeTypeMap() {

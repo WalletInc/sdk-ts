@@ -25,7 +25,6 @@ export class PickWTStaticVoucherCampaignCreateParamsExcludeKeyofWTStaticVoucherC
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
     'employeeID': string;
-    'isActive': boolean;
     'campaignGroupID'?: string;
     'bucket'?: string;
     'createdBySourceID': number;
@@ -78,11 +77,6 @@ export class PickWTStaticVoucherCampaignCreateParamsExcludeKeyofWTStaticVoucherC
             "name": "employeeID",
             "baseName": "employeeID",
             "type": "string"
-        },
-        {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
         },
         {
             "name": "campaignGroupID",

@@ -14,10 +14,6 @@ import { RequestFile } from './models';
 
 export class WTMerchantCredit {
     'id': string;
-    /**
-    * Denotes if this resource is active
-    */
-    'isActive': boolean;
     'merchantID': string;
     /**
     * The timestamp of when this resource was created
@@ -27,6 +23,10 @@ export class WTMerchantCredit {
     * The timestamp of when this resource was updated
     */
     'updatedAt': Date;
+    /**
+    * Denotes if this resource is active
+    */
+    'isActive': boolean;
     'mobileNumber': string;
     /**
     * The amount that needs to be credited to the member
@@ -54,11 +54,6 @@ export class WTMerchantCredit {
             "type": "string"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "merchantID",
             "baseName": "merchantID",
             "type": "string"
@@ -72,6 +67,11 @@ export class WTMerchantCredit {
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "mobileNumber",

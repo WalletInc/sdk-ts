@@ -15,11 +15,6 @@ PickVSAdvertisementCreditScanExcludeKeyofVSAdvertisementCreditScanRedeemedAtOrRe
         "type": "string"
     },
     {
-        "name": "isActive",
-        "baseName": "isActive",
-        "type": "boolean"
-    },
-    {
         "name": "transactionType",
         "baseName": "transactionType",
         "type": "string"
@@ -88,6 +83,11 @@ PickVSAdvertisementCreditScanExcludeKeyofVSAdvertisementCreditScanRedeemedAtOrRe
         "name": "updatedAt",
         "baseName": "updatedAt",
         "type": "Date"
+    },
+    {
+        "name": "isActive",
+        "baseName": "isActive",
+        "type": "boolean"
     },
     {
         "name": "advertisementCreditID",

@@ -17,10 +17,6 @@ import { RequestFile } from './models';
 */
 export class PickMSMemberExcludeKeyofMSMemberMemberIdentifier {
     'id': string;
-    /**
-    * Denotes if this resource is active
-    */
-    'isActive': boolean;
     'merchantID': string;
     /**
     * The timestamp of when this resource was created
@@ -30,6 +26,10 @@ export class PickMSMemberExcludeKeyofMSMemberMemberIdentifier {
     * The timestamp of when this resource was updated
     */
     'updatedAt': Date;
+    /**
+    * Denotes if this resource is active
+    */
+    'isActive': boolean;
     /**
     * An optional first name of the member
     */
@@ -54,11 +54,6 @@ export class PickMSMemberExcludeKeyofMSMemberMemberIdentifier {
             "type": "string"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "merchantID",
             "baseName": "merchantID",
             "type": "string"
@@ -72,6 +67,11 @@ export class PickMSMemberExcludeKeyofMSMemberMemberIdentifier {
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "firstName",

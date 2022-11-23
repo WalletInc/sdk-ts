@@ -20,11 +20,11 @@ export class UpdateStaticVoucherCampaignWithVoucher {
     'merchantsReferenceID'?: string;
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
-    'isActive': boolean;
     'startDateTime': Date;
     'expirationDateTime': Date;
     'memberID'?: string;
     'offerAmountCents': number;
+    'isActive': boolean;
     'cellPhone'?: string;
     'voucherID': string | null;
 
@@ -67,11 +67,6 @@ export class UpdateStaticVoucherCampaignWithVoucher {
             "type": "string"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "startDateTime",
             "baseName": "startDateTime",
             "type": "Date"
@@ -90,6 +85,11 @@ export class UpdateStaticVoucherCampaignWithVoucher {
             "name": "offerAmountCents",
             "baseName": "offerAmountCents",
             "type": "number"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "cellPhone",

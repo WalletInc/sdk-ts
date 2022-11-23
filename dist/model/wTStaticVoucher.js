@@ -15,11 +15,6 @@ WTStaticVoucher.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "isActive",
-        "baseName": "isActive",
-        "type": "boolean"
-    },
-    {
         "name": "campaignID",
         "baseName": "campaignID",
         "type": "string"
@@ -118,6 +113,11 @@ WTStaticVoucher.attributeTypeMap = [
         "name": "updatedAt",
         "baseName": "updatedAt",
         "type": "Date"
+    },
+    {
+        "name": "isActive",
+        "baseName": "isActive",
+        "type": "boolean"
     },
     {
         "name": "authorizedAmountDecimal",

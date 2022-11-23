@@ -20,11 +20,6 @@ PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.attributeTyp
         "type": "string"
     },
     {
-        "name": "isActive",
-        "baseName": "isActive",
-        "type": "boolean"
-    },
-    {
         "name": "status",
         "baseName": "status",
         "type": "string"
@@ -43,6 +38,11 @@ PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.attributeTyp
         "name": "updatedAt",
         "baseName": "updatedAt",
         "type": "Date"
+    },
+    {
+        "name": "isActive",
+        "baseName": "isActive",
+        "type": "boolean"
     },
     {
         "name": "body",

@@ -1,7 +1,6 @@
 import { Status } from './status';
 export declare class PickVSAdvertisementCreditScanExcludeKeyofVSAdvertisementCreditScanRedeemedAtOrRefundedAt {
     'id': string;
-    'isActive': boolean;
     'transactionType': string | null;
     'registerID': string | number | null;
     'redeemedSource': string;
@@ -16,6 +15,7 @@ export declare class PickVSAdvertisementCreditScanExcludeKeyofVSAdvertisementCre
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'advertisementCreditID': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

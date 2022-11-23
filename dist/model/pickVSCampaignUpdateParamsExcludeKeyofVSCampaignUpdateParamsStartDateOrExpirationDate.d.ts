@@ -11,7 +11,6 @@ export declare class PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParam
     'employeeID': string;
     'reinvestmentSum': number;
     'numberOfVouchersInFile': number;
-    'isActive': boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

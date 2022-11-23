@@ -1,9 +1,9 @@
 export declare class PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier {
     'id': string;
-    'isActive': boolean;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'mobileNumber': string;
     'creditAmount': number;
     static discriminator: string | undefined;

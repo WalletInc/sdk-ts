@@ -9,10 +9,10 @@ export declare class WTDynamicVoucher {
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
     'employeeID': string;
-    'isActive': boolean;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'startingValue': number;
     'maxBudget': number;
     'temporalDecreaseAmount': number;

@@ -1,9 +1,9 @@
 export declare class Member {
     'id': string;
-    'isActive': boolean;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'firstName'?: string;
     'lastName'?: string;
     'membershipTierID': string;

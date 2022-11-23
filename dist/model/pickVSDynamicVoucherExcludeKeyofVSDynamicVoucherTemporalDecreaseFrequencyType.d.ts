@@ -8,10 +8,10 @@ export declare class PickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDec
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
     'employeeID': string;
-    'isActive': boolean;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'startingValue': number;
     'maxBudget': number;
     'temporalDecreaseAmount': number;

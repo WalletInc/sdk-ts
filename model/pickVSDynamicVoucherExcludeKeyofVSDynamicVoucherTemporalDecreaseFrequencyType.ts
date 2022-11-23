@@ -25,10 +25,10 @@ export class PickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFre
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
     'employeeID': string;
-    'isActive': boolean;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'startingValue': number;
     'maxBudget': number;
     'temporalDecreaseAmount': number;
@@ -85,11 +85,6 @@ export class PickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFre
             "type": "string"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "merchantID",
             "baseName": "merchantID",
             "type": "string"
@@ -103,6 +98,11 @@ export class PickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFre
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "startingValue",

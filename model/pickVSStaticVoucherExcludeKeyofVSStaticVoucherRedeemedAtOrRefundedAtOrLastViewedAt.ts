@@ -18,7 +18,6 @@ import { Status } from './status';
 */
 export class PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt {
     'id': string;
-    'isActive': boolean;
     'campaignID': string;
     'memberID'?: string;
     'cellPhoneNumber'?: string;
@@ -45,6 +44,7 @@ export class PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedA
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
 
     static discriminator: string | undefined = undefined;
 
@@ -53,11 +53,6 @@ export class PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedA
             "name": "id",
             "baseName": "id",
             "type": "string"
-        },
-        {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
         },
         {
             "name": "campaignID",
@@ -158,6 +153,11 @@ export class PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedA
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         }    ];
 
     static getAttributeTypeMap() {

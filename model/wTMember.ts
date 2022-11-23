@@ -14,10 +14,6 @@ import { RequestFile } from './models';
 
 export class WTMember {
     'id': string;
-    /**
-    * Denotes if this resource is active
-    */
-    'isActive': boolean;
     'merchantID': string;
     /**
     * The timestamp of when this resource was created
@@ -27,6 +23,10 @@ export class WTMember {
     * The timestamp of when this resource was updated
     */
     'updatedAt': Date;
+    /**
+    * Denotes if this resource is active
+    */
+    'isActive': boolean;
     /**
     * An optional first name of the member
     */
@@ -56,11 +56,6 @@ export class WTMember {
             "type": "string"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "merchantID",
             "baseName": "merchantID",
             "type": "string"
@@ -74,6 +69,11 @@ export class WTMember {
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "firstName",

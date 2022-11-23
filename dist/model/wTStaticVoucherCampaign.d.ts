@@ -11,7 +11,6 @@ export declare class WTStaticVoucherCampaign {
     'employeeID': string;
     'reinvestmentSum': number;
     'numberOfVouchersInFile': number;
-    'isActive': boolean;
     'campaignGroupID'?: string;
     'bucket'?: string;
     'createdBySourceID': number;
@@ -19,6 +18,7 @@ export declare class WTStaticVoucherCampaign {
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'voucherType': number;
     'reinvestmentSumDecimal': string;
     'reinvestmentSumString': string;

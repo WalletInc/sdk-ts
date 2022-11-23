@@ -6,11 +6,11 @@ export declare class UpdateStaticVoucherCampaignWithVoucher {
     'merchantsReferenceID'?: string;
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
-    'isActive': boolean;
     'startDateTime': Date;
     'expirationDateTime': Date;
     'memberID'?: string;
     'offerAmountCents': number;
+    'isActive': boolean;
     'cellPhone'?: string;
     'voucherID': string | null;
     static discriminator: string | undefined;

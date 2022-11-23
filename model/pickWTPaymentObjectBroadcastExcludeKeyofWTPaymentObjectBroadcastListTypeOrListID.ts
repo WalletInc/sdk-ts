@@ -20,10 +20,10 @@ import { WTOptInList } from './wTOptInList';
 export class PickWTPaymentObjectBroadcastExcludeKeyofWTPaymentObjectBroadcastListTypeOrListID {
     'id': string | null;
     'employeeID': string;
-    'isActive': boolean;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'phoneNumberID': string;
     'mediaURLs': Array<string>;
     'optInList'?: WTOptInList;
@@ -51,11 +51,6 @@ export class PickWTPaymentObjectBroadcastExcludeKeyofWTPaymentObjectBroadcastLis
             "type": "string"
         },
         {
-            "name": "isActive",
-            "baseName": "isActive",
-            "type": "boolean"
-        },
-        {
             "name": "merchantID",
             "baseName": "merchantID",
             "type": "string"
@@ -69,6 +64,11 @@ export class PickWTPaymentObjectBroadcastExcludeKeyofWTPaymentObjectBroadcastLis
             "name": "updatedAt",
             "baseName": "updatedAt",
             "type": "Date"
+        },
+        {
+            "name": "isActive",
+            "baseName": "isActive",
+            "type": "boolean"
         },
         {
             "name": "phoneNumberID",

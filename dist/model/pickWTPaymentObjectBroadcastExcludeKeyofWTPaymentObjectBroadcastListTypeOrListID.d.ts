@@ -3,10 +3,10 @@ import { WTOptInList } from './wTOptInList';
 export declare class PickWTPaymentObjectBroadcastExcludeKeyofWTPaymentObjectBroadcastListTypeOrListID {
     'id': string | null;
     'employeeID': string;
-    'isActive': boolean;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isActive': boolean;
     'phoneNumberID': string;
     'mediaURLs': Array<string>;
     'optInList'?: WTOptInList;
