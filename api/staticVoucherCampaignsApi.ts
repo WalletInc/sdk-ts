@@ -109,7 +109,7 @@ export class StaticVoucherCampaignsApi {
 
     /**
      * 
-     * @summary Update static voucher campaign
+     * @summary Archive static voucher campaign
      * @param campaignID 
      */
     public async archiveStaticVoucherCampaign (campaignID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: StaticVoucherCampaign;  }> {
@@ -1401,7 +1401,7 @@ export class StaticVoucherCampaignsApi {
     }
     /**
      * 
-     * @summary Update static voucher campaign
+     * @summary Restore static voucher campaign
      * @param campaignID 
      */
     public async restoreStaticVoucherCampaign (campaignID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: StaticVoucherCampaign;  }> {
