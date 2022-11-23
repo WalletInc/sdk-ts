@@ -24,6 +24,7 @@ import { InlineResponse2002 } from '../model/inlineResponse2002';
 import { InlineResponse2004 } from '../model/inlineResponse2004';
 import { InternalServerError } from '../model/internalServerError';
 import { ReachPerformanceStats } from '../model/reachPerformanceStats';
+import { StaticVoucherCampaign } from '../model/staticVoucherCampaign';
 import { StaticVoucherCampaignUpdate } from '../model/staticVoucherCampaignUpdate';
 import { UpdateStaticVoucherCampaignWithVoucher } from '../model/updateStaticVoucherCampaignWithVoucher';
 import { VSCampaignGeneratedMessage } from '../model/vSCampaignGeneratedMessage';
@@ -106,6 +107,75 @@ export class StaticVoucherCampaignsApi {
         this.interceptors.push(interceptor);
     }
 
+    /**
+     * 
+     * @summary Update static voucher campaign
+     * @param campaignID 
+     */
+    public async archiveStaticVoucherCampaign (campaignID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: StaticVoucherCampaign;  }> {
+        const localVarPath = this.basePath + '/v2/payment/staticVoucherCampaign/{campaignID}'
+            .replace('{' + 'campaignID' + '}', encodeURIComponent(String(campaignID)));
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'campaignID' is not null or undefined
+        if (campaignID === null || campaignID === undefined) {
+            throw new Error('Required parameter campaignID was null or undefined when calling archiveStaticVoucherCampaign.');
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'DELETE',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+        };
+
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: StaticVoucherCampaign;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            body = ObjectSerializer.deserialize(body, "StaticVoucherCampaign");
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
     /**
      * 
      * @summary Count loaded vouchers
@@ -1320,6 +1390,75 @@ export class StaticVoucherCampaignsApi {
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                             body = ObjectSerializer.deserialize(body, "VSCampaignGeneratedMessagePagination");
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * 
+     * @summary Update static voucher campaign
+     * @param campaignID 
+     */
+    public async restoreStaticVoucherCampaign (campaignID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: StaticVoucherCampaign;  }> {
+        const localVarPath = this.basePath + '/v2/payment/staticVoucherCampaign/{campaignID}'
+            .replace('{' + 'campaignID' + '}', encodeURIComponent(String(campaignID)));
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'campaignID' is not null or undefined
+        if (campaignID === null || campaignID === undefined) {
+            throw new Error('Required parameter campaignID was null or undefined when calling restoreStaticVoucherCampaign.');
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'PATCH',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+        };
+
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: StaticVoucherCampaign;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            body = ObjectSerializer.deserialize(body, "StaticVoucherCampaign");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

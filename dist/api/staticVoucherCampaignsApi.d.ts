@@ -6,6 +6,7 @@ import { CreateStaticVoucherCampaignWithVoucherWithCSV } from '../model/createSt
 import { InlineResponse2002 } from '../model/inlineResponse2002';
 import { InlineResponse2004 } from '../model/inlineResponse2004';
 import { ReachPerformanceStats } from '../model/reachPerformanceStats';
+import { StaticVoucherCampaign } from '../model/staticVoucherCampaign';
 import { StaticVoucherCampaignUpdate } from '../model/staticVoucherCampaignUpdate';
 import { UpdateStaticVoucherCampaignWithVoucher } from '../model/updateStaticVoucherCampaignWithVoucher';
 import { VSCampaignGeneratedMessage } from '../model/vSCampaignGeneratedMessage';
@@ -38,6 +39,14 @@ export declare class StaticVoucherCampaignsApi {
     setDefaultAuthentication(auth: Authentication): void;
     setApiKey(key: StaticVoucherCampaignsApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
+    archiveStaticVoucherCampaign(campaignID: any, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: StaticVoucherCampaign;
+    }>;
     countVouchersLoaded(campaignID: any, options?: {
         headers: {
             [name: string]: string;
@@ -173,6 +182,14 @@ export declare class StaticVoucherCampaignsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: VSCampaignGeneratedMessagePagination;
+    }>;
+    restoreStaticVoucherCampaign(campaignID: any, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: StaticVoucherCampaign;
     }>;
     updateStaticVoucherCampaign(campaignID: any, staticVoucherCampaignUpdate: StaticVoucherCampaignUpdate, options?: {
         headers: {
