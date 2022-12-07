@@ -60,6 +60,7 @@ model/applicableTerminalsAnyOf5.ts
 model/applicableTerminalsAnyOf6.ts
 model/authError.ts
 model/availablePhoneNumbersRequest.ts
+model/browserDetails.ts
 model/clickFunnelAmount.ts
 model/clickFunnelContact.ts
 model/clickFunnelContactProfile.ts
@@ -69,7 +70,6 @@ model/clickFunnelProduct.ts
 model/clickFunnelPurchase.ts
 model/clickFunnelRegistration.ts
 model/createStaticVoucherCampaign.ts
-model/createStaticVoucherCampaignWithVoucher.ts
 model/createStaticVoucherCampaignWithVoucherWithCSV.ts
 model/dashboardWidget.ts
 model/document.ts
@@ -146,6 +146,7 @@ model/paymentDesign.ts
 model/paymentPrefixes.ts
 model/performance.ts
 model/phoneNumber.ts
+model/pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive.ts
 model/pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID.ts
 model/pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID.ts
 model/pickMSEmployeeAPIKeyUpdateParamsExcludeKeyofMSEmployeeAPIKeyUpdateParamsId.ts
