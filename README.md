@@ -1,13 +1,12 @@
-
 ![Wallet Inc](https://resources.wallet.inc/logos/wallet-350x96.png)
 
 > Access to this module is presently restricted to customers of Wallet Inc. Reach out on [Discord](https://discord.gg/xzwhcNCjcQ) for help.
 
 ## Summary
 
-This module provides a server-side SDK for integrating with the CRM & Digital Payments platform provided by Wallet Inc. For details about the [Wallet Platform](https://wallet.inc), please visit https://wallet.inc
+This module provides a server-side SDK for integrating with the CRM & Digital Payments platform provided by Wallet Inc. For details about the [Wallet Platform](https://wall.et/MU8JyjoD9KwA), please visit https://wallet.inc
 
-For detailed API documentation and detailed steps to create your API key for authenticated requests, please visit the [Wallet Developer Hub](https://wallet.dev) (https://wallet.dev)
+For detailed API documentation and detailed steps to create your API key for authenticated requests, please visit the [Wallet Developer Hub](https://wall.et/MURcyjCOBfEW) (https://wallet.dev)
 
 ## Install
 
@@ -23,7 +22,6 @@ npm install # Install ts-node to run typescript examples without transpilation
 ```
 
 ## Usage
-
 
 ### Create and manipulate Membership Tiers
 
@@ -107,7 +105,7 @@ async function membershipTiers() {
     console.log(tiersList);
 }
 ```
-    
+
 ### Create and manipulate Payment Designs
 
 ```nodejs
@@ -180,7 +178,7 @@ async function paymentDesigns() {
     console.log(designs);
 }
 ```
-    
+
 ### Create and manipulate Club Members
 
 ```nodejs
@@ -272,7 +270,7 @@ async function clubMembers() {
     console.log(membersCount);
 }
 ```
-    
+
 ### Create and manipulate Advertisement Credits
 
 ```nodejs
@@ -348,7 +346,7 @@ async function advertisementCredits() {
     console.log("Active advertisement credits: ", JSON.stringify(adCredit));
 }
 ```
-    
+
 ### Create and manipulate Link Book Links
 
 ```nodejs
@@ -411,7 +409,7 @@ async function linkBook() {
     console.log(links);
 }
 ```
-    
+
 ### Create and manipulate Merchant URLs
 
 ```nodejs
@@ -479,7 +477,7 @@ async function merchantURLs() {
     console.log(pageViews);
 }
 ```
-    
+
 ### Create and manipulate News Articles
 
 ```nodejs
@@ -543,7 +541,7 @@ async function news() {
     console.log(articles);
 }
 ```
-    
+
 ### Create and manipulate Performances
 
 ```nodejs
@@ -611,7 +609,7 @@ async function performances() {
     console.log(performances);
 }
 ```
-    
+
 ### Create and manipulate Promo Codes
 
 ```nodejs
@@ -676,7 +674,7 @@ async function promocodes() {
     console.log(promocodes);
 }
 ```
-    
+
 ### Create and manipulate Merchant Credits
 
 ```nodejs
@@ -766,7 +764,7 @@ async function merchantCredits() {
     console.log(merchantcreditsCount);
 }
 ```
-    
+
 ### Create and manipulate Dynamic Vouchers
 
 ```nodejs
@@ -878,7 +876,7 @@ async function dynamicVouchers() {
     console.log(allVouchersReachStats);
 }
 ```
-    
+
 ### Create and manipulate Static Voucher Campaigns
 
 ```nodejs
@@ -1075,7 +1073,7 @@ async function staticVoucherCampaigns() {
     console.log(campaignWithVoucher);
 }
 ```
-    
+
 ### Create and manipulate Static Vouchers
 
 ```nodejs
@@ -1147,7 +1145,7 @@ async function staticVouchers() {
     console.log(allVouchersReachStats);
 }
 ```
-    
+
 ### Create and manipulate SMSes
 
 ```nodejs
@@ -1457,4 +1455,3 @@ async function smsExample() {
     console.log(`Max: ${limits.max}, Sent: ${limits.sent}`);
 }
 ```
-    
