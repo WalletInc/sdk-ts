@@ -271,7 +271,7 @@ export declare class AnalyticsApi {
         response: http.IncomingMessage;
         body: Array<any>;
     }>;
-    fetchAnalyticsDistinctWalletSessions(options?: {
+    fetchAnalyticsDistinctWalletSessions(startDate?: Date, endDate?: Date, options?: {
         headers: {
             [name: string]: string;
         };
