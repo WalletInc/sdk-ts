@@ -2249,7 +2249,7 @@ class AnalyticsApi {
             });
         });
     }
-    fetchAnalyticsDistinctWalletSessions(options = { headers: {} }) {
+    fetchAnalyticsDistinctWalletSessions(startDate, endDate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/analytics/walletPageViews/sessions/distinct';
             let localVarQueryParameters = {};
@@ -2262,6 +2262,12 @@ class AnalyticsApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (startDate !== undefined) {
+                localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
+            }
+            if (endDate !== undefined) {
+                localVarQueryParameters['endDate'] = models_1.ObjectSerializer.serialize(endDate, "Date");
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
