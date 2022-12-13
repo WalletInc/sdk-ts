@@ -2749,8 +2749,10 @@ export class AnalyticsApi {
     /**
      * 
      * @summary Fetch distinct wallet sessions
+     * @param startDate 
+     * @param endDate 
      */
-    public async fetchAnalyticsDistinctWalletSessions (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
+    public async fetchAnalyticsDistinctWalletSessions (startDate?: Date, endDate?: Date, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
         const localVarPath = this.basePath + '/v2/analytics/walletPageViews/sessions/distinct';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2762,6 +2764,14 @@ export class AnalyticsApi {
             localVarHeaderParams.Accept = produces.join(',');
         }
         let localVarFormParams: any = {};
+
+        if (startDate !== undefined) {
+            localVarQueryParameters['startDate'] = ObjectSerializer.serialize(startDate, "Date");
+        }
+
+        if (endDate !== undefined) {
+            localVarQueryParameters['endDate'] = ObjectSerializer.serialize(endDate, "Date");
+        }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
 
