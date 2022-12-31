@@ -14,8 +14,8 @@ import { RequestFile } from './models';
 
 export class WTSMSUpdatePhoneNumberConfig {
     'companyName': string;
-    'privacyPolicyURL': string;
-    'termsOfServiceURL': string;
+    'privacyPolicyURL'?: string;
+    'termsOfServiceURL'?: string;
     'messageFooter': string;
     'stopResponse': string;
     'helpResponse': string;
