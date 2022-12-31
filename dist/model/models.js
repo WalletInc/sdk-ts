@@ -271,7 +271,6 @@ __exportStar(require("./wTSMSAcquirePhoneNumber"), exports);
 __exportStar(require("./wTSMSCreateAgreement"), exports);
 __exportStar(require("./wTSMSImportOptInListSubscribers"), exports);
 __exportStar(require("./wTSMSImportedListCreate"), exports);
-__exportStar(require("./wTSMSLimits"), exports);
 __exportStar(require("./wTSMSOptInListSourceCreate"), exports);
 __exportStar(require("./wTSMSUpdatePhoneNumberConfig"), exports);
 __exportStar(require("./wTSettingsSetPassword"), exports);
@@ -551,7 +550,6 @@ const wTSMSAcquirePhoneNumber_1 = require("./wTSMSAcquirePhoneNumber");
 const wTSMSCreateAgreement_1 = require("./wTSMSCreateAgreement");
 const wTSMSImportOptInListSubscribers_1 = require("./wTSMSImportOptInListSubscribers");
 const wTSMSImportedListCreate_1 = require("./wTSMSImportedListCreate");
-const wTSMSLimits_1 = require("./wTSMSLimits");
 const wTSMSOptInListSourceCreate_1 = require("./wTSMSOptInListSourceCreate");
 const wTSMSUpdatePhoneNumberConfig_1 = require("./wTSMSUpdatePhoneNumberConfig");
 const wTSettingsSetPassword_1 = require("./wTSettingsSetPassword");
@@ -846,7 +844,6 @@ let typeMap = {
     "WTSMSCreateAgreement": wTSMSCreateAgreement_1.WTSMSCreateAgreement,
     "WTSMSImportOptInListSubscribers": wTSMSImportOptInListSubscribers_1.WTSMSImportOptInListSubscribers,
     "WTSMSImportedListCreate": wTSMSImportedListCreate_1.WTSMSImportedListCreate,
-    "WTSMSLimits": wTSMSLimits_1.WTSMSLimits,
     "WTSMSOptInListSourceCreate": wTSMSOptInListSourceCreate_1.WTSMSOptInListSourceCreate,
     "WTSMSUpdatePhoneNumberConfig": wTSMSUpdatePhoneNumberConfig_1.WTSMSUpdatePhoneNumberConfig,
     "WTSettingsSetPassword": wTSettingsSetPassword_1.WTSettingsSetPassword,

@@ -40,7 +40,6 @@ import { WTSMSAcquirePhoneNumber } from '../model/wTSMSAcquirePhoneNumber';
 import { WTSMSCreateAgreement } from '../model/wTSMSCreateAgreement';
 import { WTSMSImportOptInListSubscribers } from '../model/wTSMSImportOptInListSubscribers';
 import { WTSMSImportedListCreate } from '../model/wTSMSImportedListCreate';
-import { WTSMSLimits } from '../model/wTSMSLimits';
 import { WTSMSOptInListSourceCreate } from '../model/wTSMSOptInListSourceCreate';
 import { WTSMSUpdatePhoneNumberConfig } from '../model/wTSMSUpdatePhoneNumberConfig';
 
@@ -2518,7 +2517,7 @@ export class SMSApi {
      * 
      * @summary Retrieve the number of messages sent by the merchant within the current billing cycle
      */
-    public async retrieveSentAndMaxCountOfMessages (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTSMSLimits;  }> {
+    public async retrieveSentAndMaxCountOfMessages (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
         const localVarPath = this.basePath + '/v2/sms/sent';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2560,13 +2559,13 @@ export class SMSApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: WTSMSLimits;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: any;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "WTSMSLimits");
+                            body = ObjectSerializer.deserialize(body, "any");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

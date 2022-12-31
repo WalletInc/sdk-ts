@@ -256,7 +256,6 @@ export * from './wTSMSAcquirePhoneNumber';
 export * from './wTSMSCreateAgreement';
 export * from './wTSMSImportOptInListSubscribers';
 export * from './wTSMSImportedListCreate';
-export * from './wTSMSLimits';
 export * from './wTSMSOptInListSourceCreate';
 export * from './wTSMSUpdatePhoneNumberConfig';
 export * from './wTSettingsSetPassword';
@@ -550,7 +549,6 @@ import { WTSMSAcquirePhoneNumber } from './wTSMSAcquirePhoneNumber';
 import { WTSMSCreateAgreement } from './wTSMSCreateAgreement';
 import { WTSMSImportOptInListSubscribers } from './wTSMSImportOptInListSubscribers';
 import { WTSMSImportedListCreate } from './wTSMSImportedListCreate';
-import { WTSMSLimits } from './wTSMSLimits';
 import { WTSMSOptInListSourceCreate } from './wTSMSOptInListSourceCreate';
 import { WTSMSUpdatePhoneNumberConfig } from './wTSMSUpdatePhoneNumberConfig';
 import { WTSettingsSetPassword } from './wTSettingsSetPassword';
@@ -849,7 +847,6 @@ let typeMap: {[index: string]: any} = {
     "WTSMSCreateAgreement": WTSMSCreateAgreement,
     "WTSMSImportOptInListSubscribers": WTSMSImportOptInListSubscribers,
     "WTSMSImportedListCreate": WTSMSImportedListCreate,
-    "WTSMSLimits": WTSMSLimits,
     "WTSMSOptInListSourceCreate": WTSMSOptInListSourceCreate,
     "WTSMSUpdatePhoneNumberConfig": WTSMSUpdatePhoneNumberConfig,
     "WTSettingsSetPassword": WTSettingsSetPassword,
