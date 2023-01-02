@@ -257,7 +257,6 @@ export * from './wTSMSAcquirePhoneNumber';
 export * from './wTSMSCreateAgreement';
 export * from './wTSMSImportOptInListSubscribers';
 export * from './wTSMSImportedListCreate';
-export * from './wTSMSLimits';
 export * from './wTSMSOptInListSourceCreate';
 export * from './wTSMSUpdatePhoneNumberConfig';
 export * from './wTSettingsSetPassword';

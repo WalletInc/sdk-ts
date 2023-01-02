@@ -301,7 +301,6 @@ model/wTSMSAcquirePhoneNumber.ts
 model/wTSMSCreateAgreement.ts
 model/wTSMSImportOptInListSubscribers.ts
 model/wTSMSImportedListCreate.ts
-model/wTSMSLimits.ts
 model/wTSMSOptInListSourceCreate.ts
 model/wTSMSUpdatePhoneNumberConfig.ts
 model/wTSettingsSetPassword.ts

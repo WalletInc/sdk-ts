@@ -22,7 +22,6 @@ import { WTSMSAcquirePhoneNumber } from '../model/wTSMSAcquirePhoneNumber';
 import { WTSMSCreateAgreement } from '../model/wTSMSCreateAgreement';
 import { WTSMSImportOptInListSubscribers } from '../model/wTSMSImportOptInListSubscribers';
 import { WTSMSImportedListCreate } from '../model/wTSMSImportedListCreate';
-import { WTSMSLimits } from '../model/wTSMSLimits';
 import { WTSMSOptInListSourceCreate } from '../model/wTSMSOptInListSourceCreate';
 import { WTSMSUpdatePhoneNumberConfig } from '../model/wTSMSUpdatePhoneNumberConfig';
 import { Authentication, Interceptor } from '../model/models';
@@ -310,7 +309,7 @@ export declare class SMSApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTSMSLimits;
+        body: any;
     }>;
     saveImportedList(listID: string, wTSMSImportedListCreate: WTSMSImportedListCreate, options?: {
         headers: {
