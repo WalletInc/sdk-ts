@@ -1,7 +1,7 @@
 export declare class WTSMSUpdatePhoneNumberConfig {
     'companyName': string;
-    'privacyPolicyURL': string;
-    'termsOfServiceURL': string;
+    'privacyPolicyURL'?: string;
+    'termsOfServiceURL'?: string;
     'messageFooter': string;
     'stopResponse': string;
     'helpResponse': string;
