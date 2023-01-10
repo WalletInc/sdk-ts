@@ -193,6 +193,11 @@ ClickFunnelContact.attributeTypeMap = [
         "name": "companyIndustry",
         "baseName": "company_industry",
         "type": "string"
+    },
+    {
+        "name": "additionalInfo",
+        "baseName": "additional_info",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=clickFunnelContact.js.map
