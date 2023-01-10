@@ -51,6 +51,7 @@ export class ClickFunnelContact {
     'timeZone'?: string | null;
     'companyName': string;
     'companyIndustry': string;
+    'additionalInfo'?: any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -239,6 +240,11 @@ export class ClickFunnelContact {
             "name": "companyIndustry",
             "baseName": "company_industry",
             "type": "string"
+        },
+        {
+            "name": "additionalInfo",
+            "baseName": "additional_info",
+            "type": "any"
         }    ];
 
     static getAttributeTypeMap() {

@@ -37,6 +37,7 @@ export declare class ClickFunnelContact {
     'timeZone'?: string | null;
     'companyName': string;
     'companyIndustry': string;
+    'additionalInfo'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
