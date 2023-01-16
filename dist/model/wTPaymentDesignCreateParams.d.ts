@@ -10,10 +10,7 @@ export declare class WTPaymentDesignCreateParams {
     'icon': string;
     'designName': string;
     'displayName': string;
-    'backgroundImage'?: string;
-    'backgroundImageExt'?: string;
-    'companyLogo'?: string;
-    'companyLogoExt'?: string;
+    'backgroundImageURL'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
