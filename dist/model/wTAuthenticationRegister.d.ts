@@ -3,8 +3,8 @@ export declare class WTAuthenticationRegister {
     'lastName': string;
     'email': string;
     'password': string;
-    'hearAboutUs': string;
-    'hearAboutUsDetails': string;
+    'hearAboutUs'?: string;
+    'hearAboutUsDetails'?: string;
     'companyName': string;
     'merchantType': string;
     'streetAddress1': string;
