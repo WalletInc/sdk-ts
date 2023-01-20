@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID = void 0;
-class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID {
+exports.PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID = void 0;
+class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID {
     static getAttributeTypeMap() {
-        return PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID.attributeTypeMap;
+        return PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID.attributeTypeMap;
     }
 }
-exports.PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID = PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID;
-PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID.discriminator = undefined;
-PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID.attributeTypeMap = [
+exports.PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID = PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID;
+PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID.discriminator = undefined;
+PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID.attributeTypeMap = [
     {
         "name": "borderColor",
         "baseName": "borderColor",
@@ -63,6 +63,16 @@ PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackground
         "name": "displayName",
         "baseName": "displayName",
         "type": "string"
+    },
+    {
+        "name": "backgroundImageURL",
+        "baseName": "backgroundImageURL",
+        "type": "string"
+    },
+    {
+        "name": "companyLogoURL",
+        "baseName": "companyLogoURL",
+        "type": "string"
     }
 ];
-//# sourceMappingURL=pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID.js.map
+//# sourceMappingURL=pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID.js.map

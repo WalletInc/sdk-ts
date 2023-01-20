@@ -15,7 +15,7 @@ import { RequestFile } from './models';
 /**
 * From T, pick a set of properties whose keys are in the union K
 */
-export class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID {
+export class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID {
     'borderColor': string;
     'borderStyleType': string | null;
     'borderSize': string;
@@ -27,6 +27,8 @@ export class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreatePar
     'icon': string;
     'designName': string;
     'displayName': string;
+    'backgroundImageURL'?: string;
+    'companyLogoURL'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -85,10 +87,20 @@ export class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreatePar
             "name": "displayName",
             "baseName": "displayName",
             "type": "string"
+        },
+        {
+            "name": "backgroundImageURL",
+            "baseName": "backgroundImageURL",
+            "type": "string"
+        },
+        {
+            "name": "companyLogoURL",
+            "baseName": "companyLogoURL",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID.attributeTypeMap;
+        return PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID.attributeTypeMap;
     }
 }
 

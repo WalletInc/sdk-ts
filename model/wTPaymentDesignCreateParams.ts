@@ -24,10 +24,8 @@ export class WTPaymentDesignCreateParams {
     'icon': string;
     'designName': string;
     'displayName': string;
-    'backgroundImage'?: string;
-    'backgroundImageExt'?: string;
-    'companyLogo'?: string;
-    'companyLogoExt'?: string;
+    'backgroundImageURL'?: string;
+    'companyLogoURL'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -88,23 +86,13 @@ export class WTPaymentDesignCreateParams {
             "type": "string"
         },
         {
-            "name": "backgroundImage",
-            "baseName": "backgroundImage",
+            "name": "backgroundImageURL",
+            "baseName": "backgroundImageURL",
             "type": "string"
         },
         {
-            "name": "backgroundImageExt",
-            "baseName": "backgroundImageExt",
-            "type": "string"
-        },
-        {
-            "name": "companyLogo",
-            "baseName": "companyLogo",
-            "type": "string"
-        },
-        {
-            "name": "companyLogoExt",
-            "baseName": "companyLogoExt",
+            "name": "companyLogoURL",
+            "baseName": "companyLogoURL",
             "type": "string"
         }    ];
 
