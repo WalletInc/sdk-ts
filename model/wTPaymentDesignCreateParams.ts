@@ -25,6 +25,7 @@ export class WTPaymentDesignCreateParams {
     'designName': string;
     'displayName': string;
     'backgroundImageURL'?: string;
+    'companyLogoURL'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -87,6 +88,11 @@ export class WTPaymentDesignCreateParams {
         {
             "name": "backgroundImageURL",
             "baseName": "backgroundImageURL",
+            "type": "string"
+        },
+        {
+            "name": "companyLogoURL",
+            "baseName": "companyLogoURL",
             "type": "string"
         }    ];
 

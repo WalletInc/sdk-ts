@@ -11,6 +11,7 @@ export declare class WTPaymentDesignUpdateParams {
     'designName': string;
     'displayName': string;
     'backgroundImageURL'?: string;
+    'companyLogoURL'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

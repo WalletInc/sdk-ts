@@ -68,6 +68,11 @@ WTPaymentDesignUpdateParams.attributeTypeMap = [
         "name": "backgroundImageURL",
         "baseName": "backgroundImageURL",
         "type": "string"
+    },
+    {
+        "name": "companyLogoURL",
+        "baseName": "companyLogoURL",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTPaymentDesignUpdateParams.js.map
