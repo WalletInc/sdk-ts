@@ -65,23 +65,13 @@ WTPaymentDesignUpdateParams.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "backgroundImage",
-        "baseName": "backgroundImage",
+        "name": "backgroundImageURL",
+        "baseName": "backgroundImageURL",
         "type": "string"
     },
     {
-        "name": "backgroundImageExt",
-        "baseName": "backgroundImageExt",
-        "type": "string"
-    },
-    {
-        "name": "companyLogo",
-        "baseName": "companyLogo",
-        "type": "string"
-    },
-    {
-        "name": "companyLogoExt",
-        "baseName": "companyLogoExt",
+        "name": "companyLogoURL",
+        "baseName": "companyLogoURL",
         "type": "string"
     }
 ];

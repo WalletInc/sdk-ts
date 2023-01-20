@@ -1,4 +1,4 @@
-export declare class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsBackgroundImageURLOrCompanyLogoURLOrEmployeeID {
+export declare class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID {
     'borderColor': string;
     'borderStyleType': string | null;
     'borderSize': string;
@@ -10,6 +10,8 @@ export declare class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignC
     'icon': string;
     'designName': string;
     'displayName': string;
+    'backgroundImageURL'?: string;
+    'companyLogoURL'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
