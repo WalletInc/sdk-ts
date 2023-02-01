@@ -163,6 +163,13 @@ __exportStar(require("./role"), exports);
 __exportStar(require("./roleAuditLog"), exports);
 __exportStar(require("./sSImportedListRecipientCreateParams"), exports);
 __exportStar(require("./sSOptInSource"), exports);
+__exportStar(require("./sSOutboundStatuses"), exports);
+__exportStar(require("./sSOutboundStatusesAnyOf"), exports);
+__exportStar(require("./sSOutboundStatusesAnyOf1"), exports);
+__exportStar(require("./sSOutboundStatusesAnyOf2"), exports);
+__exportStar(require("./sSOutboundStatusesAnyOf3"), exports);
+__exportStar(require("./sSOutboundStatusesAnyOf4"), exports);
+__exportStar(require("./sSOutboundStatusesAnyOf5"), exports);
 __exportStar(require("./simpleSMSBroadcast"), exports);
 __exportStar(require("./staticVoucher"), exports);
 __exportStar(require("./staticVoucherCampaign"), exports);
@@ -442,6 +449,13 @@ const role_1 = require("./role");
 const roleAuditLog_1 = require("./roleAuditLog");
 const sSImportedListRecipientCreateParams_1 = require("./sSImportedListRecipientCreateParams");
 const sSOptInSource_1 = require("./sSOptInSource");
+const sSOutboundStatuses_1 = require("./sSOutboundStatuses");
+const sSOutboundStatusesAnyOf_1 = require("./sSOutboundStatusesAnyOf");
+const sSOutboundStatusesAnyOf1_1 = require("./sSOutboundStatusesAnyOf1");
+const sSOutboundStatusesAnyOf2_1 = require("./sSOutboundStatusesAnyOf2");
+const sSOutboundStatusesAnyOf3_1 = require("./sSOutboundStatusesAnyOf3");
+const sSOutboundStatusesAnyOf4_1 = require("./sSOutboundStatusesAnyOf4");
+const sSOutboundStatusesAnyOf5_1 = require("./sSOutboundStatusesAnyOf5");
 const simpleSMSBroadcast_1 = require("./simpleSMSBroadcast");
 const staticVoucher_1 = require("./staticVoucher");
 const staticVoucherCampaign_1 = require("./staticVoucherCampaign");
@@ -593,6 +607,12 @@ let enumsMap = {
     "ApplicableTerminalsAnyOf6": applicableTerminalsAnyOf6_1.ApplicableTerminalsAnyOf6,
     "PaginationRequestWithSortOptions.SortKeyEnum": paginationRequestWithSortOptions_1.PaginationRequestWithSortOptions.SortKeyEnum,
     "PortalPage": portalPage_1.PortalPage,
+    "SSOutboundStatusesAnyOf": sSOutboundStatusesAnyOf_1.SSOutboundStatusesAnyOf,
+    "SSOutboundStatusesAnyOf1": sSOutboundStatusesAnyOf1_1.SSOutboundStatusesAnyOf1,
+    "SSOutboundStatusesAnyOf2": sSOutboundStatusesAnyOf2_1.SSOutboundStatusesAnyOf2,
+    "SSOutboundStatusesAnyOf3": sSOutboundStatusesAnyOf3_1.SSOutboundStatusesAnyOf3,
+    "SSOutboundStatusesAnyOf4": sSOutboundStatusesAnyOf4_1.SSOutboundStatusesAnyOf4,
+    "SSOutboundStatusesAnyOf5": sSOutboundStatusesAnyOf5_1.SSOutboundStatusesAnyOf5,
     "StatusAnyOf": statusAnyOf_1.StatusAnyOf,
     "StatusAnyOf1": statusAnyOf1_1.StatusAnyOf1,
     "StatusAnyOf2": statusAnyOf2_1.StatusAnyOf2,
@@ -740,6 +760,7 @@ let typeMap = {
     "RoleAuditLog": roleAuditLog_1.RoleAuditLog,
     "SSImportedListRecipientCreateParams": sSImportedListRecipientCreateParams_1.SSImportedListRecipientCreateParams,
     "SSOptInSource": sSOptInSource_1.SSOptInSource,
+    "SSOutboundStatuses": sSOutboundStatuses_1.SSOutboundStatuses,
     "SimpleSMSBroadcast": simpleSMSBroadcast_1.SimpleSMSBroadcast,
     "StaticVoucher": staticVoucher_1.StaticVoucher,
     "StaticVoucherCampaign": staticVoucherCampaign_1.StaticVoucherCampaign,

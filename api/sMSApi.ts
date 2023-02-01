@@ -30,6 +30,7 @@ import { OptInListSubscriber } from '../model/optInListSubscriber';
 import { OutboundSMS } from '../model/outboundSMS';
 import { PhoneNumber } from '../model/phoneNumber';
 import { SSImportedListRecipientCreateParams } from '../model/sSImportedListRecipientCreateParams';
+import { SSOutboundStatuses } from '../model/sSOutboundStatuses';
 import { StaticVoucherCampaignBroadcast } from '../model/staticVoucherCampaignBroadcast';
 import { Tcpa } from '../model/tcpa';
 import { WTCountResult } from '../model/wTCountResult';
@@ -1942,8 +1943,9 @@ export class SMSApi {
      * @param paymentObjectBroadcastID 
      * @param pageSize 
      * @param pageNum 
+     * @param status 
      */
-    public async fetchOutboundSMSByPage (phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2006;  }> {
+    public async fetchOutboundSMSByPage (phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, status?: SSOutboundStatuses, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2006;  }> {
         const localVarPath = this.basePath + '/v2/sms/outbound/page/{phoneNumberID}'
             .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
         let localVarQueryParameters: any = {};
@@ -1976,6 +1978,10 @@ export class SMSApi {
 
         if (pageNum !== undefined) {
             localVarQueryParameters['pageNum'] = ObjectSerializer.serialize(pageNum, "number");
+        }
+
+        if (status !== undefined) {
+            localVarQueryParameters['status'] = ObjectSerializer.serialize(status, "SSOutboundStatuses");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
