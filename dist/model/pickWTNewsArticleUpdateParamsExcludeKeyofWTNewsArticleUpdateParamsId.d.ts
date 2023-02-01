@@ -4,6 +4,7 @@ export declare class PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdat
     'body': string;
     'url': string;
     'mediaURL'?: string;
+    'publishedDate'?: Date;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
