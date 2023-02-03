@@ -148,6 +148,13 @@ export * from './role';
 export * from './roleAuditLog';
 export * from './sSImportedListRecipientCreateParams';
 export * from './sSOptInSource';
+export * from './sSOutboundStatuses';
+export * from './sSOutboundStatusesAnyOf';
+export * from './sSOutboundStatusesAnyOf1';
+export * from './sSOutboundStatusesAnyOf2';
+export * from './sSOutboundStatusesAnyOf3';
+export * from './sSOutboundStatusesAnyOf4';
+export * from './sSOutboundStatusesAnyOf5';
 export * from './simpleSMSBroadcast';
 export * from './staticVoucher';
 export * from './staticVoucherCampaign';
@@ -441,6 +448,13 @@ import { Role } from './role';
 import { RoleAuditLog } from './roleAuditLog';
 import { SSImportedListRecipientCreateParams } from './sSImportedListRecipientCreateParams';
 import { SSOptInSource } from './sSOptInSource';
+import { SSOutboundStatuses } from './sSOutboundStatuses';
+import { SSOutboundStatusesAnyOf } from './sSOutboundStatusesAnyOf';
+import { SSOutboundStatusesAnyOf1 } from './sSOutboundStatusesAnyOf1';
+import { SSOutboundStatusesAnyOf2 } from './sSOutboundStatusesAnyOf2';
+import { SSOutboundStatusesAnyOf3 } from './sSOutboundStatusesAnyOf3';
+import { SSOutboundStatusesAnyOf4 } from './sSOutboundStatusesAnyOf4';
+import { SSOutboundStatusesAnyOf5 } from './sSOutboundStatusesAnyOf5';
 import { SimpleSMSBroadcast } from './simpleSMSBroadcast';
 import { StaticVoucher } from './staticVoucher';
 import { StaticVoucherCampaign } from './staticVoucherCampaign';
@@ -595,6 +609,12 @@ let enumsMap: {[index: string]: any} = {
         "ApplicableTerminalsAnyOf6": ApplicableTerminalsAnyOf6,
         "PaginationRequestWithSortOptions.SortKeyEnum": PaginationRequestWithSortOptions.SortKeyEnum,
         "PortalPage": PortalPage,
+        "SSOutboundStatusesAnyOf": SSOutboundStatusesAnyOf,
+        "SSOutboundStatusesAnyOf1": SSOutboundStatusesAnyOf1,
+        "SSOutboundStatusesAnyOf2": SSOutboundStatusesAnyOf2,
+        "SSOutboundStatusesAnyOf3": SSOutboundStatusesAnyOf3,
+        "SSOutboundStatusesAnyOf4": SSOutboundStatusesAnyOf4,
+        "SSOutboundStatusesAnyOf5": SSOutboundStatusesAnyOf5,
         "StatusAnyOf": StatusAnyOf,
         "StatusAnyOf1": StatusAnyOf1,
         "StatusAnyOf2": StatusAnyOf2,
@@ -743,6 +763,7 @@ let typeMap: {[index: string]: any} = {
     "RoleAuditLog": RoleAuditLog,
     "SSImportedListRecipientCreateParams": SSImportedListRecipientCreateParams,
     "SSOptInSource": SSOptInSource,
+    "SSOutboundStatuses": SSOutboundStatuses,
     "SimpleSMSBroadcast": SimpleSMSBroadcast,
     "StaticVoucher": StaticVoucher,
     "StaticVoucherCampaign": StaticVoucherCampaign,

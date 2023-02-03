@@ -4,6 +4,7 @@ export declare class NewsArticle {
     'body': string;
     'url': string;
     'mediaURL'?: string;
+    'publishedDate'?: Date;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;

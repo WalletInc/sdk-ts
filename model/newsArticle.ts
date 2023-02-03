@@ -18,6 +18,7 @@ export class NewsArticle {
     'body': string;
     'url': string;
     'mediaURL'?: string;
+    'publishedDate'?: Date;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;
@@ -51,6 +52,11 @@ export class NewsArticle {
             "name": "mediaURL",
             "baseName": "mediaURL",
             "type": "string"
+        },
+        {
+            "name": "publishedDate",
+            "baseName": "publishedDate",
+            "type": "Date"
         },
         {
             "name": "id",

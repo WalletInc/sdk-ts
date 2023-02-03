@@ -1,10 +1,4 @@
-export declare class PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId {
-    'title': string;
-    'orderNumber': number;
-    'body': string;
-    'url': string;
-    'mediaURL'?: string;
-    'publishedDate'?: Date;
+export declare class SSOutboundStatuses {
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

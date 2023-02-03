@@ -12,6 +12,7 @@ import { OptInListSubscriber } from '../model/optInListSubscriber';
 import { OutboundSMS } from '../model/outboundSMS';
 import { PhoneNumber } from '../model/phoneNumber';
 import { SSImportedListRecipientCreateParams } from '../model/sSImportedListRecipientCreateParams';
+import { SSOutboundStatuses } from '../model/sSOutboundStatuses';
 import { StaticVoucherCampaignBroadcast } from '../model/staticVoucherCampaignBroadcast';
 import { Tcpa } from '../model/tcpa';
 import { WTCountResult } from '../model/wTCountResult';
@@ -239,7 +240,7 @@ export declare class SMSApi {
         response: http.IncomingMessage;
         body: Array<OutboundSMS>;
     }>;
-    fetchOutboundSMSByPage(phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, options?: {
+    fetchOutboundSMSByPage(phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, status?: SSOutboundStatuses, options?: {
         headers: {
             [name: string]: string;
         };

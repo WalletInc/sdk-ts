@@ -33,6 +33,11 @@ PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.attributeTy
         "name": "mediaURL",
         "baseName": "mediaURL",
         "type": "string"
+    },
+    {
+        "name": "publishedDate",
+        "baseName": "publishedDate",
+        "type": "Date"
     }
 ];
 //# sourceMappingURL=pickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.js.map

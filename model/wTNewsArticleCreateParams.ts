@@ -18,6 +18,7 @@ export class WTNewsArticleCreateParams {
     'body': string;
     'url': string;
     'mediaURL'?: string;
+    'publishedDate'?: Date;
 
     static discriminator: string | undefined = undefined;
 
@@ -46,6 +47,11 @@ export class WTNewsArticleCreateParams {
             "name": "mediaURL",
             "baseName": "mediaURL",
             "type": "string"
+        },
+        {
+            "name": "publishedDate",
+            "baseName": "publishedDate",
+            "type": "Date"
         }    ];
 
     static getAttributeTypeMap() {
