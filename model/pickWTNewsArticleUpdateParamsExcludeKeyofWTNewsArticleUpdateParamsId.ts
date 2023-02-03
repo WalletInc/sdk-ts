@@ -21,6 +21,7 @@ export class PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsI
     'body': string;
     'url': string;
     'mediaURL'?: string;
+    'publishedDate'?: Date;
 
     static discriminator: string | undefined = undefined;
 
@@ -49,6 +50,11 @@ export class PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsI
             "name": "mediaURL",
             "baseName": "mediaURL",
             "type": "string"
+        },
+        {
+            "name": "publishedDate",
+            "baseName": "publishedDate",
+            "type": "Date"
         }    ];
 
     static getAttributeTypeMap() {

@@ -193,6 +193,13 @@ model/role.ts
 model/roleAuditLog.ts
 model/sSImportedListRecipientCreateParams.ts
 model/sSOptInSource.ts
+model/sSOutboundStatuses.ts
+model/sSOutboundStatusesAnyOf.ts
+model/sSOutboundStatusesAnyOf1.ts
+model/sSOutboundStatusesAnyOf2.ts
+model/sSOutboundStatusesAnyOf3.ts
+model/sSOutboundStatusesAnyOf4.ts
+model/sSOutboundStatusesAnyOf5.ts
 model/simpleSMSBroadcast.ts
 model/staticVoucher.ts
 model/staticVoucherCampaign.ts

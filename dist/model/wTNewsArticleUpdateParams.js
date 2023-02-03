@@ -33,6 +33,11 @@ WTNewsArticleUpdateParams.attributeTypeMap = [
         "name": "mediaURL",
         "baseName": "mediaURL",
         "type": "string"
+    },
+    {
+        "name": "publishedDate",
+        "baseName": "publishedDate",
+        "type": "Date"
     }
 ];
 //# sourceMappingURL=wTNewsArticleUpdateParams.js.map

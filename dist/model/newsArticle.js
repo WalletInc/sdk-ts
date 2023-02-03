@@ -35,6 +35,11 @@ NewsArticle.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "publishedDate",
+        "baseName": "publishedDate",
+        "type": "Date"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"

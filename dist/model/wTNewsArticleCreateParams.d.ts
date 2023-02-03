@@ -4,6 +4,7 @@ export declare class WTNewsArticleCreateParams {
     'body': string;
     'url': string;
     'mediaURL'?: string;
+    'publishedDate'?: Date;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

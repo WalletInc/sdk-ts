@@ -1629,7 +1629,7 @@ class SMSApi {
             });
         });
     }
-    fetchOutboundSMSByPage(phoneNumberID, toPhoneNumber, paymentObjectBroadcastID, pageSize, pageNum, options = { headers: {} }) {
+    fetchOutboundSMSByPage(phoneNumberID, toPhoneNumber, paymentObjectBroadcastID, pageSize, pageNum, status, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/sms/outbound/page/{phoneNumberID}'
                 .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
@@ -1657,6 +1657,9 @@ class SMSApi {
             }
             if (pageNum !== undefined) {
                 localVarQueryParameters['pageNum'] = models_1.ObjectSerializer.serialize(pageNum, "number");
+            }
+            if (status !== undefined) {
+                localVarQueryParameters['status'] = models_1.ObjectSerializer.serialize(status, "SSOutboundStatuses");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
