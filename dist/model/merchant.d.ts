@@ -12,6 +12,7 @@ export declare class Merchant {
     'createdAt': Date;
     'updatedAt': Date;
     'industry': string;
+    'industryName': string;
     'infoGenesisPropertyID': string;
     'isFrozen': boolean;
     'billingContactEmployeeID': string;

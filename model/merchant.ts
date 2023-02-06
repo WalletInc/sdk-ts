@@ -26,6 +26,7 @@ export class Merchant {
     'createdAt': Date;
     'updatedAt': Date;
     'industry': string;
+    'industryName': string;
     'infoGenesisPropertyID': string;
     'isFrozen': boolean;
     'billingContactEmployeeID': string;
@@ -100,6 +101,11 @@ export class Merchant {
         {
             "name": "industry",
             "baseName": "industry",
+            "type": "string"
+        },
+        {
+            "name": "industryName",
+            "baseName": "industryName",
             "type": "string"
         },
         {
