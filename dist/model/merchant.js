@@ -75,6 +75,11 @@ Merchant.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "industryName",
+        "baseName": "industryName",
+        "type": "string"
+    },
+    {
         "name": "infoGenesisPropertyID",
         "baseName": "infoGenesisPropertyID",
         "type": "string"
