@@ -52,6 +52,7 @@ export class WalletConfiguration {
     'publicChatRoomChannelID'?: number;
     'vanityHandle'?: string;
     'vanityPageWalletPrefix'?: string;
+    'merchantCreditPaymentDesignID'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;
@@ -253,6 +254,11 @@ export class WalletConfiguration {
         {
             "name": "vanityPageWalletPrefix",
             "baseName": "vanityPageWalletPrefix",
+            "type": "string"
+        },
+        {
+            "name": "merchantCreditPaymentDesignID",
+            "baseName": "merchantCreditPaymentDesignID",
             "type": "string"
         },
         {

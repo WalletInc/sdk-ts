@@ -205,6 +205,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "merchantCreditPaymentDesignID",
+        "baseName": "merchantCreditPaymentDesignID",
+        "type": "string"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"
