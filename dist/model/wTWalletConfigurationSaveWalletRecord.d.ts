@@ -38,6 +38,7 @@ export declare class WTWalletConfigurationSaveWalletRecord {
     'publicChatRoomChannelID'?: number;
     'vanityHandle'?: string;
     'vanityPageWalletPrefix'?: string;
+    'merchantCreditPaymentDesignID'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -38,6 +38,7 @@ export declare class WalletConfiguration {
     'publicChatRoomChannelID'?: number;
     'vanityHandle'?: string;
     'vanityPageWalletPrefix'?: string;
+    'merchantCreditPaymentDesignID'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;
