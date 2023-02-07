@@ -203,6 +203,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "name": "vanityPageWalletPrefix",
         "baseName": "vanityPageWalletPrefix",
         "type": "string"
+    },
+    {
+        "name": "merchantCreditPaymentDesignID",
+        "baseName": "merchantCreditPaymentDesignID",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTWalletConfigurationSaveWalletRecord.js.map

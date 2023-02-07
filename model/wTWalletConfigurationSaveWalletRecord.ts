@@ -52,6 +52,7 @@ export class WTWalletConfigurationSaveWalletRecord {
     'publicChatRoomChannelID'?: number;
     'vanityHandle'?: string;
     'vanityPageWalletPrefix'?: string;
+    'merchantCreditPaymentDesignID'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -249,6 +250,11 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "vanityPageWalletPrefix",
             "baseName": "vanityPageWalletPrefix",
+            "type": "string"
+        },
+        {
+            "name": "merchantCreditPaymentDesignID",
+            "baseName": "merchantCreditPaymentDesignID",
             "type": "string"
         }    ];
 
