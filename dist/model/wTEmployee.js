@@ -98,6 +98,11 @@ WTEmployee.attributeTypeMap = [
         "name": "failedLoginAttempts",
         "baseName": "failedLoginAttempts",
         "type": "number"
+    },
+    {
+        "name": "lastLoginDate",
+        "baseName": "lastLoginDate",
+        "type": "Date"
     }
 ];
 //# sourceMappingURL=wTEmployee.js.map

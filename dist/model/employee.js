@@ -98,6 +98,11 @@ Employee.attributeTypeMap = [
         "name": "failedLoginAttempts",
         "baseName": "failedLoginAttempts",
         "type": "number"
+    },
+    {
+        "name": "lastLoginDate",
+        "baseName": "lastLoginDate",
+        "type": "Date"
     }
 ];
 //# sourceMappingURL=employee.js.map
