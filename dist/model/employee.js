@@ -93,6 +93,11 @@ Employee.attributeTypeMap = [
         "name": "sessionToken",
         "baseName": "sessionToken",
         "type": "string"
+    },
+    {
+        "name": "failedLoginAttempts",
+        "baseName": "failedLoginAttempts",
+        "type": "number"
     }
 ];
 //# sourceMappingURL=employee.js.map

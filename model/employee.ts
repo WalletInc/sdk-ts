@@ -30,6 +30,7 @@ export class Employee {
     'profilePictureURL': string;
     'merchantID': string;
     'sessionToken': string;
+    'failedLoginAttempts'?: number;
 
     static discriminator: string | undefined = undefined;
 
@@ -118,6 +119,11 @@ export class Employee {
             "name": "sessionToken",
             "baseName": "sessionToken",
             "type": "string"
+        },
+        {
+            "name": "failedLoginAttempts",
+            "baseName": "failedLoginAttempts",
+            "type": "number"
         }    ];
 
     static getAttributeTypeMap() {
