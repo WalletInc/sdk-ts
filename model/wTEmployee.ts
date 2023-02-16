@@ -30,6 +30,8 @@ export class WTEmployee {
     'profilePictureURL': string;
     'merchantID': string;
     'sessionToken': string;
+    'failedLoginAttempts'?: number;
+    'lastLoginDate'?: Date;
 
     static discriminator: string | undefined = undefined;
 
@@ -118,6 +120,16 @@ export class WTEmployee {
             "name": "sessionToken",
             "baseName": "sessionToken",
             "type": "string"
+        },
+        {
+            "name": "failedLoginAttempts",
+            "baseName": "failedLoginAttempts",
+            "type": "number"
+        },
+        {
+            "name": "lastLoginDate",
+            "baseName": "lastLoginDate",
+            "type": "Date"
         }    ];
 
     static getAttributeTypeMap() {
