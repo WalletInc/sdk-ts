@@ -16,6 +16,8 @@ export declare class Employee {
     'profilePictureURL': string;
     'merchantID': string;
     'sessionToken': string;
+    'failedLoginAttempts'?: number;
+    'lastLoginDate'?: Date;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
