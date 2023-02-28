@@ -52,7 +52,7 @@ ClickFunnelPurchase.attributeTypeMap = [
     {
         "name": "subscriptionId",
         "baseName": "subscription_id",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "chargeId",

@@ -10,7 +10,7 @@ export declare class ClickFunnelPurchase {
     'stripeCustomerToken': string;
     'createdAt': Date;
     'updatedAt': Date;
-    'subscriptionId'?: string;
+    'subscriptionId'?: any | null;
     'chargeId'?: any | null;
     'ctransreceipt'?: any | null;
     'status': string;
