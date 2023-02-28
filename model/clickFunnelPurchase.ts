@@ -24,7 +24,7 @@ export class ClickFunnelPurchase {
     'stripeCustomerToken': string;
     'createdAt': Date;
     'updatedAt': Date;
-    'subscriptionId'?: string;
+    'subscriptionId'?: any | null;
     'chargeId'?: any | null;
     'ctransreceipt'?: any | null;
     'status': string;
@@ -88,7 +88,7 @@ export class ClickFunnelPurchase {
         {
             "name": "subscriptionId",
             "baseName": "subscription_id",
-            "type": "string"
+            "type": "any"
         },
         {
             "name": "chargeId",
