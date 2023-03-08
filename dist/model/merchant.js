@@ -113,6 +113,11 @@ Merchant.attributeTypeMap = [
         "name": "maxSMSCount",
         "baseName": "maxSMSCount",
         "type": "number"
+    },
+    {
+        "name": "isSmsAgreement",
+        "baseName": "isSmsAgreement",
+        "type": "boolean"
     }
 ];
 //# sourceMappingURL=merchant.js.map

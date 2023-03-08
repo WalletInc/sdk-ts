@@ -34,6 +34,7 @@ export class Merchant {
     'isPaymentMethodProvided': boolean;
     'planNickname': string;
     'maxSMSCount': number;
+    'isSmsAgreement'?: boolean;
 
     static discriminator: string | undefined = undefined;
 
@@ -142,6 +143,11 @@ export class Merchant {
             "name": "maxSMSCount",
             "baseName": "maxSMSCount",
             "type": "number"
+        },
+        {
+            "name": "isSmsAgreement",
+            "baseName": "isSmsAgreement",
+            "type": "boolean"
         }    ];
 
     static getAttributeTypeMap() {

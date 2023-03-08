@@ -20,6 +20,7 @@ export declare class Merchant {
     'isPaymentMethodProvided': boolean;
     'planNickname': string;
     'maxSMSCount': number;
+    'isSmsAgreement'?: boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
