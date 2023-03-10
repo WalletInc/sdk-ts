@@ -153,7 +153,7 @@ export declare class DashboardApi {
         response: http.IncomingMessage;
         body: WTCountResult;
     }>;
-    fetchDashboardWalletPageViewsCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchDashboardWalletPageViewsCount(startDateTime: Date, endDateTime: Date, walletObjectPrefix?: string, options?: {
         headers: {
             [name: string]: string;
         };
