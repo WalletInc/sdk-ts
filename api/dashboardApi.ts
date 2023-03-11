@@ -1410,8 +1410,9 @@ export class DashboardApi {
      * @summary Count Wallet page views
      * @param startDateTime 
      * @param endDateTime 
+     * @param walletObjectPrefix 
      */
-    public async fetchDashboardWalletPageViewsCount (startDateTime: Date, endDateTime: Date, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTCountResult;  }> {
+    public async fetchDashboardWalletPageViewsCount (startDateTime: Date, endDateTime: Date, walletObjectPrefix?: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTCountResult;  }> {
         const localVarPath = this.basePath + '/v2/dashboard/count/wallet/pageViews';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1440,6 +1441,10 @@ export class DashboardApi {
 
         if (endDateTime !== undefined) {
             localVarQueryParameters['endDateTime'] = ObjectSerializer.serialize(endDateTime, "Date");
+        }
+
+        if (walletObjectPrefix !== undefined) {
+            localVarQueryParameters['walletObjectPrefix'] = ObjectSerializer.serialize(walletObjectPrefix, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
