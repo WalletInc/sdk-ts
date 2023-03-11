@@ -1171,7 +1171,7 @@ class DashboardApi {
             });
         });
     }
-    fetchDashboardWalletPageViewsCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchDashboardWalletPageViewsCount(startDateTime, endDateTime, walletObjectPrefix, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/dashboard/count/wallet/pageViews';
             let localVarQueryParameters = {};
@@ -1195,6 +1195,9 @@ class DashboardApi {
             }
             if (endDateTime !== undefined) {
                 localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            }
+            if (walletObjectPrefix !== undefined) {
+                localVarQueryParameters['walletObjectPrefix'] = models_1.ObjectSerializer.serialize(walletObjectPrefix, "string");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
