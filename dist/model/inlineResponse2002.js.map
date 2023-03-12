@@ -1,1 +1,0 @@
-{"version":3,"file":"inlineResponse2002.js","sourceRoot":"","sources":["../../model/inlineResponse2002.ts"],"names":[],"mappings":";;;AAcA,MAAa,kBAAkB;IAY3B,MAAM,CAAC,mBAAmB;QACtB,OAAO,kBAAkB,CAAC,gBAAgB,CAAC;IAC/C,CAAC;;AAdL,gDAeC;AAZU,gCAAa,GAAuB,SAAS,CAAC;AAE9C,mCAAgB,GAA0D;IAC7E;QACI,MAAM,EAAE,OAAO;QACf,UAAU,EAAE,OAAO;QACnB,MAAM,EAAE,QAAQ;KACnB;CAAK,CAAC"}
