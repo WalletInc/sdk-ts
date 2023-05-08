@@ -1,0 +1,1 @@
+{"version":3,"file":"inlineObject.js","sourceRoot":"","sources":["../../model/inlineObject.ts"],"names":[],"mappings":";;;AAcA,MAAa,YAAY;IAYrB,MAAM,CAAC,mBAAmB;QACtB,OAAO,YAAY,CAAC,gBAAgB,CAAC;IACzC,CAAC;;AAXM,0BAAa,GAAuB,SAAS,CAAC;AAE9C,6BAAgB,GAA0D;IAC7E;QACI,MAAM,EAAE,6BAA6B;QACrC,UAAU,EAAE,6BAA6B;QACzC,MAAM,EAAE,SAAS;KACpB;CAAK,CAAC;AAVF,oCAAY"}
