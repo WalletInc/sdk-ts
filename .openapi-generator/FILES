@@ -19,8 +19,6 @@ api/industriesApi.ts
 api/infoGenesisReportsApi.ts
 api/integratedTerminalsApi.ts
 api/interactionsApi.ts
-api/linkBookApi.ts
-api/linkBookSectionApi.ts
 api/loginAndLogoutApi.ts
 api/membershipTiersApi.ts
 api/merchantApi.ts
@@ -30,7 +28,9 @@ api/mobileTerminalApi.ts
 api/newsApi.ts
 api/paymentDesignsApi.ts
 api/performancesApi.ts
-api/promoCodesApi.ts
+api/promotionCodesApi.ts
+api/quickLinksApi.ts
+api/quickLinksSectionApi.ts
 api/sMSApi.ts
 api/settingsApi.ts
 api/shopifyTerminalApi.ts
@@ -40,6 +40,7 @@ api/staticVouchersApi.ts
 api/systemApi.ts
 api/transactionLedgerApi.ts
 api/utilitiesApi.ts
+api/virtualBusinessCardApi.ts
 api/webTerminalApi.ts
 api/wixTerminalApi.ts
 api/wooCommerceTerminalApi.ts
@@ -48,7 +49,6 @@ model/advertisementCredit.ts
 model/advertisementCreditBroadcast.ts
 model/advertisementCreditScan.ts
 model/agreement.ts
-model/alert.ts
 model/announcement.ts
 model/applicableTerminals.ts
 model/applicableTerminalsAnyOf.ts
@@ -79,6 +79,7 @@ model/dynamicVoucherBroadcast.ts
 model/employee.ts
 model/employeeAPIKey.ts
 model/employeeActivityLog.ts
+model/employeeAlert.ts
 model/entityTooLarge.ts
 model/exportDataFile.ts
 model/falsumError.ts
@@ -91,6 +92,8 @@ model/imageGrid.ts
 model/importedList.ts
 model/importedListRecipient.ts
 model/inboundSMS.ts
+model/inlineObject.ts
+model/inlineObject1.ts
 model/inlineResponse200.ts
 model/inlineResponse2001.ts
 model/inlineResponse20010.ts
@@ -160,7 +163,7 @@ model/pickSSImportedListRecipientFromMembershipTierImportExcludeKeyofSSImportedL
 model/pickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.ts
 model/pickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.ts
 model/pickSSOptInListCreateParamsExcludeKeyofSSOptInListCreateParamsEmployeeIDOrOptInConfirmedMediaURLsOrOptOutConfirmedMediaURLs.ts
-model/pickSSOptInListMemberCreateParamsExcludeKeyofSSOptInListMemberCreateParamsMerchantCreatedAtOrMaxSMSCount.ts
+model/pickSSOptInListMemberUpdateParamsExcludeKeyofSSOptInListMemberUpdateParamsMerchantCreatedAtOrMaxSMSCount.ts
 model/pickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.ts
 model/pickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId.ts
 model/pickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.ts
@@ -219,6 +222,7 @@ model/updateStaticVoucherCampaignWithVoucher.ts
 model/vSCampaignGeneratedMessage.ts
 model/vSCampaignGeneratedMessagePagination.ts
 model/vSDynamicVoucherStatus.ts
+model/virtualBusinessCard.ts
 model/wTAdvertisementCredit.ts
 model/wTAdvertisementCreditCreateParams.ts
 model/wTAdvertisementCreditScan.ts
@@ -247,7 +251,6 @@ model/wTEmployeeAPIKey.ts
 model/wTEmployeeAPIKeyCreateParams.ts
 model/wTEmployeeAPIKeyUpdateParams.ts
 model/wTEmployeeCreate.ts
-model/wTEmployeeCreateAlert.ts
 model/wTEmployeeCreateDocument.ts
 model/wTEmployeeCreateMediaFile.ts
 model/wTEmployeeCreateStaticVoucherCampaignGroup.ts
@@ -287,8 +290,8 @@ model/wTMerchantCreditCreationParams.ts
 model/wTMerchantURLCreate.ts
 model/wTMerchantURLUpdate.ts
 model/wTMerchantUpdate.ts
-model/wTMerchantUpdateBillingContact.ts
 model/wTMerchantUpdatePOSIntegration.ts
+model/wTMerchantUpdatePointsOfContact.ts
 model/wTNewsArticleCreateParams.ts
 model/wTNewsArticleUpdateParams.ts
 model/wTOptInList.ts
@@ -322,6 +325,8 @@ model/wTSystemRoleCreate.ts
 model/wTTCPAOpt.ts
 model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
+model/wTVirtualBusinessCardCreateParams.ts
+model/wTVirtualBusinessCardUpdateParams.ts
 model/wTWalletConfigurationSaveWalletRecord.ts
 model/wTWalletItemRedemption.ts
 model/wTWalletObjectPrefixCounts.ts
