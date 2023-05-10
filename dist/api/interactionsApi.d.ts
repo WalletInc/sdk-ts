@@ -55,6 +55,14 @@ export declare class InteractionsApi {
         response: http.IncomingMessage;
         body: any;
     }>;
+    createVirtualBusinessCardVCard(id: any, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: string;
+    }>;
     fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID(voucherID: any, options?: {
         headers: {
             [name: string]: string;
