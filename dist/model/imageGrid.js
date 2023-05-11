@@ -29,6 +29,11 @@ ImageGrid.attributeTypeMap = [
         "type": "number"
     },
     {
+        "name": "isPinned",
+        "baseName": "isPinned",
+        "type": "boolean"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"

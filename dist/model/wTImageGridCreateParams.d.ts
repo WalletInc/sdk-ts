@@ -3,6 +3,7 @@ export declare class WTImageGridCreateParams {
     'url': string;
     'mediaURL': string;
     'sequenceNumber': number;
+    'isPinned'?: boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

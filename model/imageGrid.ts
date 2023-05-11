@@ -17,6 +17,7 @@ export class ImageGrid {
     'url': string;
     'mediaURL': string;
     'sequenceNumber': number;
+    'isPinned'?: boolean;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;
@@ -45,6 +46,11 @@ export class ImageGrid {
             "name": "sequenceNumber",
             "baseName": "sequenceNumber",
             "type": "number"
+        },
+        {
+            "name": "isPinned",
+            "baseName": "isPinned",
+            "type": "boolean"
         },
         {
             "name": "id",

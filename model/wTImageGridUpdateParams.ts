@@ -17,6 +17,7 @@ export class WTImageGridUpdateParams {
     'url': string;
     'mediaURL': string;
     'sequenceNumber': number;
+    'isPinned'?: boolean;
 
     static discriminator: string | undefined = undefined;
 
@@ -40,6 +41,11 @@ export class WTImageGridUpdateParams {
             "name": "sequenceNumber",
             "baseName": "sequenceNumber",
             "type": "number"
+        },
+        {
+            "name": "isPinned",
+            "baseName": "isPinned",
+            "type": "boolean"
         }    ];
 
     static getAttributeTypeMap() {

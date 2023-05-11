@@ -27,6 +27,11 @@ WTImageGridCreateParams.attributeTypeMap = [
         "name": "sequenceNumber",
         "baseName": "sequenceNumber",
         "type": "number"
+    },
+    {
+        "name": "isPinned",
+        "baseName": "isPinned",
+        "type": "boolean"
     }
 ];
 exports.WTImageGridCreateParams = WTImageGridCreateParams;

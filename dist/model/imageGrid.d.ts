@@ -3,6 +3,7 @@ export declare class ImageGrid {
     'url': string;
     'mediaURL': string;
     'sequenceNumber': number;
+    'isPinned'?: boolean;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;
