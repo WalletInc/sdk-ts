@@ -29,6 +29,7 @@ api/newsApi.ts
 api/paymentDesignsApi.ts
 api/performancesApi.ts
 api/promotionCodesApi.ts
+api/qRCodeDesignsApi.ts
 api/quickLinksApi.ts
 api/quickLinksSectionApi.ts
 api/sMSApi.ts
@@ -189,6 +190,7 @@ model/presignedPost.ts
 model/presignedPostFields.ts
 model/product.ts
 model/promoCode.ts
+model/qRCodeDesign.ts
 model/reachPerformanceStats.ts
 model/request.ts
 model/response.ts
@@ -306,6 +308,9 @@ model/wTPosMachineCreateParams.ts
 model/wTPosMachineUpdateParams.ts
 model/wTPromoCodeCreateParams.ts
 model/wTPromoCodeUpdateParams.ts
+model/wTQRCodeDesign.ts
+model/wTQRCodeDesignCreateParams.ts
+model/wTQRCodeDesignUpdateParams.ts
 model/wTRole.ts
 model/wTSMSAcquirePhoneNumber.ts
 model/wTSMSCreateAgreement.ts
