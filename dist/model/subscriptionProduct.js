@@ -52,6 +52,11 @@ SubscriptionProduct.attributeTypeMap = [
         "name": "isHourly",
         "baseName": "isHourly",
         "type": "boolean"
+    },
+    {
+        "name": "releaseStatus",
+        "baseName": "releaseStatus",
+        "type": "string"
     }
 ];
 exports.SubscriptionProduct = SubscriptionProduct;
