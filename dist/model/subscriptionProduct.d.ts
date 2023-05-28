@@ -10,6 +10,7 @@ export declare class SubscriptionProduct {
     'iconName': string;
     'description': string;
     'isHourly'?: boolean;
+    'releaseStatus'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
