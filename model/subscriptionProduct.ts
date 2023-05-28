@@ -24,6 +24,7 @@ export class SubscriptionProduct {
     'iconName': string;
     'description': string;
     'isHourly'?: boolean;
+    'releaseStatus'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -72,6 +73,11 @@ export class SubscriptionProduct {
             "name": "isHourly",
             "baseName": "isHourly",
             "type": "boolean"
+        },
+        {
+            "name": "releaseStatus",
+            "baseName": "releaseStatus",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
