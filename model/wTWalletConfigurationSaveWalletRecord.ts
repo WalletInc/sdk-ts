@@ -47,6 +47,9 @@ export class WTWalletConfigurationSaveWalletRecord {
     'isProfile': boolean;
     'isSettings': boolean;
     'isChatRoom': boolean;
+    'isSmsOptIn': boolean;
+    'smsOptInSourceID'?: string;
+    'isEmailSubscriber': boolean;
     'googleAnalyticsID'?: string;
     'facebookPixelID'?: string;
     'publicChatRoomChannelID'?: number;
@@ -225,6 +228,21 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "isChatRoom",
             "baseName": "isChatRoom",
+            "type": "boolean"
+        },
+        {
+            "name": "isSmsOptIn",
+            "baseName": "isSmsOptIn",
+            "type": "boolean"
+        },
+        {
+            "name": "smsOptInSourceID",
+            "baseName": "smsOptInSourceID",
+            "type": "string"
+        },
+        {
+            "name": "isEmailSubscriber",
+            "baseName": "isEmailSubscriber",
             "type": "boolean"
         },
         {

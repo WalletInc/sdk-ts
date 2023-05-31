@@ -26,6 +26,7 @@ var PortalPage;
     PortalPage[PortalPage["CommunicationsSmsSources"] = 'communications-sms-sources'] = "CommunicationsSmsSources";
     PortalPage[PortalPage["CommunicationsSmsSubscribers"] = 'communications-sms-subscribers'] = "CommunicationsSmsSubscribers";
     PortalPage[PortalPage["CommunicationsSmsVoucherCampaigns"] = 'communications-sms-voucher-campaigns'] = "CommunicationsSmsVoucherCampaigns";
+    PortalPage[PortalPage["EmailSubscribers"] = 'email-subscribers'] = "EmailSubscribers";
     PortalPage[PortalPage["MembershipsClubMembers"] = 'memberships-club-members'] = "MembershipsClubMembers";
     PortalPage[PortalPage["MembershipsTiers"] = 'memberships-tiers'] = "MembershipsTiers";
     PortalPage[PortalPage["MerchantProfile"] = 'merchant-profile'] = "MerchantProfile";

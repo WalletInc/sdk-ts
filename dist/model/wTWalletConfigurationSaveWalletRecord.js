@@ -179,6 +179,21 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "isSmsOptIn",
+        "baseName": "isSmsOptIn",
+        "type": "boolean"
+    },
+    {
+        "name": "smsOptInSourceID",
+        "baseName": "smsOptInSourceID",
+        "type": "string"
+    },
+    {
+        "name": "isEmailSubscriber",
+        "baseName": "isEmailSubscriber",
+        "type": "boolean"
+    },
+    {
         "name": "googleAnalyticsID",
         "baseName": "googleAnalyticsID",
         "type": "string"

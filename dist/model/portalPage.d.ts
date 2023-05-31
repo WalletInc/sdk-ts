@@ -22,6 +22,7 @@ export declare enum PortalPage {
     CommunicationsSmsSources,
     CommunicationsSmsSubscribers,
     CommunicationsSmsVoucherCampaigns,
+    EmailSubscribers,
     MembershipsClubMembers,
     MembershipsTiers,
     MerchantProfile,
