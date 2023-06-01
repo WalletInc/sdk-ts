@@ -18,11 +18,13 @@ import http from 'http';
 import { AdvertisementCreditScan } from '../model/advertisementCreditScan';
 import { BrowserDetails } from '../model/browserDetails';
 import { DynamicVoucher } from '../model/dynamicVoucher';
+import { EmailSubscriber } from '../model/emailSubscriber';
 import { FalsumError } from '../model/falsumError';
 import { InlineResponse2009 } from '../model/inlineResponse2009';
 import { InternalServerError } from '../model/internalServerError';
 import { Member } from '../model/member';
 import { StaticVoucher } from '../model/staticVoucher';
+import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
 import { WTFetchWalletPaymentObjectWithToken } from '../model/wTFetchWalletPaymentObjectWithToken';
 import { WalletConfiguration } from '../model/walletConfiguration';
 
@@ -1019,6 +1021,75 @@ export class InteractionsApi {
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                             body = ObjectSerializer.deserialize(body, "any");
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * 
+     * @summary Create email subscriber
+     * @param wTEmailSubscriberCreateParamsWalletUI 
+     */
+    public async subscribeEmail (wTEmailSubscriberCreateParamsWalletUI: WTEmailSubscriberCreateParamsWalletUI, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EmailSubscriber;  }> {
+        const localVarPath = this.basePath + '/wallet/subscribeEmail';
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'wTEmailSubscriberCreateParamsWalletUI' is not null or undefined
+        if (wTEmailSubscriberCreateParamsWalletUI === null || wTEmailSubscriberCreateParamsWalletUI === undefined) {
+            throw new Error('Required parameter wTEmailSubscriberCreateParamsWalletUI was null or undefined when calling subscribeEmail.');
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'POST',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+            body: ObjectSerializer.serialize(wTEmailSubscriberCreateParamsWalletUI, "WTEmailSubscriberCreateParamsWalletUI")
+        };
+
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: EmailSubscriber;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            body = ObjectSerializer.deserialize(body, "EmailSubscriber");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

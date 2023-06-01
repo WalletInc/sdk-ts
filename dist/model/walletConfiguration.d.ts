@@ -33,6 +33,9 @@ export declare class WalletConfiguration {
     'isProfile': boolean;
     'isSettings': boolean;
     'isChatRoom': boolean;
+    'isSmsOptIn': boolean;
+    'smsOptInSourceID'?: string;
+    'isEmailSubscriber': boolean;
     'googleAnalyticsID'?: string;
     'facebookPixelID'?: string;
     'publicChatRoomChannelID'?: number;

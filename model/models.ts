@@ -31,6 +31,7 @@ export * from './document';
 export * from './duplicateRowFound';
 export * from './dynamicVoucher';
 export * from './dynamicVoucherBroadcast';
+export * from './emailSubscriber';
 export * from './employee';
 export * from './employeeAPIKey';
 export * from './employeeActivityLog';
@@ -129,6 +130,7 @@ export * from './pickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreas
 export * from './pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID';
 export * from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId';
 export * from './pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt';
+export * from './pickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId';
 export * from './pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail';
 export * from './pickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber';
 export * from './pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber';
@@ -201,6 +203,9 @@ export * from './wTDynamicVoucherCreateParams';
 export * from './wTDynamicVoucherRedemption';
 export * from './wTDynamicVoucherSummary';
 export * from './wTDynamicVoucherUpdateParams';
+export * from './wTEmailSubscriberCreateParams';
+export * from './wTEmailSubscriberCreateParamsWalletUI';
+export * from './wTEmailSubscriberUpdateParams';
 export * from './wTEmployee';
 export * from './wTEmployeeAPIKey';
 export * from './wTEmployeeAPIKeyCreateParams';
@@ -339,6 +344,7 @@ import { Document } from './document';
 import { DuplicateRowFound } from './duplicateRowFound';
 import { DynamicVoucher } from './dynamicVoucher';
 import { DynamicVoucherBroadcast } from './dynamicVoucherBroadcast';
+import { EmailSubscriber } from './emailSubscriber';
 import { Employee } from './employee';
 import { EmployeeAPIKey } from './employeeAPIKey';
 import { EmployeeActivityLog } from './employeeActivityLog';
@@ -437,6 +443,7 @@ import { PickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequen
 import { PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID } from './pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID';
 import { PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId } from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId';
 import { PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt } from './pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt';
+import { PickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId } from './pickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId';
 import { PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail } from './pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail';
 import { PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber } from './pickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber';
 import { PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber } from './pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber';
@@ -509,6 +516,9 @@ import { WTDynamicVoucherCreateParams } from './wTDynamicVoucherCreateParams';
 import { WTDynamicVoucherRedemption } from './wTDynamicVoucherRedemption';
 import { WTDynamicVoucherSummary } from './wTDynamicVoucherSummary';
 import { WTDynamicVoucherUpdateParams } from './wTDynamicVoucherUpdateParams';
+import { WTEmailSubscriberCreateParams } from './wTEmailSubscriberCreateParams';
+import { WTEmailSubscriberCreateParamsWalletUI } from './wTEmailSubscriberCreateParamsWalletUI';
+import { WTEmailSubscriberUpdateParams } from './wTEmailSubscriberUpdateParams';
 import { WTEmployee } from './wTEmployee';
 import { WTEmployeeAPIKey } from './wTEmployeeAPIKey';
 import { WTEmployeeAPIKeyCreateParams } from './wTEmployeeAPIKeyCreateParams';
@@ -663,6 +673,7 @@ let typeMap: {[index: string]: any} = {
     "DuplicateRowFound": DuplicateRowFound,
     "DynamicVoucher": DynamicVoucher,
     "DynamicVoucherBroadcast": DynamicVoucherBroadcast,
+    "EmailSubscriber": EmailSubscriber,
     "Employee": Employee,
     "EmployeeAPIKey": EmployeeAPIKey,
     "EmployeeActivityLog": EmployeeActivityLog,
@@ -761,6 +772,7 @@ let typeMap: {[index: string]: any} = {
     "PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID": PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID,
     "PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId": PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId,
     "PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt": PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt,
+    "PickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId": PickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId,
     "PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail": PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail,
     "PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber": PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber,
     "PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber": PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber,
@@ -822,6 +834,9 @@ let typeMap: {[index: string]: any} = {
     "WTDynamicVoucherRedemption": WTDynamicVoucherRedemption,
     "WTDynamicVoucherSummary": WTDynamicVoucherSummary,
     "WTDynamicVoucherUpdateParams": WTDynamicVoucherUpdateParams,
+    "WTEmailSubscriberCreateParams": WTEmailSubscriberCreateParams,
+    "WTEmailSubscriberCreateParamsWalletUI": WTEmailSubscriberCreateParamsWalletUI,
+    "WTEmailSubscriberUpdateParams": WTEmailSubscriberUpdateParams,
     "WTEmployee": WTEmployee,
     "WTEmployeeAPIKey": WTEmployeeAPIKey,
     "WTEmployeeAPIKeyCreateParams": WTEmployeeAPIKeyCreateParams,

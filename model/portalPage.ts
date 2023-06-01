@@ -36,6 +36,7 @@ export enum PortalPage {
     CommunicationsSmsSources = <any> 'communications-sms-sources',
     CommunicationsSmsSubscribers = <any> 'communications-sms-subscribers',
     CommunicationsSmsVoucherCampaigns = <any> 'communications-sms-voucher-campaigns',
+    EmailSubscribers = <any> 'email-subscribers',
     MembershipsClubMembers = <any> 'memberships-club-members',
     MembershipsTiers = <any> 'memberships-tiers',
     MerchantProfile = <any> 'merchant-profile',

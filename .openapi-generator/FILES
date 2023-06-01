@@ -11,6 +11,7 @@ api/countriesApi.ts
 api/customerApi.ts
 api/dashboardApi.ts
 api/dynamicVouchersApi.ts
+api/emailSubscriberApi.ts
 api/employeeAPIKeysApi.ts
 api/employeeAccessApi.ts
 api/employeesApi.ts
@@ -77,6 +78,7 @@ model/document.ts
 model/duplicateRowFound.ts
 model/dynamicVoucher.ts
 model/dynamicVoucherBroadcast.ts
+model/emailSubscriber.ts
 model/employee.ts
 model/employeeAPIKey.ts
 model/employeeActivityLog.ts
@@ -176,6 +178,7 @@ model/pickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequencyT
 model/pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID.ts
 model/pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.ts
 model/pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt.ts
+model/pickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId.ts
 model/pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.ts
 model/pickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber.ts
 model/pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.ts
@@ -248,6 +251,9 @@ model/wTDynamicVoucherCreateParams.ts
 model/wTDynamicVoucherRedemption.ts
 model/wTDynamicVoucherSummary.ts
 model/wTDynamicVoucherUpdateParams.ts
+model/wTEmailSubscriberCreateParams.ts
+model/wTEmailSubscriberCreateParamsWalletUI.ts
+model/wTEmailSubscriberUpdateParams.ts
 model/wTEmployee.ts
 model/wTEmployeeAPIKey.ts
 model/wTEmployeeAPIKeyCreateParams.ts
