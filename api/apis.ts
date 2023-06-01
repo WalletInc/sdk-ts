@@ -18,6 +18,8 @@ export * from './dashboardApi';
 import { DashboardApi } from './dashboardApi';
 export * from './dynamicVouchersApi';
 import { DynamicVouchersApi } from './dynamicVouchersApi';
+export * from './emailSubscriberApi';
+import { EmailSubscriberApi } from './emailSubscriberApi';
 export * from './employeeAPIKeysApi';
 import { EmployeeAPIKeysApi } from './employeeAPIKeysApi';
 export * from './employeeAccessApi';
@@ -97,4 +99,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [AdvertisementCreditsApi, AnalyticsApi, AppleWalletSubscribersApi, BillingApi, ClubMembersPointsApi, ConfigurationApi, CountriesApi, CustomerApi, DashboardApi, DynamicVouchersApi, EmployeeAPIKeysApi, EmployeeAccessApi, EmployeesApi, ImageGridApi, IndustriesApi, InfoGenesisReportsApi, IntegratedTerminalsApi, InteractionsApi, LoginAndLogoutApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, MerchantURLsApi, MobileTerminalApi, NewsApi, PaymentDesignsApi, PerformancesApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, SMSApi, SettingsApi, ShopifyTerminalApi, StaticVoucherCampaignGroupsApi, StaticVoucherCampaignsApi, StaticVouchersApi, SystemApi, TransactionLedgerApi, UtilitiesApi, VirtualBusinessCardApi, WebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];
+export const APIS = [AdvertisementCreditsApi, AnalyticsApi, AppleWalletSubscribersApi, BillingApi, ClubMembersPointsApi, ConfigurationApi, CountriesApi, CustomerApi, DashboardApi, DynamicVouchersApi, EmailSubscriberApi, EmployeeAPIKeysApi, EmployeeAccessApi, EmployeesApi, ImageGridApi, IndustriesApi, InfoGenesisReportsApi, IntegratedTerminalsApi, InteractionsApi, LoginAndLogoutApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, MerchantURLsApi, MobileTerminalApi, NewsApi, PaymentDesignsApi, PerformancesApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, SMSApi, SettingsApi, ShopifyTerminalApi, StaticVoucherCampaignGroupsApi, StaticVoucherCampaignsApi, StaticVouchersApi, SystemApi, TransactionLedgerApi, UtilitiesApi, VirtualBusinessCardApi, WebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];

@@ -46,6 +46,7 @@ __exportStar(require("./document"), exports);
 __exportStar(require("./duplicateRowFound"), exports);
 __exportStar(require("./dynamicVoucher"), exports);
 __exportStar(require("./dynamicVoucherBroadcast"), exports);
+__exportStar(require("./emailSubscriber"), exports);
 __exportStar(require("./employee"), exports);
 __exportStar(require("./employeeAPIKey"), exports);
 __exportStar(require("./employeeActivityLog"), exports);
@@ -144,6 +145,7 @@ __exportStar(require("./pickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporal
 __exportStar(require("./pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID"), exports);
 __exportStar(require("./pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId"), exports);
 __exportStar(require("./pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt"), exports);
+__exportStar(require("./pickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId"), exports);
 __exportStar(require("./pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail"), exports);
 __exportStar(require("./pickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber"), exports);
 __exportStar(require("./pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber"), exports);
@@ -216,6 +218,9 @@ __exportStar(require("./wTDynamicVoucherCreateParams"), exports);
 __exportStar(require("./wTDynamicVoucherRedemption"), exports);
 __exportStar(require("./wTDynamicVoucherSummary"), exports);
 __exportStar(require("./wTDynamicVoucherUpdateParams"), exports);
+__exportStar(require("./wTEmailSubscriberCreateParams"), exports);
+__exportStar(require("./wTEmailSubscriberCreateParamsWalletUI"), exports);
+__exportStar(require("./wTEmailSubscriberUpdateParams"), exports);
 __exportStar(require("./wTEmployee"), exports);
 __exportStar(require("./wTEmployeeAPIKey"), exports);
 __exportStar(require("./wTEmployeeAPIKeyCreateParams"), exports);
@@ -340,6 +345,7 @@ const document_1 = require("./document");
 const duplicateRowFound_1 = require("./duplicateRowFound");
 const dynamicVoucher_1 = require("./dynamicVoucher");
 const dynamicVoucherBroadcast_1 = require("./dynamicVoucherBroadcast");
+const emailSubscriber_1 = require("./emailSubscriber");
 const employee_1 = require("./employee");
 const employeeAPIKey_1 = require("./employeeAPIKey");
 const employeeActivityLog_1 = require("./employeeActivityLog");
@@ -438,6 +444,7 @@ const pickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequencyT
 const pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID_1 = require("./pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID");
 const pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId_1 = require("./pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId");
 const pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt_1 = require("./pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt");
+const pickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId_1 = require("./pickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId");
 const pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail_1 = require("./pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail");
 const pickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber_1 = require("./pickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber");
 const pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber_1 = require("./pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber");
@@ -510,6 +517,9 @@ const wTDynamicVoucherCreateParams_1 = require("./wTDynamicVoucherCreateParams")
 const wTDynamicVoucherRedemption_1 = require("./wTDynamicVoucherRedemption");
 const wTDynamicVoucherSummary_1 = require("./wTDynamicVoucherSummary");
 const wTDynamicVoucherUpdateParams_1 = require("./wTDynamicVoucherUpdateParams");
+const wTEmailSubscriberCreateParams_1 = require("./wTEmailSubscriberCreateParams");
+const wTEmailSubscriberCreateParamsWalletUI_1 = require("./wTEmailSubscriberCreateParamsWalletUI");
+const wTEmailSubscriberUpdateParams_1 = require("./wTEmailSubscriberUpdateParams");
 const wTEmployee_1 = require("./wTEmployee");
 const wTEmployeeAPIKey_1 = require("./wTEmployeeAPIKey");
 const wTEmployeeAPIKeyCreateParams_1 = require("./wTEmployeeAPIKeyCreateParams");
@@ -660,6 +670,7 @@ let typeMap = {
     "DuplicateRowFound": duplicateRowFound_1.DuplicateRowFound,
     "DynamicVoucher": dynamicVoucher_1.DynamicVoucher,
     "DynamicVoucherBroadcast": dynamicVoucherBroadcast_1.DynamicVoucherBroadcast,
+    "EmailSubscriber": emailSubscriber_1.EmailSubscriber,
     "Employee": employee_1.Employee,
     "EmployeeAPIKey": employeeAPIKey_1.EmployeeAPIKey,
     "EmployeeActivityLog": employeeActivityLog_1.EmployeeActivityLog,
@@ -758,6 +769,7 @@ let typeMap = {
     "PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID": pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID_1.PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID,
     "PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId": pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId_1.PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId,
     "PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt": pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt_1.PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt,
+    "PickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId": pickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId_1.PickWTEmailSubscriberUpdateParamsExcludeKeyofWTEmailSubscriberUpdateParamsId,
     "PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail": pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail_1.PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail,
     "PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber": pickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber_1.PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumber,
     "PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber": pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber_1.PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber,
@@ -819,6 +831,9 @@ let typeMap = {
     "WTDynamicVoucherRedemption": wTDynamicVoucherRedemption_1.WTDynamicVoucherRedemption,
     "WTDynamicVoucherSummary": wTDynamicVoucherSummary_1.WTDynamicVoucherSummary,
     "WTDynamicVoucherUpdateParams": wTDynamicVoucherUpdateParams_1.WTDynamicVoucherUpdateParams,
+    "WTEmailSubscriberCreateParams": wTEmailSubscriberCreateParams_1.WTEmailSubscriberCreateParams,
+    "WTEmailSubscriberCreateParamsWalletUI": wTEmailSubscriberCreateParamsWalletUI_1.WTEmailSubscriberCreateParamsWalletUI,
+    "WTEmailSubscriberUpdateParams": wTEmailSubscriberUpdateParams_1.WTEmailSubscriberUpdateParams,
     "WTEmployee": wTEmployee_1.WTEmployee,
     "WTEmployeeAPIKey": wTEmployeeAPIKey_1.WTEmployeeAPIKey,
     "WTEmployeeAPIKeyCreateParams": wTEmployeeAPIKeyCreateParams_1.WTEmployeeAPIKeyCreateParams,

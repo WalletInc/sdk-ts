@@ -3,9 +3,11 @@ import http from 'http';
 import { AdvertisementCreditScan } from '../model/advertisementCreditScan';
 import { BrowserDetails } from '../model/browserDetails';
 import { DynamicVoucher } from '../model/dynamicVoucher';
+import { EmailSubscriber } from '../model/emailSubscriber';
 import { InlineResponse2009 } from '../model/inlineResponse2009';
 import { Member } from '../model/member';
 import { StaticVoucher } from '../model/staticVoucher';
+import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
 import { WTFetchWalletPaymentObjectWithToken } from '../model/wTFetchWalletPaymentObjectWithToken';
 import { WalletConfiguration } from '../model/walletConfiguration';
 import { Authentication, Interceptor } from '../model/models';
@@ -134,5 +136,13 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
+    }>;
+    subscribeEmail(wTEmailSubscriberCreateParamsWalletUI: WTEmailSubscriberCreateParamsWalletUI, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: EmailSubscriber;
     }>;
 }
