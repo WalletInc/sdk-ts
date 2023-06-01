@@ -189,7 +189,7 @@ class EmailSubscriberApi {
             });
         });
     }
-    fetchAllEmailSubscribers(isArchiveIncluded, options = { headers: {} }) {
+    fetchAllEmailSubscribers(startDateTime, endDateTime, isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/emailSubscriber/all';
             let localVarQueryParameters = {};
@@ -202,6 +202,12 @@ class EmailSubscriberApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (startDateTime !== undefined) {
+                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
+            }
+            if (endDateTime !== undefined) {
+                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            }
             if (isArchiveIncluded !== undefined) {
                 localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
             }

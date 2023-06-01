@@ -235,9 +235,11 @@ export class EmailSubscriberApi {
     /**
      * 
      * @summary Fetch all email subscribers
+     * @param startDateTime 
+     * @param endDateTime 
      * @param isArchiveIncluded 
      */
-    public async fetchAllEmailSubscribers (isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
+    public async fetchAllEmailSubscribers (startDateTime?: Date, endDateTime?: Date, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
         const localVarPath = this.basePath + '/v2/emailSubscriber/all';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -249,6 +251,14 @@ export class EmailSubscriberApi {
             localVarHeaderParams.Accept = produces.join(',');
         }
         let localVarFormParams: any = {};
+
+        if (startDateTime !== undefined) {
+            localVarQueryParameters['startDateTime'] = ObjectSerializer.serialize(startDateTime, "Date");
+        }
+
+        if (endDateTime !== undefined) {
+            localVarQueryParameters['endDateTime'] = ObjectSerializer.serialize(endDateTime, "Date");
+        }
 
         if (isArchiveIncluded !== undefined) {
             localVarQueryParameters['isArchiveIncluded'] = ObjectSerializer.serialize(isArchiveIncluded, "boolean");

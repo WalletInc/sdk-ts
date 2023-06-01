@@ -42,7 +42,7 @@ export declare class EmailSubscriberApi {
         response: http.IncomingMessage;
         body: EmailSubscriber;
     }>;
-    fetchAllEmailSubscribers(isArchiveIncluded?: boolean, options?: {
+    fetchAllEmailSubscribers(startDateTime?: Date, endDateTime?: Date, isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
