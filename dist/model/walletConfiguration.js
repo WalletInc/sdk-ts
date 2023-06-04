@@ -19,13 +19,23 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "leftMenuSectionColor",
-        "baseName": "leftMenuSectionColor",
+        "name": "leftMenuHeaderBackgroundColor",
+        "baseName": "leftMenuHeaderBackgroundColor",
         "type": "string"
     },
     {
-        "name": "leftMenuArrowColor",
-        "baseName": "leftMenuArrowColor",
+        "name": "leftMenuHeaderFontColor",
+        "baseName": "leftMenuHeaderFontColor",
+        "type": "string"
+    },
+    {
+        "name": "leftMenuSectionBackgroundColor",
+        "baseName": "leftMenuSectionBackgroundColor",
+        "type": "string"
+    },
+    {
+        "name": "leftMenuSectionFontColor",
+        "baseName": "leftMenuSectionFontColor",
         "type": "string"
     },
     {

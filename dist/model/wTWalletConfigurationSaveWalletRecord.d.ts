@@ -1,8 +1,10 @@
 export declare class WTWalletConfigurationSaveWalletRecord {
     'headerBackgroundColor': string;
     'headerButtonColor': string;
-    'leftMenuSectionColor': string;
-    'leftMenuArrowColor': string;
+    'leftMenuHeaderBackgroundColor': string;
+    'leftMenuHeaderFontColor': string;
+    'leftMenuSectionBackgroundColor': string;
+    'leftMenuSectionFontColor': string;
     'companyLogoURL': string;
     'headerImageURL'?: string;
     'headerCustomIcon'?: string;
