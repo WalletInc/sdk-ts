@@ -59,5 +59,6 @@ var PortalPage;
     PortalPage[PortalPage["PromoCodes"] = 'promo-codes'] = "PromoCodes";
     PortalPage[PortalPage["News"] = 'news'] = "News";
     PortalPage[PortalPage["VirtualBusinessCards"] = 'virtual-business-cards'] = "VirtualBusinessCards";
+    PortalPage[PortalPage["QrcodeDesigns"] = 'qrcode-designs'] = "QrcodeDesigns";
 })(PortalPage = exports.PortalPage || (exports.PortalPage = {}));
 //# sourceMappingURL=portalPage.js.map

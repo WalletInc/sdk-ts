@@ -15,8 +15,10 @@ import { RequestFile } from './models';
 export class WTWalletConfigurationSaveWalletRecord {
     'headerBackgroundColor': string;
     'headerButtonColor': string;
-    'leftMenuSectionColor': string;
-    'leftMenuArrowColor': string;
+    'leftMenuHeaderBackgroundColor': string;
+    'leftMenuHeaderFontColor': string;
+    'leftMenuSectionBackgroundColor': string;
+    'leftMenuSectionFontColor': string;
     'companyLogoURL': string;
     'headerImageURL'?: string;
     'headerCustomIcon'?: string;
@@ -71,13 +73,23 @@ export class WTWalletConfigurationSaveWalletRecord {
             "type": "string"
         },
         {
-            "name": "leftMenuSectionColor",
-            "baseName": "leftMenuSectionColor",
+            "name": "leftMenuHeaderBackgroundColor",
+            "baseName": "leftMenuHeaderBackgroundColor",
             "type": "string"
         },
         {
-            "name": "leftMenuArrowColor",
-            "baseName": "leftMenuArrowColor",
+            "name": "leftMenuHeaderFontColor",
+            "baseName": "leftMenuHeaderFontColor",
+            "type": "string"
+        },
+        {
+            "name": "leftMenuSectionBackgroundColor",
+            "baseName": "leftMenuSectionBackgroundColor",
+            "type": "string"
+        },
+        {
+            "name": "leftMenuSectionFontColor",
+            "baseName": "leftMenuSectionFontColor",
             "type": "string"
         },
         {
