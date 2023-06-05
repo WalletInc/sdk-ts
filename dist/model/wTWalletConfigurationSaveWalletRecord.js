@@ -232,6 +232,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "name": "merchantCreditPaymentDesignID",
         "baseName": "merchantCreditPaymentDesignID",
         "type": "string"
+    },
+    {
+        "name": "customDomain",
+        "baseName": "customDomain",
+        "type": "string"
     }
 ];
 exports.WTWalletConfigurationSaveWalletRecord = WTWalletConfigurationSaveWalletRecord;

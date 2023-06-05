@@ -58,6 +58,7 @@ export class WalletConfiguration {
     'vanityHandle'?: string;
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
+    'customDomain'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;
@@ -289,6 +290,11 @@ export class WalletConfiguration {
         {
             "name": "merchantCreditPaymentDesignID",
             "baseName": "merchantCreditPaymentDesignID",
+            "type": "string"
+        },
+        {
+            "name": "customDomain",
+            "baseName": "customDomain",
             "type": "string"
         },
         {
