@@ -44,6 +44,7 @@ export declare class WTWalletConfigurationSaveWalletRecord {
     'vanityHandle'?: string;
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
+    'customDomain'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

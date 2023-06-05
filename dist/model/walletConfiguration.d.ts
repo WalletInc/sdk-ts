@@ -44,6 +44,7 @@ export declare class WalletConfiguration {
     'vanityHandle'?: string;
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
+    'customDomain'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;

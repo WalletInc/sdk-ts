@@ -58,6 +58,7 @@ export class WTWalletConfigurationSaveWalletRecord {
     'vanityHandle'?: string;
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
+    'customDomain'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -285,6 +286,11 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "merchantCreditPaymentDesignID",
             "baseName": "merchantCreditPaymentDesignID",
+            "type": "string"
+        },
+        {
+            "name": "customDomain",
+            "baseName": "customDomain",
             "type": "string"
         }    ];
 
