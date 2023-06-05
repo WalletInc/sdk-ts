@@ -234,6 +234,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "customDomain",
+        "baseName": "customDomain",
+        "type": "string"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"
