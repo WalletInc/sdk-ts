@@ -69,5 +69,9 @@ export enum PortalPage {
     PromoCodes = <any> 'promo-codes',
     News = <any> 'news',
     VirtualBusinessCards = <any> 'virtual-business-cards',
-    QrcodeDesigns = <any> 'qrcode-designs'
+    QrcodeDesigns = <any> 'qrcode-designs',
+    Products = <any> 'products',
+    Services = <any> 'services',
+    RoomRates = <any> 'room-rates',
+    Amenities = <any> 'amenities'
 }

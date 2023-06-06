@@ -154,6 +154,26 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "isProducts",
+        "baseName": "isProducts",
+        "type": "boolean"
+    },
+    {
+        "name": "isServices",
+        "baseName": "isServices",
+        "type": "boolean"
+    },
+    {
+        "name": "isRoomRates",
+        "baseName": "isRoomRates",
+        "type": "boolean"
+    },
+    {
+        "name": "isAmenities",
+        "baseName": "isAmenities",
+        "type": "boolean"
+    },
+    {
         "name": "isMapDirections",
         "baseName": "isMapDirections",
         "type": "boolean"
