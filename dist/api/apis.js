@@ -17,6 +17,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.APIS = exports.HttpError = void 0;
 __exportStar(require("./advertisementCreditsApi"), exports);
 const advertisementCreditsApi_1 = require("./advertisementCreditsApi");
+__exportStar(require("./amenitiesApi"), exports);
+const amenitiesApi_1 = require("./amenitiesApi");
 __exportStar(require("./analyticsApi"), exports);
 const analyticsApi_1 = require("./analyticsApi");
 __exportStar(require("./appleWalletSubscribersApi"), exports);
@@ -71,6 +73,8 @@ __exportStar(require("./paymentDesignsApi"), exports);
 const paymentDesignsApi_1 = require("./paymentDesignsApi");
 __exportStar(require("./performancesApi"), exports);
 const performancesApi_1 = require("./performancesApi");
+__exportStar(require("./productsApi"), exports);
+const productsApi_1 = require("./productsApi");
 __exportStar(require("./promotionCodesApi"), exports);
 const promotionCodesApi_1 = require("./promotionCodesApi");
 __exportStar(require("./qRCodeDesignsApi"), exports);
@@ -79,8 +83,12 @@ __exportStar(require("./quickLinksApi"), exports);
 const quickLinksApi_1 = require("./quickLinksApi");
 __exportStar(require("./quickLinksSectionApi"), exports);
 const quickLinksSectionApi_1 = require("./quickLinksSectionApi");
+__exportStar(require("./roomRatesApi"), exports);
+const roomRatesApi_1 = require("./roomRatesApi");
 __exportStar(require("./sMSApi"), exports);
 const sMSApi_1 = require("./sMSApi");
+__exportStar(require("./servicesApi"), exports);
+const servicesApi_1 = require("./servicesApi");
 __exportStar(require("./settingsApi"), exports);
 const settingsApi_1 = require("./settingsApi");
 __exportStar(require("./shopifyTerminalApi"), exports);
@@ -115,5 +123,5 @@ class HttpError extends Error {
     }
 }
 exports.HttpError = HttpError;
-exports.APIS = [advertisementCreditsApi_1.AdvertisementCreditsApi, analyticsApi_1.AnalyticsApi, appleWalletSubscribersApi_1.AppleWalletSubscribersApi, billingApi_1.BillingApi, clubMembersPointsApi_1.ClubMembersPointsApi, configurationApi_1.ConfigurationApi, countriesApi_1.CountriesApi, customerApi_1.CustomerApi, dashboardApi_1.DashboardApi, dynamicVouchersApi_1.DynamicVouchersApi, emailSubscriberApi_1.EmailSubscriberApi, employeeAPIKeysApi_1.EmployeeAPIKeysApi, employeeAccessApi_1.EmployeeAccessApi, employeesApi_1.EmployeesApi, imageGridApi_1.ImageGridApi, industriesApi_1.IndustriesApi, infoGenesisReportsApi_1.InfoGenesisReportsApi, integratedTerminalsApi_1.IntegratedTerminalsApi, interactionsApi_1.InteractionsApi, loginAndLogoutApi_1.LoginAndLogoutApi, membershipTiersApi_1.MembershipTiersApi, merchantApi_1.MerchantApi, merchantCreditsApi_1.MerchantCreditsApi, merchantURLsApi_1.MerchantURLsApi, mobileTerminalApi_1.MobileTerminalApi, newsApi_1.NewsApi, paymentDesignsApi_1.PaymentDesignsApi, performancesApi_1.PerformancesApi, promotionCodesApi_1.PromotionCodesApi, qRCodeDesignsApi_1.QRCodeDesignsApi, quickLinksApi_1.QuickLinksApi, quickLinksSectionApi_1.QuickLinksSectionApi, sMSApi_1.SMSApi, settingsApi_1.SettingsApi, shopifyTerminalApi_1.ShopifyTerminalApi, staticVoucherCampaignGroupsApi_1.StaticVoucherCampaignGroupsApi, staticVoucherCampaignsApi_1.StaticVoucherCampaignsApi, staticVouchersApi_1.StaticVouchersApi, systemApi_1.SystemApi, transactionLedgerApi_1.TransactionLedgerApi, utilitiesApi_1.UtilitiesApi, virtualBusinessCardApi_1.VirtualBusinessCardApi, webTerminalApi_1.WebTerminalApi, wixTerminalApi_1.WixTerminalApi, wooCommerceTerminalApi_1.WooCommerceTerminalApi];
+exports.APIS = [advertisementCreditsApi_1.AdvertisementCreditsApi, amenitiesApi_1.AmenitiesApi, analyticsApi_1.AnalyticsApi, appleWalletSubscribersApi_1.AppleWalletSubscribersApi, billingApi_1.BillingApi, clubMembersPointsApi_1.ClubMembersPointsApi, configurationApi_1.ConfigurationApi, countriesApi_1.CountriesApi, customerApi_1.CustomerApi, dashboardApi_1.DashboardApi, dynamicVouchersApi_1.DynamicVouchersApi, emailSubscriberApi_1.EmailSubscriberApi, employeeAPIKeysApi_1.EmployeeAPIKeysApi, employeeAccessApi_1.EmployeeAccessApi, employeesApi_1.EmployeesApi, imageGridApi_1.ImageGridApi, industriesApi_1.IndustriesApi, infoGenesisReportsApi_1.InfoGenesisReportsApi, integratedTerminalsApi_1.IntegratedTerminalsApi, interactionsApi_1.InteractionsApi, loginAndLogoutApi_1.LoginAndLogoutApi, membershipTiersApi_1.MembershipTiersApi, merchantApi_1.MerchantApi, merchantCreditsApi_1.MerchantCreditsApi, merchantURLsApi_1.MerchantURLsApi, mobileTerminalApi_1.MobileTerminalApi, newsApi_1.NewsApi, paymentDesignsApi_1.PaymentDesignsApi, performancesApi_1.PerformancesApi, productsApi_1.ProductsApi, promotionCodesApi_1.PromotionCodesApi, qRCodeDesignsApi_1.QRCodeDesignsApi, quickLinksApi_1.QuickLinksApi, quickLinksSectionApi_1.QuickLinksSectionApi, roomRatesApi_1.RoomRatesApi, sMSApi_1.SMSApi, servicesApi_1.ServicesApi, settingsApi_1.SettingsApi, shopifyTerminalApi_1.ShopifyTerminalApi, staticVoucherCampaignGroupsApi_1.StaticVoucherCampaignGroupsApi, staticVoucherCampaignsApi_1.StaticVoucherCampaignsApi, staticVouchersApi_1.StaticVouchersApi, systemApi_1.SystemApi, transactionLedgerApi_1.TransactionLedgerApi, utilitiesApi_1.UtilitiesApi, virtualBusinessCardApi_1.VirtualBusinessCardApi, webTerminalApi_1.WebTerminalApi, wixTerminalApi_1.WixTerminalApi, wooCommerceTerminalApi_1.WooCommerceTerminalApi];
 //# sourceMappingURL=apis.js.map

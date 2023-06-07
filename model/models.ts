@@ -4,6 +4,7 @@ export * from './advertisementCredit';
 export * from './advertisementCreditBroadcast';
 export * from './advertisementCreditScan';
 export * from './agreement';
+export * from './amenity';
 export * from './announcement';
 export * from './applicableTerminals';
 export * from './applicableTerminalsAnyOf';
@@ -151,6 +152,7 @@ export * from './request';
 export * from './response';
 export * from './role';
 export * from './roleAuditLog';
+export * from './roomRate';
 export * from './sSImportedListRecipientCreateParams';
 export * from './sSOptInSource';
 export * from './sSOutboundStatuses';
@@ -160,6 +162,7 @@ export * from './sSOutboundStatusesAnyOf2';
 export * from './sSOutboundStatusesAnyOf3';
 export * from './sSOutboundStatusesAnyOf4';
 export * from './sSOutboundStatusesAnyOf5';
+export * from './service';
 export * from './simpleSMSBroadcast';
 export * from './staticVoucher';
 export * from './staticVoucherCampaign';
@@ -184,6 +187,8 @@ export * from './wTAdvertisementCredit';
 export * from './wTAdvertisementCreditCreateParams';
 export * from './wTAdvertisementCreditScan';
 export * from './wTAdvertisementCreditUpdateParams';
+export * from './wTAmenityCreateParams';
+export * from './wTAmenityUpdateParams';
 export * from './wTAuthenticationCheckSessionTokenStatusResponse';
 export * from './wTAuthenticationForgotPassword';
 export * from './wTAuthenticationLoginRequest';
@@ -264,18 +269,24 @@ export * from './wTPerformanceUpdateParams';
 export * from './wTPosMachine';
 export * from './wTPosMachineCreateParams';
 export * from './wTPosMachineUpdateParams';
+export * from './wTProductCreateParams';
+export * from './wTProductUpdateParams';
 export * from './wTPromoCodeCreateParams';
 export * from './wTPromoCodeUpdateParams';
 export * from './wTQRCodeDesign';
 export * from './wTQRCodeDesignCreateParams';
 export * from './wTQRCodeDesignUpdateParams';
 export * from './wTRole';
+export * from './wTRoomRateCreateParams';
+export * from './wTRoomRateUpdateParams';
 export * from './wTSMSAcquirePhoneNumber';
 export * from './wTSMSCreateAgreement';
 export * from './wTSMSImportOptInListSubscribers';
 export * from './wTSMSImportedListCreate';
 export * from './wTSMSOptInListSourceCreate';
 export * from './wTSMSUpdatePhoneNumberConfig';
+export * from './wTServiceCreateParams';
+export * from './wTServiceUpdateParams';
 export * from './wTSettingsSetPassword';
 export * from './wTStaticVoucher';
 export * from './wTStaticVoucherCampaign';
@@ -317,6 +328,7 @@ import { AdvertisementCredit } from './advertisementCredit';
 import { AdvertisementCreditBroadcast } from './advertisementCreditBroadcast';
 import { AdvertisementCreditScan } from './advertisementCreditScan';
 import { Agreement } from './agreement';
+import { Amenity } from './amenity';
 import { Announcement } from './announcement';
 import { ApplicableTerminals } from './applicableTerminals';
 import { ApplicableTerminalsAnyOf } from './applicableTerminalsAnyOf';
@@ -464,6 +476,7 @@ import { Request } from './request';
 import { Response } from './response';
 import { Role } from './role';
 import { RoleAuditLog } from './roleAuditLog';
+import { RoomRate } from './roomRate';
 import { SSImportedListRecipientCreateParams } from './sSImportedListRecipientCreateParams';
 import { SSOptInSource } from './sSOptInSource';
 import { SSOutboundStatuses } from './sSOutboundStatuses';
@@ -473,6 +486,7 @@ import { SSOutboundStatusesAnyOf2 } from './sSOutboundStatusesAnyOf2';
 import { SSOutboundStatusesAnyOf3 } from './sSOutboundStatusesAnyOf3';
 import { SSOutboundStatusesAnyOf4 } from './sSOutboundStatusesAnyOf4';
 import { SSOutboundStatusesAnyOf5 } from './sSOutboundStatusesAnyOf5';
+import { Service } from './service';
 import { SimpleSMSBroadcast } from './simpleSMSBroadcast';
 import { StaticVoucher } from './staticVoucher';
 import { StaticVoucherCampaign } from './staticVoucherCampaign';
@@ -497,6 +511,8 @@ import { WTAdvertisementCredit } from './wTAdvertisementCredit';
 import { WTAdvertisementCreditCreateParams } from './wTAdvertisementCreditCreateParams';
 import { WTAdvertisementCreditScan } from './wTAdvertisementCreditScan';
 import { WTAdvertisementCreditUpdateParams } from './wTAdvertisementCreditUpdateParams';
+import { WTAmenityCreateParams } from './wTAmenityCreateParams';
+import { WTAmenityUpdateParams } from './wTAmenityUpdateParams';
 import { WTAuthenticationCheckSessionTokenStatusResponse } from './wTAuthenticationCheckSessionTokenStatusResponse';
 import { WTAuthenticationForgotPassword } from './wTAuthenticationForgotPassword';
 import { WTAuthenticationLoginRequest } from './wTAuthenticationLoginRequest';
@@ -577,18 +593,24 @@ import { WTPerformanceUpdateParams } from './wTPerformanceUpdateParams';
 import { WTPosMachine } from './wTPosMachine';
 import { WTPosMachineCreateParams } from './wTPosMachineCreateParams';
 import { WTPosMachineUpdateParams } from './wTPosMachineUpdateParams';
+import { WTProductCreateParams } from './wTProductCreateParams';
+import { WTProductUpdateParams } from './wTProductUpdateParams';
 import { WTPromoCodeCreateParams } from './wTPromoCodeCreateParams';
 import { WTPromoCodeUpdateParams } from './wTPromoCodeUpdateParams';
 import { WTQRCodeDesign } from './wTQRCodeDesign';
 import { WTQRCodeDesignCreateParams } from './wTQRCodeDesignCreateParams';
 import { WTQRCodeDesignUpdateParams } from './wTQRCodeDesignUpdateParams';
 import { WTRole } from './wTRole';
+import { WTRoomRateCreateParams } from './wTRoomRateCreateParams';
+import { WTRoomRateUpdateParams } from './wTRoomRateUpdateParams';
 import { WTSMSAcquirePhoneNumber } from './wTSMSAcquirePhoneNumber';
 import { WTSMSCreateAgreement } from './wTSMSCreateAgreement';
 import { WTSMSImportOptInListSubscribers } from './wTSMSImportOptInListSubscribers';
 import { WTSMSImportedListCreate } from './wTSMSImportedListCreate';
 import { WTSMSOptInListSourceCreate } from './wTSMSOptInListSourceCreate';
 import { WTSMSUpdatePhoneNumberConfig } from './wTSMSUpdatePhoneNumberConfig';
+import { WTServiceCreateParams } from './wTServiceCreateParams';
+import { WTServiceUpdateParams } from './wTServiceUpdateParams';
 import { WTSettingsSetPassword } from './wTSettingsSetPassword';
 import { WTStaticVoucher } from './wTStaticVoucher';
 import { WTStaticVoucherCampaign } from './wTStaticVoucherCampaign';
@@ -653,6 +675,7 @@ let typeMap: {[index: string]: any} = {
     "AdvertisementCreditBroadcast": AdvertisementCreditBroadcast,
     "AdvertisementCreditScan": AdvertisementCreditScan,
     "Agreement": Agreement,
+    "Amenity": Amenity,
     "Announcement": Announcement,
     "ApplicableTerminals": ApplicableTerminals,
     "AuthError": AuthError,
@@ -792,9 +815,11 @@ let typeMap: {[index: string]: any} = {
     "Response": Response,
     "Role": Role,
     "RoleAuditLog": RoleAuditLog,
+    "RoomRate": RoomRate,
     "SSImportedListRecipientCreateParams": SSImportedListRecipientCreateParams,
     "SSOptInSource": SSOptInSource,
     "SSOutboundStatuses": SSOutboundStatuses,
+    "Service": Service,
     "SimpleSMSBroadcast": SimpleSMSBroadcast,
     "StaticVoucher": StaticVoucher,
     "StaticVoucherCampaign": StaticVoucherCampaign,
@@ -815,6 +840,8 @@ let typeMap: {[index: string]: any} = {
     "WTAdvertisementCreditCreateParams": WTAdvertisementCreditCreateParams,
     "WTAdvertisementCreditScan": WTAdvertisementCreditScan,
     "WTAdvertisementCreditUpdateParams": WTAdvertisementCreditUpdateParams,
+    "WTAmenityCreateParams": WTAmenityCreateParams,
+    "WTAmenityUpdateParams": WTAmenityUpdateParams,
     "WTAuthenticationCheckSessionTokenStatusResponse": WTAuthenticationCheckSessionTokenStatusResponse,
     "WTAuthenticationForgotPassword": WTAuthenticationForgotPassword,
     "WTAuthenticationLoginRequest": WTAuthenticationLoginRequest,
@@ -895,18 +922,24 @@ let typeMap: {[index: string]: any} = {
     "WTPosMachine": WTPosMachine,
     "WTPosMachineCreateParams": WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": WTPosMachineUpdateParams,
+    "WTProductCreateParams": WTProductCreateParams,
+    "WTProductUpdateParams": WTProductUpdateParams,
     "WTPromoCodeCreateParams": WTPromoCodeCreateParams,
     "WTPromoCodeUpdateParams": WTPromoCodeUpdateParams,
     "WTQRCodeDesign": WTQRCodeDesign,
     "WTQRCodeDesignCreateParams": WTQRCodeDesignCreateParams,
     "WTQRCodeDesignUpdateParams": WTQRCodeDesignUpdateParams,
     "WTRole": WTRole,
+    "WTRoomRateCreateParams": WTRoomRateCreateParams,
+    "WTRoomRateUpdateParams": WTRoomRateUpdateParams,
     "WTSMSAcquirePhoneNumber": WTSMSAcquirePhoneNumber,
     "WTSMSCreateAgreement": WTSMSCreateAgreement,
     "WTSMSImportOptInListSubscribers": WTSMSImportOptInListSubscribers,
     "WTSMSImportedListCreate": WTSMSImportedListCreate,
     "WTSMSOptInListSourceCreate": WTSMSOptInListSourceCreate,
     "WTSMSUpdatePhoneNumberConfig": WTSMSUpdatePhoneNumberConfig,
+    "WTServiceCreateParams": WTServiceCreateParams,
+    "WTServiceUpdateParams": WTServiceUpdateParams,
     "WTSettingsSetPassword": WTSettingsSetPassword,
     "WTStaticVoucher": WTStaticVoucher,
     "WTStaticVoucherCampaign": WTStaticVoucherCampaign,

@@ -28,6 +28,10 @@ export declare class WalletConfiguration {
     'isMessages': boolean;
     'isCall': boolean;
     'isRepresentatives': boolean;
+    'isProducts': boolean;
+    'isServices': boolean;
+    'isRoomRates': boolean;
+    'isAmenities': boolean;
     'isMapDirections': boolean;
     'isLinkBook': boolean;
     'isImageGrid': boolean;

@@ -1,6 +1,8 @@
 /// <reference types="node" />
 export * from './advertisementCreditsApi';
 import { AdvertisementCreditsApi } from './advertisementCreditsApi';
+export * from './amenitiesApi';
+import { AmenitiesApi } from './amenitiesApi';
 export * from './analyticsApi';
 import { AnalyticsApi } from './analyticsApi';
 export * from './appleWalletSubscribersApi';
@@ -55,6 +57,8 @@ export * from './paymentDesignsApi';
 import { PaymentDesignsApi } from './paymentDesignsApi';
 export * from './performancesApi';
 import { PerformancesApi } from './performancesApi';
+export * from './productsApi';
+import { ProductsApi } from './productsApi';
 export * from './promotionCodesApi';
 import { PromotionCodesApi } from './promotionCodesApi';
 export * from './qRCodeDesignsApi';
@@ -63,8 +67,12 @@ export * from './quickLinksApi';
 import { QuickLinksApi } from './quickLinksApi';
 export * from './quickLinksSectionApi';
 import { QuickLinksSectionApi } from './quickLinksSectionApi';
+export * from './roomRatesApi';
+import { RoomRatesApi } from './roomRatesApi';
 export * from './sMSApi';
 import { SMSApi } from './sMSApi';
+export * from './servicesApi';
+import { ServicesApi } from './servicesApi';
 export * from './settingsApi';
 import { SettingsApi } from './settingsApi';
 export * from './shopifyTerminalApi';
@@ -97,4 +105,4 @@ export declare class HttpError extends Error {
     constructor(response: http.IncomingMessage, body: any, statusCode?: number | undefined);
 }
 export { RequestFile } from '../model/models';
-export declare const APIS: (typeof AdvertisementCreditsApi | typeof AnalyticsApi | typeof AppleWalletSubscribersApi | typeof BillingApi | typeof ClubMembersPointsApi | typeof ConfigurationApi | typeof CountriesApi | typeof CustomerApi | typeof DashboardApi | typeof DynamicVouchersApi | typeof EmailSubscriberApi | typeof EmployeeAPIKeysApi | typeof EmployeeAccessApi | typeof EmployeesApi | typeof ImageGridApi | typeof IndustriesApi | typeof InfoGenesisReportsApi | typeof IntegratedTerminalsApi | typeof InteractionsApi | typeof LoginAndLogoutApi | typeof MembershipTiersApi | typeof MerchantApi | typeof MerchantCreditsApi | typeof MerchantURLsApi | typeof MobileTerminalApi | typeof NewsApi | typeof PaymentDesignsApi | typeof PerformancesApi | typeof PromotionCodesApi | typeof QRCodeDesignsApi | typeof QuickLinksApi | typeof QuickLinksSectionApi | typeof SMSApi | typeof SettingsApi | typeof ShopifyTerminalApi | typeof StaticVoucherCampaignGroupsApi | typeof StaticVoucherCampaignsApi | typeof StaticVouchersApi | typeof SystemApi | typeof TransactionLedgerApi | typeof UtilitiesApi | typeof VirtualBusinessCardApi | typeof WebTerminalApi | typeof WixTerminalApi | typeof WooCommerceTerminalApi)[];
+export declare const APIS: (typeof AdvertisementCreditsApi | typeof AmenitiesApi | typeof AnalyticsApi | typeof AppleWalletSubscribersApi | typeof BillingApi | typeof ClubMembersPointsApi | typeof ConfigurationApi | typeof CountriesApi | typeof CustomerApi | typeof DashboardApi | typeof DynamicVouchersApi | typeof EmailSubscriberApi | typeof EmployeeAPIKeysApi | typeof EmployeeAccessApi | typeof EmployeesApi | typeof ImageGridApi | typeof IndustriesApi | typeof InfoGenesisReportsApi | typeof IntegratedTerminalsApi | typeof InteractionsApi | typeof LoginAndLogoutApi | typeof MembershipTiersApi | typeof MerchantApi | typeof MerchantCreditsApi | typeof MerchantURLsApi | typeof MobileTerminalApi | typeof NewsApi | typeof PaymentDesignsApi | typeof PerformancesApi | typeof ProductsApi | typeof PromotionCodesApi | typeof QRCodeDesignsApi | typeof QuickLinksApi | typeof QuickLinksSectionApi | typeof RoomRatesApi | typeof SMSApi | typeof ServicesApi | typeof SettingsApi | typeof ShopifyTerminalApi | typeof StaticVoucherCampaignGroupsApi | typeof StaticVoucherCampaignsApi | typeof StaticVouchersApi | typeof SystemApi | typeof TransactionLedgerApi | typeof UtilitiesApi | typeof VirtualBusinessCardApi | typeof WebTerminalApi | typeof WixTerminalApi | typeof WooCommerceTerminalApi)[];
