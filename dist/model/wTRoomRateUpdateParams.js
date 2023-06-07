@@ -6,7 +6,6 @@ class WTRoomRateUpdateParams {
         return WTRoomRateUpdateParams.attributeTypeMap;
     }
 }
-exports.WTRoomRateUpdateParams = WTRoomRateUpdateParams;
 WTRoomRateUpdateParams.discriminator = undefined;
 WTRoomRateUpdateParams.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ WTRoomRateUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTRoomRateUpdateParams = WTRoomRateUpdateParams;
 //# sourceMappingURL=wTRoomRateUpdateParams.js.map

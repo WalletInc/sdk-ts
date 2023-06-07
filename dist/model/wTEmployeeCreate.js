@@ -6,7 +6,6 @@ class WTEmployeeCreate {
         return WTEmployeeCreate.attributeTypeMap;
     }
 }
-exports.WTEmployeeCreate = WTEmployeeCreate;
 WTEmployeeCreate.discriminator = undefined;
 WTEmployeeCreate.attributeTypeMap = [
     {
@@ -95,4 +94,5 @@ WTEmployeeCreate.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTEmployeeCreate = WTEmployeeCreate;
 //# sourceMappingURL=wTEmployeeCreate.js.map

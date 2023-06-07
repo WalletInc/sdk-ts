@@ -6,7 +6,6 @@ class WTQRCodeDesign {
         return WTQRCodeDesign.attributeTypeMap;
     }
 }
-exports.WTQRCodeDesign = WTQRCodeDesign;
 WTQRCodeDesign.discriminator = undefined;
 WTQRCodeDesign.attributeTypeMap = [
     {
@@ -85,4 +84,5 @@ WTQRCodeDesign.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTQRCodeDesign = WTQRCodeDesign;
 //# sourceMappingURL=wTQRCodeDesign.js.map

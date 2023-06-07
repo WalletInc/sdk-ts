@@ -6,7 +6,6 @@ class ForbiddenRequest {
         return ForbiddenRequest.attributeTypeMap;
     }
 }
-exports.ForbiddenRequest = ForbiddenRequest;
 ForbiddenRequest.discriminator = undefined;
 ForbiddenRequest.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ ForbiddenRequest.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.ForbiddenRequest = ForbiddenRequest;
 //# sourceMappingURL=forbiddenRequest.js.map

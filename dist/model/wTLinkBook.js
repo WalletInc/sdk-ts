@@ -6,7 +6,6 @@ class WTLinkBook {
         return WTLinkBook.attributeTypeMap;
     }
 }
-exports.WTLinkBook = WTLinkBook;
 WTLinkBook.discriminator = undefined;
 WTLinkBook.attributeTypeMap = [
     {
@@ -60,4 +59,5 @@ WTLinkBook.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTLinkBook = WTLinkBook;
 //# sourceMappingURL=wTLinkBook.js.map

@@ -6,7 +6,6 @@ class WTEmployeeSendHelpDeskResponse {
         return WTEmployeeSendHelpDeskResponse.attributeTypeMap;
     }
 }
-exports.WTEmployeeSendHelpDeskResponse = WTEmployeeSendHelpDeskResponse;
 WTEmployeeSendHelpDeskResponse.discriminator = undefined;
 WTEmployeeSendHelpDeskResponse.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTEmployeeSendHelpDeskResponse.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
+exports.WTEmployeeSendHelpDeskResponse = WTEmployeeSendHelpDeskResponse;
 //# sourceMappingURL=wTEmployeeSendHelpDeskResponse.js.map

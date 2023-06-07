@@ -6,7 +6,6 @@ class InlineResponse2007 {
         return InlineResponse2007.attributeTypeMap;
     }
 }
-exports.InlineResponse2007 = InlineResponse2007;
 InlineResponse2007.discriminator = undefined;
 InlineResponse2007.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ InlineResponse2007.attributeTypeMap = [
         "type": "Array<OptInListSubscriber>"
     }
 ];
+exports.InlineResponse2007 = InlineResponse2007;
 //# sourceMappingURL=inlineResponse2007.js.map

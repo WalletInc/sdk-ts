@@ -6,7 +6,6 @@ class PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId {
         return PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId.attributeTypeMap;
     }
 }
-exports.PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId = PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId;
 PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId.discriminator = undefined;
 PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId.attributeTy
         "type": "string"
     }
 ];
+exports.PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId = PickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId;
 //# sourceMappingURL=pickSSOptInSourceUpdateParamsExcludeKeyofSSOptInSourceUpdateParamsId.js.map

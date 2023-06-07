@@ -6,7 +6,6 @@ class WTAuthenticationCheckSessionTokenStatusResponse {
         return WTAuthenticationCheckSessionTokenStatusResponse.attributeTypeMap;
     }
 }
-exports.WTAuthenticationCheckSessionTokenStatusResponse = WTAuthenticationCheckSessionTokenStatusResponse;
 WTAuthenticationCheckSessionTokenStatusResponse.discriminator = undefined;
 WTAuthenticationCheckSessionTokenStatusResponse.attributeTypeMap = [
     {
@@ -15,10 +14,12 @@ WTAuthenticationCheckSessionTokenStatusResponse.attributeTypeMap = [
         "type": "WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum"
     }
 ];
+exports.WTAuthenticationCheckSessionTokenStatusResponse = WTAuthenticationCheckSessionTokenStatusResponse;
 (function (WTAuthenticationCheckSessionTokenStatusResponse) {
     let StatusEnum;
     (function (StatusEnum) {
         StatusEnum[StatusEnum["Valid"] = 'Valid'] = "Valid";
     })(StatusEnum = WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum || (WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum = {}));
-})(WTAuthenticationCheckSessionTokenStatusResponse || (exports.WTAuthenticationCheckSessionTokenStatusResponse = WTAuthenticationCheckSessionTokenStatusResponse = {}));
+})(WTAuthenticationCheckSessionTokenStatusResponse = exports.WTAuthenticationCheckSessionTokenStatusResponse || (exports.WTAuthenticationCheckSessionTokenStatusResponse = {}));
+exports.WTAuthenticationCheckSessionTokenStatusResponse = WTAuthenticationCheckSessionTokenStatusResponse;
 //# sourceMappingURL=wTAuthenticationCheckSessionTokenStatusResponse.js.map

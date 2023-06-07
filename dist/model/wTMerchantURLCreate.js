@@ -6,7 +6,6 @@ class WTMerchantURLCreate {
         return WTMerchantURLCreate.attributeTypeMap;
     }
 }
-exports.WTMerchantURLCreate = WTMerchantURLCreate;
 WTMerchantURLCreate.discriminator = undefined;
 WTMerchantURLCreate.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ WTMerchantURLCreate.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTMerchantURLCreate = WTMerchantURLCreate;
 //# sourceMappingURL=wTMerchantURLCreate.js.map

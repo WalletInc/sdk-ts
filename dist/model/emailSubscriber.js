@@ -6,7 +6,6 @@ class EmailSubscriber {
         return EmailSubscriber.attributeTypeMap;
     }
 }
-exports.EmailSubscriber = EmailSubscriber;
 EmailSubscriber.discriminator = undefined;
 EmailSubscriber.attributeTypeMap = [
     {
@@ -50,4 +49,5 @@ EmailSubscriber.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.EmailSubscriber = EmailSubscriber;
 //# sourceMappingURL=emailSubscriber.js.map

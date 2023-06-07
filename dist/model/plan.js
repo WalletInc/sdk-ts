@@ -6,7 +6,6 @@ class Plan {
         return Plan.attributeTypeMap;
     }
 }
-exports.Plan = Plan;
 Plan.discriminator = undefined;
 Plan.attributeTypeMap = [
     {
@@ -40,4 +39,5 @@ Plan.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.Plan = Plan;
 //# sourceMappingURL=plan.js.map
