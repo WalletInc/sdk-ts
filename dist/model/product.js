@@ -6,6 +6,7 @@ class Product {
         return Product.attributeTypeMap;
     }
 }
+exports.Product = Product;
 Product.discriminator = undefined;
 Product.attributeTypeMap = [
     {
@@ -49,5 +50,4 @@ Product.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Product = Product;
 //# sourceMappingURL=product.js.map

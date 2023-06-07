@@ -6,6 +6,7 @@ class DynamicVoucherBroadcast {
         return DynamicVoucherBroadcast.attributeTypeMap;
     }
 }
+exports.DynamicVoucherBroadcast = DynamicVoucherBroadcast;
 DynamicVoucherBroadcast.discriminator = undefined;
 DynamicVoucherBroadcast.attributeTypeMap = [
     {
@@ -114,5 +115,4 @@ DynamicVoucherBroadcast.attributeTypeMap = [
         "type": "DynamicVoucher"
     }
 ];
-exports.DynamicVoucherBroadcast = DynamicVoucherBroadcast;
 //# sourceMappingURL=dynamicVoucherBroadcast.js.map

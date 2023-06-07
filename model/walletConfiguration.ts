@@ -42,6 +42,10 @@ export class WalletConfiguration {
     'isMessages': boolean;
     'isCall': boolean;
     'isRepresentatives': boolean;
+    'isProducts': boolean;
+    'isServices': boolean;
+    'isRoomRates': boolean;
+    'isAmenities': boolean;
     'isMapDirections': boolean;
     'isLinkBook': boolean;
     'isImageGrid': boolean;
@@ -210,6 +214,26 @@ export class WalletConfiguration {
         {
             "name": "isRepresentatives",
             "baseName": "isRepresentatives",
+            "type": "boolean"
+        },
+        {
+            "name": "isProducts",
+            "baseName": "isProducts",
+            "type": "boolean"
+        },
+        {
+            "name": "isServices",
+            "baseName": "isServices",
+            "type": "boolean"
+        },
+        {
+            "name": "isRoomRates",
+            "baseName": "isRoomRates",
+            "type": "boolean"
+        },
+        {
+            "name": "isAmenities",
+            "baseName": "isAmenities",
             "type": "boolean"
         },
         {

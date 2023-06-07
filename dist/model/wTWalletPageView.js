@@ -6,6 +6,7 @@ class WTWalletPageView {
         return WTWalletPageView.attributeTypeMap;
     }
 }
+exports.WTWalletPageView = WTWalletPageView;
 WTWalletPageView.discriminator = undefined;
 WTWalletPageView.attributeTypeMap = [
     {
@@ -194,5 +195,4 @@ WTWalletPageView.attributeTypeMap = [
         "type": "WTWalletPageViewGeoPoint"
     }
 ];
-exports.WTWalletPageView = WTWalletPageView;
 //# sourceMappingURL=wTWalletPageView.js.map

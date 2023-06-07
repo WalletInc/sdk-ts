@@ -6,6 +6,7 @@ class WTWalletConfigurationSaveWalletRecord {
         return WTWalletConfigurationSaveWalletRecord.attributeTypeMap;
     }
 }
+exports.WTWalletConfigurationSaveWalletRecord = WTWalletConfigurationSaveWalletRecord;
 WTWalletConfigurationSaveWalletRecord.discriminator = undefined;
 WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
     {
@@ -154,6 +155,26 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "isProducts",
+        "baseName": "isProducts",
+        "type": "boolean"
+    },
+    {
+        "name": "isServices",
+        "baseName": "isServices",
+        "type": "boolean"
+    },
+    {
+        "name": "isRoomRates",
+        "baseName": "isRoomRates",
+        "type": "boolean"
+    },
+    {
+        "name": "isAmenities",
+        "baseName": "isAmenities",
+        "type": "boolean"
+    },
+    {
         "name": "isMapDirections",
         "baseName": "isMapDirections",
         "type": "boolean"
@@ -239,5 +260,4 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTWalletConfigurationSaveWalletRecord = WTWalletConfigurationSaveWalletRecord;
 //# sourceMappingURL=wTWalletConfigurationSaveWalletRecord.js.map

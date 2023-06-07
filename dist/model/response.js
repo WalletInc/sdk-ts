@@ -6,6 +6,7 @@ class Response {
         return Response.attributeTypeMap;
     }
 }
+exports.Response = Response;
 Response.discriminator = undefined;
 Response.attributeTypeMap = [
     {
@@ -44,5 +45,4 @@ Response.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Response = Response;
 //# sourceMappingURL=response.js.map

@@ -60,5 +60,9 @@ var PortalPage;
     PortalPage[PortalPage["News"] = 'news'] = "News";
     PortalPage[PortalPage["VirtualBusinessCards"] = 'virtual-business-cards'] = "VirtualBusinessCards";
     PortalPage[PortalPage["QrcodeDesigns"] = 'qrcode-designs'] = "QrcodeDesigns";
-})(PortalPage = exports.PortalPage || (exports.PortalPage = {}));
+    PortalPage[PortalPage["Products"] = 'products'] = "Products";
+    PortalPage[PortalPage["Services"] = 'services'] = "Services";
+    PortalPage[PortalPage["RoomRates"] = 'room-rates'] = "RoomRates";
+    PortalPage[PortalPage["Amenities"] = 'amenities'] = "Amenities";
+})(PortalPage || (exports.PortalPage = PortalPage = {}));
 //# sourceMappingURL=portalPage.js.map

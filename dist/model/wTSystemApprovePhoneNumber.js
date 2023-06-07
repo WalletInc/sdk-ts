@@ -6,6 +6,7 @@ class WTSystemApprovePhoneNumber {
         return WTSystemApprovePhoneNumber.attributeTypeMap;
     }
 }
+exports.WTSystemApprovePhoneNumber = WTSystemApprovePhoneNumber;
 WTSystemApprovePhoneNumber.discriminator = undefined;
 WTSystemApprovePhoneNumber.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ WTSystemApprovePhoneNumber.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTSystemApprovePhoneNumber = WTSystemApprovePhoneNumber;
 //# sourceMappingURL=wTSystemApprovePhoneNumber.js.map

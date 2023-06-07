@@ -4,5 +4,5 @@ exports.SSOutboundStatusesAnyOf = void 0;
 var SSOutboundStatusesAnyOf;
 (function (SSOutboundStatusesAnyOf) {
     SSOutboundStatusesAnyOf[SSOutboundStatusesAnyOf["Queued"] = 'queued'] = "Queued";
-})(SSOutboundStatusesAnyOf = exports.SSOutboundStatusesAnyOf || (exports.SSOutboundStatusesAnyOf = {}));
+})(SSOutboundStatusesAnyOf || (exports.SSOutboundStatusesAnyOf = SSOutboundStatusesAnyOf = {}));
 //# sourceMappingURL=sSOutboundStatusesAnyOf.js.map

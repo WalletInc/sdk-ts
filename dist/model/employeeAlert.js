@@ -6,6 +6,7 @@ class EmployeeAlert {
         return EmployeeAlert.attributeTypeMap;
     }
 }
+exports.EmployeeAlert = EmployeeAlert;
 EmployeeAlert.discriminator = undefined;
 EmployeeAlert.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ EmployeeAlert.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.EmployeeAlert = EmployeeAlert;
 //# sourceMappingURL=employeeAlert.js.map

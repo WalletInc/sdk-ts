@@ -19,6 +19,7 @@ __exportStar(require("./advertisementCredit"), exports);
 __exportStar(require("./advertisementCreditBroadcast"), exports);
 __exportStar(require("./advertisementCreditScan"), exports);
 __exportStar(require("./agreement"), exports);
+__exportStar(require("./amenity"), exports);
 __exportStar(require("./announcement"), exports);
 __exportStar(require("./applicableTerminals"), exports);
 __exportStar(require("./applicableTerminalsAnyOf"), exports);
@@ -166,6 +167,7 @@ __exportStar(require("./request"), exports);
 __exportStar(require("./response"), exports);
 __exportStar(require("./role"), exports);
 __exportStar(require("./roleAuditLog"), exports);
+__exportStar(require("./roomRate"), exports);
 __exportStar(require("./sSImportedListRecipientCreateParams"), exports);
 __exportStar(require("./sSOptInSource"), exports);
 __exportStar(require("./sSOutboundStatuses"), exports);
@@ -175,6 +177,7 @@ __exportStar(require("./sSOutboundStatusesAnyOf2"), exports);
 __exportStar(require("./sSOutboundStatusesAnyOf3"), exports);
 __exportStar(require("./sSOutboundStatusesAnyOf4"), exports);
 __exportStar(require("./sSOutboundStatusesAnyOf5"), exports);
+__exportStar(require("./service"), exports);
 __exportStar(require("./simpleSMSBroadcast"), exports);
 __exportStar(require("./staticVoucher"), exports);
 __exportStar(require("./staticVoucherCampaign"), exports);
@@ -199,6 +202,8 @@ __exportStar(require("./wTAdvertisementCredit"), exports);
 __exportStar(require("./wTAdvertisementCreditCreateParams"), exports);
 __exportStar(require("./wTAdvertisementCreditScan"), exports);
 __exportStar(require("./wTAdvertisementCreditUpdateParams"), exports);
+__exportStar(require("./wTAmenityCreateParams"), exports);
+__exportStar(require("./wTAmenityUpdateParams"), exports);
 __exportStar(require("./wTAuthenticationCheckSessionTokenStatusResponse"), exports);
 __exportStar(require("./wTAuthenticationForgotPassword"), exports);
 __exportStar(require("./wTAuthenticationLoginRequest"), exports);
@@ -279,18 +284,24 @@ __exportStar(require("./wTPerformanceUpdateParams"), exports);
 __exportStar(require("./wTPosMachine"), exports);
 __exportStar(require("./wTPosMachineCreateParams"), exports);
 __exportStar(require("./wTPosMachineUpdateParams"), exports);
+__exportStar(require("./wTProductCreateParams"), exports);
+__exportStar(require("./wTProductUpdateParams"), exports);
 __exportStar(require("./wTPromoCodeCreateParams"), exports);
 __exportStar(require("./wTPromoCodeUpdateParams"), exports);
 __exportStar(require("./wTQRCodeDesign"), exports);
 __exportStar(require("./wTQRCodeDesignCreateParams"), exports);
 __exportStar(require("./wTQRCodeDesignUpdateParams"), exports);
 __exportStar(require("./wTRole"), exports);
+__exportStar(require("./wTRoomRateCreateParams"), exports);
+__exportStar(require("./wTRoomRateUpdateParams"), exports);
 __exportStar(require("./wTSMSAcquirePhoneNumber"), exports);
 __exportStar(require("./wTSMSCreateAgreement"), exports);
 __exportStar(require("./wTSMSImportOptInListSubscribers"), exports);
 __exportStar(require("./wTSMSImportedListCreate"), exports);
 __exportStar(require("./wTSMSOptInListSourceCreate"), exports);
 __exportStar(require("./wTSMSUpdatePhoneNumberConfig"), exports);
+__exportStar(require("./wTServiceCreateParams"), exports);
+__exportStar(require("./wTServiceUpdateParams"), exports);
 __exportStar(require("./wTSettingsSetPassword"), exports);
 __exportStar(require("./wTStaticVoucher"), exports);
 __exportStar(require("./wTStaticVoucherCampaign"), exports);
@@ -318,6 +329,7 @@ const advertisementCredit_1 = require("./advertisementCredit");
 const advertisementCreditBroadcast_1 = require("./advertisementCreditBroadcast");
 const advertisementCreditScan_1 = require("./advertisementCreditScan");
 const agreement_1 = require("./agreement");
+const amenity_1 = require("./amenity");
 const announcement_1 = require("./announcement");
 const applicableTerminals_1 = require("./applicableTerminals");
 const applicableTerminalsAnyOf_1 = require("./applicableTerminalsAnyOf");
@@ -465,6 +477,7 @@ const request_1 = require("./request");
 const response_1 = require("./response");
 const role_1 = require("./role");
 const roleAuditLog_1 = require("./roleAuditLog");
+const roomRate_1 = require("./roomRate");
 const sSImportedListRecipientCreateParams_1 = require("./sSImportedListRecipientCreateParams");
 const sSOptInSource_1 = require("./sSOptInSource");
 const sSOutboundStatuses_1 = require("./sSOutboundStatuses");
@@ -474,6 +487,7 @@ const sSOutboundStatusesAnyOf2_1 = require("./sSOutboundStatusesAnyOf2");
 const sSOutboundStatusesAnyOf3_1 = require("./sSOutboundStatusesAnyOf3");
 const sSOutboundStatusesAnyOf4_1 = require("./sSOutboundStatusesAnyOf4");
 const sSOutboundStatusesAnyOf5_1 = require("./sSOutboundStatusesAnyOf5");
+const service_1 = require("./service");
 const simpleSMSBroadcast_1 = require("./simpleSMSBroadcast");
 const staticVoucher_1 = require("./staticVoucher");
 const staticVoucherCampaign_1 = require("./staticVoucherCampaign");
@@ -498,6 +512,8 @@ const wTAdvertisementCredit_1 = require("./wTAdvertisementCredit");
 const wTAdvertisementCreditCreateParams_1 = require("./wTAdvertisementCreditCreateParams");
 const wTAdvertisementCreditScan_1 = require("./wTAdvertisementCreditScan");
 const wTAdvertisementCreditUpdateParams_1 = require("./wTAdvertisementCreditUpdateParams");
+const wTAmenityCreateParams_1 = require("./wTAmenityCreateParams");
+const wTAmenityUpdateParams_1 = require("./wTAmenityUpdateParams");
 const wTAuthenticationCheckSessionTokenStatusResponse_1 = require("./wTAuthenticationCheckSessionTokenStatusResponse");
 const wTAuthenticationForgotPassword_1 = require("./wTAuthenticationForgotPassword");
 const wTAuthenticationLoginRequest_1 = require("./wTAuthenticationLoginRequest");
@@ -578,18 +594,24 @@ const wTPerformanceUpdateParams_1 = require("./wTPerformanceUpdateParams");
 const wTPosMachine_1 = require("./wTPosMachine");
 const wTPosMachineCreateParams_1 = require("./wTPosMachineCreateParams");
 const wTPosMachineUpdateParams_1 = require("./wTPosMachineUpdateParams");
+const wTProductCreateParams_1 = require("./wTProductCreateParams");
+const wTProductUpdateParams_1 = require("./wTProductUpdateParams");
 const wTPromoCodeCreateParams_1 = require("./wTPromoCodeCreateParams");
 const wTPromoCodeUpdateParams_1 = require("./wTPromoCodeUpdateParams");
 const wTQRCodeDesign_1 = require("./wTQRCodeDesign");
 const wTQRCodeDesignCreateParams_1 = require("./wTQRCodeDesignCreateParams");
 const wTQRCodeDesignUpdateParams_1 = require("./wTQRCodeDesignUpdateParams");
 const wTRole_1 = require("./wTRole");
+const wTRoomRateCreateParams_1 = require("./wTRoomRateCreateParams");
+const wTRoomRateUpdateParams_1 = require("./wTRoomRateUpdateParams");
 const wTSMSAcquirePhoneNumber_1 = require("./wTSMSAcquirePhoneNumber");
 const wTSMSCreateAgreement_1 = require("./wTSMSCreateAgreement");
 const wTSMSImportOptInListSubscribers_1 = require("./wTSMSImportOptInListSubscribers");
 const wTSMSImportedListCreate_1 = require("./wTSMSImportedListCreate");
 const wTSMSOptInListSourceCreate_1 = require("./wTSMSOptInListSourceCreate");
 const wTSMSUpdatePhoneNumberConfig_1 = require("./wTSMSUpdatePhoneNumberConfig");
+const wTServiceCreateParams_1 = require("./wTServiceCreateParams");
+const wTServiceUpdateParams_1 = require("./wTServiceUpdateParams");
 const wTSettingsSetPassword_1 = require("./wTSettingsSetPassword");
 const wTStaticVoucher_1 = require("./wTStaticVoucher");
 const wTStaticVoucherCampaign_1 = require("./wTStaticVoucherCampaign");
@@ -650,6 +672,7 @@ let typeMap = {
     "AdvertisementCreditBroadcast": advertisementCreditBroadcast_1.AdvertisementCreditBroadcast,
     "AdvertisementCreditScan": advertisementCreditScan_1.AdvertisementCreditScan,
     "Agreement": agreement_1.Agreement,
+    "Amenity": amenity_1.Amenity,
     "Announcement": announcement_1.Announcement,
     "ApplicableTerminals": applicableTerminals_1.ApplicableTerminals,
     "AuthError": authError_1.AuthError,
@@ -789,9 +812,11 @@ let typeMap = {
     "Response": response_1.Response,
     "Role": role_1.Role,
     "RoleAuditLog": roleAuditLog_1.RoleAuditLog,
+    "RoomRate": roomRate_1.RoomRate,
     "SSImportedListRecipientCreateParams": sSImportedListRecipientCreateParams_1.SSImportedListRecipientCreateParams,
     "SSOptInSource": sSOptInSource_1.SSOptInSource,
     "SSOutboundStatuses": sSOutboundStatuses_1.SSOutboundStatuses,
+    "Service": service_1.Service,
     "SimpleSMSBroadcast": simpleSMSBroadcast_1.SimpleSMSBroadcast,
     "StaticVoucher": staticVoucher_1.StaticVoucher,
     "StaticVoucherCampaign": staticVoucherCampaign_1.StaticVoucherCampaign,
@@ -812,6 +837,8 @@ let typeMap = {
     "WTAdvertisementCreditCreateParams": wTAdvertisementCreditCreateParams_1.WTAdvertisementCreditCreateParams,
     "WTAdvertisementCreditScan": wTAdvertisementCreditScan_1.WTAdvertisementCreditScan,
     "WTAdvertisementCreditUpdateParams": wTAdvertisementCreditUpdateParams_1.WTAdvertisementCreditUpdateParams,
+    "WTAmenityCreateParams": wTAmenityCreateParams_1.WTAmenityCreateParams,
+    "WTAmenityUpdateParams": wTAmenityUpdateParams_1.WTAmenityUpdateParams,
     "WTAuthenticationCheckSessionTokenStatusResponse": wTAuthenticationCheckSessionTokenStatusResponse_1.WTAuthenticationCheckSessionTokenStatusResponse,
     "WTAuthenticationForgotPassword": wTAuthenticationForgotPassword_1.WTAuthenticationForgotPassword,
     "WTAuthenticationLoginRequest": wTAuthenticationLoginRequest_1.WTAuthenticationLoginRequest,
@@ -892,18 +919,24 @@ let typeMap = {
     "WTPosMachine": wTPosMachine_1.WTPosMachine,
     "WTPosMachineCreateParams": wTPosMachineCreateParams_1.WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": wTPosMachineUpdateParams_1.WTPosMachineUpdateParams,
+    "WTProductCreateParams": wTProductCreateParams_1.WTProductCreateParams,
+    "WTProductUpdateParams": wTProductUpdateParams_1.WTProductUpdateParams,
     "WTPromoCodeCreateParams": wTPromoCodeCreateParams_1.WTPromoCodeCreateParams,
     "WTPromoCodeUpdateParams": wTPromoCodeUpdateParams_1.WTPromoCodeUpdateParams,
     "WTQRCodeDesign": wTQRCodeDesign_1.WTQRCodeDesign,
     "WTQRCodeDesignCreateParams": wTQRCodeDesignCreateParams_1.WTQRCodeDesignCreateParams,
     "WTQRCodeDesignUpdateParams": wTQRCodeDesignUpdateParams_1.WTQRCodeDesignUpdateParams,
     "WTRole": wTRole_1.WTRole,
+    "WTRoomRateCreateParams": wTRoomRateCreateParams_1.WTRoomRateCreateParams,
+    "WTRoomRateUpdateParams": wTRoomRateUpdateParams_1.WTRoomRateUpdateParams,
     "WTSMSAcquirePhoneNumber": wTSMSAcquirePhoneNumber_1.WTSMSAcquirePhoneNumber,
     "WTSMSCreateAgreement": wTSMSCreateAgreement_1.WTSMSCreateAgreement,
     "WTSMSImportOptInListSubscribers": wTSMSImportOptInListSubscribers_1.WTSMSImportOptInListSubscribers,
     "WTSMSImportedListCreate": wTSMSImportedListCreate_1.WTSMSImportedListCreate,
     "WTSMSOptInListSourceCreate": wTSMSOptInListSourceCreate_1.WTSMSOptInListSourceCreate,
     "WTSMSUpdatePhoneNumberConfig": wTSMSUpdatePhoneNumberConfig_1.WTSMSUpdatePhoneNumberConfig,
+    "WTServiceCreateParams": wTServiceCreateParams_1.WTServiceCreateParams,
+    "WTServiceUpdateParams": wTServiceUpdateParams_1.WTServiceUpdateParams,
     "WTSettingsSetPassword": wTSettingsSetPassword_1.WTSettingsSetPassword,
     "WTStaticVoucher": wTStaticVoucher_1.WTStaticVoucher,
     "WTStaticVoucherCampaign": wTStaticVoucherCampaign_1.WTStaticVoucherCampaign,

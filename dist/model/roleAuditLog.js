@@ -6,6 +6,7 @@ class RoleAuditLog {
         return RoleAuditLog.attributeTypeMap;
     }
 }
+exports.RoleAuditLog = RoleAuditLog;
 RoleAuditLog.discriminator = undefined;
 RoleAuditLog.attributeTypeMap = [
     {
@@ -69,5 +70,4 @@ RoleAuditLog.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.RoleAuditLog = RoleAuditLog;
 //# sourceMappingURL=roleAuditLog.js.map

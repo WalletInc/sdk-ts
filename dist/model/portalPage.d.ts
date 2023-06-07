@@ -55,5 +55,9 @@ export declare enum PortalPage {
     PromoCodes,
     News,
     VirtualBusinessCards,
-    QrcodeDesigns
+    QrcodeDesigns,
+    Products,
+    Services,
+    RoomRates,
+    Amenities
 }

@@ -6,6 +6,7 @@ class WTMember {
         return WTMember.attributeTypeMap;
     }
 }
+exports.WTMember = WTMember;
 WTMember.discriminator = undefined;
 WTMember.attributeTypeMap = [
     {
@@ -69,5 +70,4 @@ WTMember.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTMember = WTMember;
 //# sourceMappingURL=wTMember.js.map

@@ -6,6 +6,7 @@ class SubscriptionPlan {
         return SubscriptionPlan.attributeTypeMap;
     }
 }
+exports.SubscriptionPlan = SubscriptionPlan;
 SubscriptionPlan.discriminator = undefined;
 SubscriptionPlan.attributeTypeMap = [
     {
@@ -44,5 +45,4 @@ SubscriptionPlan.attributeTypeMap = [
         "type": "Array<PortalPage>"
     }
 ];
-exports.SubscriptionPlan = SubscriptionPlan;
 //# sourceMappingURL=subscriptionPlan.js.map

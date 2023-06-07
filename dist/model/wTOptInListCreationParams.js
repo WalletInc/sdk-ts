@@ -6,6 +6,7 @@ class WTOptInListCreationParams {
         return WTOptInListCreationParams.attributeTypeMap;
     }
 }
+exports.WTOptInListCreationParams = WTOptInListCreationParams;
 WTOptInListCreationParams.discriminator = undefined;
 WTOptInListCreationParams.attributeTypeMap = [
     {
@@ -74,5 +75,4 @@ WTOptInListCreationParams.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
-exports.WTOptInListCreationParams = WTOptInListCreationParams;
 //# sourceMappingURL=wTOptInListCreationParams.js.map

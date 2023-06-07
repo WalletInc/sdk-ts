@@ -6,6 +6,7 @@ class UpdateStaticVoucherCampaignWithVoucher {
         return UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap;
     }
 }
+exports.UpdateStaticVoucherCampaignWithVoucher = UpdateStaticVoucherCampaignWithVoucher;
 UpdateStaticVoucherCampaignWithVoucher.discriminator = undefined;
 UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
     {
@@ -74,5 +75,4 @@ UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.UpdateStaticVoucherCampaignWithVoucher = UpdateStaticVoucherCampaignWithVoucher;
 //# sourceMappingURL=updateStaticVoucherCampaignWithVoucher.js.map

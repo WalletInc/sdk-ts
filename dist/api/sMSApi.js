@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var SMSApiApiKeys;
 (function (SMSApiApiKeys) {
     SMSApiApiKeys[SMSApiApiKeys["api_key"] = 0] = "api_key";
-})(SMSApiApiKeys = exports.SMSApiApiKeys || (exports.SMSApiApiKeys = {}));
+})(SMSApiApiKeys || (exports.SMSApiApiKeys = SMSApiApiKeys = {}));
 class SMSApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

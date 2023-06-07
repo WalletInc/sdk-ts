@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var WebTerminalApiApiKeys;
 (function (WebTerminalApiApiKeys) {
     WebTerminalApiApiKeys[WebTerminalApiApiKeys["api_key"] = 0] = "api_key";
-})(WebTerminalApiApiKeys = exports.WebTerminalApiApiKeys || (exports.WebTerminalApiApiKeys = {}));
+})(WebTerminalApiApiKeys || (exports.WebTerminalApiApiKeys = WebTerminalApiApiKeys = {}));
 class WebTerminalApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

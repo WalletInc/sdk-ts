@@ -6,6 +6,7 @@ class SimpleSMSBroadcast {
         return SimpleSMSBroadcast.attributeTypeMap;
     }
 }
+exports.SimpleSMSBroadcast = SimpleSMSBroadcast;
 SimpleSMSBroadcast.discriminator = undefined;
 SimpleSMSBroadcast.attributeTypeMap = [
     {
@@ -109,5 +110,4 @@ SimpleSMSBroadcast.attributeTypeMap = [
         "type": "WTImportedList"
     }
 ];
-exports.SimpleSMSBroadcast = SimpleSMSBroadcast;
 //# sourceMappingURL=simpleSMSBroadcast.js.map

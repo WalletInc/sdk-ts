@@ -6,6 +6,7 @@ class WTSettingsSetPassword {
         return WTSettingsSetPassword.attributeTypeMap;
     }
 }
+exports.WTSettingsSetPassword = WTSettingsSetPassword;
 WTSettingsSetPassword.discriminator = undefined;
 WTSettingsSetPassword.attributeTypeMap = [
     {
@@ -14,5 +15,4 @@ WTSettingsSetPassword.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTSettingsSetPassword = WTSettingsSetPassword;
 //# sourceMappingURL=wTSettingsSetPassword.js.map

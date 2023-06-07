@@ -6,6 +6,7 @@ class OptInListSource {
         return OptInListSource.attributeTypeMap;
     }
 }
+exports.OptInListSource = OptInListSource;
 OptInListSource.discriminator = undefined;
 OptInListSource.attributeTypeMap = [
     {
@@ -49,5 +50,4 @@ OptInListSource.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.OptInListSource = OptInListSource;
 //# sourceMappingURL=optInListSource.js.map
