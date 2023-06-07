@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var AnalyticsApiApiKeys;
 (function (AnalyticsApiApiKeys) {
     AnalyticsApiApiKeys[AnalyticsApiApiKeys["api_key"] = 0] = "api_key";
-})(AnalyticsApiApiKeys = exports.AnalyticsApiApiKeys || (exports.AnalyticsApiApiKeys = {}));
+})(AnalyticsApiApiKeys || (exports.AnalyticsApiApiKeys = AnalyticsApiApiKeys = {}));
 class AnalyticsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

@@ -6,6 +6,7 @@ class Request {
         return Request.attributeTypeMap;
     }
 }
+exports.Request = Request;
 Request.discriminator = undefined;
 Request.attributeTypeMap = [
     {
@@ -279,5 +280,4 @@ Request.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Request = Request;
 //# sourceMappingURL=request.js.map

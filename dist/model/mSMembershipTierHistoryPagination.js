@@ -6,6 +6,7 @@ class MSMembershipTierHistoryPagination {
         return MSMembershipTierHistoryPagination.attributeTypeMap;
     }
 }
+exports.MSMembershipTierHistoryPagination = MSMembershipTierHistoryPagination;
 MSMembershipTierHistoryPagination.discriminator = undefined;
 MSMembershipTierHistoryPagination.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ MSMembershipTierHistoryPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSMembershipTierHistoryPagination = MSMembershipTierHistoryPagination;
 //# sourceMappingURL=mSMembershipTierHistoryPagination.js.map

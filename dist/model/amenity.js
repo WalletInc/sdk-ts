@@ -6,6 +6,7 @@ class Amenity {
         return Amenity.attributeTypeMap;
     }
 }
+exports.Amenity = Amenity;
 Amenity.discriminator = undefined;
 Amenity.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ Amenity.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Amenity = Amenity;
 //# sourceMappingURL=amenity.js.map

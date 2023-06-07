@@ -6,6 +6,7 @@ class MSMembershipTierHistory {
         return MSMembershipTierHistory.attributeTypeMap;
     }
 }
+exports.MSMembershipTierHistory = MSMembershipTierHistory;
 MSMembershipTierHistory.discriminator = undefined;
 MSMembershipTierHistory.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ MSMembershipTierHistory.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.MSMembershipTierHistory = MSMembershipTierHistory;
 //# sourceMappingURL=mSMembershipTierHistory.js.map

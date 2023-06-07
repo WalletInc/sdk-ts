@@ -6,7 +6,7 @@ class ApplicableTerminals {
         return ApplicableTerminals.attributeTypeMap;
     }
 }
+exports.ApplicableTerminals = ApplicableTerminals;
 ApplicableTerminals.discriminator = undefined;
 ApplicableTerminals.attributeTypeMap = [];
-exports.ApplicableTerminals = ApplicableTerminals;
 //# sourceMappingURL=applicableTerminals.js.map

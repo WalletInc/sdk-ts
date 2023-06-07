@@ -6,6 +6,7 @@ class WTProductUpdateParams {
         return WTProductUpdateParams.attributeTypeMap;
     }
 }
+exports.WTProductUpdateParams = WTProductUpdateParams;
 WTProductUpdateParams.discriminator = undefined;
 WTProductUpdateParams.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ WTProductUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTProductUpdateParams = WTProductUpdateParams;
 //# sourceMappingURL=wTProductUpdateParams.js.map

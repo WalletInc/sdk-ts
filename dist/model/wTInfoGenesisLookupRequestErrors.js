@@ -6,6 +6,7 @@ class WTInfoGenesisLookupRequestErrors {
         return WTInfoGenesisLookupRequestErrors.attributeTypeMap;
     }
 }
+exports.WTInfoGenesisLookupRequestErrors = WTInfoGenesisLookupRequestErrors;
 WTInfoGenesisLookupRequestErrors.discriminator = undefined;
 WTInfoGenesisLookupRequestErrors.attributeTypeMap = [
     {
@@ -29,5 +30,4 @@ WTInfoGenesisLookupRequestErrors.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
-exports.WTInfoGenesisLookupRequestErrors = WTInfoGenesisLookupRequestErrors;
 //# sourceMappingURL=wTInfoGenesisLookupRequestErrors.js.map

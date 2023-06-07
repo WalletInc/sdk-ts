@@ -6,6 +6,7 @@ class WTWalletConfigurationSaveWalletRecord {
         return WTWalletConfigurationSaveWalletRecord.attributeTypeMap;
     }
 }
+exports.WTWalletConfigurationSaveWalletRecord = WTWalletConfigurationSaveWalletRecord;
 WTWalletConfigurationSaveWalletRecord.discriminator = undefined;
 WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
     {
@@ -259,5 +260,4 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTWalletConfigurationSaveWalletRecord = WTWalletConfigurationSaveWalletRecord;
 //# sourceMappingURL=wTWalletConfigurationSaveWalletRecord.js.map

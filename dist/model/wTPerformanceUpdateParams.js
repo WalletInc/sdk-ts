@@ -6,6 +6,7 @@ class WTPerformanceUpdateParams {
         return WTPerformanceUpdateParams.attributeTypeMap;
     }
 }
+exports.WTPerformanceUpdateParams = WTPerformanceUpdateParams;
 WTPerformanceUpdateParams.discriminator = undefined;
 WTPerformanceUpdateParams.attributeTypeMap = [
     {
@@ -49,5 +50,4 @@ WTPerformanceUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTPerformanceUpdateParams = WTPerformanceUpdateParams;
 //# sourceMappingURL=wTPerformanceUpdateParams.js.map

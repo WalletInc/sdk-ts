@@ -6,6 +6,7 @@ class InternalServerError {
         return InternalServerError.attributeTypeMap;
     }
 }
+exports.InternalServerError = InternalServerError;
 InternalServerError.discriminator = undefined;
 InternalServerError.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ InternalServerError.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.InternalServerError = InternalServerError;
 //# sourceMappingURL=internalServerError.js.map

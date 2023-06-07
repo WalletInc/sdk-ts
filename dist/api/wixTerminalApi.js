@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var WixTerminalApiApiKeys;
 (function (WixTerminalApiApiKeys) {
     WixTerminalApiApiKeys[WixTerminalApiApiKeys["api_key"] = 0] = "api_key";
-})(WixTerminalApiApiKeys = exports.WixTerminalApiApiKeys || (exports.WixTerminalApiApiKeys = {}));
+})(WixTerminalApiApiKeys || (exports.WixTerminalApiApiKeys = WixTerminalApiApiKeys = {}));
 class WixTerminalApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;
