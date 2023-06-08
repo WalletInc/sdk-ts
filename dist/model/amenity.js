@@ -6,6 +6,7 @@ class Amenity {
         return Amenity.attributeTypeMap;
     }
 }
+exports.Amenity = Amenity;
 Amenity.discriminator = undefined;
 Amenity.attributeTypeMap = [
     {
@@ -19,8 +20,8 @@ Amenity.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "displayValue",
-        "baseName": "displayValue",
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
         "type": "string"
     },
     {
@@ -31,6 +32,11 @@ Amenity.attributeTypeMap = [
     {
         "name": "mediaURL",
         "baseName": "mediaURL",
+        "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
         "type": "string"
     },
     {
@@ -59,5 +65,4 @@ Amenity.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Amenity = Amenity;
 //# sourceMappingURL=amenity.js.map

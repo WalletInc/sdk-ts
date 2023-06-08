@@ -15,9 +15,10 @@ import { RequestFile } from './models';
 export class WTAmenityUpdateParams {
     'title': string;
     'description': string;
-    'displayValue': string;
+    'displayedPrice'?: string;
     'orderNumber': number;
     'mediaURL'?: string;
+    'additionalInfoURL'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -33,8 +34,8 @@ export class WTAmenityUpdateParams {
             "type": "string"
         },
         {
-            "name": "displayValue",
-            "baseName": "displayValue",
+            "name": "displayedPrice",
+            "baseName": "displayedPrice",
             "type": "string"
         },
         {
@@ -45,6 +46,11 @@ export class WTAmenityUpdateParams {
         {
             "name": "mediaURL",
             "baseName": "mediaURL",
+            "type": "string"
+        },
+        {
+            "name": "additionalInfoURL",
+            "baseName": "additionalInfoURL",
             "type": "string"
         }    ];
 

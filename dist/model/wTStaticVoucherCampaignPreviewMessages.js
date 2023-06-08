@@ -6,6 +6,7 @@ class WTStaticVoucherCampaignPreviewMessages {
         return WTStaticVoucherCampaignPreviewMessages.attributeTypeMap;
     }
 }
+exports.WTStaticVoucherCampaignPreviewMessages = WTStaticVoucherCampaignPreviewMessages;
 WTStaticVoucherCampaignPreviewMessages.discriminator = undefined;
 WTStaticVoucherCampaignPreviewMessages.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ WTStaticVoucherCampaignPreviewMessages.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTStaticVoucherCampaignPreviewMessages = WTStaticVoucherCampaignPreviewMessages;
 //# sourceMappingURL=wTStaticVoucherCampaignPreviewMessages.js.map

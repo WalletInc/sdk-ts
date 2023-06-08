@@ -6,6 +6,7 @@ class MSMemberHistory {
         return MSMemberHistory.attributeTypeMap;
     }
 }
+exports.MSMemberHistory = MSMemberHistory;
 MSMemberHistory.discriminator = undefined;
 MSMemberHistory.attributeTypeMap = [
     {
@@ -64,5 +65,4 @@ MSMemberHistory.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.MSMemberHistory = MSMemberHistory;
 //# sourceMappingURL=mSMemberHistory.js.map

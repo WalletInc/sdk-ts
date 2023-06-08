@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var QRCodeDesignsApiApiKeys;
 (function (QRCodeDesignsApiApiKeys) {
     QRCodeDesignsApiApiKeys[QRCodeDesignsApiApiKeys["api_key"] = 0] = "api_key";
-})(QRCodeDesignsApiApiKeys = exports.QRCodeDesignsApiApiKeys || (exports.QRCodeDesignsApiApiKeys = {}));
+})(QRCodeDesignsApiApiKeys || (exports.QRCodeDesignsApiApiKeys = QRCodeDesignsApiApiKeys = {}));
 class QRCodeDesignsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

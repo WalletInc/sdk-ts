@@ -6,6 +6,7 @@ class DuplicateRowFound {
         return DuplicateRowFound.attributeTypeMap;
     }
 }
+exports.DuplicateRowFound = DuplicateRowFound;
 DuplicateRowFound.discriminator = undefined;
 DuplicateRowFound.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ DuplicateRowFound.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.DuplicateRowFound = DuplicateRowFound;
 //# sourceMappingURL=duplicateRowFound.js.map

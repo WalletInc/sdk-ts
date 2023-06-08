@@ -6,6 +6,7 @@ class StaticVoucherCampaignBroadcast {
         return StaticVoucherCampaignBroadcast.attributeTypeMap;
     }
 }
+exports.StaticVoucherCampaignBroadcast = StaticVoucherCampaignBroadcast;
 StaticVoucherCampaignBroadcast.discriminator = undefined;
 StaticVoucherCampaignBroadcast.attributeTypeMap = [
     {
@@ -104,5 +105,4 @@ StaticVoucherCampaignBroadcast.attributeTypeMap = [
         "type": "StaticVoucherCampaign"
     }
 ];
-exports.StaticVoucherCampaignBroadcast = StaticVoucherCampaignBroadcast;
 //# sourceMappingURL=staticVoucherCampaignBroadcast.js.map

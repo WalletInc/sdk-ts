@@ -6,6 +6,7 @@ class WTCustomerSearchByPhoneNumber {
         return WTCustomerSearchByPhoneNumber.attributeTypeMap;
     }
 }
+exports.WTCustomerSearchByPhoneNumber = WTCustomerSearchByPhoneNumber;
 WTCustomerSearchByPhoneNumber.discriminator = undefined;
 WTCustomerSearchByPhoneNumber.attributeTypeMap = [
     {
@@ -14,5 +15,4 @@ WTCustomerSearchByPhoneNumber.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTCustomerSearchByPhoneNumber = WTCustomerSearchByPhoneNumber;
 //# sourceMappingURL=wTCustomerSearchByPhoneNumber.js.map

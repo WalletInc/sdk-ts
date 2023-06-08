@@ -6,6 +6,7 @@ class WTProductUpdateParams {
         return WTProductUpdateParams.attributeTypeMap;
     }
 }
+exports.WTProductUpdateParams = WTProductUpdateParams;
 WTProductUpdateParams.discriminator = undefined;
 WTProductUpdateParams.attributeTypeMap = [
     {
@@ -19,8 +20,8 @@ WTProductUpdateParams.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "displayValue",
-        "baseName": "displayValue",
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
         "type": "string"
     },
     {
@@ -32,7 +33,11 @@ WTProductUpdateParams.attributeTypeMap = [
         "name": "mediaURL",
         "baseName": "mediaURL",
         "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
+        "type": "string"
     }
 ];
-exports.WTProductUpdateParams = WTProductUpdateParams;
 //# sourceMappingURL=wTProductUpdateParams.js.map

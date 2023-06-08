@@ -6,6 +6,7 @@ class WTRoomRateCreateParams {
         return WTRoomRateCreateParams.attributeTypeMap;
     }
 }
+exports.WTRoomRateCreateParams = WTRoomRateCreateParams;
 WTRoomRateCreateParams.discriminator = undefined;
 WTRoomRateCreateParams.attributeTypeMap = [
     {
@@ -19,8 +20,8 @@ WTRoomRateCreateParams.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "displayValue",
-        "baseName": "displayValue",
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
         "type": "string"
     },
     {
@@ -32,7 +33,11 @@ WTRoomRateCreateParams.attributeTypeMap = [
         "name": "mediaURL",
         "baseName": "mediaURL",
         "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
+        "type": "string"
     }
 ];
-exports.WTRoomRateCreateParams = WTRoomRateCreateParams;
 //# sourceMappingURL=wTRoomRateCreateParams.js.map

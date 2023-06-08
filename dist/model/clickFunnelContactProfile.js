@@ -6,6 +6,7 @@ class ClickFunnelContactProfile {
         return ClickFunnelContactProfile.attributeTypeMap;
     }
 }
+exports.ClickFunnelContactProfile = ClickFunnelContactProfile;
 ClickFunnelContactProfile.discriminator = undefined;
 ClickFunnelContactProfile.attributeTypeMap = [
     {
@@ -184,5 +185,4 @@ ClickFunnelContactProfile.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.ClickFunnelContactProfile = ClickFunnelContactProfile;
 //# sourceMappingURL=clickFunnelContactProfile.js.map

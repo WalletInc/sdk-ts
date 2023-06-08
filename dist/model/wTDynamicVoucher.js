@@ -6,6 +6,7 @@ class WTDynamicVoucher {
         return WTDynamicVoucher.attributeTypeMap;
     }
 }
+exports.WTDynamicVoucher = WTDynamicVoucher;
 WTDynamicVoucher.discriminator = undefined;
 WTDynamicVoucher.attributeTypeMap = [
     {
@@ -174,5 +175,4 @@ WTDynamicVoucher.attributeTypeMap = [
         "type": "WTDynamicVoucherSummary"
     }
 ];
-exports.WTDynamicVoucher = WTDynamicVoucher;
 //# sourceMappingURL=wTDynamicVoucher.js.map

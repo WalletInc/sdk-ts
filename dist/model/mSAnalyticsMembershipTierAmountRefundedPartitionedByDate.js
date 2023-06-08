@@ -6,6 +6,7 @@ class MSAnalyticsMembershipTierAmountRefundedPartitionedByDate {
         return MSAnalyticsMembershipTierAmountRefundedPartitionedByDate.attributeTypeMap;
     }
 }
+exports.MSAnalyticsMembershipTierAmountRefundedPartitionedByDate = MSAnalyticsMembershipTierAmountRefundedPartitionedByDate;
 MSAnalyticsMembershipTierAmountRefundedPartitionedByDate.discriminator = undefined;
 MSAnalyticsMembershipTierAmountRefundedPartitionedByDate.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ MSAnalyticsMembershipTierAmountRefundedPartitionedByDate.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSAnalyticsMembershipTierAmountRefundedPartitionedByDate = MSAnalyticsMembershipTierAmountRefundedPartitionedByDate;
 //# sourceMappingURL=mSAnalyticsMembershipTierAmountRefundedPartitionedByDate.js.map

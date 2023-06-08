@@ -6,6 +6,7 @@ class PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortO
         return PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey.attributeTypeMap;
     }
 }
+exports.PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey = PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey;
 PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey.discriminator = undefined;
 PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey.attributeTypeMap = [
     {
@@ -29,5 +30,4 @@ PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptions
         "type": "string"
     }
 ];
-exports.PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey = PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey;
 //# sourceMappingURL=pickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey.js.map

@@ -6,6 +6,7 @@ class WTProductCreateParams {
         return WTProductCreateParams.attributeTypeMap;
     }
 }
+exports.WTProductCreateParams = WTProductCreateParams;
 WTProductCreateParams.discriminator = undefined;
 WTProductCreateParams.attributeTypeMap = [
     {
@@ -19,8 +20,8 @@ WTProductCreateParams.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "displayValue",
-        "baseName": "displayValue",
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
         "type": "string"
     },
     {
@@ -32,7 +33,11 @@ WTProductCreateParams.attributeTypeMap = [
         "name": "mediaURL",
         "baseName": "mediaURL",
         "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
+        "type": "string"
     }
 ];
-exports.WTProductCreateParams = WTProductCreateParams;
 //# sourceMappingURL=wTProductCreateParams.js.map

@@ -6,6 +6,7 @@ class SubscriptionFeature {
         return SubscriptionFeature.attributeTypeMap;
     }
 }
+exports.SubscriptionFeature = SubscriptionFeature;
 SubscriptionFeature.discriminator = undefined;
 SubscriptionFeature.attributeTypeMap = [
     {
@@ -54,5 +55,4 @@ SubscriptionFeature.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.SubscriptionFeature = SubscriptionFeature;
 //# sourceMappingURL=subscriptionFeature.js.map

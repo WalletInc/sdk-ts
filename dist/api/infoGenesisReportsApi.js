@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var InfoGenesisReportsApiApiKeys;
 (function (InfoGenesisReportsApiApiKeys) {
     InfoGenesisReportsApiApiKeys[InfoGenesisReportsApiApiKeys["api_key"] = 0] = "api_key";
-})(InfoGenesisReportsApiApiKeys = exports.InfoGenesisReportsApiApiKeys || (exports.InfoGenesisReportsApiApiKeys = {}));
+})(InfoGenesisReportsApiApiKeys || (exports.InfoGenesisReportsApiApiKeys = InfoGenesisReportsApiApiKeys = {}));
 class InfoGenesisReportsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

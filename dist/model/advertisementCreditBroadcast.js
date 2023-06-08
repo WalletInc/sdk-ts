@@ -6,6 +6,7 @@ class AdvertisementCreditBroadcast {
         return AdvertisementCreditBroadcast.attributeTypeMap;
     }
 }
+exports.AdvertisementCreditBroadcast = AdvertisementCreditBroadcast;
 AdvertisementCreditBroadcast.discriminator = undefined;
 AdvertisementCreditBroadcast.attributeTypeMap = [
     {
@@ -114,5 +115,4 @@ AdvertisementCreditBroadcast.attributeTypeMap = [
         "type": "AdvertisementCredit"
     }
 ];
-exports.AdvertisementCreditBroadcast = AdvertisementCreditBroadcast;
 //# sourceMappingURL=advertisementCreditBroadcast.js.map

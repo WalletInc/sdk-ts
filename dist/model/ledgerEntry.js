@@ -6,6 +6,7 @@ class LedgerEntry {
         return LedgerEntry.attributeTypeMap;
     }
 }
+exports.LedgerEntry = LedgerEntry;
 LedgerEntry.discriminator = undefined;
 LedgerEntry.attributeTypeMap = [
     {
@@ -134,5 +135,4 @@ LedgerEntry.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.LedgerEntry = LedgerEntry;
 //# sourceMappingURL=ledgerEntry.js.map

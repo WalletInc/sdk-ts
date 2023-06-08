@@ -6,6 +6,7 @@ class WTPaymentDesignCreateParams {
         return WTPaymentDesignCreateParams.attributeTypeMap;
     }
 }
+exports.WTPaymentDesignCreateParams = WTPaymentDesignCreateParams;
 WTPaymentDesignCreateParams.discriminator = undefined;
 WTPaymentDesignCreateParams.attributeTypeMap = [
     {
@@ -74,5 +75,4 @@ WTPaymentDesignCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTPaymentDesignCreateParams = WTPaymentDesignCreateParams;
 //# sourceMappingURL=wTPaymentDesignCreateParams.js.map
