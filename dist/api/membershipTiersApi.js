@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var MembershipTiersApiApiKeys;
 (function (MembershipTiersApiApiKeys) {
     MembershipTiersApiApiKeys[MembershipTiersApiApiKeys["api_key"] = 0] = "api_key";
-})(MembershipTiersApiApiKeys = exports.MembershipTiersApiApiKeys || (exports.MembershipTiersApiApiKeys = {}));
+})(MembershipTiersApiApiKeys || (exports.MembershipTiersApiApiKeys = MembershipTiersApiApiKeys = {}));
 class MembershipTiersApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

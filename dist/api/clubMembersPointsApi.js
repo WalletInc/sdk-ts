@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var ClubMembersPointsApiApiKeys;
 (function (ClubMembersPointsApiApiKeys) {
     ClubMembersPointsApiApiKeys[ClubMembersPointsApiApiKeys["api_key"] = 0] = "api_key";
-})(ClubMembersPointsApiApiKeys = exports.ClubMembersPointsApiApiKeys || (exports.ClubMembersPointsApiApiKeys = {}));
+})(ClubMembersPointsApiApiKeys || (exports.ClubMembersPointsApiApiKeys = ClubMembersPointsApiApiKeys = {}));
 class ClubMembersPointsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

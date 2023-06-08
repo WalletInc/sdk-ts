@@ -6,6 +6,7 @@ class ClickFunnelOriginalAmount {
         return ClickFunnelOriginalAmount.attributeTypeMap;
     }
 }
+exports.ClickFunnelOriginalAmount = ClickFunnelOriginalAmount;
 ClickFunnelOriginalAmount.discriminator = undefined;
 ClickFunnelOriginalAmount.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ ClickFunnelOriginalAmount.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.ClickFunnelOriginalAmount = ClickFunnelOriginalAmount;
 //# sourceMappingURL=clickFunnelOriginalAmount.js.map

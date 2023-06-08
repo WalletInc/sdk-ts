@@ -6,6 +6,7 @@ class MSMemberRedemptionPagination {
         return MSMemberRedemptionPagination.attributeTypeMap;
     }
 }
+exports.MSMemberRedemptionPagination = MSMemberRedemptionPagination;
 MSMemberRedemptionPagination.discriminator = undefined;
 MSMemberRedemptionPagination.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ MSMemberRedemptionPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSMemberRedemptionPagination = MSMemberRedemptionPagination;
 //# sourceMappingURL=mSMemberRedemptionPagination.js.map

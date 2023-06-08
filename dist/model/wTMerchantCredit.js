@@ -6,6 +6,7 @@ class WTMerchantCredit {
         return WTMerchantCredit.attributeTypeMap;
     }
 }
+exports.WTMerchantCredit = WTMerchantCredit;
 WTMerchantCredit.discriminator = undefined;
 WTMerchantCredit.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ WTMerchantCredit.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTMerchantCredit = WTMerchantCredit;
 //# sourceMappingURL=wTMerchantCredit.js.map

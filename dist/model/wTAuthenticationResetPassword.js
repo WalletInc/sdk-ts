@@ -6,6 +6,7 @@ class WTAuthenticationResetPassword {
         return WTAuthenticationResetPassword.attributeTypeMap;
     }
 }
+exports.WTAuthenticationResetPassword = WTAuthenticationResetPassword;
 WTAuthenticationResetPassword.discriminator = undefined;
 WTAuthenticationResetPassword.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ WTAuthenticationResetPassword.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAuthenticationResetPassword = WTAuthenticationResetPassword;
 //# sourceMappingURL=wTAuthenticationResetPassword.js.map

@@ -6,6 +6,7 @@ class ClickFunnelRegistration {
         return ClickFunnelRegistration.attributeTypeMap;
     }
 }
+exports.ClickFunnelRegistration = ClickFunnelRegistration;
 ClickFunnelRegistration.discriminator = undefined;
 ClickFunnelRegistration.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ ClickFunnelRegistration.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.ClickFunnelRegistration = ClickFunnelRegistration;
 //# sourceMappingURL=clickFunnelRegistration.js.map

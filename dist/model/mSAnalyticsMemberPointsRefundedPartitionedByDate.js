@@ -6,6 +6,7 @@ class MSAnalyticsMemberPointsRefundedPartitionedByDate {
         return MSAnalyticsMemberPointsRefundedPartitionedByDate.attributeTypeMap;
     }
 }
+exports.MSAnalyticsMemberPointsRefundedPartitionedByDate = MSAnalyticsMemberPointsRefundedPartitionedByDate;
 MSAnalyticsMemberPointsRefundedPartitionedByDate.discriminator = undefined;
 MSAnalyticsMemberPointsRefundedPartitionedByDate.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ MSAnalyticsMemberPointsRefundedPartitionedByDate.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSAnalyticsMemberPointsRefundedPartitionedByDate = MSAnalyticsMemberPointsRefundedPartitionedByDate;
 //# sourceMappingURL=mSAnalyticsMemberPointsRefundedPartitionedByDate.js.map

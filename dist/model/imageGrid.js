@@ -6,6 +6,7 @@ class ImageGrid {
         return ImageGrid.attributeTypeMap;
     }
 }
+exports.ImageGrid = ImageGrid;
 ImageGrid.discriminator = undefined;
 ImageGrid.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ ImageGrid.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.ImageGrid = ImageGrid;
 //# sourceMappingURL=imageGrid.js.map

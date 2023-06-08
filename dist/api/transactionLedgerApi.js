@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var TransactionLedgerApiApiKeys;
 (function (TransactionLedgerApiApiKeys) {
     TransactionLedgerApiApiKeys[TransactionLedgerApiApiKeys["api_key"] = 0] = "api_key";
-})(TransactionLedgerApiApiKeys = exports.TransactionLedgerApiApiKeys || (exports.TransactionLedgerApiApiKeys = {}));
+})(TransactionLedgerApiApiKeys || (exports.TransactionLedgerApiApiKeys = TransactionLedgerApiApiKeys = {}));
 class TransactionLedgerApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

@@ -6,6 +6,7 @@ class WalletConfiguration {
         return WalletConfiguration.attributeTypeMap;
     }
 }
+exports.WalletConfiguration = WalletConfiguration;
 WalletConfiguration.discriminator = undefined;
 WalletConfiguration.attributeTypeMap = [
     {
@@ -174,6 +175,21 @@ WalletConfiguration.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "isGaming",
+        "baseName": "isGaming",
+        "type": "boolean"
+    },
+    {
+        "name": "isDining",
+        "baseName": "isDining",
+        "type": "boolean"
+    },
+    {
+        "name": "isLounges",
+        "baseName": "isLounges",
+        "type": "boolean"
+    },
+    {
         "name": "isMapDirections",
         "baseName": "isMapDirections",
         "type": "boolean"
@@ -279,5 +295,4 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WalletConfiguration = WalletConfiguration;
 //# sourceMappingURL=walletConfiguration.js.map

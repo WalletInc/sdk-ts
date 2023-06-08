@@ -6,7 +6,7 @@ class VSDynamicVoucherStatus {
         return VSDynamicVoucherStatus.attributeTypeMap;
     }
 }
+exports.VSDynamicVoucherStatus = VSDynamicVoucherStatus;
 VSDynamicVoucherStatus.discriminator = undefined;
 VSDynamicVoucherStatus.attributeTypeMap = [];
-exports.VSDynamicVoucherStatus = VSDynamicVoucherStatus;
 //# sourceMappingURL=vSDynamicVoucherStatus.js.map

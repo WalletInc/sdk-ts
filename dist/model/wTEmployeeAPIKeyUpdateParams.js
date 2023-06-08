@@ -6,6 +6,7 @@ class WTEmployeeAPIKeyUpdateParams {
         return WTEmployeeAPIKeyUpdateParams.attributeTypeMap;
     }
 }
+exports.WTEmployeeAPIKeyUpdateParams = WTEmployeeAPIKeyUpdateParams;
 WTEmployeeAPIKeyUpdateParams.discriminator = undefined;
 WTEmployeeAPIKeyUpdateParams.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ WTEmployeeAPIKeyUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeAPIKeyUpdateParams = WTEmployeeAPIKeyUpdateParams;
 //# sourceMappingURL=wTEmployeeAPIKeyUpdateParams.js.map

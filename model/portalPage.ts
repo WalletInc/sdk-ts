@@ -73,5 +73,8 @@ export enum PortalPage {
     Products = <any> 'products',
     Services = <any> 'services',
     RoomRates = <any> 'room-rates',
-    Amenities = <any> 'amenities'
+    Amenities = <any> 'amenities',
+    Dining = <any> 'dining',
+    Gaming = <any> 'gaming',
+    Lounges = <any> 'lounges'
 }

@@ -6,6 +6,7 @@ class WTWalletObjectPrefixCounts {
         return WTWalletObjectPrefixCounts.attributeTypeMap;
     }
 }
+exports.WTWalletObjectPrefixCounts = WTWalletObjectPrefixCounts;
 WTWalletObjectPrefixCounts.discriminator = undefined;
 WTWalletObjectPrefixCounts.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ WTWalletObjectPrefixCounts.attributeTypeMap = [
         "type": "Array<WTWalletPageViewCount>"
     }
 ];
-exports.WTWalletObjectPrefixCounts = WTWalletObjectPrefixCounts;
 //# sourceMappingURL=wTWalletObjectPrefixCounts.js.map
