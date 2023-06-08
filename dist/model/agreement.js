@@ -6,6 +6,7 @@ class Agreement {
         return Agreement.attributeTypeMap;
     }
 }
+exports.Agreement = Agreement;
 Agreement.discriminator = undefined;
 Agreement.attributeTypeMap = [
     {
@@ -99,5 +100,4 @@ Agreement.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Agreement = Agreement;
 //# sourceMappingURL=agreement.js.map

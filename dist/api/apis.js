@@ -35,6 +35,8 @@ __exportStar(require("./customerApi"), exports);
 const customerApi_1 = require("./customerApi");
 __exportStar(require("./dashboardApi"), exports);
 const dashboardApi_1 = require("./dashboardApi");
+__exportStar(require("./diningApi"), exports);
+const diningApi_1 = require("./diningApi");
 __exportStar(require("./dynamicVouchersApi"), exports);
 const dynamicVouchersApi_1 = require("./dynamicVouchersApi");
 __exportStar(require("./emailSubscriberApi"), exports);
@@ -45,6 +47,8 @@ __exportStar(require("./employeeAccessApi"), exports);
 const employeeAccessApi_1 = require("./employeeAccessApi");
 __exportStar(require("./employeesApi"), exports);
 const employeesApi_1 = require("./employeesApi");
+__exportStar(require("./gamingApi"), exports);
+const gamingApi_1 = require("./gamingApi");
 __exportStar(require("./imageGridApi"), exports);
 const imageGridApi_1 = require("./imageGridApi");
 __exportStar(require("./industriesApi"), exports);
@@ -57,6 +61,8 @@ __exportStar(require("./interactionsApi"), exports);
 const interactionsApi_1 = require("./interactionsApi");
 __exportStar(require("./loginAndLogoutApi"), exports);
 const loginAndLogoutApi_1 = require("./loginAndLogoutApi");
+__exportStar(require("./loungeApi"), exports);
+const loungeApi_1 = require("./loungeApi");
 __exportStar(require("./membershipTiersApi"), exports);
 const membershipTiersApi_1 = require("./membershipTiersApi");
 __exportStar(require("./merchantApi"), exports);
@@ -123,5 +129,5 @@ class HttpError extends Error {
     }
 }
 exports.HttpError = HttpError;
-exports.APIS = [advertisementCreditsApi_1.AdvertisementCreditsApi, amenitiesApi_1.AmenitiesApi, analyticsApi_1.AnalyticsApi, appleWalletSubscribersApi_1.AppleWalletSubscribersApi, billingApi_1.BillingApi, clubMembersPointsApi_1.ClubMembersPointsApi, configurationApi_1.ConfigurationApi, countriesApi_1.CountriesApi, customerApi_1.CustomerApi, dashboardApi_1.DashboardApi, dynamicVouchersApi_1.DynamicVouchersApi, emailSubscriberApi_1.EmailSubscriberApi, employeeAPIKeysApi_1.EmployeeAPIKeysApi, employeeAccessApi_1.EmployeeAccessApi, employeesApi_1.EmployeesApi, imageGridApi_1.ImageGridApi, industriesApi_1.IndustriesApi, infoGenesisReportsApi_1.InfoGenesisReportsApi, integratedTerminalsApi_1.IntegratedTerminalsApi, interactionsApi_1.InteractionsApi, loginAndLogoutApi_1.LoginAndLogoutApi, membershipTiersApi_1.MembershipTiersApi, merchantApi_1.MerchantApi, merchantCreditsApi_1.MerchantCreditsApi, merchantURLsApi_1.MerchantURLsApi, mobileTerminalApi_1.MobileTerminalApi, newsApi_1.NewsApi, paymentDesignsApi_1.PaymentDesignsApi, performancesApi_1.PerformancesApi, productsApi_1.ProductsApi, promotionCodesApi_1.PromotionCodesApi, qRCodeDesignsApi_1.QRCodeDesignsApi, quickLinksApi_1.QuickLinksApi, quickLinksSectionApi_1.QuickLinksSectionApi, roomRatesApi_1.RoomRatesApi, sMSApi_1.SMSApi, servicesApi_1.ServicesApi, settingsApi_1.SettingsApi, shopifyTerminalApi_1.ShopifyTerminalApi, staticVoucherCampaignGroupsApi_1.StaticVoucherCampaignGroupsApi, staticVoucherCampaignsApi_1.StaticVoucherCampaignsApi, staticVouchersApi_1.StaticVouchersApi, systemApi_1.SystemApi, transactionLedgerApi_1.TransactionLedgerApi, utilitiesApi_1.UtilitiesApi, virtualBusinessCardApi_1.VirtualBusinessCardApi, webTerminalApi_1.WebTerminalApi, wixTerminalApi_1.WixTerminalApi, wooCommerceTerminalApi_1.WooCommerceTerminalApi];
+exports.APIS = [advertisementCreditsApi_1.AdvertisementCreditsApi, amenitiesApi_1.AmenitiesApi, analyticsApi_1.AnalyticsApi, appleWalletSubscribersApi_1.AppleWalletSubscribersApi, billingApi_1.BillingApi, clubMembersPointsApi_1.ClubMembersPointsApi, configurationApi_1.ConfigurationApi, countriesApi_1.CountriesApi, customerApi_1.CustomerApi, dashboardApi_1.DashboardApi, diningApi_1.DiningApi, dynamicVouchersApi_1.DynamicVouchersApi, emailSubscriberApi_1.EmailSubscriberApi, employeeAPIKeysApi_1.EmployeeAPIKeysApi, employeeAccessApi_1.EmployeeAccessApi, employeesApi_1.EmployeesApi, gamingApi_1.GamingApi, imageGridApi_1.ImageGridApi, industriesApi_1.IndustriesApi, infoGenesisReportsApi_1.InfoGenesisReportsApi, integratedTerminalsApi_1.IntegratedTerminalsApi, interactionsApi_1.InteractionsApi, loginAndLogoutApi_1.LoginAndLogoutApi, loungeApi_1.LoungeApi, membershipTiersApi_1.MembershipTiersApi, merchantApi_1.MerchantApi, merchantCreditsApi_1.MerchantCreditsApi, merchantURLsApi_1.MerchantURLsApi, mobileTerminalApi_1.MobileTerminalApi, newsApi_1.NewsApi, paymentDesignsApi_1.PaymentDesignsApi, performancesApi_1.PerformancesApi, productsApi_1.ProductsApi, promotionCodesApi_1.PromotionCodesApi, qRCodeDesignsApi_1.QRCodeDesignsApi, quickLinksApi_1.QuickLinksApi, quickLinksSectionApi_1.QuickLinksSectionApi, roomRatesApi_1.RoomRatesApi, sMSApi_1.SMSApi, servicesApi_1.ServicesApi, settingsApi_1.SettingsApi, shopifyTerminalApi_1.ShopifyTerminalApi, staticVoucherCampaignGroupsApi_1.StaticVoucherCampaignGroupsApi, staticVoucherCampaignsApi_1.StaticVoucherCampaignsApi, staticVouchersApi_1.StaticVouchersApi, systemApi_1.SystemApi, transactionLedgerApi_1.TransactionLedgerApi, utilitiesApi_1.UtilitiesApi, virtualBusinessCardApi_1.VirtualBusinessCardApi, webTerminalApi_1.WebTerminalApi, wixTerminalApi_1.WixTerminalApi, wooCommerceTerminalApi_1.WooCommerceTerminalApi];
 //# sourceMappingURL=apis.js.map

@@ -6,6 +6,7 @@ class FalsumError {
         return FalsumError.attributeTypeMap;
     }
 }
+exports.FalsumError = FalsumError;
 FalsumError.discriminator = undefined;
 FalsumError.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ FalsumError.attributeTypeMap = [
         "type": "Array<FalsumField>"
     }
 ];
-exports.FalsumError = FalsumError;
 //# sourceMappingURL=falsumError.js.map

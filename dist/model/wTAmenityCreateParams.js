@@ -6,6 +6,7 @@ class WTAmenityCreateParams {
         return WTAmenityCreateParams.attributeTypeMap;
     }
 }
+exports.WTAmenityCreateParams = WTAmenityCreateParams;
 WTAmenityCreateParams.discriminator = undefined;
 WTAmenityCreateParams.attributeTypeMap = [
     {
@@ -39,5 +40,4 @@ WTAmenityCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAmenityCreateParams = WTAmenityCreateParams;
 //# sourceMappingURL=wTAmenityCreateParams.js.map

@@ -59,5 +59,8 @@ export declare enum PortalPage {
     Products,
     Services,
     RoomRates,
-    Amenities
+    Amenities,
+    Dining,
+    Gaming,
+    Lounges
 }

@@ -6,6 +6,7 @@ class WTInfoGenesisRoutingIDs {
         return WTInfoGenesisRoutingIDs.attributeTypeMap;
     }
 }
+exports.WTInfoGenesisRoutingIDs = WTInfoGenesisRoutingIDs;
 WTInfoGenesisRoutingIDs.discriminator = undefined;
 WTInfoGenesisRoutingIDs.attributeTypeMap = [
     {
@@ -14,5 +15,4 @@ WTInfoGenesisRoutingIDs.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
-exports.WTInfoGenesisRoutingIDs = WTInfoGenesisRoutingIDs;
 //# sourceMappingURL=wTInfoGenesisRoutingIDs.js.map

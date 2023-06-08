@@ -6,6 +6,7 @@ class WTTCPAOpt {
         return WTTCPAOpt.attributeTypeMap;
     }
 }
+exports.WTTCPAOpt = WTTCPAOpt;
 WTTCPAOpt.discriminator = undefined;
 WTTCPAOpt.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ WTTCPAOpt.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTTCPAOpt = WTTCPAOpt;
 //# sourceMappingURL=wTTCPAOpt.js.map

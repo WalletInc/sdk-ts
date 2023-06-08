@@ -32,6 +32,9 @@ export declare class WTWalletConfigurationSaveWalletRecord {
     'isServices': boolean;
     'isRoomRates': boolean;
     'isAmenities': boolean;
+    'isGaming': boolean;
+    'isDining': boolean;
+    'isLounges': boolean;
     'isMapDirections': boolean;
     'isLinkBook': boolean;
     'isImageGrid': boolean;

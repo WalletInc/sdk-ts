@@ -6,6 +6,7 @@ class WTMembershipTierCreationParams {
         return WTMembershipTierCreationParams.attributeTypeMap;
     }
 }
+exports.WTMembershipTierCreationParams = WTMembershipTierCreationParams;
 WTMembershipTierCreationParams.discriminator = undefined;
 WTMembershipTierCreationParams.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ WTMembershipTierCreationParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTMembershipTierCreationParams = WTMembershipTierCreationParams;
 //# sourceMappingURL=wTMembershipTierCreationParams.js.map

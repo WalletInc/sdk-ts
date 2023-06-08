@@ -6,6 +6,7 @@ class MerchantCreditSearch {
         return MerchantCreditSearch.attributeTypeMap;
     }
 }
+exports.MerchantCreditSearch = MerchantCreditSearch;
 MerchantCreditSearch.discriminator = undefined;
 MerchantCreditSearch.attributeTypeMap = [
     {
@@ -29,5 +30,4 @@ MerchantCreditSearch.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.MerchantCreditSearch = MerchantCreditSearch;
 //# sourceMappingURL=merchantCreditSearch.js.map

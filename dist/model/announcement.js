@@ -6,6 +6,7 @@ class Announcement {
         return Announcement.attributeTypeMap;
     }
 }
+exports.Announcement = Announcement;
 Announcement.discriminator = undefined;
 Announcement.attributeTypeMap = [
     {
@@ -44,5 +45,4 @@ Announcement.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Announcement = Announcement;
 //# sourceMappingURL=announcement.js.map

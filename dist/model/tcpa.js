@@ -6,6 +6,7 @@ class Tcpa {
         return Tcpa.attributeTypeMap;
     }
 }
+exports.Tcpa = Tcpa;
 Tcpa.discriminator = undefined;
 Tcpa.attributeTypeMap = [
     {
@@ -44,5 +45,4 @@ Tcpa.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Tcpa = Tcpa;
 //# sourceMappingURL=tcpa.js.map

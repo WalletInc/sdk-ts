@@ -46,6 +46,9 @@ export class WTWalletConfigurationSaveWalletRecord {
     'isServices': boolean;
     'isRoomRates': boolean;
     'isAmenities': boolean;
+    'isGaming': boolean;
+    'isDining': boolean;
+    'isLounges': boolean;
     'isMapDirections': boolean;
     'isLinkBook': boolean;
     'isImageGrid': boolean;
@@ -230,6 +233,21 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "isAmenities",
             "baseName": "isAmenities",
+            "type": "boolean"
+        },
+        {
+            "name": "isGaming",
+            "baseName": "isGaming",
+            "type": "boolean"
+        },
+        {
+            "name": "isDining",
+            "baseName": "isDining",
+            "type": "boolean"
+        },
+        {
+            "name": "isLounges",
+            "baseName": "isLounges",
             "type": "boolean"
         },
         {

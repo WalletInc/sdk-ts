@@ -6,6 +6,7 @@ class WTInfoGenesisUniquePostingIDs {
         return WTInfoGenesisUniquePostingIDs.attributeTypeMap;
     }
 }
+exports.WTInfoGenesisUniquePostingIDs = WTInfoGenesisUniquePostingIDs;
 WTInfoGenesisUniquePostingIDs.discriminator = undefined;
 WTInfoGenesisUniquePostingIDs.attributeTypeMap = [
     {
@@ -14,5 +15,4 @@ WTInfoGenesisUniquePostingIDs.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
-exports.WTInfoGenesisUniquePostingIDs = WTInfoGenesisUniquePostingIDs;
 //# sourceMappingURL=wTInfoGenesisUniquePostingIDs.js.map

@@ -43,6 +43,7 @@ __exportStar(require("./clickFunnelRegistration"), exports);
 __exportStar(require("./createStaticVoucherCampaign"), exports);
 __exportStar(require("./createStaticVoucherCampaignWithVoucherWithCSV"), exports);
 __exportStar(require("./dashboardWidget"), exports);
+__exportStar(require("./dining"), exports);
 __exportStar(require("./document"), exports);
 __exportStar(require("./duplicateRowFound"), exports);
 __exportStar(require("./dynamicVoucher"), exports);
@@ -59,6 +60,7 @@ __exportStar(require("./falsumField"), exports);
 __exportStar(require("./feature"), exports);
 __exportStar(require("./forbiddenRequest"), exports);
 __exportStar(require("./foreignKeyDoesNotExist"), exports);
+__exportStar(require("./gaming"), exports);
 __exportStar(require("./helpDeskRequest"), exports);
 __exportStar(require("./imageGrid"), exports);
 __exportStar(require("./importedList"), exports);
@@ -81,6 +83,7 @@ __exportStar(require("./internalServerError"), exports);
 __exportStar(require("./ledgerEntry"), exports);
 __exportStar(require("./linkBook"), exports);
 __exportStar(require("./linkBookSection"), exports);
+__exportStar(require("./lounge"), exports);
 __exportStar(require("./mSAnalyticsMemberCountPartitionedByDate"), exports);
 __exportStar(require("./mSAnalyticsMemberPointsRedeemedPartitionedByDate"), exports);
 __exportStar(require("./mSAnalyticsMemberPointsRefundedPartitionedByDate"), exports);
@@ -218,6 +221,8 @@ __exportStar(require("./wTBillingVerifyPaymentMethodResponse"), exports);
 __exportStar(require("./wTCountResult"), exports);
 __exportStar(require("./wTCustomerSearchByMemberID"), exports);
 __exportStar(require("./wTCustomerSearchByPhoneNumber"), exports);
+__exportStar(require("./wTDiningCreateParams"), exports);
+__exportStar(require("./wTDiningUpdateParams"), exports);
 __exportStar(require("./wTDynamicVoucher"), exports);
 __exportStar(require("./wTDynamicVoucherCreateParams"), exports);
 __exportStar(require("./wTDynamicVoucherRedemption"), exports);
@@ -246,6 +251,8 @@ __exportStar(require("./wTEmployeeSendHelpDeskResponse"), exports);
 __exportStar(require("./wTEmployeeUpdate"), exports);
 __exportStar(require("./wTEmployeeUpdateRecords"), exports);
 __exportStar(require("./wTFetchWalletPaymentObjectWithToken"), exports);
+__exportStar(require("./wTGamingCreateParams"), exports);
+__exportStar(require("./wTGamingUpdateParams"), exports);
 __exportStar(require("./wTImageGridCreateParams"), exports);
 __exportStar(require("./wTImageGridUpdateParams"), exports);
 __exportStar(require("./wTImportedList"), exports);
@@ -259,6 +266,8 @@ __exportStar(require("./wTLinkBookCreateParams"), exports);
 __exportStar(require("./wTLinkBookSectionCreateParams"), exports);
 __exportStar(require("./wTLinkBookSectionUpdateParams"), exports);
 __exportStar(require("./wTLinkBookUpdateParams"), exports);
+__exportStar(require("./wTLoungeCreateParams"), exports);
+__exportStar(require("./wTLoungeUpdateParams"), exports);
 __exportStar(require("./wTMember"), exports);
 __exportStar(require("./wTMemberCreationParams"), exports);
 __exportStar(require("./wTMembershipTier"), exports);
@@ -353,6 +362,7 @@ const clickFunnelRegistration_1 = require("./clickFunnelRegistration");
 const createStaticVoucherCampaign_1 = require("./createStaticVoucherCampaign");
 const createStaticVoucherCampaignWithVoucherWithCSV_1 = require("./createStaticVoucherCampaignWithVoucherWithCSV");
 const dashboardWidget_1 = require("./dashboardWidget");
+const dining_1 = require("./dining");
 const document_1 = require("./document");
 const duplicateRowFound_1 = require("./duplicateRowFound");
 const dynamicVoucher_1 = require("./dynamicVoucher");
@@ -369,6 +379,7 @@ const falsumField_1 = require("./falsumField");
 const feature_1 = require("./feature");
 const forbiddenRequest_1 = require("./forbiddenRequest");
 const foreignKeyDoesNotExist_1 = require("./foreignKeyDoesNotExist");
+const gaming_1 = require("./gaming");
 const helpDeskRequest_1 = require("./helpDeskRequest");
 const imageGrid_1 = require("./imageGrid");
 const importedList_1 = require("./importedList");
@@ -391,6 +402,7 @@ const internalServerError_1 = require("./internalServerError");
 const ledgerEntry_1 = require("./ledgerEntry");
 const linkBook_1 = require("./linkBook");
 const linkBookSection_1 = require("./linkBookSection");
+const lounge_1 = require("./lounge");
 const mSAnalyticsMemberCountPartitionedByDate_1 = require("./mSAnalyticsMemberCountPartitionedByDate");
 const mSAnalyticsMemberPointsRedeemedPartitionedByDate_1 = require("./mSAnalyticsMemberPointsRedeemedPartitionedByDate");
 const mSAnalyticsMemberPointsRefundedPartitionedByDate_1 = require("./mSAnalyticsMemberPointsRefundedPartitionedByDate");
@@ -528,6 +540,8 @@ const wTBillingVerifyPaymentMethodResponse_1 = require("./wTBillingVerifyPayment
 const wTCountResult_1 = require("./wTCountResult");
 const wTCustomerSearchByMemberID_1 = require("./wTCustomerSearchByMemberID");
 const wTCustomerSearchByPhoneNumber_1 = require("./wTCustomerSearchByPhoneNumber");
+const wTDiningCreateParams_1 = require("./wTDiningCreateParams");
+const wTDiningUpdateParams_1 = require("./wTDiningUpdateParams");
 const wTDynamicVoucher_1 = require("./wTDynamicVoucher");
 const wTDynamicVoucherCreateParams_1 = require("./wTDynamicVoucherCreateParams");
 const wTDynamicVoucherRedemption_1 = require("./wTDynamicVoucherRedemption");
@@ -556,6 +570,8 @@ const wTEmployeeSendHelpDeskResponse_1 = require("./wTEmployeeSendHelpDeskRespon
 const wTEmployeeUpdate_1 = require("./wTEmployeeUpdate");
 const wTEmployeeUpdateRecords_1 = require("./wTEmployeeUpdateRecords");
 const wTFetchWalletPaymentObjectWithToken_1 = require("./wTFetchWalletPaymentObjectWithToken");
+const wTGamingCreateParams_1 = require("./wTGamingCreateParams");
+const wTGamingUpdateParams_1 = require("./wTGamingUpdateParams");
 const wTImageGridCreateParams_1 = require("./wTImageGridCreateParams");
 const wTImageGridUpdateParams_1 = require("./wTImageGridUpdateParams");
 const wTImportedList_1 = require("./wTImportedList");
@@ -569,6 +585,8 @@ const wTLinkBookCreateParams_1 = require("./wTLinkBookCreateParams");
 const wTLinkBookSectionCreateParams_1 = require("./wTLinkBookSectionCreateParams");
 const wTLinkBookSectionUpdateParams_1 = require("./wTLinkBookSectionUpdateParams");
 const wTLinkBookUpdateParams_1 = require("./wTLinkBookUpdateParams");
+const wTLoungeCreateParams_1 = require("./wTLoungeCreateParams");
+const wTLoungeUpdateParams_1 = require("./wTLoungeUpdateParams");
 const wTMember_1 = require("./wTMember");
 const wTMemberCreationParams_1 = require("./wTMemberCreationParams");
 const wTMembershipTier_1 = require("./wTMembershipTier");
@@ -689,6 +707,7 @@ let typeMap = {
     "CreateStaticVoucherCampaign": createStaticVoucherCampaign_1.CreateStaticVoucherCampaign,
     "CreateStaticVoucherCampaignWithVoucherWithCSV": createStaticVoucherCampaignWithVoucherWithCSV_1.CreateStaticVoucherCampaignWithVoucherWithCSV,
     "DashboardWidget": dashboardWidget_1.DashboardWidget,
+    "Dining": dining_1.Dining,
     "Document": document_1.Document,
     "DuplicateRowFound": duplicateRowFound_1.DuplicateRowFound,
     "DynamicVoucher": dynamicVoucher_1.DynamicVoucher,
@@ -705,6 +724,7 @@ let typeMap = {
     "Feature": feature_1.Feature,
     "ForbiddenRequest": forbiddenRequest_1.ForbiddenRequest,
     "ForeignKeyDoesNotExist": foreignKeyDoesNotExist_1.ForeignKeyDoesNotExist,
+    "Gaming": gaming_1.Gaming,
     "HelpDeskRequest": helpDeskRequest_1.HelpDeskRequest,
     "ImageGrid": imageGrid_1.ImageGrid,
     "ImportedList": importedList_1.ImportedList,
@@ -727,6 +747,7 @@ let typeMap = {
     "LedgerEntry": ledgerEntry_1.LedgerEntry,
     "LinkBook": linkBook_1.LinkBook,
     "LinkBookSection": linkBookSection_1.LinkBookSection,
+    "Lounge": lounge_1.Lounge,
     "MSAnalyticsMemberCountPartitionedByDate": mSAnalyticsMemberCountPartitionedByDate_1.MSAnalyticsMemberCountPartitionedByDate,
     "MSAnalyticsMemberPointsRedeemedPartitionedByDate": mSAnalyticsMemberPointsRedeemedPartitionedByDate_1.MSAnalyticsMemberPointsRedeemedPartitionedByDate,
     "MSAnalyticsMemberPointsRefundedPartitionedByDate": mSAnalyticsMemberPointsRefundedPartitionedByDate_1.MSAnalyticsMemberPointsRefundedPartitionedByDate,
@@ -853,6 +874,8 @@ let typeMap = {
     "WTCountResult": wTCountResult_1.WTCountResult,
     "WTCustomerSearchByMemberID": wTCustomerSearchByMemberID_1.WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": wTCustomerSearchByPhoneNumber_1.WTCustomerSearchByPhoneNumber,
+    "WTDiningCreateParams": wTDiningCreateParams_1.WTDiningCreateParams,
+    "WTDiningUpdateParams": wTDiningUpdateParams_1.WTDiningUpdateParams,
     "WTDynamicVoucher": wTDynamicVoucher_1.WTDynamicVoucher,
     "WTDynamicVoucherCreateParams": wTDynamicVoucherCreateParams_1.WTDynamicVoucherCreateParams,
     "WTDynamicVoucherRedemption": wTDynamicVoucherRedemption_1.WTDynamicVoucherRedemption,
@@ -881,6 +904,8 @@ let typeMap = {
     "WTEmployeeUpdate": wTEmployeeUpdate_1.WTEmployeeUpdate,
     "WTEmployeeUpdateRecords": wTEmployeeUpdateRecords_1.WTEmployeeUpdateRecords,
     "WTFetchWalletPaymentObjectWithToken": wTFetchWalletPaymentObjectWithToken_1.WTFetchWalletPaymentObjectWithToken,
+    "WTGamingCreateParams": wTGamingCreateParams_1.WTGamingCreateParams,
+    "WTGamingUpdateParams": wTGamingUpdateParams_1.WTGamingUpdateParams,
     "WTImageGridCreateParams": wTImageGridCreateParams_1.WTImageGridCreateParams,
     "WTImageGridUpdateParams": wTImageGridUpdateParams_1.WTImageGridUpdateParams,
     "WTImportedList": wTImportedList_1.WTImportedList,
@@ -894,6 +919,8 @@ let typeMap = {
     "WTLinkBookSectionCreateParams": wTLinkBookSectionCreateParams_1.WTLinkBookSectionCreateParams,
     "WTLinkBookSectionUpdateParams": wTLinkBookSectionUpdateParams_1.WTLinkBookSectionUpdateParams,
     "WTLinkBookUpdateParams": wTLinkBookUpdateParams_1.WTLinkBookUpdateParams,
+    "WTLoungeCreateParams": wTLoungeCreateParams_1.WTLoungeCreateParams,
+    "WTLoungeUpdateParams": wTLoungeUpdateParams_1.WTLoungeUpdateParams,
     "WTMember": wTMember_1.WTMember,
     "WTMemberCreationParams": wTMemberCreationParams_1.WTMemberCreationParams,
     "WTMembershipTier": wTMembershipTier_1.WTMembershipTier,

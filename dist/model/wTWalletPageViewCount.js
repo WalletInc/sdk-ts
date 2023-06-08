@@ -6,6 +6,7 @@ class WTWalletPageViewCount {
         return WTWalletPageViewCount.attributeTypeMap;
     }
 }
+exports.WTWalletPageViewCount = WTWalletPageViewCount;
 WTWalletPageViewCount.discriminator = undefined;
 WTWalletPageViewCount.attributeTypeMap = [
     {
@@ -29,5 +30,4 @@ WTWalletPageViewCount.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTWalletPageViewCount = WTWalletPageViewCount;
 //# sourceMappingURL=wTWalletPageViewCount.js.map
