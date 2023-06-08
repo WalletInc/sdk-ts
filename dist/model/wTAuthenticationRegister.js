@@ -6,7 +6,6 @@ class WTAuthenticationRegister {
         return WTAuthenticationRegister.attributeTypeMap;
     }
 }
-exports.WTAuthenticationRegister = WTAuthenticationRegister;
 WTAuthenticationRegister.discriminator = undefined;
 WTAuthenticationRegister.attributeTypeMap = [
     {
@@ -90,4 +89,5 @@ WTAuthenticationRegister.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTAuthenticationRegister = WTAuthenticationRegister;
 //# sourceMappingURL=wTAuthenticationRegister.js.map

@@ -6,7 +6,6 @@ class Performance {
         return Performance.attributeTypeMap;
     }
 }
-exports.Performance = Performance;
 Performance.discriminator = undefined;
 Performance.attributeTypeMap = [
     {
@@ -75,4 +74,5 @@ Performance.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.Performance = Performance;
 //# sourceMappingURL=performance.js.map

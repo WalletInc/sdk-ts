@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var AmenitiesApiApiKeys;
 (function (AmenitiesApiApiKeys) {
     AmenitiesApiApiKeys[AmenitiesApiApiKeys["api_key"] = 0] = "api_key";
-})(AmenitiesApiApiKeys || (exports.AmenitiesApiApiKeys = AmenitiesApiApiKeys = {}));
+})(AmenitiesApiApiKeys = exports.AmenitiesApiApiKeys || (exports.AmenitiesApiApiKeys = {}));
 class AmenitiesApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

@@ -6,7 +6,6 @@ class ClickFunnelEvent {
         return ClickFunnelEvent.attributeTypeMap;
     }
 }
-exports.ClickFunnelEvent = ClickFunnelEvent;
 ClickFunnelEvent.discriminator = undefined;
 ClickFunnelEvent.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ ClickFunnelEvent.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.ClickFunnelEvent = ClickFunnelEvent;
 //# sourceMappingURL=clickFunnelEvent.js.map

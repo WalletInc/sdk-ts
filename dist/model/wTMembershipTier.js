@@ -6,7 +6,6 @@ class WTMembershipTier {
         return WTMembershipTier.attributeTypeMap;
     }
 }
-exports.WTMembershipTier = WTMembershipTier;
 WTMembershipTier.discriminator = undefined;
 WTMembershipTier.attributeTypeMap = [
     {
@@ -60,4 +59,5 @@ WTMembershipTier.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.WTMembershipTier = WTMembershipTier;
 //# sourceMappingURL=wTMembershipTier.js.map

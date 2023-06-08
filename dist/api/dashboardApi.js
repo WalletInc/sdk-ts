@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var DashboardApiApiKeys;
 (function (DashboardApiApiKeys) {
     DashboardApiApiKeys[DashboardApiApiKeys["api_key"] = 0] = "api_key";
-})(DashboardApiApiKeys || (exports.DashboardApiApiKeys = DashboardApiApiKeys = {}));
+})(DashboardApiApiKeys = exports.DashboardApiApiKeys || (exports.DashboardApiApiKeys = {}));
 class DashboardApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

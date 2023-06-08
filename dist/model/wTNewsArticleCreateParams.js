@@ -6,7 +6,6 @@ class WTNewsArticleCreateParams {
         return WTNewsArticleCreateParams.attributeTypeMap;
     }
 }
-exports.WTNewsArticleCreateParams = WTNewsArticleCreateParams;
 WTNewsArticleCreateParams.discriminator = undefined;
 WTNewsArticleCreateParams.attributeTypeMap = [
     {
@@ -40,4 +39,5 @@ WTNewsArticleCreateParams.attributeTypeMap = [
         "type": "Date"
     }
 ];
+exports.WTNewsArticleCreateParams = WTNewsArticleCreateParams;
 //# sourceMappingURL=wTNewsArticleCreateParams.js.map

@@ -6,7 +6,6 @@ class WTAmenityCreateParams {
         return WTAmenityCreateParams.attributeTypeMap;
     }
 }
-exports.WTAmenityCreateParams = WTAmenityCreateParams;
 WTAmenityCreateParams.discriminator = undefined;
 WTAmenityCreateParams.attributeTypeMap = [
     {
@@ -20,8 +19,8 @@ WTAmenityCreateParams.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "displayValue",
-        "baseName": "displayValue",
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
         "type": "string"
     },
     {
@@ -33,6 +32,12 @@ WTAmenityCreateParams.attributeTypeMap = [
         "name": "mediaURL",
         "baseName": "mediaURL",
         "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
+        "type": "string"
     }
 ];
+exports.WTAmenityCreateParams = WTAmenityCreateParams;
 //# sourceMappingURL=wTAmenityCreateParams.js.map

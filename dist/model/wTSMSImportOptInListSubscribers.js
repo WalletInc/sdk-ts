@@ -6,7 +6,6 @@ class WTSMSImportOptInListSubscribers {
         return WTSMSImportOptInListSubscribers.attributeTypeMap;
     }
 }
-exports.WTSMSImportOptInListSubscribers = WTSMSImportOptInListSubscribers;
 WTSMSImportOptInListSubscribers.discriminator = undefined;
 WTSMSImportOptInListSubscribers.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTSMSImportOptInListSubscribers.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTSMSImportOptInListSubscribers = WTSMSImportOptInListSubscribers;
 //# sourceMappingURL=wTSMSImportOptInListSubscribers.js.map

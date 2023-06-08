@@ -6,7 +6,6 @@ class HelpDeskRequest {
         return HelpDeskRequest.attributeTypeMap;
     }
 }
-exports.HelpDeskRequest = HelpDeskRequest;
 HelpDeskRequest.discriminator = undefined;
 HelpDeskRequest.attributeTypeMap = [
     {
@@ -60,4 +59,5 @@ HelpDeskRequest.attributeTypeMap = [
         "type": "Date"
     }
 ];
+exports.HelpDeskRequest = HelpDeskRequest;
 //# sourceMappingURL=helpDeskRequest.js.map

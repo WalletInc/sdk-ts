@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var ShopifyTerminalApiApiKeys;
 (function (ShopifyTerminalApiApiKeys) {
     ShopifyTerminalApiApiKeys[ShopifyTerminalApiApiKeys["api_key"] = 0] = "api_key";
-})(ShopifyTerminalApiApiKeys || (exports.ShopifyTerminalApiApiKeys = ShopifyTerminalApiApiKeys = {}));
+})(ShopifyTerminalApiApiKeys = exports.ShopifyTerminalApiApiKeys || (exports.ShopifyTerminalApiApiKeys = {}));
 class ShopifyTerminalApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

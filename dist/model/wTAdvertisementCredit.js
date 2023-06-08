@@ -6,7 +6,6 @@ class WTAdvertisementCredit {
         return WTAdvertisementCredit.attributeTypeMap;
     }
 }
-exports.WTAdvertisementCredit = WTAdvertisementCredit;
 WTAdvertisementCredit.discriminator = undefined;
 WTAdvertisementCredit.attributeTypeMap = [
     {
@@ -75,4 +74,5 @@ WTAdvertisementCredit.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTAdvertisementCredit = WTAdvertisementCredit;
 //# sourceMappingURL=wTAdvertisementCredit.js.map

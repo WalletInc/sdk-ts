@@ -6,7 +6,6 @@ class MSMerchantCreditRedemptionPagination {
         return MSMerchantCreditRedemptionPagination.attributeTypeMap;
     }
 }
-exports.MSMerchantCreditRedemptionPagination = MSMerchantCreditRedemptionPagination;
 MSMerchantCreditRedemptionPagination.discriminator = undefined;
 MSMerchantCreditRedemptionPagination.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ MSMerchantCreditRedemptionPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.MSMerchantCreditRedemptionPagination = MSMerchantCreditRedemptionPagination;
 //# sourceMappingURL=mSMerchantCreditRedemptionPagination.js.map

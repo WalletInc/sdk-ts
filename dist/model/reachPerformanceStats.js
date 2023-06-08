@@ -6,7 +6,6 @@ class ReachPerformanceStats {
         return ReachPerformanceStats.attributeTypeMap;
     }
 }
-exports.ReachPerformanceStats = ReachPerformanceStats;
 ReachPerformanceStats.discriminator = undefined;
 ReachPerformanceStats.attributeTypeMap = [
     {
@@ -65,4 +64,5 @@ ReachPerformanceStats.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.ReachPerformanceStats = ReachPerformanceStats;
 //# sourceMappingURL=reachPerformanceStats.js.map

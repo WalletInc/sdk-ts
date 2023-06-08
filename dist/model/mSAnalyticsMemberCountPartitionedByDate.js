@@ -6,7 +6,6 @@ class MSAnalyticsMemberCountPartitionedByDate {
         return MSAnalyticsMemberCountPartitionedByDate.attributeTypeMap;
     }
 }
-exports.MSAnalyticsMemberCountPartitionedByDate = MSAnalyticsMemberCountPartitionedByDate;
 MSAnalyticsMemberCountPartitionedByDate.discriminator = undefined;
 MSAnalyticsMemberCountPartitionedByDate.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ MSAnalyticsMemberCountPartitionedByDate.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.MSAnalyticsMemberCountPartitionedByDate = MSAnalyticsMemberCountPartitionedByDate;
 //# sourceMappingURL=mSAnalyticsMemberCountPartitionedByDate.js.map

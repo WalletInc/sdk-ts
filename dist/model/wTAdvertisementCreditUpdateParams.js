@@ -6,7 +6,6 @@ class WTAdvertisementCreditUpdateParams {
         return WTAdvertisementCreditUpdateParams.attributeTypeMap;
     }
 }
-exports.WTAdvertisementCreditUpdateParams = WTAdvertisementCreditUpdateParams;
 WTAdvertisementCreditUpdateParams.discriminator = undefined;
 WTAdvertisementCreditUpdateParams.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ WTAdvertisementCreditUpdateParams.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.WTAdvertisementCreditUpdateParams = WTAdvertisementCreditUpdateParams;
 //# sourceMappingURL=wTAdvertisementCreditUpdateParams.js.map

@@ -6,7 +6,6 @@ class Service {
         return Service.attributeTypeMap;
     }
 }
-exports.Service = Service;
 Service.discriminator = undefined;
 Service.attributeTypeMap = [
     {
@@ -20,8 +19,8 @@ Service.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "displayValue",
-        "baseName": "displayValue",
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
         "type": "string"
     },
     {
@@ -32,6 +31,11 @@ Service.attributeTypeMap = [
     {
         "name": "mediaURL",
         "baseName": "mediaURL",
+        "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
         "type": "string"
     },
     {
@@ -60,4 +64,5 @@ Service.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.Service = Service;
 //# sourceMappingURL=service.js.map

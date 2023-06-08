@@ -6,7 +6,6 @@ class MSMerchantCreditHistoryPagination {
         return MSMerchantCreditHistoryPagination.attributeTypeMap;
     }
 }
-exports.MSMerchantCreditHistoryPagination = MSMerchantCreditHistoryPagination;
 MSMerchantCreditHistoryPagination.discriminator = undefined;
 MSMerchantCreditHistoryPagination.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ MSMerchantCreditHistoryPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.MSMerchantCreditHistoryPagination = MSMerchantCreditHistoryPagination;
 //# sourceMappingURL=mSMerchantCreditHistoryPagination.js.map

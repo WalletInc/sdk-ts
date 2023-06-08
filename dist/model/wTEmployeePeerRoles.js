@@ -6,7 +6,6 @@ class WTEmployeePeerRoles {
         return WTEmployeePeerRoles.attributeTypeMap;
     }
 }
-exports.WTEmployeePeerRoles = WTEmployeePeerRoles;
 WTEmployeePeerRoles.discriminator = undefined;
 WTEmployeePeerRoles.attributeTypeMap = [
     {
@@ -15,4 +14,5 @@ WTEmployeePeerRoles.attributeTypeMap = [
         "type": "Array<any>"
     }
 ];
+exports.WTEmployeePeerRoles = WTEmployeePeerRoles;
 //# sourceMappingURL=wTEmployeePeerRoles.js.map

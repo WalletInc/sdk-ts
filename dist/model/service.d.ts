@@ -1,9 +1,10 @@
 export declare class Service {
     'title': string;
     'description': string;
-    'displayValue': string;
+    'displayedPrice'?: string;
     'orderNumber': number;
     'mediaURL'?: string;
+    'additionalInfoURL'?: string;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;

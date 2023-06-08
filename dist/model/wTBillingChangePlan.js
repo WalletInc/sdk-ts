@@ -6,7 +6,6 @@ class WTBillingChangePlan {
         return WTBillingChangePlan.attributeTypeMap;
     }
 }
-exports.WTBillingChangePlan = WTBillingChangePlan;
 WTBillingChangePlan.discriminator = undefined;
 WTBillingChangePlan.attributeTypeMap = [
     {
@@ -15,4 +14,5 @@ WTBillingChangePlan.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTBillingChangePlan = WTBillingChangePlan;
 //# sourceMappingURL=wTBillingChangePlan.js.map

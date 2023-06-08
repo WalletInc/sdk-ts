@@ -6,7 +6,6 @@ class RoomRate {
         return RoomRate.attributeTypeMap;
     }
 }
-exports.RoomRate = RoomRate;
 RoomRate.discriminator = undefined;
 RoomRate.attributeTypeMap = [
     {
@@ -20,8 +19,8 @@ RoomRate.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "displayValue",
-        "baseName": "displayValue",
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
         "type": "string"
     },
     {
@@ -32,6 +31,11 @@ RoomRate.attributeTypeMap = [
     {
         "name": "mediaURL",
         "baseName": "mediaURL",
+        "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
         "type": "string"
     },
     {
@@ -60,4 +64,5 @@ RoomRate.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.RoomRate = RoomRate;
 //# sourceMappingURL=roomRate.js.map

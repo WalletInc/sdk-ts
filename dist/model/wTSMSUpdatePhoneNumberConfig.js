@@ -6,7 +6,6 @@ class WTSMSUpdatePhoneNumberConfig {
         return WTSMSUpdatePhoneNumberConfig.attributeTypeMap;
     }
 }
-exports.WTSMSUpdatePhoneNumberConfig = WTSMSUpdatePhoneNumberConfig;
 WTSMSUpdatePhoneNumberConfig.discriminator = undefined;
 WTSMSUpdatePhoneNumberConfig.attributeTypeMap = [
     {
@@ -70,4 +69,5 @@ WTSMSUpdatePhoneNumberConfig.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTSMSUpdatePhoneNumberConfig = WTSMSUpdatePhoneNumberConfig;
 //# sourceMappingURL=wTSMSUpdatePhoneNumberConfig.js.map

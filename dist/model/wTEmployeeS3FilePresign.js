@@ -6,7 +6,6 @@ class WTEmployeeS3FilePresign {
         return WTEmployeeS3FilePresign.attributeTypeMap;
     }
 }
-exports.WTEmployeeS3FilePresign = WTEmployeeS3FilePresign;
 WTEmployeeS3FilePresign.discriminator = undefined;
 WTEmployeeS3FilePresign.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTEmployeeS3FilePresign.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTEmployeeS3FilePresign = WTEmployeeS3FilePresign;
 //# sourceMappingURL=wTEmployeeS3FilePresign.js.map
