@@ -11,17 +11,20 @@ api/configurationApi.ts
 api/countriesApi.ts
 api/customerApi.ts
 api/dashboardApi.ts
+api/diningApi.ts
 api/dynamicVouchersApi.ts
 api/emailSubscriberApi.ts
 api/employeeAPIKeysApi.ts
 api/employeeAccessApi.ts
 api/employeesApi.ts
+api/gamingApi.ts
 api/imageGridApi.ts
 api/industriesApi.ts
 api/infoGenesisReportsApi.ts
 api/integratedTerminalsApi.ts
 api/interactionsApi.ts
 api/loginAndLogoutApi.ts
+api/loungeApi.ts
 api/membershipTiersApi.ts
 api/merchantApi.ts
 api/merchantCreditsApi.ts
@@ -79,6 +82,7 @@ model/clickFunnelRegistration.ts
 model/createStaticVoucherCampaign.ts
 model/createStaticVoucherCampaignWithVoucherWithCSV.ts
 model/dashboardWidget.ts
+model/dining.ts
 model/document.ts
 model/duplicateRowFound.ts
 model/dynamicVoucher.ts
@@ -95,6 +99,7 @@ model/falsumField.ts
 model/feature.ts
 model/forbiddenRequest.ts
 model/foreignKeyDoesNotExist.ts
+model/gaming.ts
 model/helpDeskRequest.ts
 model/imageGrid.ts
 model/importedList.ts
@@ -117,6 +122,7 @@ model/internalServerError.ts
 model/ledgerEntry.ts
 model/linkBook.ts
 model/linkBookSection.ts
+model/lounge.ts
 model/mSAnalyticsMemberCountPartitionedByDate.ts
 model/mSAnalyticsMemberPointsRedeemedPartitionedByDate.ts
 model/mSAnalyticsMemberPointsRefundedPartitionedByDate.ts
@@ -255,6 +261,8 @@ model/wTBillingVerifyPaymentMethodResponse.ts
 model/wTCountResult.ts
 model/wTCustomerSearchByMemberID.ts
 model/wTCustomerSearchByPhoneNumber.ts
+model/wTDiningCreateParams.ts
+model/wTDiningUpdateParams.ts
 model/wTDynamicVoucher.ts
 model/wTDynamicVoucherCreateParams.ts
 model/wTDynamicVoucherRedemption.ts
@@ -283,6 +291,8 @@ model/wTEmployeeSendHelpDeskResponse.ts
 model/wTEmployeeUpdate.ts
 model/wTEmployeeUpdateRecords.ts
 model/wTFetchWalletPaymentObjectWithToken.ts
+model/wTGamingCreateParams.ts
+model/wTGamingUpdateParams.ts
 model/wTImageGridCreateParams.ts
 model/wTImageGridUpdateParams.ts
 model/wTImportedList.ts
@@ -296,6 +306,8 @@ model/wTLinkBookCreateParams.ts
 model/wTLinkBookSectionCreateParams.ts
 model/wTLinkBookSectionUpdateParams.ts
 model/wTLinkBookUpdateParams.ts
+model/wTLoungeCreateParams.ts
+model/wTLoungeUpdateParams.ts
 model/wTMember.ts
 model/wTMemberCreationParams.ts
 model/wTMembershipTier.ts

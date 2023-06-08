@@ -175,6 +175,21 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "isGaming",
+        "baseName": "isGaming",
+        "type": "boolean"
+    },
+    {
+        "name": "isDining",
+        "baseName": "isDining",
+        "type": "boolean"
+    },
+    {
+        "name": "isLounges",
+        "baseName": "isLounges",
+        "type": "boolean"
+    },
+    {
         "name": "isMapDirections",
         "baseName": "isMapDirections",
         "type": "boolean"

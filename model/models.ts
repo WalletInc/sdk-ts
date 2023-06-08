@@ -28,6 +28,7 @@ export * from './clickFunnelRegistration';
 export * from './createStaticVoucherCampaign';
 export * from './createStaticVoucherCampaignWithVoucherWithCSV';
 export * from './dashboardWidget';
+export * from './dining';
 export * from './document';
 export * from './duplicateRowFound';
 export * from './dynamicVoucher';
@@ -44,6 +45,7 @@ export * from './falsumField';
 export * from './feature';
 export * from './forbiddenRequest';
 export * from './foreignKeyDoesNotExist';
+export * from './gaming';
 export * from './helpDeskRequest';
 export * from './imageGrid';
 export * from './importedList';
@@ -66,6 +68,7 @@ export * from './internalServerError';
 export * from './ledgerEntry';
 export * from './linkBook';
 export * from './linkBookSection';
+export * from './lounge';
 export * from './mSAnalyticsMemberCountPartitionedByDate';
 export * from './mSAnalyticsMemberPointsRedeemedPartitionedByDate';
 export * from './mSAnalyticsMemberPointsRefundedPartitionedByDate';
@@ -203,6 +206,8 @@ export * from './wTBillingVerifyPaymentMethodResponse';
 export * from './wTCountResult';
 export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';
+export * from './wTDiningCreateParams';
+export * from './wTDiningUpdateParams';
 export * from './wTDynamicVoucher';
 export * from './wTDynamicVoucherCreateParams';
 export * from './wTDynamicVoucherRedemption';
@@ -231,6 +236,8 @@ export * from './wTEmployeeSendHelpDeskResponse';
 export * from './wTEmployeeUpdate';
 export * from './wTEmployeeUpdateRecords';
 export * from './wTFetchWalletPaymentObjectWithToken';
+export * from './wTGamingCreateParams';
+export * from './wTGamingUpdateParams';
 export * from './wTImageGridCreateParams';
 export * from './wTImageGridUpdateParams';
 export * from './wTImportedList';
@@ -244,6 +251,8 @@ export * from './wTLinkBookCreateParams';
 export * from './wTLinkBookSectionCreateParams';
 export * from './wTLinkBookSectionUpdateParams';
 export * from './wTLinkBookUpdateParams';
+export * from './wTLoungeCreateParams';
+export * from './wTLoungeUpdateParams';
 export * from './wTMember';
 export * from './wTMemberCreationParams';
 export * from './wTMembershipTier';
@@ -352,6 +361,7 @@ import { ClickFunnelRegistration } from './clickFunnelRegistration';
 import { CreateStaticVoucherCampaign } from './createStaticVoucherCampaign';
 import { CreateStaticVoucherCampaignWithVoucherWithCSV } from './createStaticVoucherCampaignWithVoucherWithCSV';
 import { DashboardWidget } from './dashboardWidget';
+import { Dining } from './dining';
 import { Document } from './document';
 import { DuplicateRowFound } from './duplicateRowFound';
 import { DynamicVoucher } from './dynamicVoucher';
@@ -368,6 +378,7 @@ import { FalsumField } from './falsumField';
 import { Feature } from './feature';
 import { ForbiddenRequest } from './forbiddenRequest';
 import { ForeignKeyDoesNotExist } from './foreignKeyDoesNotExist';
+import { Gaming } from './gaming';
 import { HelpDeskRequest } from './helpDeskRequest';
 import { ImageGrid } from './imageGrid';
 import { ImportedList } from './importedList';
@@ -390,6 +401,7 @@ import { InternalServerError } from './internalServerError';
 import { LedgerEntry } from './ledgerEntry';
 import { LinkBook } from './linkBook';
 import { LinkBookSection } from './linkBookSection';
+import { Lounge } from './lounge';
 import { MSAnalyticsMemberCountPartitionedByDate } from './mSAnalyticsMemberCountPartitionedByDate';
 import { MSAnalyticsMemberPointsRedeemedPartitionedByDate } from './mSAnalyticsMemberPointsRedeemedPartitionedByDate';
 import { MSAnalyticsMemberPointsRefundedPartitionedByDate } from './mSAnalyticsMemberPointsRefundedPartitionedByDate';
@@ -527,6 +539,8 @@ import { WTBillingVerifyPaymentMethodResponse } from './wTBillingVerifyPaymentMe
 import { WTCountResult } from './wTCountResult';
 import { WTCustomerSearchByMemberID } from './wTCustomerSearchByMemberID';
 import { WTCustomerSearchByPhoneNumber } from './wTCustomerSearchByPhoneNumber';
+import { WTDiningCreateParams } from './wTDiningCreateParams';
+import { WTDiningUpdateParams } from './wTDiningUpdateParams';
 import { WTDynamicVoucher } from './wTDynamicVoucher';
 import { WTDynamicVoucherCreateParams } from './wTDynamicVoucherCreateParams';
 import { WTDynamicVoucherRedemption } from './wTDynamicVoucherRedemption';
@@ -555,6 +569,8 @@ import { WTEmployeeSendHelpDeskResponse } from './wTEmployeeSendHelpDeskResponse
 import { WTEmployeeUpdate } from './wTEmployeeUpdate';
 import { WTEmployeeUpdateRecords } from './wTEmployeeUpdateRecords';
 import { WTFetchWalletPaymentObjectWithToken } from './wTFetchWalletPaymentObjectWithToken';
+import { WTGamingCreateParams } from './wTGamingCreateParams';
+import { WTGamingUpdateParams } from './wTGamingUpdateParams';
 import { WTImageGridCreateParams } from './wTImageGridCreateParams';
 import { WTImageGridUpdateParams } from './wTImageGridUpdateParams';
 import { WTImportedList } from './wTImportedList';
@@ -568,6 +584,8 @@ import { WTLinkBookCreateParams } from './wTLinkBookCreateParams';
 import { WTLinkBookSectionCreateParams } from './wTLinkBookSectionCreateParams';
 import { WTLinkBookSectionUpdateParams } from './wTLinkBookSectionUpdateParams';
 import { WTLinkBookUpdateParams } from './wTLinkBookUpdateParams';
+import { WTLoungeCreateParams } from './wTLoungeCreateParams';
+import { WTLoungeUpdateParams } from './wTLoungeUpdateParams';
 import { WTMember } from './wTMember';
 import { WTMemberCreationParams } from './wTMemberCreationParams';
 import { WTMembershipTier } from './wTMembershipTier';
@@ -692,6 +710,7 @@ let typeMap: {[index: string]: any} = {
     "CreateStaticVoucherCampaign": CreateStaticVoucherCampaign,
     "CreateStaticVoucherCampaignWithVoucherWithCSV": CreateStaticVoucherCampaignWithVoucherWithCSV,
     "DashboardWidget": DashboardWidget,
+    "Dining": Dining,
     "Document": Document,
     "DuplicateRowFound": DuplicateRowFound,
     "DynamicVoucher": DynamicVoucher,
@@ -708,6 +727,7 @@ let typeMap: {[index: string]: any} = {
     "Feature": Feature,
     "ForbiddenRequest": ForbiddenRequest,
     "ForeignKeyDoesNotExist": ForeignKeyDoesNotExist,
+    "Gaming": Gaming,
     "HelpDeskRequest": HelpDeskRequest,
     "ImageGrid": ImageGrid,
     "ImportedList": ImportedList,
@@ -730,6 +750,7 @@ let typeMap: {[index: string]: any} = {
     "LedgerEntry": LedgerEntry,
     "LinkBook": LinkBook,
     "LinkBookSection": LinkBookSection,
+    "Lounge": Lounge,
     "MSAnalyticsMemberCountPartitionedByDate": MSAnalyticsMemberCountPartitionedByDate,
     "MSAnalyticsMemberPointsRedeemedPartitionedByDate": MSAnalyticsMemberPointsRedeemedPartitionedByDate,
     "MSAnalyticsMemberPointsRefundedPartitionedByDate": MSAnalyticsMemberPointsRefundedPartitionedByDate,
@@ -856,6 +877,8 @@ let typeMap: {[index: string]: any} = {
     "WTCountResult": WTCountResult,
     "WTCustomerSearchByMemberID": WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": WTCustomerSearchByPhoneNumber,
+    "WTDiningCreateParams": WTDiningCreateParams,
+    "WTDiningUpdateParams": WTDiningUpdateParams,
     "WTDynamicVoucher": WTDynamicVoucher,
     "WTDynamicVoucherCreateParams": WTDynamicVoucherCreateParams,
     "WTDynamicVoucherRedemption": WTDynamicVoucherRedemption,
@@ -884,6 +907,8 @@ let typeMap: {[index: string]: any} = {
     "WTEmployeeUpdate": WTEmployeeUpdate,
     "WTEmployeeUpdateRecords": WTEmployeeUpdateRecords,
     "WTFetchWalletPaymentObjectWithToken": WTFetchWalletPaymentObjectWithToken,
+    "WTGamingCreateParams": WTGamingCreateParams,
+    "WTGamingUpdateParams": WTGamingUpdateParams,
     "WTImageGridCreateParams": WTImageGridCreateParams,
     "WTImageGridUpdateParams": WTImageGridUpdateParams,
     "WTImportedList": WTImportedList,
@@ -897,6 +922,8 @@ let typeMap: {[index: string]: any} = {
     "WTLinkBookSectionCreateParams": WTLinkBookSectionCreateParams,
     "WTLinkBookSectionUpdateParams": WTLinkBookSectionUpdateParams,
     "WTLinkBookUpdateParams": WTLinkBookUpdateParams,
+    "WTLoungeCreateParams": WTLoungeCreateParams,
+    "WTLoungeUpdateParams": WTLoungeUpdateParams,
     "WTMember": WTMember,
     "WTMemberCreationParams": WTMemberCreationParams,
     "WTMembershipTier": WTMembershipTier,

@@ -18,6 +18,8 @@ export * from './customerApi';
 import { CustomerApi } from './customerApi';
 export * from './dashboardApi';
 import { DashboardApi } from './dashboardApi';
+export * from './diningApi';
+import { DiningApi } from './diningApi';
 export * from './dynamicVouchersApi';
 import { DynamicVouchersApi } from './dynamicVouchersApi';
 export * from './emailSubscriberApi';
@@ -28,6 +30,8 @@ export * from './employeeAccessApi';
 import { EmployeeAccessApi } from './employeeAccessApi';
 export * from './employeesApi';
 import { EmployeesApi } from './employeesApi';
+export * from './gamingApi';
+import { GamingApi } from './gamingApi';
 export * from './imageGridApi';
 import { ImageGridApi } from './imageGridApi';
 export * from './industriesApi';
@@ -40,6 +44,8 @@ export * from './interactionsApi';
 import { InteractionsApi } from './interactionsApi';
 export * from './loginAndLogoutApi';
 import { LoginAndLogoutApi } from './loginAndLogoutApi';
+export * from './loungeApi';
+import { LoungeApi } from './loungeApi';
 export * from './membershipTiersApi';
 import { MembershipTiersApi } from './membershipTiersApi';
 export * from './merchantApi';
@@ -107,4 +113,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [AdvertisementCreditsApi, AmenitiesApi, AnalyticsApi, AppleWalletSubscribersApi, BillingApi, ClubMembersPointsApi, ConfigurationApi, CountriesApi, CustomerApi, DashboardApi, DynamicVouchersApi, EmailSubscriberApi, EmployeeAPIKeysApi, EmployeeAccessApi, EmployeesApi, ImageGridApi, IndustriesApi, InfoGenesisReportsApi, IntegratedTerminalsApi, InteractionsApi, LoginAndLogoutApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, MerchantURLsApi, MobileTerminalApi, NewsApi, PaymentDesignsApi, PerformancesApi, ProductsApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, RoomRatesApi, SMSApi, ServicesApi, SettingsApi, ShopifyTerminalApi, StaticVoucherCampaignGroupsApi, StaticVoucherCampaignsApi, StaticVouchersApi, SystemApi, TransactionLedgerApi, UtilitiesApi, VirtualBusinessCardApi, WebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];
+export const APIS = [AdvertisementCreditsApi, AmenitiesApi, AnalyticsApi, AppleWalletSubscribersApi, BillingApi, ClubMembersPointsApi, ConfigurationApi, CountriesApi, CustomerApi, DashboardApi, DiningApi, DynamicVouchersApi, EmailSubscriberApi, EmployeeAPIKeysApi, EmployeeAccessApi, EmployeesApi, GamingApi, ImageGridApi, IndustriesApi, InfoGenesisReportsApi, IntegratedTerminalsApi, InteractionsApi, LoginAndLogoutApi, LoungeApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, MerchantURLsApi, MobileTerminalApi, NewsApi, PaymentDesignsApi, PerformancesApi, ProductsApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, RoomRatesApi, SMSApi, ServicesApi, SettingsApi, ShopifyTerminalApi, StaticVoucherCampaignGroupsApi, StaticVoucherCampaignsApi, StaticVouchersApi, SystemApi, TransactionLedgerApi, UtilitiesApi, VirtualBusinessCardApi, WebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];
