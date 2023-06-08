@@ -15,9 +15,10 @@ import { RequestFile } from './models';
 export class Service {
     'title': string;
     'description': string;
-    'displayValue': string;
+    'displayedPrice'?: string;
     'orderNumber': number;
     'mediaURL'?: string;
+    'additionalInfoURL'?: string;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;
@@ -38,8 +39,8 @@ export class Service {
             "type": "string"
         },
         {
-            "name": "displayValue",
-            "baseName": "displayValue",
+            "name": "displayedPrice",
+            "baseName": "displayedPrice",
             "type": "string"
         },
         {
@@ -50,6 +51,11 @@ export class Service {
         {
             "name": "mediaURL",
             "baseName": "mediaURL",
+            "type": "string"
+        },
+        {
+            "name": "additionalInfoURL",
+            "baseName": "additionalInfoURL",
             "type": "string"
         },
         {

@@ -1,9 +1,10 @@
 export declare class WTRoomRateUpdateParams {
     'title': string;
     'description': string;
-    'displayValue': string;
+    'displayedPrice'?: string;
     'orderNumber': number;
     'mediaURL'?: string;
+    'additionalInfoURL'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

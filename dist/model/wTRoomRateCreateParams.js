@@ -19,8 +19,8 @@ WTRoomRateCreateParams.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "displayValue",
-        "baseName": "displayValue",
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
         "type": "string"
     },
     {
@@ -31,6 +31,11 @@ WTRoomRateCreateParams.attributeTypeMap = [
     {
         "name": "mediaURL",
         "baseName": "mediaURL",
+        "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
         "type": "string"
     }
 ];
