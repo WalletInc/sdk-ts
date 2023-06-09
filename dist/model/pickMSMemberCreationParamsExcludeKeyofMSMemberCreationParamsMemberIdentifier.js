@@ -6,7 +6,6 @@ class PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifi
         return PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.attributeTypeMap;
     }
 }
-exports.PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier = PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier;
 PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.discriminator = undefined;
 PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.att
         "type": "number"
     }
 ];
+exports.PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier = PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier;
 //# sourceMappingURL=pickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.js.map

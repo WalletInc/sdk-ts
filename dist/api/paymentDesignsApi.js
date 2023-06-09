@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var PaymentDesignsApiApiKeys;
 (function (PaymentDesignsApiApiKeys) {
     PaymentDesignsApiApiKeys[PaymentDesignsApiApiKeys["api_key"] = 0] = "api_key";
-})(PaymentDesignsApiApiKeys || (exports.PaymentDesignsApiApiKeys = PaymentDesignsApiApiKeys = {}));
+})(PaymentDesignsApiApiKeys = exports.PaymentDesignsApiApiKeys || (exports.PaymentDesignsApiApiKeys = {}));
 class PaymentDesignsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

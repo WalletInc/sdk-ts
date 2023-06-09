@@ -6,7 +6,6 @@ class DashboardWidget {
         return DashboardWidget.attributeTypeMap;
     }
 }
-exports.DashboardWidget = DashboardWidget;
 DashboardWidget.discriminator = undefined;
 DashboardWidget.attributeTypeMap = [
     {
@@ -90,4 +89,5 @@ DashboardWidget.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.DashboardWidget = DashboardWidget;
 //# sourceMappingURL=dashboardWidget.js.map

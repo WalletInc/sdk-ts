@@ -6,7 +6,6 @@ class StaticVoucher {
         return StaticVoucher.attributeTypeMap;
     }
 }
-exports.StaticVoucher = StaticVoucher;
 StaticVoucher.discriminator = undefined;
 StaticVoucher.attributeTypeMap = [
     {
@@ -170,4 +169,5 @@ StaticVoucher.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.StaticVoucher = StaticVoucher;
 //# sourceMappingURL=staticVoucher.js.map

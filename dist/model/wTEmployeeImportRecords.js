@@ -6,7 +6,6 @@ class WTEmployeeImportRecords {
         return WTEmployeeImportRecords.attributeTypeMap;
     }
 }
-exports.WTEmployeeImportRecords = WTEmployeeImportRecords;
 WTEmployeeImportRecords.discriminator = undefined;
 WTEmployeeImportRecords.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ WTEmployeeImportRecords.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTEmployeeImportRecords = WTEmployeeImportRecords;
 //# sourceMappingURL=wTEmployeeImportRecords.js.map

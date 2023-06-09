@@ -6,7 +6,6 @@ class WTInfoGenesisRecordFilterParameters {
         return WTInfoGenesisRecordFilterParameters.attributeTypeMap;
     }
 }
-exports.WTInfoGenesisRecordFilterParameters = WTInfoGenesisRecordFilterParameters;
 WTInfoGenesisRecordFilterParameters.discriminator = undefined;
 WTInfoGenesisRecordFilterParameters.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTInfoGenesisRecordFilterParameters.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
+exports.WTInfoGenesisRecordFilterParameters = WTInfoGenesisRecordFilterParameters;
 //# sourceMappingURL=wTInfoGenesisRecordFilterParameters.js.map

@@ -6,7 +6,6 @@ class MSMerchantCreditHistory {
         return MSMerchantCreditHistory.attributeTypeMap;
     }
 }
-exports.MSMerchantCreditHistory = MSMerchantCreditHistory;
 MSMerchantCreditHistory.discriminator = undefined;
 MSMerchantCreditHistory.attributeTypeMap = [
     {
@@ -50,4 +49,5 @@ MSMerchantCreditHistory.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.MSMerchantCreditHistory = MSMerchantCreditHistory;
 //# sourceMappingURL=mSMerchantCreditHistory.js.map

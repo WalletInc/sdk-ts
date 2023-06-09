@@ -6,7 +6,6 @@ class PhoneNumber {
         return PhoneNumber.attributeTypeMap;
     }
 }
-exports.PhoneNumber = PhoneNumber;
 PhoneNumber.discriminator = undefined;
 PhoneNumber.attributeTypeMap = [
     {
@@ -120,4 +119,5 @@ PhoneNumber.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.PhoneNumber = PhoneNumber;
 //# sourceMappingURL=phoneNumber.js.map

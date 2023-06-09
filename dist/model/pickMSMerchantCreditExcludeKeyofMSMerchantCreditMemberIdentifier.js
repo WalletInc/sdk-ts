@@ -6,7 +6,6 @@ class PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier {
         return PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.attributeTypeMap;
     }
 }
-exports.PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier = PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier;
 PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.discriminator = undefined;
 PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.attributeTypeMap = [
     {
@@ -45,4 +44,5 @@ PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.attributeTypeMa
         "type": "number"
     }
 ];
+exports.PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier = PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier;
 //# sourceMappingURL=pickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.js.map

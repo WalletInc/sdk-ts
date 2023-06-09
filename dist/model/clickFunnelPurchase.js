@@ -6,7 +6,6 @@ class ClickFunnelPurchase {
         return ClickFunnelPurchase.attributeTypeMap;
     }
 }
-exports.ClickFunnelPurchase = ClickFunnelPurchase;
 ClickFunnelPurchase.discriminator = undefined;
 ClickFunnelPurchase.attributeTypeMap = [
     {
@@ -135,4 +134,5 @@ ClickFunnelPurchase.attributeTypeMap = [
         "type": "any"
     }
 ];
+exports.ClickFunnelPurchase = ClickFunnelPurchase;
 //# sourceMappingURL=clickFunnelPurchase.js.map

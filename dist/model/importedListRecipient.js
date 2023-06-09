@@ -6,7 +6,6 @@ class ImportedListRecipient {
         return ImportedListRecipient.attributeTypeMap;
     }
 }
-exports.ImportedListRecipient = ImportedListRecipient;
 ImportedListRecipient.discriminator = undefined;
 ImportedListRecipient.attributeTypeMap = [
     {
@@ -50,4 +49,5 @@ ImportedListRecipient.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.ImportedListRecipient = ImportedListRecipient;
 //# sourceMappingURL=importedListRecipient.js.map

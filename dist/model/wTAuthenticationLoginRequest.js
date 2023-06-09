@@ -6,7 +6,6 @@ class WTAuthenticationLoginRequest {
         return WTAuthenticationLoginRequest.attributeTypeMap;
     }
 }
-exports.WTAuthenticationLoginRequest = WTAuthenticationLoginRequest;
 WTAuthenticationLoginRequest.discriminator = undefined;
 WTAuthenticationLoginRequest.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ WTAuthenticationLoginRequest.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTAuthenticationLoginRequest = WTAuthenticationLoginRequest;
 //# sourceMappingURL=wTAuthenticationLoginRequest.js.map

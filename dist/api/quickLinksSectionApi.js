@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var QuickLinksSectionApiApiKeys;
 (function (QuickLinksSectionApiApiKeys) {
     QuickLinksSectionApiApiKeys[QuickLinksSectionApiApiKeys["api_key"] = 0] = "api_key";
-})(QuickLinksSectionApiApiKeys || (exports.QuickLinksSectionApiApiKeys = QuickLinksSectionApiApiKeys = {}));
+})(QuickLinksSectionApiApiKeys = exports.QuickLinksSectionApiApiKeys || (exports.QuickLinksSectionApiApiKeys = {}));
 class QuickLinksSectionApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

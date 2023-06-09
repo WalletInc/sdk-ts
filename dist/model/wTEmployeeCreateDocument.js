@@ -6,7 +6,6 @@ class WTEmployeeCreateDocument {
         return WTEmployeeCreateDocument.attributeTypeMap;
     }
 }
-exports.WTEmployeeCreateDocument = WTEmployeeCreateDocument;
 WTEmployeeCreateDocument.discriminator = undefined;
 WTEmployeeCreateDocument.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTEmployeeCreateDocument.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTEmployeeCreateDocument = WTEmployeeCreateDocument;
 //# sourceMappingURL=wTEmployeeCreateDocument.js.map

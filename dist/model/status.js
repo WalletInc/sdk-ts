@@ -6,7 +6,7 @@ class Status {
         return Status.attributeTypeMap;
     }
 }
-exports.Status = Status;
 Status.discriminator = undefined;
 Status.attributeTypeMap = [];
+exports.Status = Status;
 //# sourceMappingURL=status.js.map

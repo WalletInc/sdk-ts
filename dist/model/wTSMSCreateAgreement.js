@@ -6,7 +6,6 @@ class WTSMSCreateAgreement {
         return WTSMSCreateAgreement.attributeTypeMap;
     }
 }
-exports.WTSMSCreateAgreement = WTSMSCreateAgreement;
 WTSMSCreateAgreement.discriminator = undefined;
 WTSMSCreateAgreement.attributeTypeMap = [
     {
@@ -70,4 +69,5 @@ WTSMSCreateAgreement.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.WTSMSCreateAgreement = WTSMSCreateAgreement;
 //# sourceMappingURL=wTSMSCreateAgreement.js.map

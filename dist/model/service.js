@@ -6,7 +6,6 @@ class Service {
         return Service.attributeTypeMap;
     }
 }
-exports.Service = Service;
 Service.discriminator = undefined;
 Service.attributeTypeMap = [
     {
@@ -65,4 +64,5 @@ Service.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.Service = Service;
 //# sourceMappingURL=service.js.map

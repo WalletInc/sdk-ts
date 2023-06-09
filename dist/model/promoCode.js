@@ -6,7 +6,6 @@ class PromoCode {
         return PromoCode.attributeTypeMap;
     }
 }
-exports.PromoCode = PromoCode;
 PromoCode.discriminator = undefined;
 PromoCode.attributeTypeMap = [
     {
@@ -75,4 +74,5 @@ PromoCode.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.PromoCode = PromoCode;
 //# sourceMappingURL=promoCode.js.map

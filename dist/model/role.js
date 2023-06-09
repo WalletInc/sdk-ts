@@ -6,7 +6,6 @@ class Role {
         return Role.attributeTypeMap;
     }
 }
-exports.Role = Role;
 Role.discriminator = undefined;
 Role.attributeTypeMap = [
     {
@@ -85,4 +84,5 @@ Role.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.Role = Role;
 //# sourceMappingURL=role.js.map

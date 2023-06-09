@@ -6,7 +6,6 @@ class WTLoungeUpdateParams {
         return WTLoungeUpdateParams.attributeTypeMap;
     }
 }
-exports.WTLoungeUpdateParams = WTLoungeUpdateParams;
 WTLoungeUpdateParams.discriminator = undefined;
 WTLoungeUpdateParams.attributeTypeMap = [
     {
@@ -40,4 +39,5 @@ WTLoungeUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTLoungeUpdateParams = WTLoungeUpdateParams;
 //# sourceMappingURL=wTLoungeUpdateParams.js.map

@@ -6,7 +6,6 @@ class WTMemberCreationParams {
         return WTMemberCreationParams.attributeTypeMap;
     }
 }
-exports.WTMemberCreationParams = WTMemberCreationParams;
 WTMemberCreationParams.discriminator = undefined;
 WTMemberCreationParams.attributeTypeMap = [
     {
@@ -40,4 +39,5 @@ WTMemberCreationParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTMemberCreationParams = WTMemberCreationParams;
 //# sourceMappingURL=wTMemberCreationParams.js.map

@@ -6,7 +6,6 @@ class WTDynamicVoucherRedemption {
         return WTDynamicVoucherRedemption.attributeTypeMap;
     }
 }
-exports.WTDynamicVoucherRedemption = WTDynamicVoucherRedemption;
 WTDynamicVoucherRedemption.discriminator = undefined;
 WTDynamicVoucherRedemption.attributeTypeMap = [
     {
@@ -120,4 +119,5 @@ WTDynamicVoucherRedemption.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTDynamicVoucherRedemption = WTDynamicVoucherRedemption;
 //# sourceMappingURL=wTDynamicVoucherRedemption.js.map

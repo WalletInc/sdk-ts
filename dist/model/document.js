@@ -6,7 +6,6 @@ class Document {
         return Document.attributeTypeMap;
     }
 }
-exports.Document = Document;
 Document.discriminator = undefined;
 Document.attributeTypeMap = [
     {
@@ -60,4 +59,5 @@ Document.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.Document = Document;
 //# sourceMappingURL=document.js.map

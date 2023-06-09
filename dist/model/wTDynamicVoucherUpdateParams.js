@@ -6,7 +6,6 @@ class WTDynamicVoucherUpdateParams {
         return WTDynamicVoucherUpdateParams.attributeTypeMap;
     }
 }
-exports.WTDynamicVoucherUpdateParams = WTDynamicVoucherUpdateParams;
 WTDynamicVoucherUpdateParams.discriminator = undefined;
 WTDynamicVoucherUpdateParams.attributeTypeMap = [
     {
@@ -70,4 +69,5 @@ WTDynamicVoucherUpdateParams.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.WTDynamicVoucherUpdateParams = WTDynamicVoucherUpdateParams;
 //# sourceMappingURL=wTDynamicVoucherUpdateParams.js.map

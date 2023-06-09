@@ -6,7 +6,6 @@ class MerchantURL {
         return MerchantURL.attributeTypeMap;
     }
 }
-exports.MerchantURL = MerchantURL;
 MerchantURL.discriminator = undefined;
 MerchantURL.attributeTypeMap = [
     {
@@ -45,4 +44,5 @@ MerchantURL.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.MerchantURL = MerchantURL;
 //# sourceMappingURL=merchantURL.js.map
