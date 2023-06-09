@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var LoungeApiApiKeys;
 (function (LoungeApiApiKeys) {
     LoungeApiApiKeys[LoungeApiApiKeys["api_key"] = 0] = "api_key";
-})(LoungeApiApiKeys || (exports.LoungeApiApiKeys = LoungeApiApiKeys = {}));
+})(LoungeApiApiKeys = exports.LoungeApiApiKeys || (exports.LoungeApiApiKeys = {}));
 class LoungeApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

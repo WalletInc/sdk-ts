@@ -6,7 +6,6 @@ class MemberSearch {
         return MemberSearch.attributeTypeMap;
     }
 }
-exports.MemberSearch = MemberSearch;
 MemberSearch.discriminator = undefined;
 MemberSearch.attributeTypeMap = [
     {
@@ -45,4 +44,5 @@ MemberSearch.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.MemberSearch = MemberSearch;
 //# sourceMappingURL=memberSearch.js.map

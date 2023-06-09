@@ -6,7 +6,6 @@ class WTEmployeeAPIKeyCreateParams {
         return WTEmployeeAPIKeyCreateParams.attributeTypeMap;
     }
 }
-exports.WTEmployeeAPIKeyCreateParams = WTEmployeeAPIKeyCreateParams;
 WTEmployeeAPIKeyCreateParams.discriminator = undefined;
 WTEmployeeAPIKeyCreateParams.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ WTEmployeeAPIKeyCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTEmployeeAPIKeyCreateParams = WTEmployeeAPIKeyCreateParams;
 //# sourceMappingURL=wTEmployeeAPIKeyCreateParams.js.map

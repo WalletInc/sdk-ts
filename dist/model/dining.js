@@ -6,7 +6,6 @@ class Dining {
         return Dining.attributeTypeMap;
     }
 }
-exports.Dining = Dining;
 Dining.discriminator = undefined;
 Dining.attributeTypeMap = [
     {
@@ -65,4 +64,5 @@ Dining.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.Dining = Dining;
 //# sourceMappingURL=dining.js.map

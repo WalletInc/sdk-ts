@@ -6,7 +6,6 @@ class StaticVoucherCampaignUpdate {
         return StaticVoucherCampaignUpdate.attributeTypeMap;
     }
 }
-exports.StaticVoucherCampaignUpdate = StaticVoucherCampaignUpdate;
 StaticVoucherCampaignUpdate.discriminator = undefined;
 StaticVoucherCampaignUpdate.attributeTypeMap = [
     {
@@ -55,4 +54,5 @@ StaticVoucherCampaignUpdate.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.StaticVoucherCampaignUpdate = StaticVoucherCampaignUpdate;
 //# sourceMappingURL=staticVoucherCampaignUpdate.js.map

@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var AppleWalletSubscribersApiApiKeys;
 (function (AppleWalletSubscribersApiApiKeys) {
     AppleWalletSubscribersApiApiKeys[AppleWalletSubscribersApiApiKeys["api_key"] = 0] = "api_key";
-})(AppleWalletSubscribersApiApiKeys || (exports.AppleWalletSubscribersApiApiKeys = AppleWalletSubscribersApiApiKeys = {}));
+})(AppleWalletSubscribersApiApiKeys = exports.AppleWalletSubscribersApiApiKeys || (exports.AppleWalletSubscribersApiApiKeys = {}));
 class AppleWalletSubscribersApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

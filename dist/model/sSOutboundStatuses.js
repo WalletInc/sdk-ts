@@ -6,7 +6,7 @@ class SSOutboundStatuses {
         return SSOutboundStatuses.attributeTypeMap;
     }
 }
-exports.SSOutboundStatuses = SSOutboundStatuses;
 SSOutboundStatuses.discriminator = undefined;
 SSOutboundStatuses.attributeTypeMap = [];
+exports.SSOutboundStatuses = SSOutboundStatuses;
 //# sourceMappingURL=sSOutboundStatuses.js.map

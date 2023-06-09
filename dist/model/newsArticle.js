@@ -6,7 +6,6 @@ class NewsArticle {
         return NewsArticle.attributeTypeMap;
     }
 }
-exports.NewsArticle = NewsArticle;
 NewsArticle.discriminator = undefined;
 NewsArticle.attributeTypeMap = [
     {
@@ -65,4 +64,5 @@ NewsArticle.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.NewsArticle = NewsArticle;
 //# sourceMappingURL=newsArticle.js.map

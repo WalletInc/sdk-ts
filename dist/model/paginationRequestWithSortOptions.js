@@ -6,7 +6,6 @@ class PaginationRequestWithSortOptions {
         return PaginationRequestWithSortOptions.attributeTypeMap;
     }
 }
-exports.PaginationRequestWithSortOptions = PaginationRequestWithSortOptions;
 PaginationRequestWithSortOptions.discriminator = undefined;
 PaginationRequestWithSortOptions.attributeTypeMap = [
     {
@@ -35,10 +34,12 @@ PaginationRequestWithSortOptions.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.PaginationRequestWithSortOptions = PaginationRequestWithSortOptions;
 (function (PaginationRequestWithSortOptions) {
     let SortKeyEnum;
     (function (SortKeyEnum) {
         SortKeyEnum[SortKeyEnum["CreatedAt"] = 'createdAt'] = "CreatedAt";
     })(SortKeyEnum = PaginationRequestWithSortOptions.SortKeyEnum || (PaginationRequestWithSortOptions.SortKeyEnum = {}));
-})(PaginationRequestWithSortOptions || (exports.PaginationRequestWithSortOptions = PaginationRequestWithSortOptions = {}));
+})(PaginationRequestWithSortOptions = exports.PaginationRequestWithSortOptions || (exports.PaginationRequestWithSortOptions = {}));
+exports.PaginationRequestWithSortOptions = PaginationRequestWithSortOptions;
 //# sourceMappingURL=paginationRequestWithSortOptions.js.map

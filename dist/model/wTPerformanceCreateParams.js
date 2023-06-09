@@ -6,7 +6,6 @@ class WTPerformanceCreateParams {
         return WTPerformanceCreateParams.attributeTypeMap;
     }
 }
-exports.WTPerformanceCreateParams = WTPerformanceCreateParams;
 WTPerformanceCreateParams.discriminator = undefined;
 WTPerformanceCreateParams.attributeTypeMap = [
     {
@@ -50,4 +49,5 @@ WTPerformanceCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTPerformanceCreateParams = WTPerformanceCreateParams;
 //# sourceMappingURL=wTPerformanceCreateParams.js.map

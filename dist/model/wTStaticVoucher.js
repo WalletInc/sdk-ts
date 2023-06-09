@@ -6,7 +6,6 @@ class WTStaticVoucher {
         return WTStaticVoucher.attributeTypeMap;
     }
 }
-exports.WTStaticVoucher = WTStaticVoucher;
 WTStaticVoucher.discriminator = undefined;
 WTStaticVoucher.attributeTypeMap = [
     {
@@ -170,4 +169,5 @@ WTStaticVoucher.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTStaticVoucher = WTStaticVoucher;
 //# sourceMappingURL=wTStaticVoucher.js.map

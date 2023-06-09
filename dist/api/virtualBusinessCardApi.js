@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var VirtualBusinessCardApiApiKeys;
 (function (VirtualBusinessCardApiApiKeys) {
     VirtualBusinessCardApiApiKeys[VirtualBusinessCardApiApiKeys["api_key"] = 0] = "api_key";
-})(VirtualBusinessCardApiApiKeys || (exports.VirtualBusinessCardApiApiKeys = VirtualBusinessCardApiApiKeys = {}));
+})(VirtualBusinessCardApiApiKeys = exports.VirtualBusinessCardApiApiKeys || (exports.VirtualBusinessCardApiApiKeys = {}));
 class VirtualBusinessCardApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

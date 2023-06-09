@@ -6,7 +6,6 @@ class WTStaticVoucherCreateParams {
         return WTStaticVoucherCreateParams.attributeTypeMap;
     }
 }
-exports.WTStaticVoucherCreateParams = WTStaticVoucherCreateParams;
 WTStaticVoucherCreateParams.discriminator = undefined;
 WTStaticVoucherCreateParams.attributeTypeMap = [
     {
@@ -30,4 +29,5 @@ WTStaticVoucherCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTStaticVoucherCreateParams = WTStaticVoucherCreateParams;
 //# sourceMappingURL=wTStaticVoucherCreateParams.js.map

@@ -6,7 +6,6 @@ class WTMerchantURLUpdate {
         return WTMerchantURLUpdate.attributeTypeMap;
     }
 }
-exports.WTMerchantURLUpdate = WTMerchantURLUpdate;
 WTMerchantURLUpdate.discriminator = undefined;
 WTMerchantURLUpdate.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ WTMerchantURLUpdate.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTMerchantURLUpdate = WTMerchantURLUpdate;
 //# sourceMappingURL=wTMerchantURLUpdate.js.map

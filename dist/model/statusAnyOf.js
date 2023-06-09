@@ -4,5 +4,5 @@ exports.StatusAnyOf = void 0;
 var StatusAnyOf;
 (function (StatusAnyOf) {
     StatusAnyOf[StatusAnyOf["Created"] = 'created'] = "Created";
-})(StatusAnyOf || (exports.StatusAnyOf = StatusAnyOf = {}));
+})(StatusAnyOf = exports.StatusAnyOf || (exports.StatusAnyOf = {}));
 //# sourceMappingURL=statusAnyOf.js.map

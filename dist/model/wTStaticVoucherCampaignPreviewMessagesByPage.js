@@ -6,7 +6,6 @@ class WTStaticVoucherCampaignPreviewMessagesByPage {
         return WTStaticVoucherCampaignPreviewMessagesByPage.attributeTypeMap;
     }
 }
-exports.WTStaticVoucherCampaignPreviewMessagesByPage = WTStaticVoucherCampaignPreviewMessagesByPage;
 WTStaticVoucherCampaignPreviewMessagesByPage.discriminator = undefined;
 WTStaticVoucherCampaignPreviewMessagesByPage.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ WTStaticVoucherCampaignPreviewMessagesByPage.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.WTStaticVoucherCampaignPreviewMessagesByPage = WTStaticVoucherCampaignPreviewMessagesByPage;
 //# sourceMappingURL=wTStaticVoucherCampaignPreviewMessagesByPage.js.map

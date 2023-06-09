@@ -6,7 +6,6 @@ class BrowserDetails {
         return BrowserDetails.attributeTypeMap;
     }
 }
-exports.BrowserDetails = BrowserDetails;
 BrowserDetails.discriminator = undefined;
 BrowserDetails.attributeTypeMap = [
     {
@@ -30,4 +29,5 @@ BrowserDetails.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.BrowserDetails = BrowserDetails;
 //# sourceMappingURL=browserDetails.js.map

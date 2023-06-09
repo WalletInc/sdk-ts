@@ -6,7 +6,6 @@ class WTPosMachine {
         return WTPosMachine.attributeTypeMap;
     }
 }
-exports.WTPosMachine = WTPosMachine;
 WTPosMachine.discriminator = undefined;
 WTPosMachine.attributeTypeMap = [
     {
@@ -60,4 +59,5 @@ WTPosMachine.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.WTPosMachine = WTPosMachine;
 //# sourceMappingURL=wTPosMachine.js.map

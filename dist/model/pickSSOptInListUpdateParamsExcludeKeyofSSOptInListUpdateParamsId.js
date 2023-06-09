@@ -6,7 +6,6 @@ class PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId {
         return PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.attributeTypeMap;
     }
 }
-exports.PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId = PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId;
 PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.discriminator = undefined;
 PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.attributeTypeMap = [
     {
@@ -80,4 +79,5 @@ PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.attributeTypeMa
         "type": "boolean"
     }
 ];
+exports.PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId = PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId;
 //# sourceMappingURL=pickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.js.map

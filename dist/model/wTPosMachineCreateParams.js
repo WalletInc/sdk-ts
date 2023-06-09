@@ -6,7 +6,6 @@ class WTPosMachineCreateParams {
         return WTPosMachineCreateParams.attributeTypeMap;
     }
 }
-exports.WTPosMachineCreateParams = WTPosMachineCreateParams;
 WTPosMachineCreateParams.discriminator = undefined;
 WTPosMachineCreateParams.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ WTPosMachineCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTPosMachineCreateParams = WTPosMachineCreateParams;
 //# sourceMappingURL=wTPosMachineCreateParams.js.map

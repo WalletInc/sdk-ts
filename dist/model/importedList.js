@@ -6,7 +6,6 @@ class ImportedList {
         return ImportedList.attributeTypeMap;
     }
 }
-exports.ImportedList = ImportedList;
 ImportedList.discriminator = undefined;
 ImportedList.attributeTypeMap = [
     {
@@ -50,4 +49,5 @@ ImportedList.attributeTypeMap = [
         "type": "Date"
     }
 ];
+exports.ImportedList = ImportedList;
 //# sourceMappingURL=importedList.js.map

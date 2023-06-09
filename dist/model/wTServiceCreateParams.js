@@ -6,7 +6,6 @@ class WTServiceCreateParams {
         return WTServiceCreateParams.attributeTypeMap;
     }
 }
-exports.WTServiceCreateParams = WTServiceCreateParams;
 WTServiceCreateParams.discriminator = undefined;
 WTServiceCreateParams.attributeTypeMap = [
     {
@@ -40,4 +39,5 @@ WTServiceCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTServiceCreateParams = WTServiceCreateParams;
 //# sourceMappingURL=wTServiceCreateParams.js.map

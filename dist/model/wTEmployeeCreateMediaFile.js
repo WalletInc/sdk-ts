@@ -6,7 +6,6 @@ class WTEmployeeCreateMediaFile {
         return WTEmployeeCreateMediaFile.attributeTypeMap;
     }
 }
-exports.WTEmployeeCreateMediaFile = WTEmployeeCreateMediaFile;
 WTEmployeeCreateMediaFile.discriminator = undefined;
 WTEmployeeCreateMediaFile.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTEmployeeCreateMediaFile.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTEmployeeCreateMediaFile = WTEmployeeCreateMediaFile;
 //# sourceMappingURL=wTEmployeeCreateMediaFile.js.map

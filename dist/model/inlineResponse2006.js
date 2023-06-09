@@ -6,7 +6,6 @@ class InlineResponse2006 {
         return InlineResponse2006.attributeTypeMap;
     }
 }
-exports.InlineResponse2006 = InlineResponse2006;
 InlineResponse2006.discriminator = undefined;
 InlineResponse2006.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ InlineResponse2006.attributeTypeMap = [
         "type": "Array<OutboundSMS>"
     }
 ];
+exports.InlineResponse2006 = InlineResponse2006;
 //# sourceMappingURL=inlineResponse2006.js.map

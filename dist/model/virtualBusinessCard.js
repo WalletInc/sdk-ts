@@ -6,7 +6,6 @@ class VirtualBusinessCard {
         return VirtualBusinessCard.attributeTypeMap;
     }
 }
-exports.VirtualBusinessCard = VirtualBusinessCard;
 VirtualBusinessCard.discriminator = undefined;
 VirtualBusinessCard.attributeTypeMap = [
     {
@@ -100,4 +99,5 @@ VirtualBusinessCard.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.VirtualBusinessCard = VirtualBusinessCard;
 //# sourceMappingURL=virtualBusinessCard.js.map

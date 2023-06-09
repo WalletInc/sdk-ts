@@ -6,7 +6,6 @@ class WTEmailSubscriberUpdateParams {
         return WTEmailSubscriberUpdateParams.attributeTypeMap;
     }
 }
-exports.WTEmailSubscriberUpdateParams = WTEmailSubscriberUpdateParams;
 WTEmailSubscriberUpdateParams.discriminator = undefined;
 WTEmailSubscriberUpdateParams.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTEmailSubscriberUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTEmailSubscriberUpdateParams = WTEmailSubscriberUpdateParams;
 //# sourceMappingURL=wTEmailSubscriberUpdateParams.js.map
