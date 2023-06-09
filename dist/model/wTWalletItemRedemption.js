@@ -6,7 +6,6 @@ class WTWalletItemRedemption {
         return WTWalletItemRedemption.attributeTypeMap;
     }
 }
-exports.WTWalletItemRedemption = WTWalletItemRedemption;
 WTWalletItemRedemption.discriminator = undefined;
 WTWalletItemRedemption.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTWalletItemRedemption.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTWalletItemRedemption = WTWalletItemRedemption;
 //# sourceMappingURL=wTWalletItemRedemption.js.map

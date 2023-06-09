@@ -6,7 +6,6 @@ class MSAnalyticsMemberPointsRedeemedPartitionedByDate {
         return MSAnalyticsMemberPointsRedeemedPartitionedByDate.attributeTypeMap;
     }
 }
-exports.MSAnalyticsMemberPointsRedeemedPartitionedByDate = MSAnalyticsMemberPointsRedeemedPartitionedByDate;
 MSAnalyticsMemberPointsRedeemedPartitionedByDate.discriminator = undefined;
 MSAnalyticsMemberPointsRedeemedPartitionedByDate.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ MSAnalyticsMemberPointsRedeemedPartitionedByDate.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.MSAnalyticsMemberPointsRedeemedPartitionedByDate = MSAnalyticsMemberPointsRedeemedPartitionedByDate;
 //# sourceMappingURL=mSAnalyticsMemberPointsRedeemedPartitionedByDate.js.map

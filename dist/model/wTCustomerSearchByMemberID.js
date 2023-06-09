@@ -6,7 +6,6 @@ class WTCustomerSearchByMemberID {
         return WTCustomerSearchByMemberID.attributeTypeMap;
     }
 }
-exports.WTCustomerSearchByMemberID = WTCustomerSearchByMemberID;
 WTCustomerSearchByMemberID.discriminator = undefined;
 WTCustomerSearchByMemberID.attributeTypeMap = [
     {
@@ -15,4 +14,5 @@ WTCustomerSearchByMemberID.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTCustomerSearchByMemberID = WTCustomerSearchByMemberID;
 //# sourceMappingURL=wTCustomerSearchByMemberID.js.map

@@ -6,7 +6,6 @@ class PresignedPostFields extends null {
         return super.getAttributeTypeMap().concat(PresignedPostFields.attributeTypeMap);
     }
 }
-exports.PresignedPostFields = PresignedPostFields;
 PresignedPostFields.discriminator = undefined;
 PresignedPostFields.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ PresignedPostFields.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.PresignedPostFields = PresignedPostFields;
 //# sourceMappingURL=presignedPostFields.js.map

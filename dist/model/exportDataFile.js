@@ -6,7 +6,6 @@ class ExportDataFile {
         return ExportDataFile.attributeTypeMap;
     }
 }
-exports.ExportDataFile = ExportDataFile;
 ExportDataFile.discriminator = undefined;
 ExportDataFile.attributeTypeMap = [
     {
@@ -60,4 +59,5 @@ ExportDataFile.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.ExportDataFile = ExportDataFile;
 //# sourceMappingURL=exportDataFile.js.map

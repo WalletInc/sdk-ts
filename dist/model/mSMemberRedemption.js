@@ -6,7 +6,6 @@ class MSMemberRedemption {
         return MSMemberRedemption.attributeTypeMap;
     }
 }
-exports.MSMemberRedemption = MSMemberRedemption;
 MSMemberRedemption.discriminator = undefined;
 MSMemberRedemption.attributeTypeMap = [
     {
@@ -60,4 +59,5 @@ MSMemberRedemption.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.MSMemberRedemption = MSMemberRedemption;
 //# sourceMappingURL=mSMemberRedemption.js.map

@@ -6,7 +6,6 @@ class AvailablePhoneNumbersRequest {
         return AvailablePhoneNumbersRequest.attributeTypeMap;
     }
 }
-exports.AvailablePhoneNumbersRequest = AvailablePhoneNumbersRequest;
 AvailablePhoneNumbersRequest.discriminator = undefined;
 AvailablePhoneNumbersRequest.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ AvailablePhoneNumbersRequest.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.AvailablePhoneNumbersRequest = AvailablePhoneNumbersRequest;
 //# sourceMappingURL=availablePhoneNumbersRequest.js.map

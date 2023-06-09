@@ -6,7 +6,6 @@ class OutboundSMS {
         return OutboundSMS.attributeTypeMap;
     }
 }
-exports.OutboundSMS = OutboundSMS;
 OutboundSMS.discriminator = undefined;
 OutboundSMS.attributeTypeMap = [
     {
@@ -120,4 +119,5 @@ OutboundSMS.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.OutboundSMS = OutboundSMS;
 //# sourceMappingURL=outboundSMS.js.map

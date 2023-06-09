@@ -6,7 +6,6 @@ class InlineResponse200 {
         return InlineResponse200.attributeTypeMap;
     }
 }
-exports.InlineResponse200 = InlineResponse200;
 InlineResponse200.discriminator = undefined;
 InlineResponse200.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ InlineResponse200.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.InlineResponse200 = InlineResponse200;
 //# sourceMappingURL=inlineResponse200.js.map

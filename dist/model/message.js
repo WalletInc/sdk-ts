@@ -6,7 +6,6 @@ class Message {
         return Message.attributeTypeMap;
     }
 }
-exports.Message = Message;
 Message.discriminator = undefined;
 Message.attributeTypeMap = [
     {
@@ -50,4 +49,5 @@ Message.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.Message = Message;
 //# sourceMappingURL=message.js.map

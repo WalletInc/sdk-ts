@@ -6,7 +6,6 @@ class WTRole {
         return WTRole.attributeTypeMap;
     }
 }
-exports.WTRole = WTRole;
 WTRole.discriminator = undefined;
 WTRole.attributeTypeMap = [
     {
@@ -85,4 +84,5 @@ WTRole.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTRole = WTRole;
 //# sourceMappingURL=wTRole.js.map

@@ -6,7 +6,6 @@ class WTBillingVerifyPaymentMethodResponse {
         return WTBillingVerifyPaymentMethodResponse.attributeTypeMap;
     }
 }
-exports.WTBillingVerifyPaymentMethodResponse = WTBillingVerifyPaymentMethodResponse;
 WTBillingVerifyPaymentMethodResponse.discriminator = undefined;
 WTBillingVerifyPaymentMethodResponse.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ WTBillingVerifyPaymentMethodResponse.attributeTypeMap = [
         "type": "SubscriptionPlan"
     }
 ];
+exports.WTBillingVerifyPaymentMethodResponse = WTBillingVerifyPaymentMethodResponse;
 //# sourceMappingURL=wTBillingVerifyPaymentMethodResponse.js.map

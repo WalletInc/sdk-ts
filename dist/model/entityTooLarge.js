@@ -6,7 +6,6 @@ class EntityTooLarge {
         return EntityTooLarge.attributeTypeMap;
     }
 }
-exports.EntityTooLarge = EntityTooLarge;
 EntityTooLarge.discriminator = undefined;
 EntityTooLarge.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ EntityTooLarge.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.EntityTooLarge = EntityTooLarge;
 //# sourceMappingURL=entityTooLarge.js.map

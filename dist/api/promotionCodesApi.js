@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var PromotionCodesApiApiKeys;
 (function (PromotionCodesApiApiKeys) {
     PromotionCodesApiApiKeys[PromotionCodesApiApiKeys["api_key"] = 0] = "api_key";
-})(PromotionCodesApiApiKeys || (exports.PromotionCodesApiApiKeys = PromotionCodesApiApiKeys = {}));
+})(PromotionCodesApiApiKeys = exports.PromotionCodesApiApiKeys || (exports.PromotionCodesApiApiKeys = {}));
 class PromotionCodesApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

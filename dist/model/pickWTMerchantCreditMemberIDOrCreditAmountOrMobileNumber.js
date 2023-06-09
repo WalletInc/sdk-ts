@@ -6,7 +6,6 @@ class PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber {
         return PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.attributeTypeMap;
     }
 }
-exports.PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber = PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber;
 PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.discriminator = undefined;
 PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber = PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber;
 //# sourceMappingURL=pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.js.map

@@ -6,7 +6,6 @@ class OptInList {
         return OptInList.attributeTypeMap;
     }
 }
-exports.OptInList = OptInList;
 OptInList.discriminator = undefined;
 OptInList.attributeTypeMap = [
     {
@@ -100,4 +99,5 @@ OptInList.attributeTypeMap = [
         "type": "Date"
     }
 ];
+exports.OptInList = OptInList;
 //# sourceMappingURL=optInList.js.map
