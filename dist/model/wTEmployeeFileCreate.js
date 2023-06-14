@@ -6,6 +6,7 @@ class WTEmployeeFileCreate {
         return WTEmployeeFileCreate.attributeTypeMap;
     }
 }
+exports.WTEmployeeFileCreate = WTEmployeeFileCreate;
 WTEmployeeFileCreate.discriminator = undefined;
 WTEmployeeFileCreate.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ WTEmployeeFileCreate.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeFileCreate = WTEmployeeFileCreate;
 //# sourceMappingURL=wTEmployeeFileCreate.js.map

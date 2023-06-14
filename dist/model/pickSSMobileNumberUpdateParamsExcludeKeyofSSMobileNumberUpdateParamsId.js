@@ -6,6 +6,7 @@ class PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId {
         return PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId = PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId;
 PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.discriminator = undefined;
 PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.attributeTypeMap = [
     {
@@ -69,5 +70,4 @@ PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.attribute
         "type": "string"
     }
 ];
-exports.PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId = PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId;
 //# sourceMappingURL=pickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.js.map

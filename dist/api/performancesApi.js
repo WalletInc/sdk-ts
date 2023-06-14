@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var PerformancesApiApiKeys;
 (function (PerformancesApiApiKeys) {
     PerformancesApiApiKeys[PerformancesApiApiKeys["api_key"] = 0] = "api_key";
-})(PerformancesApiApiKeys = exports.PerformancesApiApiKeys || (exports.PerformancesApiApiKeys = {}));
+})(PerformancesApiApiKeys || (exports.PerformancesApiApiKeys = PerformancesApiApiKeys = {}));
 class PerformancesApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

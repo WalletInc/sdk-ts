@@ -6,6 +6,7 @@ class WTBillingSavePaymentMethod {
         return WTBillingSavePaymentMethod.attributeTypeMap;
     }
 }
+exports.WTBillingSavePaymentMethod = WTBillingSavePaymentMethod;
 WTBillingSavePaymentMethod.discriminator = undefined;
 WTBillingSavePaymentMethod.attributeTypeMap = [
     {
@@ -14,5 +15,4 @@ WTBillingSavePaymentMethod.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTBillingSavePaymentMethod = WTBillingSavePaymentMethod;
 //# sourceMappingURL=wTBillingSavePaymentMethod.js.map

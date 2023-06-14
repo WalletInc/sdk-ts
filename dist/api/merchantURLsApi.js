@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var MerchantURLsApiApiKeys;
 (function (MerchantURLsApiApiKeys) {
     MerchantURLsApiApiKeys[MerchantURLsApiApiKeys["api_key"] = 0] = "api_key";
-})(MerchantURLsApiApiKeys = exports.MerchantURLsApiApiKeys || (exports.MerchantURLsApiApiKeys = {}));
+})(MerchantURLsApiApiKeys || (exports.MerchantURLsApiApiKeys = MerchantURLsApiApiKeys = {}));
 class MerchantURLsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

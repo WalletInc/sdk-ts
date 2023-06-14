@@ -6,6 +6,7 @@ class WTDynamicVoucherCreateParams {
         return WTDynamicVoucherCreateParams.attributeTypeMap;
     }
 }
+exports.WTDynamicVoucherCreateParams = WTDynamicVoucherCreateParams;
 WTDynamicVoucherCreateParams.discriminator = undefined;
 WTDynamicVoucherCreateParams.attributeTypeMap = [
     {
@@ -69,5 +70,4 @@ WTDynamicVoucherCreateParams.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.WTDynamicVoucherCreateParams = WTDynamicVoucherCreateParams;
 //# sourceMappingURL=wTDynamicVoucherCreateParams.js.map

@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var BillingApiApiKeys;
 (function (BillingApiApiKeys) {
     BillingApiApiKeys[BillingApiApiKeys["api_key"] = 0] = "api_key";
-})(BillingApiApiKeys = exports.BillingApiApiKeys || (exports.BillingApiApiKeys = {}));
+})(BillingApiApiKeys || (exports.BillingApiApiKeys = BillingApiApiKeys = {}));
 class BillingApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

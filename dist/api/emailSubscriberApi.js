@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var EmailSubscriberApiApiKeys;
 (function (EmailSubscriberApiApiKeys) {
     EmailSubscriberApiApiKeys[EmailSubscriberApiApiKeys["api_key"] = 0] = "api_key";
-})(EmailSubscriberApiApiKeys = exports.EmailSubscriberApiApiKeys || (exports.EmailSubscriberApiApiKeys = {}));
+})(EmailSubscriberApiApiKeys || (exports.EmailSubscriberApiApiKeys = EmailSubscriberApiApiKeys = {}));
 class EmailSubscriberApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

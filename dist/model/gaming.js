@@ -6,6 +6,7 @@ class Gaming {
         return Gaming.attributeTypeMap;
     }
 }
+exports.Gaming = Gaming;
 Gaming.discriminator = undefined;
 Gaming.attributeTypeMap = [
     {
@@ -64,5 +65,4 @@ Gaming.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Gaming = Gaming;
 //# sourceMappingURL=gaming.js.map

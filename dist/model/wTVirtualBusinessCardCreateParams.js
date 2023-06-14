@@ -6,6 +6,7 @@ class WTVirtualBusinessCardCreateParams {
         return WTVirtualBusinessCardCreateParams.attributeTypeMap;
     }
 }
+exports.WTVirtualBusinessCardCreateParams = WTVirtualBusinessCardCreateParams;
 WTVirtualBusinessCardCreateParams.discriminator = undefined;
 WTVirtualBusinessCardCreateParams.attributeTypeMap = [
     {
@@ -74,5 +75,4 @@ WTVirtualBusinessCardCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTVirtualBusinessCardCreateParams = WTVirtualBusinessCardCreateParams;
 //# sourceMappingURL=wTVirtualBusinessCardCreateParams.js.map

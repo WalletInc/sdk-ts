@@ -6,6 +6,7 @@ class VSCampaignGeneratedMessage {
         return VSCampaignGeneratedMessage.attributeTypeMap;
     }
 }
+exports.VSCampaignGeneratedMessage = VSCampaignGeneratedMessage;
 VSCampaignGeneratedMessage.discriminator = undefined;
 VSCampaignGeneratedMessage.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ VSCampaignGeneratedMessage.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.VSCampaignGeneratedMessage = VSCampaignGeneratedMessage;
 //# sourceMappingURL=vSCampaignGeneratedMessage.js.map

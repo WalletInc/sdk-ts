@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var NewsApiApiKeys;
 (function (NewsApiApiKeys) {
     NewsApiApiKeys[NewsApiApiKeys["api_key"] = 0] = "api_key";
-})(NewsApiApiKeys = exports.NewsApiApiKeys || (exports.NewsApiApiKeys = {}));
+})(NewsApiApiKeys || (exports.NewsApiApiKeys = NewsApiApiKeys = {}));
 class NewsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

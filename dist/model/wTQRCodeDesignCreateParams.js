@@ -6,6 +6,7 @@ class WTQRCodeDesignCreateParams {
         return WTQRCodeDesignCreateParams.attributeTypeMap;
     }
 }
+exports.WTQRCodeDesignCreateParams = WTQRCodeDesignCreateParams;
 WTQRCodeDesignCreateParams.discriminator = undefined;
 WTQRCodeDesignCreateParams.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ WTQRCodeDesignCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTQRCodeDesignCreateParams = WTQRCodeDesignCreateParams;
 //# sourceMappingURL=wTQRCodeDesignCreateParams.js.map

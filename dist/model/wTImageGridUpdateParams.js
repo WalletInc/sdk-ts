@@ -6,6 +6,7 @@ class WTImageGridUpdateParams {
         return WTImageGridUpdateParams.attributeTypeMap;
     }
 }
+exports.WTImageGridUpdateParams = WTImageGridUpdateParams;
 WTImageGridUpdateParams.discriminator = undefined;
 WTImageGridUpdateParams.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ WTImageGridUpdateParams.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.WTImageGridUpdateParams = WTImageGridUpdateParams;
 //# sourceMappingURL=wTImageGridUpdateParams.js.map

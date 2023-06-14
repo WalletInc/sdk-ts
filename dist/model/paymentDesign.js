@@ -6,6 +6,7 @@ class PaymentDesign {
         return PaymentDesign.attributeTypeMap;
     }
 }
+exports.PaymentDesign = PaymentDesign;
 PaymentDesign.discriminator = undefined;
 PaymentDesign.attributeTypeMap = [
     {
@@ -104,5 +105,4 @@ PaymentDesign.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.PaymentDesign = PaymentDesign;
 //# sourceMappingURL=paymentDesign.js.map

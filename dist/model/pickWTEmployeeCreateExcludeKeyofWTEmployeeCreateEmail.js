@@ -6,6 +6,7 @@ class PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail {
         return PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.attributeTypeMap;
     }
 }
+exports.PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail = PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail;
 PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.discriminator = undefined;
 PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.attributeTypeMap = [
     {
@@ -89,5 +90,4 @@ PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail = PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail;
 //# sourceMappingURL=pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.js.map

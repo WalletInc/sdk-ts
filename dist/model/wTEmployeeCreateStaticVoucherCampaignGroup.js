@@ -6,6 +6,7 @@ class WTEmployeeCreateStaticVoucherCampaignGroup {
         return WTEmployeeCreateStaticVoucherCampaignGroup.attributeTypeMap;
     }
 }
+exports.WTEmployeeCreateStaticVoucherCampaignGroup = WTEmployeeCreateStaticVoucherCampaignGroup;
 WTEmployeeCreateStaticVoucherCampaignGroup.discriminator = undefined;
 WTEmployeeCreateStaticVoucherCampaignGroup.attributeTypeMap = [
     {
@@ -14,5 +15,4 @@ WTEmployeeCreateStaticVoucherCampaignGroup.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeCreateStaticVoucherCampaignGroup = WTEmployeeCreateStaticVoucherCampaignGroup;
 //# sourceMappingURL=wTEmployeeCreateStaticVoucherCampaignGroup.js.map

@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var WooCommerceTerminalApiApiKeys;
 (function (WooCommerceTerminalApiApiKeys) {
     WooCommerceTerminalApiApiKeys[WooCommerceTerminalApiApiKeys["api_key"] = 0] = "api_key";
-})(WooCommerceTerminalApiApiKeys = exports.WooCommerceTerminalApiApiKeys || (exports.WooCommerceTerminalApiApiKeys = {}));
+})(WooCommerceTerminalApiApiKeys || (exports.WooCommerceTerminalApiApiKeys = WooCommerceTerminalApiApiKeys = {}));
 class WooCommerceTerminalApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

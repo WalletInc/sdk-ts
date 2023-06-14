@@ -67,5 +67,5 @@ var PortalPage;
     PortalPage[PortalPage["Dining"] = 'dining'] = "Dining";
     PortalPage[PortalPage["Gaming"] = 'gaming'] = "Gaming";
     PortalPage[PortalPage["Lounges"] = 'lounges'] = "Lounges";
-})(PortalPage = exports.PortalPage || (exports.PortalPage = {}));
+})(PortalPage || (exports.PortalPage = PortalPage = {}));
 //# sourceMappingURL=portalPage.js.map

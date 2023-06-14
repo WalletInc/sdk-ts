@@ -6,6 +6,7 @@ class PaginatedWTMerchantCredits {
         return PaginatedWTMerchantCredits.attributeTypeMap;
     }
 }
+exports.PaginatedWTMerchantCredits = PaginatedWTMerchantCredits;
 PaginatedWTMerchantCredits.discriminator = undefined;
 PaginatedWTMerchantCredits.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ PaginatedWTMerchantCredits.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.PaginatedWTMerchantCredits = PaginatedWTMerchantCredits;
 //# sourceMappingURL=paginatedWTMerchantCredits.js.map

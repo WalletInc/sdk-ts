@@ -6,6 +6,7 @@ class InlineResponse2008 {
         return InlineResponse2008.attributeTypeMap;
     }
 }
+exports.InlineResponse2008 = InlineResponse2008;
 InlineResponse2008.discriminator = undefined;
 InlineResponse2008.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ InlineResponse2008.attributeTypeMap = [
         "type": "Array<ImportedListRecipient>"
     }
 ];
-exports.InlineResponse2008 = InlineResponse2008;
 //# sourceMappingURL=inlineResponse2008.js.map

@@ -6,6 +6,7 @@ class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherC
         return PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID.attributeTypeMap;
     }
 }
+exports.PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID = PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID;
 PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID.discriminator = undefined;
 PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID.attributeTypeMap = [
     {
@@ -69,5 +70,4 @@ PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaig
         "type": "string"
     }
 ];
-exports.PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID = PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID;
 //# sourceMappingURL=pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID.js.map
