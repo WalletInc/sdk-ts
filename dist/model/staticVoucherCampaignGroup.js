@@ -6,6 +6,7 @@ class StaticVoucherCampaignGroup {
         return StaticVoucherCampaignGroup.attributeTypeMap;
     }
 }
+exports.StaticVoucherCampaignGroup = StaticVoucherCampaignGroup;
 StaticVoucherCampaignGroup.discriminator = undefined;
 StaticVoucherCampaignGroup.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ StaticVoucherCampaignGroup.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.StaticVoucherCampaignGroup = StaticVoucherCampaignGroup;
 //# sourceMappingURL=staticVoucherCampaignGroup.js.map

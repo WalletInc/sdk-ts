@@ -6,6 +6,7 @@ class SubscriptionProduct {
         return SubscriptionProduct.attributeTypeMap;
     }
 }
+exports.SubscriptionProduct = SubscriptionProduct;
 SubscriptionProduct.discriminator = undefined;
 SubscriptionProduct.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ SubscriptionProduct.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.SubscriptionProduct = SubscriptionProduct;
 //# sourceMappingURL=subscriptionProduct.js.map

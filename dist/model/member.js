@@ -6,6 +6,7 @@ class Member {
         return Member.attributeTypeMap;
     }
 }
+exports.Member = Member;
 Member.discriminator = undefined;
 Member.attributeTypeMap = [
     {
@@ -69,5 +70,4 @@ Member.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Member = Member;
 //# sourceMappingURL=member.js.map

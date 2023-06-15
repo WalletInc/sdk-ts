@@ -6,6 +6,7 @@ class WTEmployee {
         return WTEmployee.attributeTypeMap;
     }
 }
+exports.WTEmployee = WTEmployee;
 WTEmployee.discriminator = undefined;
 WTEmployee.attributeTypeMap = [
     {
@@ -159,5 +160,4 @@ WTEmployee.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.WTEmployee = WTEmployee;
 //# sourceMappingURL=wTEmployee.js.map

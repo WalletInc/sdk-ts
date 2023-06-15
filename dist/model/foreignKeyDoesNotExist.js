@@ -6,6 +6,7 @@ class ForeignKeyDoesNotExist {
         return ForeignKeyDoesNotExist.attributeTypeMap;
     }
 }
+exports.ForeignKeyDoesNotExist = ForeignKeyDoesNotExist;
 ForeignKeyDoesNotExist.discriminator = undefined;
 ForeignKeyDoesNotExist.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ ForeignKeyDoesNotExist.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.ForeignKeyDoesNotExist = ForeignKeyDoesNotExist;
 //# sourceMappingURL=foreignKeyDoesNotExist.js.map

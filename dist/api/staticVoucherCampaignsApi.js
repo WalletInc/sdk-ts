@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var StaticVoucherCampaignsApiApiKeys;
 (function (StaticVoucherCampaignsApiApiKeys) {
     StaticVoucherCampaignsApiApiKeys[StaticVoucherCampaignsApiApiKeys["api_key"] = 0] = "api_key";
-})(StaticVoucherCampaignsApiApiKeys = exports.StaticVoucherCampaignsApiApiKeys || (exports.StaticVoucherCampaignsApiApiKeys = {}));
+})(StaticVoucherCampaignsApiApiKeys || (exports.StaticVoucherCampaignsApiApiKeys = StaticVoucherCampaignsApiApiKeys = {}));
 class StaticVoucherCampaignsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

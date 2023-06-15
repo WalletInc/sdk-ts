@@ -6,6 +6,7 @@ class PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId {
         return PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId = PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId;
 PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.discriminator = undefined;
 PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.attributeTypeMap = [
     {
@@ -29,5 +30,4 @@ PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.attribute
         "type": "string"
     }
 ];
-exports.PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId = PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId;
 //# sourceMappingURL=pickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.js.map

@@ -6,6 +6,7 @@ class OptInListSubscriber {
         return OptInListSubscriber.attributeTypeMap;
     }
 }
+exports.OptInListSubscriber = OptInListSubscriber;
 OptInListSubscriber.discriminator = undefined;
 OptInListSubscriber.attributeTypeMap = [
     {
@@ -84,5 +85,4 @@ OptInListSubscriber.attributeTypeMap = [
         "type": "SSOptInSource"
     }
 ];
-exports.OptInListSubscriber = OptInListSubscriber;
 //# sourceMappingURL=optInListSubscriber.js.map

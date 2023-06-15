@@ -6,6 +6,7 @@ class PaymentPrefixes {
         return PaymentPrefixes.attributeTypeMap;
     }
 }
+exports.PaymentPrefixes = PaymentPrefixes;
 PaymentPrefixes.discriminator = undefined;
 PaymentPrefixes.attributeTypeMap = [
     {
@@ -69,5 +70,4 @@ PaymentPrefixes.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.PaymentPrefixes = PaymentPrefixes;
 //# sourceMappingURL=paymentPrefixes.js.map

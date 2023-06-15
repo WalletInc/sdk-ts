@@ -6,6 +6,7 @@ class WTDiningCreateParams {
         return WTDiningCreateParams.attributeTypeMap;
     }
 }
+exports.WTDiningCreateParams = WTDiningCreateParams;
 WTDiningCreateParams.discriminator = undefined;
 WTDiningCreateParams.attributeTypeMap = [
     {
@@ -39,5 +40,4 @@ WTDiningCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTDiningCreateParams = WTDiningCreateParams;
 //# sourceMappingURL=wTDiningCreateParams.js.map

@@ -6,6 +6,7 @@ class WTEmailSubscriberCreateParams {
         return WTEmailSubscriberCreateParams.attributeTypeMap;
     }
 }
+exports.WTEmailSubscriberCreateParams = WTEmailSubscriberCreateParams;
 WTEmailSubscriberCreateParams.discriminator = undefined;
 WTEmailSubscriberCreateParams.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ WTEmailSubscriberCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmailSubscriberCreateParams = WTEmailSubscriberCreateParams;
 //# sourceMappingURL=wTEmailSubscriberCreateParams.js.map

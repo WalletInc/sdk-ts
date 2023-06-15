@@ -6,6 +6,7 @@ class MediaFile {
         return MediaFile.attributeTypeMap;
     }
 }
+exports.MediaFile = MediaFile;
 MediaFile.discriminator = undefined;
 MediaFile.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ MediaFile.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.MediaFile = MediaFile;
 //# sourceMappingURL=mediaFile.js.map

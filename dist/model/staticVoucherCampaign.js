@@ -6,6 +6,7 @@ class StaticVoucherCampaign {
         return StaticVoucherCampaign.attributeTypeMap;
     }
 }
+exports.StaticVoucherCampaign = StaticVoucherCampaign;
 StaticVoucherCampaign.discriminator = undefined;
 StaticVoucherCampaign.attributeTypeMap = [
     {
@@ -134,5 +135,4 @@ StaticVoucherCampaign.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.StaticVoucherCampaign = StaticVoucherCampaign;
 //# sourceMappingURL=staticVoucherCampaign.js.map

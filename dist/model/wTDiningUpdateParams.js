@@ -6,6 +6,7 @@ class WTDiningUpdateParams {
         return WTDiningUpdateParams.attributeTypeMap;
     }
 }
+exports.WTDiningUpdateParams = WTDiningUpdateParams;
 WTDiningUpdateParams.discriminator = undefined;
 WTDiningUpdateParams.attributeTypeMap = [
     {
@@ -39,5 +40,4 @@ WTDiningUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTDiningUpdateParams = WTDiningUpdateParams;
 //# sourceMappingURL=wTDiningUpdateParams.js.map

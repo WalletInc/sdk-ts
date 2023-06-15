@@ -6,6 +6,7 @@ class InlineResponse2002 {
         return InlineResponse2002.attributeTypeMap;
     }
 }
+exports.InlineResponse2002 = InlineResponse2002;
 InlineResponse2002.discriminator = undefined;
 InlineResponse2002.attributeTypeMap = [
     {
@@ -14,5 +15,4 @@ InlineResponse2002.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.InlineResponse2002 = InlineResponse2002;
 //# sourceMappingURL=inlineResponse2002.js.map

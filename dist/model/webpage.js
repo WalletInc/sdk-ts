@@ -6,6 +6,7 @@ class Webpage {
         return Webpage.attributeTypeMap;
     }
 }
+exports.Webpage = Webpage;
 Webpage.discriminator = undefined;
 Webpage.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ Webpage.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
-exports.Webpage = Webpage;
 //# sourceMappingURL=webpage.js.map

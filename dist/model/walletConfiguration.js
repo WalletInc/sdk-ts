@@ -6,6 +6,7 @@ class WalletConfiguration {
         return WalletConfiguration.attributeTypeMap;
     }
 }
+exports.WalletConfiguration = WalletConfiguration;
 WalletConfiguration.discriminator = undefined;
 WalletConfiguration.attributeTypeMap = [
     {
@@ -294,5 +295,4 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WalletConfiguration = WalletConfiguration;
 //# sourceMappingURL=walletConfiguration.js.map
