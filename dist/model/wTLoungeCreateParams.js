@@ -6,6 +6,7 @@ class WTLoungeCreateParams {
         return WTLoungeCreateParams.attributeTypeMap;
     }
 }
+exports.WTLoungeCreateParams = WTLoungeCreateParams;
 WTLoungeCreateParams.discriminator = undefined;
 WTLoungeCreateParams.attributeTypeMap = [
     {
@@ -39,5 +40,4 @@ WTLoungeCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTLoungeCreateParams = WTLoungeCreateParams;
 //# sourceMappingURL=wTLoungeCreateParams.js.map

@@ -6,6 +6,7 @@ class WTEmployeeUpdateRecords {
         return WTEmployeeUpdateRecords.attributeTypeMap;
     }
 }
+exports.WTEmployeeUpdateRecords = WTEmployeeUpdateRecords;
 WTEmployeeUpdateRecords.discriminator = undefined;
 WTEmployeeUpdateRecords.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ WTEmployeeUpdateRecords.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeUpdateRecords = WTEmployeeUpdateRecords;
 //# sourceMappingURL=wTEmployeeUpdateRecords.js.map

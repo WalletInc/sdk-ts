@@ -6,6 +6,7 @@ class WTStaticVoucherCampaign {
         return WTStaticVoucherCampaign.attributeTypeMap;
     }
 }
+exports.WTStaticVoucherCampaign = WTStaticVoucherCampaign;
 WTStaticVoucherCampaign.discriminator = undefined;
 WTStaticVoucherCampaign.attributeTypeMap = [
     {
@@ -134,5 +135,4 @@ WTStaticVoucherCampaign.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTStaticVoucherCampaign = WTStaticVoucherCampaign;
 //# sourceMappingURL=wTStaticVoucherCampaign.js.map

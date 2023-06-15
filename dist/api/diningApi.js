@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var DiningApiApiKeys;
 (function (DiningApiApiKeys) {
     DiningApiApiKeys[DiningApiApiKeys["api_key"] = 0] = "api_key";
-})(DiningApiApiKeys = exports.DiningApiApiKeys || (exports.DiningApiApiKeys = {}));
+})(DiningApiApiKeys || (exports.DiningApiApiKeys = DiningApiApiKeys = {}));
 class DiningApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

@@ -6,6 +6,7 @@ class WTGamingUpdateParams {
         return WTGamingUpdateParams.attributeTypeMap;
     }
 }
+exports.WTGamingUpdateParams = WTGamingUpdateParams;
 WTGamingUpdateParams.discriminator = undefined;
 WTGamingUpdateParams.attributeTypeMap = [
     {
@@ -39,5 +40,4 @@ WTGamingUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTGamingUpdateParams = WTGamingUpdateParams;
 //# sourceMappingURL=wTGamingUpdateParams.js.map

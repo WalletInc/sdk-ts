@@ -6,6 +6,7 @@ class FalsumField {
         return FalsumField.attributeTypeMap;
     }
 }
+exports.FalsumField = FalsumField;
 FalsumField.discriminator = undefined;
 FalsumField.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ FalsumField.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.FalsumField = FalsumField;
 //# sourceMappingURL=falsumField.js.map

@@ -6,6 +6,7 @@ class Merchant {
         return Merchant.attributeTypeMap;
     }
 }
+exports.Merchant = Merchant;
 Merchant.discriminator = undefined;
 Merchant.attributeTypeMap = [
     {
@@ -139,5 +140,4 @@ Merchant.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Merchant = Merchant;
 //# sourceMappingURL=merchant.js.map

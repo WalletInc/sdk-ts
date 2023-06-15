@@ -6,6 +6,7 @@ class LinkBook {
         return LinkBook.attributeTypeMap;
     }
 }
+exports.LinkBook = LinkBook;
 LinkBook.discriminator = undefined;
 LinkBook.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ LinkBook.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.LinkBook = LinkBook;
 //# sourceMappingURL=linkBook.js.map

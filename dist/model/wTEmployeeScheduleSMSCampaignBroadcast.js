@@ -6,6 +6,7 @@ class WTEmployeeScheduleSMSCampaignBroadcast {
         return WTEmployeeScheduleSMSCampaignBroadcast.attributeTypeMap;
     }
 }
+exports.WTEmployeeScheduleSMSCampaignBroadcast = WTEmployeeScheduleSMSCampaignBroadcast;
 WTEmployeeScheduleSMSCampaignBroadcast.discriminator = undefined;
 WTEmployeeScheduleSMSCampaignBroadcast.attributeTypeMap = [
     {
@@ -44,5 +45,4 @@ WTEmployeeScheduleSMSCampaignBroadcast.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeScheduleSMSCampaignBroadcast = WTEmployeeScheduleSMSCampaignBroadcast;
 //# sourceMappingURL=wTEmployeeScheduleSMSCampaignBroadcast.js.map

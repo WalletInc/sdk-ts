@@ -6,6 +6,7 @@ class WTAmenityUpdateParams {
         return WTAmenityUpdateParams.attributeTypeMap;
     }
 }
+exports.WTAmenityUpdateParams = WTAmenityUpdateParams;
 WTAmenityUpdateParams.discriminator = undefined;
 WTAmenityUpdateParams.attributeTypeMap = [
     {
@@ -39,5 +40,4 @@ WTAmenityUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAmenityUpdateParams = WTAmenityUpdateParams;
 //# sourceMappingURL=wTAmenityUpdateParams.js.map

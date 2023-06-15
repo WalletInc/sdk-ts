@@ -6,6 +6,7 @@ class PaginatedWTMembers {
         return PaginatedWTMembers.attributeTypeMap;
     }
 }
+exports.PaginatedWTMembers = PaginatedWTMembers;
 PaginatedWTMembers.discriminator = undefined;
 PaginatedWTMembers.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ PaginatedWTMembers.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.PaginatedWTMembers = PaginatedWTMembers;
 //# sourceMappingURL=paginatedWTMembers.js.map

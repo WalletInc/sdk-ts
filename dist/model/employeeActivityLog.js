@@ -6,6 +6,7 @@ class EmployeeActivityLog {
         return EmployeeActivityLog.attributeTypeMap;
     }
 }
+exports.EmployeeActivityLog = EmployeeActivityLog;
 EmployeeActivityLog.discriminator = undefined;
 EmployeeActivityLog.attributeTypeMap = [
     {
@@ -44,5 +45,4 @@ EmployeeActivityLog.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.EmployeeActivityLog = EmployeeActivityLog;
 //# sourceMappingURL=employeeActivityLog.js.map

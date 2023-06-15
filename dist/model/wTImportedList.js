@@ -6,6 +6,7 @@ class WTImportedList {
         return WTImportedList.attributeTypeMap;
     }
 }
+exports.WTImportedList = WTImportedList;
 WTImportedList.discriminator = undefined;
 WTImportedList.attributeTypeMap = [
     {
@@ -49,5 +50,4 @@ WTImportedList.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTImportedList = WTImportedList;
 //# sourceMappingURL=wTImportedList.js.map
