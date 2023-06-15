@@ -6,7 +6,6 @@ class PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExp
         return PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate.attributeTypeMap;
     }
 }
-exports.PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate = PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate;
 PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate.discriminator = undefined;
 PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate.attributeTypeMap = [
     {
@@ -70,4 +69,5 @@ PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpiratio
         "type": "number"
     }
 ];
+exports.PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate = PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate;
 //# sourceMappingURL=pickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate.js.map

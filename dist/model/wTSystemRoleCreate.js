@@ -6,7 +6,6 @@ class WTSystemRoleCreate {
         return WTSystemRoleCreate.attributeTypeMap;
     }
 }
-exports.WTSystemRoleCreate = WTSystemRoleCreate;
 WTSystemRoleCreate.discriminator = undefined;
 WTSystemRoleCreate.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ WTSystemRoleCreate.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
+exports.WTSystemRoleCreate = WTSystemRoleCreate;
 //# sourceMappingURL=wTSystemRoleCreate.js.map

@@ -6,7 +6,6 @@ class PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId {
         return PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.attributeTypeMap;
     }
 }
-exports.PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId = PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId;
 PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.discriminator = undefined;
 PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.attributeTypeMap = [
     {
@@ -75,4 +74,5 @@ PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.attribu
         "type": "string"
     }
 ];
+exports.PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId = PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId;
 //# sourceMappingURL=pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.js.map

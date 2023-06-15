@@ -6,7 +6,6 @@ class WTMerchantUpdatePOSIntegration {
         return WTMerchantUpdatePOSIntegration.attributeTypeMap;
     }
 }
-exports.WTMerchantUpdatePOSIntegration = WTMerchantUpdatePOSIntegration;
 WTMerchantUpdatePOSIntegration.discriminator = undefined;
 WTMerchantUpdatePOSIntegration.attributeTypeMap = [
     {
@@ -15,4 +14,5 @@ WTMerchantUpdatePOSIntegration.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTMerchantUpdatePOSIntegration = WTMerchantUpdatePOSIntegration;
 //# sourceMappingURL=wTMerchantUpdatePOSIntegration.js.map

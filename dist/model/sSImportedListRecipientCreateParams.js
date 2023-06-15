@@ -6,7 +6,6 @@ class SSImportedListRecipientCreateParams {
         return SSImportedListRecipientCreateParams.attributeTypeMap;
     }
 }
-exports.SSImportedListRecipientCreateParams = SSImportedListRecipientCreateParams;
 SSImportedListRecipientCreateParams.discriminator = undefined;
 SSImportedListRecipientCreateParams.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ SSImportedListRecipientCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.SSImportedListRecipientCreateParams = SSImportedListRecipientCreateParams;
 //# sourceMappingURL=sSImportedListRecipientCreateParams.js.map

@@ -6,7 +6,6 @@ class Employee {
         return Employee.attributeTypeMap;
     }
 }
-exports.Employee = Employee;
 Employee.discriminator = undefined;
 Employee.attributeTypeMap = [
     {
@@ -160,4 +159,5 @@ Employee.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.Employee = Employee;
 //# sourceMappingURL=employee.js.map

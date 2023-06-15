@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var ImageGridApiApiKeys;
 (function (ImageGridApiApiKeys) {
     ImageGridApiApiKeys[ImageGridApiApiKeys["api_key"] = 0] = "api_key";
-})(ImageGridApiApiKeys || (exports.ImageGridApiApiKeys = ImageGridApiApiKeys = {}));
+})(ImageGridApiApiKeys = exports.ImageGridApiApiKeys || (exports.ImageGridApiApiKeys = {}));
 class ImageGridApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

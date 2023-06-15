@@ -6,7 +6,6 @@ class WTSMSOptInListSourceCreate {
         return WTSMSOptInListSourceCreate.attributeTypeMap;
     }
 }
-exports.WTSMSOptInListSourceCreate = WTSMSOptInListSourceCreate;
 WTSMSOptInListSourceCreate.discriminator = undefined;
 WTSMSOptInListSourceCreate.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ WTSMSOptInListSourceCreate.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTSMSOptInListSourceCreate = WTSMSOptInListSourceCreate;
 //# sourceMappingURL=wTSMSOptInListSourceCreate.js.map

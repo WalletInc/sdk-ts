@@ -6,7 +6,6 @@ class SSOptInSource {
         return SSOptInSource.attributeTypeMap;
     }
 }
-exports.SSOptInSource = SSOptInSource;
 SSOptInSource.discriminator = undefined;
 SSOptInSource.attributeTypeMap = [
     {
@@ -50,4 +49,5 @@ SSOptInSource.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.SSOptInSource = SSOptInSource;
 //# sourceMappingURL=sSOptInSource.js.map

@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var RoomRatesApiApiKeys;
 (function (RoomRatesApiApiKeys) {
     RoomRatesApiApiKeys[RoomRatesApiApiKeys["api_key"] = 0] = "api_key";
-})(RoomRatesApiApiKeys || (exports.RoomRatesApiApiKeys = RoomRatesApiApiKeys = {}));
+})(RoomRatesApiApiKeys = exports.RoomRatesApiApiKeys || (exports.RoomRatesApiApiKeys = {}));
 class RoomRatesApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

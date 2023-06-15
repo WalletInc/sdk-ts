@@ -6,7 +6,6 @@ class WTFetchWalletPaymentObjectWithToken {
         return WTFetchWalletPaymentObjectWithToken.attributeTypeMap;
     }
 }
-exports.WTFetchWalletPaymentObjectWithToken = WTFetchWalletPaymentObjectWithToken;
 WTFetchWalletPaymentObjectWithToken.discriminator = undefined;
 WTFetchWalletPaymentObjectWithToken.attributeTypeMap = [
     {
@@ -30,4 +29,5 @@ WTFetchWalletPaymentObjectWithToken.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.WTFetchWalletPaymentObjectWithToken = WTFetchWalletPaymentObjectWithToken;
 //# sourceMappingURL=wTFetchWalletPaymentObjectWithToken.js.map

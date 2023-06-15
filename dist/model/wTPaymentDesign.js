@@ -6,7 +6,6 @@ class WTPaymentDesign {
         return WTPaymentDesign.attributeTypeMap;
     }
 }
-exports.WTPaymentDesign = WTPaymentDesign;
 WTPaymentDesign.discriminator = undefined;
 WTPaymentDesign.attributeTypeMap = [
     {
@@ -105,4 +104,5 @@ WTPaymentDesign.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.WTPaymentDesign = WTPaymentDesign;
 //# sourceMappingURL=wTPaymentDesign.js.map

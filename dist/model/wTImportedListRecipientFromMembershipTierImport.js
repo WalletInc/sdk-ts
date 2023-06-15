@@ -6,7 +6,6 @@ class WTImportedListRecipientFromMembershipTierImport {
         return WTImportedListRecipientFromMembershipTierImport.attributeTypeMap;
     }
 }
-exports.WTImportedListRecipientFromMembershipTierImport = WTImportedListRecipientFromMembershipTierImport;
 WTImportedListRecipientFromMembershipTierImport.discriminator = undefined;
 WTImportedListRecipientFromMembershipTierImport.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ WTImportedListRecipientFromMembershipTierImport.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTImportedListRecipientFromMembershipTierImport = WTImportedListRecipientFromMembershipTierImport;
 //# sourceMappingURL=wTImportedListRecipientFromMembershipTierImport.js.map

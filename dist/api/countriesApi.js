@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var CountriesApiApiKeys;
 (function (CountriesApiApiKeys) {
     CountriesApiApiKeys[CountriesApiApiKeys["api_key"] = 0] = "api_key";
-})(CountriesApiApiKeys || (exports.CountriesApiApiKeys = CountriesApiApiKeys = {}));
+})(CountriesApiApiKeys = exports.CountriesApiApiKeys || (exports.CountriesApiApiKeys = {}));
 class CountriesApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

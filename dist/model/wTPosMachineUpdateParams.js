@@ -6,7 +6,6 @@ class WTPosMachineUpdateParams {
         return WTPosMachineUpdateParams.attributeTypeMap;
     }
 }
-exports.WTPosMachineUpdateParams = WTPosMachineUpdateParams;
 WTPosMachineUpdateParams.discriminator = undefined;
 WTPosMachineUpdateParams.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ WTPosMachineUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTPosMachineUpdateParams = WTPosMachineUpdateParams;
 //# sourceMappingURL=wTPosMachineUpdateParams.js.map

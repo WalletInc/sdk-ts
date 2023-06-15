@@ -6,7 +6,6 @@ class RoomRate {
         return RoomRate.attributeTypeMap;
     }
 }
-exports.RoomRate = RoomRate;
 RoomRate.discriminator = undefined;
 RoomRate.attributeTypeMap = [
     {
@@ -65,4 +64,5 @@ RoomRate.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.RoomRate = RoomRate;
 //# sourceMappingURL=roomRate.js.map

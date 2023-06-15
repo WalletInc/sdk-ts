@@ -6,7 +6,6 @@ class MSMerchantCreditRedemption {
         return MSMerchantCreditRedemption.attributeTypeMap;
     }
 }
-exports.MSMerchantCreditRedemption = MSMerchantCreditRedemption;
 MSMerchantCreditRedemption.discriminator = undefined;
 MSMerchantCreditRedemption.attributeTypeMap = [
     {
@@ -60,4 +59,5 @@ MSMerchantCreditRedemption.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.MSMerchantCreditRedemption = MSMerchantCreditRedemption;
 //# sourceMappingURL=mSMerchantCreditRedemption.js.map

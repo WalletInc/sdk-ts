@@ -6,7 +6,6 @@ class EmployeeAPIKey {
         return EmployeeAPIKey.attributeTypeMap;
     }
 }
-exports.EmployeeAPIKey = EmployeeAPIKey;
 EmployeeAPIKey.discriminator = undefined;
 EmployeeAPIKey.attributeTypeMap = [
     {
@@ -55,4 +54,5 @@ EmployeeAPIKey.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.EmployeeAPIKey = EmployeeAPIKey;
 //# sourceMappingURL=employeeAPIKey.js.map

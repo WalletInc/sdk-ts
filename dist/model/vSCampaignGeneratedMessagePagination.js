@@ -6,7 +6,6 @@ class VSCampaignGeneratedMessagePagination {
         return VSCampaignGeneratedMessagePagination.attributeTypeMap;
     }
 }
-exports.VSCampaignGeneratedMessagePagination = VSCampaignGeneratedMessagePagination;
 VSCampaignGeneratedMessagePagination.discriminator = undefined;
 VSCampaignGeneratedMessagePagination.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ VSCampaignGeneratedMessagePagination.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.VSCampaignGeneratedMessagePagination = VSCampaignGeneratedMessagePagination;
 //# sourceMappingURL=vSCampaignGeneratedMessagePagination.js.map

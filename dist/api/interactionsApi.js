@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var InteractionsApiApiKeys;
 (function (InteractionsApiApiKeys) {
     InteractionsApiApiKeys[InteractionsApiApiKeys["api_key"] = 0] = "api_key";
-})(InteractionsApiApiKeys || (exports.InteractionsApiApiKeys = InteractionsApiApiKeys = {}));
+})(InteractionsApiApiKeys = exports.InteractionsApiApiKeys || (exports.InteractionsApiApiKeys = {}));
 class InteractionsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

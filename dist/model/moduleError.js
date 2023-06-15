@@ -6,7 +6,6 @@ class ModuleError {
         return ModuleError.attributeTypeMap;
     }
 }
-exports.ModuleError = ModuleError;
 ModuleError.discriminator = undefined;
 ModuleError.attributeTypeMap = [
     {
@@ -120,4 +119,5 @@ ModuleError.attributeTypeMap = [
         "type": "any"
     }
 ];
+exports.ModuleError = ModuleError;
 //# sourceMappingURL=moduleError.js.map

@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var LoginAndLogoutApiApiKeys;
 (function (LoginAndLogoutApiApiKeys) {
     LoginAndLogoutApiApiKeys[LoginAndLogoutApiApiKeys["api_key"] = 0] = "api_key";
-})(LoginAndLogoutApiApiKeys || (exports.LoginAndLogoutApiApiKeys = LoginAndLogoutApiApiKeys = {}));
+})(LoginAndLogoutApiApiKeys = exports.LoginAndLogoutApiApiKeys || (exports.LoginAndLogoutApiApiKeys = {}));
 class LoginAndLogoutApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

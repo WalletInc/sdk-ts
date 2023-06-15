@@ -6,7 +6,6 @@ class Lounge {
         return Lounge.attributeTypeMap;
     }
 }
-exports.Lounge = Lounge;
 Lounge.discriminator = undefined;
 Lounge.attributeTypeMap = [
     {
@@ -65,4 +64,5 @@ Lounge.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.Lounge = Lounge;
 //# sourceMappingURL=lounge.js.map

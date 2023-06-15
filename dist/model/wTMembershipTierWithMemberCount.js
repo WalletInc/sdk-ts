@@ -6,7 +6,6 @@ class WTMembershipTierWithMemberCount {
         return WTMembershipTierWithMemberCount.attributeTypeMap;
     }
 }
-exports.WTMembershipTierWithMemberCount = WTMembershipTierWithMemberCount;
 WTMembershipTierWithMemberCount.discriminator = undefined;
 WTMembershipTierWithMemberCount.attributeTypeMap = [
     {
@@ -65,4 +64,5 @@ WTMembershipTierWithMemberCount.attributeTypeMap = [
         "type": "number"
     }
 ];
+exports.WTMembershipTierWithMemberCount = WTMembershipTierWithMemberCount;
 //# sourceMappingURL=wTMembershipTierWithMemberCount.js.map

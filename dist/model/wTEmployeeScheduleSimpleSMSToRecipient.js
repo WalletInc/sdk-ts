@@ -6,7 +6,6 @@ class WTEmployeeScheduleSimpleSMSToRecipient {
         return WTEmployeeScheduleSimpleSMSToRecipient.attributeTypeMap;
     }
 }
-exports.WTEmployeeScheduleSimpleSMSToRecipient = WTEmployeeScheduleSimpleSMSToRecipient;
 WTEmployeeScheduleSimpleSMSToRecipient.discriminator = undefined;
 WTEmployeeScheduleSimpleSMSToRecipient.attributeTypeMap = [
     {
@@ -35,4 +34,5 @@ WTEmployeeScheduleSimpleSMSToRecipient.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.WTEmployeeScheduleSimpleSMSToRecipient = WTEmployeeScheduleSimpleSMSToRecipient;
 //# sourceMappingURL=wTEmployeeScheduleSimpleSMSToRecipient.js.map

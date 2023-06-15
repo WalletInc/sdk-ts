@@ -6,7 +6,6 @@ class CreateStaticVoucherCampaignWithVoucherWithCSV {
         return CreateStaticVoucherCampaignWithVoucherWithCSV.attributeTypeMap;
     }
 }
-exports.CreateStaticVoucherCampaignWithVoucherWithCSV = CreateStaticVoucherCampaignWithVoucherWithCSV;
 CreateStaticVoucherCampaignWithVoucherWithCSV.discriminator = undefined;
 CreateStaticVoucherCampaignWithVoucherWithCSV.attributeTypeMap = [
     {
@@ -75,4 +74,5 @@ CreateStaticVoucherCampaignWithVoucherWithCSV.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.CreateStaticVoucherCampaignWithVoucherWithCSV = CreateStaticVoucherCampaignWithVoucherWithCSV;
 //# sourceMappingURL=createStaticVoucherCampaignWithVoucherWithCSV.js.map

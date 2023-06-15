@@ -6,7 +6,6 @@ class WTEmployeeNotification {
         return WTEmployeeNotification.attributeTypeMap;
     }
 }
-exports.WTEmployeeNotification = WTEmployeeNotification;
 WTEmployeeNotification.discriminator = undefined;
 WTEmployeeNotification.attributeTypeMap = [
     {
@@ -30,4 +29,5 @@ WTEmployeeNotification.attributeTypeMap = [
         "type": "any"
     }
 ];
+exports.WTEmployeeNotification = WTEmployeeNotification;
 //# sourceMappingURL=wTEmployeeNotification.js.map

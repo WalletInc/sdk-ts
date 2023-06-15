@@ -6,7 +6,6 @@ class PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID {
         return PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.attributeTypeMap;
     }
 }
-exports.PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID = PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID;
 PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.discriminator = undefined;
 PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.attributeTypeMap = [
     {
@@ -20,4 +19,5 @@ PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID = PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID;
 //# sourceMappingURL=pickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.js.map

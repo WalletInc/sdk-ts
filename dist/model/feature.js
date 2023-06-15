@@ -6,7 +6,6 @@ class Feature {
         return Feature.attributeTypeMap;
     }
 }
-exports.Feature = Feature;
 Feature.discriminator = undefined;
 Feature.attributeTypeMap = [
     {
@@ -55,4 +54,5 @@ Feature.attributeTypeMap = [
         "type": "boolean"
     }
 ];
+exports.Feature = Feature;
 //# sourceMappingURL=feature.js.map

@@ -6,7 +6,6 @@ class PaginationRequestWithIDAndWithoutSortOptions {
         return PaginationRequestWithIDAndWithoutSortOptions.attributeTypeMap;
     }
 }
-exports.PaginationRequestWithIDAndWithoutSortOptions = PaginationRequestWithIDAndWithoutSortOptions;
 PaginationRequestWithIDAndWithoutSortOptions.discriminator = undefined;
 PaginationRequestWithIDAndWithoutSortOptions.attributeTypeMap = [
     {
@@ -25,4 +24,5 @@ PaginationRequestWithIDAndWithoutSortOptions.attributeTypeMap = [
         "type": "string"
     }
 ];
+exports.PaginationRequestWithIDAndWithoutSortOptions = PaginationRequestWithIDAndWithoutSortOptions;
 //# sourceMappingURL=paginationRequestWithIDAndWithoutSortOptions.js.map
