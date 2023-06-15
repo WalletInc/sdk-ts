@@ -6,6 +6,7 @@ class PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId {
         return PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId = PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId;
 PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.discriminator = undefined;
 PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.attributeTypeMap = [
     {
@@ -39,5 +40,4 @@ PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.attributeTy
         "type": "Date"
     }
 ];
-exports.PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId = PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId;
 //# sourceMappingURL=pickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.js.map

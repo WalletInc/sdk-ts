@@ -6,6 +6,7 @@ class PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone {
         return PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.attributeTypeMap;
     }
 }
+exports.PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone = PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone;
 PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.discriminator = undefined;
 PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.attributeTypeMap = [
     {
@@ -114,5 +115,4 @@ PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.attributeTyp
         "type": "string"
     }
 ];
-exports.PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone = PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone;
 //# sourceMappingURL=pickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.js.map

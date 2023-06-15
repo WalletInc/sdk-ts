@@ -6,6 +6,7 @@ class WTOptInList {
         return WTOptInList.attributeTypeMap;
     }
 }
+exports.WTOptInList = WTOptInList;
 WTOptInList.discriminator = undefined;
 WTOptInList.attributeTypeMap = [
     {
@@ -99,5 +100,4 @@ WTOptInList.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTOptInList = WTOptInList;
 //# sourceMappingURL=wTOptInList.js.map

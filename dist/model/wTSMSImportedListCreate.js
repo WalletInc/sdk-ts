@@ -6,6 +6,7 @@ class WTSMSImportedListCreate {
         return WTSMSImportedListCreate.attributeTypeMap;
     }
 }
+exports.WTSMSImportedListCreate = WTSMSImportedListCreate;
 WTSMSImportedListCreate.discriminator = undefined;
 WTSMSImportedListCreate.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ WTSMSImportedListCreate.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTSMSImportedListCreate = WTSMSImportedListCreate;
 //# sourceMappingURL=wTSMSImportedListCreate.js.map

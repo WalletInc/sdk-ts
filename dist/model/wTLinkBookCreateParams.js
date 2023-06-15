@@ -6,6 +6,7 @@ class WTLinkBookCreateParams {
         return WTLinkBookCreateParams.attributeTypeMap;
     }
 }
+exports.WTLinkBookCreateParams = WTLinkBookCreateParams;
 WTLinkBookCreateParams.discriminator = undefined;
 WTLinkBookCreateParams.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ WTLinkBookCreateParams.attributeTypeMap = [
         "type": "string | number"
     }
 ];
-exports.WTLinkBookCreateParams = WTLinkBookCreateParams;
 //# sourceMappingURL=wTLinkBookCreateParams.js.map

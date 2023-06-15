@@ -6,6 +6,7 @@ class WTStaticVoucherUpdateParams {
         return WTStaticVoucherUpdateParams.attributeTypeMap;
     }
 }
+exports.WTStaticVoucherUpdateParams = WTStaticVoucherUpdateParams;
 WTStaticVoucherUpdateParams.discriminator = undefined;
 WTStaticVoucherUpdateParams.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ WTStaticVoucherUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTStaticVoucherUpdateParams = WTStaticVoucherUpdateParams;
 //# sourceMappingURL=wTStaticVoucherUpdateParams.js.map

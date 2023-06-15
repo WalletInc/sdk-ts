@@ -6,6 +6,7 @@ class CreateStaticVoucherCampaign {
         return CreateStaticVoucherCampaign.attributeTypeMap;
     }
 }
+exports.CreateStaticVoucherCampaign = CreateStaticVoucherCampaign;
 CreateStaticVoucherCampaign.discriminator = undefined;
 CreateStaticVoucherCampaign.attributeTypeMap = [
     {
@@ -74,5 +75,4 @@ CreateStaticVoucherCampaign.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.CreateStaticVoucherCampaign = CreateStaticVoucherCampaign;
 //# sourceMappingURL=createStaticVoucherCampaign.js.map

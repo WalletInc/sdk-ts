@@ -6,6 +6,7 @@ class MSMemberHistoryPagination {
         return MSMemberHistoryPagination.attributeTypeMap;
     }
 }
+exports.MSMemberHistoryPagination = MSMemberHistoryPagination;
 MSMemberHistoryPagination.discriminator = undefined;
 MSMemberHistoryPagination.attributeTypeMap = [
     {
@@ -24,5 +25,4 @@ MSMemberHistoryPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSMemberHistoryPagination = MSMemberHistoryPagination;
 //# sourceMappingURL=mSMemberHistoryPagination.js.map

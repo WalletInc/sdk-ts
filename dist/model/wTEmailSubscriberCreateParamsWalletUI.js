@@ -6,6 +6,7 @@ class WTEmailSubscriberCreateParamsWalletUI {
         return WTEmailSubscriberCreateParamsWalletUI.attributeTypeMap;
     }
 }
+exports.WTEmailSubscriberCreateParamsWalletUI = WTEmailSubscriberCreateParamsWalletUI;
 WTEmailSubscriberCreateParamsWalletUI.discriminator = undefined;
 WTEmailSubscriberCreateParamsWalletUI.attributeTypeMap = [
     {
@@ -29,5 +30,4 @@ WTEmailSubscriberCreateParamsWalletUI.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmailSubscriberCreateParamsWalletUI = WTEmailSubscriberCreateParamsWalletUI;
 //# sourceMappingURL=wTEmailSubscriberCreateParamsWalletUI.js.map

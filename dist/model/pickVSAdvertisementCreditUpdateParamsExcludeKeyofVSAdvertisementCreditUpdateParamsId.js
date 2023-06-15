@@ -6,6 +6,7 @@ class PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpda
         return PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdateParamsId = PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdateParamsId;
 PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdateParamsId.discriminator = undefined;
 PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdateParamsId.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdatePara
         "type": "number"
     }
 ];
-exports.PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdateParamsId = PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdateParamsId;
 //# sourceMappingURL=pickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpdateParamsId.js.map

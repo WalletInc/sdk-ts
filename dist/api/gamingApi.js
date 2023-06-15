@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var GamingApiApiKeys;
 (function (GamingApiApiKeys) {
     GamingApiApiKeys[GamingApiApiKeys["api_key"] = 0] = "api_key";
-})(GamingApiApiKeys = exports.GamingApiApiKeys || (exports.GamingApiApiKeys = {}));
+})(GamingApiApiKeys || (exports.GamingApiApiKeys = GamingApiApiKeys = {}));
 class GamingApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

@@ -6,6 +6,7 @@ class WTServiceUpdateParams {
         return WTServiceUpdateParams.attributeTypeMap;
     }
 }
+exports.WTServiceUpdateParams = WTServiceUpdateParams;
 WTServiceUpdateParams.discriminator = undefined;
 WTServiceUpdateParams.attributeTypeMap = [
     {
@@ -39,5 +40,4 @@ WTServiceUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTServiceUpdateParams = WTServiceUpdateParams;
 //# sourceMappingURL=wTServiceUpdateParams.js.map

@@ -6,6 +6,7 @@ class MerchantNotInitialized {
         return MerchantNotInitialized.attributeTypeMap;
     }
 }
+exports.MerchantNotInitialized = MerchantNotInitialized;
 MerchantNotInitialized.discriminator = undefined;
 MerchantNotInitialized.attributeTypeMap = [
     {
@@ -34,5 +35,4 @@ MerchantNotInitialized.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.MerchantNotInitialized = MerchantNotInitialized;
 //# sourceMappingURL=merchantNotInitialized.js.map

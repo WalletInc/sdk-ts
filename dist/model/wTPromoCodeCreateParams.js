@@ -6,6 +6,7 @@ class WTPromoCodeCreateParams {
         return WTPromoCodeCreateParams.attributeTypeMap;
     }
 }
+exports.WTPromoCodeCreateParams = WTPromoCodeCreateParams;
 WTPromoCodeCreateParams.discriminator = undefined;
 WTPromoCodeCreateParams.attributeTypeMap = [
     {
@@ -49,5 +50,4 @@ WTPromoCodeCreateParams.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTPromoCodeCreateParams = WTPromoCodeCreateParams;
 //# sourceMappingURL=wTPromoCodeCreateParams.js.map

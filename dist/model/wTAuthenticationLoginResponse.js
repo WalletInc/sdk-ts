@@ -6,6 +6,7 @@ class WTAuthenticationLoginResponse {
         return WTAuthenticationLoginResponse.attributeTypeMap;
     }
 }
+exports.WTAuthenticationLoginResponse = WTAuthenticationLoginResponse;
 WTAuthenticationLoginResponse.discriminator = undefined;
 WTAuthenticationLoginResponse.attributeTypeMap = [
     {
@@ -84,5 +85,4 @@ WTAuthenticationLoginResponse.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAuthenticationLoginResponse = WTAuthenticationLoginResponse;
 //# sourceMappingURL=wTAuthenticationLoginResponse.js.map

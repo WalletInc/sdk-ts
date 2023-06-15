@@ -6,6 +6,7 @@ class WTTwilioRequestAuthyCode {
         return WTTwilioRequestAuthyCode.attributeTypeMap;
     }
 }
+exports.WTTwilioRequestAuthyCode = WTTwilioRequestAuthyCode;
 WTTwilioRequestAuthyCode.discriminator = undefined;
 WTTwilioRequestAuthyCode.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ WTTwilioRequestAuthyCode.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTTwilioRequestAuthyCode = WTTwilioRequestAuthyCode;
 //# sourceMappingURL=wTTwilioRequestAuthyCode.js.map

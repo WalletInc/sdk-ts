@@ -6,6 +6,7 @@ class PresignedPost {
         return PresignedPost.attributeTypeMap;
     }
 }
+exports.PresignedPost = PresignedPost;
 PresignedPost.discriminator = undefined;
 PresignedPost.attributeTypeMap = [
     {
@@ -19,5 +20,4 @@ PresignedPost.attributeTypeMap = [
         "type": "PresignedPostFields"
     }
 ];
-exports.PresignedPost = PresignedPost;
 //# sourceMappingURL=presignedPost.js.map

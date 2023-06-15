@@ -6,6 +6,7 @@ class PickMSMemberExcludeKeyofMSMemberMemberIdentifier {
         return PickMSMemberExcludeKeyofMSMemberMemberIdentifier.attributeTypeMap;
     }
 }
+exports.PickMSMemberExcludeKeyofMSMemberMemberIdentifier = PickMSMemberExcludeKeyofMSMemberMemberIdentifier;
 PickMSMemberExcludeKeyofMSMemberMemberIdentifier.discriminator = undefined;
 PickMSMemberExcludeKeyofMSMemberMemberIdentifier.attributeTypeMap = [
     {
@@ -59,5 +60,4 @@ PickMSMemberExcludeKeyofMSMemberMemberIdentifier.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.PickMSMemberExcludeKeyofMSMemberMemberIdentifier = PickMSMemberExcludeKeyofMSMemberMemberIdentifier;
 //# sourceMappingURL=pickMSMemberExcludeKeyofMSMemberMemberIdentifier.js.map

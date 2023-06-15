@@ -6,6 +6,7 @@ class WTMerchantUpdatePointsOfContact {
         return WTMerchantUpdatePointsOfContact.attributeTypeMap;
     }
 }
+exports.WTMerchantUpdatePointsOfContact = WTMerchantUpdatePointsOfContact;
 WTMerchantUpdatePointsOfContact.discriminator = undefined;
 WTMerchantUpdatePointsOfContact.attributeTypeMap = [
     {
@@ -29,5 +30,4 @@ WTMerchantUpdatePointsOfContact.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTMerchantUpdatePointsOfContact = WTMerchantUpdatePointsOfContact;
 //# sourceMappingURL=wTMerchantUpdatePointsOfContact.js.map

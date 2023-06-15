@@ -21,7 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var DynamicVouchersApiApiKeys;
 (function (DynamicVouchersApiApiKeys) {
     DynamicVouchersApiApiKeys[DynamicVouchersApiApiKeys["api_key"] = 0] = "api_key";
-})(DynamicVouchersApiApiKeys = exports.DynamicVouchersApiApiKeys || (exports.DynamicVouchersApiApiKeys = {}));
+})(DynamicVouchersApiApiKeys || (exports.DynamicVouchersApiApiKeys = DynamicVouchersApiApiKeys = {}));
 class DynamicVouchersApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;

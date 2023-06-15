@@ -6,6 +6,7 @@ class WTAuthenticationForgotPassword {
         return WTAuthenticationForgotPassword.attributeTypeMap;
     }
 }
+exports.WTAuthenticationForgotPassword = WTAuthenticationForgotPassword;
 WTAuthenticationForgotPassword.discriminator = undefined;
 WTAuthenticationForgotPassword.attributeTypeMap = [
     {
@@ -14,5 +15,4 @@ WTAuthenticationForgotPassword.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAuthenticationForgotPassword = WTAuthenticationForgotPassword;
 //# sourceMappingURL=wTAuthenticationForgotPassword.js.map
