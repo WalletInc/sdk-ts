@@ -7,7 +7,7 @@ export declare class WTMerchantUpdate {
     'country': string;
     'phoneNumber': string;
     'zip': string;
-    'currencyAbbreviation': string;
+    'currencyAbbreviation'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
