@@ -21,7 +21,7 @@ export class Merchant {
     'country': string;
     'phoneNumber': string;
     'zip': string;
-    'currencyAbbreviation': string;
+    'currencyAbbreviation'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;
