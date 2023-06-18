@@ -1,6 +1,7 @@
 /// <reference types="node" />
 import http from 'http';
 import { InlineResponse200 } from '../model/inlineResponse200';
+import { InlineResponse20011 } from '../model/inlineResponse20011';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum IndustriesApiApiKeys {
@@ -31,5 +32,13 @@ export declare class IndustriesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Array<InlineResponse200>;
+    }>;
+    fetchDomainsByIndustry(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: InlineResponse20011;
     }>;
 }

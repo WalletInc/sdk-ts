@@ -56,6 +56,7 @@ export * from './inlineObject1';
 export * from './inlineResponse200';
 export * from './inlineResponse2001';
 export * from './inlineResponse20010';
+export * from './inlineResponse20011';
 export * from './inlineResponse2002';
 export * from './inlineResponse2003';
 export * from './inlineResponse2004';
@@ -389,6 +390,7 @@ import { InlineObject1 } from './inlineObject1';
 import { InlineResponse200 } from './inlineResponse200';
 import { InlineResponse2001 } from './inlineResponse2001';
 import { InlineResponse20010 } from './inlineResponse20010';
+import { InlineResponse20011 } from './inlineResponse20011';
 import { InlineResponse2002 } from './inlineResponse2002';
 import { InlineResponse2003 } from './inlineResponse2003';
 import { InlineResponse2004 } from './inlineResponse2004';
@@ -738,6 +740,7 @@ let typeMap: {[index: string]: any} = {
     "InlineResponse200": InlineResponse200,
     "InlineResponse2001": InlineResponse2001,
     "InlineResponse20010": InlineResponse20010,
+    "InlineResponse20011": InlineResponse20011,
     "InlineResponse2002": InlineResponse2002,
     "InlineResponse2003": InlineResponse2003,
     "InlineResponse2004": InlineResponse2004,

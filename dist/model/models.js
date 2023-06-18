@@ -71,6 +71,7 @@ __exportStar(require("./inlineObject1"), exports);
 __exportStar(require("./inlineResponse200"), exports);
 __exportStar(require("./inlineResponse2001"), exports);
 __exportStar(require("./inlineResponse20010"), exports);
+__exportStar(require("./inlineResponse20011"), exports);
 __exportStar(require("./inlineResponse2002"), exports);
 __exportStar(require("./inlineResponse2003"), exports);
 __exportStar(require("./inlineResponse2004"), exports);
@@ -390,6 +391,7 @@ const inlineObject1_1 = require("./inlineObject1");
 const inlineResponse200_1 = require("./inlineResponse200");
 const inlineResponse2001_1 = require("./inlineResponse2001");
 const inlineResponse20010_1 = require("./inlineResponse20010");
+const inlineResponse20011_1 = require("./inlineResponse20011");
 const inlineResponse2002_1 = require("./inlineResponse2002");
 const inlineResponse2003_1 = require("./inlineResponse2003");
 const inlineResponse2004_1 = require("./inlineResponse2004");
@@ -735,6 +737,7 @@ let typeMap = {
     "InlineResponse200": inlineResponse200_1.InlineResponse200,
     "InlineResponse2001": inlineResponse2001_1.InlineResponse2001,
     "InlineResponse20010": inlineResponse20010_1.InlineResponse20010,
+    "InlineResponse20011": inlineResponse20011_1.InlineResponse20011,
     "InlineResponse2002": inlineResponse2002_1.InlineResponse2002,
     "InlineResponse2003": inlineResponse2003_1.InlineResponse2003,
     "InlineResponse2004": inlineResponse2004_1.InlineResponse2004,
