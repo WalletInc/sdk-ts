@@ -65,6 +65,7 @@ export enum PortalPage {
     Performances = <any> 'performances',
     LinkBook = <any> 'link-book',
     ImageGrid = <any> 'image-grid',
+    Videos = <any> 'videos',
     LiveChat = <any> 'live-chat',
     PromoCodes = <any> 'promo-codes',
     News = <any> 'news',
