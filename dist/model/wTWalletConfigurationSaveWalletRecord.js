@@ -205,6 +205,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "isVideos",
+        "baseName": "isVideos",
+        "type": "boolean"
+    },
+    {
         "name": "isTransactionHistory",
         "baseName": "isTransactionHistory",
         "type": "boolean"

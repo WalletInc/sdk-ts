@@ -14,6 +14,7 @@ export declare class WTAuthenticationLoginResponse {
     'merchantName': string;
     'merchantCurrencyAbbreviation'?: string;
     'merchantIndustry': string;
+    'customDomain'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
