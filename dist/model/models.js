@@ -201,6 +201,7 @@ __exportStar(require("./updateStaticVoucherCampaignWithVoucher"), exports);
 __exportStar(require("./vSCampaignGeneratedMessage"), exports);
 __exportStar(require("./vSCampaignGeneratedMessagePagination"), exports);
 __exportStar(require("./vSDynamicVoucherStatus"), exports);
+__exportStar(require("./video"), exports);
 __exportStar(require("./virtualBusinessCard"), exports);
 __exportStar(require("./wTAdvertisementCredit"), exports);
 __exportStar(require("./wTAdvertisementCreditCreateParams"), exports);
@@ -324,6 +325,8 @@ __exportStar(require("./wTSystemRoleCreate"), exports);
 __exportStar(require("./wTTCPAOpt"), exports);
 __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
+__exportStar(require("./wTVideoCreateParams"), exports);
+__exportStar(require("./wTVideoUpdateParams"), exports);
 __exportStar(require("./wTVirtualBusinessCardCreateParams"), exports);
 __exportStar(require("./wTVirtualBusinessCardUpdateParams"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecord"), exports);
@@ -521,6 +524,7 @@ const updateStaticVoucherCampaignWithVoucher_1 = require("./updateStaticVoucherC
 const vSCampaignGeneratedMessage_1 = require("./vSCampaignGeneratedMessage");
 const vSCampaignGeneratedMessagePagination_1 = require("./vSCampaignGeneratedMessagePagination");
 const vSDynamicVoucherStatus_1 = require("./vSDynamicVoucherStatus");
+const video_1 = require("./video");
 const virtualBusinessCard_1 = require("./virtualBusinessCard");
 const wTAdvertisementCredit_1 = require("./wTAdvertisementCredit");
 const wTAdvertisementCreditCreateParams_1 = require("./wTAdvertisementCreditCreateParams");
@@ -644,6 +648,8 @@ const wTSystemRoleCreate_1 = require("./wTSystemRoleCreate");
 const wTTCPAOpt_1 = require("./wTTCPAOpt");
 const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
+const wTVideoCreateParams_1 = require("./wTVideoCreateParams");
+const wTVideoUpdateParams_1 = require("./wTVideoUpdateParams");
 const wTVirtualBusinessCardCreateParams_1 = require("./wTVirtualBusinessCardCreateParams");
 const wTVirtualBusinessCardUpdateParams_1 = require("./wTVirtualBusinessCardUpdateParams");
 const wTWalletConfigurationSaveWalletRecord_1 = require("./wTWalletConfigurationSaveWalletRecord");
@@ -856,6 +862,7 @@ let typeMap = {
     "VSCampaignGeneratedMessage": vSCampaignGeneratedMessage_1.VSCampaignGeneratedMessage,
     "VSCampaignGeneratedMessagePagination": vSCampaignGeneratedMessagePagination_1.VSCampaignGeneratedMessagePagination,
     "VSDynamicVoucherStatus": vSDynamicVoucherStatus_1.VSDynamicVoucherStatus,
+    "Video": video_1.Video,
     "VirtualBusinessCard": virtualBusinessCard_1.VirtualBusinessCard,
     "WTAdvertisementCredit": wTAdvertisementCredit_1.WTAdvertisementCredit,
     "WTAdvertisementCreditCreateParams": wTAdvertisementCreditCreateParams_1.WTAdvertisementCreditCreateParams,
@@ -979,6 +986,8 @@ let typeMap = {
     "WTTCPAOpt": wTTCPAOpt_1.WTTCPAOpt,
     "WTTwilioRequestAuthyCode": wTTwilioRequestAuthyCode_1.WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
+    "WTVideoCreateParams": wTVideoCreateParams_1.WTVideoCreateParams,
+    "WTVideoUpdateParams": wTVideoUpdateParams_1.WTVideoUpdateParams,
     "WTVirtualBusinessCardCreateParams": wTVirtualBusinessCardCreateParams_1.WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": wTVirtualBusinessCardUpdateParams_1.WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": wTWalletConfigurationSaveWalletRecord_1.WTWalletConfigurationSaveWalletRecord,

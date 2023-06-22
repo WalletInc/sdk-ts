@@ -49,6 +49,7 @@ api/staticVouchersApi.ts
 api/systemApi.ts
 api/transactionLedgerApi.ts
 api/utilitiesApi.ts
+api/videosApi.ts
 api/virtualBusinessCardApi.ts
 api/webTerminalApi.ts
 api/wixTerminalApi.ts
@@ -241,6 +242,7 @@ model/updateStaticVoucherCampaignWithVoucher.ts
 model/vSCampaignGeneratedMessage.ts
 model/vSCampaignGeneratedMessagePagination.ts
 model/vSDynamicVoucherStatus.ts
+model/video.ts
 model/virtualBusinessCard.ts
 model/wTAdvertisementCredit.ts
 model/wTAdvertisementCreditCreateParams.ts
@@ -364,6 +366,8 @@ model/wTSystemRoleCreate.ts
 model/wTTCPAOpt.ts
 model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
+model/wTVideoCreateParams.ts
+model/wTVideoUpdateParams.ts
 model/wTVirtualBusinessCardCreateParams.ts
 model/wTVirtualBusinessCardUpdateParams.ts
 model/wTWalletConfigurationSaveWalletRecord.ts

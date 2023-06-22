@@ -186,6 +186,7 @@ export * from './updateStaticVoucherCampaignWithVoucher';
 export * from './vSCampaignGeneratedMessage';
 export * from './vSCampaignGeneratedMessagePagination';
 export * from './vSDynamicVoucherStatus';
+export * from './video';
 export * from './virtualBusinessCard';
 export * from './wTAdvertisementCredit';
 export * from './wTAdvertisementCreditCreateParams';
@@ -309,6 +310,8 @@ export * from './wTSystemRoleCreate';
 export * from './wTTCPAOpt';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
+export * from './wTVideoCreateParams';
+export * from './wTVideoUpdateParams';
 export * from './wTVirtualBusinessCardCreateParams';
 export * from './wTVirtualBusinessCardUpdateParams';
 export * from './wTWalletConfigurationSaveWalletRecord';
@@ -520,6 +523,7 @@ import { UpdateStaticVoucherCampaignWithVoucher } from './updateStaticVoucherCam
 import { VSCampaignGeneratedMessage } from './vSCampaignGeneratedMessage';
 import { VSCampaignGeneratedMessagePagination } from './vSCampaignGeneratedMessagePagination';
 import { VSDynamicVoucherStatus } from './vSDynamicVoucherStatus';
+import { Video } from './video';
 import { VirtualBusinessCard } from './virtualBusinessCard';
 import { WTAdvertisementCredit } from './wTAdvertisementCredit';
 import { WTAdvertisementCreditCreateParams } from './wTAdvertisementCreditCreateParams';
@@ -643,6 +647,8 @@ import { WTSystemRoleCreate } from './wTSystemRoleCreate';
 import { WTTCPAOpt } from './wTTCPAOpt';
 import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
+import { WTVideoCreateParams } from './wTVideoCreateParams';
+import { WTVideoUpdateParams } from './wTVideoUpdateParams';
 import { WTVirtualBusinessCardCreateParams } from './wTVirtualBusinessCardCreateParams';
 import { WTVirtualBusinessCardUpdateParams } from './wTVirtualBusinessCardUpdateParams';
 import { WTWalletConfigurationSaveWalletRecord } from './wTWalletConfigurationSaveWalletRecord';
@@ -859,6 +865,7 @@ let typeMap: {[index: string]: any} = {
     "VSCampaignGeneratedMessage": VSCampaignGeneratedMessage,
     "VSCampaignGeneratedMessagePagination": VSCampaignGeneratedMessagePagination,
     "VSDynamicVoucherStatus": VSDynamicVoucherStatus,
+    "Video": Video,
     "VirtualBusinessCard": VirtualBusinessCard,
     "WTAdvertisementCredit": WTAdvertisementCredit,
     "WTAdvertisementCreditCreateParams": WTAdvertisementCreditCreateParams,
@@ -982,6 +989,8 @@ let typeMap: {[index: string]: any} = {
     "WTTCPAOpt": WTTCPAOpt,
     "WTTwilioRequestAuthyCode": WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,
+    "WTVideoCreateParams": WTVideoCreateParams,
+    "WTVideoUpdateParams": WTVideoUpdateParams,
     "WTVirtualBusinessCardCreateParams": WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": WTWalletConfigurationSaveWalletRecord,
