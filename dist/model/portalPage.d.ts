@@ -51,6 +51,7 @@ export declare enum PortalPage {
     Performances,
     LinkBook,
     ImageGrid,
+    Videos,
     LiveChat,
     PromoCodes,
     News,

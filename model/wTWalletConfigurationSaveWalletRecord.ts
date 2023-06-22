@@ -52,6 +52,7 @@ export class WTWalletConfigurationSaveWalletRecord {
     'isMapDirections': boolean;
     'isLinkBook': boolean;
     'isImageGrid': boolean;
+    'isVideos': boolean;
     'isTransactionHistory': boolean;
     'isProfile': boolean;
     'isSettings': boolean;
@@ -263,6 +264,11 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "isImageGrid",
             "baseName": "isImageGrid",
+            "type": "boolean"
+        },
+        {
+            "name": "isVideos",
+            "baseName": "isVideos",
             "type": "boolean"
         },
         {

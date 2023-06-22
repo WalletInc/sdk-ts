@@ -83,6 +83,11 @@ WTAuthenticationLoginResponse.attributeTypeMap = [
         "name": "merchantIndustry",
         "baseName": "merchantIndustry",
         "type": "string"
+    },
+    {
+        "name": "customDomain",
+        "baseName": "customDomain",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTAuthenticationLoginResponse.js.map

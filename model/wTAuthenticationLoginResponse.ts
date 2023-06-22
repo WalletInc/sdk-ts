@@ -28,6 +28,7 @@ export class WTAuthenticationLoginResponse {
     'merchantName': string;
     'merchantCurrencyAbbreviation'?: string;
     'merchantIndustry': string;
+    'customDomain'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -105,6 +106,11 @@ export class WTAuthenticationLoginResponse {
         {
             "name": "merchantIndustry",
             "baseName": "merchantIndustry",
+            "type": "string"
+        },
+        {
+            "name": "customDomain",
+            "baseName": "customDomain",
             "type": "string"
         }    ];
 

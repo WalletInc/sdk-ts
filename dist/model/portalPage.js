@@ -55,6 +55,7 @@ var PortalPage;
     PortalPage[PortalPage["Performances"] = 'performances'] = "Performances";
     PortalPage[PortalPage["LinkBook"] = 'link-book'] = "LinkBook";
     PortalPage[PortalPage["ImageGrid"] = 'image-grid'] = "ImageGrid";
+    PortalPage[PortalPage["Videos"] = 'videos'] = "Videos";
     PortalPage[PortalPage["LiveChat"] = 'live-chat'] = "LiveChat";
     PortalPage[PortalPage["PromoCodes"] = 'promo-codes'] = "PromoCodes";
     PortalPage[PortalPage["News"] = 'news'] = "News";

@@ -38,6 +38,7 @@ export declare class WalletConfiguration {
     'isMapDirections': boolean;
     'isLinkBook': boolean;
     'isImageGrid': boolean;
+    'isVideos': boolean;
     'isTransactionHistory': boolean;
     'isProfile': boolean;
     'isSettings': boolean;
