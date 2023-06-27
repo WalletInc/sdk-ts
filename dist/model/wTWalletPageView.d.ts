@@ -18,6 +18,7 @@ export declare class WTWalletPageView {
     'deviceModel': string;
     'deviceType': string;
     'phoneVerificationToken': string;
+    'referringDomain'?: string;
     'referrer'?: string;
     'id': string | null;
     'status': string;

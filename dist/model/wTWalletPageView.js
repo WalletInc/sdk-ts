@@ -100,6 +100,11 @@ WTWalletPageView.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "referringDomain",
+        "baseName": "referringDomain",
+        "type": "string"
+    },
+    {
         "name": "referrer",
         "baseName": "referrer",
         "type": "string"
