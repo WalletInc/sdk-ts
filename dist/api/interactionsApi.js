@@ -748,7 +748,7 @@ class InteractionsApi {
             });
         });
     }
-    identifyItem(itemID, isRefresh, phoneVerificationToken, options = { headers: {} }) {
+    identifyItem(itemID, isRefresh, phoneVerificationToken, referrer, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/wallet/item/identify/{itemID}'
                 .replace('{' + 'itemID' + '}', encodeURIComponent(String(itemID)));
@@ -770,6 +770,9 @@ class InteractionsApi {
             }
             if (phoneVerificationToken !== undefined) {
                 localVarQueryParameters['phoneVerificationToken'] = models_1.ObjectSerializer.serialize(phoneVerificationToken, "string");
+            }
+            if (referrer !== undefined) {
+                localVarQueryParameters['referrer'] = models_1.ObjectSerializer.serialize(referrer, "string");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;

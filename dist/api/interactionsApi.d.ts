@@ -121,7 +121,7 @@ export declare class InteractionsApi {
         response: http.IncomingMessage;
         body: WalletConfiguration;
     }>;
-    identifyItem(itemID: string, isRefresh?: boolean, phoneVerificationToken?: string, options?: {
+    identifyItem(itemID: string, isRefresh?: boolean, phoneVerificationToken?: string, referrer?: string, options?: {
         headers: {
             [name: string]: string;
         };
