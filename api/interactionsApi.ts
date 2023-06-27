@@ -881,8 +881,9 @@ export class InteractionsApi {
      * @param itemID 
      * @param isRefresh 
      * @param phoneVerificationToken 
+     * @param referrer 
      */
-    public async identifyItem (itemID: string, isRefresh?: boolean, phoneVerificationToken?: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
+    public async identifyItem (itemID: string, isRefresh?: boolean, phoneVerificationToken?: string, referrer?: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
         const localVarPath = this.basePath + '/wallet/item/identify/{itemID}'
             .replace('{' + 'itemID' + '}', encodeURIComponent(String(itemID)));
         let localVarQueryParameters: any = {};
@@ -907,6 +908,10 @@ export class InteractionsApi {
 
         if (phoneVerificationToken !== undefined) {
             localVarQueryParameters['phoneVerificationToken'] = ObjectSerializer.serialize(phoneVerificationToken, "string");
+        }
+
+        if (referrer !== undefined) {
+            localVarQueryParameters['referrer'] = ObjectSerializer.serialize(referrer, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
