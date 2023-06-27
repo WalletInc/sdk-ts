@@ -100,6 +100,11 @@ WalletPageView.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "referrer",
+        "baseName": "referrer",
+        "type": "string"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"
