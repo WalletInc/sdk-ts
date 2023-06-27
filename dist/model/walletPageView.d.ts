@@ -18,6 +18,7 @@ export declare class WalletPageView {
     'deviceModel': string;
     'deviceType': string;
     'phoneVerificationToken': string;
+    'referrer'?: string;
     'id': string | null;
     'status': string;
     'country': string;

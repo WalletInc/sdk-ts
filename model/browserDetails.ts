@@ -17,6 +17,7 @@ export class BrowserDetails {
     'phoneVerificationToken'?: string;
     'sessionID'?: string;
     'navigatorAgent'?: string;
+    'referrer'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -39,6 +40,11 @@ export class BrowserDetails {
         {
             "name": "navigatorAgent",
             "baseName": "navigatorAgent",
+            "type": "string"
+        },
+        {
+            "name": "referrer",
+            "baseName": "referrer",
             "type": "string"
         }    ];
 
