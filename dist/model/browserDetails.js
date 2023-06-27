@@ -28,6 +28,11 @@ BrowserDetails.attributeTypeMap = [
         "name": "navigatorAgent",
         "baseName": "navigatorAgent",
         "type": "string"
+    },
+    {
+        "name": "referrer",
+        "baseName": "referrer",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=browserDetails.js.map

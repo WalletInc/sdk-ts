@@ -17,6 +17,7 @@ export class WTFetchWalletPaymentObjectWithToken {
     'merchantID': string;
     'pageType': string;
     'isRefresh'?: boolean;
+    'referrer'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -40,6 +41,11 @@ export class WTFetchWalletPaymentObjectWithToken {
             "name": "isRefresh",
             "baseName": "isRefresh",
             "type": "boolean"
+        },
+        {
+            "name": "referrer",
+            "baseName": "referrer",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {

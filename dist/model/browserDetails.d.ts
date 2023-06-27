@@ -3,6 +3,7 @@ export declare class BrowserDetails {
     'phoneVerificationToken'?: string;
     'sessionID'?: string;
     'navigatorAgent'?: string;
+    'referrer'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

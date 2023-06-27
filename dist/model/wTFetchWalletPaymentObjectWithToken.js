@@ -28,6 +28,11 @@ WTFetchWalletPaymentObjectWithToken.attributeTypeMap = [
         "name": "isRefresh",
         "baseName": "isRefresh",
         "type": "boolean"
+    },
+    {
+        "name": "referrer",
+        "baseName": "referrer",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTFetchWalletPaymentObjectWithToken.js.map
