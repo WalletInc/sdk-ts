@@ -672,6 +672,14 @@ export declare class AnalyticsApi {
         response: http.IncomingMessage;
         body: WalletPageView;
     }>;
+    referringSitesSummary(startDate?: Date, endDate?: Date, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: any;
+    }>;
     sumRevenue(startDate: Date, endDate: Date, transactionType?: string, segmentType?: string, options?: {
         headers: {
             [name: string]: string;
