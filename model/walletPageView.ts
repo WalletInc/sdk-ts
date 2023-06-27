@@ -32,6 +32,7 @@ export class WalletPageView {
     'deviceModel': string;
     'deviceType': string;
     'phoneVerificationToken': string;
+    'referringDomain'?: string;
     'referrer'?: string;
     'id': string | null;
     'status': string;
@@ -147,6 +148,11 @@ export class WalletPageView {
         {
             "name": "phoneVerificationToken",
             "baseName": "phoneVerificationToken",
+            "type": "string"
+        },
+        {
+            "name": "referringDomain",
+            "baseName": "referringDomain",
             "type": "string"
         },
         {
