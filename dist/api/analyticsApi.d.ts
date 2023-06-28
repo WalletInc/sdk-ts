@@ -128,6 +128,14 @@ export declare class AnalyticsApi {
         response: http.IncomingMessage;
         body: Array<WTWalletObjectPrefixCounts>;
     }>;
+    exitLinkSummary(startDate?: Date, endDate?: Date, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: any;
+    }>;
     fetchAnalyticsAdCreditsCountPartitionedByEmployee(startDate: Date, endDate: Date, options?: {
         headers: {
             [name: string]: string;
