@@ -13,26 +13,50 @@
 import { RequestFile } from './models';
 
 export class InlineResponse20011 {
-    'store': Array<any>;
-    'beauty': Array<any>;
+    'entertainment': Array<any>;
+    'grocery': Array<any>;
+    'service': Array<any>;
     'casino': Array<any>;
+    'hospitality': Array<any>;
+    'food': Array<any>;
+    'retail': Array<any>;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "store",
-            "baseName": "store",
+            "name": "entertainment",
+            "baseName": "entertainment",
             "type": "Array<any>"
         },
         {
-            "name": "beauty",
-            "baseName": "beauty",
+            "name": "grocery",
+            "baseName": "grocery",
+            "type": "Array<any>"
+        },
+        {
+            "name": "service",
+            "baseName": "service",
             "type": "Array<any>"
         },
         {
             "name": "casino",
             "baseName": "casino",
+            "type": "Array<any>"
+        },
+        {
+            "name": "hospitality",
+            "baseName": "hospitality",
+            "type": "Array<any>"
+        },
+        {
+            "name": "food",
+            "baseName": "food",
+            "type": "Array<any>"
+        },
+        {
+            "name": "retail",
+            "baseName": "retail",
             "type": "Array<any>"
         }    ];
 

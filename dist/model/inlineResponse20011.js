@@ -10,18 +10,38 @@ exports.InlineResponse20011 = InlineResponse20011;
 InlineResponse20011.discriminator = undefined;
 InlineResponse20011.attributeTypeMap = [
     {
-        "name": "store",
-        "baseName": "store",
+        "name": "entertainment",
+        "baseName": "entertainment",
         "type": "Array<any>"
     },
     {
-        "name": "beauty",
-        "baseName": "beauty",
+        "name": "grocery",
+        "baseName": "grocery",
+        "type": "Array<any>"
+    },
+    {
+        "name": "service",
+        "baseName": "service",
         "type": "Array<any>"
     },
     {
         "name": "casino",
         "baseName": "casino",
+        "type": "Array<any>"
+    },
+    {
+        "name": "hospitality",
+        "baseName": "hospitality",
+        "type": "Array<any>"
+    },
+    {
+        "name": "food",
+        "baseName": "food",
+        "type": "Array<any>"
+    },
+    {
+        "name": "retail",
+        "baseName": "retail",
         "type": "Array<any>"
     }
 ];
