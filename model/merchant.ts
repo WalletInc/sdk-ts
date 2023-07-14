@@ -39,6 +39,7 @@ export class Merchant {
     'maxSMSCount': number;
     'isSmsAgreement'?: boolean;
     'isWhiteLabeled'?: boolean;
+    'isFeatured'?: boolean;
 
     static discriminator: string | undefined = undefined;
 
@@ -171,6 +172,11 @@ export class Merchant {
         {
             "name": "isWhiteLabeled",
             "baseName": "isWhiteLabeled",
+            "type": "boolean"
+        },
+        {
+            "name": "isFeatured",
+            "baseName": "isFeatured",
             "type": "boolean"
         }    ];
 
