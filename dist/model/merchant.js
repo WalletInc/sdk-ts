@@ -138,6 +138,11 @@ Merchant.attributeTypeMap = [
         "name": "isWhiteLabeled",
         "baseName": "isWhiteLabeled",
         "type": "boolean"
+    },
+    {
+        "name": "isFeatured",
+        "baseName": "isFeatured",
+        "type": "boolean"
     }
 ];
 //# sourceMappingURL=merchant.js.map

@@ -25,6 +25,7 @@ export declare class Merchant {
     'maxSMSCount': number;
     'isSmsAgreement'?: boolean;
     'isWhiteLabeled'?: boolean;
+    'isFeatured'?: boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

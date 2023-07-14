@@ -41,4 +41,12 @@ export declare class IndustriesApi {
         response: http.IncomingMessage;
         body: InlineResponse20011;
     }>;
+    fetchIndustriesIDs(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: any;
+    }>;
 }
