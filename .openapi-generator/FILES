@@ -150,6 +150,20 @@ model/merchantCreditSearch.ts
 model/merchantNotInitialized.ts
 model/merchantURL.ts
 model/message.ts
+model/messageDirection.ts
+model/messageDirectionAnyOf.ts
+model/messageDirectionAnyOf1.ts
+model/messageDirectionAnyOf2.ts
+model/messageDirectionAnyOf3.ts
+model/messageStatus.ts
+model/messageStatusAnyOf.ts
+model/messageStatusAnyOf1.ts
+model/messageStatusAnyOf2.ts
+model/messageStatusAnyOf3.ts
+model/messageStatusAnyOf4.ts
+model/messageStatusAnyOf5.ts
+model/messageStatusAnyOf6.ts
+model/messageStatusAnyOf7.ts
 model/models.ts
 model/moduleError.ts
 model/newsArticle.ts
@@ -165,6 +179,7 @@ model/paymentDesign.ts
 model/paymentPrefixes.ts
 model/performance.ts
 model/phoneNumber.ts
+model/phoneNumberCapabilities.ts
 model/pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive.ts
 model/pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID.ts
 model/pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID.ts
@@ -309,6 +324,7 @@ model/wTLinkBookCreateParams.ts
 model/wTLinkBookSectionCreateParams.ts
 model/wTLinkBookSectionUpdateParams.ts
 model/wTLinkBookUpdateParams.ts
+model/wTLocalInstance.ts
 model/wTLoungeCreateParams.ts
 model/wTLoungeUpdateParams.ts
 model/wTMember.ts
@@ -324,6 +340,7 @@ model/wTMerchantURLUpdate.ts
 model/wTMerchantUpdate.ts
 model/wTMerchantUpdatePOSIntegration.ts
 model/wTMerchantUpdatePointsOfContact.ts
+model/wTMessageInstance.ts
 model/wTNewsArticleCreateParams.ts
 model/wTNewsArticleUpdateParams.ts
 model/wTOptInList.ts

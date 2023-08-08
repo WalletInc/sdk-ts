@@ -280,6 +280,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "customAppIconURL",
+        "baseName": "customAppIconURL",
+        "type": "string"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"
