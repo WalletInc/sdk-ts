@@ -278,6 +278,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "name": "customDomain",
         "baseName": "customDomain",
         "type": "string"
+    },
+    {
+        "name": "customAppIconURL",
+        "baseName": "customAppIconURL",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTWalletConfigurationSaveWalletRecord.js.map
