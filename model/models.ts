@@ -95,6 +95,20 @@ export * from './merchantCreditSearch';
 export * from './merchantNotInitialized';
 export * from './merchantURL';
 export * from './message';
+export * from './messageDirection';
+export * from './messageDirectionAnyOf';
+export * from './messageDirectionAnyOf1';
+export * from './messageDirectionAnyOf2';
+export * from './messageDirectionAnyOf3';
+export * from './messageStatus';
+export * from './messageStatusAnyOf';
+export * from './messageStatusAnyOf1';
+export * from './messageStatusAnyOf2';
+export * from './messageStatusAnyOf3';
+export * from './messageStatusAnyOf4';
+export * from './messageStatusAnyOf5';
+export * from './messageStatusAnyOf6';
+export * from './messageStatusAnyOf7';
 export * from './moduleError';
 export * from './newsArticle';
 export * from './optInList';
@@ -109,6 +123,7 @@ export * from './paymentDesign';
 export * from './paymentPrefixes';
 export * from './performance';
 export * from './phoneNumber';
+export * from './phoneNumberCapabilities';
 export * from './pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive';
 export * from './pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID';
 export * from './pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID';
@@ -253,6 +268,7 @@ export * from './wTLinkBookCreateParams';
 export * from './wTLinkBookSectionCreateParams';
 export * from './wTLinkBookSectionUpdateParams';
 export * from './wTLinkBookUpdateParams';
+export * from './wTLocalInstance';
 export * from './wTLoungeCreateParams';
 export * from './wTLoungeUpdateParams';
 export * from './wTMember';
@@ -268,6 +284,7 @@ export * from './wTMerchantURLUpdate';
 export * from './wTMerchantUpdate';
 export * from './wTMerchantUpdatePOSIntegration';
 export * from './wTMerchantUpdatePointsOfContact';
+export * from './wTMessageInstance';
 export * from './wTNewsArticleCreateParams';
 export * from './wTNewsArticleUpdateParams';
 export * from './wTOptInList';
@@ -432,6 +449,20 @@ import { MerchantCreditSearch } from './merchantCreditSearch';
 import { MerchantNotInitialized } from './merchantNotInitialized';
 import { MerchantURL } from './merchantURL';
 import { Message } from './message';
+import { MessageDirection } from './messageDirection';
+import { MessageDirectionAnyOf } from './messageDirectionAnyOf';
+import { MessageDirectionAnyOf1 } from './messageDirectionAnyOf1';
+import { MessageDirectionAnyOf2 } from './messageDirectionAnyOf2';
+import { MessageDirectionAnyOf3 } from './messageDirectionAnyOf3';
+import { MessageStatus } from './messageStatus';
+import { MessageStatusAnyOf } from './messageStatusAnyOf';
+import { MessageStatusAnyOf1 } from './messageStatusAnyOf1';
+import { MessageStatusAnyOf2 } from './messageStatusAnyOf2';
+import { MessageStatusAnyOf3 } from './messageStatusAnyOf3';
+import { MessageStatusAnyOf4 } from './messageStatusAnyOf4';
+import { MessageStatusAnyOf5 } from './messageStatusAnyOf5';
+import { MessageStatusAnyOf6 } from './messageStatusAnyOf6';
+import { MessageStatusAnyOf7 } from './messageStatusAnyOf7';
 import { ModuleError } from './moduleError';
 import { NewsArticle } from './newsArticle';
 import { OptInList } from './optInList';
@@ -446,6 +477,7 @@ import { PaymentDesign } from './paymentDesign';
 import { PaymentPrefixes } from './paymentPrefixes';
 import { Performance } from './performance';
 import { PhoneNumber } from './phoneNumber';
+import { PhoneNumberCapabilities } from './phoneNumberCapabilities';
 import { PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive } from './pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive';
 import { PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID } from './pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID';
 import { PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID } from './pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID';
@@ -590,6 +622,7 @@ import { WTLinkBookCreateParams } from './wTLinkBookCreateParams';
 import { WTLinkBookSectionCreateParams } from './wTLinkBookSectionCreateParams';
 import { WTLinkBookSectionUpdateParams } from './wTLinkBookSectionUpdateParams';
 import { WTLinkBookUpdateParams } from './wTLinkBookUpdateParams';
+import { WTLocalInstance } from './wTLocalInstance';
 import { WTLoungeCreateParams } from './wTLoungeCreateParams';
 import { WTLoungeUpdateParams } from './wTLoungeUpdateParams';
 import { WTMember } from './wTMember';
@@ -605,6 +638,7 @@ import { WTMerchantURLUpdate } from './wTMerchantURLUpdate';
 import { WTMerchantUpdate } from './wTMerchantUpdate';
 import { WTMerchantUpdatePOSIntegration } from './wTMerchantUpdatePOSIntegration';
 import { WTMerchantUpdatePointsOfContact } from './wTMerchantUpdatePointsOfContact';
+import { WTMessageInstance } from './wTMessageInstance';
 import { WTNewsArticleCreateParams } from './wTNewsArticleCreateParams';
 import { WTNewsArticleUpdateParams } from './wTNewsArticleUpdateParams';
 import { WTOptInList } from './wTOptInList';
@@ -681,6 +715,18 @@ let enumsMap: {[index: string]: any} = {
         "ApplicableTerminalsAnyOf4": ApplicableTerminalsAnyOf4,
         "ApplicableTerminalsAnyOf5": ApplicableTerminalsAnyOf5,
         "ApplicableTerminalsAnyOf6": ApplicableTerminalsAnyOf6,
+        "MessageDirectionAnyOf": MessageDirectionAnyOf,
+        "MessageDirectionAnyOf1": MessageDirectionAnyOf1,
+        "MessageDirectionAnyOf2": MessageDirectionAnyOf2,
+        "MessageDirectionAnyOf3": MessageDirectionAnyOf3,
+        "MessageStatusAnyOf": MessageStatusAnyOf,
+        "MessageStatusAnyOf1": MessageStatusAnyOf1,
+        "MessageStatusAnyOf2": MessageStatusAnyOf2,
+        "MessageStatusAnyOf3": MessageStatusAnyOf3,
+        "MessageStatusAnyOf4": MessageStatusAnyOf4,
+        "MessageStatusAnyOf5": MessageStatusAnyOf5,
+        "MessageStatusAnyOf6": MessageStatusAnyOf6,
+        "MessageStatusAnyOf7": MessageStatusAnyOf7,
         "PaginationRequestWithSortOptions.SortKeyEnum": PaginationRequestWithSortOptions.SortKeyEnum,
         "PortalPage": PortalPage,
         "SSOutboundStatusesAnyOf": SSOutboundStatusesAnyOf,
@@ -785,6 +831,8 @@ let typeMap: {[index: string]: any} = {
     "MerchantNotInitialized": MerchantNotInitialized,
     "MerchantURL": MerchantURL,
     "Message": Message,
+    "MessageDirection": MessageDirection,
+    "MessageStatus": MessageStatus,
     "ModuleError": ModuleError,
     "NewsArticle": NewsArticle,
     "OptInList": OptInList,
@@ -799,6 +847,7 @@ let typeMap: {[index: string]: any} = {
     "PaymentPrefixes": PaymentPrefixes,
     "Performance": Performance,
     "PhoneNumber": PhoneNumber,
+    "PhoneNumberCapabilities": PhoneNumberCapabilities,
     "PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive": PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive,
     "PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID": PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID,
     "PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID": PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID,
@@ -932,6 +981,7 @@ let typeMap: {[index: string]: any} = {
     "WTLinkBookSectionCreateParams": WTLinkBookSectionCreateParams,
     "WTLinkBookSectionUpdateParams": WTLinkBookSectionUpdateParams,
     "WTLinkBookUpdateParams": WTLinkBookUpdateParams,
+    "WTLocalInstance": WTLocalInstance,
     "WTLoungeCreateParams": WTLoungeCreateParams,
     "WTLoungeUpdateParams": WTLoungeUpdateParams,
     "WTMember": WTMember,
@@ -947,6 +997,7 @@ let typeMap: {[index: string]: any} = {
     "WTMerchantUpdate": WTMerchantUpdate,
     "WTMerchantUpdatePOSIntegration": WTMerchantUpdatePOSIntegration,
     "WTMerchantUpdatePointsOfContact": WTMerchantUpdatePointsOfContact,
+    "WTMessageInstance": WTMessageInstance,
     "WTNewsArticleCreateParams": WTNewsArticleCreateParams,
     "WTNewsArticleUpdateParams": WTNewsArticleUpdateParams,
     "WTOptInList": WTOptInList,

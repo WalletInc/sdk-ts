@@ -110,6 +110,20 @@ __exportStar(require("./merchantCreditSearch"), exports);
 __exportStar(require("./merchantNotInitialized"), exports);
 __exportStar(require("./merchantURL"), exports);
 __exportStar(require("./message"), exports);
+__exportStar(require("./messageDirection"), exports);
+__exportStar(require("./messageDirectionAnyOf"), exports);
+__exportStar(require("./messageDirectionAnyOf1"), exports);
+__exportStar(require("./messageDirectionAnyOf2"), exports);
+__exportStar(require("./messageDirectionAnyOf3"), exports);
+__exportStar(require("./messageStatus"), exports);
+__exportStar(require("./messageStatusAnyOf"), exports);
+__exportStar(require("./messageStatusAnyOf1"), exports);
+__exportStar(require("./messageStatusAnyOf2"), exports);
+__exportStar(require("./messageStatusAnyOf3"), exports);
+__exportStar(require("./messageStatusAnyOf4"), exports);
+__exportStar(require("./messageStatusAnyOf5"), exports);
+__exportStar(require("./messageStatusAnyOf6"), exports);
+__exportStar(require("./messageStatusAnyOf7"), exports);
 __exportStar(require("./moduleError"), exports);
 __exportStar(require("./newsArticle"), exports);
 __exportStar(require("./optInList"), exports);
@@ -124,6 +138,7 @@ __exportStar(require("./paymentDesign"), exports);
 __exportStar(require("./paymentPrefixes"), exports);
 __exportStar(require("./performance"), exports);
 __exportStar(require("./phoneNumber"), exports);
+__exportStar(require("./phoneNumberCapabilities"), exports);
 __exportStar(require("./pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive"), exports);
 __exportStar(require("./pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID"), exports);
 __exportStar(require("./pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID"), exports);
@@ -268,6 +283,7 @@ __exportStar(require("./wTLinkBookCreateParams"), exports);
 __exportStar(require("./wTLinkBookSectionCreateParams"), exports);
 __exportStar(require("./wTLinkBookSectionUpdateParams"), exports);
 __exportStar(require("./wTLinkBookUpdateParams"), exports);
+__exportStar(require("./wTLocalInstance"), exports);
 __exportStar(require("./wTLoungeCreateParams"), exports);
 __exportStar(require("./wTLoungeUpdateParams"), exports);
 __exportStar(require("./wTMember"), exports);
@@ -283,6 +299,7 @@ __exportStar(require("./wTMerchantURLUpdate"), exports);
 __exportStar(require("./wTMerchantUpdate"), exports);
 __exportStar(require("./wTMerchantUpdatePOSIntegration"), exports);
 __exportStar(require("./wTMerchantUpdatePointsOfContact"), exports);
+__exportStar(require("./wTMessageInstance"), exports);
 __exportStar(require("./wTNewsArticleCreateParams"), exports);
 __exportStar(require("./wTNewsArticleUpdateParams"), exports);
 __exportStar(require("./wTOptInList"), exports);
@@ -433,6 +450,20 @@ const merchantCreditSearch_1 = require("./merchantCreditSearch");
 const merchantNotInitialized_1 = require("./merchantNotInitialized");
 const merchantURL_1 = require("./merchantURL");
 const message_1 = require("./message");
+const messageDirection_1 = require("./messageDirection");
+const messageDirectionAnyOf_1 = require("./messageDirectionAnyOf");
+const messageDirectionAnyOf1_1 = require("./messageDirectionAnyOf1");
+const messageDirectionAnyOf2_1 = require("./messageDirectionAnyOf2");
+const messageDirectionAnyOf3_1 = require("./messageDirectionAnyOf3");
+const messageStatus_1 = require("./messageStatus");
+const messageStatusAnyOf_1 = require("./messageStatusAnyOf");
+const messageStatusAnyOf1_1 = require("./messageStatusAnyOf1");
+const messageStatusAnyOf2_1 = require("./messageStatusAnyOf2");
+const messageStatusAnyOf3_1 = require("./messageStatusAnyOf3");
+const messageStatusAnyOf4_1 = require("./messageStatusAnyOf4");
+const messageStatusAnyOf5_1 = require("./messageStatusAnyOf5");
+const messageStatusAnyOf6_1 = require("./messageStatusAnyOf6");
+const messageStatusAnyOf7_1 = require("./messageStatusAnyOf7");
 const moduleError_1 = require("./moduleError");
 const newsArticle_1 = require("./newsArticle");
 const optInList_1 = require("./optInList");
@@ -447,6 +478,7 @@ const paymentDesign_1 = require("./paymentDesign");
 const paymentPrefixes_1 = require("./paymentPrefixes");
 const performance_1 = require("./performance");
 const phoneNumber_1 = require("./phoneNumber");
+const phoneNumberCapabilities_1 = require("./phoneNumberCapabilities");
 const pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive_1 = require("./pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive");
 const pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID_1 = require("./pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID");
 const pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID_1 = require("./pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID");
@@ -591,6 +623,7 @@ const wTLinkBookCreateParams_1 = require("./wTLinkBookCreateParams");
 const wTLinkBookSectionCreateParams_1 = require("./wTLinkBookSectionCreateParams");
 const wTLinkBookSectionUpdateParams_1 = require("./wTLinkBookSectionUpdateParams");
 const wTLinkBookUpdateParams_1 = require("./wTLinkBookUpdateParams");
+const wTLocalInstance_1 = require("./wTLocalInstance");
 const wTLoungeCreateParams_1 = require("./wTLoungeCreateParams");
 const wTLoungeUpdateParams_1 = require("./wTLoungeUpdateParams");
 const wTMember_1 = require("./wTMember");
@@ -606,6 +639,7 @@ const wTMerchantURLUpdate_1 = require("./wTMerchantURLUpdate");
 const wTMerchantUpdate_1 = require("./wTMerchantUpdate");
 const wTMerchantUpdatePOSIntegration_1 = require("./wTMerchantUpdatePOSIntegration");
 const wTMerchantUpdatePointsOfContact_1 = require("./wTMerchantUpdatePointsOfContact");
+const wTMessageInstance_1 = require("./wTMessageInstance");
 const wTNewsArticleCreateParams_1 = require("./wTNewsArticleCreateParams");
 const wTNewsArticleUpdateParams_1 = require("./wTNewsArticleUpdateParams");
 const wTOptInList_1 = require("./wTOptInList");
@@ -679,6 +713,18 @@ let enumsMap = {
     "ApplicableTerminalsAnyOf4": applicableTerminalsAnyOf4_1.ApplicableTerminalsAnyOf4,
     "ApplicableTerminalsAnyOf5": applicableTerminalsAnyOf5_1.ApplicableTerminalsAnyOf5,
     "ApplicableTerminalsAnyOf6": applicableTerminalsAnyOf6_1.ApplicableTerminalsAnyOf6,
+    "MessageDirectionAnyOf": messageDirectionAnyOf_1.MessageDirectionAnyOf,
+    "MessageDirectionAnyOf1": messageDirectionAnyOf1_1.MessageDirectionAnyOf1,
+    "MessageDirectionAnyOf2": messageDirectionAnyOf2_1.MessageDirectionAnyOf2,
+    "MessageDirectionAnyOf3": messageDirectionAnyOf3_1.MessageDirectionAnyOf3,
+    "MessageStatusAnyOf": messageStatusAnyOf_1.MessageStatusAnyOf,
+    "MessageStatusAnyOf1": messageStatusAnyOf1_1.MessageStatusAnyOf1,
+    "MessageStatusAnyOf2": messageStatusAnyOf2_1.MessageStatusAnyOf2,
+    "MessageStatusAnyOf3": messageStatusAnyOf3_1.MessageStatusAnyOf3,
+    "MessageStatusAnyOf4": messageStatusAnyOf4_1.MessageStatusAnyOf4,
+    "MessageStatusAnyOf5": messageStatusAnyOf5_1.MessageStatusAnyOf5,
+    "MessageStatusAnyOf6": messageStatusAnyOf6_1.MessageStatusAnyOf6,
+    "MessageStatusAnyOf7": messageStatusAnyOf7_1.MessageStatusAnyOf7,
     "PaginationRequestWithSortOptions.SortKeyEnum": paginationRequestWithSortOptions_1.PaginationRequestWithSortOptions.SortKeyEnum,
     "PortalPage": portalPage_1.PortalPage,
     "SSOutboundStatusesAnyOf": sSOutboundStatusesAnyOf_1.SSOutboundStatusesAnyOf,
@@ -782,6 +828,8 @@ let typeMap = {
     "MerchantNotInitialized": merchantNotInitialized_1.MerchantNotInitialized,
     "MerchantURL": merchantURL_1.MerchantURL,
     "Message": message_1.Message,
+    "MessageDirection": messageDirection_1.MessageDirection,
+    "MessageStatus": messageStatus_1.MessageStatus,
     "ModuleError": moduleError_1.ModuleError,
     "NewsArticle": newsArticle_1.NewsArticle,
     "OptInList": optInList_1.OptInList,
@@ -796,6 +844,7 @@ let typeMap = {
     "PaymentPrefixes": paymentPrefixes_1.PaymentPrefixes,
     "Performance": performance_1.Performance,
     "PhoneNumber": phoneNumber_1.PhoneNumber,
+    "PhoneNumberCapabilities": phoneNumberCapabilities_1.PhoneNumberCapabilities,
     "PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive": pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive_1.PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive,
     "PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID": pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID_1.PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID,
     "PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID": pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID_1.PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID,
@@ -929,6 +978,7 @@ let typeMap = {
     "WTLinkBookSectionCreateParams": wTLinkBookSectionCreateParams_1.WTLinkBookSectionCreateParams,
     "WTLinkBookSectionUpdateParams": wTLinkBookSectionUpdateParams_1.WTLinkBookSectionUpdateParams,
     "WTLinkBookUpdateParams": wTLinkBookUpdateParams_1.WTLinkBookUpdateParams,
+    "WTLocalInstance": wTLocalInstance_1.WTLocalInstance,
     "WTLoungeCreateParams": wTLoungeCreateParams_1.WTLoungeCreateParams,
     "WTLoungeUpdateParams": wTLoungeUpdateParams_1.WTLoungeUpdateParams,
     "WTMember": wTMember_1.WTMember,
@@ -944,6 +994,7 @@ let typeMap = {
     "WTMerchantUpdate": wTMerchantUpdate_1.WTMerchantUpdate,
     "WTMerchantUpdatePOSIntegration": wTMerchantUpdatePOSIntegration_1.WTMerchantUpdatePOSIntegration,
     "WTMerchantUpdatePointsOfContact": wTMerchantUpdatePointsOfContact_1.WTMerchantUpdatePointsOfContact,
+    "WTMessageInstance": wTMessageInstance_1.WTMessageInstance,
     "WTNewsArticleCreateParams": wTNewsArticleCreateParams_1.WTNewsArticleCreateParams,
     "WTNewsArticleUpdateParams": wTNewsArticleUpdateParams_1.WTNewsArticleUpdateParams,
     "WTOptInList": wTOptInList_1.WTOptInList,
