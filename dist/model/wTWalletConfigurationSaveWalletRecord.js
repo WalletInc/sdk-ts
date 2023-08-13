@@ -280,8 +280,8 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "customAppIconURL",
-        "baseName": "customAppIconURL",
+        "name": "mobileAppIconURL",
+        "baseName": "mobileAppIconURL",
         "type": "string"
     }
 ];
