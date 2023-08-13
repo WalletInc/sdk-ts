@@ -53,7 +53,7 @@ export declare class WalletConfiguration {
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
     'customDomain'?: string;
-    'customAppIconURL'?: string;
+    'mobileAppIconURL'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;

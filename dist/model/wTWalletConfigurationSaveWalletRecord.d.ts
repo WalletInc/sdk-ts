@@ -53,7 +53,7 @@ export declare class WTWalletConfigurationSaveWalletRecord {
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
     'customDomain'?: string;
-    'customAppIconURL'?: string;
+    'mobileAppIconURL'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
