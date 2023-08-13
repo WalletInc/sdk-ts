@@ -19,6 +19,7 @@ export class SubscriptionProduct {
     'title': string;
     'titleFull': string;
     'category': string;
+    'volume'?: number;
     'features': Array<SubscriptionFeature>;
     'pages': Array<PortalPage>;
     'iconName': string;
@@ -48,6 +49,11 @@ export class SubscriptionProduct {
             "name": "category",
             "baseName": "category",
             "type": "string"
+        },
+        {
+            "name": "volume",
+            "baseName": "volume",
+            "type": "number"
         },
         {
             "name": "features",
