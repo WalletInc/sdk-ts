@@ -67,7 +67,7 @@ export class WalletConfiguration {
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
     'customDomain'?: string;
-    'customAppIconURL'?: string;
+    'mobileAppIconURL'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;
@@ -347,8 +347,8 @@ export class WalletConfiguration {
             "type": "string"
         },
         {
-            "name": "customAppIconURL",
-            "baseName": "customAppIconURL",
+            "name": "mobileAppIconURL",
+            "baseName": "mobileAppIconURL",
             "type": "string"
         },
         {
