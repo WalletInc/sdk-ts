@@ -30,6 +30,11 @@ SubscriptionProduct.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "volume",
+        "baseName": "volume",
+        "type": "number"
+    },
+    {
         "name": "features",
         "baseName": "features",
         "type": "Array<SubscriptionFeature>"

@@ -5,6 +5,7 @@ export declare class SubscriptionProduct {
     'title': string;
     'titleFull': string;
     'category': string;
+    'volume'?: number;
     'features': Array<SubscriptionFeature>;
     'pages': Array<PortalPage>;
     'iconName': string;
