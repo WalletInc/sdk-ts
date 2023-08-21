@@ -27,6 +27,7 @@ export class WTPerformanceUpdateParams {
     */
     'isSoldOut': boolean;
     'mediaURL'?: string;
+    'paymentDesignID'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -69,6 +70,11 @@ export class WTPerformanceUpdateParams {
         {
             "name": "mediaURL",
             "baseName": "mediaURL",
+            "type": "string"
+        },
+        {
+            "name": "paymentDesignID",
+            "baseName": "paymentDesignID",
             "type": "string"
         }    ];
 

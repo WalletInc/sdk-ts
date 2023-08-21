@@ -253,7 +253,7 @@ export * from './wTEmployeeScheduleSimpleSMSToRecipient';
 export * from './wTEmployeeSendHelpDeskResponse';
 export * from './wTEmployeeUpdate';
 export * from './wTEmployeeUpdateRecords';
-export * from './wTFetchWalletPaymentObjectWithToken';
+export * from './wTFetchWalletPaymentObjectsWithToken';
 export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
 export * from './wTImageGridCreateParams';

@@ -48,6 +48,11 @@ WTPerformanceCreateParams.attributeTypeMap = [
         "name": "mediaURL",
         "baseName": "mediaURL",
         "type": "string"
+    },
+    {
+        "name": "paymentDesignID",
+        "baseName": "paymentDesignID",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTPerformanceCreateParams.js.map

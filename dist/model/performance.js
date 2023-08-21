@@ -50,6 +50,11 @@ Performance.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "paymentDesignID",
+        "baseName": "paymentDesignID",
+        "type": "string"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"
