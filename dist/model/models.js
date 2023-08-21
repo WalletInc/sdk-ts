@@ -267,7 +267,7 @@ __exportStar(require("./wTEmployeeScheduleSimpleSMSToRecipient"), exports);
 __exportStar(require("./wTEmployeeSendHelpDeskResponse"), exports);
 __exportStar(require("./wTEmployeeUpdate"), exports);
 __exportStar(require("./wTEmployeeUpdateRecords"), exports);
-__exportStar(require("./wTFetchWalletPaymentObjectWithToken"), exports);
+__exportStar(require("./wTFetchWalletPaymentObjectsWithToken"), exports);
 __exportStar(require("./wTGamingCreateParams"), exports);
 __exportStar(require("./wTGamingUpdateParams"), exports);
 __exportStar(require("./wTImageGridCreateParams"), exports);
@@ -607,7 +607,7 @@ const wTEmployeeScheduleSimpleSMSToRecipient_1 = require("./wTEmployeeScheduleSi
 const wTEmployeeSendHelpDeskResponse_1 = require("./wTEmployeeSendHelpDeskResponse");
 const wTEmployeeUpdate_1 = require("./wTEmployeeUpdate");
 const wTEmployeeUpdateRecords_1 = require("./wTEmployeeUpdateRecords");
-const wTFetchWalletPaymentObjectWithToken_1 = require("./wTFetchWalletPaymentObjectWithToken");
+const wTFetchWalletPaymentObjectsWithToken_1 = require("./wTFetchWalletPaymentObjectsWithToken");
 const wTGamingCreateParams_1 = require("./wTGamingCreateParams");
 const wTGamingUpdateParams_1 = require("./wTGamingUpdateParams");
 const wTImageGridCreateParams_1 = require("./wTImageGridCreateParams");
@@ -962,7 +962,7 @@ let typeMap = {
     "WTEmployeeSendHelpDeskResponse": wTEmployeeSendHelpDeskResponse_1.WTEmployeeSendHelpDeskResponse,
     "WTEmployeeUpdate": wTEmployeeUpdate_1.WTEmployeeUpdate,
     "WTEmployeeUpdateRecords": wTEmployeeUpdateRecords_1.WTEmployeeUpdateRecords,
-    "WTFetchWalletPaymentObjectWithToken": wTFetchWalletPaymentObjectWithToken_1.WTFetchWalletPaymentObjectWithToken,
+    "WTFetchWalletPaymentObjectsWithToken": wTFetchWalletPaymentObjectsWithToken_1.WTFetchWalletPaymentObjectsWithToken,
     "WTGamingCreateParams": wTGamingCreateParams_1.WTGamingCreateParams,
     "WTGamingUpdateParams": wTGamingUpdateParams_1.WTGamingUpdateParams,
     "WTImageGridCreateParams": wTImageGridCreateParams_1.WTImageGridCreateParams,

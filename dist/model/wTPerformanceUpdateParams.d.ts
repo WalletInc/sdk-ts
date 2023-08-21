@@ -7,6 +7,7 @@ export declare class WTPerformanceUpdateParams {
     'orderNumber': number;
     'isSoldOut': boolean;
     'mediaURL'?: string;
+    'paymentDesignID'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

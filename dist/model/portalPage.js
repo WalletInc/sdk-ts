@@ -51,6 +51,7 @@ var PortalPage;
     PortalPage[PortalPage["VouchersDynamic"] = 'vouchers-dynamic'] = "VouchersDynamic";
     PortalPage[PortalPage["VouchersStaticSingle"] = 'vouchers-static-single'] = "VouchersStaticSingle";
     PortalPage[PortalPage["VouchersStaticSingleCampaign"] = 'vouchers-static-single-campaign'] = "VouchersStaticSingleCampaign";
+    PortalPage[PortalPage["Tickets"] = 'tickets'] = "Tickets";
     PortalPage[PortalPage["DigitalWalletConfiguration"] = 'digital-wallet-configuration'] = "DigitalWalletConfiguration";
     PortalPage[PortalPage["Performances"] = 'performances'] = "Performances";
     PortalPage[PortalPage["LinkBook"] = 'link-book'] = "LinkBook";

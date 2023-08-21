@@ -308,7 +308,7 @@ model/wTEmployeeScheduleSimpleSMSToRecipient.ts
 model/wTEmployeeSendHelpDeskResponse.ts
 model/wTEmployeeUpdate.ts
 model/wTEmployeeUpdateRecords.ts
-model/wTFetchWalletPaymentObjectWithToken.ts
+model/wTFetchWalletPaymentObjectsWithToken.ts
 model/wTGamingCreateParams.ts
 model/wTGamingUpdateParams.ts
 model/wTImageGridCreateParams.ts

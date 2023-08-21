@@ -7,6 +7,7 @@ export declare class Performance {
     'orderNumber': number;
     'isSoldOut': boolean;
     'mediaURL'?: string;
+    'paymentDesignID'?: string;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;

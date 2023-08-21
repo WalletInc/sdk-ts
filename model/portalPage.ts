@@ -61,6 +61,7 @@ export enum PortalPage {
     VouchersDynamic = <any> 'vouchers-dynamic',
     VouchersStaticSingle = <any> 'vouchers-static-single',
     VouchersStaticSingleCampaign = <any> 'vouchers-static-single-campaign',
+    Tickets = <any> 'tickets',
     DigitalWalletConfiguration = <any> 'digital-wallet-configuration',
     Performances = <any> 'performances',
     LinkBook = <any> 'link-book',

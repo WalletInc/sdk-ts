@@ -27,6 +27,7 @@ export class Performance {
     */
     'isSoldOut': boolean;
     'mediaURL'?: string;
+    'paymentDesignID'?: string;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;
@@ -74,6 +75,11 @@ export class Performance {
         {
             "name": "mediaURL",
             "baseName": "mediaURL",
+            "type": "string"
+        },
+        {
+            "name": "paymentDesignID",
+            "baseName": "paymentDesignID",
             "type": "string"
         },
         {
