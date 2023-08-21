@@ -8,7 +8,7 @@ import { InlineResponse2009 } from '../model/inlineResponse2009';
 import { Member } from '../model/member';
 import { StaticVoucher } from '../model/staticVoucher';
 import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
-import { WTFetchWalletPaymentObjectWithToken } from '../model/wTFetchWalletPaymentObjectWithToken';
+import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
 import { WalletConfiguration } from '../model/walletConfiguration';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
@@ -97,7 +97,7 @@ export declare class InteractionsApi {
         response: http.IncomingMessage;
         body: StaticVoucher;
     }>;
-    fetchWalletPageWithToken(wTFetchWalletPaymentObjectWithToken: WTFetchWalletPaymentObjectWithToken, options?: {
+    fetchWalletPageWithToken(wTFetchWalletPaymentObjectsWithToken: WTFetchWalletPaymentObjectsWithToken, options?: {
         headers: {
             [name: string]: string;
         };
@@ -105,7 +105,7 @@ export declare class InteractionsApi {
         response: http.IncomingMessage;
         body: any;
     }>;
-    fetchWalletPaymentObjectWithToken(wTFetchWalletPaymentObjectWithToken: WTFetchWalletPaymentObjectWithToken, options?: {
+    fetchWalletPaymentObjectsWithToken(wTFetchWalletPaymentObjectsWithToken: WTFetchWalletPaymentObjectsWithToken, options?: {
         headers: {
             [name: string]: string;
         };

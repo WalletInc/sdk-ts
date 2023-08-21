@@ -565,7 +565,7 @@ class InteractionsApi {
             });
         });
     }
-    fetchWalletPageWithToken(wTFetchWalletPaymentObjectWithToken, options = { headers: {} }) {
+    fetchWalletPageWithToken(wTFetchWalletPaymentObjectsWithToken, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/wallet/page/token';
             let localVarQueryParameters = {};
@@ -578,8 +578,8 @@ class InteractionsApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTFetchWalletPaymentObjectWithToken === null || wTFetchWalletPaymentObjectWithToken === undefined) {
-                throw new Error('Required parameter wTFetchWalletPaymentObjectWithToken was null or undefined when calling fetchWalletPageWithToken.');
+            if (wTFetchWalletPaymentObjectsWithToken === null || wTFetchWalletPaymentObjectsWithToken === undefined) {
+                throw new Error('Required parameter wTFetchWalletPaymentObjectsWithToken was null or undefined when calling fetchWalletPageWithToken.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -590,7 +590,7 @@ class InteractionsApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTFetchWalletPaymentObjectWithToken, "WTFetchWalletPaymentObjectWithToken")
+                body: models_1.ObjectSerializer.serialize(wTFetchWalletPaymentObjectsWithToken, "WTFetchWalletPaymentObjectsWithToken")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -626,7 +626,7 @@ class InteractionsApi {
             });
         });
     }
-    fetchWalletPaymentObjectWithToken(wTFetchWalletPaymentObjectWithToken, options = { headers: {} }) {
+    fetchWalletPaymentObjectsWithToken(wTFetchWalletPaymentObjectsWithToken, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/wallet/paymentObject/token';
             let localVarQueryParameters = {};
@@ -639,8 +639,8 @@ class InteractionsApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTFetchWalletPaymentObjectWithToken === null || wTFetchWalletPaymentObjectWithToken === undefined) {
-                throw new Error('Required parameter wTFetchWalletPaymentObjectWithToken was null or undefined when calling fetchWalletPaymentObjectWithToken.');
+            if (wTFetchWalletPaymentObjectsWithToken === null || wTFetchWalletPaymentObjectsWithToken === undefined) {
+                throw new Error('Required parameter wTFetchWalletPaymentObjectsWithToken was null or undefined when calling fetchWalletPaymentObjectsWithToken.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -651,7 +651,7 @@ class InteractionsApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTFetchWalletPaymentObjectWithToken, "WTFetchWalletPaymentObjectWithToken")
+                body: models_1.ObjectSerializer.serialize(wTFetchWalletPaymentObjectsWithToken, "WTFetchWalletPaymentObjectsWithToken")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));

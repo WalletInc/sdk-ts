@@ -47,6 +47,7 @@ export declare enum PortalPage {
     VouchersDynamic,
     VouchersStaticSingle,
     VouchersStaticSingleCampaign,
+    Tickets,
     DigitalWalletConfiguration,
     Performances,
     LinkBook,

@@ -252,7 +252,7 @@ export * from './wTEmployeeScheduleSimpleSMSToRecipient';
 export * from './wTEmployeeSendHelpDeskResponse';
 export * from './wTEmployeeUpdate';
 export * from './wTEmployeeUpdateRecords';
-export * from './wTFetchWalletPaymentObjectWithToken';
+export * from './wTFetchWalletPaymentObjectsWithToken';
 export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
 export * from './wTImageGridCreateParams';
@@ -606,7 +606,7 @@ import { WTEmployeeScheduleSimpleSMSToRecipient } from './wTEmployeeScheduleSimp
 import { WTEmployeeSendHelpDeskResponse } from './wTEmployeeSendHelpDeskResponse';
 import { WTEmployeeUpdate } from './wTEmployeeUpdate';
 import { WTEmployeeUpdateRecords } from './wTEmployeeUpdateRecords';
-import { WTFetchWalletPaymentObjectWithToken } from './wTFetchWalletPaymentObjectWithToken';
+import { WTFetchWalletPaymentObjectsWithToken } from './wTFetchWalletPaymentObjectsWithToken';
 import { WTGamingCreateParams } from './wTGamingCreateParams';
 import { WTGamingUpdateParams } from './wTGamingUpdateParams';
 import { WTImageGridCreateParams } from './wTImageGridCreateParams';
@@ -965,7 +965,7 @@ let typeMap: {[index: string]: any} = {
     "WTEmployeeSendHelpDeskResponse": WTEmployeeSendHelpDeskResponse,
     "WTEmployeeUpdate": WTEmployeeUpdate,
     "WTEmployeeUpdateRecords": WTEmployeeUpdateRecords,
-    "WTFetchWalletPaymentObjectWithToken": WTFetchWalletPaymentObjectWithToken,
+    "WTFetchWalletPaymentObjectsWithToken": WTFetchWalletPaymentObjectsWithToken,
     "WTGamingCreateParams": WTGamingCreateParams,
     "WTGamingUpdateParams": WTGamingUpdateParams,
     "WTImageGridCreateParams": WTImageGridCreateParams,

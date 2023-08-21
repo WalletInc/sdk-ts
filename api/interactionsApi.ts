@@ -25,7 +25,7 @@ import { InternalServerError } from '../model/internalServerError';
 import { Member } from '../model/member';
 import { StaticVoucher } from '../model/staticVoucher';
 import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
-import { WTFetchWalletPaymentObjectWithToken } from '../model/wTFetchWalletPaymentObjectWithToken';
+import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
 import { WalletConfiguration } from '../model/walletConfiguration';
 
 import { ObjectSerializer, Authentication, VoidAuth, Interceptor } from '../model/models';
@@ -671,9 +671,9 @@ export class InteractionsApi {
     /**
      * 
      * @summary Fetch page with token NOTE: This route exists because a token can completely change the dataset returned to the client. A simple fetch just logs the token with the request, but a fetchWithToken request can have a very different object returned to the client.
-     * @param wTFetchWalletPaymentObjectWithToken 
+     * @param wTFetchWalletPaymentObjectsWithToken 
      */
-    public async fetchWalletPageWithToken (wTFetchWalletPaymentObjectWithToken: WTFetchWalletPaymentObjectWithToken, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
+    public async fetchWalletPageWithToken (wTFetchWalletPaymentObjectsWithToken: WTFetchWalletPaymentObjectsWithToken, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
         const localVarPath = this.basePath + '/wallet/page/token';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -686,9 +686,9 @@ export class InteractionsApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'wTFetchWalletPaymentObjectWithToken' is not null or undefined
-        if (wTFetchWalletPaymentObjectWithToken === null || wTFetchWalletPaymentObjectWithToken === undefined) {
-            throw new Error('Required parameter wTFetchWalletPaymentObjectWithToken was null or undefined when calling fetchWalletPageWithToken.');
+        // verify required parameter 'wTFetchWalletPaymentObjectsWithToken' is not null or undefined
+        if (wTFetchWalletPaymentObjectsWithToken === null || wTFetchWalletPaymentObjectsWithToken === undefined) {
+            throw new Error('Required parameter wTFetchWalletPaymentObjectsWithToken was null or undefined when calling fetchWalletPageWithToken.');
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -702,7 +702,7 @@ export class InteractionsApi {
             uri: localVarPath,
             useQuerystring: this._useQuerystring,
             json: true,
-            body: ObjectSerializer.serialize(wTFetchWalletPaymentObjectWithToken, "WTFetchWalletPaymentObjectWithToken")
+            body: ObjectSerializer.serialize(wTFetchWalletPaymentObjectsWithToken, "WTFetchWalletPaymentObjectsWithToken")
         };
 
         let authenticationPromise = Promise.resolve();
@@ -739,10 +739,10 @@ export class InteractionsApi {
     }
     /**
      * 
-     * @summary Fetch payment object with token NOTE: This route exists because a token can completely change the dataset returned to the client. A simple fetch just logs the token with the request, but a fetchWithToken request can have a very different object returned to the client.
-     * @param wTFetchWalletPaymentObjectWithToken 
+     * @summary Fetch payment objects with token NOTE: This route exists because a token can completely change the dataset returned to the client. A simple fetch just logs the token with the request, but a fetchWithToken request can have a very different object returned to the client.
+     * @param wTFetchWalletPaymentObjectsWithToken 
      */
-    public async fetchWalletPaymentObjectWithToken (wTFetchWalletPaymentObjectWithToken: WTFetchWalletPaymentObjectWithToken, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
+    public async fetchWalletPaymentObjectsWithToken (wTFetchWalletPaymentObjectsWithToken: WTFetchWalletPaymentObjectsWithToken, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
         const localVarPath = this.basePath + '/wallet/paymentObject/token';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -755,9 +755,9 @@ export class InteractionsApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'wTFetchWalletPaymentObjectWithToken' is not null or undefined
-        if (wTFetchWalletPaymentObjectWithToken === null || wTFetchWalletPaymentObjectWithToken === undefined) {
-            throw new Error('Required parameter wTFetchWalletPaymentObjectWithToken was null or undefined when calling fetchWalletPaymentObjectWithToken.');
+        // verify required parameter 'wTFetchWalletPaymentObjectsWithToken' is not null or undefined
+        if (wTFetchWalletPaymentObjectsWithToken === null || wTFetchWalletPaymentObjectsWithToken === undefined) {
+            throw new Error('Required parameter wTFetchWalletPaymentObjectsWithToken was null or undefined when calling fetchWalletPaymentObjectsWithToken.');
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -771,7 +771,7 @@ export class InteractionsApi {
             uri: localVarPath,
             useQuerystring: this._useQuerystring,
             json: true,
-            body: ObjectSerializer.serialize(wTFetchWalletPaymentObjectWithToken, "WTFetchWalletPaymentObjectWithToken")
+            body: ObjectSerializer.serialize(wTFetchWalletPaymentObjectsWithToken, "WTFetchWalletPaymentObjectsWithToken")
         };
 
         let authenticationPromise = Promise.resolve();

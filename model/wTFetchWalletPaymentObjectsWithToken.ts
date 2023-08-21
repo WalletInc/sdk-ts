@@ -12,7 +12,7 @@
 
 import { RequestFile } from './models';
 
-export class WTFetchWalletPaymentObjectWithToken {
+export class WTFetchWalletPaymentObjectsWithToken {
     'phoneVerificationToken': string;
     'merchantID': string;
     'pageType': string;
@@ -49,7 +49,7 @@ export class WTFetchWalletPaymentObjectWithToken {
         }    ];
 
     static getAttributeTypeMap() {
-        return WTFetchWalletPaymentObjectWithToken.attributeTypeMap;
+        return WTFetchWalletPaymentObjectsWithToken.attributeTypeMap;
     }
 }
 

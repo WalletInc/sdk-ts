@@ -1,4 +1,4 @@
-export declare class WTFetchWalletPaymentObjectWithToken {
+export declare class WTFetchWalletPaymentObjectsWithToken {
     'phoneVerificationToken': string;
     'merchantID': string;
     'pageType': string;
