@@ -1,8 +1,8 @@
-import { OptInListSubscriber } from './optInListSubscriber';
+import { OutboundSMS } from './outboundSMS';
 export declare class InlineResponse2007 {
     'total': number;
     'length': number;
-    'results': Array<OptInListSubscriber>;
+    'results': Array<OutboundSMS>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

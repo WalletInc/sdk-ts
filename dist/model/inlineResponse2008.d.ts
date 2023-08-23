@@ -1,8 +1,8 @@
-import { ImportedListRecipient } from './importedListRecipient';
+import { OptInListSubscriber } from './optInListSubscriber';
 export declare class InlineResponse2008 {
     'total': number;
     'length': number;
-    'results': Array<ImportedListRecipient>;
+    'results': Array<OptInListSubscriber>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

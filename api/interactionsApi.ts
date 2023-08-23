@@ -20,10 +20,12 @@ import { BrowserDetails } from '../model/browserDetails';
 import { DynamicVoucher } from '../model/dynamicVoucher';
 import { EmailSubscriber } from '../model/emailSubscriber';
 import { FalsumError } from '../model/falsumError';
-import { InlineResponse2009 } from '../model/inlineResponse2009';
+import { InlineObject2 } from '../model/inlineObject2';
+import { InlineResponse20010 } from '../model/inlineResponse20010';
 import { InternalServerError } from '../model/internalServerError';
 import { Member } from '../model/member';
 import { StaticVoucher } from '../model/staticVoucher';
+import { Ticket } from '../model/ticket';
 import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
 import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
 import { WalletConfiguration } from '../model/walletConfiguration';
@@ -100,6 +102,82 @@ export class InteractionsApi {
         this.interceptors.push(interceptor);
     }
 
+    /**
+     * 
+     * @summary Update ticket
+     * @param id 
+     * @param inlineObject2 
+     */
+    public async claimTicket (id: any, inlineObject2: InlineObject2, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Ticket;  }> {
+        const localVarPath = this.basePath + '/wallet/ticket/claim/{id}'
+            .replace('{' + 'id' + '}', encodeURIComponent(String(id)));
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'id' is not null or undefined
+        if (id === null || id === undefined) {
+            throw new Error('Required parameter id was null or undefined when calling claimTicket.');
+        }
+
+        // verify required parameter 'inlineObject2' is not null or undefined
+        if (inlineObject2 === null || inlineObject2 === undefined) {
+            throw new Error('Required parameter inlineObject2 was null or undefined when calling claimTicket.');
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'PUT',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+            body: ObjectSerializer.serialize(inlineObject2, "InlineObject2")
+        };
+
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: Ticket;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            body = ObjectSerializer.deserialize(body, "Ticket");
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
     /**
      * 
      * @summary Create ad credit scan
@@ -381,7 +459,7 @@ export class InteractionsApi {
      * @summary Fetch a customer\'s static vouchers on the basis of a given voucher ID
      * @param voucherID 
      */
-    public async fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID (voucherID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<InlineResponse2009>;  }> {
+    public async fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID (voucherID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<InlineResponse20010>;  }> {
         const localVarPath = this.basePath + '/wallet/staticVoucher/all';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -432,13 +510,13 @@ export class InteractionsApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: Array<InlineResponse2009>;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: Array<InlineResponse20010>;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "Array<InlineResponse2009>");
+                            body = ObjectSerializer.deserialize(body, "Array<InlineResponse20010>");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

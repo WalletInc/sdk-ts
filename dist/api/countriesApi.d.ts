@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import http from 'http';
-import { InlineResponse20010 } from '../model/inlineResponse20010';
+import { InlineResponse20011 } from '../model/inlineResponse20011';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum CountriesApiApiKeys {
@@ -30,6 +30,6 @@ export declare class CountriesApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<InlineResponse20010>;
+        body: Array<InlineResponse20011>;
     }>;
 }

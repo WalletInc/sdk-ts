@@ -169,7 +169,7 @@ class IndustriesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse20011");
+                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse20012");
                                 resolve({ response: response, body: body });
                             }
                             else {

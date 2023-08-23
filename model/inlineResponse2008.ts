@@ -11,12 +11,12 @@
  */
 
 import { RequestFile } from './models';
-import { ImportedListRecipient } from './importedListRecipient';
+import { OptInListSubscriber } from './optInListSubscriber';
 
 export class InlineResponse2008 {
     'total': number;
     'length': number;
-    'results': Array<ImportedListRecipient>;
+    'results': Array<OptInListSubscriber>;
 
     static discriminator: string | undefined = undefined;
 
@@ -34,7 +34,7 @@ export class InlineResponse2008 {
         {
             "name": "results",
             "baseName": "results",
-            "type": "Array<ImportedListRecipient>"
+            "type": "Array<OptInListSubscriber>"
         }    ];
 
     static getAttributeTypeMap() {

@@ -20,9 +20,9 @@ import { AuthError } from '../model/authError';
 import { FalsumError } from '../model/falsumError';
 import { ImportedList } from '../model/importedList';
 import { ImportedListRecipient } from '../model/importedListRecipient';
-import { InlineResponse2006 } from '../model/inlineResponse2006';
 import { InlineResponse2007 } from '../model/inlineResponse2007';
 import { InlineResponse2008 } from '../model/inlineResponse2008';
+import { InlineResponse2009 } from '../model/inlineResponse2009';
 import { InternalServerError } from '../model/internalServerError';
 import { OptInList } from '../model/optInList';
 import { OptInListSource } from '../model/optInListSource';
@@ -1308,7 +1308,7 @@ export class SMSApi {
      * @param pageNum 
      * @param isArchiveIncluded 
      */
-    public async fetchImportedListRecipientsByPage (listID: string, pageSize?: number, pageNum?: number, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2008;  }> {
+    public async fetchImportedListRecipientsByPage (listID: string, pageSize?: number, pageNum?: number, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2009;  }> {
         const localVarPath = this.basePath + '/v2/sms/importedList/recipients/page/{listID}'
             .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
         let localVarQueryParameters: any = {};
@@ -1368,13 +1368,13 @@ export class SMSApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2008;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2009;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2008");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2009");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -1545,7 +1545,7 @@ export class SMSApi {
      * @param isPendingAge21Verification 
      * @param isArchiveIncluded 
      */
-    public async fetchOptInListSubscribersByPage (listID: string, pageSize?: number, pageNum?: number, isSubscribed?: boolean, isPendingAge21Verification?: boolean, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2007;  }> {
+    public async fetchOptInListSubscribersByPage (listID: string, pageSize?: number, pageNum?: number, isSubscribed?: boolean, isPendingAge21Verification?: boolean, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2008;  }> {
         const localVarPath = this.basePath + '/v2/sms/optInList/subscribers/page/{listID}'
             .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
         let localVarQueryParameters: any = {};
@@ -1613,13 +1613,13 @@ export class SMSApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2007;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2008;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2007");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2008");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -1945,7 +1945,7 @@ export class SMSApi {
      * @param pageNum 
      * @param status 
      */
-    public async fetchOutboundSMSByPage (phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, status?: SSOutboundStatuses, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2006;  }> {
+    public async fetchOutboundSMSByPage (phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, status?: SSOutboundStatuses, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2007;  }> {
         const localVarPath = this.basePath + '/v2/sms/outbound/page/{phoneNumberID}'
             .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
         let localVarQueryParameters: any = {};
@@ -2013,13 +2013,13 @@ export class SMSApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2006;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2007;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2006");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2007");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
