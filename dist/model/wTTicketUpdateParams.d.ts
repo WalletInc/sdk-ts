@@ -1,5 +1,5 @@
 export declare class WTTicketUpdateParams {
-    'recipientPhoneNumber': string;
+    'recipientPhoneNumber'?: string;
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;

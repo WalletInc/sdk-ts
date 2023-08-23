@@ -13,7 +13,7 @@
 import { RequestFile } from './models';
 
 export class WTTicketCreateParams {
-    'recipientPhoneNumber': string;
+    'recipientPhoneNumber'?: string;
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;

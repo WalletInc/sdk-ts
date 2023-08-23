@@ -1,5 +1,5 @@
 export declare class WTTicket {
-    'recipientPhoneNumber': string;
+    'recipientPhoneNumber'?: string;
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;
