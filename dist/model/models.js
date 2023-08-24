@@ -69,6 +69,7 @@ __exportStar(require("./inboundSMS"), exports);
 __exportStar(require("./inlineObject"), exports);
 __exportStar(require("./inlineObject1"), exports);
 __exportStar(require("./inlineObject2"), exports);
+__exportStar(require("./inlineObject3"), exports);
 __exportStar(require("./inlineResponse200"), exports);
 __exportStar(require("./inlineResponse2001"), exports);
 __exportStar(require("./inlineResponse20010"), exports);
@@ -415,6 +416,7 @@ const inboundSMS_1 = require("./inboundSMS");
 const inlineObject_1 = require("./inlineObject");
 const inlineObject1_1 = require("./inlineObject1");
 const inlineObject2_1 = require("./inlineObject2");
+const inlineObject3_1 = require("./inlineObject3");
 const inlineResponse200_1 = require("./inlineResponse200");
 const inlineResponse2001_1 = require("./inlineResponse2001");
 const inlineResponse20010_1 = require("./inlineResponse20010");
@@ -799,6 +801,7 @@ let typeMap = {
     "InlineObject": inlineObject_1.InlineObject,
     "InlineObject1": inlineObject1_1.InlineObject1,
     "InlineObject2": inlineObject2_1.InlineObject2,
+    "InlineObject3": inlineObject3_1.InlineObject3,
     "InlineResponse200": inlineResponse200_1.InlineResponse200,
     "InlineResponse2001": inlineResponse2001_1.InlineResponse2001,
     "InlineResponse20010": inlineResponse20010_1.InlineResponse20010,

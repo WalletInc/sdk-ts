@@ -5,6 +5,7 @@ import { BrowserDetails } from '../model/browserDetails';
 import { DynamicVoucher } from '../model/dynamicVoucher';
 import { EmailSubscriber } from '../model/emailSubscriber';
 import { InlineObject2 } from '../model/inlineObject2';
+import { InlineObject3 } from '../model/inlineObject3';
 import { InlineResponse20010 } from '../model/inlineResponse20010';
 import { Member } from '../model/member';
 import { StaticVoucher } from '../model/staticVoucher';
@@ -82,6 +83,14 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Array<InlineResponse20010>;
+    }>;
+    fetchCustomerTicketsWithToken(inlineObject3: InlineObject3, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Array<Ticket>;
     }>;
     fetchDynamicVoucherWithVoucherID(voucherID: any, options?: {
         headers: {

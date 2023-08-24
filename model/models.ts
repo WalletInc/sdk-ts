@@ -54,6 +54,7 @@ export * from './inboundSMS';
 export * from './inlineObject';
 export * from './inlineObject1';
 export * from './inlineObject2';
+export * from './inlineObject3';
 export * from './inlineResponse200';
 export * from './inlineResponse2001';
 export * from './inlineResponse20010';
@@ -414,6 +415,7 @@ import { InboundSMS } from './inboundSMS';
 import { InlineObject } from './inlineObject';
 import { InlineObject1 } from './inlineObject1';
 import { InlineObject2 } from './inlineObject2';
+import { InlineObject3 } from './inlineObject3';
 import { InlineResponse200 } from './inlineResponse200';
 import { InlineResponse2001 } from './inlineResponse2001';
 import { InlineResponse20010 } from './inlineResponse20010';
@@ -802,6 +804,7 @@ let typeMap: {[index: string]: any} = {
     "InlineObject": InlineObject,
     "InlineObject1": InlineObject1,
     "InlineObject2": InlineObject2,
+    "InlineObject3": InlineObject3,
     "InlineResponse200": InlineResponse200,
     "InlineResponse2001": InlineResponse2001,
     "InlineResponse20010": InlineResponse20010,
