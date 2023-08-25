@@ -68,10 +68,13 @@ __exportStar(require("./importedListRecipient"), exports);
 __exportStar(require("./inboundSMS"), exports);
 __exportStar(require("./inlineObject"), exports);
 __exportStar(require("./inlineObject1"), exports);
+__exportStar(require("./inlineObject2"), exports);
+__exportStar(require("./inlineObject3"), exports);
 __exportStar(require("./inlineResponse200"), exports);
 __exportStar(require("./inlineResponse2001"), exports);
 __exportStar(require("./inlineResponse20010"), exports);
 __exportStar(require("./inlineResponse20011"), exports);
+__exportStar(require("./inlineResponse20012"), exports);
 __exportStar(require("./inlineResponse2002"), exports);
 __exportStar(require("./inlineResponse2003"), exports);
 __exportStar(require("./inlineResponse2004"), exports);
@@ -212,6 +215,7 @@ __exportStar(require("./subscriptionFeature"), exports);
 __exportStar(require("./subscriptionPlan"), exports);
 __exportStar(require("./subscriptionProduct"), exports);
 __exportStar(require("./tcpa"), exports);
+__exportStar(require("./ticket"), exports);
 __exportStar(require("./updateStaticVoucherCampaignWithVoucher"), exports);
 __exportStar(require("./vSCampaignGeneratedMessage"), exports);
 __exportStar(require("./vSCampaignGeneratedMessagePagination"), exports);
@@ -340,6 +344,9 @@ __exportStar(require("./wTStaticVoucherUpdateParams"), exports);
 __exportStar(require("./wTSystemApprovePhoneNumber"), exports);
 __exportStar(require("./wTSystemRoleCreate"), exports);
 __exportStar(require("./wTTCPAOpt"), exports);
+__exportStar(require("./wTTicket"), exports);
+__exportStar(require("./wTTicketCreateParams"), exports);
+__exportStar(require("./wTTicketUpdateParams"), exports);
 __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
 __exportStar(require("./wTVideoCreateParams"), exports);
@@ -408,10 +415,13 @@ const importedListRecipient_1 = require("./importedListRecipient");
 const inboundSMS_1 = require("./inboundSMS");
 const inlineObject_1 = require("./inlineObject");
 const inlineObject1_1 = require("./inlineObject1");
+const inlineObject2_1 = require("./inlineObject2");
+const inlineObject3_1 = require("./inlineObject3");
 const inlineResponse200_1 = require("./inlineResponse200");
 const inlineResponse2001_1 = require("./inlineResponse2001");
 const inlineResponse20010_1 = require("./inlineResponse20010");
 const inlineResponse20011_1 = require("./inlineResponse20011");
+const inlineResponse20012_1 = require("./inlineResponse20012");
 const inlineResponse2002_1 = require("./inlineResponse2002");
 const inlineResponse2003_1 = require("./inlineResponse2003");
 const inlineResponse2004_1 = require("./inlineResponse2004");
@@ -552,6 +562,7 @@ const subscriptionFeature_1 = require("./subscriptionFeature");
 const subscriptionPlan_1 = require("./subscriptionPlan");
 const subscriptionProduct_1 = require("./subscriptionProduct");
 const tcpa_1 = require("./tcpa");
+const ticket_1 = require("./ticket");
 const updateStaticVoucherCampaignWithVoucher_1 = require("./updateStaticVoucherCampaignWithVoucher");
 const vSCampaignGeneratedMessage_1 = require("./vSCampaignGeneratedMessage");
 const vSCampaignGeneratedMessagePagination_1 = require("./vSCampaignGeneratedMessagePagination");
@@ -680,6 +691,9 @@ const wTStaticVoucherUpdateParams_1 = require("./wTStaticVoucherUpdateParams");
 const wTSystemApprovePhoneNumber_1 = require("./wTSystemApprovePhoneNumber");
 const wTSystemRoleCreate_1 = require("./wTSystemRoleCreate");
 const wTTCPAOpt_1 = require("./wTTCPAOpt");
+const wTTicket_1 = require("./wTTicket");
+const wTTicketCreateParams_1 = require("./wTTicketCreateParams");
+const wTTicketUpdateParams_1 = require("./wTTicketUpdateParams");
 const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
 const wTVideoCreateParams_1 = require("./wTVideoCreateParams");
@@ -786,10 +800,13 @@ let typeMap = {
     "InboundSMS": inboundSMS_1.InboundSMS,
     "InlineObject": inlineObject_1.InlineObject,
     "InlineObject1": inlineObject1_1.InlineObject1,
+    "InlineObject2": inlineObject2_1.InlineObject2,
+    "InlineObject3": inlineObject3_1.InlineObject3,
     "InlineResponse200": inlineResponse200_1.InlineResponse200,
     "InlineResponse2001": inlineResponse2001_1.InlineResponse2001,
     "InlineResponse20010": inlineResponse20010_1.InlineResponse20010,
     "InlineResponse20011": inlineResponse20011_1.InlineResponse20011,
+    "InlineResponse20012": inlineResponse20012_1.InlineResponse20012,
     "InlineResponse2002": inlineResponse2002_1.InlineResponse2002,
     "InlineResponse2003": inlineResponse2003_1.InlineResponse2003,
     "InlineResponse2004": inlineResponse2004_1.InlineResponse2004,
@@ -907,6 +924,7 @@ let typeMap = {
     "SubscriptionPlan": subscriptionPlan_1.SubscriptionPlan,
     "SubscriptionProduct": subscriptionProduct_1.SubscriptionProduct,
     "Tcpa": tcpa_1.Tcpa,
+    "Ticket": ticket_1.Ticket,
     "UpdateStaticVoucherCampaignWithVoucher": updateStaticVoucherCampaignWithVoucher_1.UpdateStaticVoucherCampaignWithVoucher,
     "VSCampaignGeneratedMessage": vSCampaignGeneratedMessage_1.VSCampaignGeneratedMessage,
     "VSCampaignGeneratedMessagePagination": vSCampaignGeneratedMessagePagination_1.VSCampaignGeneratedMessagePagination,
@@ -1035,6 +1053,9 @@ let typeMap = {
     "WTSystemApprovePhoneNumber": wTSystemApprovePhoneNumber_1.WTSystemApprovePhoneNumber,
     "WTSystemRoleCreate": wTSystemRoleCreate_1.WTSystemRoleCreate,
     "WTTCPAOpt": wTTCPAOpt_1.WTTCPAOpt,
+    "WTTicket": wTTicket_1.WTTicket,
+    "WTTicketCreateParams": wTTicketCreateParams_1.WTTicketCreateParams,
+    "WTTicketUpdateParams": wTTicketUpdateParams_1.WTTicketUpdateParams,
     "WTTwilioRequestAuthyCode": wTTwilioRequestAuthyCode_1.WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
     "WTVideoCreateParams": wTVideoCreateParams_1.WTVideoCreateParams,

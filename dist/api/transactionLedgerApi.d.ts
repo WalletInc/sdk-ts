@@ -1,7 +1,7 @@
 /// <reference types="node" />
 import http from 'http';
 import { ApplicableTerminals } from '../model/applicableTerminals';
-import { InlineResponse2005 } from '../model/inlineResponse2005';
+import { InlineResponse2006 } from '../model/inlineResponse2006';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum TransactionLedgerApiApiKeys {
@@ -31,6 +31,6 @@ export declare class TransactionLedgerApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2005;
+        body: InlineResponse2006;
     }>;
 }

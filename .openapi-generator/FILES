@@ -47,6 +47,7 @@ api/staticVoucherCampaignGroupsApi.ts
 api/staticVoucherCampaignsApi.ts
 api/staticVouchersApi.ts
 api/systemApi.ts
+api/ticketApi.ts
 api/transactionLedgerApi.ts
 api/utilitiesApi.ts
 api/videosApi.ts
@@ -108,10 +109,13 @@ model/importedListRecipient.ts
 model/inboundSMS.ts
 model/inlineObject.ts
 model/inlineObject1.ts
+model/inlineObject2.ts
+model/inlineObject3.ts
 model/inlineResponse200.ts
 model/inlineResponse2001.ts
 model/inlineResponse20010.ts
 model/inlineResponse20011.ts
+model/inlineResponse20012.ts
 model/inlineResponse2002.ts
 model/inlineResponse2003.ts
 model/inlineResponse2004.ts
@@ -253,6 +257,7 @@ model/subscriptionFeature.ts
 model/subscriptionPlan.ts
 model/subscriptionProduct.ts
 model/tcpa.ts
+model/ticket.ts
 model/updateStaticVoucherCampaignWithVoucher.ts
 model/vSCampaignGeneratedMessage.ts
 model/vSCampaignGeneratedMessagePagination.ts
@@ -381,6 +386,9 @@ model/wTStaticVoucherUpdateParams.ts
 model/wTSystemApprovePhoneNumber.ts
 model/wTSystemRoleCreate.ts
 model/wTTCPAOpt.ts
+model/wTTicket.ts
+model/wTTicketCreateParams.ts
+model/wTTicketUpdateParams.ts
 model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
 model/wTVideoCreateParams.ts

@@ -1149,7 +1149,7 @@ class SMSApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse2008");
+                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse2009");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -1355,7 +1355,7 @@ class SMSApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse2007");
+                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse2008");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -1693,7 +1693,7 @@ class SMSApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse2006");
+                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse2007");
                                 resolve({ response: response, body: body });
                             }
                             else {

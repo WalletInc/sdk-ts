@@ -10,39 +10,24 @@ exports.InlineResponse20011 = InlineResponse20011;
 InlineResponse20011.discriminator = undefined;
 InlineResponse20011.attributeTypeMap = [
     {
-        "name": "entertainment",
-        "baseName": "entertainment",
-        "type": "Array<any>"
+        "name": "currencyAbbreviation",
+        "baseName": "currency_abbreviation",
+        "type": "string"
     },
     {
-        "name": "grocery",
-        "baseName": "grocery",
-        "type": "Array<any>"
+        "name": "phoneCode",
+        "baseName": "phone_code",
+        "type": "string"
     },
     {
-        "name": "service",
-        "baseName": "service",
-        "type": "Array<any>"
+        "name": "iso2",
+        "baseName": "iso2",
+        "type": "string"
     },
     {
-        "name": "casino",
-        "baseName": "casino",
-        "type": "Array<any>"
-    },
-    {
-        "name": "hospitality",
-        "baseName": "hospitality",
-        "type": "Array<any>"
-    },
-    {
-        "name": "food",
-        "baseName": "food",
-        "type": "Array<any>"
-    },
-    {
-        "name": "retail",
-        "baseName": "retail",
-        "type": "Array<any>"
+        "name": "name",
+        "baseName": "name",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=inlineResponse20011.js.map

@@ -11,90 +11,30 @@
  */
 
 import { RequestFile } from './models';
-import { PaymentDesign } from './paymentDesign';
+import { ImportedListRecipient } from './importedListRecipient';
 
 export class InlineResponse2009 {
-    'paymentDesign': PaymentDesign;
-    'valueType': string | null;
-    'voucherType': number;
-    'expirationDate': Date;
-    'startDate': Date;
-    'title': string;
-    'isRedeemed': boolean;
-    'displayValue': string;
-    'offerAmountCentsDecimal': string;
-    'offerAmountCents': number;
-    'memberID': string;
-    'cellPhoneNumber': string;
-    'id': string;
+    'total': number;
+    'length': number;
+    'results': Array<ImportedListRecipient>;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "paymentDesign",
-            "baseName": "PaymentDesign",
-            "type": "PaymentDesign"
-        },
-        {
-            "name": "valueType",
-            "baseName": "ValueType",
-            "type": "string"
-        },
-        {
-            "name": "voucherType",
-            "baseName": "VoucherType",
+            "name": "total",
+            "baseName": "total",
             "type": "number"
         },
         {
-            "name": "expirationDate",
-            "baseName": "ExpirationDate",
-            "type": "Date"
-        },
-        {
-            "name": "startDate",
-            "baseName": "StartDate",
-            "type": "Date"
-        },
-        {
-            "name": "title",
-            "baseName": "Title",
-            "type": "string"
-        },
-        {
-            "name": "isRedeemed",
-            "baseName": "IsRedeemed",
-            "type": "boolean"
-        },
-        {
-            "name": "displayValue",
-            "baseName": "DisplayValue",
-            "type": "string"
-        },
-        {
-            "name": "offerAmountCentsDecimal",
-            "baseName": "OfferAmountCents_decimal",
-            "type": "string"
-        },
-        {
-            "name": "offerAmountCents",
-            "baseName": "OfferAmountCents",
+            "name": "length",
+            "baseName": "length",
             "type": "number"
         },
         {
-            "name": "memberID",
-            "baseName": "MemberID",
-            "type": "string"
-        },
-        {
-            "name": "cellPhoneNumber",
-            "baseName": "CellPhoneNumber",
-            "type": "string"
-        },
-        {
-            "name": "id",
-            "baseName": "id",
-            "type": "string"
+            "name": "results",
+            "baseName": "results",
+            "type": "Array<ImportedListRecipient>"
         }    ];
 
     static getAttributeTypeMap() {

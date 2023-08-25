@@ -22,7 +22,7 @@ InlineResponse2008.attributeTypeMap = [
     {
         "name": "results",
         "baseName": "results",
-        "type": "Array<ImportedListRecipient>"
+        "type": "Array<OptInListSubscriber>"
     }
 ];
 //# sourceMappingURL=inlineResponse2008.js.map

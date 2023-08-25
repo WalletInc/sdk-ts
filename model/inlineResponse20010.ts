@@ -11,34 +11,89 @@
  */
 
 import { RequestFile } from './models';
+import { PaymentDesign } from './paymentDesign';
 
 export class InlineResponse20010 {
-    'currencyAbbreviation': string;
-    'phoneCode': string;
-    'iso2': string;
-    'name': string;
+    'paymentDesign': PaymentDesign;
+    'valueType': string | null;
+    'voucherType': number;
+    'expirationDate': Date;
+    'startDate': Date;
+    'title': string;
+    'isRedeemed': boolean;
+    'displayValue': string;
+    'offerAmountCentsDecimal': string;
+    'offerAmountCents': number;
+    'memberID': string;
+    'cellPhoneNumber': string;
+    'id': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "currencyAbbreviation",
-            "baseName": "currency_abbreviation",
+            "name": "paymentDesign",
+            "baseName": "PaymentDesign",
+            "type": "PaymentDesign"
+        },
+        {
+            "name": "valueType",
+            "baseName": "ValueType",
             "type": "string"
         },
         {
-            "name": "phoneCode",
-            "baseName": "phone_code",
+            "name": "voucherType",
+            "baseName": "VoucherType",
+            "type": "number"
+        },
+        {
+            "name": "expirationDate",
+            "baseName": "ExpirationDate",
+            "type": "Date"
+        },
+        {
+            "name": "startDate",
+            "baseName": "StartDate",
+            "type": "Date"
+        },
+        {
+            "name": "title",
+            "baseName": "Title",
             "type": "string"
         },
         {
-            "name": "iso2",
-            "baseName": "iso2",
+            "name": "isRedeemed",
+            "baseName": "IsRedeemed",
+            "type": "boolean"
+        },
+        {
+            "name": "displayValue",
+            "baseName": "DisplayValue",
             "type": "string"
         },
         {
-            "name": "name",
-            "baseName": "name",
+            "name": "offerAmountCentsDecimal",
+            "baseName": "OfferAmountCents_decimal",
+            "type": "string"
+        },
+        {
+            "name": "offerAmountCents",
+            "baseName": "OfferAmountCents",
+            "type": "number"
+        },
+        {
+            "name": "memberID",
+            "baseName": "MemberID",
+            "type": "string"
+        },
+        {
+            "name": "cellPhoneNumber",
+            "baseName": "CellPhoneNumber",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "baseName": "id",
             "type": "string"
         }    ];
 

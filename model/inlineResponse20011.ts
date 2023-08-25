@@ -13,51 +13,33 @@
 import { RequestFile } from './models';
 
 export class InlineResponse20011 {
-    'entertainment': Array<any>;
-    'grocery': Array<any>;
-    'service': Array<any>;
-    'casino': Array<any>;
-    'hospitality': Array<any>;
-    'food': Array<any>;
-    'retail': Array<any>;
+    'currencyAbbreviation': string;
+    'phoneCode': string;
+    'iso2': string;
+    'name': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "entertainment",
-            "baseName": "entertainment",
-            "type": "Array<any>"
+            "name": "currencyAbbreviation",
+            "baseName": "currency_abbreviation",
+            "type": "string"
         },
         {
-            "name": "grocery",
-            "baseName": "grocery",
-            "type": "Array<any>"
+            "name": "phoneCode",
+            "baseName": "phone_code",
+            "type": "string"
         },
         {
-            "name": "service",
-            "baseName": "service",
-            "type": "Array<any>"
+            "name": "iso2",
+            "baseName": "iso2",
+            "type": "string"
         },
         {
-            "name": "casino",
-            "baseName": "casino",
-            "type": "Array<any>"
-        },
-        {
-            "name": "hospitality",
-            "baseName": "hospitality",
-            "type": "Array<any>"
-        },
-        {
-            "name": "food",
-            "baseName": "food",
-            "type": "Array<any>"
-        },
-        {
-            "name": "retail",
-            "baseName": "retail",
-            "type": "Array<any>"
+            "name": "name",
+            "baseName": "name",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {

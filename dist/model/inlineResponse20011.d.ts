@@ -1,11 +1,8 @@
 export declare class InlineResponse20011 {
-    'entertainment': Array<any>;
-    'grocery': Array<any>;
-    'service': Array<any>;
-    'casino': Array<any>;
-    'hospitality': Array<any>;
-    'food': Array<any>;
-    'retail': Array<any>;
+    'currencyAbbreviation': string;
+    'phoneCode': string;
+    'iso2': string;
+    'name': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

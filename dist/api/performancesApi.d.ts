@@ -1,6 +1,8 @@
 /// <reference types="node" />
 import http from 'http';
+import { InlineResponse2005 } from '../model/inlineResponse2005';
 import { Performance } from '../model/performance';
+import { Ticket } from '../model/ticket';
 import { WTPerformanceCreateParams } from '../model/wTPerformanceCreateParams';
 import { WTPerformanceUpdateParams } from '../model/wTPerformanceUpdateParams';
 import { Authentication, Interceptor } from '../model/models';
@@ -42,6 +44,14 @@ export declare class PerformancesApi {
         response: http.IncomingMessage;
         body: Performance;
     }>;
+    fetchAllPerformanceTickets(id: any, isArchiveIncluded?: boolean, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Array<Ticket>;
+    }>;
     fetchAllPerformances(isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
@@ -50,7 +60,31 @@ export declare class PerformancesApi {
         response: http.IncomingMessage;
         body: any;
     }>;
+    fetchPerformance(id: any, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Performance;
+    }>;
+    fetchPerformanceTicketsPage(performanceID: any, pageNum: number, pageSize: number, isArchiveIncluded?: boolean, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: InlineResponse2005;
+    }>;
     restorePerformance(id: any, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Performance;
+    }>;
+    saveTicketDesign(id: any, paymentDesignID: any, options?: {
         headers: {
             [name: string]: string;
         };

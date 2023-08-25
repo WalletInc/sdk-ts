@@ -15,7 +15,7 @@ import localVarRequest from 'request';
 import http from 'http';
 
 /* tslint:disable:no-unused-locals */
-import { InlineResponse20010 } from '../model/inlineResponse20010';
+import { InlineResponse20011 } from '../model/inlineResponse20011';
 import { InternalServerError } from '../model/internalServerError';
 
 import { ObjectSerializer, Authentication, VoidAuth, Interceptor } from '../model/models';
@@ -94,7 +94,7 @@ export class CountriesApi {
      * 
      * @summary Fetch all countries
      */
-    public async fetchAllCountries (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<InlineResponse20010>;  }> {
+    public async fetchAllCountries (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<InlineResponse20011>;  }> {
         const localVarPath = this.basePath + '/system/countries/all';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -136,13 +136,13 @@ export class CountriesApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: Array<InlineResponse20010>;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: Array<InlineResponse20011>;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "Array<InlineResponse20010>");
+                            body = ObjectSerializer.deserialize(body, "Array<InlineResponse20011>");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

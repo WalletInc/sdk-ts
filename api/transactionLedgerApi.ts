@@ -18,7 +18,7 @@ import http from 'http';
 import { ApplicableTerminals } from '../model/applicableTerminals';
 import { AuthError } from '../model/authError';
 import { FalsumError } from '../model/falsumError';
-import { InlineResponse2005 } from '../model/inlineResponse2005';
+import { InlineResponse2006 } from '../model/inlineResponse2006';
 import { InternalServerError } from '../model/internalServerError';
 
 import { ObjectSerializer, Authentication, VoidAuth, Interceptor } from '../model/models';
@@ -102,7 +102,7 @@ export class TransactionLedgerApi {
      * @param pageSize 
      * @param registerType 
      */
-    public async fetchAllLedgerTransactions (startDateTime: Date, endDateTime: Date, pageNum: number, pageSize: number, registerType?: ApplicableTerminals, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2005;  }> {
+    public async fetchAllLedgerTransactions (startDateTime: Date, endDateTime: Date, pageNum: number, pageSize: number, registerType?: ApplicableTerminals, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2006;  }> {
         const localVarPath = this.basePath + '/v2/pos/ledger/transactions/all';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -184,13 +184,13 @@ export class TransactionLedgerApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2005;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2006;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2005");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2006");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

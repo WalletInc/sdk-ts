@@ -112,7 +112,7 @@ class CountriesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "Array<InlineResponse20010>");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<InlineResponse20011>");
                                 resolve({ response: response, body: body });
                             }
                             else {

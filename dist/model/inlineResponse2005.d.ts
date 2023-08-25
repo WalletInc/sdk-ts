@@ -1,8 +1,7 @@
-import { LedgerEntry } from './ledgerEntry';
+import { WTTicket } from './wTTicket';
 export declare class InlineResponse2005 {
-    'entries': Array<LedgerEntry>;
-    'pageCount': number;
-    'totalRecords': number;
+    'data': Array<WTTicket>;
+    'totalRows': number;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

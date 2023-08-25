@@ -1,8 +1,8 @@
-import { OutboundSMS } from './outboundSMS';
+import { LedgerEntry } from './ledgerEntry';
 export declare class InlineResponse2006 {
-    'total': number;
-    'length': number;
-    'results': Array<OutboundSMS>;
+    'entries': Array<LedgerEntry>;
+    'pageCount': number;
+    'totalRecords': number;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
