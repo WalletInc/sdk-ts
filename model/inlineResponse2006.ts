@@ -11,30 +11,30 @@
  */
 
 import { RequestFile } from './models';
-import { OutboundSMS } from './outboundSMS';
+import { LedgerEntry } from './ledgerEntry';
 
 export class InlineResponse2006 {
-    'total': number;
-    'length': number;
-    'results': Array<OutboundSMS>;
+    'entries': Array<LedgerEntry>;
+    'pageCount': number;
+    'totalRecords': number;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "total",
-            "baseName": "total",
+            "name": "entries",
+            "baseName": "entries",
+            "type": "Array<LedgerEntry>"
+        },
+        {
+            "name": "pageCount",
+            "baseName": "pageCount",
             "type": "number"
         },
         {
-            "name": "length",
-            "baseName": "length",
+            "name": "totalRecords",
+            "baseName": "totalRecords",
             "type": "number"
-        },
-        {
-            "name": "results",
-            "baseName": "results",
-            "type": "Array<OutboundSMS>"
         }    ];
 
     static getAttributeTypeMap() {

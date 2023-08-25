@@ -1,18 +1,8 @@
-import { PaymentDesign } from './paymentDesign';
+import { ImportedListRecipient } from './importedListRecipient';
 export declare class InlineResponse2009 {
-    'paymentDesign': PaymentDesign;
-    'valueType': string | null;
-    'voucherType': number;
-    'expirationDate': Date;
-    'startDate': Date;
-    'title': string;
-    'isRedeemed': boolean;
-    'displayValue': string;
-    'offerAmountCentsDecimal': string;
-    'offerAmountCents': number;
-    'memberID': string;
-    'cellPhoneNumber': string;
-    'id': string;
+    'total': number;
+    'length': number;
+    'results': Array<ImportedListRecipient>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

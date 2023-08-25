@@ -11,29 +11,23 @@
  */
 
 import { RequestFile } from './models';
-import { LedgerEntry } from './ledgerEntry';
+import { WTTicket } from './wTTicket';
 
 export class InlineResponse2005 {
-    'entries': Array<LedgerEntry>;
-    'pageCount': number;
-    'totalRecords': number;
+    'data': Array<WTTicket>;
+    'totalRows': number;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "entries",
-            "baseName": "entries",
-            "type": "Array<LedgerEntry>"
+            "name": "data",
+            "baseName": "data",
+            "type": "Array<WTTicket>"
         },
         {
-            "name": "pageCount",
-            "baseName": "pageCount",
-            "type": "number"
-        },
-        {
-            "name": "totalRecords",
-            "baseName": "totalRecords",
+            "name": "totalRows",
+            "baseName": "totalRows",
             "type": "number"
         }    ];
 

@@ -1,8 +1,18 @@
+import { PaymentDesign } from './paymentDesign';
 export declare class InlineResponse20010 {
-    'currencyAbbreviation': string;
-    'phoneCode': string;
-    'iso2': string;
-    'name': string;
+    'paymentDesign': PaymentDesign;
+    'valueType': string | null;
+    'voucherType': number;
+    'expirationDate': Date;
+    'startDate': Date;
+    'title': string;
+    'isRedeemed': boolean;
+    'displayValue': string;
+    'offerAmountCentsDecimal': string;
+    'offerAmountCents': number;
+    'memberID': string;
+    'cellPhoneNumber': string;
+    'id': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

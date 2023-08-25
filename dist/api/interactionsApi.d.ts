@@ -4,9 +4,12 @@ import { AdvertisementCreditScan } from '../model/advertisementCreditScan';
 import { BrowserDetails } from '../model/browserDetails';
 import { DynamicVoucher } from '../model/dynamicVoucher';
 import { EmailSubscriber } from '../model/emailSubscriber';
-import { InlineResponse2009 } from '../model/inlineResponse2009';
+import { InlineObject2 } from '../model/inlineObject2';
+import { InlineObject3 } from '../model/inlineObject3';
+import { InlineResponse20010 } from '../model/inlineResponse20010';
 import { Member } from '../model/member';
 import { StaticVoucher } from '../model/staticVoucher';
+import { Ticket } from '../model/ticket';
 import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
 import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
 import { WalletConfiguration } from '../model/walletConfiguration';
@@ -33,6 +36,14 @@ export declare class InteractionsApi {
     setDefaultAuthentication(auth: Authentication): void;
     setApiKey(key: InteractionsApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
+    claimTicket(id: any, inlineObject2: InlineObject2, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Ticket;
+    }>;
     createAdvertisementCreditScan(adCreditID: any, options?: {
         headers: {
             [name: string]: string;
@@ -71,7 +82,15 @@ export declare class InteractionsApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<InlineResponse2009>;
+        body: Array<InlineResponse20010>;
+    }>;
+    fetchCustomerTicketsWithToken(inlineObject3: InlineObject3, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Array<Ticket>;
     }>;
     fetchDynamicVoucherWithVoucherID(voucherID: any, options?: {
         headers: {

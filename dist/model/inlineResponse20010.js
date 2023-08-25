@@ -10,23 +10,68 @@ exports.InlineResponse20010 = InlineResponse20010;
 InlineResponse20010.discriminator = undefined;
 InlineResponse20010.attributeTypeMap = [
     {
-        "name": "currencyAbbreviation",
-        "baseName": "currency_abbreviation",
+        "name": "paymentDesign",
+        "baseName": "PaymentDesign",
+        "type": "PaymentDesign"
+    },
+    {
+        "name": "valueType",
+        "baseName": "ValueType",
         "type": "string"
     },
     {
-        "name": "phoneCode",
-        "baseName": "phone_code",
+        "name": "voucherType",
+        "baseName": "VoucherType",
+        "type": "number"
+    },
+    {
+        "name": "expirationDate",
+        "baseName": "ExpirationDate",
+        "type": "Date"
+    },
+    {
+        "name": "startDate",
+        "baseName": "StartDate",
+        "type": "Date"
+    },
+    {
+        "name": "title",
+        "baseName": "Title",
         "type": "string"
     },
     {
-        "name": "iso2",
-        "baseName": "iso2",
+        "name": "isRedeemed",
+        "baseName": "IsRedeemed",
+        "type": "boolean"
+    },
+    {
+        "name": "displayValue",
+        "baseName": "DisplayValue",
         "type": "string"
     },
     {
-        "name": "name",
-        "baseName": "name",
+        "name": "offerAmountCentsDecimal",
+        "baseName": "OfferAmountCents_decimal",
+        "type": "string"
+    },
+    {
+        "name": "offerAmountCents",
+        "baseName": "OfferAmountCents",
+        "type": "number"
+    },
+    {
+        "name": "memberID",
+        "baseName": "MemberID",
+        "type": "string"
+    },
+    {
+        "name": "cellPhoneNumber",
+        "baseName": "CellPhoneNumber",
+        "type": "string"
+    },
+    {
+        "name": "id",
+        "baseName": "id",
         "type": "string"
     }
 ];

@@ -11,12 +11,12 @@
  */
 
 import { RequestFile } from './models';
-import { OptInListSubscriber } from './optInListSubscriber';
+import { OutboundSMS } from './outboundSMS';
 
 export class InlineResponse2007 {
     'total': number;
     'length': number;
-    'results': Array<OptInListSubscriber>;
+    'results': Array<OutboundSMS>;
 
     static discriminator: string | undefined = undefined;
 
@@ -34,7 +34,7 @@ export class InlineResponse2007 {
         {
             "name": "results",
             "baseName": "results",
-            "type": "Array<OptInListSubscriber>"
+            "type": "Array<OutboundSMS>"
         }    ];
 
     static getAttributeTypeMap() {

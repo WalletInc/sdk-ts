@@ -53,10 +53,13 @@ export * from './importedListRecipient';
 export * from './inboundSMS';
 export * from './inlineObject';
 export * from './inlineObject1';
+export * from './inlineObject2';
+export * from './inlineObject3';
 export * from './inlineResponse200';
 export * from './inlineResponse2001';
 export * from './inlineResponse20010';
 export * from './inlineResponse20011';
+export * from './inlineResponse20012';
 export * from './inlineResponse2002';
 export * from './inlineResponse2003';
 export * from './inlineResponse2004';
@@ -197,6 +200,7 @@ export * from './subscriptionFeature';
 export * from './subscriptionPlan';
 export * from './subscriptionProduct';
 export * from './tcpa';
+export * from './ticket';
 export * from './updateStaticVoucherCampaignWithVoucher';
 export * from './vSCampaignGeneratedMessage';
 export * from './vSCampaignGeneratedMessagePagination';
@@ -325,6 +329,9 @@ export * from './wTStaticVoucherUpdateParams';
 export * from './wTSystemApprovePhoneNumber';
 export * from './wTSystemRoleCreate';
 export * from './wTTCPAOpt';
+export * from './wTTicket';
+export * from './wTTicketCreateParams';
+export * from './wTTicketUpdateParams';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
 export * from './wTVideoCreateParams';
@@ -407,10 +414,13 @@ import { ImportedListRecipient } from './importedListRecipient';
 import { InboundSMS } from './inboundSMS';
 import { InlineObject } from './inlineObject';
 import { InlineObject1 } from './inlineObject1';
+import { InlineObject2 } from './inlineObject2';
+import { InlineObject3 } from './inlineObject3';
 import { InlineResponse200 } from './inlineResponse200';
 import { InlineResponse2001 } from './inlineResponse2001';
 import { InlineResponse20010 } from './inlineResponse20010';
 import { InlineResponse20011 } from './inlineResponse20011';
+import { InlineResponse20012 } from './inlineResponse20012';
 import { InlineResponse2002 } from './inlineResponse2002';
 import { InlineResponse2003 } from './inlineResponse2003';
 import { InlineResponse2004 } from './inlineResponse2004';
@@ -551,6 +561,7 @@ import { SubscriptionFeature } from './subscriptionFeature';
 import { SubscriptionPlan } from './subscriptionPlan';
 import { SubscriptionProduct } from './subscriptionProduct';
 import { Tcpa } from './tcpa';
+import { Ticket } from './ticket';
 import { UpdateStaticVoucherCampaignWithVoucher } from './updateStaticVoucherCampaignWithVoucher';
 import { VSCampaignGeneratedMessage } from './vSCampaignGeneratedMessage';
 import { VSCampaignGeneratedMessagePagination } from './vSCampaignGeneratedMessagePagination';
@@ -679,6 +690,9 @@ import { WTStaticVoucherUpdateParams } from './wTStaticVoucherUpdateParams';
 import { WTSystemApprovePhoneNumber } from './wTSystemApprovePhoneNumber';
 import { WTSystemRoleCreate } from './wTSystemRoleCreate';
 import { WTTCPAOpt } from './wTTCPAOpt';
+import { WTTicket } from './wTTicket';
+import { WTTicketCreateParams } from './wTTicketCreateParams';
+import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
 import { WTVideoCreateParams } from './wTVideoCreateParams';
@@ -789,10 +803,13 @@ let typeMap: {[index: string]: any} = {
     "InboundSMS": InboundSMS,
     "InlineObject": InlineObject,
     "InlineObject1": InlineObject1,
+    "InlineObject2": InlineObject2,
+    "InlineObject3": InlineObject3,
     "InlineResponse200": InlineResponse200,
     "InlineResponse2001": InlineResponse2001,
     "InlineResponse20010": InlineResponse20010,
     "InlineResponse20011": InlineResponse20011,
+    "InlineResponse20012": InlineResponse20012,
     "InlineResponse2002": InlineResponse2002,
     "InlineResponse2003": InlineResponse2003,
     "InlineResponse2004": InlineResponse2004,
@@ -910,6 +927,7 @@ let typeMap: {[index: string]: any} = {
     "SubscriptionPlan": SubscriptionPlan,
     "SubscriptionProduct": SubscriptionProduct,
     "Tcpa": Tcpa,
+    "Ticket": Ticket,
     "UpdateStaticVoucherCampaignWithVoucher": UpdateStaticVoucherCampaignWithVoucher,
     "VSCampaignGeneratedMessage": VSCampaignGeneratedMessage,
     "VSCampaignGeneratedMessagePagination": VSCampaignGeneratedMessagePagination,
@@ -1038,6 +1056,9 @@ let typeMap: {[index: string]: any} = {
     "WTSystemApprovePhoneNumber": WTSystemApprovePhoneNumber,
     "WTSystemRoleCreate": WTSystemRoleCreate,
     "WTTCPAOpt": WTTCPAOpt,
+    "WTTicket": WTTicket,
+    "WTTicketCreateParams": WTTicketCreateParams,
+    "WTTicketUpdateParams": WTTicketUpdateParams,
     "WTTwilioRequestAuthyCode": WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,
     "WTVideoCreateParams": WTVideoCreateParams,

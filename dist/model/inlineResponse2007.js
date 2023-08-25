@@ -22,7 +22,7 @@ InlineResponse2007.attributeTypeMap = [
     {
         "name": "results",
         "baseName": "results",
-        "type": "Array<OptInListSubscriber>"
+        "type": "Array<OutboundSMS>"
     }
 ];
 //# sourceMappingURL=inlineResponse2007.js.map

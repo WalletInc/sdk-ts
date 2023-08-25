@@ -10,18 +10,13 @@ exports.InlineResponse2005 = InlineResponse2005;
 InlineResponse2005.discriminator = undefined;
 InlineResponse2005.attributeTypeMap = [
     {
-        "name": "entries",
-        "baseName": "entries",
-        "type": "Array<LedgerEntry>"
+        "name": "data",
+        "baseName": "data",
+        "type": "Array<WTTicket>"
     },
     {
-        "name": "pageCount",
-        "baseName": "pageCount",
-        "type": "number"
-    },
-    {
-        "name": "totalRecords",
-        "baseName": "totalRecords",
+        "name": "totalRows",
+        "baseName": "totalRows",
         "type": "number"
     }
 ];
