@@ -236,7 +236,7 @@ export class TicketApi {
     }
     /**
      * 
-     * @summary Fetch static voucher
+     * @summary Fetch ticket
      * @param id 
      */
     public async fetchTicket (id: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTTicket;  }> {
