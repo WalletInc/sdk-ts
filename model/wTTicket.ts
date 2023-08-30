@@ -24,10 +24,14 @@ export class WTTicket {
     'isActive': boolean;
     'merchantID': string;
     'isClaimed'?: boolean;
-    'isRedeemed'?: boolean;
     'dateTimeClaimed'?: Date;
-    'dateTimeRedeemed'?: Date;
     'claimedByPhoneNumber'?: string;
+    'redeemedSource'?: string;
+    'redeemedTransactionID'?: string;
+    'transactionType'?: string;
+    'registerID'?: string;
+    'isRedeemed'?: boolean;
+    'dateTimeRedeemed'?: Date;
 
     static discriminator: string | undefined = undefined;
 
@@ -88,24 +92,44 @@ export class WTTicket {
             "type": "boolean"
         },
         {
-            "name": "isRedeemed",
-            "baseName": "isRedeemed",
-            "type": "boolean"
-        },
-        {
             "name": "dateTimeClaimed",
             "baseName": "dateTimeClaimed",
-            "type": "Date"
-        },
-        {
-            "name": "dateTimeRedeemed",
-            "baseName": "dateTimeRedeemed",
             "type": "Date"
         },
         {
             "name": "claimedByPhoneNumber",
             "baseName": "claimedByPhoneNumber",
             "type": "string"
+        },
+        {
+            "name": "redeemedSource",
+            "baseName": "redeemedSource",
+            "type": "string"
+        },
+        {
+            "name": "redeemedTransactionID",
+            "baseName": "redeemedTransactionID",
+            "type": "string"
+        },
+        {
+            "name": "transactionType",
+            "baseName": "transactionType",
+            "type": "string"
+        },
+        {
+            "name": "registerID",
+            "baseName": "registerID",
+            "type": "string"
+        },
+        {
+            "name": "isRedeemed",
+            "baseName": "isRedeemed",
+            "type": "boolean"
+        },
+        {
+            "name": "dateTimeRedeemed",
+            "baseName": "dateTimeRedeemed",
+            "type": "Date"
         }    ];
 
     static getAttributeTypeMap() {
