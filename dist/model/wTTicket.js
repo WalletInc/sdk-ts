@@ -65,24 +65,44 @@ WTTicket.attributeTypeMap = [
         "type": "boolean"
     },
     {
-        "name": "isRedeemed",
-        "baseName": "isRedeemed",
-        "type": "boolean"
-    },
-    {
         "name": "dateTimeClaimed",
         "baseName": "dateTimeClaimed",
-        "type": "Date"
-    },
-    {
-        "name": "dateTimeRedeemed",
-        "baseName": "dateTimeRedeemed",
         "type": "Date"
     },
     {
         "name": "claimedByPhoneNumber",
         "baseName": "claimedByPhoneNumber",
         "type": "string"
+    },
+    {
+        "name": "redeemedSource",
+        "baseName": "redeemedSource",
+        "type": "string"
+    },
+    {
+        "name": "redeemedTransactionID",
+        "baseName": "redeemedTransactionID",
+        "type": "string"
+    },
+    {
+        "name": "transactionType",
+        "baseName": "transactionType",
+        "type": "string"
+    },
+    {
+        "name": "registerID",
+        "baseName": "registerID",
+        "type": "string"
+    },
+    {
+        "name": "isRedeemed",
+        "baseName": "isRedeemed",
+        "type": "boolean"
+    },
+    {
+        "name": "dateTimeRedeemed",
+        "baseName": "dateTimeRedeemed",
+        "type": "Date"
     }
 ];
 //# sourceMappingURL=wTTicket.js.map

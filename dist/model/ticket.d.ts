@@ -10,10 +10,14 @@ export declare class Ticket {
     'isActive': boolean;
     'merchantID': string;
     'isClaimed'?: boolean;
-    'isRedeemed'?: boolean;
     'dateTimeClaimed'?: Date;
-    'dateTimeRedeemed'?: Date;
     'claimedByPhoneNumber'?: string;
+    'redeemedSource'?: string;
+    'redeemedTransactionID'?: string;
+    'transactionType'?: string;
+    'registerID'?: string;
+    'isRedeemed'?: boolean;
+    'dateTimeRedeemed'?: Date;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
