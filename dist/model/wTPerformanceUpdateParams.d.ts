@@ -8,6 +8,8 @@ export declare class WTPerformanceUpdateParams {
     'isSoldOut': boolean;
     'mediaURL'?: string;
     'paymentDesignID'?: string;
+    'maxCompTickets'?: number;
+    'ticketExpirationDateTime'?: Date;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

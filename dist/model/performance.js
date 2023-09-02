@@ -55,6 +55,16 @@ Performance.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "maxCompTickets",
+        "baseName": "maxCompTickets",
+        "type": "number"
+    },
+    {
+        "name": "ticketExpirationDateTime",
+        "baseName": "ticketExpirationDateTime",
+        "type": "Date"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"

@@ -1,6 +1,5 @@
 export declare class InlineObject3 {
-    'phoneVerificationToken': string;
-    'merchantID': string;
+    'claimedByPhoneNumber': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

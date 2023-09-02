@@ -10,8 +10,8 @@ exports.InlineObject2 = InlineObject2;
 InlineObject2.discriminator = undefined;
 InlineObject2.attributeTypeMap = [
     {
-        "name": "claimedByPhoneNumber",
-        "baseName": "claimedByPhoneNumber",
+        "name": "paymentDesignID",
+        "baseName": "paymentDesignID",
         "type": "string"
     }
 ];

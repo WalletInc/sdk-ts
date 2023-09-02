@@ -1,5 +1,6 @@
-export declare class InlineObject2 {
-    'paymentDesignID': string;
+export declare class InlineObject4 {
+    'phoneVerificationToken': string;
+    'merchantID': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
