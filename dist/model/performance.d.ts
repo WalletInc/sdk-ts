@@ -8,6 +8,8 @@ export declare class Performance {
     'isSoldOut': boolean;
     'mediaURL'?: string;
     'paymentDesignID'?: string;
+    'maxCompTickets'?: number;
+    'ticketExpirationDateTime'?: Date;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;

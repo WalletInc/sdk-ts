@@ -10,6 +10,16 @@ exports.InlineObject1 = InlineObject1;
 InlineObject1.discriminator = undefined;
 InlineObject1.attributeTypeMap = [
     {
+        "name": "ticketExpirationDateTime",
+        "baseName": "ticketExpirationDateTime",
+        "type": "Date"
+    },
+    {
+        "name": "maxCompTickets",
+        "baseName": "maxCompTickets",
+        "type": "number"
+    },
+    {
         "name": "paymentDesignID",
         "baseName": "paymentDesignID",
         "type": "string"

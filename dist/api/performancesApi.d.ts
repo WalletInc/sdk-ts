@@ -1,5 +1,7 @@
 /// <reference types="node" />
 import http from 'http';
+import { InlineObject1 } from '../model/inlineObject1';
+import { InlineResponse2002 } from '../model/inlineResponse2002';
 import { InlineResponse2005 } from '../model/inlineResponse2005';
 import { Performance } from '../model/performance';
 import { Ticket } from '../model/ticket';
@@ -35,6 +37,22 @@ export declare class PerformancesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Performance;
+    }>;
+    countClaimedComps(id: any, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: InlineResponse2002;
+    }>;
+    countRedeemedComps(id: any, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: InlineResponse2002;
     }>;
     createPerformance(wTPerformanceCreateParams: WTPerformanceCreateParams, options?: {
         headers: {
@@ -84,7 +102,7 @@ export declare class PerformancesApi {
         response: http.IncomingMessage;
         body: Performance;
     }>;
-    saveTicketDesign(id: any, paymentDesignID: any, options?: {
+    saveTicketSettings(id: any, inlineObject1: InlineObject1, options?: {
         headers: {
             [name: string]: string;
         };

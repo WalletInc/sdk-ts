@@ -28,6 +28,8 @@ export class WTPerformanceCreateParams {
     'isSoldOut': boolean;
     'mediaURL'?: string;
     'paymentDesignID'?: string;
+    'maxCompTickets'?: number;
+    'ticketExpirationDateTime'?: Date;
 
     static discriminator: string | undefined = undefined;
 
@@ -76,6 +78,16 @@ export class WTPerformanceCreateParams {
             "name": "paymentDesignID",
             "baseName": "paymentDesignID",
             "type": "string"
+        },
+        {
+            "name": "maxCompTickets",
+            "baseName": "maxCompTickets",
+            "type": "number"
+        },
+        {
+            "name": "ticketExpirationDateTime",
+            "baseName": "ticketExpirationDateTime",
+            "type": "Date"
         }    ];
 
     static getAttributeTypeMap() {
