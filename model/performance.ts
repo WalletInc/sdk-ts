@@ -28,6 +28,8 @@ export class Performance {
     'isSoldOut': boolean;
     'mediaURL'?: string;
     'paymentDesignID'?: string;
+    'maxCompTickets'?: number;
+    'ticketExpirationDateTime'?: Date;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;
@@ -81,6 +83,16 @@ export class Performance {
             "name": "paymentDesignID",
             "baseName": "paymentDesignID",
             "type": "string"
+        },
+        {
+            "name": "maxCompTickets",
+            "baseName": "maxCompTickets",
+            "type": "number"
+        },
+        {
+            "name": "ticketExpirationDateTime",
+            "baseName": "ticketExpirationDateTime",
+            "type": "Date"
         },
         {
             "name": "id",

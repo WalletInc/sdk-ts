@@ -67,7 +67,7 @@ class InteractionsApi {
     addInterceptor(interceptor) {
         this.interceptors.push(interceptor);
     }
-    claimTicket(id, inlineObject2, options = { headers: {} }) {
+    claimTicket(id, inlineObject3, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/wallet/ticket/claim/{id}'
                 .replace('{' + 'id' + '}', encodeURIComponent(String(id)));
@@ -84,8 +84,8 @@ class InteractionsApi {
             if (id === null || id === undefined) {
                 throw new Error('Required parameter id was null or undefined when calling claimTicket.');
             }
-            if (inlineObject2 === null || inlineObject2 === undefined) {
-                throw new Error('Required parameter inlineObject2 was null or undefined when calling claimTicket.');
+            if (inlineObject3 === null || inlineObject3 === undefined) {
+                throw new Error('Required parameter inlineObject3 was null or undefined when calling claimTicket.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -96,7 +96,7 @@ class InteractionsApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(inlineObject2, "InlineObject2")
+                body: models_1.ObjectSerializer.serialize(inlineObject3, "InlineObject3")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -439,7 +439,7 @@ class InteractionsApi {
             });
         });
     }
-    fetchCustomerTicketsWithToken(inlineObject3, options = { headers: {} }) {
+    fetchCustomerTicketsWithToken(inlineObject4, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/wallet/tickets/fetchCustomerTicketsWithToken';
             let localVarQueryParameters = {};
@@ -452,8 +452,8 @@ class InteractionsApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (inlineObject3 === null || inlineObject3 === undefined) {
-                throw new Error('Required parameter inlineObject3 was null or undefined when calling fetchCustomerTicketsWithToken.');
+            if (inlineObject4 === null || inlineObject4 === undefined) {
+                throw new Error('Required parameter inlineObject4 was null or undefined when calling fetchCustomerTicketsWithToken.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -464,7 +464,7 @@ class InteractionsApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(inlineObject3, "InlineObject3")
+                body: models_1.ObjectSerializer.serialize(inlineObject4, "InlineObject4")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));

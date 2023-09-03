@@ -12,20 +12,26 @@
 
 import { RequestFile } from './models';
 
-export class InlineObject2 {
-    'paymentDesignID': string;
+export class InlineObject4 {
+    'phoneVerificationToken': string;
+    'merchantID': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "paymentDesignID",
-            "baseName": "paymentDesignID",
+            "name": "phoneVerificationToken",
+            "baseName": "phoneVerificationToken",
+            "type": "string"
+        },
+        {
+            "name": "merchantID",
+            "baseName": "merchantID",
             "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return InlineObject2.attributeTypeMap;
+        return InlineObject4.attributeTypeMap;
     }
 }
 

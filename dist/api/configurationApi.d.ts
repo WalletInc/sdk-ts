@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import http from 'http';
-import { InlineObject1 } from '../model/inlineObject1';
+import { InlineObject2 } from '../model/inlineObject2';
 import { WTWalletConfigurationSaveWalletRecord } from '../model/wTWalletConfigurationSaveWalletRecord';
 import { WalletConfiguration } from '../model/walletConfiguration';
 import { Authentication, Interceptor } from '../model/models';
@@ -34,7 +34,7 @@ export declare class ConfigurationApi {
         response: http.IncomingMessage;
         body: string;
     }>;
-    saveMerchantCreditPaymentDesign(inlineObject1: InlineObject1, options?: {
+    saveMerchantCreditPaymentDesign(inlineObject2: InlineObject2, options?: {
         headers: {
             [name: string]: string;
         };

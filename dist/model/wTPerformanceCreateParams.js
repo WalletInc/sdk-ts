@@ -53,6 +53,16 @@ WTPerformanceCreateParams.attributeTypeMap = [
         "name": "paymentDesignID",
         "baseName": "paymentDesignID",
         "type": "string"
+    },
+    {
+        "name": "maxCompTickets",
+        "baseName": "maxCompTickets",
+        "type": "number"
+    },
+    {
+        "name": "ticketExpirationDateTime",
+        "baseName": "ticketExpirationDateTime",
+        "type": "Date"
     }
 ];
 //# sourceMappingURL=wTPerformanceCreateParams.js.map

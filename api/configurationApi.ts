@@ -17,7 +17,7 @@ import http from 'http';
 /* tslint:disable:no-unused-locals */
 import { AuthError } from '../model/authError';
 import { FalsumError } from '../model/falsumError';
-import { InlineObject1 } from '../model/inlineObject1';
+import { InlineObject2 } from '../model/inlineObject2';
 import { InternalServerError } from '../model/internalServerError';
 import { WTWalletConfigurationSaveWalletRecord } from '../model/wTWalletConfigurationSaveWalletRecord';
 import { WalletConfiguration } from '../model/walletConfiguration';
@@ -158,9 +158,9 @@ export class ConfigurationApi {
     /**
      * 
      * @summary Update wallet record
-     * @param inlineObject1 
+     * @param inlineObject2 
      */
-    public async saveMerchantCreditPaymentDesign (inlineObject1: InlineObject1, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
+    public async saveMerchantCreditPaymentDesign (inlineObject2: InlineObject2, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
         const localVarPath = this.basePath + '/v2/wallet/merchantCredit/paymentDesign';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -173,9 +173,9 @@ export class ConfigurationApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'inlineObject1' is not null or undefined
-        if (inlineObject1 === null || inlineObject1 === undefined) {
-            throw new Error('Required parameter inlineObject1 was null or undefined when calling saveMerchantCreditPaymentDesign.');
+        // verify required parameter 'inlineObject2' is not null or undefined
+        if (inlineObject2 === null || inlineObject2 === undefined) {
+            throw new Error('Required parameter inlineObject2 was null or undefined when calling saveMerchantCreditPaymentDesign.');
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -189,7 +189,7 @@ export class ConfigurationApi {
             uri: localVarPath,
             useQuerystring: this._useQuerystring,
             json: true,
-            body: ObjectSerializer.serialize(inlineObject1, "InlineObject1")
+            body: ObjectSerializer.serialize(inlineObject2, "InlineObject2")
         };
 
         let authenticationPromise = Promise.resolve();

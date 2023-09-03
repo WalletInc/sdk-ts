@@ -1,5 +1,7 @@
 export declare class InlineObject1 {
-    'paymentDesignID': string;
+    'ticketExpirationDateTime': Date;
+    'maxCompTickets': number;
+    'paymentDesignID': string | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -13,20 +13,14 @@
 import { RequestFile } from './models';
 
 export class InlineObject3 {
-    'phoneVerificationToken': string;
-    'merchantID': string;
+    'claimedByPhoneNumber': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "phoneVerificationToken",
-            "baseName": "phoneVerificationToken",
-            "type": "string"
-        },
-        {
-            "name": "merchantID",
-            "baseName": "merchantID",
+            "name": "claimedByPhoneNumber",
+            "baseName": "claimedByPhoneNumber",
             "type": "string"
         }    ];
 
