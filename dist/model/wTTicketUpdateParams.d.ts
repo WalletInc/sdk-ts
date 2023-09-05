@@ -3,6 +3,7 @@ export declare class WTTicketUpdateParams {
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;
+    'quantity'?: number;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -3,6 +3,7 @@ export declare class WTTicketCreateParams {
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;
+    'quantity'?: number;
     'performanceID': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

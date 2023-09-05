@@ -17,6 +17,10 @@ export class WTTicketCreateParams {
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;
+    /**
+    * The number of tickets allocated to the recipient.
+    */
+    'quantity'?: number;
     'performanceID': string;
 
     static discriminator: string | undefined = undefined;
@@ -41,6 +45,11 @@ export class WTTicketCreateParams {
             "name": "isComp",
             "baseName": "isComp",
             "type": "boolean"
+        },
+        {
+            "name": "quantity",
+            "baseName": "quantity",
+            "type": "number"
         },
         {
             "name": "performanceID",
