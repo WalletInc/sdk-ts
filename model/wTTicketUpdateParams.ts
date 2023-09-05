@@ -17,6 +17,10 @@ export class WTTicketUpdateParams {
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;
+    /**
+    * The number of tickets allocated to the recipient.
+    */
+    'quantity'?: number;
 
     static discriminator: string | undefined = undefined;
 
@@ -40,6 +44,11 @@ export class WTTicketUpdateParams {
             "name": "isComp",
             "baseName": "isComp",
             "type": "boolean"
+        },
+        {
+            "name": "quantity",
+            "baseName": "quantity",
+            "type": "number"
         }    ];
 
     static getAttributeTypeMap() {
