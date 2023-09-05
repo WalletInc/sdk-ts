@@ -28,6 +28,11 @@ WTTicketUpdateParams.attributeTypeMap = [
         "name": "isComp",
         "baseName": "isComp",
         "type": "boolean"
+    },
+    {
+        "name": "quantity",
+        "baseName": "quantity",
+        "type": "number"
     }
 ];
 //# sourceMappingURL=wTTicketUpdateParams.js.map

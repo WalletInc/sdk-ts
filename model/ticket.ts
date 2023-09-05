@@ -17,6 +17,10 @@ export class Ticket {
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;
+    /**
+    * The number of tickets allocated to the recipient.
+    */
+    'quantity'?: number;
     'performanceID': string;
     'id': string | null;
     'createdAt': Date;
@@ -55,6 +59,11 @@ export class Ticket {
             "name": "isComp",
             "baseName": "isComp",
             "type": "boolean"
+        },
+        {
+            "name": "quantity",
+            "baseName": "quantity",
+            "type": "number"
         },
         {
             "name": "performanceID",

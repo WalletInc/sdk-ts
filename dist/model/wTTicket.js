@@ -30,6 +30,11 @@ WTTicket.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "quantity",
+        "baseName": "quantity",
+        "type": "number"
+    },
+    {
         "name": "performanceID",
         "baseName": "performanceID",
         "type": "string"

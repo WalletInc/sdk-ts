@@ -3,6 +3,7 @@ export declare class WTTicket {
     'recipientEmailAddress'?: string;
     'recipientMemberID'?: string;
     'isComp'?: boolean;
+    'quantity'?: number;
     'performanceID': string;
     'id': string | null;
     'createdAt': Date;
