@@ -496,7 +496,7 @@ class PerformancesApi {
             });
         });
     }
-    fetchPerformanceTicketsPage(performanceID, pageNum, pageSize, isArchiveIncluded, options = { headers: {} }) {
+    fetchPerformanceTicketsPage(performanceID, pageNum, pageSize, filterComps, filterClaimed, isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/performances/tickets/page/{performanceID}'
                 .replace('{' + 'performanceID' + '}', encodeURIComponent(String(performanceID)));
@@ -524,6 +524,12 @@ class PerformancesApi {
             }
             if (pageSize !== undefined) {
                 localVarQueryParameters['pageSize'] = models_1.ObjectSerializer.serialize(pageSize, "number");
+            }
+            if (filterComps !== undefined) {
+                localVarQueryParameters['filterComps'] = models_1.ObjectSerializer.serialize(filterComps, "boolean");
+            }
+            if (filterClaimed !== undefined) {
+                localVarQueryParameters['filterClaimed'] = models_1.ObjectSerializer.serialize(filterClaimed, "boolean");
             }
             if (isArchiveIncluded !== undefined) {
                 localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");

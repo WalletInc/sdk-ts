@@ -590,9 +590,11 @@ export class PerformancesApi {
      * @param performanceID 
      * @param pageNum 
      * @param pageSize 
+     * @param filterComps 
+     * @param filterClaimed 
      * @param isArchiveIncluded 
      */
-    public async fetchPerformanceTicketsPage (performanceID: any, pageNum: number, pageSize: number, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2005;  }> {
+    public async fetchPerformanceTicketsPage (performanceID: any, pageNum: number, pageSize: number, filterComps?: boolean, filterClaimed?: boolean, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2005;  }> {
         const localVarPath = this.basePath + '/v2/performances/tickets/page/{performanceID}'
             .replace('{' + 'performanceID' + '}', encodeURIComponent(String(performanceID)));
         let localVarQueryParameters: any = {};
@@ -627,6 +629,14 @@ export class PerformancesApi {
 
         if (pageSize !== undefined) {
             localVarQueryParameters['pageSize'] = ObjectSerializer.serialize(pageSize, "number");
+        }
+
+        if (filterComps !== undefined) {
+            localVarQueryParameters['filterComps'] = ObjectSerializer.serialize(filterComps, "boolean");
+        }
+
+        if (filterClaimed !== undefined) {
+            localVarQueryParameters['filterClaimed'] = ObjectSerializer.serialize(filterClaimed, "boolean");
         }
 
         if (isArchiveIncluded !== undefined) {
