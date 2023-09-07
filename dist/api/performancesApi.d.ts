@@ -86,7 +86,7 @@ export declare class PerformancesApi {
         response: http.IncomingMessage;
         body: Performance;
     }>;
-    fetchPerformanceTicketsPage(performanceID: any, pageNum: number, pageSize: number, isArchiveIncluded?: boolean, options?: {
+    fetchPerformanceTicketsPage(performanceID: any, pageNum: number, pageSize: number, filterComps?: boolean, filterClaimed?: boolean, isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
