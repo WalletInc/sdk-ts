@@ -18,8 +18,8 @@ import http from 'http';
 import { AuthError } from '../model/authError';
 import { FalsumError } from '../model/falsumError';
 import { InlineObject1 } from '../model/inlineObject1';
-import { InlineResponse2002 } from '../model/inlineResponse2002';
-import { InlineResponse2005 } from '../model/inlineResponse2005';
+import { InlineResponse2003 } from '../model/inlineResponse2003';
+import { InlineResponse2004 } from '../model/inlineResponse2004';
 import { InternalServerError } from '../model/internalServerError';
 import { Performance } from '../model/performance';
 import { Ticket } from '../model/ticket';
@@ -172,7 +172,7 @@ export class PerformancesApi {
      * @summary Count number claimed
      * @param id 
      */
-    public async countClaimedComps (id: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }> {
+    public async countClaimedComps (id: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }> {
         const localVarPath = this.basePath + '/v2/performances/{id}/claimed/count'
             .replace('{' + 'id' + '}', encodeURIComponent(String(id)));
         let localVarQueryParameters: any = {};
@@ -220,13 +220,13 @@ export class PerformancesApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2002");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2003");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -241,7 +241,7 @@ export class PerformancesApi {
      * @summary Count number redeemed
      * @param id 
      */
-    public async countRedeemedComps (id: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }> {
+    public async countRedeemedComps (id: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }> {
         const localVarPath = this.basePath + '/v2/performances/{id}/redeemed/count'
             .replace('{' + 'id' + '}', encodeURIComponent(String(id)));
         let localVarQueryParameters: any = {};
@@ -289,13 +289,13 @@ export class PerformancesApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2002");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2003");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -594,7 +594,7 @@ export class PerformancesApi {
      * @param filterClaimed 
      * @param isArchiveIncluded 
      */
-    public async fetchPerformanceTicketsPage (performanceID: any, pageNum: number, pageSize: number, filterComps?: boolean, filterClaimed?: boolean, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2005;  }> {
+    public async fetchPerformanceTicketsPage (performanceID: any, pageNum: number, pageSize: number, filterComps?: boolean, filterClaimed?: boolean, isArchiveIncluded?: boolean, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2004;  }> {
         const localVarPath = this.basePath + '/v2/performances/tickets/page/{performanceID}'
             .replace('{' + 'performanceID' + '}', encodeURIComponent(String(performanceID)));
         let localVarQueryParameters: any = {};
@@ -672,13 +672,13 @@ export class PerformancesApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2005;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2004;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2005");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2004");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

@@ -22,7 +22,7 @@ InlineResponse2007.attributeTypeMap = [
     {
         "name": "results",
         "baseName": "results",
-        "type": "Array<OutboundSMS>"
+        "type": "Array<ImportedListRecipient>"
     }
 ];
 //# sourceMappingURL=inlineResponse2007.js.map

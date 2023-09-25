@@ -1,5 +1,8 @@
+import { InboundSMS } from './inboundSMS';
 export declare class InlineResponse2002 {
-    'count': number;
+    'total': number;
+    'length': number;
+    'results': Array<InboundSMS>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

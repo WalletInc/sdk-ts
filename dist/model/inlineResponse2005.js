@@ -10,14 +10,19 @@ exports.InlineResponse2005 = InlineResponse2005;
 InlineResponse2005.discriminator = undefined;
 InlineResponse2005.attributeTypeMap = [
     {
-        "name": "data",
-        "baseName": "data",
-        "type": "Array<WTTicket>"
+        "name": "total",
+        "baseName": "total",
+        "type": "number"
     },
     {
-        "name": "totalRows",
-        "baseName": "totalRows",
+        "name": "length",
+        "baseName": "length",
         "type": "number"
+    },
+    {
+        "name": "results",
+        "baseName": "results",
+        "type": "Array<OutboundSMS>"
     }
 ];
 //# sourceMappingURL=inlineResponse2005.js.map

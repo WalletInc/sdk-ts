@@ -478,7 +478,7 @@ class ClubMembersPointsApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse2002");
+                                body = models_1.ObjectSerializer.deserialize(body, "InlineResponse2003");
                                 resolve({ response: response, body: body });
                             }
                             else {
