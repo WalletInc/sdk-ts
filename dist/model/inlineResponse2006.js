@@ -10,19 +10,19 @@ exports.InlineResponse2006 = InlineResponse2006;
 InlineResponse2006.discriminator = undefined;
 InlineResponse2006.attributeTypeMap = [
     {
-        "name": "entries",
-        "baseName": "entries",
-        "type": "Array<LedgerEntry>"
-    },
-    {
-        "name": "pageCount",
-        "baseName": "pageCount",
+        "name": "total",
+        "baseName": "total",
         "type": "number"
     },
     {
-        "name": "totalRecords",
-        "baseName": "totalRecords",
+        "name": "length",
+        "baseName": "length",
         "type": "number"
+    },
+    {
+        "name": "results",
+        "baseName": "results",
+        "type": "Array<OptInListSubscriber>"
     }
 ];
 //# sourceMappingURL=inlineResponse2006.js.map

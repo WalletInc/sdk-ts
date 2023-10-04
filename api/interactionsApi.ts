@@ -20,8 +20,8 @@ import { BrowserDetails } from '../model/browserDetails';
 import { DynamicVoucher } from '../model/dynamicVoucher';
 import { EmailSubscriber } from '../model/emailSubscriber';
 import { FalsumError } from '../model/falsumError';
-import { InlineObject3 } from '../model/inlineObject3';
 import { InlineObject4 } from '../model/inlineObject4';
+import { InlineObject5 } from '../model/inlineObject5';
 import { InlineResponse20010 } from '../model/inlineResponse20010';
 import { InternalServerError } from '../model/internalServerError';
 import { Member } from '../model/member';
@@ -107,9 +107,9 @@ export class InteractionsApi {
      * 
      * @summary Update ticket
      * @param id 
-     * @param inlineObject3 
+     * @param inlineObject4 
      */
-    public async claimTicket (id: any, inlineObject3: InlineObject3, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Ticket;  }> {
+    public async claimTicket (id: any, inlineObject4: InlineObject4, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Ticket;  }> {
         const localVarPath = this.basePath + '/wallet/ticket/claim/{id}'
             .replace('{' + 'id' + '}', encodeURIComponent(String(id)));
         let localVarQueryParameters: any = {};
@@ -128,9 +128,9 @@ export class InteractionsApi {
             throw new Error('Required parameter id was null or undefined when calling claimTicket.');
         }
 
-        // verify required parameter 'inlineObject3' is not null or undefined
-        if (inlineObject3 === null || inlineObject3 === undefined) {
-            throw new Error('Required parameter inlineObject3 was null or undefined when calling claimTicket.');
+        // verify required parameter 'inlineObject4' is not null or undefined
+        if (inlineObject4 === null || inlineObject4 === undefined) {
+            throw new Error('Required parameter inlineObject4 was null or undefined when calling claimTicket.');
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -144,7 +144,7 @@ export class InteractionsApi {
             uri: localVarPath,
             useQuerystring: this._useQuerystring,
             json: true,
-            body: ObjectSerializer.serialize(inlineObject3, "InlineObject3")
+            body: ObjectSerializer.serialize(inlineObject4, "InlineObject4")
         };
 
         let authenticationPromise = Promise.resolve();
@@ -530,9 +530,9 @@ export class InteractionsApi {
     /**
      * 
      * @summary Update ticket
-     * @param inlineObject4 
+     * @param inlineObject5 
      */
-    public async fetchCustomerTicketsWithToken (inlineObject4: InlineObject4, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<Ticket>;  }> {
+    public async fetchCustomerTicketsWithToken (inlineObject5: InlineObject5, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<Ticket>;  }> {
         const localVarPath = this.basePath + '/wallet/tickets/fetchCustomerTicketsWithToken';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -545,9 +545,9 @@ export class InteractionsApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'inlineObject4' is not null or undefined
-        if (inlineObject4 === null || inlineObject4 === undefined) {
-            throw new Error('Required parameter inlineObject4 was null or undefined when calling fetchCustomerTicketsWithToken.');
+        // verify required parameter 'inlineObject5' is not null or undefined
+        if (inlineObject5 === null || inlineObject5 === undefined) {
+            throw new Error('Required parameter inlineObject5 was null or undefined when calling fetchCustomerTicketsWithToken.');
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -561,7 +561,7 @@ export class InteractionsApi {
             uri: localVarPath,
             useQuerystring: this._useQuerystring,
             json: true,
-            body: ObjectSerializer.serialize(inlineObject4, "InlineObject4")
+            body: ObjectSerializer.serialize(inlineObject5, "InlineObject5")
         };
 
         let authenticationPromise = Promise.resolve();

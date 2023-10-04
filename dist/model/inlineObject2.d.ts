@@ -1,5 +1,6 @@
+import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 export declare class InlineObject2 {
-    'paymentDesignID': string;
+    'tickets': Array<WTTicketUpdateParams>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -19,8 +19,8 @@ import { AuthError } from '../model/authError';
 import { CreateStaticVoucherCampaign } from '../model/createStaticVoucherCampaign';
 import { CreateStaticVoucherCampaignWithVoucherWithCSV } from '../model/createStaticVoucherCampaignWithVoucherWithCSV';
 import { FalsumError } from '../model/falsumError';
-import { InlineResponse2002 } from '../model/inlineResponse2002';
-import { InlineResponse2004 } from '../model/inlineResponse2004';
+import { InlineResponse2003 } from '../model/inlineResponse2003';
+import { InlineResponse2008 } from '../model/inlineResponse2008';
 import { InternalServerError } from '../model/internalServerError';
 import { PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive } from '../model/pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive';
 import { ReachPerformanceStats } from '../model/reachPerformanceStats';
@@ -181,7 +181,7 @@ export class StaticVoucherCampaignsApi {
      * @summary Count loaded vouchers
      * @param campaignID 
      */
-    public async countVouchersLoaded (campaignID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }> {
+    public async countVouchersLoaded (campaignID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }> {
         const localVarPath = this.basePath + '/v2/payment/staticVoucherCampaign/count/vouchers/loaded/{campaignID}'
             .replace('{' + 'campaignID' + '}', encodeURIComponent(String(campaignID)));
         let localVarQueryParameters: any = {};
@@ -229,13 +229,13 @@ export class StaticVoucherCampaignsApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2002");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2003");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -250,7 +250,7 @@ export class StaticVoucherCampaignsApi {
      * @summary Count redeemed vouchers
      * @param campaignID 
      */
-    public async countVouchersRedeemed (campaignID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }> {
+    public async countVouchersRedeemed (campaignID: any, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }> {
         const localVarPath = this.basePath + '/v2/payment/staticVoucherCampaign/count/vouchers/redeemed/{campaignID}'
             .replace('{' + 'campaignID' + '}', encodeURIComponent(String(campaignID)));
         let localVarQueryParameters: any = {};
@@ -298,13 +298,13 @@ export class StaticVoucherCampaignsApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2002");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2003");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -1027,7 +1027,7 @@ export class StaticVoucherCampaignsApi {
      * @param pagenum 
      * @param pagesize 
      */
-    public async fetchStaticVouchersPage (campaignID: any, pagenum: number, pagesize: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2004;  }> {
+    public async fetchStaticVouchersPage (campaignID: any, pagenum: number, pagesize: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2008;  }> {
         const localVarPath = this.basePath + '/v2/payment/staticVoucherCampaign/staticVouchers/page/{campaignID}'
             .replace('{' + 'campaignID' + '}', encodeURIComponent(String(campaignID)));
         let localVarQueryParameters: any = {};
@@ -1093,13 +1093,13 @@ export class StaticVoucherCampaignsApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2004;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2008;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2004");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2008");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

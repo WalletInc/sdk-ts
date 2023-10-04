@@ -10,19 +10,14 @@ exports.InlineResponse2008 = InlineResponse2008;
 InlineResponse2008.discriminator = undefined;
 InlineResponse2008.attributeTypeMap = [
     {
-        "name": "total",
-        "baseName": "total",
-        "type": "number"
+        "name": "data",
+        "baseName": "data",
+        "type": "Array<WTStaticVoucher>"
     },
     {
-        "name": "length",
-        "baseName": "length",
+        "name": "totalRows",
+        "baseName": "totalRows",
         "type": "number"
-    },
-    {
-        "name": "results",
-        "baseName": "results",
-        "type": "Array<OptInListSubscriber>"
     }
 ];
 //# sourceMappingURL=inlineResponse2008.js.map

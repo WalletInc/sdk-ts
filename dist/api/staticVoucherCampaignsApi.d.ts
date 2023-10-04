@@ -2,8 +2,8 @@
 import http from 'http';
 import { CreateStaticVoucherCampaign } from '../model/createStaticVoucherCampaign';
 import { CreateStaticVoucherCampaignWithVoucherWithCSV } from '../model/createStaticVoucherCampaignWithVoucherWithCSV';
-import { InlineResponse2002 } from '../model/inlineResponse2002';
-import { InlineResponse2004 } from '../model/inlineResponse2004';
+import { InlineResponse2003 } from '../model/inlineResponse2003';
+import { InlineResponse2008 } from '../model/inlineResponse2008';
 import { PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive } from '../model/pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive';
 import { ReachPerformanceStats } from '../model/reachPerformanceStats';
 import { StaticVoucherCampaign } from '../model/staticVoucherCampaign';
@@ -53,7 +53,7 @@ export declare class StaticVoucherCampaignsApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2002;
+        body: InlineResponse2003;
     }>;
     countVouchersRedeemed(campaignID: any, options?: {
         headers: {
@@ -61,7 +61,7 @@ export declare class StaticVoucherCampaignsApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2002;
+        body: InlineResponse2003;
     }>;
     createStaticVoucherCampaign(createStaticVoucherCampaign: CreateStaticVoucherCampaign, options?: {
         headers: {
@@ -149,7 +149,7 @@ export declare class StaticVoucherCampaignsApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2004;
+        body: InlineResponse2008;
     }>;
     fetchViews(campaignID: any, options?: {
         headers: {

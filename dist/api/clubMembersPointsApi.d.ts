@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import http from 'http';
-import { InlineResponse2002 } from '../model/inlineResponse2002';
+import { InlineResponse2003 } from '../model/inlineResponse2003';
 import { MSMemberHistoryPagination } from '../model/mSMemberHistoryPagination';
 import { MSMemberRedemptionPagination } from '../model/mSMemberRedemptionPagination';
 import { MemberSearch } from '../model/memberSearch';
@@ -87,7 +87,7 @@ export declare class ClubMembersPointsApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2002;
+        body: InlineResponse2003;
     }>;
     restoreMember(id: any, options?: {
         headers: {

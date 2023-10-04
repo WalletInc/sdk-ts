@@ -11,17 +11,18 @@
  */
 
 import { RequestFile } from './models';
+import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 
 export class InlineObject2 {
-    'paymentDesignID': string;
+    'tickets': Array<WTTicketUpdateParams>;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "paymentDesignID",
-            "baseName": "paymentDesignID",
-            "type": "string"
+            "name": "tickets",
+            "baseName": "tickets",
+            "type": "Array<WTTicketUpdateParams>"
         }    ];
 
     static getAttributeTypeMap() {

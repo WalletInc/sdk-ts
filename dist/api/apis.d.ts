@@ -1,4 +1,6 @@
 /// <reference types="node" />
+export * from './a2PApi';
+import { A2PApi } from './a2PApi';
 export * from './advertisementCreditsApi';
 import { AdvertisementCreditsApi } from './advertisementCreditsApi';
 export * from './amenitiesApi';
@@ -95,8 +97,6 @@ export * from './ticketApi';
 import { TicketApi } from './ticketApi';
 export * from './transactionLedgerApi';
 import { TransactionLedgerApi } from './transactionLedgerApi';
-export * from './utilitiesApi';
-import { UtilitiesApi } from './utilitiesApi';
 export * from './videosApi';
 import { VideosApi } from './videosApi';
 export * from './virtualBusinessCardApi';
@@ -115,4 +115,4 @@ export declare class HttpError extends Error {
     constructor(response: http.IncomingMessage, body: any, statusCode?: number | undefined);
 }
 export { RequestFile } from '../model/models';
-export declare const APIS: (typeof AdvertisementCreditsApi | typeof AmenitiesApi | typeof AnalyticsApi | typeof AppleWalletSubscribersApi | typeof BillingApi | typeof ClubMembersPointsApi | typeof ConfigurationApi | typeof CountriesApi | typeof CustomerApi | typeof DashboardApi | typeof DiningApi | typeof DynamicVouchersApi | typeof EmailSubscriberApi | typeof EmployeeAPIKeysApi | typeof EmployeeAccessApi | typeof EmployeesApi | typeof GamingApi | typeof ImageGridApi | typeof IndustriesApi | typeof InfoGenesisReportsApi | typeof IntegratedTerminalsApi | typeof InteractionsApi | typeof LoginAndLogoutApi | typeof LoungeApi | typeof MembershipTiersApi | typeof MerchantApi | typeof MerchantCreditsApi | typeof MerchantURLsApi | typeof MobileTerminalApi | typeof NewsApi | typeof PaymentDesignsApi | typeof PerformancesApi | typeof ProductsApi | typeof PromotionCodesApi | typeof QRCodeDesignsApi | typeof QuickLinksApi | typeof QuickLinksSectionApi | typeof RoomRatesApi | typeof SMSApi | typeof ServicesApi | typeof SettingsApi | typeof ShopifyTerminalApi | typeof StaticVoucherCampaignGroupsApi | typeof StaticVoucherCampaignsApi | typeof StaticVouchersApi | typeof SystemApi | typeof TicketApi | typeof TransactionLedgerApi | typeof UtilitiesApi | typeof VideosApi | typeof VirtualBusinessCardApi | typeof WebTerminalApi | typeof WixTerminalApi | typeof WooCommerceTerminalApi)[];
+export declare const APIS: (typeof A2PApi | typeof AdvertisementCreditsApi | typeof AmenitiesApi | typeof AnalyticsApi | typeof AppleWalletSubscribersApi | typeof BillingApi | typeof ClubMembersPointsApi | typeof ConfigurationApi | typeof CountriesApi | typeof CustomerApi | typeof DashboardApi | typeof DiningApi | typeof DynamicVouchersApi | typeof EmailSubscriberApi | typeof EmployeeAPIKeysApi | typeof EmployeeAccessApi | typeof EmployeesApi | typeof GamingApi | typeof ImageGridApi | typeof IndustriesApi | typeof InfoGenesisReportsApi | typeof IntegratedTerminalsApi | typeof InteractionsApi | typeof LoginAndLogoutApi | typeof LoungeApi | typeof MembershipTiersApi | typeof MerchantApi | typeof MerchantCreditsApi | typeof MerchantURLsApi | typeof MobileTerminalApi | typeof NewsApi | typeof PaymentDesignsApi | typeof PerformancesApi | typeof ProductsApi | typeof PromotionCodesApi | typeof QRCodeDesignsApi | typeof QuickLinksApi | typeof QuickLinksSectionApi | typeof RoomRatesApi | typeof SMSApi | typeof ServicesApi | typeof SettingsApi | typeof ShopifyTerminalApi | typeof StaticVoucherCampaignGroupsApi | typeof StaticVoucherCampaignsApi | typeof StaticVouchersApi | typeof SystemApi | typeof TicketApi | typeof TransactionLedgerApi | typeof VideosApi | typeof VirtualBusinessCardApi | typeof WebTerminalApi | typeof WixTerminalApi | typeof WooCommerceTerminalApi)[];

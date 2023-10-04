@@ -3,9 +3,9 @@ import http from 'http';
 import { Agreement } from '../model/agreement';
 import { ImportedList } from '../model/importedList';
 import { ImportedListRecipient } from '../model/importedListRecipient';
+import { InlineResponse2005 } from '../model/inlineResponse2005';
+import { InlineResponse2006 } from '../model/inlineResponse2006';
 import { InlineResponse2007 } from '../model/inlineResponse2007';
-import { InlineResponse2008 } from '../model/inlineResponse2008';
-import { InlineResponse2009 } from '../model/inlineResponse2009';
 import { OptInList } from '../model/optInList';
 import { OptInListSource } from '../model/optInListSource';
 import { OptInListSubscriber } from '../model/optInListSubscriber';
@@ -182,7 +182,7 @@ export declare class SMSApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2009;
+        body: InlineResponse2007;
     }>;
     fetchOptInListSources(isArchiveIncluded?: boolean, options?: {
         headers: {
@@ -206,7 +206,7 @@ export declare class SMSApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2008;
+        body: InlineResponse2006;
     }>;
     fetchOptInListsAssociatedWithPhoneNumber(phoneNumberID: string, options?: {
         headers: {
@@ -246,7 +246,7 @@ export declare class SMSApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2007;
+        body: InlineResponse2005;
     }>;
     fetchPaymentObjectBroadcasts(phoneNumberID: string, options?: {
         headers: {

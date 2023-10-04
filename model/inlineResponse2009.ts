@@ -11,30 +11,30 @@
  */
 
 import { RequestFile } from './models';
-import { ImportedListRecipient } from './importedListRecipient';
+import { LedgerEntry } from './ledgerEntry';
 
 export class InlineResponse2009 {
-    'total': number;
-    'length': number;
-    'results': Array<ImportedListRecipient>;
+    'entries': Array<LedgerEntry>;
+    'pageCount': number;
+    'totalRecords': number;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "total",
-            "baseName": "total",
+            "name": "entries",
+            "baseName": "entries",
+            "type": "Array<LedgerEntry>"
+        },
+        {
+            "name": "pageCount",
+            "baseName": "pageCount",
             "type": "number"
         },
         {
-            "name": "length",
-            "baseName": "length",
+            "name": "totalRecords",
+            "baseName": "totalRecords",
             "type": "number"
-        },
-        {
-            "name": "results",
-            "baseName": "results",
-            "type": "Array<ImportedListRecipient>"
         }    ];
 
     static getAttributeTypeMap() {

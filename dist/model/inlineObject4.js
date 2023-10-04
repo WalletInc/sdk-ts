@@ -10,13 +10,8 @@ exports.InlineObject4 = InlineObject4;
 InlineObject4.discriminator = undefined;
 InlineObject4.attributeTypeMap = [
     {
-        "name": "phoneVerificationToken",
-        "baseName": "phoneVerificationToken",
-        "type": "string"
-    },
-    {
-        "name": "merchantID",
-        "baseName": "merchantID",
+        "name": "claimedByPhoneNumber",
+        "baseName": "claimedByPhoneNumber",
         "type": "string"
     }
 ];

@@ -17,6 +17,11 @@ export * from './applicableTerminalsAnyOf6';
 export * from './authError';
 export * from './availablePhoneNumbersRequest';
 export * from './browserDetails';
+export * from './businessClassification';
+export * from './businessIndustry';
+export * from './businessRegionsOfOperation';
+export * from './businessRegistrationIdentifier';
+export * from './businessType';
 export * from './clickFunnelAmount';
 export * from './clickFunnelContact';
 export * from './clickFunnelContactProfile';
@@ -56,6 +61,7 @@ export * from './inlineObject1';
 export * from './inlineObject2';
 export * from './inlineObject3';
 export * from './inlineObject4';
+export * from './inlineObject5';
 export * from './inlineResponse200';
 export * from './inlineResponse2001';
 export * from './inlineResponse20010';
@@ -70,6 +76,7 @@ export * from './inlineResponse2007';
 export * from './inlineResponse2008';
 export * from './inlineResponse2009';
 export * from './internalServerError';
+export * from './jobPosition';
 export * from './ledgerEntry';
 export * from './linkBook';
 export * from './linkBookSection';
@@ -124,7 +131,6 @@ export * from './paginatedWTMerchantCredits';
 export * from './paginationRequestWithIDAndWithoutSortOptions';
 export * from './paginationRequestWithSortOptions';
 export * from './paymentDesign';
-export * from './paymentPrefixes';
 export * from './performance';
 export * from './phoneNumber';
 export * from './phoneNumberCapabilities';
@@ -208,6 +214,7 @@ export * from './vSCampaignGeneratedMessagePagination';
 export * from './vSDynamicVoucherStatus';
 export * from './video';
 export * from './virtualBusinessCard';
+export * from './wTA2PApplicationCreateParams';
 export * from './wTAdvertisementCredit';
 export * from './wTAdvertisementCreditCreateParams';
 export * from './wTAdvertisementCreditScan';
@@ -379,6 +386,11 @@ import { ApplicableTerminalsAnyOf6 } from './applicableTerminalsAnyOf6';
 import { AuthError } from './authError';
 import { AvailablePhoneNumbersRequest } from './availablePhoneNumbersRequest';
 import { BrowserDetails } from './browserDetails';
+import { BusinessClassification } from './businessClassification';
+import { BusinessIndustry } from './businessIndustry';
+import { BusinessRegionsOfOperation } from './businessRegionsOfOperation';
+import { BusinessRegistrationIdentifier } from './businessRegistrationIdentifier';
+import { BusinessType } from './businessType';
 import { ClickFunnelAmount } from './clickFunnelAmount';
 import { ClickFunnelContact } from './clickFunnelContact';
 import { ClickFunnelContactProfile } from './clickFunnelContactProfile';
@@ -418,6 +430,7 @@ import { InlineObject1 } from './inlineObject1';
 import { InlineObject2 } from './inlineObject2';
 import { InlineObject3 } from './inlineObject3';
 import { InlineObject4 } from './inlineObject4';
+import { InlineObject5 } from './inlineObject5';
 import { InlineResponse200 } from './inlineResponse200';
 import { InlineResponse2001 } from './inlineResponse2001';
 import { InlineResponse20010 } from './inlineResponse20010';
@@ -432,6 +445,7 @@ import { InlineResponse2007 } from './inlineResponse2007';
 import { InlineResponse2008 } from './inlineResponse2008';
 import { InlineResponse2009 } from './inlineResponse2009';
 import { InternalServerError } from './internalServerError';
+import { JobPosition } from './jobPosition';
 import { LedgerEntry } from './ledgerEntry';
 import { LinkBook } from './linkBook';
 import { LinkBookSection } from './linkBookSection';
@@ -486,7 +500,6 @@ import { PaginatedWTMerchantCredits } from './paginatedWTMerchantCredits';
 import { PaginationRequestWithIDAndWithoutSortOptions } from './paginationRequestWithIDAndWithoutSortOptions';
 import { PaginationRequestWithSortOptions } from './paginationRequestWithSortOptions';
 import { PaymentDesign } from './paymentDesign';
-import { PaymentPrefixes } from './paymentPrefixes';
 import { Performance } from './performance';
 import { PhoneNumber } from './phoneNumber';
 import { PhoneNumberCapabilities } from './phoneNumberCapabilities';
@@ -570,6 +583,7 @@ import { VSCampaignGeneratedMessagePagination } from './vSCampaignGeneratedMessa
 import { VSDynamicVoucherStatus } from './vSDynamicVoucherStatus';
 import { Video } from './video';
 import { VirtualBusinessCard } from './virtualBusinessCard';
+import { WTA2PApplicationCreateParams } from './wTA2PApplicationCreateParams';
 import { WTAdvertisementCredit } from './wTAdvertisementCredit';
 import { WTAdvertisementCreditCreateParams } from './wTAdvertisementCreditCreateParams';
 import { WTAdvertisementCreditScan } from './wTAdvertisementCreditScan';
@@ -731,6 +745,12 @@ let enumsMap: {[index: string]: any} = {
         "ApplicableTerminalsAnyOf4": ApplicableTerminalsAnyOf4,
         "ApplicableTerminalsAnyOf5": ApplicableTerminalsAnyOf5,
         "ApplicableTerminalsAnyOf6": ApplicableTerminalsAnyOf6,
+        "BusinessClassification": BusinessClassification,
+        "BusinessIndustry": BusinessIndustry,
+        "BusinessRegionsOfOperation": BusinessRegionsOfOperation,
+        "BusinessRegistrationIdentifier": BusinessRegistrationIdentifier,
+        "BusinessType": BusinessType,
+        "JobPosition": JobPosition,
         "MessageDirectionAnyOf": MessageDirectionAnyOf,
         "MessageDirectionAnyOf1": MessageDirectionAnyOf1,
         "MessageDirectionAnyOf2": MessageDirectionAnyOf2,
@@ -808,6 +828,7 @@ let typeMap: {[index: string]: any} = {
     "InlineObject2": InlineObject2,
     "InlineObject3": InlineObject3,
     "InlineObject4": InlineObject4,
+    "InlineObject5": InlineObject5,
     "InlineResponse200": InlineResponse200,
     "InlineResponse2001": InlineResponse2001,
     "InlineResponse20010": InlineResponse20010,
@@ -864,7 +885,6 @@ let typeMap: {[index: string]: any} = {
     "PaginationRequestWithIDAndWithoutSortOptions": PaginationRequestWithIDAndWithoutSortOptions,
     "PaginationRequestWithSortOptions": PaginationRequestWithSortOptions,
     "PaymentDesign": PaymentDesign,
-    "PaymentPrefixes": PaymentPrefixes,
     "Performance": Performance,
     "PhoneNumber": PhoneNumber,
     "PhoneNumberCapabilities": PhoneNumberCapabilities,
@@ -937,6 +957,7 @@ let typeMap: {[index: string]: any} = {
     "VSDynamicVoucherStatus": VSDynamicVoucherStatus,
     "Video": Video,
     "VirtualBusinessCard": VirtualBusinessCard,
+    "WTA2PApplicationCreateParams": WTA2PApplicationCreateParams,
     "WTAdvertisementCredit": WTAdvertisementCredit,
     "WTAdvertisementCreditCreateParams": WTAdvertisementCreditCreateParams,
     "WTAdvertisementCreditScan": WTAdvertisementCreditScan,

@@ -22,7 +22,7 @@ import { FalsumError } from '../model/falsumError';
 import { HelpDeskRequest } from '../model/helpDeskRequest';
 import { ImportedList } from '../model/importedList';
 import { InboundSMS } from '../model/inboundSMS';
-import { InlineResponse2003 } from '../model/inlineResponse2003';
+import { InlineResponse2002 } from '../model/inlineResponse2002';
 import { InternalServerError } from '../model/internalServerError';
 import { OptInList } from '../model/optInList';
 import { OutboundSMS } from '../model/outboundSMS';
@@ -1030,7 +1030,7 @@ export class MerchantApi {
      * @param pageSize 
      * @param pageNum 
      */
-    public async fetchInboundSMSByPage (phoneNumberID: any, fromPhoneNumber?: string, pageSize?: number, pageNum?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }> {
+    public async fetchInboundSMSByPage (phoneNumberID: any, fromPhoneNumber?: string, pageSize?: number, pageNum?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }> {
         const localVarPath = this.basePath + '/v2/merchant/sms/inbound/page/{phoneNumberID}'
             .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
         let localVarQueryParameters: any = {};
@@ -1090,13 +1090,13 @@ export class MerchantApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2003");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2002");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

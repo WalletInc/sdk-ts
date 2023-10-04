@@ -10,19 +10,9 @@ exports.InlineResponse2003 = InlineResponse2003;
 InlineResponse2003.discriminator = undefined;
 InlineResponse2003.attributeTypeMap = [
     {
-        "name": "total",
-        "baseName": "total",
+        "name": "count",
+        "baseName": "count",
         "type": "number"
-    },
-    {
-        "name": "length",
-        "baseName": "length",
-        "type": "number"
-    },
-    {
-        "name": "results",
-        "baseName": "results",
-        "type": "Array<InboundSMS>"
     }
 ];
 //# sourceMappingURL=inlineResponse2003.js.map

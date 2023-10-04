@@ -1,6 +1,6 @@
-import { WTStaticVoucher } from './wTStaticVoucher';
+import { WTTicket } from './wTTicket';
 export declare class InlineResponse2004 {
-    'data': Array<WTStaticVoucher>;
+    'data': Array<WTTicket>;
     'totalRows': number;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

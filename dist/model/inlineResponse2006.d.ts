@@ -1,8 +1,8 @@
-import { LedgerEntry } from './ledgerEntry';
+import { OptInListSubscriber } from './optInListSubscriber';
 export declare class InlineResponse2006 {
-    'entries': Array<LedgerEntry>;
-    'pageCount': number;
-    'totalRecords': number;
+    'total': number;
+    'length': number;
+    'results': Array<OptInListSubscriber>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -1,8 +1,8 @@
-import { OutboundSMS } from './outboundSMS';
+import { ImportedListRecipient } from './importedListRecipient';
 export declare class InlineResponse2007 {
     'total': number;
     'length': number;
-    'results': Array<OutboundSMS>;
+    'results': Array<ImportedListRecipient>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

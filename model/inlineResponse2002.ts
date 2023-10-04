@@ -11,17 +11,30 @@
  */
 
 import { RequestFile } from './models';
+import { InboundSMS } from './inboundSMS';
 
 export class InlineResponse2002 {
-    'count': number;
+    'total': number;
+    'length': number;
+    'results': Array<InboundSMS>;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "count",
-            "baseName": "count",
+            "name": "total",
+            "baseName": "total",
             "type": "number"
+        },
+        {
+            "name": "length",
+            "baseName": "length",
+            "type": "number"
+        },
+        {
+            "name": "results",
+            "baseName": "results",
+            "type": "Array<InboundSMS>"
         }    ];
 
     static getAttributeTypeMap() {

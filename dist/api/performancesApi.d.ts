@@ -1,8 +1,9 @@
 /// <reference types="node" />
 import http from 'http';
 import { InlineObject1 } from '../model/inlineObject1';
-import { InlineResponse2002 } from '../model/inlineResponse2002';
-import { InlineResponse2005 } from '../model/inlineResponse2005';
+import { InlineObject2 } from '../model/inlineObject2';
+import { InlineResponse2003 } from '../model/inlineResponse2003';
+import { InlineResponse2004 } from '../model/inlineResponse2004';
 import { Performance } from '../model/performance';
 import { Ticket } from '../model/ticket';
 import { WTPerformanceCreateParams } from '../model/wTPerformanceCreateParams';
@@ -44,7 +45,7 @@ export declare class PerformancesApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2002;
+        body: InlineResponse2003;
     }>;
     countRedeemedComps(id: any, options?: {
         headers: {
@@ -52,7 +53,7 @@ export declare class PerformancesApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2002;
+        body: InlineResponse2003;
     }>;
     createPerformance(wTPerformanceCreateParams: WTPerformanceCreateParams, options?: {
         headers: {
@@ -92,7 +93,15 @@ export declare class PerformancesApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2005;
+        body: InlineResponse2004;
+    }>;
+    importTickets(id: any, inlineObject2: InlineObject2, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: string;
     }>;
     restorePerformance(id: any, options?: {
         headers: {
