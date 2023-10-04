@@ -11,24 +11,30 @@
  */
 
 import { RequestFile } from './models';
-import { WTTicket } from './wTTicket';
+import { OutboundSMS } from './outboundSMS';
 
 export class InlineResponse2005 {
-    'data': Array<WTTicket>;
-    'totalRows': number;
+    'total': number;
+    'length': number;
+    'results': Array<OutboundSMS>;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "data",
-            "baseName": "data",
-            "type": "Array<WTTicket>"
+            "name": "total",
+            "baseName": "total",
+            "type": "number"
         },
         {
-            "name": "totalRows",
-            "baseName": "totalRows",
+            "name": "length",
+            "baseName": "length",
             "type": "number"
+        },
+        {
+            "name": "results",
+            "baseName": "results",
+            "type": "Array<OutboundSMS>"
         }    ];
 
     static getAttributeTypeMap() {

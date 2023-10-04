@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import http from 'http';
-import { InlineResponse2002 } from '../model/inlineResponse2002';
+import { InlineResponse2003 } from '../model/inlineResponse2003';
 import { MSMerchantCreditHistoryPagination } from '../model/mSMerchantCreditHistoryPagination';
 import { MSMerchantCreditRedemptionPagination } from '../model/mSMerchantCreditRedemptionPagination';
 import { MerchantCreditSearch } from '../model/merchantCreditSearch';
@@ -63,7 +63,7 @@ export declare class MerchantCreditsApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2002;
+        body: InlineResponse2003;
     }>;
     fetchMerchantCreditHistoryLog(paginationRequestWithIDAndWithoutSortOptions: PaginationRequestWithIDAndWithoutSortOptions, options?: {
         headers: {

@@ -5,7 +5,7 @@ import { DynamicVoucherBroadcast } from '../model/dynamicVoucherBroadcast';
 import { HelpDeskRequest } from '../model/helpDeskRequest';
 import { ImportedList } from '../model/importedList';
 import { InboundSMS } from '../model/inboundSMS';
-import { InlineResponse2003 } from '../model/inlineResponse2003';
+import { InlineResponse2002 } from '../model/inlineResponse2002';
 import { OptInList } from '../model/optInList';
 import { OutboundSMS } from '../model/outboundSMS';
 import { PhoneNumber } from '../model/phoneNumber';
@@ -149,7 +149,7 @@ export declare class MerchantApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: InlineResponse2003;
+        body: InlineResponse2002;
     }>;
     fetchMerchantOutboundSMS(phoneNumberID: any, toPhoneNumber: string, options?: {
         headers: {

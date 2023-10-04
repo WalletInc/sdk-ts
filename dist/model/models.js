@@ -32,6 +32,11 @@ __exportStar(require("./applicableTerminalsAnyOf6"), exports);
 __exportStar(require("./authError"), exports);
 __exportStar(require("./availablePhoneNumbersRequest"), exports);
 __exportStar(require("./browserDetails"), exports);
+__exportStar(require("./businessClassification"), exports);
+__exportStar(require("./businessIndustry"), exports);
+__exportStar(require("./businessRegionsOfOperation"), exports);
+__exportStar(require("./businessRegistrationIdentifier"), exports);
+__exportStar(require("./businessType"), exports);
 __exportStar(require("./clickFunnelAmount"), exports);
 __exportStar(require("./clickFunnelContact"), exports);
 __exportStar(require("./clickFunnelContactProfile"), exports);
@@ -71,6 +76,7 @@ __exportStar(require("./inlineObject1"), exports);
 __exportStar(require("./inlineObject2"), exports);
 __exportStar(require("./inlineObject3"), exports);
 __exportStar(require("./inlineObject4"), exports);
+__exportStar(require("./inlineObject5"), exports);
 __exportStar(require("./inlineResponse200"), exports);
 __exportStar(require("./inlineResponse2001"), exports);
 __exportStar(require("./inlineResponse20010"), exports);
@@ -85,6 +91,7 @@ __exportStar(require("./inlineResponse2007"), exports);
 __exportStar(require("./inlineResponse2008"), exports);
 __exportStar(require("./inlineResponse2009"), exports);
 __exportStar(require("./internalServerError"), exports);
+__exportStar(require("./jobPosition"), exports);
 __exportStar(require("./ledgerEntry"), exports);
 __exportStar(require("./linkBook"), exports);
 __exportStar(require("./linkBookSection"), exports);
@@ -139,7 +146,6 @@ __exportStar(require("./paginatedWTMerchantCredits"), exports);
 __exportStar(require("./paginationRequestWithIDAndWithoutSortOptions"), exports);
 __exportStar(require("./paginationRequestWithSortOptions"), exports);
 __exportStar(require("./paymentDesign"), exports);
-__exportStar(require("./paymentPrefixes"), exports);
 __exportStar(require("./performance"), exports);
 __exportStar(require("./phoneNumber"), exports);
 __exportStar(require("./phoneNumberCapabilities"), exports);
@@ -223,6 +229,7 @@ __exportStar(require("./vSCampaignGeneratedMessagePagination"), exports);
 __exportStar(require("./vSDynamicVoucherStatus"), exports);
 __exportStar(require("./video"), exports);
 __exportStar(require("./virtualBusinessCard"), exports);
+__exportStar(require("./wTA2PApplicationCreateParams"), exports);
 __exportStar(require("./wTAdvertisementCredit"), exports);
 __exportStar(require("./wTAdvertisementCreditCreateParams"), exports);
 __exportStar(require("./wTAdvertisementCreditScan"), exports);
@@ -380,6 +387,11 @@ const applicableTerminalsAnyOf6_1 = require("./applicableTerminalsAnyOf6");
 const authError_1 = require("./authError");
 const availablePhoneNumbersRequest_1 = require("./availablePhoneNumbersRequest");
 const browserDetails_1 = require("./browserDetails");
+const businessClassification_1 = require("./businessClassification");
+const businessIndustry_1 = require("./businessIndustry");
+const businessRegionsOfOperation_1 = require("./businessRegionsOfOperation");
+const businessRegistrationIdentifier_1 = require("./businessRegistrationIdentifier");
+const businessType_1 = require("./businessType");
 const clickFunnelAmount_1 = require("./clickFunnelAmount");
 const clickFunnelContact_1 = require("./clickFunnelContact");
 const clickFunnelContactProfile_1 = require("./clickFunnelContactProfile");
@@ -419,6 +431,7 @@ const inlineObject1_1 = require("./inlineObject1");
 const inlineObject2_1 = require("./inlineObject2");
 const inlineObject3_1 = require("./inlineObject3");
 const inlineObject4_1 = require("./inlineObject4");
+const inlineObject5_1 = require("./inlineObject5");
 const inlineResponse200_1 = require("./inlineResponse200");
 const inlineResponse2001_1 = require("./inlineResponse2001");
 const inlineResponse20010_1 = require("./inlineResponse20010");
@@ -433,6 +446,7 @@ const inlineResponse2007_1 = require("./inlineResponse2007");
 const inlineResponse2008_1 = require("./inlineResponse2008");
 const inlineResponse2009_1 = require("./inlineResponse2009");
 const internalServerError_1 = require("./internalServerError");
+const jobPosition_1 = require("./jobPosition");
 const ledgerEntry_1 = require("./ledgerEntry");
 const linkBook_1 = require("./linkBook");
 const linkBookSection_1 = require("./linkBookSection");
@@ -487,7 +501,6 @@ const paginatedWTMerchantCredits_1 = require("./paginatedWTMerchantCredits");
 const paginationRequestWithIDAndWithoutSortOptions_1 = require("./paginationRequestWithIDAndWithoutSortOptions");
 const paginationRequestWithSortOptions_1 = require("./paginationRequestWithSortOptions");
 const paymentDesign_1 = require("./paymentDesign");
-const paymentPrefixes_1 = require("./paymentPrefixes");
 const performance_1 = require("./performance");
 const phoneNumber_1 = require("./phoneNumber");
 const phoneNumberCapabilities_1 = require("./phoneNumberCapabilities");
@@ -571,6 +584,7 @@ const vSCampaignGeneratedMessagePagination_1 = require("./vSCampaignGeneratedMes
 const vSDynamicVoucherStatus_1 = require("./vSDynamicVoucherStatus");
 const video_1 = require("./video");
 const virtualBusinessCard_1 = require("./virtualBusinessCard");
+const wTA2PApplicationCreateParams_1 = require("./wTA2PApplicationCreateParams");
 const wTAdvertisementCredit_1 = require("./wTAdvertisementCredit");
 const wTAdvertisementCreditCreateParams_1 = require("./wTAdvertisementCreditCreateParams");
 const wTAdvertisementCreditScan_1 = require("./wTAdvertisementCreditScan");
@@ -729,6 +743,12 @@ let enumsMap = {
     "ApplicableTerminalsAnyOf4": applicableTerminalsAnyOf4_1.ApplicableTerminalsAnyOf4,
     "ApplicableTerminalsAnyOf5": applicableTerminalsAnyOf5_1.ApplicableTerminalsAnyOf5,
     "ApplicableTerminalsAnyOf6": applicableTerminalsAnyOf6_1.ApplicableTerminalsAnyOf6,
+    "BusinessClassification": businessClassification_1.BusinessClassification,
+    "BusinessIndustry": businessIndustry_1.BusinessIndustry,
+    "BusinessRegionsOfOperation": businessRegionsOfOperation_1.BusinessRegionsOfOperation,
+    "BusinessRegistrationIdentifier": businessRegistrationIdentifier_1.BusinessRegistrationIdentifier,
+    "BusinessType": businessType_1.BusinessType,
+    "JobPosition": jobPosition_1.JobPosition,
     "MessageDirectionAnyOf": messageDirectionAnyOf_1.MessageDirectionAnyOf,
     "MessageDirectionAnyOf1": messageDirectionAnyOf1_1.MessageDirectionAnyOf1,
     "MessageDirectionAnyOf2": messageDirectionAnyOf2_1.MessageDirectionAnyOf2,
@@ -805,6 +825,7 @@ let typeMap = {
     "InlineObject2": inlineObject2_1.InlineObject2,
     "InlineObject3": inlineObject3_1.InlineObject3,
     "InlineObject4": inlineObject4_1.InlineObject4,
+    "InlineObject5": inlineObject5_1.InlineObject5,
     "InlineResponse200": inlineResponse200_1.InlineResponse200,
     "InlineResponse2001": inlineResponse2001_1.InlineResponse2001,
     "InlineResponse20010": inlineResponse20010_1.InlineResponse20010,
@@ -861,7 +882,6 @@ let typeMap = {
     "PaginationRequestWithIDAndWithoutSortOptions": paginationRequestWithIDAndWithoutSortOptions_1.PaginationRequestWithIDAndWithoutSortOptions,
     "PaginationRequestWithSortOptions": paginationRequestWithSortOptions_1.PaginationRequestWithSortOptions,
     "PaymentDesign": paymentDesign_1.PaymentDesign,
-    "PaymentPrefixes": paymentPrefixes_1.PaymentPrefixes,
     "Performance": performance_1.Performance,
     "PhoneNumber": phoneNumber_1.PhoneNumber,
     "PhoneNumberCapabilities": phoneNumberCapabilities_1.PhoneNumberCapabilities,
@@ -934,6 +954,7 @@ let typeMap = {
     "VSDynamicVoucherStatus": vSDynamicVoucherStatus_1.VSDynamicVoucherStatus,
     "Video": video_1.Video,
     "VirtualBusinessCard": virtualBusinessCard_1.VirtualBusinessCard,
+    "WTA2PApplicationCreateParams": wTA2PApplicationCreateParams_1.WTA2PApplicationCreateParams,
     "WTAdvertisementCredit": wTAdvertisementCredit_1.WTAdvertisementCredit,
     "WTAdvertisementCreditCreateParams": wTAdvertisementCreditCreateParams_1.WTAdvertisementCreditCreateParams,
     "WTAdvertisementCreditScan": wTAdvertisementCreditScan_1.WTAdvertisementCreditScan,

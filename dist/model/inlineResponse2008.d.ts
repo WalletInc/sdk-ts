@@ -1,8 +1,7 @@
-import { OptInListSubscriber } from './optInListSubscriber';
+import { WTStaticVoucher } from './wTStaticVoucher';
 export declare class InlineResponse2008 {
-    'total': number;
-    'length': number;
-    'results': Array<OptInListSubscriber>;
+    'data': Array<WTStaticVoucher>;
+    'totalRows': number;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

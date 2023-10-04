@@ -11,30 +11,24 @@
  */
 
 import { RequestFile } from './models';
-import { OptInListSubscriber } from './optInListSubscriber';
+import { WTStaticVoucher } from './wTStaticVoucher';
 
 export class InlineResponse2008 {
-    'total': number;
-    'length': number;
-    'results': Array<OptInListSubscriber>;
+    'data': Array<WTStaticVoucher>;
+    'totalRows': number;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "total",
-            "baseName": "total",
-            "type": "number"
+            "name": "data",
+            "baseName": "data",
+            "type": "Array<WTStaticVoucher>"
         },
         {
-            "name": "length",
-            "baseName": "length",
+            "name": "totalRows",
+            "baseName": "totalRows",
             "type": "number"
-        },
-        {
-            "name": "results",
-            "baseName": "results",
-            "type": "Array<OptInListSubscriber>"
         }    ];
 
     static getAttributeTypeMap() {

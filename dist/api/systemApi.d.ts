@@ -69,6 +69,14 @@ export declare class SystemApi {
         response: http.IncomingMessage;
         body: Array<Webpage>;
     }>;
+    getPaymentPrefixes(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Array<any>;
+    }>;
     loadRole(roleID: string, options?: {
         headers: {
             [name: string]: string;

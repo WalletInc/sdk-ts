@@ -19,7 +19,7 @@ import { AuthError } from '../model/authError';
 import { DuplicateRowFound } from '../model/duplicateRowFound';
 import { FalsumError } from '../model/falsumError';
 import { ForeignKeyDoesNotExist } from '../model/foreignKeyDoesNotExist';
-import { InlineResponse2002 } from '../model/inlineResponse2002';
+import { InlineResponse2003 } from '../model/inlineResponse2003';
 import { InternalServerError } from '../model/internalServerError';
 import { MSMerchantCreditHistoryPagination } from '../model/mSMerchantCreditHistoryPagination';
 import { MSMerchantCreditRedemptionPagination } from '../model/mSMerchantCreditRedemptionPagination';
@@ -315,7 +315,7 @@ export class MerchantCreditsApi {
      * 
      * @summary Fetch all active merchant credits
      */
-    public async fetchMerchantCreditCount (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }> {
+    public async fetchMerchantCreditCount (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }> {
         const localVarPath = this.basePath + '/v2/payment/merchantcredit/count';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -357,13 +357,13 @@ export class MerchantCreditsApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2002;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InlineResponse2003;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InlineResponse2002");
+                            body = ObjectSerializer.deserialize(body, "InlineResponse2003");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

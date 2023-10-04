@@ -1,5 +1,6 @@
 .gitignore
 api.ts
+api/a2PApi.ts
 api/advertisementCreditsApi.ts
 api/amenitiesApi.ts
 api/analyticsApi.ts
@@ -49,7 +50,6 @@ api/staticVouchersApi.ts
 api/systemApi.ts
 api/ticketApi.ts
 api/transactionLedgerApi.ts
-api/utilitiesApi.ts
 api/videosApi.ts
 api/virtualBusinessCardApi.ts
 api/webTerminalApi.ts
@@ -73,6 +73,11 @@ model/applicableTerminalsAnyOf6.ts
 model/authError.ts
 model/availablePhoneNumbersRequest.ts
 model/browserDetails.ts
+model/businessClassification.ts
+model/businessIndustry.ts
+model/businessRegionsOfOperation.ts
+model/businessRegistrationIdentifier.ts
+model/businessType.ts
 model/clickFunnelAmount.ts
 model/clickFunnelContact.ts
 model/clickFunnelContactProfile.ts
@@ -112,6 +117,7 @@ model/inlineObject1.ts
 model/inlineObject2.ts
 model/inlineObject3.ts
 model/inlineObject4.ts
+model/inlineObject5.ts
 model/inlineResponse200.ts
 model/inlineResponse2001.ts
 model/inlineResponse20010.ts
@@ -126,6 +132,7 @@ model/inlineResponse2007.ts
 model/inlineResponse2008.ts
 model/inlineResponse2009.ts
 model/internalServerError.ts
+model/jobPosition.ts
 model/ledgerEntry.ts
 model/linkBook.ts
 model/linkBookSection.ts
@@ -181,7 +188,6 @@ model/paginatedWTMerchantCredits.ts
 model/paginationRequestWithIDAndWithoutSortOptions.ts
 model/paginationRequestWithSortOptions.ts
 model/paymentDesign.ts
-model/paymentPrefixes.ts
 model/performance.ts
 model/phoneNumber.ts
 model/phoneNumberCapabilities.ts
@@ -265,6 +271,7 @@ model/vSCampaignGeneratedMessagePagination.ts
 model/vSDynamicVoucherStatus.ts
 model/video.ts
 model/virtualBusinessCard.ts
+model/wTA2PApplicationCreateParams.ts
 model/wTAdvertisementCredit.ts
 model/wTAdvertisementCreditCreateParams.ts
 model/wTAdvertisementCreditScan.ts

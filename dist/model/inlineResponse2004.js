@@ -12,7 +12,7 @@ InlineResponse2004.attributeTypeMap = [
     {
         "name": "data",
         "baseName": "data",
-        "type": "Array<WTStaticVoucher>"
+        "type": "Array<WTTicket>"
     },
     {
         "name": "totalRows",

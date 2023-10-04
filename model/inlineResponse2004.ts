@@ -11,10 +11,10 @@
  */
 
 import { RequestFile } from './models';
-import { WTStaticVoucher } from './wTStaticVoucher';
+import { WTTicket } from './wTTicket';
 
 export class InlineResponse2004 {
-    'data': Array<WTStaticVoucher>;
+    'data': Array<WTTicket>;
     'totalRows': number;
 
     static discriminator: string | undefined = undefined;
@@ -23,7 +23,7 @@ export class InlineResponse2004 {
         {
             "name": "data",
             "baseName": "data",
-            "type": "Array<WTStaticVoucher>"
+            "type": "Array<WTTicket>"
         },
         {
             "name": "totalRows",

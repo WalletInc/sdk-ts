@@ -13,14 +13,14 @@
 import { RequestFile } from './models';
 
 export class InlineObject3 {
-    'claimedByPhoneNumber': string;
+    'paymentDesignID': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "claimedByPhoneNumber",
-            "baseName": "claimedByPhoneNumber",
+            "name": "paymentDesignID",
+            "baseName": "paymentDesignID",
             "type": "string"
         }    ];
 

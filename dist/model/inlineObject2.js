@@ -10,9 +10,9 @@ exports.InlineObject2 = InlineObject2;
 InlineObject2.discriminator = undefined;
 InlineObject2.attributeTypeMap = [
     {
-        "name": "paymentDesignID",
-        "baseName": "paymentDesignID",
-        "type": "string"
+        "name": "tickets",
+        "baseName": "tickets",
+        "type": "Array<WTTicketUpdateParams>"
     }
 ];
 //# sourceMappingURL=inlineObject2.js.map

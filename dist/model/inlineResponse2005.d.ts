@@ -1,7 +1,8 @@
-import { WTTicket } from './wTTicket';
+import { OutboundSMS } from './outboundSMS';
 export declare class InlineResponse2005 {
-    'data': Array<WTTicket>;
-    'totalRows': number;
+    'total': number;
+    'length': number;
+    'results': Array<OutboundSMS>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
