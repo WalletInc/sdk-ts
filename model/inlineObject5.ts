@@ -11,22 +11,27 @@
  */
 
 import { RequestFile } from './models';
-import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 
-export class InlineObject2 {
-    'tickets': Array<WTTicketUpdateParams>;
+export class InlineObject5 {
+    'phoneVerificationToken': string;
+    'merchantID': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "tickets",
-            "baseName": "tickets",
-            "type": "Array<WTTicketUpdateParams>"
+            "name": "phoneVerificationToken",
+            "baseName": "phoneVerificationToken",
+            "type": "string"
+        },
+        {
+            "name": "merchantID",
+            "baseName": "merchantID",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return InlineObject2.attributeTypeMap;
+        return InlineObject5.attributeTypeMap;
     }
 }
 

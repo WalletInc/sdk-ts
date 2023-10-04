@@ -1,6 +1,6 @@
-import { WTTicketUpdateParams } from './wTTicketUpdateParams';
-export declare class InlineObject2 {
-    'tickets': Array<WTTicketUpdateParams>;
+export declare class InlineObject5 {
+    'phoneVerificationToken': string;
+    'merchantID': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

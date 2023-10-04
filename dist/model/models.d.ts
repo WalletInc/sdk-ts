@@ -62,6 +62,7 @@ export * from './inlineObject1';
 export * from './inlineObject2';
 export * from './inlineObject3';
 export * from './inlineObject4';
+export * from './inlineObject5';
 export * from './inlineResponse200';
 export * from './inlineResponse2001';
 export * from './inlineResponse20010';

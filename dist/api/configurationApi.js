@@ -124,7 +124,7 @@ class ConfigurationApi {
             });
         });
     }
-    saveMerchantCreditPaymentDesign(inlineObject2, options = { headers: {} }) {
+    saveMerchantCreditPaymentDesign(inlineObject3, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/wallet/merchantCredit/paymentDesign';
             let localVarQueryParameters = {};
@@ -137,8 +137,8 @@ class ConfigurationApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (inlineObject2 === null || inlineObject2 === undefined) {
-                throw new Error('Required parameter inlineObject2 was null or undefined when calling saveMerchantCreditPaymentDesign.');
+            if (inlineObject3 === null || inlineObject3 === undefined) {
+                throw new Error('Required parameter inlineObject3 was null or undefined when calling saveMerchantCreditPaymentDesign.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -149,7 +149,7 @@ class ConfigurationApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(inlineObject2, "InlineObject2")
+                body: models_1.ObjectSerializer.serialize(inlineObject3, "InlineObject3")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));

@@ -1,5 +1,5 @@
 export declare class InlineObject3 {
-    'claimedByPhoneNumber': string;
+    'paymentDesignID': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

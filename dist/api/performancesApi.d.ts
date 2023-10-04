@@ -1,6 +1,7 @@
 /// <reference types="node" />
 import http from 'http';
 import { InlineObject1 } from '../model/inlineObject1';
+import { InlineObject2 } from '../model/inlineObject2';
 import { InlineResponse2003 } from '../model/inlineResponse2003';
 import { InlineResponse2004 } from '../model/inlineResponse2004';
 import { Performance } from '../model/performance';
@@ -93,6 +94,14 @@ export declare class PerformancesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: InlineResponse2004;
+    }>;
+    importTickets(id: any, inlineObject2: InlineObject2, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: string;
     }>;
     restorePerformance(id: any, options?: {
         headers: {
