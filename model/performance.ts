@@ -30,6 +30,7 @@ export class Performance {
     'paymentDesignID'?: string;
     'maxCompTickets'?: number;
     'ticketExpirationDateTime'?: Date;
+    'redemptionInstructions'?: string;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;
@@ -93,6 +94,11 @@ export class Performance {
             "name": "ticketExpirationDateTime",
             "baseName": "ticketExpirationDateTime",
             "type": "Date"
+        },
+        {
+            "name": "redemptionInstructions",
+            "baseName": "redemptionInstructions",
+            "type": "string"
         },
         {
             "name": "id",

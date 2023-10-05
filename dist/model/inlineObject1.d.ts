@@ -1,4 +1,5 @@
 export declare class InlineObject1 {
+    'redemptionInstructions'?: string;
     'ticketExpirationDateTime': Date;
     'maxCompTickets': number;
     'paymentDesignID': string | null;
