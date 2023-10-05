@@ -30,6 +30,7 @@ export class WTPerformanceUpdateParams {
     'paymentDesignID'?: string;
     'maxCompTickets'?: number;
     'ticketExpirationDateTime'?: Date;
+    'redemptionInstructions'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -88,6 +89,11 @@ export class WTPerformanceUpdateParams {
             "name": "ticketExpirationDateTime",
             "baseName": "ticketExpirationDateTime",
             "type": "Date"
+        },
+        {
+            "name": "redemptionInstructions",
+            "baseName": "redemptionInstructions",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {

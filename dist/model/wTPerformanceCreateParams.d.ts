@@ -10,6 +10,7 @@ export declare class WTPerformanceCreateParams {
     'paymentDesignID'?: string;
     'maxCompTickets'?: number;
     'ticketExpirationDateTime'?: Date;
+    'redemptionInstructions'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

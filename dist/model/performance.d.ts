@@ -10,6 +10,7 @@ export declare class Performance {
     'paymentDesignID'?: string;
     'maxCompTickets'?: number;
     'ticketExpirationDateTime'?: Date;
+    'redemptionInstructions'?: string;
     'id': string | null;
     'createdAt': Date;
     'updatedAt': Date;
