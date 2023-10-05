@@ -13,6 +13,7 @@
 import { RequestFile } from './models';
 
 export class InlineObject1 {
+    'redemptionInstructions'?: string;
     'ticketExpirationDateTime': Date;
     'maxCompTickets': number;
     'paymentDesignID': string | null;
@@ -20,6 +21,11 @@ export class InlineObject1 {
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "redemptionInstructions",
+            "baseName": "redemptionInstructions",
+            "type": "string"
+        },
         {
             "name": "ticketExpirationDateTime",
             "baseName": "ticketExpirationDateTime",

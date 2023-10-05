@@ -65,6 +65,11 @@ Performance.attributeTypeMap = [
         "type": "Date"
     },
     {
+        "name": "redemptionInstructions",
+        "baseName": "redemptionInstructions",
+        "type": "string"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"

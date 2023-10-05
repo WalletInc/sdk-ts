@@ -63,6 +63,11 @@ WTPerformanceCreateParams.attributeTypeMap = [
         "name": "ticketExpirationDateTime",
         "baseName": "ticketExpirationDateTime",
         "type": "Date"
+    },
+    {
+        "name": "redemptionInstructions",
+        "baseName": "redemptionInstructions",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTPerformanceCreateParams.js.map
