@@ -1,0 +1,52 @@
+import { ClickFunnelContactProfile } from './clickFunnelContactProfile';
+export declare class ClickFunnelContact {
+    'id': number;
+    'pageId': number;
+    'firstName': string;
+    'lastName': string;
+    'name': string;
+    'address': string;
+    'city': string;
+    'country': string;
+    'state'?: string;
+    'zip': string;
+    'email': string;
+    'phone': string;
+    'webinarAt'?: any | null;
+    'webinarLastTime'?: any | null;
+    'webinarExt': string;
+    'createdAt': Date;
+    'updatedAt': Date;
+    'ip': string;
+    'funnelId': number;
+    'funnelStepId': number;
+    'unsubscribedAt'?: any | null;
+    'cfUvid': string;
+    'cartAffiliateId': string;
+    'shippingAddress': string;
+    'shippingCity': string;
+    'shippingCountry': string;
+    'shippingState': string;
+    'shippingZip': string;
+    'vatNumber': string;
+    'affiliateId'?: any | null;
+    'affSub': string;
+    'affSub2': string;
+    'cfAffiliateId'?: any | null;
+    'contactProfile'?: ClickFunnelContactProfile;
+    'timeZone'?: string | null;
+    'companyName': string;
+    'companyIndustry': string;
+    'additionalInfo'?: any | null;
+    static discriminator: string | undefined;
+    static attributeTypeMap: Array<{
+        name: string;
+        baseName: string;
+        type: string;
+    }>;
+    static getAttributeTypeMap(): {
+        name: string;
+        baseName: string;
+        type: string;
+    }[];
+}
