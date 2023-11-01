@@ -56,10 +56,10 @@ api/webTerminalApi.ts
 api/wixTerminalApi.ts
 api/wooCommerceTerminalApi.ts
 git_push.sh
+model/a2PApplicationSubmission.ts
 model/advertisementCredit.ts
 model/advertisementCreditBroadcast.ts
 model/advertisementCreditScan.ts
-model/agreement.ts
 model/amenity.ts
 model/announcement.ts
 model/applicableTerminals.ts
@@ -77,6 +77,7 @@ model/businessClassification.ts
 model/businessIndustry.ts
 model/businessRegionsOfOperation.ts
 model/businessRegistrationIdentifier.ts
+model/businessStockExchanges.ts
 model/businessType.ts
 model/clickFunnelAmount.ts
 model/clickFunnelContact.ts
@@ -231,6 +232,7 @@ model/portalPage.ts
 model/presignedPost.ts
 model/presignedPostFields.ts
 model/product.ts
+model/profileStatuses.ts
 model/promoCode.ts
 model/qRCodeDesign.ts
 model/reachPerformanceStats.ts
@@ -265,13 +267,14 @@ model/subscriptionPlan.ts
 model/subscriptionProduct.ts
 model/tcpa.ts
 model/ticket.ts
+model/trustBundleStatuses.ts
 model/updateStaticVoucherCampaignWithVoucher.ts
 model/vSCampaignGeneratedMessage.ts
 model/vSCampaignGeneratedMessagePagination.ts
 model/vSDynamicVoucherStatus.ts
 model/video.ts
 model/virtualBusinessCard.ts
-model/wTA2PApplicationCreateParams.ts
+model/wTA2PApplicationUpdateParams.ts
 model/wTAdvertisementCredit.ts
 model/wTAdvertisementCreditCreateParams.ts
 model/wTAdvertisementCreditScan.ts
@@ -377,7 +380,6 @@ model/wTRole.ts
 model/wTRoomRateCreateParams.ts
 model/wTRoomRateUpdateParams.ts
 model/wTSMSAcquirePhoneNumber.ts
-model/wTSMSCreateAgreement.ts
 model/wTSMSImportOptInListSubscribers.ts
 model/wTSMSImportedListCreate.ts
 model/wTSMSOptInListSourceCreate.ts
