@@ -54,6 +54,8 @@ export declare class WalletConfiguration {
     'merchantCreditPaymentDesignID'?: string;
     'customDomain'?: string;
     'mobileAppIconURL'?: string;
+    'isAgeGate'?: boolean;
+    'ageGateMinimum'?: number;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;

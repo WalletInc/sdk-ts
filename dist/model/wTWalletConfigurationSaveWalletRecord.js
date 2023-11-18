@@ -283,6 +283,16 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "name": "mobileAppIconURL",
         "baseName": "mobileAppIconURL",
         "type": "string"
+    },
+    {
+        "name": "isAgeGate",
+        "baseName": "isAgeGate",
+        "type": "boolean"
+    },
+    {
+        "name": "ageGateMinimum",
+        "baseName": "ageGateMinimum",
+        "type": "number"
     }
 ];
 //# sourceMappingURL=wTWalletConfigurationSaveWalletRecord.js.map
