@@ -68,6 +68,8 @@ export class WTWalletConfigurationSaveWalletRecord {
     'merchantCreditPaymentDesignID'?: string;
     'customDomain'?: string;
     'mobileAppIconURL'?: string;
+    'isAgeGate'?: boolean;
+    'ageGateMinimum'?: number;
 
     static discriminator: string | undefined = undefined;
 
@@ -346,6 +348,16 @@ export class WTWalletConfigurationSaveWalletRecord {
             "name": "mobileAppIconURL",
             "baseName": "mobileAppIconURL",
             "type": "string"
+        },
+        {
+            "name": "isAgeGate",
+            "baseName": "isAgeGate",
+            "type": "boolean"
+        },
+        {
+            "name": "ageGateMinimum",
+            "baseName": "ageGateMinimum",
+            "type": "number"
         }    ];
 
     static getAttributeTypeMap() {
