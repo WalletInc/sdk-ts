@@ -54,6 +54,8 @@ export declare class WTWalletConfigurationSaveWalletRecord {
     'merchantCreditPaymentDesignID'?: string;
     'customDomain'?: string;
     'mobileAppIconURL'?: string;
+    'isAgeGate'?: boolean;
+    'ageGateMinimum'?: number;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -285,6 +285,16 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "isAgeGate",
+        "baseName": "isAgeGate",
+        "type": "boolean"
+    },
+    {
+        "name": "ageGateMinimum",
+        "baseName": "ageGateMinimum",
+        "type": "number"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"
