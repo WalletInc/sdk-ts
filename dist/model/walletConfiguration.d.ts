@@ -53,6 +53,7 @@ export declare class WalletConfiguration {
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
     'customDomain'?: string;
+    'isClaimed'?: boolean;
     'mobileAppIconURL'?: string;
     'isAgeGate'?: boolean;
     'ageGateMinimum'?: number;

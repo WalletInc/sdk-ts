@@ -280,6 +280,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "isClaimed",
+        "baseName": "isClaimed",
+        "type": "boolean"
+    },
+    {
         "name": "mobileAppIconURL",
         "baseName": "mobileAppIconURL",
         "type": "string"
