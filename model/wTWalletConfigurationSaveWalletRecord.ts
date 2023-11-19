@@ -67,6 +67,7 @@ export class WTWalletConfigurationSaveWalletRecord {
     'vanityPageWalletPrefix'?: string;
     'merchantCreditPaymentDesignID'?: string;
     'customDomain'?: string;
+    'isClaimed'?: boolean;
     'mobileAppIconURL'?: string;
     'isAgeGate'?: boolean;
     'ageGateMinimum'?: number;
@@ -343,6 +344,11 @@ export class WTWalletConfigurationSaveWalletRecord {
             "name": "customDomain",
             "baseName": "customDomain",
             "type": "string"
+        },
+        {
+            "name": "isClaimed",
+            "baseName": "isClaimed",
+            "type": "boolean"
         },
         {
             "name": "mobileAppIconURL",
