@@ -1086,7 +1086,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Count new sessions
+     * @summary Count exit clicks
      * @param startDate 
      * @param endDate 
      */
@@ -7259,7 +7259,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Count new sessions
+     * @summary Count referring sites
      * @param startDate 
      * @param endDate 
      */
