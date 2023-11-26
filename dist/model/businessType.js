@@ -8,5 +8,6 @@ var BusinessType;
     BusinessType[BusinessType["CoOperative"] = 'Co-operative'] = "CoOperative";
     BusinessType[BusinessType["NonProfitCorporation"] = 'Non-profit Corporation'] = "NonProfitCorporation";
     BusinessType[BusinessType["Corporation"] = 'Corporation'] = "Corporation";
+    BusinessType[BusinessType["SoleProprietorship"] = 'Sole Proprietorship'] = "SoleProprietorship";
 })(BusinessType || (exports.BusinessType = BusinessType = {}));
 //# sourceMappingURL=businessType.js.map
