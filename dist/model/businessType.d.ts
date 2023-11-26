@@ -3,5 +3,6 @@ export declare enum BusinessType {
     LimitedLiabilityCorporation,
     CoOperative,
     NonProfitCorporation,
-    Corporation
+    Corporation,
+    SoleProprietorship
 }
