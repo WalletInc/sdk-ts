@@ -17,5 +17,6 @@ export enum BusinessType {
     LimitedLiabilityCorporation = <any> 'Limited Liability Corporation',
     CoOperative = <any> 'Co-operative',
     NonProfitCorporation = <any> 'Non-profit Corporation',
-    Corporation = <any> 'Corporation'
+    Corporation = <any> 'Corporation',
+    SoleProprietorship = <any> 'Sole Proprietorship'
 }
