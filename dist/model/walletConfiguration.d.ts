@@ -63,6 +63,7 @@ export declare class WalletConfiguration {
     'socialTwitterURL'?: string;
     'socialLinkedInURL'?: string;
     'primaryPhoneNumber'?: string;
+    'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
     'id': string;
     'createdAt': Date;
