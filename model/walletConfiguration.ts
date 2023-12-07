@@ -77,6 +77,7 @@ export class WalletConfiguration {
     'socialTwitterURL'?: string;
     'socialLinkedInURL'?: string;
     'primaryPhoneNumber'?: string;
+    'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
     'id': string;
     'createdAt': Date;
@@ -404,6 +405,11 @@ export class WalletConfiguration {
         {
             "name": "primaryPhoneNumber",
             "baseName": "primaryPhoneNumber",
+            "type": "string"
+        },
+        {
+            "name": "primaryWhatsApp",
+            "baseName": "primaryWhatsApp",
             "type": "string"
         },
         {

@@ -330,6 +330,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "primaryWhatsApp",
+        "baseName": "primaryWhatsApp",
+        "type": "string"
+    },
+    {
         "name": "primaryEmailAddress",
         "baseName": "primaryEmailAddress",
         "type": "string"

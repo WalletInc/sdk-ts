@@ -77,6 +77,7 @@ export class WTWalletConfigurationSaveWalletRecord {
     'socialTwitterURL'?: string;
     'socialLinkedInURL'?: string;
     'primaryPhoneNumber'?: string;
+    'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
 
     static discriminator: string | undefined = undefined;
@@ -400,6 +401,11 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "primaryPhoneNumber",
             "baseName": "primaryPhoneNumber",
+            "type": "string"
+        },
+        {
+            "name": "primaryWhatsApp",
+            "baseName": "primaryWhatsApp",
             "type": "string"
         },
         {
