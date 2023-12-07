@@ -57,6 +57,13 @@ export declare class WTWalletConfigurationSaveWalletRecord {
     'mobileAppIconURL'?: string;
     'isAgeGate'?: boolean;
     'ageGateMinimum'?: number;
+    'socialInstagramURL'?: string;
+    'socialFacebookURL'?: string;
+    'socialYouTubeURL'?: string;
+    'socialTwitterURL'?: string;
+    'socialLinkedInURL'?: string;
+    'primaryPhoneNumber'?: string;
+    'primaryEmailAddress'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

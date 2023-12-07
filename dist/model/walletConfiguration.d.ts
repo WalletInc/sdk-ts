@@ -57,6 +57,13 @@ export declare class WalletConfiguration {
     'mobileAppIconURL'?: string;
     'isAgeGate'?: boolean;
     'ageGateMinimum'?: number;
+    'socialInstagramURL'?: string;
+    'socialFacebookURL'?: string;
+    'socialYouTubeURL'?: string;
+    'socialTwitterURL'?: string;
+    'socialLinkedInURL'?: string;
+    'primaryPhoneNumber'?: string;
+    'primaryEmailAddress'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;
