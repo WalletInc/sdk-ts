@@ -63,6 +63,7 @@ export declare class WTWalletConfigurationSaveWalletRecord {
     'socialTwitterURL'?: string;
     'socialLinkedInURL'?: string;
     'primaryPhoneNumber'?: string;
+    'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
