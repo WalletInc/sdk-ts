@@ -71,6 +71,13 @@ export class WTWalletConfigurationSaveWalletRecord {
     'mobileAppIconURL'?: string;
     'isAgeGate'?: boolean;
     'ageGateMinimum'?: number;
+    'socialInstagramURL'?: string;
+    'socialFacebookURL'?: string;
+    'socialYouTubeURL'?: string;
+    'socialTwitterURL'?: string;
+    'socialLinkedInURL'?: string;
+    'primaryPhoneNumber'?: string;
+    'primaryEmailAddress'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -364,6 +371,41 @@ export class WTWalletConfigurationSaveWalletRecord {
             "name": "ageGateMinimum",
             "baseName": "ageGateMinimum",
             "type": "number"
+        },
+        {
+            "name": "socialInstagramURL",
+            "baseName": "socialInstagramURL",
+            "type": "string"
+        },
+        {
+            "name": "socialFacebookURL",
+            "baseName": "socialFacebookURL",
+            "type": "string"
+        },
+        {
+            "name": "socialYouTubeURL",
+            "baseName": "socialYouTubeURL",
+            "type": "string"
+        },
+        {
+            "name": "socialTwitterURL",
+            "baseName": "socialTwitterURL",
+            "type": "string"
+        },
+        {
+            "name": "socialLinkedInURL",
+            "baseName": "socialLinkedInURL",
+            "type": "string"
+        },
+        {
+            "name": "primaryPhoneNumber",
+            "baseName": "primaryPhoneNumber",
+            "type": "string"
+        },
+        {
+            "name": "primaryEmailAddress",
+            "baseName": "primaryEmailAddress",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
