@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTStaticVoucherCampaignPreviewMessages = void 0;
 class WTStaticVoucherCampaignPreviewMessages {
     static getAttributeTypeMap() {
         return WTStaticVoucherCampaignPreviewMessages.attributeTypeMap;
     }
 }
+exports.WTStaticVoucherCampaignPreviewMessages = WTStaticVoucherCampaignPreviewMessages;
 WTStaticVoucherCampaignPreviewMessages.discriminator = undefined;
 WTStaticVoucherCampaignPreviewMessages.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTStaticVoucherCampaignPreviewMessages.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTStaticVoucherCampaignPreviewMessages = WTStaticVoucherCampaignPreviewMessages;
 //# sourceMappingURL=wTStaticVoucherCampaignPreviewMessages.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PaginatedWTMerchantCredits = void 0;
 class PaginatedWTMerchantCredits {
     static getAttributeTypeMap() {
         return PaginatedWTMerchantCredits.attributeTypeMap;
     }
 }
+exports.PaginatedWTMerchantCredits = PaginatedWTMerchantCredits;
 PaginatedWTMerchantCredits.discriminator = undefined;
 PaginatedWTMerchantCredits.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ PaginatedWTMerchantCredits.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.PaginatedWTMerchantCredits = PaginatedWTMerchantCredits;
 //# sourceMappingURL=paginatedWTMerchantCredits.js.map

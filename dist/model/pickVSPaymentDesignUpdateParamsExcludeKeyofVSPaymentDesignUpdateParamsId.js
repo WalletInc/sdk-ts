@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId = void 0;
 class PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId {
     static getAttributeTypeMap() {
         return PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId = PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId;
 PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.discriminator = undefined;
 PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.attribu
         "type": "string"
     }
 ];
-exports.PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId = PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId;
 //# sourceMappingURL=pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.js.map

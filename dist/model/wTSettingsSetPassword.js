@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTSettingsSetPassword = void 0;
 class WTSettingsSetPassword {
     static getAttributeTypeMap() {
         return WTSettingsSetPassword.attributeTypeMap;
     }
 }
+exports.WTSettingsSetPassword = WTSettingsSetPassword;
 WTSettingsSetPassword.discriminator = undefined;
 WTSettingsSetPassword.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ WTSettingsSetPassword.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTSettingsSetPassword = WTSettingsSetPassword;
 //# sourceMappingURL=wTSettingsSetPassword.js.map

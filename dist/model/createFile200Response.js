@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CreateFile200Response = void 0;
 class CreateFile200Response {
     static getAttributeTypeMap() {
         return CreateFile200Response.attributeTypeMap;
     }
 }
+exports.CreateFile200Response = CreateFile200Response;
 CreateFile200Response.discriminator = undefined;
 CreateFile200Response.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ CreateFile200Response.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.CreateFile200Response = CreateFile200Response;
 //# sourceMappingURL=createFile200Response.js.map

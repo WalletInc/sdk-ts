@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTProductUpdateParams = void 0;
 class WTProductUpdateParams {
     static getAttributeTypeMap() {
         return WTProductUpdateParams.attributeTypeMap;
     }
 }
+exports.WTProductUpdateParams = WTProductUpdateParams;
 WTProductUpdateParams.discriminator = undefined;
 WTProductUpdateParams.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ WTProductUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTProductUpdateParams = WTProductUpdateParams;
 //# sourceMappingURL=wTProductUpdateParams.js.map

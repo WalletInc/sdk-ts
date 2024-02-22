@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTSMSImportedListCreate = void 0;
 class WTSMSImportedListCreate {
     static getAttributeTypeMap() {
         return WTSMSImportedListCreate.attributeTypeMap;
     }
 }
+exports.WTSMSImportedListCreate = WTSMSImportedListCreate;
 WTSMSImportedListCreate.discriminator = undefined;
 WTSMSImportedListCreate.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTSMSImportedListCreate.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTSMSImportedListCreate = WTSMSImportedListCreate;
 //# sourceMappingURL=wTSMSImportedListCreate.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Performance = void 0;
 class Performance {
     static getAttributeTypeMap() {
         return Performance.attributeTypeMap;
     }
 }
+exports.Performance = Performance;
 Performance.discriminator = undefined;
 Performance.attributeTypeMap = [
     {
@@ -93,5 +95,4 @@ Performance.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Performance = Performance;
 //# sourceMappingURL=performance.js.map

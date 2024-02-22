@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTDiningCreateParams = void 0;
 class WTDiningCreateParams {
     static getAttributeTypeMap() {
         return WTDiningCreateParams.attributeTypeMap;
     }
 }
+exports.WTDiningCreateParams = WTDiningCreateParams;
 WTDiningCreateParams.discriminator = undefined;
 WTDiningCreateParams.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ WTDiningCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTDiningCreateParams = WTDiningCreateParams;
 //# sourceMappingURL=wTDiningCreateParams.js.map

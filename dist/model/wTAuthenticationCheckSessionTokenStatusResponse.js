@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTAuthenticationCheckSessionTokenStatusResponse = void 0;
 class WTAuthenticationCheckSessionTokenStatusResponse {
     static getAttributeTypeMap() {
         return WTAuthenticationCheckSessionTokenStatusResponse.attributeTypeMap;
     }
 }
+exports.WTAuthenticationCheckSessionTokenStatusResponse = WTAuthenticationCheckSessionTokenStatusResponse;
 WTAuthenticationCheckSessionTokenStatusResponse.discriminator = undefined;
 WTAuthenticationCheckSessionTokenStatusResponse.attributeTypeMap = [
     {
@@ -13,7 +15,6 @@ WTAuthenticationCheckSessionTokenStatusResponse.attributeTypeMap = [
         "type": "WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum"
     }
 ];
-exports.WTAuthenticationCheckSessionTokenStatusResponse = WTAuthenticationCheckSessionTokenStatusResponse;
 (function (WTAuthenticationCheckSessionTokenStatusResponse) {
     let StatusEnum;
     (function (StatusEnum) {

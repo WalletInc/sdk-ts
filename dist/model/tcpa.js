@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Tcpa = void 0;
 class Tcpa {
     static getAttributeTypeMap() {
         return Tcpa.attributeTypeMap;
     }
 }
+exports.Tcpa = Tcpa;
 Tcpa.discriminator = undefined;
 Tcpa.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ Tcpa.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Tcpa = Tcpa;
 //# sourceMappingURL=tcpa.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSMerchantCreditRedemptionPagination = void 0;
 class MSMerchantCreditRedemptionPagination {
     static getAttributeTypeMap() {
         return MSMerchantCreditRedemptionPagination.attributeTypeMap;
     }
 }
+exports.MSMerchantCreditRedemptionPagination = MSMerchantCreditRedemptionPagination;
 MSMerchantCreditRedemptionPagination.discriminator = undefined;
 MSMerchantCreditRedemptionPagination.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ MSMerchantCreditRedemptionPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSMerchantCreditRedemptionPagination = MSMerchantCreditRedemptionPagination;
 //# sourceMappingURL=mSMerchantCreditRedemptionPagination.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId = void 0;
 class PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId {
     static getAttributeTypeMap() {
         return PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId = PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId;
 PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.discriminator = undefined;
 PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.attributeTy
         "type": "Date"
     }
 ];
-exports.PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId = PickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId;
 //# sourceMappingURL=pickWTNewsArticleUpdateParamsExcludeKeyofWTNewsArticleUpdateParamsId.js.map

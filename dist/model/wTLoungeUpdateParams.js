@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTLoungeUpdateParams = void 0;
 class WTLoungeUpdateParams {
     static getAttributeTypeMap() {
         return WTLoungeUpdateParams.attributeTypeMap;
     }
 }
+exports.WTLoungeUpdateParams = WTLoungeUpdateParams;
 WTLoungeUpdateParams.discriminator = undefined;
 WTLoungeUpdateParams.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ WTLoungeUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTLoungeUpdateParams = WTLoungeUpdateParams;
 //# sourceMappingURL=wTLoungeUpdateParams.js.map

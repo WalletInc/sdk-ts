@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmployee = void 0;
 class WTEmployee {
     static getAttributeTypeMap() {
         return WTEmployee.attributeTypeMap;
     }
 }
+exports.WTEmployee = WTEmployee;
 WTEmployee.discriminator = undefined;
 WTEmployee.attributeTypeMap = [
     {
@@ -158,5 +160,4 @@ WTEmployee.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.WTEmployee = WTEmployee;
 //# sourceMappingURL=wTEmployee.js.map

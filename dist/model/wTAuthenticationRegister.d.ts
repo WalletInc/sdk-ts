@@ -15,6 +15,8 @@ export declare class WTAuthenticationRegister {
     'country': string;
     'phoneNumber': string;
     'ein'?: string;
+    'gaClientId'?: string;
+    'gaMeasurementId'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

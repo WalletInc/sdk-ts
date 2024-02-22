@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SimpleSMSBroadcast = void 0;
 class SimpleSMSBroadcast {
     static getAttributeTypeMap() {
         return SimpleSMSBroadcast.attributeTypeMap;
     }
 }
+exports.SimpleSMSBroadcast = SimpleSMSBroadcast;
 SimpleSMSBroadcast.discriminator = undefined;
 SimpleSMSBroadcast.attributeTypeMap = [
     {
@@ -108,5 +110,4 @@ SimpleSMSBroadcast.attributeTypeMap = [
         "type": "WTImportedList"
     }
 ];
-exports.SimpleSMSBroadcast = SimpleSMSBroadcast;
 //# sourceMappingURL=simpleSMSBroadcast.js.map

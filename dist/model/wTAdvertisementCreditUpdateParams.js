@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTAdvertisementCreditUpdateParams = void 0;
 class WTAdvertisementCreditUpdateParams {
     static getAttributeTypeMap() {
         return WTAdvertisementCreditUpdateParams.attributeTypeMap;
     }
 }
+exports.WTAdvertisementCreditUpdateParams = WTAdvertisementCreditUpdateParams;
 WTAdvertisementCreditUpdateParams.discriminator = undefined;
 WTAdvertisementCreditUpdateParams.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ WTAdvertisementCreditUpdateParams.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.WTAdvertisementCreditUpdateParams = WTAdvertisementCreditUpdateParams;
 //# sourceMappingURL=wTAdvertisementCreditUpdateParams.js.map

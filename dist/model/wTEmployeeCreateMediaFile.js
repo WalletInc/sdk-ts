@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmployeeCreateMediaFile = void 0;
 class WTEmployeeCreateMediaFile {
     static getAttributeTypeMap() {
         return WTEmployeeCreateMediaFile.attributeTypeMap;
     }
 }
+exports.WTEmployeeCreateMediaFile = WTEmployeeCreateMediaFile;
 WTEmployeeCreateMediaFile.discriminator = undefined;
 WTEmployeeCreateMediaFile.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTEmployeeCreateMediaFile.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeCreateMediaFile = WTEmployeeCreateMediaFile;
 //# sourceMappingURL=wTEmployeeCreateMediaFile.js.map

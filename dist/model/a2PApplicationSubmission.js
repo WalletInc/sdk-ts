@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.A2PApplicationSubmission = void 0;
 class A2PApplicationSubmission {
     static getAttributeTypeMap() {
         return A2PApplicationSubmission.attributeTypeMap;
     }
 }
+exports.A2PApplicationSubmission = A2PApplicationSubmission;
 A2PApplicationSubmission.discriminator = undefined;
 A2PApplicationSubmission.attributeTypeMap = [
     {
@@ -188,5 +190,4 @@ A2PApplicationSubmission.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.A2PApplicationSubmission = A2PApplicationSubmission;
 //# sourceMappingURL=a2PApplicationSubmission.js.map

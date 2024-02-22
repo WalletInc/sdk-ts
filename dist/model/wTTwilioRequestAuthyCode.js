@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTTwilioRequestAuthyCode = void 0;
 class WTTwilioRequestAuthyCode {
     static getAttributeTypeMap() {
         return WTTwilioRequestAuthyCode.attributeTypeMap;
     }
 }
+exports.WTTwilioRequestAuthyCode = WTTwilioRequestAuthyCode;
 WTTwilioRequestAuthyCode.discriminator = undefined;
 WTTwilioRequestAuthyCode.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ WTTwilioRequestAuthyCode.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTTwilioRequestAuthyCode = WTTwilioRequestAuthyCode;
 //# sourceMappingURL=wTTwilioRequestAuthyCode.js.map

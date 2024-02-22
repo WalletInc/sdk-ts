@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FetchDomainsByIndustry200Response = void 0;
 class FetchDomainsByIndustry200Response {
     static getAttributeTypeMap() {
         return FetchDomainsByIndustry200Response.attributeTypeMap;
     }
 }
+exports.FetchDomainsByIndustry200Response = FetchDomainsByIndustry200Response;
 FetchDomainsByIndustry200Response.discriminator = undefined;
 FetchDomainsByIndustry200Response.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ FetchDomainsByIndustry200Response.attributeTypeMap = [
         "type": "Array<any>"
     }
 ];
-exports.FetchDomainsByIndustry200Response = FetchDomainsByIndustry200Response;
 //# sourceMappingURL=fetchDomainsByIndustry200Response.js.map

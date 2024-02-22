@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.QRCodeDesign = void 0;
 class QRCodeDesign {
     static getAttributeTypeMap() {
         return QRCodeDesign.attributeTypeMap;
     }
 }
+exports.QRCodeDesign = QRCodeDesign;
 QRCodeDesign.discriminator = undefined;
 QRCodeDesign.attributeTypeMap = [
     {
@@ -88,5 +90,4 @@ QRCodeDesign.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.QRCodeDesign = QRCodeDesign;
 //# sourceMappingURL=qRCodeDesign.js.map

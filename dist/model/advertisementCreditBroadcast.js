@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AdvertisementCreditBroadcast = void 0;
 class AdvertisementCreditBroadcast {
     static getAttributeTypeMap() {
         return AdvertisementCreditBroadcast.attributeTypeMap;
     }
 }
+exports.AdvertisementCreditBroadcast = AdvertisementCreditBroadcast;
 AdvertisementCreditBroadcast.discriminator = undefined;
 AdvertisementCreditBroadcast.attributeTypeMap = [
     {
@@ -113,5 +115,4 @@ AdvertisementCreditBroadcast.attributeTypeMap = [
         "type": "AdvertisementCredit"
     }
 ];
-exports.AdvertisementCreditBroadcast = AdvertisementCreditBroadcast;
 //# sourceMappingURL=advertisementCreditBroadcast.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner = void 0;
 class FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner {
     static getAttributeTypeMap() {
         return FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner.attributeTypeMap;
     }
 }
+exports.FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner = FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner;
 FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner.discriminator = undefined;
 FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner.attrib
         "type": "string"
     }
 ];
-exports.FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner = FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner;
 //# sourceMappingURL=fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner.js.map

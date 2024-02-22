@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTAuthenticationForgotPassword = void 0;
 class WTAuthenticationForgotPassword {
     static getAttributeTypeMap() {
         return WTAuthenticationForgotPassword.attributeTypeMap;
     }
 }
+exports.WTAuthenticationForgotPassword = WTAuthenticationForgotPassword;
 WTAuthenticationForgotPassword.discriminator = undefined;
 WTAuthenticationForgotPassword.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ WTAuthenticationForgotPassword.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAuthenticationForgotPassword = WTAuthenticationForgotPassword;
 //# sourceMappingURL=wTAuthenticationForgotPassword.js.map

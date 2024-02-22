@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.StaticVoucher = void 0;
 class StaticVoucher {
     static getAttributeTypeMap() {
         return StaticVoucher.attributeTypeMap;
     }
 }
+exports.StaticVoucher = StaticVoucher;
 StaticVoucher.discriminator = undefined;
 StaticVoucher.attributeTypeMap = [
     {
@@ -168,5 +170,4 @@ StaticVoucher.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.StaticVoucher = StaticVoucher;
 //# sourceMappingURL=staticVoucher.js.map

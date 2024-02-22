@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.OptInListSubscriber = void 0;
 class OptInListSubscriber {
     static getAttributeTypeMap() {
         return OptInListSubscriber.attributeTypeMap;
     }
 }
+exports.OptInListSubscriber = OptInListSubscriber;
 OptInListSubscriber.discriminator = undefined;
 OptInListSubscriber.attributeTypeMap = [
     {
@@ -83,5 +85,4 @@ OptInListSubscriber.attributeTypeMap = [
         "type": "SSOptInSource"
     }
 ];
-exports.OptInListSubscriber = OptInListSubscriber;
 //# sourceMappingURL=optInListSubscriber.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier = void 0;
 class PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier {
     static getAttributeTypeMap() {
         return PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.attributeTypeMap;
     }
 }
+exports.PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier = PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier;
 PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.discriminator = undefined;
 PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.att
         "type": "number"
     }
 ];
-exports.PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier = PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier;
 //# sourceMappingURL=pickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.js.map

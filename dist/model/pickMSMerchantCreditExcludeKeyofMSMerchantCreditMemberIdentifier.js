@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier = void 0;
 class PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier {
     static getAttributeTypeMap() {
         return PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.attributeTypeMap;
     }
 }
+exports.PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier = PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier;
 PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.discriminator = undefined;
 PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.attributeTypeMa
         "type": "number"
     }
 ];
-exports.PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier = PickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier;
 //# sourceMappingURL=pickMSMerchantCreditExcludeKeyofMSMerchantCreditMemberIdentifier.js.map

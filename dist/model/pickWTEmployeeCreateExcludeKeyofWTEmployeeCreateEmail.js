@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail = void 0;
 class PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail {
     static getAttributeTypeMap() {
         return PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.attributeTypeMap;
     }
 }
+exports.PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail = PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail;
 PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.discriminator = undefined;
 PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.attributeTypeMap = [
     {
@@ -88,5 +90,4 @@ PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.attributeTypeMap = [
         "type": "EmployeeScheduleStartMeridiem"
     }
 ];
-exports.PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail = PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail;
 //# sourceMappingURL=pickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.js.map

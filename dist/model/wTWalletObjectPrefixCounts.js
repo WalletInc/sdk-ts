@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTWalletObjectPrefixCounts = void 0;
 class WTWalletObjectPrefixCounts {
     static getAttributeTypeMap() {
         return WTWalletObjectPrefixCounts.attributeTypeMap;
     }
 }
+exports.WTWalletObjectPrefixCounts = WTWalletObjectPrefixCounts;
 WTWalletObjectPrefixCounts.discriminator = undefined;
 WTWalletObjectPrefixCounts.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTWalletObjectPrefixCounts.attributeTypeMap = [
         "type": "Array<WTWalletPageViewCount>"
     }
 ];
-exports.WTWalletObjectPrefixCounts = WTWalletObjectPrefixCounts;
 //# sourceMappingURL=wTWalletObjectPrefixCounts.js.map

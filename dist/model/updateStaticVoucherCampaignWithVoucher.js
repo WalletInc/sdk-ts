@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.UpdateStaticVoucherCampaignWithVoucher = void 0;
 class UpdateStaticVoucherCampaignWithVoucher {
     static getAttributeTypeMap() {
         return UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap;
     }
 }
+exports.UpdateStaticVoucherCampaignWithVoucher = UpdateStaticVoucherCampaignWithVoucher;
 UpdateStaticVoucherCampaignWithVoucher.discriminator = undefined;
 UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
         "type": "UpdateStaticVoucherCampaignWithVoucherVoucherID"
     }
 ];
-exports.UpdateStaticVoucherCampaignWithVoucher = UpdateStaticVoucherCampaignWithVoucher;
 //# sourceMappingURL=updateStaticVoucherCampaignWithVoucher.js.map

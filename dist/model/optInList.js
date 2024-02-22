@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.OptInList = void 0;
 class OptInList {
     static getAttributeTypeMap() {
         return OptInList.attributeTypeMap;
     }
 }
+exports.OptInList = OptInList;
 OptInList.discriminator = undefined;
 OptInList.attributeTypeMap = [
     {
@@ -98,5 +100,4 @@ OptInList.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.OptInList = OptInList;
 //# sourceMappingURL=optInList.js.map

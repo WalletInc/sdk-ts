@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmployeeScheduleSimpleSMS = void 0;
 class WTEmployeeScheduleSimpleSMS {
     static getAttributeTypeMap() {
         return WTEmployeeScheduleSimpleSMS.attributeTypeMap;
     }
 }
+exports.WTEmployeeScheduleSimpleSMS = WTEmployeeScheduleSimpleSMS;
 WTEmployeeScheduleSimpleSMS.discriminator = undefined;
 WTEmployeeScheduleSimpleSMS.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ WTEmployeeScheduleSimpleSMS.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeScheduleSimpleSMS = WTEmployeeScheduleSimpleSMS;
 //# sourceMappingURL=wTEmployeeScheduleSimpleSMS.js.map

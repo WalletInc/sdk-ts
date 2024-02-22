@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTVirtualBusinessCardCreateParams = void 0;
 class WTVirtualBusinessCardCreateParams {
     static getAttributeTypeMap() {
         return WTVirtualBusinessCardCreateParams.attributeTypeMap;
     }
 }
+exports.WTVirtualBusinessCardCreateParams = WTVirtualBusinessCardCreateParams;
 WTVirtualBusinessCardCreateParams.discriminator = undefined;
 WTVirtualBusinessCardCreateParams.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ WTVirtualBusinessCardCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTVirtualBusinessCardCreateParams = WTVirtualBusinessCardCreateParams;
 //# sourceMappingURL=wTVirtualBusinessCardCreateParams.js.map

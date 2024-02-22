@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EntityTooLarge = void 0;
 class EntityTooLarge {
     static getAttributeTypeMap() {
         return EntityTooLarge.attributeTypeMap;
     }
 }
+exports.EntityTooLarge = EntityTooLarge;
 EntityTooLarge.discriminator = undefined;
 EntityTooLarge.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ EntityTooLarge.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.EntityTooLarge = EntityTooLarge;
 //# sourceMappingURL=entityTooLarge.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTTicketUpdateParams = void 0;
 class WTTicketUpdateParams {
     static getAttributeTypeMap() {
         return WTTicketUpdateParams.attributeTypeMap;
     }
 }
+exports.WTTicketUpdateParams = WTTicketUpdateParams;
 WTTicketUpdateParams.discriminator = undefined;
 WTTicketUpdateParams.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ WTTicketUpdateParams.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.WTTicketUpdateParams = WTTicketUpdateParams;
 //# sourceMappingURL=wTTicketUpdateParams.js.map

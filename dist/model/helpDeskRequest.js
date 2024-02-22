@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.HelpDeskRequest = void 0;
 class HelpDeskRequest {
     static getAttributeTypeMap() {
         return HelpDeskRequest.attributeTypeMap;
     }
 }
+exports.HelpDeskRequest = HelpDeskRequest;
 HelpDeskRequest.discriminator = undefined;
 HelpDeskRequest.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ HelpDeskRequest.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.HelpDeskRequest = HelpDeskRequest;
 //# sourceMappingURL=helpDeskRequest.js.map

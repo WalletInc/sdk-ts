@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PaginationRequestWithIDAndWithoutSortOptions = void 0;
 class PaginationRequestWithIDAndWithoutSortOptions {
     static getAttributeTypeMap() {
         return PaginationRequestWithIDAndWithoutSortOptions.attributeTypeMap;
     }
 }
+exports.PaginationRequestWithIDAndWithoutSortOptions = PaginationRequestWithIDAndWithoutSortOptions;
 PaginationRequestWithIDAndWithoutSortOptions.discriminator = undefined;
 PaginationRequestWithIDAndWithoutSortOptions.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ PaginationRequestWithIDAndWithoutSortOptions.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.PaginationRequestWithIDAndWithoutSortOptions = PaginationRequestWithIDAndWithoutSortOptions;
 //# sourceMappingURL=paginationRequestWithIDAndWithoutSortOptions.js.map

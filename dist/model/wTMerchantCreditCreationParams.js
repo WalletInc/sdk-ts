@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTMerchantCreditCreationParams = void 0;
 class WTMerchantCreditCreationParams {
     static getAttributeTypeMap() {
         return WTMerchantCreditCreationParams.attributeTypeMap;
     }
 }
+exports.WTMerchantCreditCreationParams = WTMerchantCreditCreationParams;
 WTMerchantCreditCreationParams.discriminator = undefined;
 WTMerchantCreditCreationParams.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTMerchantCreditCreationParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTMerchantCreditCreationParams = WTMerchantCreditCreationParams;
 //# sourceMappingURL=wTMerchantCreditCreationParams.js.map

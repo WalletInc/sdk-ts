@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSMemberHistory = void 0;
 class MSMemberHistory {
     static getAttributeTypeMap() {
         return MSMemberHistory.attributeTypeMap;
     }
 }
+exports.MSMemberHistory = MSMemberHistory;
 MSMemberHistory.discriminator = undefined;
 MSMemberHistory.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ MSMemberHistory.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.MSMemberHistory = MSMemberHistory;
 //# sourceMappingURL=mSMemberHistory.js.map

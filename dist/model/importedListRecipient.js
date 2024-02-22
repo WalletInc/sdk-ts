@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ImportedListRecipient = void 0;
 class ImportedListRecipient {
     static getAttributeTypeMap() {
         return ImportedListRecipient.attributeTypeMap;
     }
 }
+exports.ImportedListRecipient = ImportedListRecipient;
 ImportedListRecipient.discriminator = undefined;
 ImportedListRecipient.attributeTypeMap = [
     {
@@ -48,5 +50,4 @@ ImportedListRecipient.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.ImportedListRecipient = ImportedListRecipient;
 //# sourceMappingURL=importedListRecipient.js.map

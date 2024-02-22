@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Amenity = void 0;
 class Amenity {
     static getAttributeTypeMap() {
         return Amenity.attributeTypeMap;
     }
 }
+exports.Amenity = Amenity;
 Amenity.discriminator = undefined;
 Amenity.attributeTypeMap = [
     {
@@ -63,5 +65,4 @@ Amenity.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Amenity = Amenity;
 //# sourceMappingURL=amenity.js.map

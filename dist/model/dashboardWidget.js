@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.DashboardWidget = void 0;
 class DashboardWidget {
     static getAttributeTypeMap() {
         return DashboardWidget.attributeTypeMap;
     }
 }
+exports.DashboardWidget = DashboardWidget;
 DashboardWidget.discriminator = undefined;
 DashboardWidget.attributeTypeMap = [
     {
@@ -88,5 +90,4 @@ DashboardWidget.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.DashboardWidget = DashboardWidget;
 //# sourceMappingURL=dashboardWidget.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SubscriptionPlan = void 0;
 class SubscriptionPlan {
     static getAttributeTypeMap() {
         return SubscriptionPlan.attributeTypeMap;
     }
 }
+exports.SubscriptionPlan = SubscriptionPlan;
 SubscriptionPlan.discriminator = undefined;
 SubscriptionPlan.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ SubscriptionPlan.attributeTypeMap = [
         "type": "Array<PortalPage>"
     }
 ];
-exports.SubscriptionPlan = SubscriptionPlan;
 //# sourceMappingURL=subscriptionPlan.js.map

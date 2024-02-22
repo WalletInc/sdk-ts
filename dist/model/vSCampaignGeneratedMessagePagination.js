@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.VSCampaignGeneratedMessagePagination = void 0;
 class VSCampaignGeneratedMessagePagination {
     static getAttributeTypeMap() {
         return VSCampaignGeneratedMessagePagination.attributeTypeMap;
     }
 }
+exports.VSCampaignGeneratedMessagePagination = VSCampaignGeneratedMessagePagination;
 VSCampaignGeneratedMessagePagination.discriminator = undefined;
 VSCampaignGeneratedMessagePagination.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ VSCampaignGeneratedMessagePagination.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.VSCampaignGeneratedMessagePagination = VSCampaignGeneratedMessagePagination;
 //# sourceMappingURL=vSCampaignGeneratedMessagePagination.js.map

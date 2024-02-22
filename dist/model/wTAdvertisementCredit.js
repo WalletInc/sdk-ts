@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTAdvertisementCredit = void 0;
 class WTAdvertisementCredit {
     static getAttributeTypeMap() {
         return WTAdvertisementCredit.attributeTypeMap;
     }
 }
+exports.WTAdvertisementCredit = WTAdvertisementCredit;
 WTAdvertisementCredit.discriminator = undefined;
 WTAdvertisementCredit.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ WTAdvertisementCredit.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAdvertisementCredit = WTAdvertisementCredit;
 //# sourceMappingURL=wTAdvertisementCredit.js.map

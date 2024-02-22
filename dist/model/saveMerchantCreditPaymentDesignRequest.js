@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SaveMerchantCreditPaymentDesignRequest = void 0;
 class SaveMerchantCreditPaymentDesignRequest {
     static getAttributeTypeMap() {
         return SaveMerchantCreditPaymentDesignRequest.attributeTypeMap;
     }
 }
+exports.SaveMerchantCreditPaymentDesignRequest = SaveMerchantCreditPaymentDesignRequest;
 SaveMerchantCreditPaymentDesignRequest.discriminator = undefined;
 SaveMerchantCreditPaymentDesignRequest.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ SaveMerchantCreditPaymentDesignRequest.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.SaveMerchantCreditPaymentDesignRequest = SaveMerchantCreditPaymentDesignRequest;
 //# sourceMappingURL=saveMerchantCreditPaymentDesignRequest.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ReachPerformanceStats = void 0;
 class ReachPerformanceStats {
     static getAttributeTypeMap() {
         return ReachPerformanceStats.attributeTypeMap;
     }
 }
+exports.ReachPerformanceStats = ReachPerformanceStats;
 ReachPerformanceStats.discriminator = undefined;
 ReachPerformanceStats.attributeTypeMap = [
     {
@@ -63,5 +65,4 @@ ReachPerformanceStats.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.ReachPerformanceStats = ReachPerformanceStats;
 //# sourceMappingURL=reachPerformanceStats.js.map

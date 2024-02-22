@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FetchStaticVouchersPage200Response = void 0;
 class FetchStaticVouchersPage200Response {
     static getAttributeTypeMap() {
         return FetchStaticVouchersPage200Response.attributeTypeMap;
     }
 }
+exports.FetchStaticVouchersPage200Response = FetchStaticVouchersPage200Response;
 FetchStaticVouchersPage200Response.discriminator = undefined;
 FetchStaticVouchersPage200Response.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ FetchStaticVouchersPage200Response.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.FetchStaticVouchersPage200Response = FetchStaticVouchersPage200Response;
 //# sourceMappingURL=fetchStaticVouchersPage200Response.js.map

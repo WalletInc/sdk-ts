@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MerchantURL = void 0;
 class MerchantURL {
     static getAttributeTypeMap() {
         return MerchantURL.attributeTypeMap;
     }
 }
+exports.MerchantURL = MerchantURL;
 MerchantURL.discriminator = undefined;
 MerchantURL.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ MerchantURL.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.MerchantURL = MerchantURL;
 //# sourceMappingURL=merchantURL.js.map

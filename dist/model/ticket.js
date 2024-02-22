@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Ticket = void 0;
 class Ticket {
     static getAttributeTypeMap() {
         return Ticket.attributeTypeMap;
     }
 }
+exports.Ticket = Ticket;
 Ticket.discriminator = undefined;
 Ticket.attributeTypeMap = [
     {
@@ -108,5 +110,4 @@ Ticket.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.Ticket = Ticket;
 //# sourceMappingURL=ticket.js.map

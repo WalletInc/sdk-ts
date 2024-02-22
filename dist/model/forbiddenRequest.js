@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ForbiddenRequest = void 0;
 class ForbiddenRequest {
     static getAttributeTypeMap() {
         return ForbiddenRequest.attributeTypeMap;
     }
 }
+exports.ForbiddenRequest = ForbiddenRequest;
 ForbiddenRequest.discriminator = undefined;
 ForbiddenRequest.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ ForbiddenRequest.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.ForbiddenRequest = ForbiddenRequest;
 //# sourceMappingURL=forbiddenRequest.js.map

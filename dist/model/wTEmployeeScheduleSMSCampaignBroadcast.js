@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmployeeScheduleSMSCampaignBroadcast = void 0;
 class WTEmployeeScheduleSMSCampaignBroadcast {
     static getAttributeTypeMap() {
         return WTEmployeeScheduleSMSCampaignBroadcast.attributeTypeMap;
     }
 }
+exports.WTEmployeeScheduleSMSCampaignBroadcast = WTEmployeeScheduleSMSCampaignBroadcast;
 WTEmployeeScheduleSMSCampaignBroadcast.discriminator = undefined;
 WTEmployeeScheduleSMSCampaignBroadcast.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ WTEmployeeScheduleSMSCampaignBroadcast.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeScheduleSMSCampaignBroadcast = WTEmployeeScheduleSMSCampaignBroadcast;
 //# sourceMappingURL=wTEmployeeScheduleSMSCampaignBroadcast.js.map

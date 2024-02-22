@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTPaymentDesignCreateParams = void 0;
 class WTPaymentDesignCreateParams {
     static getAttributeTypeMap() {
         return WTPaymentDesignCreateParams.attributeTypeMap;
     }
 }
+exports.WTPaymentDesignCreateParams = WTPaymentDesignCreateParams;
 WTPaymentDesignCreateParams.discriminator = undefined;
 WTPaymentDesignCreateParams.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ WTPaymentDesignCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTPaymentDesignCreateParams = WTPaymentDesignCreateParams;
 //# sourceMappingURL=wTPaymentDesignCreateParams.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTStaticVoucherCreateParams = void 0;
 class WTStaticVoucherCreateParams {
     static getAttributeTypeMap() {
         return WTStaticVoucherCreateParams.attributeTypeMap;
     }
 }
+exports.WTStaticVoucherCreateParams = WTStaticVoucherCreateParams;
 WTStaticVoucherCreateParams.discriminator = undefined;
 WTStaticVoucherCreateParams.attributeTypeMap = [
     {
@@ -28,5 +30,4 @@ WTStaticVoucherCreateParams.attributeTypeMap = [
         "type": "WTWalletPageViewId"
     }
 ];
-exports.WTStaticVoucherCreateParams = WTStaticVoucherCreateParams;
 //# sourceMappingURL=wTStaticVoucherCreateParams.js.map

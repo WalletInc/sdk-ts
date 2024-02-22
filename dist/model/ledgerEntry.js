@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.LedgerEntry = void 0;
 class LedgerEntry {
     static getAttributeTypeMap() {
         return LedgerEntry.attributeTypeMap;
     }
 }
+exports.LedgerEntry = LedgerEntry;
 LedgerEntry.discriminator = undefined;
 LedgerEntry.attributeTypeMap = [
     {
@@ -133,5 +135,4 @@ LedgerEntry.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.LedgerEntry = LedgerEntry;
 //# sourceMappingURL=ledgerEntry.js.map

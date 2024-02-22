@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FalsumError = void 0;
 class FalsumError {
     static getAttributeTypeMap() {
         return FalsumError.attributeTypeMap;
     }
 }
+exports.FalsumError = FalsumError;
 FalsumError.discriminator = undefined;
 FalsumError.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ FalsumError.attributeTypeMap = [
         "type": "Array<FalsumField>"
     }
 ];
-exports.FalsumError = FalsumError;
 //# sourceMappingURL=falsumError.js.map

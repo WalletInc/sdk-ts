@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.JobPosition = void 0;
 var JobPosition;
 (function (JobPosition) {
     JobPosition[JobPosition["Director"] = 'Director'] = "Director";
