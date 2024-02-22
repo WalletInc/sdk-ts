@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType {
+    static getAttributeTypeMap() {
+        return FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType.attributeTypeMap;
+    }
+}
+FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType.discriminator = undefined;
+FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType.attributeTypeMap = [];
+exports.FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType = FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType;
+//# sourceMappingURL=fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType.js.map
