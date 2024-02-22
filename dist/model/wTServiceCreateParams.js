@@ -1,0 +1,42 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class WTServiceCreateParams {
+    static getAttributeTypeMap() {
+        return WTServiceCreateParams.attributeTypeMap;
+    }
+}
+WTServiceCreateParams.discriminator = undefined;
+WTServiceCreateParams.attributeTypeMap = [
+    {
+        "name": "title",
+        "baseName": "title",
+        "type": "string"
+    },
+    {
+        "name": "description",
+        "baseName": "description",
+        "type": "string"
+    },
+    {
+        "name": "displayedPrice",
+        "baseName": "displayedPrice",
+        "type": "string"
+    },
+    {
+        "name": "orderNumber",
+        "baseName": "orderNumber",
+        "type": "number"
+    },
+    {
+        "name": "mediaURL",
+        "baseName": "mediaURL",
+        "type": "string"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
+        "type": "string"
+    }
+];
+exports.WTServiceCreateParams = WTServiceCreateParams;
+//# sourceMappingURL=wTServiceCreateParams.js.map

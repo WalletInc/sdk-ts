@@ -1,0 +1,42 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class WTEmployeeScheduleSimpleSMS {
+    static getAttributeTypeMap() {
+        return WTEmployeeScheduleSimpleSMS.attributeTypeMap;
+    }
+}
+WTEmployeeScheduleSimpleSMS.discriminator = undefined;
+WTEmployeeScheduleSimpleSMS.attributeTypeMap = [
+    {
+        "name": "phoneNumberID",
+        "baseName": "phoneNumberID",
+        "type": "string"
+    },
+    {
+        "name": "messageTemplate",
+        "baseName": "messageTemplate",
+        "type": "string"
+    },
+    {
+        "name": "mediaURLs",
+        "baseName": "mediaURLs",
+        "type": "Array<string>"
+    },
+    {
+        "name": "broadcastScheduledAt",
+        "baseName": "broadcastScheduledAt",
+        "type": "Date"
+    },
+    {
+        "name": "listType",
+        "baseName": "listType",
+        "type": "WTEmployeeScheduleSimpleSMSListType"
+    },
+    {
+        "name": "listID",
+        "baseName": "listID",
+        "type": "string"
+    }
+];
+exports.WTEmployeeScheduleSimpleSMS = WTEmployeeScheduleSimpleSMS;
+//# sourceMappingURL=wTEmployeeScheduleSimpleSMS.js.map
