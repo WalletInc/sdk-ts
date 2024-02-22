@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSMembershipTierRedemptionPagination = void 0;
 class MSMembershipTierRedemptionPagination {
     static getAttributeTypeMap() {
         return MSMembershipTierRedemptionPagination.attributeTypeMap;
     }
 }
+exports.MSMembershipTierRedemptionPagination = MSMembershipTierRedemptionPagination;
 MSMembershipTierRedemptionPagination.discriminator = undefined;
 MSMembershipTierRedemptionPagination.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ MSMembershipTierRedemptionPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSMembershipTierRedemptionPagination = MSMembershipTierRedemptionPagination;
 //# sourceMappingURL=mSMembershipTierRedemptionPagination.js.map

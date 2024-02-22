@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BusinessClassification = void 0;
 var BusinessClassification;
 (function (BusinessClassification) {
     BusinessClassification[BusinessClassification["Public"] = 'public'] = "Public";

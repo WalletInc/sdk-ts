@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTStaticVoucherCampaign = void 0;
 class WTStaticVoucherCampaign {
     static getAttributeTypeMap() {
         return WTStaticVoucherCampaign.attributeTypeMap;
     }
 }
+exports.WTStaticVoucherCampaign = WTStaticVoucherCampaign;
 WTStaticVoucherCampaign.discriminator = undefined;
 WTStaticVoucherCampaign.attributeTypeMap = [
     {
@@ -133,5 +135,4 @@ WTStaticVoucherCampaign.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTStaticVoucherCampaign = WTStaticVoucherCampaign;
 //# sourceMappingURL=wTStaticVoucherCampaign.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ModuleError = void 0;
 class ModuleError {
     static getAttributeTypeMap() {
         return ModuleError.attributeTypeMap;
     }
 }
+exports.ModuleError = ModuleError;
 ModuleError.discriminator = undefined;
 ModuleError.attributeTypeMap = [
     {
@@ -118,5 +120,4 @@ ModuleError.attributeTypeMap = [
         "type": "any"
     }
 ];
-exports.ModuleError = ModuleError;
 //# sourceMappingURL=moduleError.js.map

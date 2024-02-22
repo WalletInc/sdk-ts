@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FetchCustomerTicketsWithTokenRequest = void 0;
 class FetchCustomerTicketsWithTokenRequest {
     static getAttributeTypeMap() {
         return FetchCustomerTicketsWithTokenRequest.attributeTypeMap;
     }
 }
+exports.FetchCustomerTicketsWithTokenRequest = FetchCustomerTicketsWithTokenRequest;
 FetchCustomerTicketsWithTokenRequest.discriminator = undefined;
 FetchCustomerTicketsWithTokenRequest.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ FetchCustomerTicketsWithTokenRequest.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.FetchCustomerTicketsWithTokenRequest = FetchCustomerTicketsWithTokenRequest;
 //# sourceMappingURL=fetchCustomerTicketsWithTokenRequest.js.map

@@ -10,14 +10,16 @@ export declare class AppleWalletSubscribersApi {
     protected _defaultHeaders: any;
     protected _useQuerystring: boolean;
     protected authentications: {
-        'default': Authentication;
-        'api_key': ApiKeyAuth;
+        default: Authentication;
+        api_key: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);
-    useQuerystring: boolean;
-    basePath: string;
-    defaultHeaders: any;
+    set useQuerystring(value: boolean);
+    set basePath(basePath: string);
+    set defaultHeaders(defaultHeaders: any);
+    get defaultHeaders(): any;
+    get basePath(): string;
     setDefaultAuthentication(auth: Authentication): void;
     setApiKey(key: AppleWalletSubscribersApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;

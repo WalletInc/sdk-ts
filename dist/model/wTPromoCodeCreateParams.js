@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTPromoCodeCreateParams = void 0;
 class WTPromoCodeCreateParams {
     static getAttributeTypeMap() {
         return WTPromoCodeCreateParams.attributeTypeMap;
     }
 }
+exports.WTPromoCodeCreateParams = WTPromoCodeCreateParams;
 WTPromoCodeCreateParams.discriminator = undefined;
 WTPromoCodeCreateParams.attributeTypeMap = [
     {
@@ -48,5 +50,4 @@ WTPromoCodeCreateParams.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTPromoCodeCreateParams = WTPromoCodeCreateParams;
 //# sourceMappingURL=wTPromoCodeCreateParams.js.map

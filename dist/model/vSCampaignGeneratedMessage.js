@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.VSCampaignGeneratedMessage = void 0;
 class VSCampaignGeneratedMessage {
     static getAttributeTypeMap() {
         return VSCampaignGeneratedMessage.attributeTypeMap;
     }
 }
+exports.VSCampaignGeneratedMessage = VSCampaignGeneratedMessage;
 VSCampaignGeneratedMessage.discriminator = undefined;
 VSCampaignGeneratedMessage.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ VSCampaignGeneratedMessage.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.VSCampaignGeneratedMessage = VSCampaignGeneratedMessage;
 //# sourceMappingURL=vSCampaignGeneratedMessage.js.map

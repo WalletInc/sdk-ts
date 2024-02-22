@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ExportDataFile = void 0;
 class ExportDataFile {
     static getAttributeTypeMap() {
         return ExportDataFile.attributeTypeMap;
     }
 }
+exports.ExportDataFile = ExportDataFile;
 ExportDataFile.discriminator = undefined;
 ExportDataFile.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ ExportDataFile.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.ExportDataFile = ExportDataFile;
 //# sourceMappingURL=exportDataFile.js.map

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PortalPage = void 0;
 var PortalPage;
 (function (PortalPage) {
     PortalPage[PortalPage["AnalyticsAdCredits"] = 'analytics-ad-credits'] = "AnalyticsAdCredits";

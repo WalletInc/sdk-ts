@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.UpdateEmailNotificationPreferenceRequest = void 0;
 class UpdateEmailNotificationPreferenceRequest {
     static getAttributeTypeMap() {
         return UpdateEmailNotificationPreferenceRequest.attributeTypeMap;
     }
 }
+exports.UpdateEmailNotificationPreferenceRequest = UpdateEmailNotificationPreferenceRequest;
 UpdateEmailNotificationPreferenceRequest.discriminator = undefined;
 UpdateEmailNotificationPreferenceRequest.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ UpdateEmailNotificationPreferenceRequest.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.UpdateEmailNotificationPreferenceRequest = UpdateEmailNotificationPreferenceRequest;
 //# sourceMappingURL=updateEmailNotificationPreferenceRequest.js.map

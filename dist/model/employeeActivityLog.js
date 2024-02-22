@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EmployeeActivityLog = void 0;
 class EmployeeActivityLog {
     static getAttributeTypeMap() {
         return EmployeeActivityLog.attributeTypeMap;
     }
 }
+exports.EmployeeActivityLog = EmployeeActivityLog;
 EmployeeActivityLog.discriminator = undefined;
 EmployeeActivityLog.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ EmployeeActivityLog.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.EmployeeActivityLog = EmployeeActivityLog;
 //# sourceMappingURL=employeeActivityLog.js.map

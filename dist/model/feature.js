@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Feature = void 0;
 class Feature {
     static getAttributeTypeMap() {
         return Feature.attributeTypeMap;
     }
 }
+exports.Feature = Feature;
 Feature.discriminator = undefined;
 Feature.attributeTypeMap = [
     {
@@ -53,5 +55,4 @@ Feature.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Feature = Feature;
 //# sourceMappingURL=feature.js.map

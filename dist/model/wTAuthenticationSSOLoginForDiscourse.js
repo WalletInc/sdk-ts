@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTAuthenticationSSOLoginForDiscourse = void 0;
 class WTAuthenticationSSOLoginForDiscourse {
     static getAttributeTypeMap() {
         return WTAuthenticationSSOLoginForDiscourse.attributeTypeMap;
     }
 }
+exports.WTAuthenticationSSOLoginForDiscourse = WTAuthenticationSSOLoginForDiscourse;
 WTAuthenticationSSOLoginForDiscourse.discriminator = undefined;
 WTAuthenticationSSOLoginForDiscourse.attributeTypeMap = [
     {
@@ -28,5 +30,4 @@ WTAuthenticationSSOLoginForDiscourse.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAuthenticationSSOLoginForDiscourse = WTAuthenticationSSOLoginForDiscourse;
 //# sourceMappingURL=wTAuthenticationSSOLoginForDiscourse.js.map

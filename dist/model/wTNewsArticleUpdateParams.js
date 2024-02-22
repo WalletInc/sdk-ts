@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTNewsArticleUpdateParams = void 0;
 class WTNewsArticleUpdateParams {
     static getAttributeTypeMap() {
         return WTNewsArticleUpdateParams.attributeTypeMap;
     }
 }
+exports.WTNewsArticleUpdateParams = WTNewsArticleUpdateParams;
 WTNewsArticleUpdateParams.discriminator = undefined;
 WTNewsArticleUpdateParams.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ WTNewsArticleUpdateParams.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTNewsArticleUpdateParams = WTNewsArticleUpdateParams;
 //# sourceMappingURL=wTNewsArticleUpdateParams.js.map

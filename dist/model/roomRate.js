@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.RoomRate = void 0;
 class RoomRate {
     static getAttributeTypeMap() {
         return RoomRate.attributeTypeMap;
     }
 }
+exports.RoomRate = RoomRate;
 RoomRate.discriminator = undefined;
 RoomRate.attributeTypeMap = [
     {
@@ -63,5 +65,4 @@ RoomRate.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.RoomRate = RoomRate;
 //# sourceMappingURL=roomRate.js.map

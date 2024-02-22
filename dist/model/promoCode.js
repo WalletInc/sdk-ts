@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PromoCode = void 0;
 class PromoCode {
     static getAttributeTypeMap() {
         return PromoCode.attributeTypeMap;
     }
 }
+exports.PromoCode = PromoCode;
 PromoCode.discriminator = undefined;
 PromoCode.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ PromoCode.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.PromoCode = PromoCode;
 //# sourceMappingURL=promoCode.js.map

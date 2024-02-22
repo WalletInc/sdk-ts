@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTRole = void 0;
 class WTRole {
     static getAttributeTypeMap() {
         return WTRole.attributeTypeMap;
     }
 }
+exports.WTRole = WTRole;
 WTRole.discriminator = undefined;
 WTRole.attributeTypeMap = [
     {
@@ -83,5 +85,4 @@ WTRole.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTRole = WTRole;
 //# sourceMappingURL=wTRole.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTLinkBookCreateParams = void 0;
 class WTLinkBookCreateParams {
     static getAttributeTypeMap() {
         return WTLinkBookCreateParams.attributeTypeMap;
     }
 }
+exports.WTLinkBookCreateParams = WTLinkBookCreateParams;
 WTLinkBookCreateParams.discriminator = undefined;
 WTLinkBookCreateParams.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ WTLinkBookCreateParams.attributeTypeMap = [
         "type": "WTLinkBookLinkBookSectionID"
     }
 ];
-exports.WTLinkBookCreateParams = WTLinkBookCreateParams;
 //# sourceMappingURL=wTLinkBookCreateParams.js.map

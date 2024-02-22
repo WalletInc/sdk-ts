@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Video = void 0;
 class Video {
     static getAttributeTypeMap() {
         return Video.attributeTypeMap;
     }
 }
+exports.Video = Video;
 Video.discriminator = undefined;
 Video.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ Video.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Video = Video;
 //# sourceMappingURL=video.js.map

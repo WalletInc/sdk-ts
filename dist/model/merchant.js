@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Merchant = void 0;
 class Merchant {
     static getAttributeTypeMap() {
         return Merchant.attributeTypeMap;
     }
 }
+exports.Merchant = Merchant;
 Merchant.discriminator = undefined;
 Merchant.attributeTypeMap = [
     {
@@ -143,5 +145,4 @@ Merchant.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Merchant = Merchant;
 //# sourceMappingURL=merchant.js.map

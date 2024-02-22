@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTImportedListRecipientFromMembershipTierImport = void 0;
 class WTImportedListRecipientFromMembershipTierImport {
     static getAttributeTypeMap() {
         return WTImportedListRecipientFromMembershipTierImport.attributeTypeMap;
     }
 }
+exports.WTImportedListRecipientFromMembershipTierImport = WTImportedListRecipientFromMembershipTierImport;
 WTImportedListRecipientFromMembershipTierImport.discriminator = undefined;
 WTImportedListRecipientFromMembershipTierImport.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTImportedListRecipientFromMembershipTierImport.attributeTypeMap = [
         "type": "WTImportedListRecipientFromMembershipTierImportTierID"
     }
 ];
-exports.WTImportedListRecipientFromMembershipTierImport = WTImportedListRecipientFromMembershipTierImport;
 //# sourceMappingURL=wTImportedListRecipientFromMembershipTierImport.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AdvertisementCreditScan = void 0;
 class AdvertisementCreditScan {
     static getAttributeTypeMap() {
         return AdvertisementCreditScan.attributeTypeMap;
     }
 }
+exports.AdvertisementCreditScan = AdvertisementCreditScan;
 AdvertisementCreditScan.discriminator = undefined;
 AdvertisementCreditScan.attributeTypeMap = [
     {
@@ -123,5 +125,4 @@ AdvertisementCreditScan.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.AdvertisementCreditScan = AdvertisementCreditScan;
 //# sourceMappingURL=advertisementCreditScan.js.map

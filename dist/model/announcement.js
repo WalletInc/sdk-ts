@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Announcement = void 0;
 class Announcement {
     static getAttributeTypeMap() {
         return Announcement.attributeTypeMap;
     }
 }
+exports.Announcement = Announcement;
 Announcement.discriminator = undefined;
 Announcement.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ Announcement.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Announcement = Announcement;
 //# sourceMappingURL=announcement.js.map

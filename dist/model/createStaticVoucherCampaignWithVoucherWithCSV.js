@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CreateStaticVoucherCampaignWithVoucherWithCSV = void 0;
 class CreateStaticVoucherCampaignWithVoucherWithCSV {
     static getAttributeTypeMap() {
         return CreateStaticVoucherCampaignWithVoucherWithCSV.attributeTypeMap;
     }
 }
+exports.CreateStaticVoucherCampaignWithVoucherWithCSV = CreateStaticVoucherCampaignWithVoucherWithCSV;
 CreateStaticVoucherCampaignWithVoucherWithCSV.discriminator = undefined;
 CreateStaticVoucherCampaignWithVoucherWithCSV.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ CreateStaticVoucherCampaignWithVoucherWithCSV.attributeTypeMap = [
         "type": "SaveTicketSettingsRequestPaymentDesignID"
     }
 ];
-exports.CreateStaticVoucherCampaignWithVoucherWithCSV = CreateStaticVoucherCampaignWithVoucherWithCSV;
 //# sourceMappingURL=createStaticVoucherCampaignWithVoucherWithCSV.js.map

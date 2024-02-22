@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTImportedList = void 0;
 class WTImportedList {
     static getAttributeTypeMap() {
         return WTImportedList.attributeTypeMap;
     }
 }
+exports.WTImportedList = WTImportedList;
 WTImportedList.discriminator = undefined;
 WTImportedList.attributeTypeMap = [
     {
@@ -48,5 +50,4 @@ WTImportedList.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTImportedList = WTImportedList;
 //# sourceMappingURL=wTImportedList.js.map

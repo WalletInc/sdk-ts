@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTGamingUpdateParams = void 0;
 class WTGamingUpdateParams {
     static getAttributeTypeMap() {
         return WTGamingUpdateParams.attributeTypeMap;
     }
 }
+exports.WTGamingUpdateParams = WTGamingUpdateParams;
 WTGamingUpdateParams.discriminator = undefined;
 WTGamingUpdateParams.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ WTGamingUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTGamingUpdateParams = WTGamingUpdateParams;
 //# sourceMappingURL=wTGamingUpdateParams.js.map

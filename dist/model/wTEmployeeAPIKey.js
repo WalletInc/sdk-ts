@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmployeeAPIKey = void 0;
 class WTEmployeeAPIKey {
     static getAttributeTypeMap() {
         return WTEmployeeAPIKey.attributeTypeMap;
     }
 }
+exports.WTEmployeeAPIKey = WTEmployeeAPIKey;
 WTEmployeeAPIKey.discriminator = undefined;
 WTEmployeeAPIKey.attributeTypeMap = [
     {
@@ -53,5 +55,4 @@ WTEmployeeAPIKey.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeAPIKey = WTEmployeeAPIKey;
 //# sourceMappingURL=wTEmployeeAPIKey.js.map

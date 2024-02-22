@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTWalletPageViewCount = void 0;
 class WTWalletPageViewCount {
     static getAttributeTypeMap() {
         return WTWalletPageViewCount.attributeTypeMap;
     }
 }
+exports.WTWalletPageViewCount = WTWalletPageViewCount;
 WTWalletPageViewCount.discriminator = undefined;
 WTWalletPageViewCount.attributeTypeMap = [
     {
@@ -28,5 +30,4 @@ WTWalletPageViewCount.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTWalletPageViewCount = WTWalletPageViewCount;
 //# sourceMappingURL=wTWalletPageViewCount.js.map

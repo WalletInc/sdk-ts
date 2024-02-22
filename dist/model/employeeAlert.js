@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EmployeeAlert = void 0;
 class EmployeeAlert {
     static getAttributeTypeMap() {
         return EmployeeAlert.attributeTypeMap;
     }
 }
+exports.EmployeeAlert = EmployeeAlert;
 EmployeeAlert.discriminator = undefined;
 EmployeeAlert.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ EmployeeAlert.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.EmployeeAlert = EmployeeAlert;
 //# sourceMappingURL=employeeAlert.js.map

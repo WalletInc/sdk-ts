@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProfileStatuses = void 0;
 var ProfileStatuses;
 (function (ProfileStatuses) {
     ProfileStatuses[ProfileStatuses["Draft"] = 'draft'] = "Draft";

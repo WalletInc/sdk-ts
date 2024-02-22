@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTAuthenticationLoginRequest = void 0;
 class WTAuthenticationLoginRequest {
     static getAttributeTypeMap() {
         return WTAuthenticationLoginRequest.attributeTypeMap;
     }
 }
+exports.WTAuthenticationLoginRequest = WTAuthenticationLoginRequest;
 WTAuthenticationLoginRequest.discriminator = undefined;
 WTAuthenticationLoginRequest.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ WTAuthenticationLoginRequest.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAuthenticationLoginRequest = WTAuthenticationLoginRequest;
 //# sourceMappingURL=wTAuthenticationLoginRequest.js.map

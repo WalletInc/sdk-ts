@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Member = void 0;
 class Member {
     static getAttributeTypeMap() {
         return Member.attributeTypeMap;
     }
 }
+exports.Member = Member;
 Member.discriminator = undefined;
 Member.attributeTypeMap = [
     {
@@ -78,5 +80,4 @@ Member.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Member = Member;
 //# sourceMappingURL=member.js.map

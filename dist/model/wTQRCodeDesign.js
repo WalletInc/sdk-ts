@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTQRCodeDesign = void 0;
 class WTQRCodeDesign {
     static getAttributeTypeMap() {
         return WTQRCodeDesign.attributeTypeMap;
     }
 }
+exports.WTQRCodeDesign = WTQRCodeDesign;
 WTQRCodeDesign.discriminator = undefined;
 WTQRCodeDesign.attributeTypeMap = [
     {
@@ -88,5 +90,4 @@ WTQRCodeDesign.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTQRCodeDesign = WTQRCodeDesign;
 //# sourceMappingURL=wTQRCodeDesign.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ClickFunnelOriginalAmount = void 0;
 class ClickFunnelOriginalAmount {
     static getAttributeTypeMap() {
         return ClickFunnelOriginalAmount.attributeTypeMap;
     }
 }
+exports.ClickFunnelOriginalAmount = ClickFunnelOriginalAmount;
 ClickFunnelOriginalAmount.discriminator = undefined;
 ClickFunnelOriginalAmount.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ ClickFunnelOriginalAmount.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.ClickFunnelOriginalAmount = ClickFunnelOriginalAmount;
 //# sourceMappingURL=clickFunnelOriginalAmount.js.map

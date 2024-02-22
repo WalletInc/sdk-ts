@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID = void 0;
 class PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID {
     static getAttributeTypeMap() {
         return PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.attributeTypeMap;
     }
 }
+exports.PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID = PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID;
 PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.discriminator = undefined;
 PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID = PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID;
 //# sourceMappingURL=pickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTWalletPageView = void 0;
 class WTWalletPageView {
     static getAttributeTypeMap() {
         return WTWalletPageView.attributeTypeMap;
     }
 }
+exports.WTWalletPageView = WTWalletPageView;
 WTWalletPageView.discriminator = undefined;
 WTWalletPageView.attributeTypeMap = [
     {
@@ -203,5 +205,4 @@ WTWalletPageView.attributeTypeMap = [
         "type": "WTWalletPageViewGeoPoint"
     }
 ];
-exports.WTWalletPageView = WTWalletPageView;
 //# sourceMappingURL=wTWalletPageView.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSMemberRedemptionPagination = void 0;
 class MSMemberRedemptionPagination {
     static getAttributeTypeMap() {
         return MSMemberRedemptionPagination.attributeTypeMap;
     }
 }
+exports.MSMemberRedemptionPagination = MSMemberRedemptionPagination;
 MSMemberRedemptionPagination.discriminator = undefined;
 MSMemberRedemptionPagination.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ MSMemberRedemptionPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSMemberRedemptionPagination = MSMemberRedemptionPagination;
 //# sourceMappingURL=mSMemberRedemptionPagination.js.map

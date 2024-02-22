@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BusinessRegionsOfOperation = void 0;
 var BusinessRegionsOfOperation;
 (function (BusinessRegionsOfOperation) {
     BusinessRegionsOfOperation[BusinessRegionsOfOperation["Africa"] = 'AFRICA'] = "Africa";

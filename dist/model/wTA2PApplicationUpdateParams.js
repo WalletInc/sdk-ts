@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTA2PApplicationUpdateParams = void 0;
 class WTA2PApplicationUpdateParams {
     static getAttributeTypeMap() {
         return WTA2PApplicationUpdateParams.attributeTypeMap;
     }
 }
+exports.WTA2PApplicationUpdateParams = WTA2PApplicationUpdateParams;
 WTA2PApplicationUpdateParams.discriminator = undefined;
 WTA2PApplicationUpdateParams.attributeTypeMap = [
     {
@@ -128,5 +130,4 @@ WTA2PApplicationUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTA2PApplicationUpdateParams = WTA2PApplicationUpdateParams;
 //# sourceMappingURL=wTA2PApplicationUpdateParams.js.map

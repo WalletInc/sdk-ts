@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTLocalInstance = void 0;
 class WTLocalInstance {
     static getAttributeTypeMap() {
         return WTLocalInstance.attributeTypeMap;
     }
 }
+exports.WTLocalInstance = WTLocalInstance;
 WTLocalInstance.discriminator = undefined;
 WTLocalInstance.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ WTLocalInstance.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTLocalInstance = WTLocalInstance;
 //# sourceMappingURL=wTLocalInstance.js.map

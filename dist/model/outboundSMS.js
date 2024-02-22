@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.OutboundSMS = void 0;
 class OutboundSMS {
     static getAttributeTypeMap() {
         return OutboundSMS.attributeTypeMap;
     }
 }
+exports.OutboundSMS = OutboundSMS;
 OutboundSMS.discriminator = undefined;
 OutboundSMS.attributeTypeMap = [
     {
@@ -118,5 +120,4 @@ OutboundSMS.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.OutboundSMS = OutboundSMS;
 //# sourceMappingURL=outboundSMS.js.map

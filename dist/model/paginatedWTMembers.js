@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PaginatedWTMembers = void 0;
 class PaginatedWTMembers {
     static getAttributeTypeMap() {
         return PaginatedWTMembers.attributeTypeMap;
     }
 }
+exports.PaginatedWTMembers = PaginatedWTMembers;
 PaginatedWTMembers.discriminator = undefined;
 PaginatedWTMembers.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ PaginatedWTMembers.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.PaginatedWTMembers = PaginatedWTMembers;
 //# sourceMappingURL=paginatedWTMembers.js.map

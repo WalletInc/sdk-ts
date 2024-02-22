@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTAmenityCreateParams = void 0;
 class WTAmenityCreateParams {
     static getAttributeTypeMap() {
         return WTAmenityCreateParams.attributeTypeMap;
     }
 }
+exports.WTAmenityCreateParams = WTAmenityCreateParams;
 WTAmenityCreateParams.discriminator = undefined;
 WTAmenityCreateParams.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ WTAmenityCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTAmenityCreateParams = WTAmenityCreateParams;
 //# sourceMappingURL=wTAmenityCreateParams.js.map

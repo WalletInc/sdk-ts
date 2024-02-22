@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MemberSearch = void 0;
 class MemberSearch {
     static getAttributeTypeMap() {
         return MemberSearch.attributeTypeMap;
     }
 }
+exports.MemberSearch = MemberSearch;
 MemberSearch.discriminator = undefined;
 MemberSearch.attributeTypeMap = [
     {
@@ -43,5 +45,4 @@ MemberSearch.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.MemberSearch = MemberSearch;
 //# sourceMappingURL=memberSearch.js.map

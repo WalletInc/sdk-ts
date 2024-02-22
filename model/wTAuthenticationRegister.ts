@@ -29,6 +29,8 @@ export class WTAuthenticationRegister {
     'country': string;
     'phoneNumber': string;
     'ein'?: string;
+    'gaClientId'?: string;
+    'gaMeasurementId'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -111,6 +113,16 @@ export class WTAuthenticationRegister {
         {
             "name": "ein",
             "baseName": "ein",
+            "type": "string"
+        },
+        {
+            "name": "gaClientId",
+            "baseName": "ga_client_id",
+            "type": "string"
+        },
+        {
+            "name": "gaMeasurementId",
+            "baseName": "ga_measurement_id",
             "type": "string"
         }    ];
 

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTDynamicVoucher = void 0;
 class WTDynamicVoucher {
     static getAttributeTypeMap() {
         return WTDynamicVoucher.attributeTypeMap;
     }
 }
+exports.WTDynamicVoucher = WTDynamicVoucher;
 WTDynamicVoucher.discriminator = undefined;
 WTDynamicVoucher.attributeTypeMap = [
     {
@@ -173,5 +175,4 @@ WTDynamicVoucher.attributeTypeMap = [
         "type": "WTDynamicVoucherSummary"
     }
 ];
-exports.WTDynamicVoucher = WTDynamicVoucher;
 //# sourceMappingURL=wTDynamicVoucher.js.map

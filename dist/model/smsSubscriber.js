@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SmsSubscriber = void 0;
 class SmsSubscriber {
     static getAttributeTypeMap() {
         return SmsSubscriber.attributeTypeMap;
     }
 }
+exports.SmsSubscriber = SmsSubscriber;
 SmsSubscriber.discriminator = undefined;
 SmsSubscriber.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ SmsSubscriber.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.SmsSubscriber = SmsSubscriber;
 //# sourceMappingURL=smsSubscriber.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTPaymentDesign = void 0;
 class WTPaymentDesign {
     static getAttributeTypeMap() {
         return WTPaymentDesign.attributeTypeMap;
     }
 }
+exports.WTPaymentDesign = WTPaymentDesign;
 WTPaymentDesign.discriminator = undefined;
 WTPaymentDesign.attributeTypeMap = [
     {
@@ -103,5 +105,4 @@ WTPaymentDesign.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.WTPaymentDesign = WTPaymentDesign;
 //# sourceMappingURL=wTPaymentDesign.js.map

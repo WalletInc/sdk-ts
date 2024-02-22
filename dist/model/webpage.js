@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Webpage = void 0;
 class Webpage {
     static getAttributeTypeMap() {
         return Webpage.attributeTypeMap;
     }
 }
+exports.Webpage = Webpage;
 Webpage.discriminator = undefined;
 Webpage.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ Webpage.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
-exports.Webpage = Webpage;
 //# sourceMappingURL=webpage.js.map

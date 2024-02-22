@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSMemberHistoryPagination = void 0;
 class MSMemberHistoryPagination {
     static getAttributeTypeMap() {
         return MSMemberHistoryPagination.attributeTypeMap;
     }
 }
+exports.MSMemberHistoryPagination = MSMemberHistoryPagination;
 MSMemberHistoryPagination.discriminator = undefined;
 MSMemberHistoryPagination.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ MSMemberHistoryPagination.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSMemberHistoryPagination = MSMemberHistoryPagination;
 //# sourceMappingURL=mSMemberHistoryPagination.js.map

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BusinessIndustry = void 0;
 var BusinessIndustry;
 (function (BusinessIndustry) {
     BusinessIndustry[BusinessIndustry["Automotive"] = 'AUTOMOTIVE'] = "Automotive";

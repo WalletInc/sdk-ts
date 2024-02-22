@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTAdvertisementCreditScan = void 0;
 class WTAdvertisementCreditScan {
     static getAttributeTypeMap() {
         return WTAdvertisementCreditScan.attributeTypeMap;
     }
 }
+exports.WTAdvertisementCreditScan = WTAdvertisementCreditScan;
 WTAdvertisementCreditScan.discriminator = undefined;
 WTAdvertisementCreditScan.attributeTypeMap = [
     {
@@ -123,5 +125,4 @@ WTAdvertisementCreditScan.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTAdvertisementCreditScan = WTAdvertisementCreditScan;
 //# sourceMappingURL=wTAdvertisementCreditScan.js.map

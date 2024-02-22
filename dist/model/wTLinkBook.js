@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTLinkBook = void 0;
 class WTLinkBook {
     static getAttributeTypeMap() {
         return WTLinkBook.attributeTypeMap;
     }
 }
+exports.WTLinkBook = WTLinkBook;
 WTLinkBook.discriminator = undefined;
 WTLinkBook.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ WTLinkBook.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTLinkBook = WTLinkBook;
 //# sourceMappingURL=wTLinkBook.js.map

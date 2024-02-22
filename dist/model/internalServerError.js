@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.InternalServerError = void 0;
 class InternalServerError {
     static getAttributeTypeMap() {
         return InternalServerError.attributeTypeMap;
     }
 }
+exports.InternalServerError = InternalServerError;
 InternalServerError.discriminator = undefined;
 InternalServerError.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ InternalServerError.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.InternalServerError = InternalServerError;
 //# sourceMappingURL=internalServerError.js.map

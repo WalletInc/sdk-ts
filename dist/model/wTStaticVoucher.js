@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTStaticVoucher = void 0;
 class WTStaticVoucher {
     static getAttributeTypeMap() {
         return WTStaticVoucher.attributeTypeMap;
     }
 }
+exports.WTStaticVoucher = WTStaticVoucher;
 WTStaticVoucher.discriminator = undefined;
 WTStaticVoucher.attributeTypeMap = [
     {
@@ -168,5 +170,4 @@ WTStaticVoucher.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTStaticVoucher = WTStaticVoucher;
 //# sourceMappingURL=wTStaticVoucher.js.map

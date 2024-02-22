@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId = void 0;
 class PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId {
     static getAttributeTypeMap() {
         return PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId = PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId;
 PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.discriminator = undefined;
 PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.attributeTypeMap = [
     {
@@ -78,5 +80,4 @@ PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.attributeTypeMa
         "type": "boolean"
     }
 ];
-exports.PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId = PickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId;
 //# sourceMappingURL=pickSSOptInListUpdateParamsExcludeKeyofSSOptInListUpdateParamsId.js.map

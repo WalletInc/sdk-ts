@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmployeeCreate = void 0;
 class WTEmployeeCreate {
     static getAttributeTypeMap() {
         return WTEmployeeCreate.attributeTypeMap;
     }
 }
+exports.WTEmployeeCreate = WTEmployeeCreate;
 WTEmployeeCreate.discriminator = undefined;
 WTEmployeeCreate.attributeTypeMap = [
     {
@@ -93,5 +95,4 @@ WTEmployeeCreate.attributeTypeMap = [
         "type": "EmployeeScheduleStartMeridiem"
     }
 ];
-exports.WTEmployeeCreate = WTEmployeeCreate;
 //# sourceMappingURL=wTEmployeeCreate.js.map

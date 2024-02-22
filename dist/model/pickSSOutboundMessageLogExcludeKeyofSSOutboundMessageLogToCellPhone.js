@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone = void 0;
 class PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone {
     static getAttributeTypeMap() {
         return PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.attributeTypeMap;
     }
 }
+exports.PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone = PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone;
 PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.discriminator = undefined;
 PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.attributeTypeMap = [
     {
@@ -113,5 +115,4 @@ PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.attributeTyp
         "type": "string"
     }
 ];
-exports.PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone = PickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone;
 //# sourceMappingURL=pickSSOutboundMessageLogExcludeKeyofSSOutboundMessageLogToCellPhone.js.map

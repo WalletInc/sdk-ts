@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTSMSOptInListSourceCreate = void 0;
 class WTSMSOptInListSourceCreate {
     static getAttributeTypeMap() {
         return WTSMSOptInListSourceCreate.attributeTypeMap;
     }
 }
+exports.WTSMSOptInListSourceCreate = WTSMSOptInListSourceCreate;
 WTSMSOptInListSourceCreate.discriminator = undefined;
 WTSMSOptInListSourceCreate.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ WTSMSOptInListSourceCreate.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTSMSOptInListSourceCreate = WTSMSOptInListSourceCreate;
 //# sourceMappingURL=wTSMSOptInListSourceCreate.js.map

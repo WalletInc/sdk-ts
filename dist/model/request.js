@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Request = void 0;
 class Request {
     static getAttributeTypeMap() {
         return Request.attributeTypeMap;
     }
 }
+exports.Request = Request;
 Request.discriminator = undefined;
 Request.attributeTypeMap = [
     {
@@ -278,5 +280,4 @@ Request.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Request = Request;
 //# sourceMappingURL=request.js.map
