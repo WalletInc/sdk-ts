@@ -1,0 +1,33 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var BusinessStockExchanges;
+(function (BusinessStockExchanges) {
+    BusinessStockExchanges[BusinessStockExchanges["None"] = 'NONE'] = "None";
+    BusinessStockExchanges[BusinessStockExchanges["Nasdaq"] = 'NASDAQ'] = "Nasdaq";
+    BusinessStockExchanges[BusinessStockExchanges["Nyse"] = 'NYSE'] = "Nyse";
+    BusinessStockExchanges[BusinessStockExchanges["Amex"] = 'AMEX'] = "Amex";
+    BusinessStockExchanges[BusinessStockExchanges["Amx"] = 'AMX'] = "Amx";
+    BusinessStockExchanges[BusinessStockExchanges["Asx"] = 'ASX'] = "Asx";
+    BusinessStockExchanges[BusinessStockExchanges["B3"] = 'B3'] = "B3";
+    BusinessStockExchanges[BusinessStockExchanges["Bme"] = 'BME'] = "Bme";
+    BusinessStockExchanges[BusinessStockExchanges["Bse"] = 'BSE'] = "Bse";
+    BusinessStockExchanges[BusinessStockExchanges["Fra"] = 'FRA'] = "Fra";
+    BusinessStockExchanges[BusinessStockExchanges["Icex"] = 'ICEX'] = "Icex";
+    BusinessStockExchanges[BusinessStockExchanges["Jpx"] = 'JPX'] = "Jpx";
+    BusinessStockExchanges[BusinessStockExchanges["Jse"] = 'JSE'] = "Jse";
+    BusinessStockExchanges[BusinessStockExchanges["Krx"] = 'KRX'] = "Krx";
+    BusinessStockExchanges[BusinessStockExchanges["Lon"] = 'LON'] = "Lon";
+    BusinessStockExchanges[BusinessStockExchanges["Nse"] = 'NSE'] = "Nse";
+    BusinessStockExchanges[BusinessStockExchanges["Omx"] = 'OMX'] = "Omx";
+    BusinessStockExchanges[BusinessStockExchanges["Sehk"] = 'SEHK'] = "Sehk";
+    BusinessStockExchanges[BusinessStockExchanges["Sgx"] = 'SGX'] = "Sgx";
+    BusinessStockExchanges[BusinessStockExchanges["Sse"] = 'SSE'] = "Sse";
+    BusinessStockExchanges[BusinessStockExchanges["Sto"] = 'STO'] = "Sto";
+    BusinessStockExchanges[BusinessStockExchanges["Swx"] = 'SWX'] = "Swx";
+    BusinessStockExchanges[BusinessStockExchanges["Szse"] = 'SZSE'] = "Szse";
+    BusinessStockExchanges[BusinessStockExchanges["Tsx"] = 'TSX'] = "Tsx";
+    BusinessStockExchanges[BusinessStockExchanges["Twse"] = 'TWSE'] = "Twse";
+    BusinessStockExchanges[BusinessStockExchanges["Vse"] = 'VSE'] = "Vse";
+    BusinessStockExchanges[BusinessStockExchanges["Other"] = 'OTHER'] = "Other";
+})(BusinessStockExchanges = exports.BusinessStockExchanges || (exports.BusinessStockExchanges = {}));
+//# sourceMappingURL=businessStockExchanges.js.map
