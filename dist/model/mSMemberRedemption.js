@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSMemberRedemption = void 0;
 class MSMemberRedemption {
     static getAttributeTypeMap() {
         return MSMemberRedemption.attributeTypeMap;
     }
 }
+exports.MSMemberRedemption = MSMemberRedemption;
 MSMemberRedemption.discriminator = undefined;
 MSMemberRedemption.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ MSMemberRedemption.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.MSMemberRedemption = MSMemberRedemption;
 //# sourceMappingURL=mSMemberRedemption.js.map

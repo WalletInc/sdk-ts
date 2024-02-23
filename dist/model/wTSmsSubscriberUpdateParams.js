@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTSmsSubscriberUpdateParams = void 0;
 class WTSmsSubscriberUpdateParams {
     static getAttributeTypeMap() {
         return WTSmsSubscriberUpdateParams.attributeTypeMap;
     }
 }
+exports.WTSmsSubscriberUpdateParams = WTSmsSubscriberUpdateParams;
 WTSmsSubscriberUpdateParams.discriminator = undefined;
 WTSmsSubscriberUpdateParams.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ WTSmsSubscriberUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTSmsSubscriberUpdateParams = WTSmsSubscriberUpdateParams;
 //# sourceMappingURL=wTSmsSubscriberUpdateParams.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTMembershipTier = void 0;
 class WTMembershipTier {
     static getAttributeTypeMap() {
         return WTMembershipTier.attributeTypeMap;
     }
 }
+exports.WTMembershipTier = WTMembershipTier;
 WTMembershipTier.discriminator = undefined;
 WTMembershipTier.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ WTMembershipTier.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.WTMembershipTier = WTMembershipTier;
 //# sourceMappingURL=wTMembershipTier.js.map

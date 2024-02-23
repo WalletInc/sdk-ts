@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTFetchWalletPaymentObjectsWithToken = void 0;
 class WTFetchWalletPaymentObjectsWithToken {
     static getAttributeTypeMap() {
         return WTFetchWalletPaymentObjectsWithToken.attributeTypeMap;
     }
 }
+exports.WTFetchWalletPaymentObjectsWithToken = WTFetchWalletPaymentObjectsWithToken;
 WTFetchWalletPaymentObjectsWithToken.discriminator = undefined;
 WTFetchWalletPaymentObjectsWithToken.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ WTFetchWalletPaymentObjectsWithToken.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTFetchWalletPaymentObjectsWithToken = WTFetchWalletPaymentObjectsWithToken;
 //# sourceMappingURL=wTFetchWalletPaymentObjectsWithToken.js.map

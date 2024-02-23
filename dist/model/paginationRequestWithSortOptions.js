@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PaginationRequestWithSortOptions = void 0;
 class PaginationRequestWithSortOptions {
     static getAttributeTypeMap() {
         return PaginationRequestWithSortOptions.attributeTypeMap;
     }
 }
+exports.PaginationRequestWithSortOptions = PaginationRequestWithSortOptions;
 PaginationRequestWithSortOptions.discriminator = undefined;
 PaginationRequestWithSortOptions.attributeTypeMap = [
     {
@@ -33,7 +35,6 @@ PaginationRequestWithSortOptions.attributeTypeMap = [
         "type": "PaginationRequestWithSortOptionsSortOrder"
     }
 ];
-exports.PaginationRequestWithSortOptions = PaginationRequestWithSortOptions;
 (function (PaginationRequestWithSortOptions) {
     let SortKeyEnum;
     (function (SortKeyEnum) {

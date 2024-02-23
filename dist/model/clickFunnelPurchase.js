@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ClickFunnelPurchase = void 0;
 class ClickFunnelPurchase {
     static getAttributeTypeMap() {
         return ClickFunnelPurchase.attributeTypeMap;
     }
 }
+exports.ClickFunnelPurchase = ClickFunnelPurchase;
 ClickFunnelPurchase.discriminator = undefined;
 ClickFunnelPurchase.attributeTypeMap = [
     {
@@ -133,5 +135,4 @@ ClickFunnelPurchase.attributeTypeMap = [
         "type": "any"
     }
 ];
-exports.ClickFunnelPurchase = ClickFunnelPurchase;
 //# sourceMappingURL=clickFunnelPurchase.js.map

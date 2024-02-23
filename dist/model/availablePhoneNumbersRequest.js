@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AvailablePhoneNumbersRequest = void 0;
 class AvailablePhoneNumbersRequest {
     static getAttributeTypeMap() {
         return AvailablePhoneNumbersRequest.attributeTypeMap;
     }
 }
+exports.AvailablePhoneNumbersRequest = AvailablePhoneNumbersRequest;
 AvailablePhoneNumbersRequest.discriminator = undefined;
 AvailablePhoneNumbersRequest.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ AvailablePhoneNumbersRequest.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.AvailablePhoneNumbersRequest = AvailablePhoneNumbersRequest;
 //# sourceMappingURL=availablePhoneNumbersRequest.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTInfoGenesisRecordFilterParameters = void 0;
 class WTInfoGenesisRecordFilterParameters {
     static getAttributeTypeMap() {
         return WTInfoGenesisRecordFilterParameters.attributeTypeMap;
     }
 }
+exports.WTInfoGenesisRecordFilterParameters = WTInfoGenesisRecordFilterParameters;
 WTInfoGenesisRecordFilterParameters.discriminator = undefined;
 WTInfoGenesisRecordFilterParameters.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTInfoGenesisRecordFilterParameters.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
-exports.WTInfoGenesisRecordFilterParameters = WTInfoGenesisRecordFilterParameters;
 //# sourceMappingURL=wTInfoGenesisRecordFilterParameters.js.map

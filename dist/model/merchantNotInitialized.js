@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MerchantNotInitialized = void 0;
 class MerchantNotInitialized {
     static getAttributeTypeMap() {
         return MerchantNotInitialized.attributeTypeMap;
     }
 }
+exports.MerchantNotInitialized = MerchantNotInitialized;
 MerchantNotInitialized.discriminator = undefined;
 MerchantNotInitialized.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ MerchantNotInitialized.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.MerchantNotInitialized = MerchantNotInitialized;
 //# sourceMappingURL=merchantNotInitialized.js.map

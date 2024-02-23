@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTMerchantURLUpdate = void 0;
 class WTMerchantURLUpdate {
     static getAttributeTypeMap() {
         return WTMerchantURLUpdate.attributeTypeMap;
     }
 }
+exports.WTMerchantURLUpdate = WTMerchantURLUpdate;
 WTMerchantURLUpdate.discriminator = undefined;
 WTMerchantURLUpdate.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ WTMerchantURLUpdate.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTMerchantURLUpdate = WTMerchantURLUpdate;
 //# sourceMappingURL=wTMerchantURLUpdate.js.map

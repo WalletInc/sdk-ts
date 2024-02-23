@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTTCPAOpt = void 0;
 class WTTCPAOpt {
     static getAttributeTypeMap() {
         return WTTCPAOpt.attributeTypeMap;
     }
 }
+exports.WTTCPAOpt = WTTCPAOpt;
 WTTCPAOpt.discriminator = undefined;
 WTTCPAOpt.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTTCPAOpt.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTTCPAOpt = WTTCPAOpt;
 //# sourceMappingURL=wTTCPAOpt.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber = void 0;
 class PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber {
     static getAttributeTypeMap() {
         return PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.attributeTypeMap;
     }
 }
+exports.PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber = PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber;
 PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.discriminator = undefined;
 PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber = PickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber;
 //# sourceMappingURL=pickWTMerchantCreditMemberIDOrCreditAmountOrMobileNumber.js.map

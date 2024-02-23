@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTVideoUpdateParams = void 0;
 class WTVideoUpdateParams {
     static getAttributeTypeMap() {
         return WTVideoUpdateParams.attributeTypeMap;
     }
 }
+exports.WTVideoUpdateParams = WTVideoUpdateParams;
 WTVideoUpdateParams.discriminator = undefined;
 WTVideoUpdateParams.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ WTVideoUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTVideoUpdateParams = WTVideoUpdateParams;
 //# sourceMappingURL=wTVideoUpdateParams.js.map

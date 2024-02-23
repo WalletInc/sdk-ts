@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.LinkBook = void 0;
 class LinkBook {
     static getAttributeTypeMap() {
         return LinkBook.attributeTypeMap;
     }
 }
+exports.LinkBook = LinkBook;
 LinkBook.discriminator = undefined;
 LinkBook.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ LinkBook.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.LinkBook = LinkBook;
 //# sourceMappingURL=linkBook.js.map

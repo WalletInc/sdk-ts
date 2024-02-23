@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Employee = void 0;
 class Employee {
     static getAttributeTypeMap() {
         return Employee.attributeTypeMap;
     }
 }
+exports.Employee = Employee;
 Employee.discriminator = undefined;
 Employee.attributeTypeMap = [
     {
@@ -158,5 +160,4 @@ Employee.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.Employee = Employee;
 //# sourceMappingURL=employee.js.map

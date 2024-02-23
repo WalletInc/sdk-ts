@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ClaimTicketRequest = void 0;
 class ClaimTicketRequest {
     static getAttributeTypeMap() {
         return ClaimTicketRequest.attributeTypeMap;
     }
 }
+exports.ClaimTicketRequest = ClaimTicketRequest;
 ClaimTicketRequest.discriminator = undefined;
 ClaimTicketRequest.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ ClaimTicketRequest.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.ClaimTicketRequest = ClaimTicketRequest;
 //# sourceMappingURL=claimTicketRequest.js.map

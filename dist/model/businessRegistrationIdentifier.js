@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BusinessRegistrationIdentifier = void 0;
 var BusinessRegistrationIdentifier;
 (function (BusinessRegistrationIdentifier) {
     BusinessRegistrationIdentifier[BusinessRegistrationIdentifier["Ein"] = 'EIN'] = "Ein";

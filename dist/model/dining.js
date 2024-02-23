@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Dining = void 0;
 class Dining {
     static getAttributeTypeMap() {
         return Dining.attributeTypeMap;
     }
 }
+exports.Dining = Dining;
 Dining.discriminator = undefined;
 Dining.attributeTypeMap = [
     {
@@ -63,5 +65,4 @@ Dining.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Dining = Dining;
 //# sourceMappingURL=dining.js.map

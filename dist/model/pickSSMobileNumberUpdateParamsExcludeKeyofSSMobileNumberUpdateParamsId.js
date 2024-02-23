@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId = void 0;
 class PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId {
     static getAttributeTypeMap() {
         return PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId = PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId;
 PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.discriminator = undefined;
 PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.attributeTypeMap = [
     {
@@ -68,5 +70,4 @@ PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.attribute
         "type": "string"
     }
 ];
-exports.PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId = PickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId;
 //# sourceMappingURL=pickSSMobileNumberUpdateParamsExcludeKeyofSSMobileNumberUpdateParamsId.js.map

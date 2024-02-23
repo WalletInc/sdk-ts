@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTMerchantUpdatePointsOfContact = void 0;
 class WTMerchantUpdatePointsOfContact {
     static getAttributeTypeMap() {
         return WTMerchantUpdatePointsOfContact.attributeTypeMap;
     }
 }
+exports.WTMerchantUpdatePointsOfContact = WTMerchantUpdatePointsOfContact;
 WTMerchantUpdatePointsOfContact.discriminator = undefined;
 WTMerchantUpdatePointsOfContact.attributeTypeMap = [
     {
@@ -28,5 +30,4 @@ WTMerchantUpdatePointsOfContact.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTMerchantUpdatePointsOfContact = WTMerchantUpdatePointsOfContact;
 //# sourceMappingURL=wTMerchantUpdatePointsOfContact.js.map

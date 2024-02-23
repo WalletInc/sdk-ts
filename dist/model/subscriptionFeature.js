@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SubscriptionFeature = void 0;
 class SubscriptionFeature {
     static getAttributeTypeMap() {
         return SubscriptionFeature.attributeTypeMap;
     }
 }
+exports.SubscriptionFeature = SubscriptionFeature;
 SubscriptionFeature.discriminator = undefined;
 SubscriptionFeature.attributeTypeMap = [
     {
@@ -53,5 +55,4 @@ SubscriptionFeature.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.SubscriptionFeature = SubscriptionFeature;
 //# sourceMappingURL=subscriptionFeature.js.map

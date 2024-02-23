@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FetchInboundSMSByPage200Response = void 0;
 class FetchInboundSMSByPage200Response {
     static getAttributeTypeMap() {
         return FetchInboundSMSByPage200Response.attributeTypeMap;
     }
 }
+exports.FetchInboundSMSByPage200Response = FetchInboundSMSByPage200Response;
 FetchInboundSMSByPage200Response.discriminator = undefined;
 FetchInboundSMSByPage200Response.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ FetchInboundSMSByPage200Response.attributeTypeMap = [
         "type": "Array<InboundSMS>"
     }
 ];
-exports.FetchInboundSMSByPage200Response = FetchInboundSMSByPage200Response;
 //# sourceMappingURL=fetchInboundSMSByPage200Response.js.map

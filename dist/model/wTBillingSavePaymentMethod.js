@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTBillingSavePaymentMethod = void 0;
 class WTBillingSavePaymentMethod {
     static getAttributeTypeMap() {
         return WTBillingSavePaymentMethod.attributeTypeMap;
     }
 }
+exports.WTBillingSavePaymentMethod = WTBillingSavePaymentMethod;
 WTBillingSavePaymentMethod.discriminator = undefined;
 WTBillingSavePaymentMethod.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ WTBillingSavePaymentMethod.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTBillingSavePaymentMethod = WTBillingSavePaymentMethod;
 //# sourceMappingURL=wTBillingSavePaymentMethod.js.map

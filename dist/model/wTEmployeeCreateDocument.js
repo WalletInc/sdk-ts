@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmployeeCreateDocument = void 0;
 class WTEmployeeCreateDocument {
     static getAttributeTypeMap() {
         return WTEmployeeCreateDocument.attributeTypeMap;
     }
 }
+exports.WTEmployeeCreateDocument = WTEmployeeCreateDocument;
 WTEmployeeCreateDocument.discriminator = undefined;
 WTEmployeeCreateDocument.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTEmployeeCreateDocument.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmployeeCreateDocument = WTEmployeeCreateDocument;
 //# sourceMappingURL=wTEmployeeCreateDocument.js.map

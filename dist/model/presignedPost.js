@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PresignedPost = void 0;
 class PresignedPost {
     static getAttributeTypeMap() {
         return PresignedPost.attributeTypeMap;
     }
 }
+exports.PresignedPost = PresignedPost;
 PresignedPost.discriminator = undefined;
 PresignedPost.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ PresignedPost.attributeTypeMap = [
         "type": "PresignedPostFields"
     }
 ];
-exports.PresignedPost = PresignedPost;
 //# sourceMappingURL=presignedPost.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSMerchantCreditHistory = void 0;
 class MSMerchantCreditHistory {
     static getAttributeTypeMap() {
         return MSMerchantCreditHistory.attributeTypeMap;
     }
 }
+exports.MSMerchantCreditHistory = MSMerchantCreditHistory;
 MSMerchantCreditHistory.discriminator = undefined;
 MSMerchantCreditHistory.attributeTypeMap = [
     {
@@ -48,5 +50,4 @@ MSMerchantCreditHistory.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.MSMerchantCreditHistory = MSMerchantCreditHistory;
 //# sourceMappingURL=mSMerchantCreditHistory.js.map

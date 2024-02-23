@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BusinessStockExchanges = void 0;
 var BusinessStockExchanges;
 (function (BusinessStockExchanges) {
     BusinessStockExchanges[BusinessStockExchanges["None"] = 'NONE'] = "None";

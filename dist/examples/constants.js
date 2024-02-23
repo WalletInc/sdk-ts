@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.headers = exports.domain = void 0;
 exports.domain = "https://dev.api.wall.et";
 exports.headers = {
     headers: {

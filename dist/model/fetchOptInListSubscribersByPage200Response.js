@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FetchOptInListSubscribersByPage200Response = void 0;
 class FetchOptInListSubscribersByPage200Response {
     static getAttributeTypeMap() {
         return FetchOptInListSubscribersByPage200Response.attributeTypeMap;
     }
 }
+exports.FetchOptInListSubscribersByPage200Response = FetchOptInListSubscribersByPage200Response;
 FetchOptInListSubscribersByPage200Response.discriminator = undefined;
 FetchOptInListSubscribersByPage200Response.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ FetchOptInListSubscribersByPage200Response.attributeTypeMap = [
         "type": "Array<OptInListSubscriber>"
     }
 ];
-exports.FetchOptInListSubscribersByPage200Response = FetchOptInListSubscribersByPage200Response;
 //# sourceMappingURL=fetchOptInListSubscribersByPage200Response.js.map

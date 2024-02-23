@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CreateStaticVoucherCampaign = void 0;
 class CreateStaticVoucherCampaign {
     static getAttributeTypeMap() {
         return CreateStaticVoucherCampaign.attributeTypeMap;
     }
 }
+exports.CreateStaticVoucherCampaign = CreateStaticVoucherCampaign;
 CreateStaticVoucherCampaign.discriminator = undefined;
 CreateStaticVoucherCampaign.attributeTypeMap = [
     {
@@ -73,5 +75,4 @@ CreateStaticVoucherCampaign.attributeTypeMap = [
         "type": "SaveTicketSettingsRequestPaymentDesignID"
     }
 ];
-exports.CreateStaticVoucherCampaign = CreateStaticVoucherCampaign;
 //# sourceMappingURL=createStaticVoucherCampaign.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTOptInList = void 0;
 class WTOptInList {
     static getAttributeTypeMap() {
         return WTOptInList.attributeTypeMap;
     }
 }
+exports.WTOptInList = WTOptInList;
 WTOptInList.discriminator = undefined;
 WTOptInList.attributeTypeMap = [
     {
@@ -98,5 +100,4 @@ WTOptInList.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTOptInList = WTOptInList;
 //# sourceMappingURL=wTOptInList.js.map

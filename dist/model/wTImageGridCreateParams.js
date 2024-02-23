@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTImageGridCreateParams = void 0;
 class WTImageGridCreateParams {
     static getAttributeTypeMap() {
         return WTImageGridCreateParams.attributeTypeMap;
     }
 }
+exports.WTImageGridCreateParams = WTImageGridCreateParams;
 WTImageGridCreateParams.discriminator = undefined;
 WTImageGridCreateParams.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ WTImageGridCreateParams.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.WTImageGridCreateParams = WTImageGridCreateParams;
 //# sourceMappingURL=wTImageGridCreateParams.js.map

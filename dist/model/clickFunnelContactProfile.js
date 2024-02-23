@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ClickFunnelContactProfile = void 0;
 class ClickFunnelContactProfile {
     static getAttributeTypeMap() {
         return ClickFunnelContactProfile.attributeTypeMap;
     }
 }
+exports.ClickFunnelContactProfile = ClickFunnelContactProfile;
 ClickFunnelContactProfile.discriminator = undefined;
 ClickFunnelContactProfile.attributeTypeMap = [
     {
@@ -183,5 +185,4 @@ ClickFunnelContactProfile.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.ClickFunnelContactProfile = ClickFunnelContactProfile;
 //# sourceMappingURL=clickFunnelContactProfile.js.map

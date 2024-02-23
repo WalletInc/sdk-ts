@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTCountResult = void 0;
 class WTCountResult {
     static getAttributeTypeMap() {
         return WTCountResult.attributeTypeMap;
     }
 }
+exports.WTCountResult = WTCountResult;
 WTCountResult.discriminator = undefined;
 WTCountResult.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ WTCountResult.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.WTCountResult = WTCountResult;
 //# sourceMappingURL=wTCountResult.js.map

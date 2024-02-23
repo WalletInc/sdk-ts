@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmployeeSendHelpDeskResponse = void 0;
 class WTEmployeeSendHelpDeskResponse {
     static getAttributeTypeMap() {
         return WTEmployeeSendHelpDeskResponse.attributeTypeMap;
     }
 }
+exports.WTEmployeeSendHelpDeskResponse = WTEmployeeSendHelpDeskResponse;
 WTEmployeeSendHelpDeskResponse.discriminator = undefined;
 WTEmployeeSendHelpDeskResponse.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ WTEmployeeSendHelpDeskResponse.attributeTypeMap = [
         "type": "Array<string>"
     }
 ];
-exports.WTEmployeeSendHelpDeskResponse = WTEmployeeSendHelpDeskResponse;
 //# sourceMappingURL=wTEmployeeSendHelpDeskResponse.js.map

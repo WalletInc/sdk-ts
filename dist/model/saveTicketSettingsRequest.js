@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SaveTicketSettingsRequest = void 0;
 class SaveTicketSettingsRequest {
     static getAttributeTypeMap() {
         return SaveTicketSettingsRequest.attributeTypeMap;
     }
 }
+exports.SaveTicketSettingsRequest = SaveTicketSettingsRequest;
 SaveTicketSettingsRequest.discriminator = undefined;
 SaveTicketSettingsRequest.attributeTypeMap = [
     {
@@ -28,5 +30,4 @@ SaveTicketSettingsRequest.attributeTypeMap = [
         "type": "SaveTicketSettingsRequestPaymentDesignID"
     }
 ];
-exports.SaveTicketSettingsRequest = SaveTicketSettingsRequest;
 //# sourceMappingURL=saveTicketSettingsRequest.js.map

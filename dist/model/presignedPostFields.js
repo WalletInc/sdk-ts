@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PresignedPostFields = void 0;
 class PresignedPostFields extends null {
     static getAttributeTypeMap() {
         return super.getAttributeTypeMap().concat(PresignedPostFields.attributeTypeMap);
     }
 }
+exports.PresignedPostFields = PresignedPostFields;
 PresignedPostFields.discriminator = undefined;
 PresignedPostFields.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ PresignedPostFields.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.PresignedPostFields = PresignedPostFields;
 //# sourceMappingURL=presignedPostFields.js.map

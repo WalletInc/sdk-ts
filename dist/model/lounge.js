@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Lounge = void 0;
 class Lounge {
     static getAttributeTypeMap() {
         return Lounge.attributeTypeMap;
     }
 }
+exports.Lounge = Lounge;
 Lounge.discriminator = undefined;
 Lounge.attributeTypeMap = [
     {
@@ -63,5 +65,4 @@ Lounge.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Lounge = Lounge;
 //# sourceMappingURL=lounge.js.map

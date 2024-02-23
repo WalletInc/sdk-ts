@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SSOptInSource = void 0;
 class SSOptInSource {
     static getAttributeTypeMap() {
         return SSOptInSource.attributeTypeMap;
     }
 }
+exports.SSOptInSource = SSOptInSource;
 SSOptInSource.discriminator = undefined;
 SSOptInSource.attributeTypeMap = [
     {
@@ -48,5 +50,4 @@ SSOptInSource.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.SSOptInSource = SSOptInSource;
 //# sourceMappingURL=sSOptInSource.js.map

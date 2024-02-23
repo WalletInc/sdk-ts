@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ImportedList = void 0;
 class ImportedList {
     static getAttributeTypeMap() {
         return ImportedList.attributeTypeMap;
     }
 }
+exports.ImportedList = ImportedList;
 ImportedList.discriminator = undefined;
 ImportedList.attributeTypeMap = [
     {
@@ -48,5 +50,4 @@ ImportedList.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.ImportedList = ImportedList;
 //# sourceMappingURL=importedList.js.map

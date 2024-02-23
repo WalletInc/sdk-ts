@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MerchantCreditSearch = void 0;
 class MerchantCreditSearch {
     static getAttributeTypeMap() {
         return MerchantCreditSearch.attributeTypeMap;
     }
 }
+exports.MerchantCreditSearch = MerchantCreditSearch;
 MerchantCreditSearch.discriminator = undefined;
 MerchantCreditSearch.attributeTypeMap = [
     {
@@ -28,5 +30,4 @@ MerchantCreditSearch.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.MerchantCreditSearch = MerchantCreditSearch;
 //# sourceMappingURL=merchantCreditSearch.js.map

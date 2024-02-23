@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WalletConfiguration = void 0;
 class WalletConfiguration {
     static getAttributeTypeMap() {
         return WalletConfiguration.attributeTypeMap;
     }
 }
+exports.WalletConfiguration = WalletConfiguration;
 WalletConfiguration.discriminator = undefined;
 WalletConfiguration.attributeTypeMap = [
     {
@@ -358,5 +360,4 @@ WalletConfiguration.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WalletConfiguration = WalletConfiguration;
 //# sourceMappingURL=walletConfiguration.js.map

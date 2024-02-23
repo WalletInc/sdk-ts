@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FetchImportedListRecipientsByPage200Response = void 0;
 class FetchImportedListRecipientsByPage200Response {
     static getAttributeTypeMap() {
         return FetchImportedListRecipientsByPage200Response.attributeTypeMap;
     }
 }
+exports.FetchImportedListRecipientsByPage200Response = FetchImportedListRecipientsByPage200Response;
 FetchImportedListRecipientsByPage200Response.discriminator = undefined;
 FetchImportedListRecipientsByPage200Response.attributeTypeMap = [
     {
@@ -23,5 +25,4 @@ FetchImportedListRecipientsByPage200Response.attributeTypeMap = [
         "type": "Array<ImportedListRecipient>"
     }
 ];
-exports.FetchImportedListRecipientsByPage200Response = FetchImportedListRecipientsByPage200Response;
 //# sourceMappingURL=fetchImportedListRecipientsByPage200Response.js.map

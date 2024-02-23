@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EmployeeAPIKey = void 0;
 class EmployeeAPIKey {
     static getAttributeTypeMap() {
         return EmployeeAPIKey.attributeTypeMap;
     }
 }
+exports.EmployeeAPIKey = EmployeeAPIKey;
 EmployeeAPIKey.discriminator = undefined;
 EmployeeAPIKey.attributeTypeMap = [
     {
@@ -53,5 +55,4 @@ EmployeeAPIKey.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.EmployeeAPIKey = EmployeeAPIKey;
 //# sourceMappingURL=employeeAPIKey.js.map

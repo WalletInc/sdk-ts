@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.RoleAuditLog = void 0;
 class RoleAuditLog {
     static getAttributeTypeMap() {
         return RoleAuditLog.attributeTypeMap;
     }
 }
+exports.RoleAuditLog = RoleAuditLog;
 RoleAuditLog.discriminator = undefined;
 RoleAuditLog.attributeTypeMap = [
     {
@@ -68,5 +70,4 @@ RoleAuditLog.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.RoleAuditLog = RoleAuditLog;
 //# sourceMappingURL=roleAuditLog.js.map

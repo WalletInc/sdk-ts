@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.StaticVoucherCampaignGroup = void 0;
 class StaticVoucherCampaignGroup {
     static getAttributeTypeMap() {
         return StaticVoucherCampaignGroup.attributeTypeMap;
     }
 }
+exports.StaticVoucherCampaignGroup = StaticVoucherCampaignGroup;
 StaticVoucherCampaignGroup.discriminator = undefined;
 StaticVoucherCampaignGroup.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ StaticVoucherCampaignGroup.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.StaticVoucherCampaignGroup = StaticVoucherCampaignGroup;
 //# sourceMappingURL=staticVoucherCampaignGroup.js.map

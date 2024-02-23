@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId = void 0;
 class PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId {
     static getAttributeTypeMap() {
         return PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.attributeTypeMap;
     }
 }
+exports.PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId = PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId;
 PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.discriminator = undefined;
 PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.attributeTypeMap = [
     {
@@ -28,5 +30,4 @@ PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.attribute
         "type": "string"
     }
 ];
-exports.PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId = PickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId;
 //# sourceMappingURL=pickSSImportedListUpdateParamsExcludeKeyofSSImportedListUpdateParamsId.js.map

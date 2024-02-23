@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTTicket = void 0;
 class WTTicket {
     static getAttributeTypeMap() {
         return WTTicket.attributeTypeMap;
     }
 }
+exports.WTTicket = WTTicket;
 WTTicket.discriminator = undefined;
 WTTicket.attributeTypeMap = [
     {
@@ -108,5 +110,4 @@ WTTicket.attributeTypeMap = [
         "type": "Date"
     }
 ];
-exports.WTTicket = WTTicket;
 //# sourceMappingURL=wTTicket.js.map

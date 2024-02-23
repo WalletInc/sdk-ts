@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTTicketCreateParams = void 0;
 class WTTicketCreateParams {
     static getAttributeTypeMap() {
         return WTTicketCreateParams.attributeTypeMap;
     }
 }
+exports.WTTicketCreateParams = WTTicketCreateParams;
 WTTicketCreateParams.discriminator = undefined;
 WTTicketCreateParams.attributeTypeMap = [
     {
@@ -38,5 +40,4 @@ WTTicketCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTTicketCreateParams = WTTicketCreateParams;
 //# sourceMappingURL=wTTicketCreateParams.js.map

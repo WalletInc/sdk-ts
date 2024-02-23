@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PaymentDesign = void 0;
 class PaymentDesign {
     static getAttributeTypeMap() {
         return PaymentDesign.attributeTypeMap;
     }
 }
+exports.PaymentDesign = PaymentDesign;
 PaymentDesign.discriminator = undefined;
 PaymentDesign.attributeTypeMap = [
     {
@@ -103,5 +105,4 @@ PaymentDesign.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.PaymentDesign = PaymentDesign;
 //# sourceMappingURL=paymentDesign.js.map

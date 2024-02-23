@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.VirtualBusinessCard = void 0;
 class VirtualBusinessCard {
     static getAttributeTypeMap() {
         return VirtualBusinessCard.attributeTypeMap;
     }
 }
+exports.VirtualBusinessCard = VirtualBusinessCard;
 VirtualBusinessCard.discriminator = undefined;
 VirtualBusinessCard.attributeTypeMap = [
     {
@@ -98,5 +100,4 @@ VirtualBusinessCard.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.VirtualBusinessCard = VirtualBusinessCard;
 //# sourceMappingURL=virtualBusinessCard.js.map

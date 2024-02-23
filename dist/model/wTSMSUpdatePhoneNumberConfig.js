@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTSMSUpdatePhoneNumberConfig = void 0;
 class WTSMSUpdatePhoneNumberConfig {
     static getAttributeTypeMap() {
         return WTSMSUpdatePhoneNumberConfig.attributeTypeMap;
     }
 }
+exports.WTSMSUpdatePhoneNumberConfig = WTSMSUpdatePhoneNumberConfig;
 WTSMSUpdatePhoneNumberConfig.discriminator = undefined;
 WTSMSUpdatePhoneNumberConfig.attributeTypeMap = [
     {
@@ -68,5 +70,4 @@ WTSMSUpdatePhoneNumberConfig.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTSMSUpdatePhoneNumberConfig = WTSMSUpdatePhoneNumberConfig;
 //# sourceMappingURL=wTSMSUpdatePhoneNumberConfig.js.map

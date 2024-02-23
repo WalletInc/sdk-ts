@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Gaming = void 0;
 class Gaming {
     static getAttributeTypeMap() {
         return Gaming.attributeTypeMap;
     }
 }
+exports.Gaming = Gaming;
 Gaming.discriminator = undefined;
 Gaming.attributeTypeMap = [
     {
@@ -63,5 +65,4 @@ Gaming.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.Gaming = Gaming;
 //# sourceMappingURL=gaming.js.map

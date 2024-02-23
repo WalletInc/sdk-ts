@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTPerformanceUpdateParams = void 0;
 class WTPerformanceUpdateParams {
     static getAttributeTypeMap() {
         return WTPerformanceUpdateParams.attributeTypeMap;
     }
 }
+exports.WTPerformanceUpdateParams = WTPerformanceUpdateParams;
 WTPerformanceUpdateParams.discriminator = undefined;
 WTPerformanceUpdateParams.attributeTypeMap = [
     {
@@ -68,5 +70,4 @@ WTPerformanceUpdateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTPerformanceUpdateParams = WTPerformanceUpdateParams;
 //# sourceMappingURL=wTPerformanceUpdateParams.js.map

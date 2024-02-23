@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSMerchantCreditRedemption = void 0;
 class MSMerchantCreditRedemption {
     static getAttributeTypeMap() {
         return MSMerchantCreditRedemption.attributeTypeMap;
     }
 }
+exports.MSMerchantCreditRedemption = MSMerchantCreditRedemption;
 MSMerchantCreditRedemption.discriminator = undefined;
 MSMerchantCreditRedemption.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ MSMerchantCreditRedemption.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.MSMerchantCreditRedemption = MSMerchantCreditRedemption;
 //# sourceMappingURL=mSMerchantCreditRedemption.js.map

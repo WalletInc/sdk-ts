@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTEmailSubscriberCreateParamsWalletUI = void 0;
 class WTEmailSubscriberCreateParamsWalletUI {
     static getAttributeTypeMap() {
         return WTEmailSubscriberCreateParamsWalletUI.attributeTypeMap;
     }
 }
+exports.WTEmailSubscriberCreateParamsWalletUI = WTEmailSubscriberCreateParamsWalletUI;
 WTEmailSubscriberCreateParamsWalletUI.discriminator = undefined;
 WTEmailSubscriberCreateParamsWalletUI.attributeTypeMap = [
     {
@@ -28,5 +30,4 @@ WTEmailSubscriberCreateParamsWalletUI.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTEmailSubscriberCreateParamsWalletUI = WTEmailSubscriberCreateParamsWalletUI;
 //# sourceMappingURL=wTEmailSubscriberCreateParamsWalletUI.js.map

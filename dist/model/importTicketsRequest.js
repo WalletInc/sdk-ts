@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ImportTicketsRequest = void 0;
 class ImportTicketsRequest {
     static getAttributeTypeMap() {
         return ImportTicketsRequest.attributeTypeMap;
     }
 }
+exports.ImportTicketsRequest = ImportTicketsRequest;
 ImportTicketsRequest.discriminator = undefined;
 ImportTicketsRequest.attributeTypeMap = [
     {
@@ -13,5 +15,4 @@ ImportTicketsRequest.attributeTypeMap = [
         "type": "Array<WTTicketUpdateParams>"
     }
 ];
-exports.ImportTicketsRequest = ImportTicketsRequest;
 //# sourceMappingURL=importTicketsRequest.js.map

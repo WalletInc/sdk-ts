@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTPosMachine = void 0;
 class WTPosMachine {
     static getAttributeTypeMap() {
         return WTPosMachine.attributeTypeMap;
     }
 }
+exports.WTPosMachine = WTPosMachine;
 WTPosMachine.discriminator = undefined;
 WTPosMachine.attributeTypeMap = [
     {
@@ -58,5 +60,4 @@ WTPosMachine.attributeTypeMap = [
         "type": "boolean"
     }
 ];
-exports.WTPosMachine = WTPosMachine;
 //# sourceMappingURL=wTPosMachine.js.map

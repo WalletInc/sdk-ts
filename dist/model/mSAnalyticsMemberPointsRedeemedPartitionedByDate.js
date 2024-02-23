@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MSAnalyticsMemberPointsRedeemedPartitionedByDate = void 0;
 class MSAnalyticsMemberPointsRedeemedPartitionedByDate {
     static getAttributeTypeMap() {
         return MSAnalyticsMemberPointsRedeemedPartitionedByDate.attributeTypeMap;
     }
 }
+exports.MSAnalyticsMemberPointsRedeemedPartitionedByDate = MSAnalyticsMemberPointsRedeemedPartitionedByDate;
 MSAnalyticsMemberPointsRedeemedPartitionedByDate.discriminator = undefined;
 MSAnalyticsMemberPointsRedeemedPartitionedByDate.attributeTypeMap = [
     {
@@ -18,5 +20,4 @@ MSAnalyticsMemberPointsRedeemedPartitionedByDate.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.MSAnalyticsMemberPointsRedeemedPartitionedByDate = MSAnalyticsMemberPointsRedeemedPartitionedByDate;
 //# sourceMappingURL=mSAnalyticsMemberPointsRedeemedPartitionedByDate.js.map

@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTStaticVoucherCampaignPreviewMessagesByPage = void 0;
 class WTStaticVoucherCampaignPreviewMessagesByPage {
     static getAttributeTypeMap() {
         return WTStaticVoucherCampaignPreviewMessagesByPage.attributeTypeMap;
     }
 }
+exports.WTStaticVoucherCampaignPreviewMessagesByPage = WTStaticVoucherCampaignPreviewMessagesByPage;
 WTStaticVoucherCampaignPreviewMessagesByPage.discriminator = undefined;
 WTStaticVoucherCampaignPreviewMessagesByPage.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ WTStaticVoucherCampaignPreviewMessagesByPage.attributeTypeMap = [
         "type": "number"
     }
 ];
-exports.WTStaticVoucherCampaignPreviewMessagesByPage = WTStaticVoucherCampaignPreviewMessagesByPage;
 //# sourceMappingURL=wTStaticVoucherCampaignPreviewMessagesByPage.js.map

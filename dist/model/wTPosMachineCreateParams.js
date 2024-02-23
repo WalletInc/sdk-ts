@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTPosMachineCreateParams = void 0;
 class WTPosMachineCreateParams {
     static getAttributeTypeMap() {
         return WTPosMachineCreateParams.attributeTypeMap;
     }
 }
+exports.WTPosMachineCreateParams = WTPosMachineCreateParams;
 WTPosMachineCreateParams.discriminator = undefined;
 WTPosMachineCreateParams.attributeTypeMap = [
     {
@@ -33,5 +35,4 @@ WTPosMachineCreateParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTPosMachineCreateParams = WTPosMachineCreateParams;
 //# sourceMappingURL=wTPosMachineCreateParams.js.map

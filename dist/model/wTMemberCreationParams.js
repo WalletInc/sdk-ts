@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WTMemberCreationParams = void 0;
 class WTMemberCreationParams {
     static getAttributeTypeMap() {
         return WTMemberCreationParams.attributeTypeMap;
     }
 }
+exports.WTMemberCreationParams = WTMemberCreationParams;
 WTMemberCreationParams.discriminator = undefined;
 WTMemberCreationParams.attributeTypeMap = [
     {
@@ -48,5 +50,4 @@ WTMemberCreationParams.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.WTMemberCreationParams = WTMemberCreationParams;
 //# sourceMappingURL=wTMemberCreationParams.js.map
