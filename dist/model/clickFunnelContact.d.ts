@@ -40,6 +40,7 @@ export declare class ClickFunnelContact {
     'additionalInfo'?: any | null;
     'gaClientId'?: string;
     'gaMeasurementId'?: string;
+    'funnelName'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

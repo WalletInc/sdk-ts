@@ -54,6 +54,7 @@ export class ClickFunnelContact {
     'additionalInfo'?: any | null;
     'gaClientId'?: string;
     'gaMeasurementId'?: string;
+    'funnelName'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -256,6 +257,11 @@ export class ClickFunnelContact {
         {
             "name": "gaMeasurementId",
             "baseName": "ga_measurement_id",
+            "type": "string"
+        },
+        {
+            "name": "funnelName",
+            "baseName": "funnel_name",
             "type": "string"
         }    ];
 
