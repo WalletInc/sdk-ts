@@ -208,6 +208,11 @@ ClickFunnelContact.attributeTypeMap = [
         "name": "gaMeasurementId",
         "baseName": "ga_measurement_id",
         "type": "string"
+    },
+    {
+        "name": "funnelName",
+        "baseName": "funnel_name",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=clickFunnelContact.js.map
