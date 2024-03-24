@@ -325,6 +325,16 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "socialBackgroundColor",
+        "baseName": "socialBackgroundColor",
+        "type": "string"
+    },
+    {
+        "name": "socialFontColor",
+        "baseName": "socialFontColor",
+        "type": "string"
+    },
+    {
         "name": "primaryPhoneNumber",
         "baseName": "primaryPhoneNumber",
         "type": "string"
