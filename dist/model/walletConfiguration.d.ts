@@ -63,6 +63,8 @@ export declare class WalletConfiguration {
     'socialYouTubeURL'?: string;
     'socialTwitterURL'?: string;
     'socialLinkedInURL'?: string;
+    'socialBackgroundColor'?: string;
+    'socialFontColor'?: string;
     'primaryPhoneNumber'?: string;
     'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;

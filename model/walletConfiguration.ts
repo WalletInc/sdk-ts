@@ -77,6 +77,8 @@ export class WalletConfiguration {
     'socialYouTubeURL'?: string;
     'socialTwitterURL'?: string;
     'socialLinkedInURL'?: string;
+    'socialBackgroundColor'?: string;
+    'socialFontColor'?: string;
     'primaryPhoneNumber'?: string;
     'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
@@ -401,6 +403,16 @@ export class WalletConfiguration {
         {
             "name": "socialLinkedInURL",
             "baseName": "socialLinkedInURL",
+            "type": "string"
+        },
+        {
+            "name": "socialBackgroundColor",
+            "baseName": "socialBackgroundColor",
+            "type": "string"
+        },
+        {
+            "name": "socialFontColor",
+            "baseName": "socialFontColor",
             "type": "string"
         },
         {
