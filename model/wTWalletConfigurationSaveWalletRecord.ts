@@ -77,6 +77,8 @@ export class WTWalletConfigurationSaveWalletRecord {
     'socialYouTubeURL'?: string;
     'socialTwitterURL'?: string;
     'socialLinkedInURL'?: string;
+    'socialBackgroundColor'?: string;
+    'socialFontColor'?: string;
     'primaryPhoneNumber'?: string;
     'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
@@ -397,6 +399,16 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "socialLinkedInURL",
             "baseName": "socialLinkedInURL",
+            "type": "string"
+        },
+        {
+            "name": "socialBackgroundColor",
+            "baseName": "socialBackgroundColor",
+            "type": "string"
+        },
+        {
+            "name": "socialFontColor",
+            "baseName": "socialFontColor",
             "type": "string"
         },
         {
