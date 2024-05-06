@@ -86,8 +86,6 @@ export * from './shopifyTerminalApi';
 import { ShopifyTerminalApi } from './shopifyTerminalApi';
 export * from './smsSubscriberApi';
 import { SmsSubscriberApi } from './smsSubscriberApi';
-export * from './staticVoucherCampaignGroupsApi';
-import { StaticVoucherCampaignGroupsApi } from './staticVoucherCampaignGroupsApi';
 export * from './staticVoucherCampaignsApi';
 import { StaticVoucherCampaignsApi } from './staticVoucherCampaignsApi';
 export * from './staticVouchersApi';
@@ -119,4 +117,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [A2PApi, AdvertisementCreditsApi, AmenitiesApi, AnalyticsApi, AppleWalletSubscribersApi, BillingApi, ClubMembersPointsApi, ConfigurationApi, CountriesApi, CustomerApi, DashboardApi, DiningApi, DynamicVouchersApi, EmailSubscriberApi, EmployeeAPIKeysApi, EmployeeAccessApi, EmployeesApi, GamingApi, ImageGridApi, IndustriesApi, InfoGenesisReportsApi, IntegratedTerminalsApi, InteractionsApi, LoginAndLogoutApi, LoungeApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, MerchantURLsApi, MobileTerminalApi, NewsApi, PaymentDesignsApi, PerformancesApi, ProductsApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, RoomRatesApi, SMSApi, ServicesApi, SettingsApi, ShopifyTerminalApi, SmsSubscriberApi, StaticVoucherCampaignGroupsApi, StaticVoucherCampaignsApi, StaticVouchersApi, SystemApi, TicketApi, TransactionLedgerApi, VideosApi, VirtualBusinessCardApi, WebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];
+export const APIS = [A2PApi, AdvertisementCreditsApi, AmenitiesApi, AnalyticsApi, AppleWalletSubscribersApi, BillingApi, ClubMembersPointsApi, ConfigurationApi, CountriesApi, CustomerApi, DashboardApi, DiningApi, DynamicVouchersApi, EmailSubscriberApi, EmployeeAPIKeysApi, EmployeeAccessApi, EmployeesApi, GamingApi, ImageGridApi, IndustriesApi, InfoGenesisReportsApi, IntegratedTerminalsApi, InteractionsApi, LoginAndLogoutApi, LoungeApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, MerchantURLsApi, MobileTerminalApi, NewsApi, PaymentDesignsApi, PerformancesApi, ProductsApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, RoomRatesApi, SMSApi, ServicesApi, SettingsApi, ShopifyTerminalApi, SmsSubscriberApi, StaticVoucherCampaignsApi, StaticVouchersApi, SystemApi, TicketApi, TransactionLedgerApi, VideosApi, VirtualBusinessCardApi, WebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];

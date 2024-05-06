@@ -55,6 +55,8 @@ export class ClickFunnelContact {
     'gaClientId'?: string;
     'gaMeasurementId'?: string;
     'funnelName'?: string;
+    'httpReferrer'?: string;
+    'landingPage'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -262,6 +264,16 @@ export class ClickFunnelContact {
         {
             "name": "funnelName",
             "baseName": "funnel_name",
+            "type": "string"
+        },
+        {
+            "name": "httpReferrer",
+            "baseName": "http_referrer",
+            "type": "string"
+        },
+        {
+            "name": "landingPage",
+            "baseName": "landing_page",
             "type": "string"
         }    ];
 
