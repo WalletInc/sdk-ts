@@ -41,6 +41,8 @@ export declare class ClickFunnelContact {
     'gaClientId'?: string;
     'gaMeasurementId'?: string;
     'funnelName'?: string;
+    'httpReferrer'?: string;
+    'landingPage'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

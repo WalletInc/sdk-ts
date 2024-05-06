@@ -213,6 +213,16 @@ ClickFunnelContact.attributeTypeMap = [
         "name": "funnelName",
         "baseName": "funnel_name",
         "type": "string"
+    },
+    {
+        "name": "httpReferrer",
+        "baseName": "http_referrer",
+        "type": "string"
+    },
+    {
+        "name": "landingPage",
+        "baseName": "landing_page",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=clickFunnelContact.js.map
