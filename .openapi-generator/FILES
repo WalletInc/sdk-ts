@@ -45,7 +45,6 @@ api/servicesApi.ts
 api/settingsApi.ts
 api/shopifyTerminalApi.ts
 api/smsSubscriberApi.ts
-api/staticVoucherCampaignGroupsApi.ts
 api/staticVoucherCampaignsApi.ts
 api/staticVouchersApi.ts
 api/systemApi.ts
