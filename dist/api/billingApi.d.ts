@@ -1,6 +1,8 @@
 /// <reference types="node" />
 import http from 'http';
 import { FetchIndustry200Response } from '../model/fetchIndustry200Response';
+import { Merchant } from '../model/merchant';
+import { SetDefaultPaymentMethodRequest } from '../model/setDefaultPaymentMethodRequest';
 import { WTBillingChangePlan } from '../model/wTBillingChangePlan';
 import { WTBillingSavePaymentMethod } from '../model/wTBillingSavePaymentMethod';
 import { WTBillingVerifyPaymentMethodResponse } from '../model/wTBillingVerifyPaymentMethodResponse';
@@ -67,6 +69,14 @@ export declare class BillingApi {
         response: http.IncomingMessage;
         body: Array<any>;
     }>;
+    fetchCustomerPaymentMethods(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: any;
+    }>;
     fetchIndustry(options?: {
         headers: {
             [name: string]: string;
@@ -114,6 +124,14 @@ export declare class BillingApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
+    }>;
+    setDefaultPaymentMethod(setDefaultPaymentMethodRequest: SetDefaultPaymentMethodRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Merchant;
     }>;
     upcomingInvoices(options?: {
         headers: {

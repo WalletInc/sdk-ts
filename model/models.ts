@@ -195,6 +195,7 @@ export * from './saveMerchantCreditPaymentDesignRequest';
 export * from './saveTicketSettingsRequest';
 export * from './saveTicketSettingsRequestPaymentDesignID';
 export * from './service';
+export * from './setDefaultPaymentMethodRequest';
 export * from './simpleSMSBroadcast';
 export * from './smsSubscriber';
 export * from './staticVoucher';
@@ -581,6 +582,7 @@ import { SaveMerchantCreditPaymentDesignRequest } from './saveMerchantCreditPaym
 import { SaveTicketSettingsRequest } from './saveTicketSettingsRequest';
 import { SaveTicketSettingsRequestPaymentDesignID } from './saveTicketSettingsRequestPaymentDesignID';
 import { Service } from './service';
+import { SetDefaultPaymentMethodRequest } from './setDefaultPaymentMethodRequest';
 import { SimpleSMSBroadcast } from './simpleSMSBroadcast';
 import { SmsSubscriber } from './smsSubscriber';
 import { StaticVoucher } from './staticVoucher';
@@ -974,6 +976,7 @@ let typeMap: {[index: string]: any} = {
     "SaveTicketSettingsRequest": SaveTicketSettingsRequest,
     "SaveTicketSettingsRequestPaymentDesignID": SaveTicketSettingsRequestPaymentDesignID,
     "Service": Service,
+    "SetDefaultPaymentMethodRequest": SetDefaultPaymentMethodRequest,
     "SimpleSMSBroadcast": SimpleSMSBroadcast,
     "SmsSubscriber": SmsSubscriber,
     "StaticVoucher": StaticVoucher,
