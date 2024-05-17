@@ -196,6 +196,7 @@ export * from './saveMerchantCreditPaymentDesignRequest';
 export * from './saveTicketSettingsRequest';
 export * from './saveTicketSettingsRequestPaymentDesignID';
 export * from './service';
+export * from './setDefaultPaymentMethodRequest';
 export * from './simpleSMSBroadcast';
 export * from './smsSubscriber';
 export * from './staticVoucher';
