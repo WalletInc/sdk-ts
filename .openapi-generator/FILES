@@ -252,6 +252,7 @@ model/saveMerchantCreditPaymentDesignRequest.ts
 model/saveTicketSettingsRequest.ts
 model/saveTicketSettingsRequestPaymentDesignID.ts
 model/service.ts
+model/setDefaultPaymentMethodRequest.ts
 model/simpleSMSBroadcast.ts
 model/smsSubscriber.ts
 model/staticVoucher.ts

@@ -210,6 +210,7 @@ __exportStar(require("./saveMerchantCreditPaymentDesignRequest"), exports);
 __exportStar(require("./saveTicketSettingsRequest"), exports);
 __exportStar(require("./saveTicketSettingsRequestPaymentDesignID"), exports);
 __exportStar(require("./service"), exports);
+__exportStar(require("./setDefaultPaymentMethodRequest"), exports);
 __exportStar(require("./simpleSMSBroadcast"), exports);
 __exportStar(require("./smsSubscriber"), exports);
 __exportStar(require("./staticVoucher"), exports);
@@ -582,6 +583,7 @@ const saveMerchantCreditPaymentDesignRequest_1 = require("./saveMerchantCreditPa
 const saveTicketSettingsRequest_1 = require("./saveTicketSettingsRequest");
 const saveTicketSettingsRequestPaymentDesignID_1 = require("./saveTicketSettingsRequestPaymentDesignID");
 const service_1 = require("./service");
+const setDefaultPaymentMethodRequest_1 = require("./setDefaultPaymentMethodRequest");
 const simpleSMSBroadcast_1 = require("./simpleSMSBroadcast");
 const smsSubscriber_1 = require("./smsSubscriber");
 const staticVoucher_1 = require("./staticVoucher");
@@ -971,6 +973,7 @@ let typeMap = {
     "SaveTicketSettingsRequest": saveTicketSettingsRequest_1.SaveTicketSettingsRequest,
     "SaveTicketSettingsRequestPaymentDesignID": saveTicketSettingsRequestPaymentDesignID_1.SaveTicketSettingsRequestPaymentDesignID,
     "Service": service_1.Service,
+    "SetDefaultPaymentMethodRequest": setDefaultPaymentMethodRequest_1.SetDefaultPaymentMethodRequest,
     "SimpleSMSBroadcast": simpleSMSBroadcast_1.SimpleSMSBroadcast,
     "SmsSubscriber": smsSubscriber_1.SmsSubscriber,
     "StaticVoucher": staticVoucher_1.StaticVoucher,
