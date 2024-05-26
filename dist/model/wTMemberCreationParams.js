@@ -10,11 +10,6 @@ exports.WTMemberCreationParams = WTMemberCreationParams;
 WTMemberCreationParams.discriminator = undefined;
 WTMemberCreationParams.attributeTypeMap = [
     {
-        "name": "mobileNumber",
-        "baseName": "mobileNumber",
-        "type": "string"
-    },
-    {
         "name": "firstName",
         "baseName": "firstName",
         "type": "string"
@@ -27,6 +22,11 @@ WTMemberCreationParams.attributeTypeMap = [
     {
         "name": "membershipTierID",
         "baseName": "membershipTierID",
+        "type": "string"
+    },
+    {
+        "name": "mobileNumber",
+        "baseName": "mobileNumber",
         "type": "string"
     },
     {

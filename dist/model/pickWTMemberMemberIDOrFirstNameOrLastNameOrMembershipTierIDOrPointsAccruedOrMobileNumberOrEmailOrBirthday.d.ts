@@ -1,9 +1,9 @@
 export declare class PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobileNumberOrEmailOrBirthday {
     'memberID': string;
-    'mobileNumber': string;
     'firstName'?: string;
     'lastName'?: string;
     'membershipTierID': string;
+    'mobileNumber': string;
     'email': string;
     'birthday': string;
     'pointsAccrued': number;

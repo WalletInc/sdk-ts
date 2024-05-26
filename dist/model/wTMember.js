@@ -35,11 +35,6 @@ WTMember.attributeTypeMap = [
         "type": "boolean"
     },
     {
-        "name": "mobileNumber",
-        "baseName": "mobileNumber",
-        "type": "string"
-    },
-    {
         "name": "firstName",
         "baseName": "firstName",
         "type": "string"
@@ -52,6 +47,11 @@ WTMember.attributeTypeMap = [
     {
         "name": "membershipTierID",
         "baseName": "membershipTierID",
+        "type": "string"
+    },
+    {
+        "name": "mobileNumber",
+        "baseName": "mobileNumber",
         "type": "string"
     },
     {
