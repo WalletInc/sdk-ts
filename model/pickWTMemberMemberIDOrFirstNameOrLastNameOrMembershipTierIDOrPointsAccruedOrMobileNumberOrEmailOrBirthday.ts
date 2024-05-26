@@ -20,6 +20,7 @@ export class PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPoints
     * Member ID as represented by the merchant
     */
     'memberID': string;
+    'mobileNumber': string;
     /**
     * An optional first name of the member
     */
@@ -29,7 +30,6 @@ export class PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPoints
     */
     'lastName'?: string;
     'membershipTierID': string;
-    'mobileNumber': string;
     'email': string;
     /**
     * Represents the date of birth of the member. Defaults to 0000-00-00, which represents that the date of birth has not been configured
@@ -49,6 +49,11 @@ export class PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPoints
             "type": "string"
         },
         {
+            "name": "mobileNumber",
+            "baseName": "mobileNumber",
+            "type": "string"
+        },
+        {
             "name": "firstName",
             "baseName": "firstName",
             "type": "string"
@@ -61,11 +66,6 @@ export class PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPoints
         {
             "name": "membershipTierID",
             "baseName": "membershipTierID",
-            "type": "string"
-        },
-        {
-            "name": "mobileNumber",
-            "baseName": "mobileNumber",
             "type": "string"
         },
         {

@@ -4,10 +4,10 @@ export declare class Member {
     'createdAt': Date;
     'updatedAt': Date;
     'isActive': boolean;
+    'mobileNumber': string;
     'firstName'?: string;
     'lastName'?: string;
     'membershipTierID': string;
-    'mobileNumber': string;
     'email': string;
     'birthday': string;
     'pointsAccrued': number;

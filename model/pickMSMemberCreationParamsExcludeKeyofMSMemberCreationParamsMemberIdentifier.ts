@@ -16,6 +16,7 @@ import { RequestFile } from './models';
 * From T, pick a set of properties whose keys are in the union K
 */
 export class PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier {
+    'mobileNumber': string;
     /**
     * An optional first name of the member
     */
@@ -25,7 +26,6 @@ export class PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberI
     */
     'lastName'?: string;
     'membershipTierID': string;
-    'mobileNumber': string;
     'email': string;
     /**
     * Represents the date of birth of the member. Defaults to 0000-00-00, which represents that the date of birth has not been configured
@@ -40,6 +40,11 @@ export class PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberI
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
+            "name": "mobileNumber",
+            "baseName": "mobileNumber",
+            "type": "string"
+        },
+        {
             "name": "firstName",
             "baseName": "firstName",
             "type": "string"
@@ -52,11 +57,6 @@ export class PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberI
         {
             "name": "membershipTierID",
             "baseName": "membershipTierID",
-            "type": "string"
-        },
-        {
-            "name": "mobileNumber",
-            "baseName": "mobileNumber",
             "type": "string"
         },
         {

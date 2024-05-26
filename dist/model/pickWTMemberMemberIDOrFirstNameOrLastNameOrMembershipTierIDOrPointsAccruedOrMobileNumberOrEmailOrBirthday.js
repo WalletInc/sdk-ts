@@ -15,6 +15,11 @@ PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobi
         "type": "string"
     },
     {
+        "name": "mobileNumber",
+        "baseName": "mobileNumber",
+        "type": "string"
+    },
+    {
         "name": "firstName",
         "baseName": "firstName",
         "type": "string"
@@ -27,11 +32,6 @@ PickWTMemberMemberIDOrFirstNameOrLastNameOrMembershipTierIDOrPointsAccruedOrMobi
     {
         "name": "membershipTierID",
         "baseName": "membershipTierID",
-        "type": "string"
-    },
-    {
-        "name": "mobileNumber",
-        "baseName": "mobileNumber",
         "type": "string"
     },
     {

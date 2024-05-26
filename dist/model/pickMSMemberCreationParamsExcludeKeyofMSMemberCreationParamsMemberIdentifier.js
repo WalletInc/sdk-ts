@@ -10,6 +10,11 @@ exports.PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdenti
 PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.discriminator = undefined;
 PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.attributeTypeMap = [
     {
+        "name": "mobileNumber",
+        "baseName": "mobileNumber",
+        "type": "string"
+    },
+    {
         "name": "firstName",
         "baseName": "firstName",
         "type": "string"
@@ -22,11 +27,6 @@ PickMSMemberCreationParamsExcludeKeyofMSMemberCreationParamsMemberIdentifier.att
     {
         "name": "membershipTierID",
         "baseName": "membershipTierID",
-        "type": "string"
-    },
-    {
-        "name": "mobileNumber",
-        "baseName": "mobileNumber",
         "type": "string"
     },
     {
