@@ -31,6 +31,7 @@ export class WTAuthenticationRegister {
     'ein'?: string;
     'gaClientId'?: string;
     'gaMeasurementId'?: string;
+    'recaptchaToken'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -123,6 +124,11 @@ export class WTAuthenticationRegister {
         {
             "name": "gaMeasurementId",
             "baseName": "ga_measurement_id",
+            "type": "string"
+        },
+        {
+            "name": "recaptchaToken",
+            "baseName": "recaptcha_token",
             "type": "string"
         }    ];
 
