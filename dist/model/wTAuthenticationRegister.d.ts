@@ -17,6 +17,7 @@ export declare class WTAuthenticationRegister {
     'ein'?: string;
     'gaClientId'?: string;
     'gaMeasurementId'?: string;
+    'recaptchaToken'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

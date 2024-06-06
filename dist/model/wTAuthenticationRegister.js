@@ -98,6 +98,11 @@ WTAuthenticationRegister.attributeTypeMap = [
         "name": "gaMeasurementId",
         "baseName": "ga_measurement_id",
         "type": "string"
+    },
+    {
+        "name": "recaptchaToken",
+        "baseName": "recaptcha_token",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTAuthenticationRegister.js.map
