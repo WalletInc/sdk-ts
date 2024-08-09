@@ -103,6 +103,11 @@ WTAuthenticationRegister.attributeTypeMap = [
         "name": "recaptchaToken",
         "baseName": "recaptcha_token",
         "type": "string"
+    },
+    {
+        "name": "affiliateID",
+        "baseName": "affiliateID",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTAuthenticationRegister.js.map
