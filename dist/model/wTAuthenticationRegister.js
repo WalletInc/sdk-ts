@@ -108,6 +108,16 @@ WTAuthenticationRegister.attributeTypeMap = [
         "name": "affiliateID",
         "baseName": "affiliateID",
         "type": "string"
+    },
+    {
+        "name": "firstPromoterTrackingID",
+        "baseName": "firstPromoterTrackingID",
+        "type": "string"
+    },
+    {
+        "name": "firstPromoterAffiliateID",
+        "baseName": "firstPromoterAffiliateID",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTAuthenticationRegister.js.map

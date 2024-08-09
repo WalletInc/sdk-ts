@@ -33,6 +33,8 @@ export class WTAuthenticationRegister {
     'gaMeasurementId'?: string;
     'recaptchaToken'?: string;
     'affiliateID'?: string;
+    'firstPromoterTrackingID'?: string;
+    'firstPromoterAffiliateID'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -135,6 +137,16 @@ export class WTAuthenticationRegister {
         {
             "name": "affiliateID",
             "baseName": "affiliateID",
+            "type": "string"
+        },
+        {
+            "name": "firstPromoterTrackingID",
+            "baseName": "firstPromoterTrackingID",
+            "type": "string"
+        },
+        {
+            "name": "firstPromoterAffiliateID",
+            "baseName": "firstPromoterAffiliateID",
             "type": "string"
         }    ];
 
