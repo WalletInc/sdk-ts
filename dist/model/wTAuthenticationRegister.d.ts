@@ -18,6 +18,7 @@ export declare class WTAuthenticationRegister {
     'gaClientId'?: string;
     'gaMeasurementId'?: string;
     'recaptchaToken'?: string;
+    'affiliateID'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
