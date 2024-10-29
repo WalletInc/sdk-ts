@@ -20,6 +20,7 @@ export class SubscriptionProduct {
     'titleFull': string;
     'category': string;
     'volume'?: number;
+    'value'?: number;
     'features': Array<SubscriptionFeature>;
     'pages': Array<PortalPage>;
     'iconName': string;
@@ -53,6 +54,11 @@ export class SubscriptionProduct {
         {
             "name": "volume",
             "baseName": "volume",
+            "type": "number"
+        },
+        {
+            "name": "value",
+            "baseName": "value",
             "type": "number"
         },
         {
