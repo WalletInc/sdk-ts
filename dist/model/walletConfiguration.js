@@ -300,6 +300,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "number"
     },
     {
+        "name": "ageGateDeclineURL",
+        "baseName": "ageGateDeclineURL",
+        "type": "string"
+    },
+    {
         "name": "socialInstagramURL",
         "baseName": "socialInstagramURL",
         "type": "string"
@@ -347,6 +352,31 @@ WalletConfiguration.attributeTypeMap = [
     {
         "name": "primaryEmailAddress",
         "baseName": "primaryEmailAddress",
+        "type": "string"
+    },
+    {
+        "name": "customJS",
+        "baseName": "customJS",
+        "type": "string"
+    },
+    {
+        "name": "customCSS",
+        "baseName": "customCSS",
+        "type": "string"
+    },
+    {
+        "name": "nonMobileRedirectURL",
+        "baseName": "nonMobileRedirectURL",
+        "type": "string"
+    },
+    {
+        "name": "appleAppStoreURL",
+        "baseName": "appleAppStoreURL",
+        "type": "string"
+    },
+    {
+        "name": "googlePlayStoreURL",
+        "baseName": "googlePlayStoreURL",
         "type": "string"
     },
     {

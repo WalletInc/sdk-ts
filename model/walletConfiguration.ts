@@ -72,6 +72,7 @@ export class WalletConfiguration {
     'mobileAppIconURL'?: string;
     'isAgeGate'?: boolean;
     'ageGateMinimum'?: number;
+    'ageGateDeclineURL'?: string;
     'socialInstagramURL'?: string;
     'socialFacebookURL'?: string;
     'socialYouTubeURL'?: string;
@@ -82,6 +83,11 @@ export class WalletConfiguration {
     'primaryPhoneNumber'?: string;
     'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
+    'customJS'?: string;
+    'customCSS'?: string;
+    'nonMobileRedirectURL'?: string;
+    'appleAppStoreURL'?: string;
+    'googlePlayStoreURL'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;
@@ -381,6 +387,11 @@ export class WalletConfiguration {
             "type": "number"
         },
         {
+            "name": "ageGateDeclineURL",
+            "baseName": "ageGateDeclineURL",
+            "type": "string"
+        },
+        {
             "name": "socialInstagramURL",
             "baseName": "socialInstagramURL",
             "type": "string"
@@ -428,6 +439,31 @@ export class WalletConfiguration {
         {
             "name": "primaryEmailAddress",
             "baseName": "primaryEmailAddress",
+            "type": "string"
+        },
+        {
+            "name": "customJS",
+            "baseName": "customJS",
+            "type": "string"
+        },
+        {
+            "name": "customCSS",
+            "baseName": "customCSS",
+            "type": "string"
+        },
+        {
+            "name": "nonMobileRedirectURL",
+            "baseName": "nonMobileRedirectURL",
+            "type": "string"
+        },
+        {
+            "name": "appleAppStoreURL",
+            "baseName": "appleAppStoreURL",
+            "type": "string"
+        },
+        {
+            "name": "googlePlayStoreURL",
+            "baseName": "googlePlayStoreURL",
             "type": "string"
         },
         {
