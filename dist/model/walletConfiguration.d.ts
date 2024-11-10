@@ -58,6 +58,7 @@ export declare class WalletConfiguration {
     'mobileAppIconURL'?: string;
     'isAgeGate'?: boolean;
     'ageGateMinimum'?: number;
+    'ageGateDeclineURL'?: string;
     'socialInstagramURL'?: string;
     'socialFacebookURL'?: string;
     'socialYouTubeURL'?: string;
@@ -68,6 +69,11 @@ export declare class WalletConfiguration {
     'primaryPhoneNumber'?: string;
     'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
+    'customJS'?: string;
+    'customCSS'?: string;
+    'nonMobileRedirectURL'?: string;
+    'appleAppStoreURL'?: string;
+    'googlePlayStoreURL'?: string;
     'id': string;
     'createdAt': Date;
     'updatedAt': Date;

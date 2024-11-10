@@ -72,6 +72,7 @@ export class WTWalletConfigurationSaveWalletRecord {
     'mobileAppIconURL'?: string;
     'isAgeGate'?: boolean;
     'ageGateMinimum'?: number;
+    'ageGateDeclineURL'?: string;
     'socialInstagramURL'?: string;
     'socialFacebookURL'?: string;
     'socialYouTubeURL'?: string;
@@ -82,6 +83,11 @@ export class WTWalletConfigurationSaveWalletRecord {
     'primaryPhoneNumber'?: string;
     'primaryWhatsApp'?: string;
     'primaryEmailAddress'?: string;
+    'customJS'?: string;
+    'customCSS'?: string;
+    'nonMobileRedirectURL'?: string;
+    'appleAppStoreURL'?: string;
+    'googlePlayStoreURL'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -377,6 +383,11 @@ export class WTWalletConfigurationSaveWalletRecord {
             "type": "number"
         },
         {
+            "name": "ageGateDeclineURL",
+            "baseName": "ageGateDeclineURL",
+            "type": "string"
+        },
+        {
             "name": "socialInstagramURL",
             "baseName": "socialInstagramURL",
             "type": "string"
@@ -424,6 +435,31 @@ export class WTWalletConfigurationSaveWalletRecord {
         {
             "name": "primaryEmailAddress",
             "baseName": "primaryEmailAddress",
+            "type": "string"
+        },
+        {
+            "name": "customJS",
+            "baseName": "customJS",
+            "type": "string"
+        },
+        {
+            "name": "customCSS",
+            "baseName": "customCSS",
+            "type": "string"
+        },
+        {
+            "name": "nonMobileRedirectURL",
+            "baseName": "nonMobileRedirectURL",
+            "type": "string"
+        },
+        {
+            "name": "appleAppStoreURL",
+            "baseName": "appleAppStoreURL",
+            "type": "string"
+        },
+        {
+            "name": "googlePlayStoreURL",
+            "baseName": "googlePlayStoreURL",
             "type": "string"
         }    ];
 
