@@ -94,7 +94,7 @@ export declare class SMSApi {
         response: http.IncomingMessage;
         body: WTCountResult;
     }>;
-    countOutboundSMS(phoneNumberID: string, toPhoneNumber?: string, status?: string, paymentObjectBroadcastID?: string, options?: {
+    countOutboundSMS(phoneNumberID: string, toPhoneNumber?: string, status?: string, paymentObjectBroadcastID?: string, startDate?: Date, endDate?: Date, options?: {
         headers: {
             [name: string]: string;
         };
@@ -230,7 +230,7 @@ export declare class SMSApi {
         response: http.IncomingMessage;
         body: Array<OutboundSMS>;
     }>;
-    fetchOutboundSMSByPage(phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, status?: SSOutboundStatuses, options?: {
+    fetchOutboundSMSByPage(phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, status?: SSOutboundStatuses, startDate?: Date, endDate?: Date, options?: {
         headers: {
             [name: string]: string;
         };
