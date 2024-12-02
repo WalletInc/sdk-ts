@@ -600,8 +600,10 @@ export class SMSApi {
      * @param toPhoneNumber 
      * @param status 
      * @param paymentObjectBroadcastID 
+     * @param startDate 
+     * @param endDate 
      */
-    public async countOutboundSMS (phoneNumberID: string, toPhoneNumber?: string, status?: string, paymentObjectBroadcastID?: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTCountResult;  }> {
+    public async countOutboundSMS (phoneNumberID: string, toPhoneNumber?: string, status?: string, paymentObjectBroadcastID?: string, startDate?: Date, endDate?: Date, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTCountResult;  }> {
         const localVarPath = this.basePath + '/v2/sms/outbound/count/{phoneNumberID}'
             .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
         let localVarQueryParameters: any = {};
@@ -630,6 +632,14 @@ export class SMSApi {
 
         if (paymentObjectBroadcastID !== undefined) {
             localVarQueryParameters['paymentObjectBroadcastID'] = ObjectSerializer.serialize(paymentObjectBroadcastID, "string");
+        }
+
+        if (startDate !== undefined) {
+            localVarQueryParameters['startDate'] = ObjectSerializer.serialize(startDate, "Date");
+        }
+
+        if (endDate !== undefined) {
+            localVarQueryParameters['endDate'] = ObjectSerializer.serialize(endDate, "Date");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1873,8 +1883,10 @@ export class SMSApi {
      * @param pageSize 
      * @param pageNum 
      * @param status 
+     * @param startDate 
+     * @param endDate 
      */
-    public async fetchOutboundSMSByPage (phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, status?: SSOutboundStatuses, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: FetchOutboundSMSByPage200Response;  }> {
+    public async fetchOutboundSMSByPage (phoneNumberID: string, toPhoneNumber?: string, paymentObjectBroadcastID?: string, pageSize?: number, pageNum?: number, status?: SSOutboundStatuses, startDate?: Date, endDate?: Date, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: FetchOutboundSMSByPage200Response;  }> {
         const localVarPath = this.basePath + '/v2/sms/outbound/page/{phoneNumberID}'
             .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
         let localVarQueryParameters: any = {};
@@ -1911,6 +1923,14 @@ export class SMSApi {
 
         if (status !== undefined) {
             localVarQueryParameters['status'] = ObjectSerializer.serialize(status, "SSOutboundStatuses");
+        }
+
+        if (startDate !== undefined) {
+            localVarQueryParameters['startDate'] = ObjectSerializer.serialize(startDate, "Date");
+        }
+
+        if (endDate !== undefined) {
+            localVarQueryParameters['endDate'] = ObjectSerializer.serialize(endDate, "Date");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);

@@ -55,7 +55,7 @@ export declare class MerchantApi {
         response: http.IncomingMessage;
         body: any;
     }>;
-    countInboundSMS(phoneNumberID: any, fromPhoneNumber?: string, body?: string, options?: {
+    countInboundSMS(phoneNumberID: any, fromPhoneNumber?: string, body?: string, startDate?: Date, endDate?: Date, options?: {
         headers: {
             [name: string]: string;
         };
@@ -143,7 +143,7 @@ export declare class MerchantApi {
         response: http.IncomingMessage;
         body: Array<InboundSMS>;
     }>;
-    fetchInboundSMSByPage(phoneNumberID: any, fromPhoneNumber?: string, pageSize?: number, pageNum?: number, options?: {
+    fetchInboundSMSByPage(phoneNumberID: any, fromPhoneNumber?: string, pageSize?: number, pageNum?: number, startDate?: Date, endDate?: Date, options?: {
         headers: {
             [name: string]: string;
         };

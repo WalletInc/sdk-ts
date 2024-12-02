@@ -244,8 +244,10 @@ export class MerchantApi {
      * @param phoneNumberID 
      * @param fromPhoneNumber 
      * @param body 
+     * @param startDate 
+     * @param endDate 
      */
-    public async countInboundSMS (phoneNumberID: any, fromPhoneNumber?: string, body?: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTCountResult;  }> {
+    public async countInboundSMS (phoneNumberID: any, fromPhoneNumber?: string, body?: string, startDate?: Date, endDate?: Date, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTCountResult;  }> {
         const localVarPath = this.basePath + '/v2/merchant/sms/inbound/count/{phoneNumberID}'
             .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
         let localVarQueryParameters: any = {};
@@ -270,6 +272,14 @@ export class MerchantApi {
 
         if (body !== undefined) {
             localVarQueryParameters['body'] = ObjectSerializer.serialize(body, "string");
+        }
+
+        if (startDate !== undefined) {
+            localVarQueryParameters['startDate'] = ObjectSerializer.serialize(startDate, "Date");
+        }
+
+        if (endDate !== undefined) {
+            localVarQueryParameters['endDate'] = ObjectSerializer.serialize(endDate, "Date");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1029,8 +1039,10 @@ export class MerchantApi {
      * @param fromPhoneNumber 
      * @param pageSize 
      * @param pageNum 
+     * @param startDate 
+     * @param endDate 
      */
-    public async fetchInboundSMSByPage (phoneNumberID: any, fromPhoneNumber?: string, pageSize?: number, pageNum?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: FetchInboundSMSByPage200Response;  }> {
+    public async fetchInboundSMSByPage (phoneNumberID: any, fromPhoneNumber?: string, pageSize?: number, pageNum?: number, startDate?: Date, endDate?: Date, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: FetchInboundSMSByPage200Response;  }> {
         const localVarPath = this.basePath + '/v2/merchant/sms/inbound/page/{phoneNumberID}'
             .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
         let localVarQueryParameters: any = {};
@@ -1059,6 +1071,14 @@ export class MerchantApi {
 
         if (pageNum !== undefined) {
             localVarQueryParameters['pageNum'] = ObjectSerializer.serialize(pageNum, "number");
+        }
+
+        if (startDate !== undefined) {
+            localVarQueryParameters['startDate'] = ObjectSerializer.serialize(startDate, "Date");
+        }
+
+        if (endDate !== undefined) {
+            localVarQueryParameters['endDate'] = ObjectSerializer.serialize(endDate, "Date");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);

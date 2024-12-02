@@ -185,7 +185,7 @@ class MerchantApi {
             });
         });
     }
-    countInboundSMS(phoneNumberID, fromPhoneNumber, body, options = { headers: {} }) {
+    countInboundSMS(phoneNumberID, fromPhoneNumber, body, startDate, endDate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/merchant/sms/inbound/count/{phoneNumberID}'
                 .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
@@ -207,6 +207,12 @@ class MerchantApi {
             }
             if (body !== undefined) {
                 localVarQueryParameters['body'] = models_1.ObjectSerializer.serialize(body, "string");
+            }
+            if (startDate !== undefined) {
+                localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
+            }
+            if (endDate !== undefined) {
+                localVarQueryParameters['endDate'] = models_1.ObjectSerializer.serialize(endDate, "Date");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -872,7 +878,7 @@ class MerchantApi {
             });
         });
     }
-    fetchInboundSMSByPage(phoneNumberID, fromPhoneNumber, pageSize, pageNum, options = { headers: {} }) {
+    fetchInboundSMSByPage(phoneNumberID, fromPhoneNumber, pageSize, pageNum, startDate, endDate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/merchant/sms/inbound/page/{phoneNumberID}'
                 .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
@@ -897,6 +903,12 @@ class MerchantApi {
             }
             if (pageNum !== undefined) {
                 localVarQueryParameters['pageNum'] = models_1.ObjectSerializer.serialize(pageNum, "number");
+            }
+            if (startDate !== undefined) {
+                localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
+            }
+            if (endDate !== undefined) {
+                localVarQueryParameters['endDate'] = models_1.ObjectSerializer.serialize(endDate, "Date");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
