@@ -1,6 +1,7 @@
-export const domain = "https://dev.api.wall.et";
+export const domain = "https://api.wall.et";
 export const headers = {
     headers: {
-        "access-token": "aFP7dobknWhKUbFxjKDerVgPFQc2T9"
+        // Create your API key in the Wallet Developer Hub (https://wallet.dev) and paste it here.
+        "access-token": "YOUR_API_KEY"
     }
 };
