@@ -1,0 +1,46 @@
+import { DynamicVoucherTemporalDecreaseFrequencyType } from './dynamicVoucherTemporalDecreaseFrequencyType';
+import { StaticVoucherId } from './staticVoucherId';
+import { WTDynamicVoucherSummary } from './wTDynamicVoucherSummary';
+import { WTDynamicVoucherSummaryStatus } from './wTDynamicVoucherSummaryStatus';
+export declare class DynamicVoucher extends null<String, any> {
+    'startDate': any | null;
+    'expirationDate': any | null;
+    'id': StaticVoucherId;
+    'title': any | null;
+    'notes': any | null;
+    'merchantsReferenceID'?: any | null;
+    'validOnlyAtPOSRegisterIDs'?: any | null;
+    'paymentDesignID': string;
+    'employeeID': string;
+    'merchantID': string;
+    'createdAt': any | null;
+    'updatedAt': any | null;
+    'isActive': any | null;
+    'startingValue': any | null;
+    'maxBudget': any | null;
+    'temporalDecreaseAmount': any | null;
+    'temporalDecreaseFrequency': any | null;
+    'numericalDecreaseAmount'?: any | null;
+    'numericalDecreaseFrequency'?: any | null;
+    'temporalDecreaseAmountDecimal': any | null;
+    'temporalDecreaseAmountString': any | null;
+    'numericalDecreaseAmountDecimal': any | null;
+    'numericalDecreaseAmountString': any | null;
+    'startingValueDecimal': any | null;
+    'startingValueString': any | null;
+    'maxBudgetDecimal': any | null;
+    'maxBudgetString': any | null;
+    'currentValue': any | null;
+    'currentValueDecimal': any | null;
+    'currentValueString': any | null;
+    'status': WTDynamicVoucherSummaryStatus;
+    'temporalDecreaseFrequencyType': DynamicVoucherTemporalDecreaseFrequencyType;
+    'summary': WTDynamicVoucherSummary;
+    static discriminator: string | undefined;
+    static attributeTypeMap: Array<{
+        name: string;
+        baseName: string;
+        type: string;
+    }>;
+    static getAttributeTypeMap(): any;
+}

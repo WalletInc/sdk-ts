@@ -1,0 +1,46 @@
+import { StaticVoucherId } from './staticVoucherId';
+export declare class InboundSMS extends null<String, any> {
+    'id': StaticVoucherId;
+    'automatedReply': any | null;
+    'automatedReplyAdditionalInfo': any | null;
+    'smsSid': any | null;
+    'smsMessageSid': any | null;
+    'smsStatus': any | null;
+    'messagingServiceSid'?: any | null;
+    'accountSid': any | null;
+    'messageSid': any | null;
+    'body': any | null;
+    'numSegments': any | null;
+    'to': any | null;
+    'toCity': any | null;
+    'toState': any | null;
+    'toZip': any | null;
+    'toCountry': any | null;
+    'from': any | null;
+    'fromCity': any | null;
+    'fromState': any | null;
+    'fromZip': any | null;
+    'fromCountry': any | null;
+    'mediaURLs'?: any | null;
+    'watsonIntent'?: any | null;
+    'watsonIntents'?: any | null;
+    'watsonContext'?: any | null;
+    'watsonContexts'?: any | null;
+    'numMedia': any | null;
+    'apiVersion': any | null;
+    'isOptIn'?: any | null;
+    'isHelpDeskRequest'?: any | null;
+    'merchantID': string;
+    'createdAt': any | null;
+    'updatedAt': any | null;
+    'isActive': any | null;
+    'bodyLowercase': any | null;
+    'fromLocalized': any | null;
+    static discriminator: string | undefined;
+    static attributeTypeMap: Array<{
+        name: string;
+        baseName: string;
+        type: string;
+    }>;
+    static getAttributeTypeMap(): any;
+}

@@ -1,0 +1,45 @@
+import { PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAtRegisterID } from './pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAtRegisterID';
+import { PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAtTransactionType } from './pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAtTransactionType';
+import { StaticVoucherId } from './staticVoucherId';
+import { Status } from './status';
+export declare class WTStaticVoucher extends null<String, any> {
+    'id': StaticVoucherId;
+    'campaignID': string;
+    'memberID'?: string;
+    'cellPhoneNumber'?: string;
+    'offerAmountCents': number;
+    'orderNumber': number;
+    'transactionType': PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAtTransactionType;
+    'registerID': PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAtRegisterID;
+    'redeemedSource': string;
+    'redeemedTransactionID': string;
+    'redeemedAmount': number;
+    'isRedeemed': boolean;
+    'refundedTransactionID': string;
+    'refundedAmount': number;
+    'status': Status;
+    'customerID'?: string;
+    'authorizedAgainstCheckNumber': string;
+    'authorizedAmount': number;
+    'merchantID': string;
+    'createdAt': Date;
+    'updatedAt': Date;
+    'isActive': boolean;
+    'authorizedAmountDecimal': any | null;
+    'authorizedAmountString': any | null;
+    'offerAmountCentsDecimal': any | null;
+    'offerAmountCentsString': any | null;
+    'redeemedAmountDecimal': any | null;
+    'redeemedAmountString': any | null;
+    'dateTimeRedeemed'?: any | null;
+    'dateTimeRefunded'?: any | null;
+    'dateTimeLastViewed'?: any | null;
+    'reasonInvalid'?: any | null;
+    static discriminator: string | undefined;
+    static attributeTypeMap: Array<{
+        name: string;
+        baseName: string;
+        type: string;
+    }>;
+    static getAttributeTypeMap(): any;
+}
