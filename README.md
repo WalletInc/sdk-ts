@@ -51,22 +51,11 @@ Full API reference and guides live in the [Wallet Developer Hub](https://wallet.
 
 ## Examples
 
-- [Create and manipulate Membership Tiers](#create-and-manipulate-membership-tiers)
-- [Create and manipulate Payment Designs](#create-and-manipulate-payment-designs)
-- [Create and manipulate Club Members](#create-and-manipulate-club-members)
-- [Create and manipulate Advertisement Credits](#create-and-manipulate-advertisement-credits)
-- [Create and manipulate Link Book Links](#create-and-manipulate-link-book-links)
-- [Create and manipulate Merchant URLs](#create-and-manipulate-merchant-urls)
-- [Create and manipulate News Articles](#create-and-manipulate-news-articles)
-- [Create and manipulate Performances](#create-and-manipulate-performances)
-- [Create and manipulate Promo Codes](#create-and-manipulate-promo-codes)
-- [Create and manipulate Merchant Credits](#create-and-manipulate-merchant-credits)
-- [Create and manipulate Dynamic Vouchers](#create-and-manipulate-dynamic-vouchers)
-- [Create and manipulate Static Voucher Campaigns](#create-and-manipulate-static-voucher-campaigns)
-- [Create and manipulate Static Vouchers](#create-and-manipulate-static-vouchers)
-- [Create and manipulate SMSes](#create-and-manipulate-smses)
+Click any example to expand the full runnable snippet.
 
-### Create and manipulate Membership Tiers
+
+<details>
+<summary><b>Create and manipulate Membership Tiers</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -149,7 +138,10 @@ async function membershipTiers() {
 }
 ```
 
-### Create and manipulate Payment Designs
+</details>
+
+<details>
+<summary><b>Create and manipulate Payment Designs</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -222,7 +214,10 @@ async function paymentDesigns() {
 }
 ```
 
-### Create and manipulate Club Members
+</details>
+
+<details>
+<summary><b>Create and manipulate Club Members</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -314,7 +309,10 @@ async function clubMembers() {
 }
 ```
 
-### Create and manipulate Advertisement Credits
+</details>
+
+<details>
+<summary><b>Create and manipulate Advertisement Credits</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -390,7 +388,10 @@ async function advertisementCredits() {
 }
 ```
 
-### Create and manipulate Link Book Links
+</details>
+
+<details>
+<summary><b>Create and manipulate Link Book Links</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -453,7 +454,10 @@ async function linkBook() {
 }
 ```
 
-### Create and manipulate Merchant URLs
+</details>
+
+<details>
+<summary><b>Create and manipulate Merchant URLs</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -521,7 +525,10 @@ async function merchantURLs() {
 }
 ```
 
-### Create and manipulate News Articles
+</details>
+
+<details>
+<summary><b>Create and manipulate News Articles</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -585,7 +592,10 @@ async function news() {
 }
 ```
 
-### Create and manipulate Performances
+</details>
+
+<details>
+<summary><b>Create and manipulate Performances</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -653,7 +663,10 @@ async function performances() {
 }
 ```
 
-### Create and manipulate Promo Codes
+</details>
+
+<details>
+<summary><b>Create and manipulate Promo Codes</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -718,7 +731,10 @@ async function promocodes() {
 }
 ```
 
-### Create and manipulate Merchant Credits
+</details>
+
+<details>
+<summary><b>Create and manipulate Merchant Credits</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -808,7 +824,10 @@ async function merchantCredits() {
 }
 ```
 
-### Create and manipulate Dynamic Vouchers
+</details>
+
+<details>
+<summary><b>Create and manipulate Dynamic Vouchers</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -920,7 +939,10 @@ async function dynamicVouchers() {
 }
 ```
 
-### Create and manipulate Static Voucher Campaigns
+</details>
+
+<details>
+<summary><b>Create and manipulate Static Voucher Campaigns</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -1117,7 +1139,10 @@ async function staticVoucherCampaigns() {
 }
 ```
 
-### Create and manipulate Static Vouchers
+</details>
+
+<details>
+<summary><b>Create and manipulate Static Vouchers</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -1189,7 +1214,10 @@ async function staticVouchers() {
 }
 ```
 
-### Create and manipulate SMSes
+</details>
+
+<details>
+<summary><b>Create and manipulate SMSes</b></summary>
 
 ```typescript
 import * as api from "wallet";
@@ -1498,3 +1526,5 @@ async function smsExample() {
     console.log(`Max: ${limits.max}, Sent: ${limits.sent}`);
 }
 ```
+
+</details>

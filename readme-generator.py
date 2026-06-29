@@ -72,19 +72,12 @@ Full API reference and guides live in the [Wallet Developer Hub](https://wallet.
 
 ## Examples
 
+Click any example to expand the full runnable snippet.
+
 """
 
 
-def anchor(title):
-    # Matches GitHub/npm heading slugs: lowercase, spaces -> hyphens.
-    return title.lower().replace(" ", "-")
-
-
 readme = header
-
-# Table of contents
-for title in file_title_map.values():
-    readme += "- [{title}](#{slug})\n".format(title=title, slug=anchor(title))
 
 examples_dir = os.path.join(os.getcwd(), "examples")
 
@@ -100,7 +93,13 @@ for file in file_title_map:
         continue
 
     content = open(path).read().strip()
-    readme += "\n### " + title + "\n\n```typescript\n" + content + "\n```\n"
+    # Collapsible so all examples stay available without making the page enormous.
+    readme += (
+        "\n<details>\n"
+        "<summary><b>" + title + "</b></summary>\n\n"
+        "```typescript\n" + content + "\n```\n\n"
+        "</details>\n"
+    )
 
 with open("README.md", "w") as f:
     f.write(readme)
