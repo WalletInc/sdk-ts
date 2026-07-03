@@ -386,6 +386,8 @@ export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
 export * from './wTVideoCreateParams';
 export * from './wTVideoUpdateParams';
+export * from './wTVideoUploadPresign';
+export * from './wTVideoUploadPresignParams';
 export * from './wTVirtualBusinessCardCreateParams';
 export * from './wTVirtualBusinessCardUpdateParams';
 export * from './wTWalletConfigurationSaveWalletRecord';

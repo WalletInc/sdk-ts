@@ -3,6 +3,8 @@ import http from 'http';
 import { Video } from '../model/video';
 import { WTVideoCreateParams } from '../model/wTVideoCreateParams';
 import { WTVideoUpdateParams } from '../model/wTVideoUpdateParams';
+import { WTVideoUploadPresign } from '../model/wTVideoUploadPresign';
+import { WTVideoUploadPresignParams } from '../model/wTVideoUploadPresignParams';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum VideosApiApiKeys {
@@ -49,6 +51,14 @@ export declare class VideosApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
+    }>;
+    presignVideoUpload(wTVideoUploadPresignParams: WTVideoUploadPresignParams, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTVideoUploadPresign;
     }>;
     restoreVideo(id: string, options?: {
         headers: {

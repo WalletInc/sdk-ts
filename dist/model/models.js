@@ -400,6 +400,8 @@ __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
 __exportStar(require("./wTVideoCreateParams"), exports);
 __exportStar(require("./wTVideoUpdateParams"), exports);
+__exportStar(require("./wTVideoUploadPresign"), exports);
+__exportStar(require("./wTVideoUploadPresignParams"), exports);
 __exportStar(require("./wTVirtualBusinessCardCreateParams"), exports);
 __exportStar(require("./wTVirtualBusinessCardUpdateParams"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecord"), exports);
@@ -800,6 +802,8 @@ const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
 const wTVideoCreateParams_1 = require("./wTVideoCreateParams");
 const wTVideoUpdateParams_1 = require("./wTVideoUpdateParams");
+const wTVideoUploadPresign_1 = require("./wTVideoUploadPresign");
+const wTVideoUploadPresignParams_1 = require("./wTVideoUploadPresignParams");
 const wTVirtualBusinessCardCreateParams_1 = require("./wTVirtualBusinessCardCreateParams");
 const wTVirtualBusinessCardUpdateParams_1 = require("./wTVirtualBusinessCardUpdateParams");
 const wTWalletConfigurationSaveWalletRecord_1 = require("./wTWalletConfigurationSaveWalletRecord");
@@ -1218,6 +1222,8 @@ let typeMap = {
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
     "WTVideoCreateParams": wTVideoCreateParams_1.WTVideoCreateParams,
     "WTVideoUpdateParams": wTVideoUpdateParams_1.WTVideoUpdateParams,
+    "WTVideoUploadPresign": wTVideoUploadPresign_1.WTVideoUploadPresign,
+    "WTVideoUploadPresignParams": wTVideoUploadPresignParams_1.WTVideoUploadPresignParams,
     "WTVirtualBusinessCardCreateParams": wTVirtualBusinessCardCreateParams_1.WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": wTVirtualBusinessCardUpdateParams_1.WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": wTWalletConfigurationSaveWalletRecord_1.WTWalletConfigurationSaveWalletRecord,

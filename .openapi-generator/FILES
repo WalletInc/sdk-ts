@@ -442,6 +442,8 @@ model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
 model/wTVideoCreateParams.ts
 model/wTVideoUpdateParams.ts
+model/wTVideoUploadPresign.ts
+model/wTVideoUploadPresignParams.ts
 model/wTVirtualBusinessCardCreateParams.ts
 model/wTVirtualBusinessCardUpdateParams.ts
 model/wTWalletConfigurationSaveWalletRecord.ts

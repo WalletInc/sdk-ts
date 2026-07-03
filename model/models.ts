@@ -385,6 +385,8 @@ export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
 export * from './wTVideoCreateParams';
 export * from './wTVideoUpdateParams';
+export * from './wTVideoUploadPresign';
+export * from './wTVideoUploadPresignParams';
 export * from './wTVirtualBusinessCardCreateParams';
 export * from './wTVirtualBusinessCardUpdateParams';
 export * from './wTWalletConfigurationSaveWalletRecord';
@@ -799,6 +801,8 @@ import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
 import { WTVideoCreateParams } from './wTVideoCreateParams';
 import { WTVideoUpdateParams } from './wTVideoUpdateParams';
+import { WTVideoUploadPresign } from './wTVideoUploadPresign';
+import { WTVideoUploadPresignParams } from './wTVideoUploadPresignParams';
 import { WTVirtualBusinessCardCreateParams } from './wTVirtualBusinessCardCreateParams';
 import { WTVirtualBusinessCardUpdateParams } from './wTVirtualBusinessCardUpdateParams';
 import { WTWalletConfigurationSaveWalletRecord } from './wTWalletConfigurationSaveWalletRecord';
@@ -1221,6 +1225,8 @@ let typeMap: {[index: string]: any} = {
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,
     "WTVideoCreateParams": WTVideoCreateParams,
     "WTVideoUpdateParams": WTVideoUpdateParams,
+    "WTVideoUploadPresign": WTVideoUploadPresign,
+    "WTVideoUploadPresignParams": WTVideoUploadPresignParams,
     "WTVirtualBusinessCardCreateParams": WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": WTWalletConfigurationSaveWalletRecord,
