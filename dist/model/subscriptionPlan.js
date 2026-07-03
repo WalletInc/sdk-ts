@@ -43,6 +43,11 @@ SubscriptionPlan.attributeTypeMap = [
         "name": "allPages",
         "baseName": "allPages",
         "type": "any"
+    },
+    {
+        "name": "annual",
+        "baseName": "annual",
+        "type": "SubscriptionPlanAnnual"
     }
 ];
 //# sourceMappingURL=subscriptionPlan.js.map

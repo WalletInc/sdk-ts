@@ -228,6 +228,7 @@ export * from './staticVoucherId';
 export * from './status';
 export * from './subscriptionFeature';
 export * from './subscriptionPlan';
+export * from './subscriptionPlanAnnual';
 export * from './subscriptionProduct';
 export * from './tcpa';
 export * from './thread';
@@ -641,6 +642,7 @@ import { StaticVoucherId } from './staticVoucherId';
 import { Status } from './status';
 import { SubscriptionFeature } from './subscriptionFeature';
 import { SubscriptionPlan } from './subscriptionPlan';
+import { SubscriptionPlanAnnual } from './subscriptionPlanAnnual';
 import { SubscriptionProduct } from './subscriptionProduct';
 import { Tcpa } from './tcpa';
 import { Thread } from './thread';
@@ -1064,6 +1066,7 @@ let typeMap: {[index: string]: any} = {
     "Status": Status,
     "SubscriptionFeature": SubscriptionFeature,
     "SubscriptionPlan": SubscriptionPlan,
+    "SubscriptionPlanAnnual": SubscriptionPlanAnnual,
     "SubscriptionProduct": SubscriptionProduct,
     "Tcpa": Tcpa,
     "Thread": Thread,

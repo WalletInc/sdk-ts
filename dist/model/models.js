@@ -243,6 +243,7 @@ __exportStar(require("./staticVoucherId"), exports);
 __exportStar(require("./status"), exports);
 __exportStar(require("./subscriptionFeature"), exports);
 __exportStar(require("./subscriptionPlan"), exports);
+__exportStar(require("./subscriptionPlanAnnual"), exports);
 __exportStar(require("./subscriptionProduct"), exports);
 __exportStar(require("./tcpa"), exports);
 __exportStar(require("./thread"), exports);
@@ -642,6 +643,7 @@ const staticVoucherId_1 = require("./staticVoucherId");
 const status_1 = require("./status");
 const subscriptionFeature_1 = require("./subscriptionFeature");
 const subscriptionPlan_1 = require("./subscriptionPlan");
+const subscriptionPlanAnnual_1 = require("./subscriptionPlanAnnual");
 const subscriptionProduct_1 = require("./subscriptionProduct");
 const tcpa_1 = require("./tcpa");
 const thread_1 = require("./thread");
@@ -1061,6 +1063,7 @@ let typeMap = {
     "Status": status_1.Status,
     "SubscriptionFeature": subscriptionFeature_1.SubscriptionFeature,
     "SubscriptionPlan": subscriptionPlan_1.SubscriptionPlan,
+    "SubscriptionPlanAnnual": subscriptionPlanAnnual_1.SubscriptionPlanAnnual,
     "SubscriptionProduct": subscriptionProduct_1.SubscriptionProduct,
     "Tcpa": tcpa_1.Tcpa,
     "Thread": thread_1.Thread,

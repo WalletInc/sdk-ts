@@ -229,6 +229,7 @@ export * from './staticVoucherId';
 export * from './status';
 export * from './subscriptionFeature';
 export * from './subscriptionPlan';
+export * from './subscriptionPlanAnnual';
 export * from './subscriptionProduct';
 export * from './tcpa';
 export * from './thread';
