@@ -22,7 +22,7 @@ Performance.attributeTypeMap = [
     {
         "name": "startDateTime",
         "baseName": "startDateTime",
-        "type": "Date"
+        "type": "any"
     },
     {
         "name": "price",
@@ -47,7 +47,7 @@ Performance.attributeTypeMap = [
     {
         "name": "mediaURL",
         "baseName": "mediaURL",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "paymentDesignID",
@@ -57,17 +57,17 @@ Performance.attributeTypeMap = [
     {
         "name": "maxCompTickets",
         "baseName": "maxCompTickets",
-        "type": "number"
+        "type": "any"
     },
     {
         "name": "ticketExpirationDateTime",
         "baseName": "ticketExpirationDateTime",
-        "type": "Date"
+        "type": "any"
     },
     {
         "name": "redemptionInstructions",
         "baseName": "redemptionInstructions",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "id",
@@ -77,17 +77,17 @@ Performance.attributeTypeMap = [
     {
         "name": "createdAt",
         "baseName": "createdAt",
-        "type": "Date"
+        "type": "any"
     },
     {
         "name": "updatedAt",
         "baseName": "updatedAt",
-        "type": "Date"
+        "type": "any"
     },
     {
         "name": "isActive",
         "baseName": "isActive",
-        "type": "boolean"
+        "type": "any"
     },
     {
         "name": "merchantID",

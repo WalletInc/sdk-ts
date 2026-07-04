@@ -658,7 +658,7 @@ export class PerformancesApi {
     }
     /**
      * 
-     * @summary Get Peformance\'s Tickets
+     * @summary Get Performance\'s Tickets
      * @param performanceID 
      * @param pageNum 
      * @param pageSize 

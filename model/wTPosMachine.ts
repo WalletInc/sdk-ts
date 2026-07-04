@@ -16,9 +16,6 @@ export class WTPosMachine extends null<String, any> {
     'registerID': any | null;
     'registerName': any | null;
     'outletName': any | null;
-    /**
-    * Stores the outlet number
-    */
     'outletNumber': any | null;
     'profitCenter': any | null;
     'id': string;

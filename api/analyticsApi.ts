@@ -261,7 +261,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Get refund amount of campaigns by Campaign
+     * @summary Count distinct payment object redemptions
      * @param startDate 
      * @param endDate 
      * @param transactionType 
@@ -460,7 +460,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Count opt in list subscribers
+     * @summary Count inbound SMS messages
      * @param startDate 
      * @param endDate 
      */
@@ -686,7 +686,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Count opt in list subscribers
+     * @summary Count outbound SMS messages
      * @param startDate 
      * @param endDate 
      */
@@ -830,7 +830,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Get refund amount of campaigns by Campaign
+     * @summary Count ledger transactions
      * @param startDate 
      * @param endDate 
      * @param transactionType 
@@ -3273,7 +3273,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Get refund amount of campaigns by Campaign
+     * @summary Count refunds of campaigns by Campaign
      * @param startDate 
      * @param endDate 
      */
@@ -3355,7 +3355,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Get refund amount of campaigns by date
+     * @summary Count refunds of campaigns by date
      * @param startDate 
      * @param endDate 
      * @param locale 
@@ -6611,7 +6611,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Get redeemed amoun̥t of tiers
+     * @summary Get redeemed amount of tiers
      * @param startDate 
      * @param endDate 
      * @param locale 
@@ -7331,7 +7331,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Get refund amount of campaigns by Campaign
+     * @summary Sum ledger revenue
      * @param startDate 
      * @param endDate 
      * @param transactionType 
@@ -7423,7 +7423,7 @@ export class AnalyticsApi {
     }
     /**
      * 
-     * @summary Get refund amount of campaigns by Campaign
+     * @summary Sum ledger transaction amounts
      * @param startDate 
      * @param endDate 
      * @param transactionType 

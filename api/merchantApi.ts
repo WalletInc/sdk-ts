@@ -1873,7 +1873,7 @@ export class MerchantApi {
     }
     /**
      * 
-     * @summary Update billing contact
+     * @summary Update points of contact
      * @param wTMerchantUpdatePointsOfContact 
      */
     public async updatePointsOfContact (wTMerchantUpdatePointsOfContact: WTMerchantUpdatePointsOfContact, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
