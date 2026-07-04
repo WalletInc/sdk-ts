@@ -12,17 +12,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DashboardSummariesApi = exports.DashboardSummariesApiApiKeys = void 0;
+exports.OptInListsApi = exports.OptInListsApiApiKeys = void 0;
 const request_1 = __importDefault(require("request"));
 const models_1 = require("../model/models");
 const models_2 = require("../model/models");
 const apis_1 = require("./apis");
 let defaultBasePath = 'https://api.wall.et';
-var DashboardSummariesApiApiKeys;
-(function (DashboardSummariesApiApiKeys) {
-    DashboardSummariesApiApiKeys[DashboardSummariesApiApiKeys["api_key"] = 0] = "api_key";
-})(DashboardSummariesApiApiKeys = exports.DashboardSummariesApiApiKeys || (exports.DashboardSummariesApiApiKeys = {}));
-class DashboardSummariesApi {
+var OptInListsApiApiKeys;
+(function (OptInListsApiApiKeys) {
+    OptInListsApiApiKeys[OptInListsApiApiKeys["api_key"] = 0] = "api_key";
+})(OptInListsApiApiKeys = exports.OptInListsApiApiKeys || (exports.OptInListsApiApiKeys = {}));
+class OptInListsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;
         this._defaultHeaders = {};
@@ -62,14 +62,15 @@ class DashboardSummariesApi {
         this.authentications.default = auth;
     }
     setApiKey(key, value) {
-        this.authentications[DashboardSummariesApiApiKeys[key]].apiKey = value;
+        this.authentications[OptInListsApiApiKeys[key]].apiKey = value;
     }
     addInterceptor(interceptor) {
         this.interceptors.push(interceptor);
     }
-    countTotalWalletSessions(startDate, endDate, options = { headers: {} }) {
+    countOptInListSubscribers(listID, isSubscribed, isPendingAge21Verification, isArchiveIncluded, startDate, endDate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/visitors';
+            const localVarPath = this.basePath + '/v2/sms/optInList/subscribers/count/{listID}'
+                .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -80,6 +81,18 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (listID === null || listID === undefined) {
+                throw new Error('Required parameter listID was null or undefined when calling countOptInListSubscribers.');
+            }
+            if (isSubscribed !== undefined) {
+                localVarQueryParameters['isSubscribed'] = models_1.ObjectSerializer.serialize(isSubscribed, "boolean");
+            }
+            if (isPendingAge21Verification !== undefined) {
+                localVarQueryParameters['isPendingAge21Verification'] = models_1.ObjectSerializer.serialize(isPendingAge21Verification, "boolean");
+            }
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
+            }
             if (startDate !== undefined) {
                 localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
             }
@@ -130,9 +143,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardActiveStaticVouchersCount(startDateTime, endDateTime, options = { headers: {} }) {
+    countOptInSourceSubscribers(sourceID, isSubscribed, isPendingAge21Verification, isArchiveIncluded, startDate, endDate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/staticVouchers/active';
+            const localVarPath = this.basePath + '/v2/sms/optInSource/subscribers/count/{sourceID}'
+                .replace('{' + 'sourceID' + '}', encodeURIComponent(String(sourceID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -143,17 +157,23 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardActiveStaticVouchersCount.');
+            if (sourceID === null || sourceID === undefined) {
+                throw new Error('Required parameter sourceID was null or undefined when calling countOptInSourceSubscribers.');
             }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardActiveStaticVouchersCount.');
+            if (isSubscribed !== undefined) {
+                localVarQueryParameters['isSubscribed'] = models_1.ObjectSerializer.serialize(isSubscribed, "boolean");
             }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
+            if (isPendingAge21Verification !== undefined) {
+                localVarQueryParameters['isPendingAge21Verification'] = models_1.ObjectSerializer.serialize(isPendingAge21Verification, "boolean");
             }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
+            }
+            if (startDate !== undefined) {
+                localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
+            }
+            if (endDate !== undefined) {
+                localVarQueryParameters['endDate'] = models_1.ObjectSerializer.serialize(endDate, "Date");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -199,9 +219,9 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardAppleWalletSubscribersCount(startDateTime, endDateTime, options = { headers: {} }) {
+    createOptInList(wTOptInListCreationParams, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/appleWallet/subscribers';
+            const localVarPath = this.basePath + '/v2/sms/optInList';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -212,27 +232,19 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardAppleWalletSubscribersCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardAppleWalletSubscribersCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (wTOptInListCreationParams === null || wTOptInListCreationParams === undefined) {
+                throw new Error('Required parameter wTOptInListCreationParams was null or undefined when calling createOptInList.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'GET',
+                method: 'POST',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
+                body: models_1.ObjectSerializer.serialize(wTOptInListCreationParams, "WTOptInListCreationParams")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -256,7 +268,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "OptInList");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -268,9 +280,9 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardEmployeesCount(startDateTime, endDateTime, options = { headers: {} }) {
+    createOptInListSource(wTSMSOptInListSourceCreate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/employees';
+            const localVarPath = this.basePath + '/v2/sms/optInListSource';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -281,27 +293,19 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardEmployeesCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardEmployeesCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (wTSMSOptInListSourceCreate === null || wTSMSOptInListSourceCreate === undefined) {
+                throw new Error('Required parameter wTSMSOptInListSourceCreate was null or undefined when calling createOptInListSource.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'GET',
+                method: 'POST',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
+                body: models_1.ObjectSerializer.serialize(wTSMSOptInListSourceCreate, "WTSMSOptInListSourceCreate")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -325,7 +329,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "OptInListSource");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -337,9 +341,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardMembersCount(startDateTime, endDateTime, options = { headers: {} }) {
+    exportOptInListSubscribers(listID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/members';
+            const localVarPath = this.basePath + '/v2/sms/optInList/subscribers/export/{listID}'
+                .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -350,22 +355,13 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardMembersCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardMembersCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (listID === null || listID === undefined) {
+                throw new Error('Required parameter listID was null or undefined when calling exportOptInListSubscribers.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'GET',
+                method: 'POST',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
@@ -394,7 +390,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "string");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -406,9 +402,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardMembershipTiersCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInList(listID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/membershipTiers';
+            const localVarPath = this.basePath + '/v2/merchant/lists/optIn/{listID}'
+                .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -419,17 +416,8 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardMembershipTiersCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardMembershipTiersCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (listID === null || listID === undefined) {
+                throw new Error('Required parameter listID was null or undefined when calling fetchOptInList.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -463,7 +451,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "OptInList");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -475,9 +463,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardNewsArticlesCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInListSource(sourceID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/newsArticles';
+            const localVarPath = this.basePath + '/v2/employee/optInListSource/{sourceID}'
+                .replace('{' + 'sourceID' + '}', encodeURIComponent(String(sourceID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -488,17 +477,8 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardNewsArticlesCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardNewsArticlesCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (sourceID === null || sourceID === undefined) {
+                throw new Error('Required parameter sourceID was null or undefined when calling fetchOptInListSource.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -532,7 +512,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "OptInListSource");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -544,9 +524,9 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardOptInListsCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInListSources(isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/optInLists';
+            const localVarPath = this.basePath + '/v2/sms/optInListSources/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -557,17 +537,8 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardOptInListsCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardOptInListsCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -601,7 +572,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "any");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -613,9 +584,9 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardOptInSourcesCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInListSourcesCreatedByEmployee(options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/optInSources';
+            const localVarPath = this.basePath + '/v2/employee/optInListSources/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -626,18 +597,6 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardOptInSourcesCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardOptInSourcesCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
-            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -670,7 +629,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<OptInListSource>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -682,9 +641,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardOutboundSMSCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInListSubscribers(listID, isSubscribed, isPendingAge21Verification, isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/sms/outbound';
+            const localVarPath = this.basePath + '/v2/sms/optInList/subscribers/{listID}'
+                .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -695,17 +655,17 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardOutboundSMSCount.');
+            if (listID === null || listID === undefined) {
+                throw new Error('Required parameter listID was null or undefined when calling fetchOptInListSubscribers.');
             }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardOutboundSMSCount.');
+            if (isSubscribed !== undefined) {
+                localVarQueryParameters['isSubscribed'] = models_1.ObjectSerializer.serialize(isSubscribed, "boolean");
             }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
+            if (isPendingAge21Verification !== undefined) {
+                localVarQueryParameters['isPendingAge21Verification'] = models_1.ObjectSerializer.serialize(isPendingAge21Verification, "boolean");
             }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -739,7 +699,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<OptInListSubscriber>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -751,9 +711,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardPOSMachinesCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInListSubscribersByPage(listID, pageSize, pageNum, isSubscribed, isPendingAge21Verification, isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/pos/machines';
+            const localVarPath = this.basePath + '/v2/sms/optInList/subscribers/page/{listID}'
+                .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -764,17 +725,23 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardPOSMachinesCount.');
+            if (listID === null || listID === undefined) {
+                throw new Error('Required parameter listID was null or undefined when calling fetchOptInListSubscribersByPage.');
             }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardPOSMachinesCount.');
+            if (pageSize !== undefined) {
+                localVarQueryParameters['pageSize'] = models_1.ObjectSerializer.serialize(pageSize, "number");
             }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
+            if (pageNum !== undefined) {
+                localVarQueryParameters['pageNum'] = models_1.ObjectSerializer.serialize(pageNum, "number");
             }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (isSubscribed !== undefined) {
+                localVarQueryParameters['isSubscribed'] = models_1.ObjectSerializer.serialize(isSubscribed, "boolean");
+            }
+            if (isPendingAge21Verification !== undefined) {
+                localVarQueryParameters['isPendingAge21Verification'] = models_1.ObjectSerializer.serialize(isPendingAge21Verification, "boolean");
+            }
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -808,7 +775,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "FetchOptInListSubscribersByPage200Response");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -820,9 +787,9 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardPOSTransactionsCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInLists(isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/pos/transactions';
+            const localVarPath = this.basePath + '/v2/merchant/lists/optIn/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -833,17 +800,8 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardPOSTransactionsCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardPOSTransactionsCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -877,7 +835,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "any");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -889,9 +847,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardPerformancesCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInListsAssociatedWithPhoneNumber(phoneNumberID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/performances';
+            const localVarPath = this.basePath + '/v2/sms/phoneNumber/lists/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -902,17 +861,8 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardPerformancesCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardPerformancesCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchOptInListsAssociatedWithPhoneNumber.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -946,7 +896,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<OptInList>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -958,9 +908,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardPhoneNumbersCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInSourceSubscribers(sourceID, isSubscribed, isPendingAge21Verification, isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/phoneNumbers';
+            const localVarPath = this.basePath + '/v2/sms/optInSource/subscribers/{sourceID}'
+                .replace('{' + 'sourceID' + '}', encodeURIComponent(String(sourceID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -971,17 +922,17 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardPhoneNumbersCount.');
+            if (sourceID === null || sourceID === undefined) {
+                throw new Error('Required parameter sourceID was null or undefined when calling fetchOptInSourceSubscribers.');
             }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardPhoneNumbersCount.');
+            if (isSubscribed !== undefined) {
+                localVarQueryParameters['isSubscribed'] = models_1.ObjectSerializer.serialize(isSubscribed, "boolean");
             }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
+            if (isPendingAge21Verification !== undefined) {
+                localVarQueryParameters['isPendingAge21Verification'] = models_1.ObjectSerializer.serialize(isPendingAge21Verification, "boolean");
             }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -1015,7 +966,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<OptInListSubscriber>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -1027,9 +978,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardRedemptionsCount(startDateTime, endDateTime, options = { headers: {} }) {
+    fetchOptInSourcesAssociatedWithPhoneNumber(phoneNumberID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/pos/redemptions';
+            const localVarPath = this.basePath + '/v2/sms/phoneNumber/sources/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -1040,17 +992,8 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardRedemptionsCount.');
-            }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardRedemptionsCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchOptInSourcesAssociatedWithPhoneNumber.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -1084,7 +1027,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<OptInListSource>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -1096,9 +1039,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardRefundsCount(startDateTime, endDateTime, options = { headers: {} }) {
+    importOptInListSubscribers(listID, wTSMSImportOptInListSubscribers, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/pos/refunds';
+            const localVarPath = this.basePath + '/v2/sms/optInList/subscribers/import/{listID}'
+                .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -1109,27 +1053,22 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardRefundsCount.');
+            if (listID === null || listID === undefined) {
+                throw new Error('Required parameter listID was null or undefined when calling importOptInListSubscribers.');
             }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardRefundsCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (wTSMSImportOptInListSubscribers === null || wTSMSImportOptInListSubscribers === undefined) {
+                throw new Error('Required parameter wTSMSImportOptInListSubscribers was null or undefined when calling importOptInListSubscribers.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'GET',
+                method: 'POST',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
+                body: models_1.ObjectSerializer.serialize(wTSMSImportOptInListSubscribers, "WTSMSImportOptInListSubscribers")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -1153,7 +1092,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "string");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -1165,9 +1104,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchDashboardWalletPageViewsCount(startDateTime, endDateTime, walletObjectPrefix, options = { headers: {} }) {
+    saveOptInList(listID, wTOptInListCreationParams, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/wallet/pageViews';
+            const localVarPath = this.basePath + '/v2/sms/optInList/{listID}'
+                .replace('{' + 'listID' + '}', encodeURIComponent(String(listID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -1178,30 +1118,22 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchDashboardWalletPageViewsCount.');
+            if (listID === null || listID === undefined) {
+                throw new Error('Required parameter listID was null or undefined when calling saveOptInList.');
             }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchDashboardWalletPageViewsCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
-            }
-            if (walletObjectPrefix !== undefined) {
-                localVarQueryParameters['walletObjectPrefix'] = models_1.ObjectSerializer.serialize(walletObjectPrefix, "string");
+            if (wTOptInListCreationParams === null || wTOptInListCreationParams === undefined) {
+                throw new Error('Required parameter wTOptInListCreationParams was null or undefined when calling saveOptInList.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'GET',
+                method: 'PUT',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
+                body: models_1.ObjectSerializer.serialize(wTOptInListCreationParams, "WTOptInListCreationParams")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -1225,7 +1157,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "OptInList");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -1237,9 +1169,10 @@ class DashboardSummariesApi {
             });
         });
     }
-    fetchSubscriberCount(startDateTime, endDateTime, options = { headers: {} }) {
+    saveOptInListSource(sourceID, wTSMSOptInListSourceCreate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/dashboard/count/subscribers';
+            const localVarPath = this.basePath + '/v2/sms/optInListSource/{sourceID}'
+                .replace('{' + 'sourceID' + '}', encodeURIComponent(String(sourceID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -1250,27 +1183,22 @@ class DashboardSummariesApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (startDateTime === null || startDateTime === undefined) {
-                throw new Error('Required parameter startDateTime was null or undefined when calling fetchSubscriberCount.');
+            if (sourceID === null || sourceID === undefined) {
+                throw new Error('Required parameter sourceID was null or undefined when calling saveOptInListSource.');
             }
-            if (endDateTime === null || endDateTime === undefined) {
-                throw new Error('Required parameter endDateTime was null or undefined when calling fetchSubscriberCount.');
-            }
-            if (startDateTime !== undefined) {
-                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
-            }
-            if (endDateTime !== undefined) {
-                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            if (wTSMSOptInListSourceCreate === null || wTSMSOptInListSourceCreate === undefined) {
+                throw new Error('Required parameter wTSMSOptInListSourceCreate was null or undefined when calling saveOptInListSource.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'GET',
+                method: 'PUT',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
+                body: models_1.ObjectSerializer.serialize(wTSMSOptInListSourceCreate, "WTSMSOptInListSourceCreate")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -1294,7 +1222,7 @@ class DashboardSummariesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
+                                body = models_1.ObjectSerializer.deserialize(body, "OptInListSource");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -1307,5 +1235,5 @@ class DashboardSummariesApi {
         });
     }
 }
-exports.DashboardSummariesApi = DashboardSummariesApi;
-//# sourceMappingURL=dashboardSummariesApi.js.map
+exports.OptInListsApi = OptInListsApi;
+//# sourceMappingURL=optInListsApi.js.map

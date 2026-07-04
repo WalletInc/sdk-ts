@@ -1,20 +1,19 @@
 /// <reference types="node" />
 import http from 'http';
-import { Employee } from '../model/employee';
-import { EmployeeActivityLog } from '../model/employeeActivityLog';
-import { Message } from '../model/message';
-import { UpdateEmailNotificationPreferenceRequest } from '../model/updateEmailNotificationPreferenceRequest';
-import { WTEmployeeCreate } from '../model/wTEmployeeCreate';
-import { WTEmployeeCreateMediaFile } from '../model/wTEmployeeCreateMediaFile';
-import { WTEmployeePeerRoles } from '../model/wTEmployeePeerRoles';
-import { WTEmployeeUpdate } from '../model/wTEmployeeUpdate';
-import { Webpage } from '../model/webpage';
+import { FetchImportedListRecipientsByPage200Response } from '../model/fetchImportedListRecipientsByPage200Response';
+import { ImportedList } from '../model/importedList';
+import { ImportedListRecipient } from '../model/importedListRecipient';
+import { SSImportedListRecipientCreateParams } from '../model/sSImportedListRecipientCreateParams';
+import { WTCountResult } from '../model/wTCountResult';
+import { WTEmployeeImportRecords } from '../model/wTEmployeeImportRecords';
+import { WTImportedListRecipientFromMembershipTierImport } from '../model/wTImportedListRecipientFromMembershipTierImport';
+import { WTSMSImportedListCreate } from '../model/wTSMSImportedListCreate';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
-export declare enum EmployeesApiApiKeys {
+export declare enum ImportedListsApiApiKeys {
     api_key = 0
 }
-export declare class EmployeesApi {
+export declare class ImportedListsApi {
     protected _basePath: string;
     protected _defaultHeaders: any;
     protected _useQuerystring: boolean;
@@ -30,9 +29,41 @@ export declare class EmployeesApi {
     get defaultHeaders(): any;
     get basePath(): string;
     setDefaultAuthentication(auth: Authentication): void;
-    setApiKey(key: EmployeesApiApiKeys, value: string): void;
+    setApiKey(key: ImportedListsApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
-    addPeerToRoles(userID: string, wTEmployeePeerRoles: WTEmployeePeerRoles, options?: {
+    archiveRecipient(id: string, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: ImportedListRecipient;
+    }>;
+    countImportedListRecipients(listID: string, isArchiveIncluded?: boolean, startDate?: Date, endDate?: Date, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTCountResult;
+    }>;
+    createImportedList(wTSMSImportedListCreate: WTSMSImportedListCreate, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: ImportedList;
+    }>;
+    createRecipientInImportedList(sSImportedListRecipientCreateParams: SSImportedListRecipientCreateParams, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: ImportedListRecipient;
+    }>;
+    exportImportedListRecipients(importedListID: string, options?: {
         headers: {
             [name: string]: string;
         };
@@ -40,15 +71,31 @@ export declare class EmployeesApi {
         response: http.IncomingMessage;
         body: string;
     }>;
-    createEmployeePeer(wTEmployeeCreate: WTEmployeeCreate, options?: {
+    fetchImportedList(listID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Employee;
+        body: ImportedList;
     }>;
-    fetchMerchant(options?: {
+    fetchImportedListRecipients(listID: string, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Array<ImportedListRecipient>;
+    }>;
+    fetchImportedListRecipientsByPage(listID: string, pageSize?: number, pageNum?: number, isArchiveIncluded?: boolean, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: FetchImportedListRecipientsByPage200Response;
+    }>;
+    fetchImportedLists(isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
@@ -56,79 +103,7 @@ export declare class EmployeesApi {
         response: http.IncomingMessage;
         body: any;
     }>;
-    fetchMessages(options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<Message>;
-    }>;
-    fetchPeerActivity(employeeID: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<EmployeeActivityLog>;
-    }>;
-    fetchPeersPermissions(userID: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<any>;
-    }>;
-    fetchProfileInfo(options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Employee;
-    }>;
-    loadWebpagesOfEmployee(options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<Webpage>;
-    }>;
-    modifyPeersRoles(userID: string, wTEmployeePeerRoles: WTEmployeePeerRoles, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<any>;
-    }>;
-    removePeerFromAllRoles(userID: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: boolean;
-    }>;
-    setAlertsRead(options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: boolean;
-    }>;
-    setMessagesRead(options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: boolean;
-    }>;
-    setProfilePicture(wTEmployeeCreateMediaFile: WTEmployeeCreateMediaFile, options?: {
+    importImportedListRecipients(importedListID: string, wTEmployeeImportRecords: WTEmployeeImportRecords, options?: {
         headers: {
             [name: string]: string;
         };
@@ -136,20 +111,28 @@ export declare class EmployeesApi {
         response: http.IncomingMessage;
         body: string;
     }>;
-    updateEmailNotificationPreference(updateEmailNotificationPreferenceRequest: UpdateEmailNotificationPreferenceRequest, options?: {
+    importImportedListRecipientsFromMembershipTier(wTImportedListRecipientFromMembershipTierImport: WTImportedListRecipientFromMembershipTierImport, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Employee;
+        body: string;
     }>;
-    updateEmployeePeer(userID: string, wTEmployeeUpdate: WTEmployeeUpdate, options?: {
+    restoreRecipient(id: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Employee;
+        body: ImportedListRecipient;
+    }>;
+    saveImportedList(listID: string, wTSMSImportedListCreate: WTSMSImportedListCreate, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: ImportedList;
     }>;
 }

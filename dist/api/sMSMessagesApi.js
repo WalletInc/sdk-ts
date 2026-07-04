@@ -12,17 +12,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MerchantApi = exports.MerchantApiApiKeys = void 0;
+exports.SMSMessagesApi = exports.SMSMessagesApiApiKeys = void 0;
 const request_1 = __importDefault(require("request"));
 const models_1 = require("../model/models");
 const models_2 = require("../model/models");
 const apis_1 = require("./apis");
 let defaultBasePath = 'https://api.wall.et';
-var MerchantApiApiKeys;
-(function (MerchantApiApiKeys) {
-    MerchantApiApiKeys[MerchantApiApiKeys["api_key"] = 0] = "api_key";
-})(MerchantApiApiKeys = exports.MerchantApiApiKeys || (exports.MerchantApiApiKeys = {}));
-class MerchantApi {
+var SMSMessagesApiApiKeys;
+(function (SMSMessagesApiApiKeys) {
+    SMSMessagesApiApiKeys[SMSMessagesApiApiKeys["api_key"] = 0] = "api_key";
+})(SMSMessagesApiApiKeys = exports.SMSMessagesApiApiKeys || (exports.SMSMessagesApiApiKeys = {}));
+class SMSMessagesApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;
         this._defaultHeaders = {};
@@ -62,14 +62,15 @@ class MerchantApi {
         this.authentications.default = auth;
     }
     setApiKey(key, value) {
-        this.authentications[MerchantApiApiKeys[key]].apiKey = value;
+        this.authentications[SMSMessagesApiApiKeys[key]].apiKey = value;
     }
     addInterceptor(interceptor) {
         this.interceptors.push(interceptor);
     }
-    archiveMerchantProfile(options = { headers: {} }) {
+    countInboundSMS(phoneNumberID, fromPhoneNumber, body, startDate, endDate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/delete';
+            const localVarPath = this.basePath + '/v2/merchant/sms/inbound/count/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -80,63 +81,21 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            Object.assign(localVarHeaderParams, options.headers);
-            let localVarUseFormData = false;
-            let localVarRequestOptions = {
-                method: 'DELETE',
-                qs: localVarQueryParameters,
-                headers: localVarHeaderParams,
-                uri: localVarPath,
-                useQuerystring: this._useQuerystring,
-                json: true,
-            };
-            let authenticationPromise = Promise.resolve();
-            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
-            let interceptorPromise = authenticationPromise;
-            for (const interceptor of this.interceptors) {
-                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling countInboundSMS.');
             }
-            return interceptorPromise.then(() => {
-                if (Object.keys(localVarFormParams).length) {
-                    if (localVarUseFormData) {
-                        localVarRequestOptions.formData = localVarFormParams;
-                    }
-                    else {
-                        localVarRequestOptions.form = localVarFormParams;
-                    }
-                }
-                return new Promise((resolve, reject) => {
-                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
-                        if (error) {
-                            reject(error);
-                        }
-                        else {
-                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
-                                resolve({ response: response, body: body });
-                            }
-                            else {
-                                reject(new apis_1.HttpError(response, body, response.statusCode));
-                            }
-                        }
-                    });
-                });
-            });
-        });
-    }
-    fetchCustomRoles(options = { headers: {} }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/roles/custom';
-            let localVarQueryParameters = {};
-            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
-            const produces = ['application/json'];
-            if (produces.indexOf('application/json') >= 0) {
-                localVarHeaderParams.Accept = 'application/json';
+            if (fromPhoneNumber !== undefined) {
+                localVarQueryParameters['fromPhoneNumber'] = models_1.ObjectSerializer.serialize(fromPhoneNumber, "string");
             }
-            else {
-                localVarHeaderParams.Accept = produces.join(',');
+            if (body !== undefined) {
+                localVarQueryParameters['body'] = models_1.ObjectSerializer.serialize(body, "string");
             }
-            let localVarFormParams = {};
+            if (startDate !== undefined) {
+                localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
+            }
+            if (endDate !== undefined) {
+                localVarQueryParameters['endDate'] = models_1.ObjectSerializer.serialize(endDate, "Date");
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -169,7 +128,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -181,9 +140,10 @@ class MerchantApi {
             });
         });
     }
-    fetchEmployees(options = { headers: {} }) {
+    countOutboundSMS(phoneNumberID, toPhoneNumber, status, paymentObjectBroadcastID, startDate, endDate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/employees/all';
+            const localVarPath = this.basePath + '/v2/sms/outbound/count/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -194,6 +154,24 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling countOutboundSMS.');
+            }
+            if (toPhoneNumber !== undefined) {
+                localVarQueryParameters['toPhoneNumber'] = models_1.ObjectSerializer.serialize(toPhoneNumber, "string");
+            }
+            if (status !== undefined) {
+                localVarQueryParameters['status'] = models_1.ObjectSerializer.serialize(status, "string");
+            }
+            if (paymentObjectBroadcastID !== undefined) {
+                localVarQueryParameters['paymentObjectBroadcastID'] = models_1.ObjectSerializer.serialize(paymentObjectBroadcastID, "string");
+            }
+            if (startDate !== undefined) {
+                localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
+            }
+            if (endDate !== undefined) {
+                localVarQueryParameters['endDate'] = models_1.ObjectSerializer.serialize(endDate, "Date");
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -226,7 +204,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "WTCountResult");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -238,9 +216,10 @@ class MerchantApi {
             });
         });
     }
-    fetchPublicEmployees(options = { headers: {} }) {
+    exportInboundMessages(phoneNumberID, locale, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/employees/public';
+            const localVarPath = this.basePath + '/v2/merchant/sms/inbound/export/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -251,122 +230,14 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            Object.assign(localVarHeaderParams, options.headers);
-            let localVarUseFormData = false;
-            let localVarRequestOptions = {
-                method: 'GET',
-                qs: localVarQueryParameters,
-                headers: localVarHeaderParams,
-                uri: localVarPath,
-                useQuerystring: this._useQuerystring,
-                json: true,
-            };
-            let authenticationPromise = Promise.resolve();
-            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
-            let interceptorPromise = authenticationPromise;
-            for (const interceptor of this.interceptors) {
-                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling exportInboundMessages.');
             }
-            return interceptorPromise.then(() => {
-                if (Object.keys(localVarFormParams).length) {
-                    if (localVarUseFormData) {
-                        localVarRequestOptions.formData = localVarFormParams;
-                    }
-                    else {
-                        localVarRequestOptions.form = localVarFormParams;
-                    }
-                }
-                return new Promise((resolve, reject) => {
-                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
-                        if (error) {
-                            reject(error);
-                        }
-                        else {
-                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
-                                resolve({ response: response, body: body });
-                            }
-                            else {
-                                reject(new apis_1.HttpError(response, body, response.statusCode));
-                            }
-                        }
-                    });
-                });
-            });
-        });
-    }
-    fetchWalletConfiguration(options = { headers: {} }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/wallet/configuration';
-            let localVarQueryParameters = {};
-            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
-            const produces = ['application/json'];
-            if (produces.indexOf('application/json') >= 0) {
-                localVarHeaderParams.Accept = 'application/json';
+            if (locale === null || locale === undefined) {
+                throw new Error('Required parameter locale was null or undefined when calling exportInboundMessages.');
             }
-            else {
-                localVarHeaderParams.Accept = produces.join(',');
-            }
-            let localVarFormParams = {};
-            Object.assign(localVarHeaderParams, options.headers);
-            let localVarUseFormData = false;
-            let localVarRequestOptions = {
-                method: 'GET',
-                qs: localVarQueryParameters,
-                headers: localVarHeaderParams,
-                uri: localVarPath,
-                useQuerystring: this._useQuerystring,
-                json: true,
-            };
-            let authenticationPromise = Promise.resolve();
-            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
-            let interceptorPromise = authenticationPromise;
-            for (const interceptor of this.interceptors) {
-                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
-            }
-            return interceptorPromise.then(() => {
-                if (Object.keys(localVarFormParams).length) {
-                    if (localVarUseFormData) {
-                        localVarRequestOptions.formData = localVarFormParams;
-                    }
-                    else {
-                        localVarRequestOptions.form = localVarFormParams;
-                    }
-                }
-                return new Promise((resolve, reject) => {
-                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
-                        if (error) {
-                            reject(error);
-                        }
-                        else {
-                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
-                                resolve({ response: response, body: body });
-                            }
-                            else {
-                                reject(new apis_1.HttpError(response, body, response.statusCode));
-                            }
-                        }
-                    });
-                });
-            });
-        });
-    }
-    updateMerchant(wTMerchantUpdate, options = { headers: {} }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant';
-            let localVarQueryParameters = {};
-            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
-            const produces = ['application/json'];
-            if (produces.indexOf('application/json') >= 0) {
-                localVarHeaderParams.Accept = 'application/json';
-            }
-            else {
-                localVarHeaderParams.Accept = produces.join(',');
-            }
-            let localVarFormParams = {};
-            if (wTMerchantUpdate === null || wTMerchantUpdate === undefined) {
-                throw new Error('Required parameter wTMerchantUpdate was null or undefined when calling updateMerchant.');
+            if (locale !== undefined) {
+                localVarQueryParameters['locale'] = models_1.ObjectSerializer.serialize(locale, "string");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -377,7 +248,6 @@ class MerchantApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdate, "WTMerchantUpdate")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -401,7 +271,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "string");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -413,9 +283,10 @@ class MerchantApi {
             });
         });
     }
-    updatePointsOfContact(wTMerchantUpdatePointsOfContact, options = { headers: {} }) {
+    exportOutboundMessages(phoneNumberID, locale, paymentObjectBroadcastID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/pointsOfContact';
+            const localVarPath = this.basePath + '/v2/merchant/sms/outbound/export/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -426,8 +297,17 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTMerchantUpdatePointsOfContact === null || wTMerchantUpdatePointsOfContact === undefined) {
-                throw new Error('Required parameter wTMerchantUpdatePointsOfContact was null or undefined when calling updatePointsOfContact.');
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling exportOutboundMessages.');
+            }
+            if (locale === null || locale === undefined) {
+                throw new Error('Required parameter locale was null or undefined when calling exportOutboundMessages.');
+            }
+            if (locale !== undefined) {
+                localVarQueryParameters['locale'] = models_1.ObjectSerializer.serialize(locale, "string");
+            }
+            if (paymentObjectBroadcastID !== undefined) {
+                localVarQueryParameters['paymentObjectBroadcastID'] = models_1.ObjectSerializer.serialize(paymentObjectBroadcastID, "string");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -438,7 +318,6 @@ class MerchantApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdatePointsOfContact, "WTMerchantUpdatePointsOfContact")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -462,7 +341,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "string");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -474,9 +353,10 @@ class MerchantApi {
             });
         });
     }
-    updatePosIntegration(wTMerchantUpdatePOSIntegration, options = { headers: {} }) {
+    fetchInboundSMS(phoneNumberID, fromPhoneNumber, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/pos/integration';
+            const localVarPath = this.basePath + '/v2/merchant/sms/inbound/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -487,19 +367,373 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTMerchantUpdatePOSIntegration === null || wTMerchantUpdatePOSIntegration === undefined) {
-                throw new Error('Required parameter wTMerchantUpdatePOSIntegration was null or undefined when calling updatePosIntegration.');
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchInboundSMS.');
+            }
+            if (fromPhoneNumber !== undefined) {
+                localVarQueryParameters['fromPhoneNumber'] = models_1.ObjectSerializer.serialize(fromPhoneNumber, "string");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'PUT',
+                method: 'GET',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdatePOSIntegration, "WTMerchantUpdatePOSIntegration")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<InboundSMS>");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    fetchInboundSMSByPage(phoneNumberID, fromPhoneNumber, pageSize, pageNum, startDate, endDate, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/merchant/sms/inbound/page/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchInboundSMSByPage.');
+            }
+            if (fromPhoneNumber !== undefined) {
+                localVarQueryParameters['fromPhoneNumber'] = models_1.ObjectSerializer.serialize(fromPhoneNumber, "string");
+            }
+            if (pageSize !== undefined) {
+                localVarQueryParameters['pageSize'] = models_1.ObjectSerializer.serialize(pageSize, "number");
+            }
+            if (pageNum !== undefined) {
+                localVarQueryParameters['pageNum'] = models_1.ObjectSerializer.serialize(pageNum, "number");
+            }
+            if (startDate !== undefined) {
+                localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
+            }
+            if (endDate !== undefined) {
+                localVarQueryParameters['endDate'] = models_1.ObjectSerializer.serialize(endDate, "Date");
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "FetchInboundSMSByPage200Response");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    fetchMerchantOutboundSMS(phoneNumberID, toPhoneNumber, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/merchant/sms/outbound/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchMerchantOutboundSMS.');
+            }
+            if (toPhoneNumber === null || toPhoneNumber === undefined) {
+                throw new Error('Required parameter toPhoneNumber was null or undefined when calling fetchMerchantOutboundSMS.');
+            }
+            if (toPhoneNumber !== undefined) {
+                localVarQueryParameters['toPhoneNumber'] = models_1.ObjectSerializer.serialize(toPhoneNumber, "string");
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<OutboundSMS>");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    fetchOutboundSMS(phoneNumberID, toPhoneNumber, status, paymentObjectBroadcastID, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/sms/outbound/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchOutboundSMS.');
+            }
+            if (toPhoneNumber !== undefined) {
+                localVarQueryParameters['toPhoneNumber'] = models_1.ObjectSerializer.serialize(toPhoneNumber, "string");
+            }
+            if (status !== undefined) {
+                localVarQueryParameters['status'] = models_1.ObjectSerializer.serialize(status, "string");
+            }
+            if (paymentObjectBroadcastID !== undefined) {
+                localVarQueryParameters['paymentObjectBroadcastID'] = models_1.ObjectSerializer.serialize(paymentObjectBroadcastID, "string");
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<OutboundSMS>");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    fetchOutboundSMSByPage(phoneNumberID, toPhoneNumber, paymentObjectBroadcastID, pageSize, pageNum, status, startDate, endDate, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/sms/outbound/page/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchOutboundSMSByPage.');
+            }
+            if (toPhoneNumber !== undefined) {
+                localVarQueryParameters['toPhoneNumber'] = models_1.ObjectSerializer.serialize(toPhoneNumber, "string");
+            }
+            if (paymentObjectBroadcastID !== undefined) {
+                localVarQueryParameters['paymentObjectBroadcastID'] = models_1.ObjectSerializer.serialize(paymentObjectBroadcastID, "string");
+            }
+            if (pageSize !== undefined) {
+                localVarQueryParameters['pageSize'] = models_1.ObjectSerializer.serialize(pageSize, "number");
+            }
+            if (pageNum !== undefined) {
+                localVarQueryParameters['pageNum'] = models_1.ObjectSerializer.serialize(pageNum, "number");
+            }
+            if (status !== undefined) {
+                localVarQueryParameters['status'] = models_1.ObjectSerializer.serialize(status, "SSOutboundStatuses");
+            }
+            if (startDate !== undefined) {
+                localVarQueryParameters['startDate'] = models_1.ObjectSerializer.serialize(startDate, "Date");
+            }
+            if (endDate !== undefined) {
+                localVarQueryParameters['endDate'] = models_1.ObjectSerializer.serialize(endDate, "Date");
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "FetchOutboundSMSByPage200Response");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    retrieveSentAndMaxCountOfMessages(options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/sms/sent';
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -536,5 +770,5 @@ class MerchantApi {
         });
     }
 }
-exports.MerchantApi = MerchantApi;
-//# sourceMappingURL=merchantApi.js.map
+exports.SMSMessagesApi = SMSMessagesApi;
+//# sourceMappingURL=sMSMessagesApi.js.map

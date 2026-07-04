@@ -1,14 +1,13 @@
 /// <reference types="node" />
 import http from 'http';
-import { WTMerchantUpdate } from '../model/wTMerchantUpdate';
-import { WTMerchantUpdatePOSIntegration } from '../model/wTMerchantUpdatePOSIntegration';
-import { WTMerchantUpdatePointsOfContact } from '../model/wTMerchantUpdatePointsOfContact';
+import { WTEmployeeImportRecords } from '../model/wTEmployeeImportRecords';
+import { WTEmployeeUpdateRecords } from '../model/wTEmployeeUpdateRecords';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
-export declare enum MerchantApiApiKeys {
+export declare enum ImportExportApiApiKeys {
     api_key = 0
 }
-export declare class MerchantApi {
+export declare class ImportExportApi {
     protected _basePath: string;
     protected _defaultHeaders: any;
     protected _useQuerystring: boolean;
@@ -24,70 +23,62 @@ export declare class MerchantApi {
     get defaultHeaders(): any;
     get basePath(): string;
     setDefaultAuthentication(auth: Authentication): void;
-    setApiKey(key: MerchantApiApiKeys, value: string): void;
+    setApiKey(key: ImportExportApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
-    archiveMerchantProfile(options?: {
+    exportClubMembers(options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: any;
+        body: string;
     }>;
-    fetchCustomRoles(options?: {
+    exportMerchantCredits(options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: any;
+        body: string;
     }>;
-    fetchEmployees(options?: {
+    exportStaticVoucherCampaign(campaignID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: any;
+        body: string;
     }>;
-    fetchPublicEmployees(options?: {
+    importClubMembers(wTEmployeeImportRecords: WTEmployeeImportRecords, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: any;
+        body: string;
     }>;
-    fetchWalletConfiguration(options?: {
+    importMerchantCredits(wTEmployeeImportRecords: WTEmployeeImportRecords, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: any;
+        body: string;
     }>;
-    updateMerchant(wTMerchantUpdate: WTMerchantUpdate, options?: {
+    setExportDataFilesRead(options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: any;
+        body: boolean;
     }>;
-    updatePointsOfContact(wTMerchantUpdatePointsOfContact: WTMerchantUpdatePointsOfContact, options?: {
+    updateClubMembers(wTEmployeeUpdateRecords: WTEmployeeUpdateRecords, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: any;
-    }>;
-    updatePosIntegration(wTMerchantUpdatePOSIntegration: WTMerchantUpdatePOSIntegration, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: any;
+        body: string;
     }>;
 }

@@ -12,17 +12,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MerchantApi = exports.MerchantApiApiKeys = void 0;
+exports.PhoneNumbersApi = exports.PhoneNumbersApiApiKeys = void 0;
 const request_1 = __importDefault(require("request"));
 const models_1 = require("../model/models");
 const models_2 = require("../model/models");
 const apis_1 = require("./apis");
 let defaultBasePath = 'https://api.wall.et';
-var MerchantApiApiKeys;
-(function (MerchantApiApiKeys) {
-    MerchantApiApiKeys[MerchantApiApiKeys["api_key"] = 0] = "api_key";
-})(MerchantApiApiKeys = exports.MerchantApiApiKeys || (exports.MerchantApiApiKeys = {}));
-class MerchantApi {
+var PhoneNumbersApiApiKeys;
+(function (PhoneNumbersApiApiKeys) {
+    PhoneNumbersApiApiKeys[PhoneNumbersApiApiKeys["api_key"] = 0] = "api_key";
+})(PhoneNumbersApiApiKeys = exports.PhoneNumbersApiApiKeys || (exports.PhoneNumbersApiApiKeys = {}));
+class PhoneNumbersApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;
         this._defaultHeaders = {};
@@ -62,14 +62,14 @@ class MerchantApi {
         this.authentications.default = auth;
     }
     setApiKey(key, value) {
-        this.authentications[MerchantApiApiKeys[key]].apiKey = value;
+        this.authentications[PhoneNumbersApiApiKeys[key]].apiKey = value;
     }
     addInterceptor(interceptor) {
         this.interceptors.push(interceptor);
     }
-    archiveMerchantProfile(options = { headers: {} }) {
+    acquirePhoneNumber(wTSMSAcquirePhoneNumber, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/delete';
+            const localVarPath = this.basePath + '/v2/sms/phoneNumber/acquire';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -80,6 +80,71 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (wTSMSAcquirePhoneNumber === null || wTSMSAcquirePhoneNumber === undefined) {
+                throw new Error('Required parameter wTSMSAcquirePhoneNumber was null or undefined when calling acquirePhoneNumber.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'POST',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+                body: models_1.ObjectSerializer.serialize(wTSMSAcquirePhoneNumber, "WTSMSAcquirePhoneNumber")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "PhoneNumber");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    archivePhoneNumber(phoneNumberID, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/sms/phoneNumber/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling archivePhoneNumber.');
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -112,6 +177,130 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "PhoneNumber");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    fetchBlockedTCPAEntries(phoneNumberID, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/sms/phoneNumber/blocked/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchBlockedTCPAEntries.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<Tcpa>");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    fetchMerchantPhoneNumbers(isArchiveIncluded, isApproved, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/merchant/phoneNumbers/all';
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
+            }
+            if (isApproved !== undefined) {
+                localVarQueryParameters['isApproved'] = models_1.ObjectSerializer.serialize(isApproved, "boolean");
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                                 body = models_1.ObjectSerializer.deserialize(body, "any");
                                 resolve({ response: response, body: body });
                             }
@@ -124,9 +313,70 @@ class MerchantApi {
             });
         });
     }
-    fetchCustomRoles(options = { headers: {} }) {
+    fetchPhoneNumber(phoneNumberID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/roles/custom';
+            const localVarPath = this.basePath + '/v2/merchant/phoneNumber/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchPhoneNumber.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "PhoneNumber");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    fetchSMSAgreement(options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/sms/agreement';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -181,9 +431,9 @@ class MerchantApi {
             });
         });
     }
-    fetchEmployees(options = { headers: {} }) {
+    fetchTCPAFilter(options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/employees/all';
+            const localVarPath = this.basePath + '/v2/merchant/tcpa/filter/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -226,7 +476,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<Tcpa>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -238,9 +488,10 @@ class MerchantApi {
             });
         });
     }
-    fetchPublicEmployees(options = { headers: {} }) {
+    restorePhoneNumber(phoneNumberID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/employees/public';
+            const localVarPath = this.basePath + '/v2/sms/phoneNumber/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -251,10 +502,13 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling restorePhoneNumber.');
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'GET',
+                method: 'PATCH',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
@@ -283,7 +537,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "PhoneNumber");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -295,9 +549,10 @@ class MerchantApi {
             });
         });
     }
-    fetchWalletConfiguration(options = { headers: {} }) {
+    sendPhoneNumberForVerification(phoneNumberID, wTSMSUpdatePhoneNumberConfig, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/wallet/configuration';
+            const localVarPath = this.basePath + '/v2/sms/phoneNumber/verification/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -308,65 +563,11 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            Object.assign(localVarHeaderParams, options.headers);
-            let localVarUseFormData = false;
-            let localVarRequestOptions = {
-                method: 'GET',
-                qs: localVarQueryParameters,
-                headers: localVarHeaderParams,
-                uri: localVarPath,
-                useQuerystring: this._useQuerystring,
-                json: true,
-            };
-            let authenticationPromise = Promise.resolve();
-            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
-            let interceptorPromise = authenticationPromise;
-            for (const interceptor of this.interceptors) {
-                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling sendPhoneNumberForVerification.');
             }
-            return interceptorPromise.then(() => {
-                if (Object.keys(localVarFormParams).length) {
-                    if (localVarUseFormData) {
-                        localVarRequestOptions.formData = localVarFormParams;
-                    }
-                    else {
-                        localVarRequestOptions.form = localVarFormParams;
-                    }
-                }
-                return new Promise((resolve, reject) => {
-                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
-                        if (error) {
-                            reject(error);
-                        }
-                        else {
-                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
-                                resolve({ response: response, body: body });
-                            }
-                            else {
-                                reject(new apis_1.HttpError(response, body, response.statusCode));
-                            }
-                        }
-                    });
-                });
-            });
-        });
-    }
-    updateMerchant(wTMerchantUpdate, options = { headers: {} }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant';
-            let localVarQueryParameters = {};
-            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
-            const produces = ['application/json'];
-            if (produces.indexOf('application/json') >= 0) {
-                localVarHeaderParams.Accept = 'application/json';
-            }
-            else {
-                localVarHeaderParams.Accept = produces.join(',');
-            }
-            let localVarFormParams = {};
-            if (wTMerchantUpdate === null || wTMerchantUpdate === undefined) {
-                throw new Error('Required parameter wTMerchantUpdate was null or undefined when calling updateMerchant.');
+            if (wTSMSUpdatePhoneNumberConfig === null || wTSMSUpdatePhoneNumberConfig === undefined) {
+                throw new Error('Required parameter wTSMSUpdatePhoneNumberConfig was null or undefined when calling sendPhoneNumberForVerification.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -377,7 +578,7 @@ class MerchantApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdate, "WTMerchantUpdate")
+                body: models_1.ObjectSerializer.serialize(wTSMSUpdatePhoneNumberConfig, "WTSMSUpdatePhoneNumberConfig")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -401,7 +602,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "string");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -413,9 +614,10 @@ class MerchantApi {
             });
         });
     }
-    updatePointsOfContact(wTMerchantUpdatePointsOfContact, options = { headers: {} }) {
+    updatePhoneNumber(phoneNumberID, wTSMSUpdatePhoneNumberConfig, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/pointsOfContact';
+            const localVarPath = this.basePath + '/v2/sms/phoneNumber/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -426,8 +628,11 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTMerchantUpdatePointsOfContact === null || wTMerchantUpdatePointsOfContact === undefined) {
-                throw new Error('Required parameter wTMerchantUpdatePointsOfContact was null or undefined when calling updatePointsOfContact.');
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling updatePhoneNumber.');
+            }
+            if (wTSMSUpdatePhoneNumberConfig === null || wTSMSUpdatePhoneNumberConfig === undefined) {
+                throw new Error('Required parameter wTSMSUpdatePhoneNumberConfig was null or undefined when calling updatePhoneNumber.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -438,7 +643,7 @@ class MerchantApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdatePointsOfContact, "WTMerchantUpdatePointsOfContact")
+                body: models_1.ObjectSerializer.serialize(wTSMSUpdatePhoneNumberConfig, "WTSMSUpdatePhoneNumberConfig")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -462,68 +667,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
-                                resolve({ response: response, body: body });
-                            }
-                            else {
-                                reject(new apis_1.HttpError(response, body, response.statusCode));
-                            }
-                        }
-                    });
-                });
-            });
-        });
-    }
-    updatePosIntegration(wTMerchantUpdatePOSIntegration, options = { headers: {} }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/pos/integration';
-            let localVarQueryParameters = {};
-            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
-            const produces = ['application/json'];
-            if (produces.indexOf('application/json') >= 0) {
-                localVarHeaderParams.Accept = 'application/json';
-            }
-            else {
-                localVarHeaderParams.Accept = produces.join(',');
-            }
-            let localVarFormParams = {};
-            if (wTMerchantUpdatePOSIntegration === null || wTMerchantUpdatePOSIntegration === undefined) {
-                throw new Error('Required parameter wTMerchantUpdatePOSIntegration was null or undefined when calling updatePosIntegration.');
-            }
-            Object.assign(localVarHeaderParams, options.headers);
-            let localVarUseFormData = false;
-            let localVarRequestOptions = {
-                method: 'PUT',
-                qs: localVarQueryParameters,
-                headers: localVarHeaderParams,
-                uri: localVarPath,
-                useQuerystring: this._useQuerystring,
-                json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdatePOSIntegration, "WTMerchantUpdatePOSIntegration")
-            };
-            let authenticationPromise = Promise.resolve();
-            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
-            let interceptorPromise = authenticationPromise;
-            for (const interceptor of this.interceptors) {
-                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
-            }
-            return interceptorPromise.then(() => {
-                if (Object.keys(localVarFormParams).length) {
-                    if (localVarUseFormData) {
-                        localVarRequestOptions.formData = localVarFormParams;
-                    }
-                    else {
-                        localVarRequestOptions.form = localVarFormParams;
-                    }
-                }
-                return new Promise((resolve, reject) => {
-                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
-                        if (error) {
-                            reject(error);
-                        }
-                        else {
-                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "PhoneNumber");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -536,5 +680,5 @@ class MerchantApi {
         });
     }
 }
-exports.MerchantApi = MerchantApi;
-//# sourceMappingURL=merchantApi.js.map
+exports.PhoneNumbersApi = PhoneNumbersApi;
+//# sourceMappingURL=phoneNumbersApi.js.map

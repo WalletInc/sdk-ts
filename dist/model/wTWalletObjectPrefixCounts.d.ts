@@ -1,6 +1,6 @@
 export declare class WTWalletObjectPrefixCounts extends null<String, any> {
-    'walletObjectPrefix': any | null;
-    'walletObjectName': any | null;
+    'walletObjectPrefix': string;
+    'walletObjectName': string;
     'list': any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

@@ -1,17 +1,15 @@
 /// <reference types="node" />
 import http from 'http';
-import { DynamicVoucher } from '../model/dynamicVoucher';
-import { ReachPerformanceStats } from '../model/reachPerformanceStats';
-import { WTDynamicVoucher } from '../model/wTDynamicVoucher';
-import { WTDynamicVoucherCreateParams } from '../model/wTDynamicVoucherCreateParams';
-import { WTDynamicVoucherRedemption } from '../model/wTDynamicVoucherRedemption';
-import { WTDynamicVoucherUpdateParams } from '../model/wTDynamicVoucherUpdateParams';
+import { PhoneNumber } from '../model/phoneNumber';
+import { Tcpa } from '../model/tcpa';
+import { WTSMSAcquirePhoneNumber } from '../model/wTSMSAcquirePhoneNumber';
+import { WTSMSUpdatePhoneNumberConfig } from '../model/wTSMSUpdatePhoneNumberConfig';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
-export declare enum DynamicVouchersApiApiKeys {
+export declare enum PhoneNumbersApiApiKeys {
     api_key = 0
 }
-export declare class DynamicVouchersApi {
+export declare class PhoneNumbersApi {
     protected _basePath: string;
     protected _defaultHeaders: any;
     protected _useQuerystring: boolean;
@@ -27,86 +25,86 @@ export declare class DynamicVouchersApi {
     get defaultHeaders(): any;
     get basePath(): string;
     setDefaultAuthentication(auth: Authentication): void;
-    setApiKey(key: DynamicVouchersApiApiKeys, value: string): void;
+    setApiKey(key: PhoneNumbersApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
-    archiveDynamicVoucherCampaign(campaignID: string, options?: {
+    acquirePhoneNumber(wTSMSAcquirePhoneNumber: WTSMSAcquirePhoneNumber, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: DynamicVoucher;
+        body: PhoneNumber;
     }>;
-    createDynamicVoucher(wTDynamicVoucherCreateParams: WTDynamicVoucherCreateParams, options?: {
+    archivePhoneNumber(phoneNumberID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTDynamicVoucher;
+        body: PhoneNumber;
     }>;
-    fetchAllDynamicVouchers(isArchiveIncluded?: boolean, options?: {
+    fetchBlockedTCPAEntries(phoneNumberID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<WTDynamicVoucher>;
+        body: Array<Tcpa>;
     }>;
-    fetchDynamicVoucherById(id: string, options?: {
+    fetchMerchantPhoneNumbers(isArchiveIncluded?: boolean, isApproved?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTDynamicVoucher;
+        body: any;
     }>;
-    fetchDynamicVoucherRedemptions(id: string, options?: {
+    fetchPhoneNumber(phoneNumberID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<WTDynamicVoucherRedemption>;
+        body: PhoneNumber;
     }>;
-    fetchDynamicVouchers(isArchiveIncluded?: boolean, options?: {
+    fetchSMSAgreement(options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<DynamicVoucher>;
+        body: any;
     }>;
-    fetchReachStatsOfAllDynamicVouchers(broadcastScheduledStartAt?: Date, broadcastScheduledEndAt?: Date, options?: {
+    fetchTCPAFilter(options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: ReachPerformanceStats;
+        body: Array<Tcpa>;
     }>;
-    fetchReachStatsOfIndividualDynamicVoucher(dynamicVoucherID: string, broadcastScheduledStartAt?: Date, broadcastScheduledEndAt?: Date, options?: {
+    restorePhoneNumber(phoneNumberID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: ReachPerformanceStats;
+        body: PhoneNumber;
     }>;
-    restoreDynamicVoucherCampaign(campaignID: string, options?: {
+    sendPhoneNumberForVerification(phoneNumberID: string, wTSMSUpdatePhoneNumberConfig: WTSMSUpdatePhoneNumberConfig, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: DynamicVoucher;
+        body: string;
     }>;
-    saveDynamicVoucher(id: string, wTDynamicVoucherUpdateParams: WTDynamicVoucherUpdateParams, options?: {
+    updatePhoneNumber(phoneNumberID: string, wTSMSUpdatePhoneNumberConfig: WTSMSUpdatePhoneNumberConfig, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTDynamicVoucher;
+        body: PhoneNumber;
     }>;
 }
