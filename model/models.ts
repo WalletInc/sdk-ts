@@ -198,6 +198,7 @@ export * from './portalPage';
 export * from './presignedPost';
 export * from './presignedPostFields';
 export * from './product';
+export * from './productTaxBehavior';
 export * from './profileStatuses';
 export * from './promoCode';
 export * from './qRCodeDesign';
@@ -228,6 +229,7 @@ export * from './staticVoucherId';
 export * from './status';
 export * from './subscriptionFeature';
 export * from './subscriptionPlan';
+export * from './subscriptionPlanAnnual';
 export * from './subscriptionProduct';
 export * from './tcpa';
 export * from './thread';
@@ -241,6 +243,7 @@ export * from './vSCampaignGeneratedMessagePagination';
 export * from './vSDynamicVoucherStatus';
 export * from './vectorStore';
 export * from './video';
+export * from './videoProvider';
 export * from './virtualBusinessCard';
 export * from './wTA2PApplicationUpdateParams';
 export * from './wTAdvertisementCredit';
@@ -383,7 +386,12 @@ export * from './wTTicketUpdateParams';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
 export * from './wTVideoCreateParams';
+export * from './wTVideoPlaybackSource';
+export * from './wTVideoPlaybackSourceType';
 export * from './wTVideoUpdateParams';
+export * from './wTVideoUploadProvision';
+export * from './wTVideoUploadProvisionParams';
+export * from './wTVideoUploadProvisionProvider';
 export * from './wTVirtualBusinessCardCreateParams';
 export * from './wTVirtualBusinessCardUpdateParams';
 export * from './wTWalletConfigurationSaveWalletRecord';
@@ -611,6 +619,7 @@ import { PortalPage } from './portalPage';
 import { PresignedPost } from './presignedPost';
 import { PresignedPostFields } from './presignedPostFields';
 import { Product } from './product';
+import { ProductTaxBehavior } from './productTaxBehavior';
 import { ProfileStatuses } from './profileStatuses';
 import { PromoCode } from './promoCode';
 import { QRCodeDesign } from './qRCodeDesign';
@@ -641,6 +650,7 @@ import { StaticVoucherId } from './staticVoucherId';
 import { Status } from './status';
 import { SubscriptionFeature } from './subscriptionFeature';
 import { SubscriptionPlan } from './subscriptionPlan';
+import { SubscriptionPlanAnnual } from './subscriptionPlanAnnual';
 import { SubscriptionProduct } from './subscriptionProduct';
 import { Tcpa } from './tcpa';
 import { Thread } from './thread';
@@ -654,6 +664,7 @@ import { VSCampaignGeneratedMessagePagination } from './vSCampaignGeneratedMessa
 import { VSDynamicVoucherStatus } from './vSDynamicVoucherStatus';
 import { VectorStore } from './vectorStore';
 import { Video } from './video';
+import { VideoProvider } from './videoProvider';
 import { VirtualBusinessCard } from './virtualBusinessCard';
 import { WTA2PApplicationUpdateParams } from './wTA2PApplicationUpdateParams';
 import { WTAdvertisementCredit } from './wTAdvertisementCredit';
@@ -796,7 +807,12 @@ import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
 import { WTVideoCreateParams } from './wTVideoCreateParams';
+import { WTVideoPlaybackSource } from './wTVideoPlaybackSource';
+import { WTVideoPlaybackSourceType } from './wTVideoPlaybackSourceType';
 import { WTVideoUpdateParams } from './wTVideoUpdateParams';
+import { WTVideoUploadProvision } from './wTVideoUploadProvision';
+import { WTVideoUploadProvisionParams } from './wTVideoUploadProvisionParams';
+import { WTVideoUploadProvisionProvider } from './wTVideoUploadProvisionProvider';
 import { WTVirtualBusinessCardCreateParams } from './wTVirtualBusinessCardCreateParams';
 import { WTVirtualBusinessCardUpdateParams } from './wTVirtualBusinessCardUpdateParams';
 import { WTWalletConfigurationSaveWalletRecord } from './wTWalletConfigurationSaveWalletRecord';
@@ -1036,6 +1052,7 @@ let typeMap: {[index: string]: any} = {
     "PresignedPost": PresignedPost,
     "PresignedPostFields": PresignedPostFields,
     "Product": Product,
+    "ProductTaxBehavior": ProductTaxBehavior,
     "PromoCode": PromoCode,
     "QRCodeDesign": QRCodeDesign,
     "ReachPerformanceStats": ReachPerformanceStats,
@@ -1064,6 +1081,7 @@ let typeMap: {[index: string]: any} = {
     "Status": Status,
     "SubscriptionFeature": SubscriptionFeature,
     "SubscriptionPlan": SubscriptionPlan,
+    "SubscriptionPlanAnnual": SubscriptionPlanAnnual,
     "SubscriptionProduct": SubscriptionProduct,
     "Tcpa": Tcpa,
     "Thread": Thread,
@@ -1075,6 +1093,7 @@ let typeMap: {[index: string]: any} = {
     "VSDynamicVoucherStatus": VSDynamicVoucherStatus,
     "VectorStore": VectorStore,
     "Video": Video,
+    "VideoProvider": VideoProvider,
     "VirtualBusinessCard": VirtualBusinessCard,
     "WTA2PApplicationUpdateParams": WTA2PApplicationUpdateParams,
     "WTAdvertisementCredit": WTAdvertisementCredit,
@@ -1217,7 +1236,12 @@ let typeMap: {[index: string]: any} = {
     "WTTwilioRequestAuthyCode": WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,
     "WTVideoCreateParams": WTVideoCreateParams,
+    "WTVideoPlaybackSource": WTVideoPlaybackSource,
+    "WTVideoPlaybackSourceType": WTVideoPlaybackSourceType,
     "WTVideoUpdateParams": WTVideoUpdateParams,
+    "WTVideoUploadProvision": WTVideoUploadProvision,
+    "WTVideoUploadProvisionParams": WTVideoUploadProvisionParams,
+    "WTVideoUploadProvisionProvider": WTVideoUploadProvisionProvider,
     "WTVirtualBusinessCardCreateParams": WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": WTWalletConfigurationSaveWalletRecord,

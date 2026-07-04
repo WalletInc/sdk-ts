@@ -10,31 +10,6 @@ exports.Video = Video;
 Video.discriminator = undefined;
 Video.attributeTypeMap = [
     {
-        "name": "title",
-        "baseName": "title",
-        "type": "any"
-    },
-    {
-        "name": "description",
-        "baseName": "description",
-        "type": "any"
-    },
-    {
-        "name": "orderNumber",
-        "baseName": "orderNumber",
-        "type": "any"
-    },
-    {
-        "name": "mediaURL",
-        "baseName": "mediaURL",
-        "type": "any"
-    },
-    {
-        "name": "additionalInfoURL",
-        "baseName": "additionalInfoURL",
-        "type": "any"
-    },
-    {
         "name": "id",
         "baseName": "id",
         "type": "AmenityId"
@@ -50,6 +25,26 @@ Video.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "title",
+        "baseName": "title",
+        "type": "any"
+    },
+    {
+        "name": "description",
+        "baseName": "description",
+        "type": "any"
+    },
+    {
+        "name": "orderNumber",
+        "baseName": "orderNumber",
+        "type": "any"
+    },
+    {
+        "name": "additionalInfoURL",
+        "baseName": "additionalInfoURL",
+        "type": "any"
+    },
+    {
         "name": "isActive",
         "baseName": "isActive",
         "type": "any"
@@ -58,6 +53,21 @@ Video.attributeTypeMap = [
         "name": "merchantID",
         "baseName": "merchantID",
         "type": "string"
+    },
+    {
+        "name": "provider",
+        "baseName": "provider",
+        "type": "VideoProvider"
+    },
+    {
+        "name": "assetId",
+        "baseName": "assetId",
+        "type": "any"
+    },
+    {
+        "name": "source",
+        "baseName": "source",
+        "type": "WTVideoPlaybackSource"
     }
 ];
 //# sourceMappingURL=video.js.map

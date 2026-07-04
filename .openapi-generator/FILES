@@ -255,6 +255,7 @@ model/portalPage.ts
 model/presignedPost.ts
 model/presignedPostFields.ts
 model/product.ts
+model/productTaxBehavior.ts
 model/profileStatuses.ts
 model/promoCode.ts
 model/qRCodeDesign.ts
@@ -285,6 +286,7 @@ model/staticVoucherId.ts
 model/status.ts
 model/subscriptionFeature.ts
 model/subscriptionPlan.ts
+model/subscriptionPlanAnnual.ts
 model/subscriptionProduct.ts
 model/tcpa.ts
 model/thread.ts
@@ -298,6 +300,7 @@ model/vSCampaignGeneratedMessagePagination.ts
 model/vSDynamicVoucherStatus.ts
 model/vectorStore.ts
 model/video.ts
+model/videoProvider.ts
 model/virtualBusinessCard.ts
 model/wTA2PApplicationUpdateParams.ts
 model/wTAdvertisementCredit.ts
@@ -440,7 +443,12 @@ model/wTTicketUpdateParams.ts
 model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
 model/wTVideoCreateParams.ts
+model/wTVideoPlaybackSource.ts
+model/wTVideoPlaybackSourceType.ts
 model/wTVideoUpdateParams.ts
+model/wTVideoUploadProvision.ts
+model/wTVideoUploadProvisionParams.ts
+model/wTVideoUploadProvisionProvider.ts
 model/wTVirtualBusinessCardCreateParams.ts
 model/wTVirtualBusinessCardUpdateParams.ts
 model/wTWalletConfigurationSaveWalletRecord.ts

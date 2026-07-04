@@ -61,6 +61,14 @@ export declare class BillingPaymentsApi {
         response: http.IncomingMessage;
         body: any;
     }>;
+    createBillingPortalSession(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: any;
+    }>;
     fetchAddOns(options?: {
         headers: {
             [name: string]: string;
