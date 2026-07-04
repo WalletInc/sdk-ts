@@ -2166,7 +2166,7 @@ export class EmployeesApi {
     }
     /**
      * 
-     * @summary Schedule Dyanamic Voucher to recipient
+     * @summary Schedule Dynamic Voucher to recipient
      * @param dynamicVoucherID 
      * @param wTEmployeeScheduleSimpleSMSToRecipient 
      */

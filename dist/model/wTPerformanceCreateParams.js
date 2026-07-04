@@ -22,7 +22,7 @@ WTPerformanceCreateParams.attributeTypeMap = [
     {
         "name": "startDateTime",
         "baseName": "startDateTime",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "price",
@@ -47,7 +47,7 @@ WTPerformanceCreateParams.attributeTypeMap = [
     {
         "name": "mediaURL",
         "baseName": "mediaURL",
-        "type": "any"
+        "type": "string"
     },
     {
         "name": "paymentDesignID",
@@ -57,17 +57,17 @@ WTPerformanceCreateParams.attributeTypeMap = [
     {
         "name": "maxCompTickets",
         "baseName": "maxCompTickets",
-        "type": "any"
+        "type": "number"
     },
     {
         "name": "ticketExpirationDateTime",
         "baseName": "ticketExpirationDateTime",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "redemptionInstructions",
         "baseName": "redemptionInstructions",
-        "type": "any"
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTPerformanceCreateParams.js.map

@@ -2,20 +2,20 @@ import { AmenityId } from './amenityId';
 export declare class Performance extends null<String, any> {
     'title': any | null;
     'body': any | null;
-    'startDateTime': Date;
+    'startDateTime': any | null;
     'price': any | null;
     'url': any | null;
     'orderNumber': any | null;
     'isSoldOut': any | null;
-    'mediaURL'?: string;
+    'mediaURL'?: any | null;
     'paymentDesignID'?: string;
-    'maxCompTickets'?: number;
-    'ticketExpirationDateTime'?: Date;
-    'redemptionInstructions'?: string;
+    'maxCompTickets'?: any | null;
+    'ticketExpirationDateTime'?: any | null;
+    'redemptionInstructions'?: any | null;
     'id': AmenityId;
-    'createdAt': Date;
-    'updatedAt': Date;
-    'isActive': boolean;
+    'createdAt': any | null;
+    'updatedAt': any | null;
+    'isActive': any | null;
     'merchantID': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

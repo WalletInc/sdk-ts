@@ -457,7 +457,7 @@ export class SystemApi {
     }
     /**
      * 
-     * @summary Get payment prefixes
+     * @summary Get payment prefixes (empty stub)
      */
     public async getPaymentPrefixes (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<any>;  }> {
         const localVarPath = this.basePath + '/v2/system/prefixes';

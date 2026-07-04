@@ -16,26 +16,23 @@ import { AmenityId } from './amenityId';
 export class Performance extends null<String, any> {
     'title': any | null;
     'body': any | null;
-    'startDateTime': Date;
+    'startDateTime': any | null;
     'price': any | null;
     'url': any | null;
-    /**
-    * Stores the order number
-    */
     'orderNumber': any | null;
     /**
     * Denotes if the event has been sold out
     */
     'isSoldOut': any | null;
-    'mediaURL'?: string;
+    'mediaURL'?: any | null;
     'paymentDesignID'?: string;
-    'maxCompTickets'?: number;
-    'ticketExpirationDateTime'?: Date;
-    'redemptionInstructions'?: string;
+    'maxCompTickets'?: any | null;
+    'ticketExpirationDateTime'?: any | null;
+    'redemptionInstructions'?: any | null;
     'id': AmenityId;
-    'createdAt': Date;
-    'updatedAt': Date;
-    'isActive': boolean;
+    'createdAt': any | null;
+    'updatedAt': any | null;
+    'isActive': any | null;
     'merchantID': string;
 
     static discriminator: string | undefined = undefined;
@@ -54,7 +51,7 @@ export class Performance extends null<String, any> {
         {
             "name": "startDateTime",
             "baseName": "startDateTime",
-            "type": "Date"
+            "type": "any"
         },
         {
             "name": "price",
@@ -79,7 +76,7 @@ export class Performance extends null<String, any> {
         {
             "name": "mediaURL",
             "baseName": "mediaURL",
-            "type": "string"
+            "type": "any"
         },
         {
             "name": "paymentDesignID",
@@ -89,17 +86,17 @@ export class Performance extends null<String, any> {
         {
             "name": "maxCompTickets",
             "baseName": "maxCompTickets",
-            "type": "number"
+            "type": "any"
         },
         {
             "name": "ticketExpirationDateTime",
             "baseName": "ticketExpirationDateTime",
-            "type": "Date"
+            "type": "any"
         },
         {
             "name": "redemptionInstructions",
             "baseName": "redemptionInstructions",
-            "type": "string"
+            "type": "any"
         },
         {
             "name": "id",
@@ -109,17 +106,17 @@ export class Performance extends null<String, any> {
         {
             "name": "createdAt",
             "baseName": "createdAt",
-            "type": "Date"
+            "type": "any"
         },
         {
             "name": "updatedAt",
             "baseName": "updatedAt",
-            "type": "Date"
+            "type": "any"
         },
         {
             "name": "isActive",
             "baseName": "isActive",
-            "type": "boolean"
+            "type": "any"
         },
         {
             "name": "merchantID",

@@ -14,7 +14,7 @@ import { RequestFile } from './models';
 
 export class PaginatedWTMembers extends null<String, any> {
     /**
-    * Stores the results as an array
+    * The page of records returned for this request.
     */
     'results': any | null;
     /**
