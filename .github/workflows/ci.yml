@@ -17,12 +17,12 @@ jobs:
     steps:
       # Checkout latest push
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: "14.15.3"
           check-latest: true
@@ -50,12 +50,12 @@ jobs:
     steps:
       # Checkout latest push
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: "14.15.3"
           check-latest: true
@@ -64,7 +64,7 @@ jobs:
 
       # - name: Get yarn cache directory path
       #   id: yarn-cache-dir-path
-      #   run: echo "::set-output name=dir::$(yarn cache dir)"
+      #   run: echo "dir=$(yarn cache dir)" >> "$GITHUB_OUTPUT"
 
       # - name: Check for yarn cache
       #   uses: actions/cache@v2
@@ -123,7 +123,7 @@ jobs:
       #   id: vars
       #   run: |
       #     t=${{ github.sha }}
-      #     echo ::set-output name=tag::$(echo ${t:0:7})
+      #     echo "tag=$(echo ${t:0:7})" >> "$GITHUB_OUTPUT"
       #     echo ${{ steps.vars.outputs.tag }}
 
       # - name: Setup SSH
