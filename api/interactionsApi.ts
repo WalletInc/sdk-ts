@@ -108,7 +108,7 @@ export class InteractionsApi {
 
     /**
      * 
-     * @summary Update ticket
+     * @summary Claim a ticket by ID
      * @param id 
      * @param claimTicketRequest 
      */
@@ -460,7 +460,7 @@ export class InteractionsApi {
     }
     /**
      * 
-     * @summary Get a customer\'s static vouchers on the basis of a given voucher ID
+     * @summary Get a merchant\'s active dynamic vouchers
      * @param merchantID 
      */
     public async fetchActiveDynamicVouchers (merchantID: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<DynamicVoucher>;  }> {
@@ -680,7 +680,7 @@ export class InteractionsApi {
     }
     /**
      * 
-     * @summary Update ticket
+     * @summary Get a customer\'s upcoming tickets via phone verification token
      * @param fetchCustomerTicketsWithTokenRequest 
      */
     public async fetchCustomerTicketsWithToken (fetchCustomerTicketsWithTokenRequest: FetchCustomerTicketsWithTokenRequest, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<Ticket>;  }> {

@@ -11,6 +11,7 @@
  */
 
 import { RequestFile } from './models';
+import { ProductTaxBehavior } from './productTaxBehavior';
 
 export class WTProductCreateParams extends null<String, any> {
     'title': any | null;
@@ -19,6 +20,10 @@ export class WTProductCreateParams extends null<String, any> {
     'orderNumber': number;
     'mediaURL'?: string;
     'additionalInfoURL'?: any | null;
+    'priceAmount'?: number;
+    'currency'?: any | null;
+    'isBuyable'?: boolean;
+    'taxBehavior'?: ProductTaxBehavior;
 
     static discriminator: string | undefined = undefined;
 
@@ -52,6 +57,26 @@ export class WTProductCreateParams extends null<String, any> {
             "name": "additionalInfoURL",
             "baseName": "additionalInfoURL",
             "type": "any"
+        },
+        {
+            "name": "priceAmount",
+            "baseName": "priceAmount",
+            "type": "number"
+        },
+        {
+            "name": "currency",
+            "baseName": "currency",
+            "type": "any"
+        },
+        {
+            "name": "isBuyable",
+            "baseName": "isBuyable",
+            "type": "boolean"
+        },
+        {
+            "name": "taxBehavior",
+            "baseName": "taxBehavior",
+            "type": "ProductTaxBehavior"
         }    ];
 
     static getAttributeTypeMap() {

@@ -213,6 +213,7 @@ __exportStar(require("./portalPage"), exports);
 __exportStar(require("./presignedPost"), exports);
 __exportStar(require("./presignedPostFields"), exports);
 __exportStar(require("./product"), exports);
+__exportStar(require("./productTaxBehavior"), exports);
 __exportStar(require("./profileStatuses"), exports);
 __exportStar(require("./promoCode"), exports);
 __exportStar(require("./qRCodeDesign"), exports);
@@ -243,6 +244,7 @@ __exportStar(require("./staticVoucherId"), exports);
 __exportStar(require("./status"), exports);
 __exportStar(require("./subscriptionFeature"), exports);
 __exportStar(require("./subscriptionPlan"), exports);
+__exportStar(require("./subscriptionPlanAnnual"), exports);
 __exportStar(require("./subscriptionProduct"), exports);
 __exportStar(require("./tcpa"), exports);
 __exportStar(require("./thread"), exports);
@@ -256,6 +258,7 @@ __exportStar(require("./vSCampaignGeneratedMessagePagination"), exports);
 __exportStar(require("./vSDynamicVoucherStatus"), exports);
 __exportStar(require("./vectorStore"), exports);
 __exportStar(require("./video"), exports);
+__exportStar(require("./videoProvider"), exports);
 __exportStar(require("./virtualBusinessCard"), exports);
 __exportStar(require("./wTA2PApplicationUpdateParams"), exports);
 __exportStar(require("./wTAdvertisementCredit"), exports);
@@ -398,7 +401,12 @@ __exportStar(require("./wTTicketUpdateParams"), exports);
 __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
 __exportStar(require("./wTVideoCreateParams"), exports);
+__exportStar(require("./wTVideoPlaybackSource"), exports);
+__exportStar(require("./wTVideoPlaybackSourceType"), exports);
 __exportStar(require("./wTVideoUpdateParams"), exports);
+__exportStar(require("./wTVideoUploadProvision"), exports);
+__exportStar(require("./wTVideoUploadProvisionParams"), exports);
+__exportStar(require("./wTVideoUploadProvisionProvider"), exports);
 __exportStar(require("./wTVirtualBusinessCardCreateParams"), exports);
 __exportStar(require("./wTVirtualBusinessCardUpdateParams"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecord"), exports);
@@ -612,6 +620,7 @@ const portalPage_1 = require("./portalPage");
 const presignedPost_1 = require("./presignedPost");
 const presignedPostFields_1 = require("./presignedPostFields");
 const product_1 = require("./product");
+const productTaxBehavior_1 = require("./productTaxBehavior");
 const profileStatuses_1 = require("./profileStatuses");
 const promoCode_1 = require("./promoCode");
 const qRCodeDesign_1 = require("./qRCodeDesign");
@@ -642,6 +651,7 @@ const staticVoucherId_1 = require("./staticVoucherId");
 const status_1 = require("./status");
 const subscriptionFeature_1 = require("./subscriptionFeature");
 const subscriptionPlan_1 = require("./subscriptionPlan");
+const subscriptionPlanAnnual_1 = require("./subscriptionPlanAnnual");
 const subscriptionProduct_1 = require("./subscriptionProduct");
 const tcpa_1 = require("./tcpa");
 const thread_1 = require("./thread");
@@ -655,6 +665,7 @@ const vSCampaignGeneratedMessagePagination_1 = require("./vSCampaignGeneratedMes
 const vSDynamicVoucherStatus_1 = require("./vSDynamicVoucherStatus");
 const vectorStore_1 = require("./vectorStore");
 const video_1 = require("./video");
+const videoProvider_1 = require("./videoProvider");
 const virtualBusinessCard_1 = require("./virtualBusinessCard");
 const wTA2PApplicationUpdateParams_1 = require("./wTA2PApplicationUpdateParams");
 const wTAdvertisementCredit_1 = require("./wTAdvertisementCredit");
@@ -797,7 +808,12 @@ const wTTicketUpdateParams_1 = require("./wTTicketUpdateParams");
 const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
 const wTVideoCreateParams_1 = require("./wTVideoCreateParams");
+const wTVideoPlaybackSource_1 = require("./wTVideoPlaybackSource");
+const wTVideoPlaybackSourceType_1 = require("./wTVideoPlaybackSourceType");
 const wTVideoUpdateParams_1 = require("./wTVideoUpdateParams");
+const wTVideoUploadProvision_1 = require("./wTVideoUploadProvision");
+const wTVideoUploadProvisionParams_1 = require("./wTVideoUploadProvisionParams");
+const wTVideoUploadProvisionProvider_1 = require("./wTVideoUploadProvisionProvider");
 const wTVirtualBusinessCardCreateParams_1 = require("./wTVirtualBusinessCardCreateParams");
 const wTVirtualBusinessCardUpdateParams_1 = require("./wTVirtualBusinessCardUpdateParams");
 const wTWalletConfigurationSaveWalletRecord_1 = require("./wTWalletConfigurationSaveWalletRecord");
@@ -1033,6 +1049,7 @@ let typeMap = {
     "PresignedPost": presignedPost_1.PresignedPost,
     "PresignedPostFields": presignedPostFields_1.PresignedPostFields,
     "Product": product_1.Product,
+    "ProductTaxBehavior": productTaxBehavior_1.ProductTaxBehavior,
     "PromoCode": promoCode_1.PromoCode,
     "QRCodeDesign": qRCodeDesign_1.QRCodeDesign,
     "ReachPerformanceStats": reachPerformanceStats_1.ReachPerformanceStats,
@@ -1061,6 +1078,7 @@ let typeMap = {
     "Status": status_1.Status,
     "SubscriptionFeature": subscriptionFeature_1.SubscriptionFeature,
     "SubscriptionPlan": subscriptionPlan_1.SubscriptionPlan,
+    "SubscriptionPlanAnnual": subscriptionPlanAnnual_1.SubscriptionPlanAnnual,
     "SubscriptionProduct": subscriptionProduct_1.SubscriptionProduct,
     "Tcpa": tcpa_1.Tcpa,
     "Thread": thread_1.Thread,
@@ -1072,6 +1090,7 @@ let typeMap = {
     "VSDynamicVoucherStatus": vSDynamicVoucherStatus_1.VSDynamicVoucherStatus,
     "VectorStore": vectorStore_1.VectorStore,
     "Video": video_1.Video,
+    "VideoProvider": videoProvider_1.VideoProvider,
     "VirtualBusinessCard": virtualBusinessCard_1.VirtualBusinessCard,
     "WTA2PApplicationUpdateParams": wTA2PApplicationUpdateParams_1.WTA2PApplicationUpdateParams,
     "WTAdvertisementCredit": wTAdvertisementCredit_1.WTAdvertisementCredit,
@@ -1214,7 +1233,12 @@ let typeMap = {
     "WTTwilioRequestAuthyCode": wTTwilioRequestAuthyCode_1.WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
     "WTVideoCreateParams": wTVideoCreateParams_1.WTVideoCreateParams,
+    "WTVideoPlaybackSource": wTVideoPlaybackSource_1.WTVideoPlaybackSource,
+    "WTVideoPlaybackSourceType": wTVideoPlaybackSourceType_1.WTVideoPlaybackSourceType,
     "WTVideoUpdateParams": wTVideoUpdateParams_1.WTVideoUpdateParams,
+    "WTVideoUploadProvision": wTVideoUploadProvision_1.WTVideoUploadProvision,
+    "WTVideoUploadProvisionParams": wTVideoUploadProvisionParams_1.WTVideoUploadProvisionParams,
+    "WTVideoUploadProvisionProvider": wTVideoUploadProvisionProvider_1.WTVideoUploadProvisionProvider,
     "WTVirtualBusinessCardCreateParams": wTVirtualBusinessCardCreateParams_1.WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": wTVirtualBusinessCardUpdateParams_1.WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": wTWalletConfigurationSaveWalletRecord_1.WTWalletConfigurationSaveWalletRecord,

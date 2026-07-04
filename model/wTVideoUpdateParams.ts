@@ -15,8 +15,7 @@ import { RequestFile } from './models';
 export class WTVideoUpdateParams extends null<String, any> {
     'title': any | null;
     'description': any | null;
-    'orderNumber': number;
-    'mediaURL': any | null;
+    'orderNumber': any | null;
     'additionalInfoURL'?: any | null;
 
     static discriminator: string | undefined = undefined;
@@ -35,11 +34,6 @@ export class WTVideoUpdateParams extends null<String, any> {
         {
             "name": "orderNumber",
             "baseName": "orderNumber",
-            "type": "number"
-        },
-        {
-            "name": "mediaURL",
-            "baseName": "mediaURL",
             "type": "any"
         },
         {

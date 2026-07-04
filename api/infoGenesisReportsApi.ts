@@ -1067,7 +1067,7 @@ export class InfoGenesisReportsApi {
     }
     /**
      * 
-     * @summary Get queries
+     * @summary Get lookup requests
      * @param wTInfoGenesisRecordFilterParameters 
      */
     public async fetchInfoGenesisLookupRequests (wTInfoGenesisRecordFilterParameters: WTInfoGenesisRecordFilterParameters, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<Request>;  }> {
@@ -1136,7 +1136,7 @@ export class InfoGenesisReportsApi {
     }
     /**
      * 
-     * @summary Get queries errors
+     * @summary Get lookup request errors
      * @param wTInfoGenesisLookupRequestErrors 
      */
     public async fetchInfoGenesisLookupRequestsErrors (wTInfoGenesisLookupRequestErrors: WTInfoGenesisLookupRequestErrors, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<Request>;  }> {

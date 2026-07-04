@@ -1483,7 +1483,7 @@ export class DashboardSummariesApi {
     }
     /**
      * 
-     * @summary Count Performances
+     * @summary Count subscribers
      * @param startDateTime 
      * @param endDateTime 
      */

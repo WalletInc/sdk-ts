@@ -15,22 +15,19 @@ import { RequestFile } from './models';
 export class WTPerformanceUpdateParams extends null<String, any> {
     'title': any | null;
     'body': any | null;
-    'startDateTime': any | null;
+    'startDateTime': Date;
     'price': any | null;
     'url': any | null;
-    /**
-    * Stores the order number
-    */
     'orderNumber': any | null;
     /**
     * Denotes if the event has been sold out
     */
     'isSoldOut': any | null;
-    'mediaURL'?: any | null;
+    'mediaURL'?: string;
     'paymentDesignID'?: string;
-    'maxCompTickets'?: any | null;
-    'ticketExpirationDateTime'?: any | null;
-    'redemptionInstructions'?: any | null;
+    'maxCompTickets'?: number;
+    'ticketExpirationDateTime'?: Date;
+    'redemptionInstructions'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -48,7 +45,7 @@ export class WTPerformanceUpdateParams extends null<String, any> {
         {
             "name": "startDateTime",
             "baseName": "startDateTime",
-            "type": "any"
+            "type": "Date"
         },
         {
             "name": "price",
@@ -73,7 +70,7 @@ export class WTPerformanceUpdateParams extends null<String, any> {
         {
             "name": "mediaURL",
             "baseName": "mediaURL",
-            "type": "any"
+            "type": "string"
         },
         {
             "name": "paymentDesignID",
@@ -83,17 +80,17 @@ export class WTPerformanceUpdateParams extends null<String, any> {
         {
             "name": "maxCompTickets",
             "baseName": "maxCompTickets",
-            "type": "any"
+            "type": "number"
         },
         {
             "name": "ticketExpirationDateTime",
             "baseName": "ticketExpirationDateTime",
-            "type": "any"
+            "type": "Date"
         },
         {
             "name": "redemptionInstructions",
             "baseName": "redemptionInstructions",
-            "type": "any"
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
