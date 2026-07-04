@@ -12,12 +12,12 @@ WTWalletObjectPrefixCounts.attributeTypeMap = [
     {
         "name": "walletObjectPrefix",
         "baseName": "walletObjectPrefix",
-        "type": "any"
+        "type": "string"
     },
     {
         "name": "walletObjectName",
         "baseName": "walletObjectName",
-        "type": "any"
+        "type": "string"
     },
     {
         "name": "list",

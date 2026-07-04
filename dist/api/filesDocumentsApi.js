@@ -12,17 +12,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MerchantApi = exports.MerchantApiApiKeys = void 0;
+exports.FilesDocumentsApi = exports.FilesDocumentsApiApiKeys = void 0;
 const request_1 = __importDefault(require("request"));
 const models_1 = require("../model/models");
 const models_2 = require("../model/models");
 const apis_1 = require("./apis");
 let defaultBasePath = 'https://api.wall.et';
-var MerchantApiApiKeys;
-(function (MerchantApiApiKeys) {
-    MerchantApiApiKeys[MerchantApiApiKeys["api_key"] = 0] = "api_key";
-})(MerchantApiApiKeys = exports.MerchantApiApiKeys || (exports.MerchantApiApiKeys = {}));
-class MerchantApi {
+var FilesDocumentsApiApiKeys;
+(function (FilesDocumentsApiApiKeys) {
+    FilesDocumentsApiApiKeys[FilesDocumentsApiApiKeys["api_key"] = 0] = "api_key";
+})(FilesDocumentsApiApiKeys = exports.FilesDocumentsApiApiKeys || (exports.FilesDocumentsApiApiKeys = {}));
+class FilesDocumentsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;
         this._defaultHeaders = {};
@@ -62,14 +62,14 @@ class MerchantApi {
         this.authentications.default = auth;
     }
     setApiKey(key, value) {
-        this.authentications[MerchantApiApiKeys[key]].apiKey = value;
+        this.authentications[FilesDocumentsApiApiKeys[key]].apiKey = value;
     }
     addInterceptor(interceptor) {
         this.interceptors.push(interceptor);
     }
-    archiveMerchantProfile(options = { headers: {} }) {
+    createDocument(wTEmployeeCreateDocument, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/delete';
+            const localVarPath = this.basePath + '/v2/employee/document';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -80,6 +80,193 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (wTEmployeeCreateDocument === null || wTEmployeeCreateDocument === undefined) {
+                throw new Error('Required parameter wTEmployeeCreateDocument was null or undefined when calling createDocument.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'POST',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+                body: models_1.ObjectSerializer.serialize(wTEmployeeCreateDocument, "WTEmployeeCreateDocument")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "Document");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    createFile(wTEmployeeFileCreate, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/employee/file/create';
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (wTEmployeeFileCreate === null || wTEmployeeFileCreate === undefined) {
+                throw new Error('Required parameter wTEmployeeFileCreate was null or undefined when calling createFile.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'POST',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+                body: models_1.ObjectSerializer.serialize(wTEmployeeFileCreate, "WTEmployeeFileCreate")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "CreateFile200Response");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    createMediaFile(wTEmployeeCreateMediaFile, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/employee/mediaFile';
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (wTEmployeeCreateMediaFile === null || wTEmployeeCreateMediaFile === undefined) {
+                throw new Error('Required parameter wTEmployeeCreateMediaFile was null or undefined when calling createMediaFile.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'POST',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+                body: models_1.ObjectSerializer.serialize(wTEmployeeCreateMediaFile, "WTEmployeeCreateMediaFile")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "MediaFile");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    deleteDocument(documentID, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/employee/document/{documentID}'
+                .replace('{' + 'documentID' + '}', encodeURIComponent(String(documentID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (documentID === null || documentID === undefined) {
+                throw new Error('Required parameter documentID was null or undefined when calling deleteDocument.');
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -112,7 +299,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Document");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -124,9 +311,10 @@ class MerchantApi {
             });
         });
     }
-    fetchCustomRoles(options = { headers: {} }) {
+    deleteMediaFile(mediaFileID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/roles/custom';
+            const localVarPath = this.basePath + '/v2/employee/mediaFile/{mediaFileID}'
+                .replace('{' + 'mediaFileID' + '}', encodeURIComponent(String(mediaFileID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -137,6 +325,70 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (mediaFileID === null || mediaFileID === undefined) {
+                throw new Error('Required parameter mediaFileID was null or undefined when calling deleteMediaFile.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'DELETE',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "MediaFile");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    downloadFile(fileID, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/employee/file/download/{fileID}'
+                .replace('{' + 'fileID' + '}', encodeURIComponent(String(fileID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (fileID === null || fileID === undefined) {
+                throw new Error('Required parameter fileID was null or undefined when calling downloadFile.');
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -169,7 +421,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "string");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -181,9 +433,10 @@ class MerchantApi {
             });
         });
     }
-    fetchEmployees(options = { headers: {} }) {
+    failedImport(fileID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/employees/all';
+            const localVarPath = this.basePath + '/v2/employee/file/imports/failed/{fileID}'
+                .replace('{' + 'fileID' + '}', encodeURIComponent(String(fileID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -194,6 +447,9 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (fileID === null || fileID === undefined) {
+                throw new Error('Required parameter fileID was null or undefined when calling failedImport.');
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -226,7 +482,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "string");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -238,9 +494,9 @@ class MerchantApi {
             });
         });
     }
-    fetchPublicEmployees(options = { headers: {} }) {
+    fetchDocuments(folder, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/employees/public';
+            const localVarPath = this.basePath + '/v2/employee/documents/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -251,6 +507,9 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (folder !== undefined) {
+                localVarQueryParameters['folder'] = models_1.ObjectSerializer.serialize(folder, "string");
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -283,7 +542,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<Document>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -295,9 +554,9 @@ class MerchantApi {
             });
         });
     }
-    fetchWalletConfiguration(options = { headers: {} }) {
+    fetchMediaFiles(folder, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/wallet/configuration';
+            const localVarPath = this.basePath + '/v2/employee/mediaFiles/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -308,6 +567,9 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (folder !== undefined) {
+                localVarQueryParameters['folder'] = models_1.ObjectSerializer.serialize(folder, "string");
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -340,7 +602,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<MediaFile>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -352,9 +614,9 @@ class MerchantApi {
             });
         });
     }
-    updateMerchant(wTMerchantUpdate, options = { headers: {} }) {
+    presignFile(wTEmployeeS3FilePresign, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant';
+            const localVarPath = this.basePath + '/v2/employee/file/presign';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -365,19 +627,19 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTMerchantUpdate === null || wTMerchantUpdate === undefined) {
-                throw new Error('Required parameter wTMerchantUpdate was null or undefined when calling updateMerchant.');
+            if (wTEmployeeS3FilePresign === null || wTEmployeeS3FilePresign === undefined) {
+                throw new Error('Required parameter wTEmployeeS3FilePresign was null or undefined when calling presignFile.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'PUT',
+                method: 'POST',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdate, "WTMerchantUpdate")
+                body: models_1.ObjectSerializer.serialize(wTEmployeeS3FilePresign, "WTEmployeeS3FilePresign")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -401,129 +663,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
-                                resolve({ response: response, body: body });
-                            }
-                            else {
-                                reject(new apis_1.HttpError(response, body, response.statusCode));
-                            }
-                        }
-                    });
-                });
-            });
-        });
-    }
-    updatePointsOfContact(wTMerchantUpdatePointsOfContact, options = { headers: {} }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/pointsOfContact';
-            let localVarQueryParameters = {};
-            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
-            const produces = ['application/json'];
-            if (produces.indexOf('application/json') >= 0) {
-                localVarHeaderParams.Accept = 'application/json';
-            }
-            else {
-                localVarHeaderParams.Accept = produces.join(',');
-            }
-            let localVarFormParams = {};
-            if (wTMerchantUpdatePointsOfContact === null || wTMerchantUpdatePointsOfContact === undefined) {
-                throw new Error('Required parameter wTMerchantUpdatePointsOfContact was null or undefined when calling updatePointsOfContact.');
-            }
-            Object.assign(localVarHeaderParams, options.headers);
-            let localVarUseFormData = false;
-            let localVarRequestOptions = {
-                method: 'PUT',
-                qs: localVarQueryParameters,
-                headers: localVarHeaderParams,
-                uri: localVarPath,
-                useQuerystring: this._useQuerystring,
-                json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdatePointsOfContact, "WTMerchantUpdatePointsOfContact")
-            };
-            let authenticationPromise = Promise.resolve();
-            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
-            let interceptorPromise = authenticationPromise;
-            for (const interceptor of this.interceptors) {
-                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
-            }
-            return interceptorPromise.then(() => {
-                if (Object.keys(localVarFormParams).length) {
-                    if (localVarUseFormData) {
-                        localVarRequestOptions.formData = localVarFormParams;
-                    }
-                    else {
-                        localVarRequestOptions.form = localVarFormParams;
-                    }
-                }
-                return new Promise((resolve, reject) => {
-                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
-                        if (error) {
-                            reject(error);
-                        }
-                        else {
-                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
-                                resolve({ response: response, body: body });
-                            }
-                            else {
-                                reject(new apis_1.HttpError(response, body, response.statusCode));
-                            }
-                        }
-                    });
-                });
-            });
-        });
-    }
-    updatePosIntegration(wTMerchantUpdatePOSIntegration, options = { headers: {} }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/pos/integration';
-            let localVarQueryParameters = {};
-            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
-            const produces = ['application/json'];
-            if (produces.indexOf('application/json') >= 0) {
-                localVarHeaderParams.Accept = 'application/json';
-            }
-            else {
-                localVarHeaderParams.Accept = produces.join(',');
-            }
-            let localVarFormParams = {};
-            if (wTMerchantUpdatePOSIntegration === null || wTMerchantUpdatePOSIntegration === undefined) {
-                throw new Error('Required parameter wTMerchantUpdatePOSIntegration was null or undefined when calling updatePosIntegration.');
-            }
-            Object.assign(localVarHeaderParams, options.headers);
-            let localVarUseFormData = false;
-            let localVarRequestOptions = {
-                method: 'PUT',
-                qs: localVarQueryParameters,
-                headers: localVarHeaderParams,
-                uri: localVarPath,
-                useQuerystring: this._useQuerystring,
-                json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdatePOSIntegration, "WTMerchantUpdatePOSIntegration")
-            };
-            let authenticationPromise = Promise.resolve();
-            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
-            let interceptorPromise = authenticationPromise;
-            for (const interceptor of this.interceptors) {
-                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
-            }
-            return interceptorPromise.then(() => {
-                if (Object.keys(localVarFormParams).length) {
-                    if (localVarUseFormData) {
-                        localVarRequestOptions.formData = localVarFormParams;
-                    }
-                    else {
-                        localVarRequestOptions.form = localVarFormParams;
-                    }
-                }
-                return new Promise((resolve, reject) => {
-                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
-                        if (error) {
-                            reject(error);
-                        }
-                        else {
-                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "PresignedPost");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -536,5 +676,5 @@ class MerchantApi {
         });
     }
 }
-exports.MerchantApi = MerchantApi;
-//# sourceMappingURL=merchantApi.js.map
+exports.FilesDocumentsApi = FilesDocumentsApi;
+//# sourceMappingURL=filesDocumentsApi.js.map

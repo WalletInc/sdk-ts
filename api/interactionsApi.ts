@@ -969,7 +969,7 @@ export class InteractionsApi {
     }
     /**
      * 
-     * @summary Get page with token NOTE: This route exists because a token can completely change the dataset returned to the client. A simple fetch just logs the token with the request, but a fetchWithToken request can have a very different object returned to the client.
+     * @summary Get page (token-scoped)
      * @param wTFetchWalletPaymentObjectsWithToken 
      */
     public async fetchWalletPageWithToken (wTFetchWalletPaymentObjectsWithToken: WTFetchWalletPaymentObjectsWithToken, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
@@ -1038,7 +1038,7 @@ export class InteractionsApi {
     }
     /**
      * 
-     * @summary Get payment objects with token NOTE: This route exists because a token can completely change the dataset returned to the client. A simple fetch just logs the token with the request, but a fetchWithToken request can have a very different object returned to the client.
+     * @summary Get payment objects (token-scoped)
      * @param wTFetchWalletPaymentObjectsWithToken 
      */
     public async fetchWalletPaymentObjectsWithToken (wTFetchWalletPaymentObjectsWithToken: WTFetchWalletPaymentObjectsWithToken, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {

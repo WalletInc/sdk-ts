@@ -1,17 +1,19 @@
 /// <reference types="node" />
 import http from 'http';
-import { DynamicVoucher } from '../model/dynamicVoucher';
-import { ReachPerformanceStats } from '../model/reachPerformanceStats';
-import { WTDynamicVoucher } from '../model/wTDynamicVoucher';
-import { WTDynamicVoucherCreateParams } from '../model/wTDynamicVoucherCreateParams';
-import { WTDynamicVoucherRedemption } from '../model/wTDynamicVoucherRedemption';
-import { WTDynamicVoucherUpdateParams } from '../model/wTDynamicVoucherUpdateParams';
+import { CreateFile200Response } from '../model/createFile200Response';
+import { Document } from '../model/document';
+import { MediaFile } from '../model/mediaFile';
+import { PresignedPost } from '../model/presignedPost';
+import { WTEmployeeCreateDocument } from '../model/wTEmployeeCreateDocument';
+import { WTEmployeeCreateMediaFile } from '../model/wTEmployeeCreateMediaFile';
+import { WTEmployeeFileCreate } from '../model/wTEmployeeFileCreate';
+import { WTEmployeeS3FilePresign } from '../model/wTEmployeeS3FilePresign';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
-export declare enum DynamicVouchersApiApiKeys {
+export declare enum FilesDocumentsApiApiKeys {
     api_key = 0
 }
-export declare class DynamicVouchersApi {
+export declare class FilesDocumentsApi {
     protected _basePath: string;
     protected _defaultHeaders: any;
     protected _useQuerystring: boolean;
@@ -27,86 +29,86 @@ export declare class DynamicVouchersApi {
     get defaultHeaders(): any;
     get basePath(): string;
     setDefaultAuthentication(auth: Authentication): void;
-    setApiKey(key: DynamicVouchersApiApiKeys, value: string): void;
+    setApiKey(key: FilesDocumentsApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
-    archiveDynamicVoucherCampaign(campaignID: string, options?: {
+    createDocument(wTEmployeeCreateDocument: WTEmployeeCreateDocument, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: DynamicVoucher;
+        body: Document;
     }>;
-    createDynamicVoucher(wTDynamicVoucherCreateParams: WTDynamicVoucherCreateParams, options?: {
+    createFile(wTEmployeeFileCreate: WTEmployeeFileCreate, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTDynamicVoucher;
+        body: CreateFile200Response;
     }>;
-    fetchAllDynamicVouchers(isArchiveIncluded?: boolean, options?: {
+    createMediaFile(wTEmployeeCreateMediaFile: WTEmployeeCreateMediaFile, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<WTDynamicVoucher>;
+        body: MediaFile;
     }>;
-    fetchDynamicVoucherById(id: string, options?: {
+    deleteDocument(documentID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTDynamicVoucher;
+        body: Document;
     }>;
-    fetchDynamicVoucherRedemptions(id: string, options?: {
+    deleteMediaFile(mediaFileID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<WTDynamicVoucherRedemption>;
+        body: MediaFile;
     }>;
-    fetchDynamicVouchers(isArchiveIncluded?: boolean, options?: {
+    downloadFile(fileID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<DynamicVoucher>;
+        body: string;
     }>;
-    fetchReachStatsOfAllDynamicVouchers(broadcastScheduledStartAt?: Date, broadcastScheduledEndAt?: Date, options?: {
+    failedImport(fileID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: ReachPerformanceStats;
+        body: string;
     }>;
-    fetchReachStatsOfIndividualDynamicVoucher(dynamicVoucherID: string, broadcastScheduledStartAt?: Date, broadcastScheduledEndAt?: Date, options?: {
+    fetchDocuments(folder?: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: ReachPerformanceStats;
+        body: Array<Document>;
     }>;
-    restoreDynamicVoucherCampaign(campaignID: string, options?: {
+    fetchMediaFiles(folder?: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: DynamicVoucher;
+        body: Array<MediaFile>;
     }>;
-    saveDynamicVoucher(id: string, wTDynamicVoucherUpdateParams: WTDynamicVoucherUpdateParams, options?: {
+    presignFile(wTEmployeeS3FilePresign: WTEmployeeS3FilePresign, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTDynamicVoucher;
+        body: PresignedPost;
     }>;
 }

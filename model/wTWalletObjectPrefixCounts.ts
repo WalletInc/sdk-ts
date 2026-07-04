@@ -13,8 +13,8 @@
 import { RequestFile } from './models';
 
 export class WTWalletObjectPrefixCounts extends null<String, any> {
-    'walletObjectPrefix': any | null;
-    'walletObjectName': any | null;
+    'walletObjectPrefix': string;
+    'walletObjectName': string;
     'list': any | null;
 
     static discriminator: string | undefined = undefined;
@@ -23,12 +23,12 @@ export class WTWalletObjectPrefixCounts extends null<String, any> {
         {
             "name": "walletObjectPrefix",
             "baseName": "walletObjectPrefix",
-            "type": "any"
+            "type": "string"
         },
         {
             "name": "walletObjectName",
             "baseName": "walletObjectName",
-            "type": "any"
+            "type": "string"
         },
         {
             "name": "list",

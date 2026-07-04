@@ -12,17 +12,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MerchantApi = exports.MerchantApiApiKeys = void 0;
+exports.BroadcastsApi = exports.BroadcastsApiApiKeys = void 0;
 const request_1 = __importDefault(require("request"));
 const models_1 = require("../model/models");
 const models_2 = require("../model/models");
 const apis_1 = require("./apis");
 let defaultBasePath = 'https://api.wall.et';
-var MerchantApiApiKeys;
-(function (MerchantApiApiKeys) {
-    MerchantApiApiKeys[MerchantApiApiKeys["api_key"] = 0] = "api_key";
-})(MerchantApiApiKeys = exports.MerchantApiApiKeys || (exports.MerchantApiApiKeys = {}));
-class MerchantApi {
+var BroadcastsApiApiKeys;
+(function (BroadcastsApiApiKeys) {
+    BroadcastsApiApiKeys[BroadcastsApiApiKeys["api_key"] = 0] = "api_key";
+})(BroadcastsApiApiKeys = exports.BroadcastsApiApiKeys || (exports.BroadcastsApiApiKeys = {}));
+class BroadcastsApi {
     constructor(basePathOrUsername, password, basePath) {
         this._basePath = defaultBasePath;
         this._defaultHeaders = {};
@@ -62,14 +62,15 @@ class MerchantApi {
         this.authentications.default = auth;
     }
     setApiKey(key, value) {
-        this.authentications[MerchantApiApiKeys[key]].apiKey = value;
+        this.authentications[BroadcastsApiApiKeys[key]].apiKey = value;
     }
     addInterceptor(interceptor) {
         this.interceptors.push(interceptor);
     }
-    archiveMerchantProfile(options = { headers: {} }) {
+    archivePaymentObjectBroadcast(broadcastID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/delete';
+            const localVarPath = this.basePath + '/v2/merchant/paymentObjectBroadcast/{broadcastID}'
+                .replace('{' + 'broadcastID' + '}', encodeURIComponent(String(broadcastID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -80,6 +81,9 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (broadcastID === null || broadcastID === undefined) {
+                throw new Error('Required parameter broadcastID was null or undefined when calling archivePaymentObjectBroadcast.');
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -124,9 +128,9 @@ class MerchantApi {
             });
         });
     }
-    fetchCustomRoles(options = { headers: {} }) {
+    fetchAdvertisementCreditBroadcasts(isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/roles/custom';
+            const localVarPath = this.basePath + '/v2/merchant/broadcasts/adCredits/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -137,6 +141,9 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -169,7 +176,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<AdvertisementCreditBroadcast>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -181,9 +188,9 @@ class MerchantApi {
             });
         });
     }
-    fetchEmployees(options = { headers: {} }) {
+    fetchDynamicVoucherBroadcasts(isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/employees/all';
+            const localVarPath = this.basePath + '/v2/merchant/broadcasts/dynamicVouchers/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -194,6 +201,9 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -226,7 +236,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<DynamicVoucherBroadcast>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -238,9 +248,10 @@ class MerchantApi {
             });
         });
     }
-    fetchPublicEmployees(options = { headers: {} }) {
+    fetchPaymentObjectBroadcasts(phoneNumberID, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/employees/public';
+            const localVarPath = this.basePath + '/v2/sms/paymentObjectBroadcasts/{phoneNumberID}'
+                .replace('{' + 'phoneNumberID' + '}', encodeURIComponent(String(phoneNumberID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -251,6 +262,9 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (phoneNumberID === null || phoneNumberID === undefined) {
+                throw new Error('Required parameter phoneNumberID was null or undefined when calling fetchPaymentObjectBroadcasts.');
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -283,7 +297,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<StaticVoucherCampaignBroadcast>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -295,9 +309,9 @@ class MerchantApi {
             });
         });
     }
-    fetchWalletConfiguration(options = { headers: {} }) {
+    fetchSimpleSMSBroadcasts(isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/wallet/configuration';
+            const localVarPath = this.basePath + '/v2/merchant/broadcasts/simpleSMS/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -308,6 +322,9 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
+            }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
@@ -340,7 +357,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<SimpleSMSBroadcast>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -352,9 +369,9 @@ class MerchantApi {
             });
         });
     }
-    updateMerchant(wTMerchantUpdate, options = { headers: {} }) {
+    fetchStaticVoucherCampaignBroadcasts(isArchiveIncluded, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant';
+            const localVarPath = this.basePath + '/v2/merchant/broadcasts/staticVoucherCampaign/all';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -365,19 +382,18 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTMerchantUpdate === null || wTMerchantUpdate === undefined) {
-                throw new Error('Required parameter wTMerchantUpdate was null or undefined when calling updateMerchant.');
+            if (isArchiveIncluded !== undefined) {
+                localVarQueryParameters['isArchiveIncluded'] = models_1.ObjectSerializer.serialize(isArchiveIncluded, "boolean");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'PUT',
+                method: 'GET',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdate, "WTMerchantUpdate")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -401,7 +417,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<StaticVoucherCampaignBroadcast>");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -413,9 +429,10 @@ class MerchantApi {
             });
         });
     }
-    updatePointsOfContact(wTMerchantUpdatePointsOfContact, options = { headers: {} }) {
+    scheduleAdvertisementCredit(advertisementCreditID, wTEmployeeScheduleSimpleSMS, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/pointsOfContact';
+            const localVarPath = this.basePath + '/v2/employee/sms/schedule/adCredit/{advertisementCreditID}'
+                .replace('{' + 'advertisementCreditID' + '}', encodeURIComponent(String(advertisementCreditID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -426,19 +443,22 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTMerchantUpdatePointsOfContact === null || wTMerchantUpdatePointsOfContact === undefined) {
-                throw new Error('Required parameter wTMerchantUpdatePointsOfContact was null or undefined when calling updatePointsOfContact.');
+            if (advertisementCreditID === null || advertisementCreditID === undefined) {
+                throw new Error('Required parameter advertisementCreditID was null or undefined when calling scheduleAdvertisementCredit.');
+            }
+            if (wTEmployeeScheduleSimpleSMS === null || wTEmployeeScheduleSimpleSMS === undefined) {
+                throw new Error('Required parameter wTEmployeeScheduleSimpleSMS was null or undefined when calling scheduleAdvertisementCredit.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'PUT',
+                method: 'POST',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdatePointsOfContact, "WTMerchantUpdatePointsOfContact")
+                body: models_1.ObjectSerializer.serialize(wTEmployeeScheduleSimpleSMS, "WTEmployeeScheduleSimpleSMS")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -462,7 +482,7 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "AdvertisementCreditBroadcast");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -474,9 +494,10 @@ class MerchantApi {
             });
         });
     }
-    updatePosIntegration(wTMerchantUpdatePOSIntegration, options = { headers: {} }) {
+    scheduleDynamicVoucher(dynamicVoucherID, wTEmployeeScheduleSimpleSMS, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/merchant/pos/integration';
+            const localVarPath = this.basePath + '/v2/employee/sms/schedule/dynamicVoucher/{dynamicVoucherID}'
+                .replace('{' + 'dynamicVoucherID' + '}', encodeURIComponent(String(dynamicVoucherID)));
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -487,19 +508,22 @@ class MerchantApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTMerchantUpdatePOSIntegration === null || wTMerchantUpdatePOSIntegration === undefined) {
-                throw new Error('Required parameter wTMerchantUpdatePOSIntegration was null or undefined when calling updatePosIntegration.');
+            if (dynamicVoucherID === null || dynamicVoucherID === undefined) {
+                throw new Error('Required parameter dynamicVoucherID was null or undefined when calling scheduleDynamicVoucher.');
+            }
+            if (wTEmployeeScheduleSimpleSMS === null || wTEmployeeScheduleSimpleSMS === undefined) {
+                throw new Error('Required parameter wTEmployeeScheduleSimpleSMS was null or undefined when calling scheduleDynamicVoucher.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
             let localVarRequestOptions = {
-                method: 'PUT',
+                method: 'POST',
                 qs: localVarQueryParameters,
                 headers: localVarHeaderParams,
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTMerchantUpdatePOSIntegration, "WTMerchantUpdatePOSIntegration")
+                body: models_1.ObjectSerializer.serialize(wTEmployeeScheduleSimpleSMS, "WTEmployeeScheduleSimpleSMS")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -523,7 +547,259 @@ class MerchantApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "any");
+                                body = models_1.ObjectSerializer.deserialize(body, "DynamicVoucherBroadcast");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    scheduleDynamicVoucherToRecipient(dynamicVoucherID, wTEmployeeScheduleSimpleSMSToRecipient, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/employee/sms/schedule/recipient/dynamicVoucher/{dynamicVoucherID}'
+                .replace('{' + 'dynamicVoucherID' + '}', encodeURIComponent(String(dynamicVoucherID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (dynamicVoucherID === null || dynamicVoucherID === undefined) {
+                throw new Error('Required parameter dynamicVoucherID was null or undefined when calling scheduleDynamicVoucherToRecipient.');
+            }
+            if (wTEmployeeScheduleSimpleSMSToRecipient === null || wTEmployeeScheduleSimpleSMSToRecipient === undefined) {
+                throw new Error('Required parameter wTEmployeeScheduleSimpleSMSToRecipient was null or undefined when calling scheduleDynamicVoucherToRecipient.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'POST',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+                body: models_1.ObjectSerializer.serialize(wTEmployeeScheduleSimpleSMSToRecipient, "WTEmployeeScheduleSimpleSMSToRecipient")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "DynamicVoucherBroadcast");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    scheduleSimpleSMS(wTEmployeeScheduleSimpleSMS, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/employee/sms/schedule/simple';
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (wTEmployeeScheduleSimpleSMS === null || wTEmployeeScheduleSimpleSMS === undefined) {
+                throw new Error('Required parameter wTEmployeeScheduleSimpleSMS was null or undefined when calling scheduleSimpleSMS.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'POST',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+                body: models_1.ObjectSerializer.serialize(wTEmployeeScheduleSimpleSMS, "WTEmployeeScheduleSimpleSMS")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "boolean");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    scheduleSimpleSMSToRecipient(wTEmployeeScheduleSimpleSMSToRecipient, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/employee/sms/schedule/recipient/simple';
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (wTEmployeeScheduleSimpleSMSToRecipient === null || wTEmployeeScheduleSimpleSMSToRecipient === undefined) {
+                throw new Error('Required parameter wTEmployeeScheduleSimpleSMSToRecipient was null or undefined when calling scheduleSimpleSMSToRecipient.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'POST',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+                body: models_1.ObjectSerializer.serialize(wTEmployeeScheduleSimpleSMSToRecipient, "WTEmployeeScheduleSimpleSMSToRecipient")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "boolean");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    sendSmsCampaignBroadcast(staticVoucherCampaignID, wTEmployeeScheduleSMSCampaignBroadcast, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/v2/employee/sms/schedule/campaign/{staticVoucherCampaignID}'
+                .replace('{' + 'staticVoucherCampaignID' + '}', encodeURIComponent(String(staticVoucherCampaignID)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (staticVoucherCampaignID === null || staticVoucherCampaignID === undefined) {
+                throw new Error('Required parameter staticVoucherCampaignID was null or undefined when calling sendSmsCampaignBroadcast.');
+            }
+            if (wTEmployeeScheduleSMSCampaignBroadcast === null || wTEmployeeScheduleSMSCampaignBroadcast === undefined) {
+                throw new Error('Required parameter wTEmployeeScheduleSMSCampaignBroadcast was null or undefined when calling sendSmsCampaignBroadcast.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'POST',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+                body: models_1.ObjectSerializer.serialize(wTEmployeeScheduleSMSCampaignBroadcast, "WTEmployeeScheduleSMSCampaignBroadcast")
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "StaticVoucherCampaignBroadcast");
                                 resolve({ response: response, body: body });
                             }
                             else {
@@ -536,5 +812,5 @@ class MerchantApi {
         });
     }
 }
-exports.MerchantApi = MerchantApi;
-//# sourceMappingURL=merchantApi.js.map
+exports.BroadcastsApi = BroadcastsApi;
+//# sourceMappingURL=broadcastsApi.js.map
