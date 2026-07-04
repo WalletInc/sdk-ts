@@ -11,16 +11,23 @@
  */
 
 import { RequestFile } from './models';
+import { WTVideoUploadProvisionProvider } from './wTVideoUploadProvisionProvider';
 
-export class WTVideoUploadPresign extends null<String, any> {
+export class WTVideoUploadProvision extends null<String, any> {
+    'provider': WTVideoUploadProvisionProvider;
     'url': any | null;
-    'fields': { [key: string]: any; };
-    'key': any | null;
-    'publicURL': any | null;
+    'fields'?: { [key: string]: any; };
+    'assetId': any | null;
+    'hdIncluded': any | null;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "provider",
+            "baseName": "provider",
+            "type": "WTVideoUploadProvisionProvider"
+        },
         {
             "name": "url",
             "baseName": "url",
@@ -32,18 +39,18 @@ export class WTVideoUploadPresign extends null<String, any> {
             "type": "{ [key: string]: any; }"
         },
         {
-            "name": "key",
-            "baseName": "key",
+            "name": "assetId",
+            "baseName": "assetId",
             "type": "any"
         },
         {
-            "name": "publicURL",
-            "baseName": "publicURL",
+            "name": "hdIncluded",
+            "baseName": "hdIncluded",
             "type": "any"
         }    ];
 
     static getAttributeTypeMap() {
-        return super.getAttributeTypeMap().concat(WTVideoUploadPresign.attributeTypeMap);
+        return super.getAttributeTypeMap().concat(WTVideoUploadProvision.attributeTypeMap);
     }
 }
 

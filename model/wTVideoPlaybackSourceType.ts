@@ -12,26 +12,15 @@
 
 import { RequestFile } from './models';
 
-export class WTVideoUploadPresignParams extends null<String, any> {
-    'fileName': any | null;
-    'fileType': any | null;
+export class WTVideoPlaybackSourceType {
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "fileName",
-            "baseName": "fileName",
-            "type": "any"
-        },
-        {
-            "name": "fileType",
-            "baseName": "fileType",
-            "type": "any"
-        }    ];
+    ];
 
     static getAttributeTypeMap() {
-        return super.getAttributeTypeMap().concat(WTVideoUploadPresignParams.attributeTypeMap);
+        return WTVideoPlaybackSourceType.attributeTypeMap;
     }
 }
 

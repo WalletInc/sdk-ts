@@ -12,38 +12,32 @@
 
 import { RequestFile } from './models';
 
-export class WTVideoUpdateParams extends null<String, any> {
-    'title': any | null;
-    'description': any | null;
-    'orderNumber': any | null;
-    'additionalInfoURL'?: any | null;
+export class WTVideoUploadProvisionParams extends null<String, any> {
+    'fileName': any | null;
+    'fileType': any | null;
+    'maxDurationSeconds'?: any | null;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "title",
-            "baseName": "title",
+            "name": "fileName",
+            "baseName": "fileName",
             "type": "any"
         },
         {
-            "name": "description",
-            "baseName": "description",
+            "name": "fileType",
+            "baseName": "fileType",
             "type": "any"
         },
         {
-            "name": "orderNumber",
-            "baseName": "orderNumber",
-            "type": "any"
-        },
-        {
-            "name": "additionalInfoURL",
-            "baseName": "additionalInfoURL",
+            "name": "maxDurationSeconds",
+            "baseName": "maxDurationSeconds",
             "type": "any"
         }    ];
 
     static getAttributeTypeMap() {
-        return super.getAttributeTypeMap().concat(WTVideoUpdateParams.attributeTypeMap);
+        return super.getAttributeTypeMap().concat(WTVideoUploadProvisionParams.attributeTypeMap);
     }
 }
 

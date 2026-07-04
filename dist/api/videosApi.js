@@ -249,9 +249,9 @@ class VideosApi {
             });
         });
     }
-    presignVideoUpload(wTVideoUploadPresignParams, options = { headers: {} }) {
+    provisionVideoUpload(wTVideoUploadProvisionParams, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = this.basePath + '/v2/video/presign';
+            const localVarPath = this.basePath + '/v2/video/upload/provision';
             let localVarQueryParameters = {};
             let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
             const produces = ['application/json'];
@@ -262,8 +262,8 @@ class VideosApi {
                 localVarHeaderParams.Accept = produces.join(',');
             }
             let localVarFormParams = {};
-            if (wTVideoUploadPresignParams === null || wTVideoUploadPresignParams === undefined) {
-                throw new Error('Required parameter wTVideoUploadPresignParams was null or undefined when calling presignVideoUpload.');
+            if (wTVideoUploadProvisionParams === null || wTVideoUploadProvisionParams === undefined) {
+                throw new Error('Required parameter wTVideoUploadProvisionParams was null or undefined when calling provisionVideoUpload.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -274,7 +274,7 @@ class VideosApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTVideoUploadPresignParams, "WTVideoUploadPresignParams")
+                body: models_1.ObjectSerializer.serialize(wTVideoUploadProvisionParams, "WTVideoUploadProvisionParams")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
@@ -298,7 +298,7 @@ class VideosApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "WTVideoUploadPresign");
+                                body = models_1.ObjectSerializer.deserialize(body, "WTVideoUploadProvision");
                                 resolve({ response: response, body: body });
                             }
                             else {

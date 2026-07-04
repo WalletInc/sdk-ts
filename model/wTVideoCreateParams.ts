@@ -11,13 +11,15 @@
  */
 
 import { RequestFile } from './models';
+import { VideoProvider } from './videoProvider';
 
 export class WTVideoCreateParams extends null<String, any> {
     'title': any | null;
     'description': any | null;
-    'orderNumber': number;
-    'mediaURL': any | null;
+    'orderNumber': any | null;
     'additionalInfoURL'?: any | null;
+    'provider': VideoProvider;
+    'assetId': any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -35,16 +37,21 @@ export class WTVideoCreateParams extends null<String, any> {
         {
             "name": "orderNumber",
             "baseName": "orderNumber",
-            "type": "number"
-        },
-        {
-            "name": "mediaURL",
-            "baseName": "mediaURL",
             "type": "any"
         },
         {
             "name": "additionalInfoURL",
             "baseName": "additionalInfoURL",
+            "type": "any"
+        },
+        {
+            "name": "provider",
+            "baseName": "provider",
+            "type": "VideoProvider"
+        },
+        {
+            "name": "assetId",
+            "baseName": "assetId",
             "type": "any"
         }    ];
 

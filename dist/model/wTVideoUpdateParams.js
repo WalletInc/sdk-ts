@@ -22,11 +22,6 @@ WTVideoUpdateParams.attributeTypeMap = [
     {
         "name": "orderNumber",
         "baseName": "orderNumber",
-        "type": "number"
-    },
-    {
-        "name": "mediaURL",
-        "baseName": "mediaURL",
         "type": "any"
     },
     {

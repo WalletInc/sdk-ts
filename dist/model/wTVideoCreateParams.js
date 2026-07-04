@@ -22,16 +22,21 @@ WTVideoCreateParams.attributeTypeMap = [
     {
         "name": "orderNumber",
         "baseName": "orderNumber",
-        "type": "number"
-    },
-    {
-        "name": "mediaURL",
-        "baseName": "mediaURL",
         "type": "any"
     },
     {
         "name": "additionalInfoURL",
         "baseName": "additionalInfoURL",
+        "type": "any"
+    },
+    {
+        "name": "provider",
+        "baseName": "provider",
+        "type": "VideoProvider"
+    },
+    {
+        "name": "assetId",
+        "baseName": "assetId",
         "type": "any"
     }
 ];

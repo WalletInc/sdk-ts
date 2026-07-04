@@ -299,6 +299,7 @@ model/vSCampaignGeneratedMessagePagination.ts
 model/vSDynamicVoucherStatus.ts
 model/vectorStore.ts
 model/video.ts
+model/videoProvider.ts
 model/virtualBusinessCard.ts
 model/wTA2PApplicationUpdateParams.ts
 model/wTAdvertisementCredit.ts
@@ -441,9 +442,12 @@ model/wTTicketUpdateParams.ts
 model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
 model/wTVideoCreateParams.ts
+model/wTVideoPlaybackSource.ts
+model/wTVideoPlaybackSourceType.ts
 model/wTVideoUpdateParams.ts
-model/wTVideoUploadPresign.ts
-model/wTVideoUploadPresignParams.ts
+model/wTVideoUploadProvision.ts
+model/wTVideoUploadProvisionParams.ts
+model/wTVideoUploadProvisionProvider.ts
 model/wTVirtualBusinessCardCreateParams.ts
 model/wTVirtualBusinessCardUpdateParams.ts
 model/wTWalletConfigurationSaveWalletRecord.ts

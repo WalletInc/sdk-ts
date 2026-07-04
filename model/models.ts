@@ -242,6 +242,7 @@ export * from './vSCampaignGeneratedMessagePagination';
 export * from './vSDynamicVoucherStatus';
 export * from './vectorStore';
 export * from './video';
+export * from './videoProvider';
 export * from './virtualBusinessCard';
 export * from './wTA2PApplicationUpdateParams';
 export * from './wTAdvertisementCredit';
@@ -384,9 +385,12 @@ export * from './wTTicketUpdateParams';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
 export * from './wTVideoCreateParams';
+export * from './wTVideoPlaybackSource';
+export * from './wTVideoPlaybackSourceType';
 export * from './wTVideoUpdateParams';
-export * from './wTVideoUploadPresign';
-export * from './wTVideoUploadPresignParams';
+export * from './wTVideoUploadProvision';
+export * from './wTVideoUploadProvisionParams';
+export * from './wTVideoUploadProvisionProvider';
 export * from './wTVirtualBusinessCardCreateParams';
 export * from './wTVirtualBusinessCardUpdateParams';
 export * from './wTWalletConfigurationSaveWalletRecord';
@@ -658,6 +662,7 @@ import { VSCampaignGeneratedMessagePagination } from './vSCampaignGeneratedMessa
 import { VSDynamicVoucherStatus } from './vSDynamicVoucherStatus';
 import { VectorStore } from './vectorStore';
 import { Video } from './video';
+import { VideoProvider } from './videoProvider';
 import { VirtualBusinessCard } from './virtualBusinessCard';
 import { WTA2PApplicationUpdateParams } from './wTA2PApplicationUpdateParams';
 import { WTAdvertisementCredit } from './wTAdvertisementCredit';
@@ -800,9 +805,12 @@ import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
 import { WTVideoCreateParams } from './wTVideoCreateParams';
+import { WTVideoPlaybackSource } from './wTVideoPlaybackSource';
+import { WTVideoPlaybackSourceType } from './wTVideoPlaybackSourceType';
 import { WTVideoUpdateParams } from './wTVideoUpdateParams';
-import { WTVideoUploadPresign } from './wTVideoUploadPresign';
-import { WTVideoUploadPresignParams } from './wTVideoUploadPresignParams';
+import { WTVideoUploadProvision } from './wTVideoUploadProvision';
+import { WTVideoUploadProvisionParams } from './wTVideoUploadProvisionParams';
+import { WTVideoUploadProvisionProvider } from './wTVideoUploadProvisionProvider';
 import { WTVirtualBusinessCardCreateParams } from './wTVirtualBusinessCardCreateParams';
 import { WTVirtualBusinessCardUpdateParams } from './wTVirtualBusinessCardUpdateParams';
 import { WTWalletConfigurationSaveWalletRecord } from './wTWalletConfigurationSaveWalletRecord';
@@ -1082,6 +1090,7 @@ let typeMap: {[index: string]: any} = {
     "VSDynamicVoucherStatus": VSDynamicVoucherStatus,
     "VectorStore": VectorStore,
     "Video": Video,
+    "VideoProvider": VideoProvider,
     "VirtualBusinessCard": VirtualBusinessCard,
     "WTA2PApplicationUpdateParams": WTA2PApplicationUpdateParams,
     "WTAdvertisementCredit": WTAdvertisementCredit,
@@ -1224,9 +1233,12 @@ let typeMap: {[index: string]: any} = {
     "WTTwilioRequestAuthyCode": WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,
     "WTVideoCreateParams": WTVideoCreateParams,
+    "WTVideoPlaybackSource": WTVideoPlaybackSource,
+    "WTVideoPlaybackSourceType": WTVideoPlaybackSourceType,
     "WTVideoUpdateParams": WTVideoUpdateParams,
-    "WTVideoUploadPresign": WTVideoUploadPresign,
-    "WTVideoUploadPresignParams": WTVideoUploadPresignParams,
+    "WTVideoUploadProvision": WTVideoUploadProvision,
+    "WTVideoUploadProvisionParams": WTVideoUploadProvisionParams,
+    "WTVideoUploadProvisionProvider": WTVideoUploadProvisionProvider,
     "WTVirtualBusinessCardCreateParams": WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": WTWalletConfigurationSaveWalletRecord,
