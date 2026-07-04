@@ -12,6 +12,7 @@
 
 import { RequestFile } from './models';
 import { AmenityId } from './amenityId';
+import { ProductTaxBehavior } from './productTaxBehavior';
 
 export class Service extends null<String, any> {
     'title': any | null;
@@ -20,11 +21,17 @@ export class Service extends null<String, any> {
     'orderNumber': any | null;
     'mediaURL'?: any | null;
     'additionalInfoURL'?: any | null;
+    'priceAmount'?: any | null;
+    'currency'?: any | null;
+    'isBuyable'?: any | null;
+    'taxBehavior'?: ProductTaxBehavior;
     'id': AmenityId;
     'createdAt': any | null;
     'updatedAt': any | null;
     'isActive': any | null;
     'merchantID': string;
+    'stripeProductID'?: any | null;
+    'stripePriceID'?: any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -60,6 +67,26 @@ export class Service extends null<String, any> {
             "type": "any"
         },
         {
+            "name": "priceAmount",
+            "baseName": "priceAmount",
+            "type": "any"
+        },
+        {
+            "name": "currency",
+            "baseName": "currency",
+            "type": "any"
+        },
+        {
+            "name": "isBuyable",
+            "baseName": "isBuyable",
+            "type": "any"
+        },
+        {
+            "name": "taxBehavior",
+            "baseName": "taxBehavior",
+            "type": "ProductTaxBehavior"
+        },
+        {
             "name": "id",
             "baseName": "id",
             "type": "AmenityId"
@@ -83,6 +110,16 @@ export class Service extends null<String, any> {
             "name": "merchantID",
             "baseName": "merchantID",
             "type": "string"
+        },
+        {
+            "name": "stripeProductID",
+            "baseName": "stripeProductID",
+            "type": "any"
+        },
+        {
+            "name": "stripePriceID",
+            "baseName": "stripePriceID",
+            "type": "any"
         }    ];
 
     static getAttributeTypeMap() {

@@ -199,6 +199,7 @@ export * from './portalPage';
 export * from './presignedPost';
 export * from './presignedPostFields';
 export * from './product';
+export * from './productTaxBehavior';
 export * from './profileStatuses';
 export * from './promoCode';
 export * from './qRCodeDesign';

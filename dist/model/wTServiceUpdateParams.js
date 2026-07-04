@@ -38,6 +38,26 @@ WTServiceUpdateParams.attributeTypeMap = [
         "name": "additionalInfoURL",
         "baseName": "additionalInfoURL",
         "type": "any"
+    },
+    {
+        "name": "priceAmount",
+        "baseName": "priceAmount",
+        "type": "number"
+    },
+    {
+        "name": "currency",
+        "baseName": "currency",
+        "type": "any"
+    },
+    {
+        "name": "isBuyable",
+        "baseName": "isBuyable",
+        "type": "boolean"
+    },
+    {
+        "name": "taxBehavior",
+        "baseName": "taxBehavior",
+        "type": "ProductTaxBehavior"
     }
 ];
 //# sourceMappingURL=wTServiceUpdateParams.js.map

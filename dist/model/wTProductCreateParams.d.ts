@@ -1,3 +1,4 @@
+import { ProductTaxBehavior } from './productTaxBehavior';
 export declare class WTProductCreateParams extends null<String, any> {
     'title': any | null;
     'description': any | null;
@@ -5,6 +6,10 @@ export declare class WTProductCreateParams extends null<String, any> {
     'orderNumber': number;
     'mediaURL'?: string;
     'additionalInfoURL'?: any | null;
+    'priceAmount'?: number;
+    'currency'?: any | null;
+    'isBuyable'?: boolean;
+    'taxBehavior'?: ProductTaxBehavior;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

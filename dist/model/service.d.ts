@@ -1,4 +1,5 @@
 import { AmenityId } from './amenityId';
+import { ProductTaxBehavior } from './productTaxBehavior';
 export declare class Service extends null<String, any> {
     'title': any | null;
     'description': any | null;
@@ -6,11 +7,17 @@ export declare class Service extends null<String, any> {
     'orderNumber': any | null;
     'mediaURL'?: any | null;
     'additionalInfoURL'?: any | null;
+    'priceAmount'?: any | null;
+    'currency'?: any | null;
+    'isBuyable'?: any | null;
+    'taxBehavior'?: ProductTaxBehavior;
     'id': AmenityId;
     'createdAt': any | null;
     'updatedAt': any | null;
     'isActive': any | null;
     'merchantID': string;
+    'stripeProductID'?: any | null;
+    'stripePriceID'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

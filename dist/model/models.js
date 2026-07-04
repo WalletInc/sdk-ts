@@ -213,6 +213,7 @@ __exportStar(require("./portalPage"), exports);
 __exportStar(require("./presignedPost"), exports);
 __exportStar(require("./presignedPostFields"), exports);
 __exportStar(require("./product"), exports);
+__exportStar(require("./productTaxBehavior"), exports);
 __exportStar(require("./profileStatuses"), exports);
 __exportStar(require("./promoCode"), exports);
 __exportStar(require("./qRCodeDesign"), exports);
@@ -619,6 +620,7 @@ const portalPage_1 = require("./portalPage");
 const presignedPost_1 = require("./presignedPost");
 const presignedPostFields_1 = require("./presignedPostFields");
 const product_1 = require("./product");
+const productTaxBehavior_1 = require("./productTaxBehavior");
 const profileStatuses_1 = require("./profileStatuses");
 const promoCode_1 = require("./promoCode");
 const qRCodeDesign_1 = require("./qRCodeDesign");
@@ -1047,6 +1049,7 @@ let typeMap = {
     "PresignedPost": presignedPost_1.PresignedPost,
     "PresignedPostFields": presignedPostFields_1.PresignedPostFields,
     "Product": product_1.Product,
+    "ProductTaxBehavior": productTaxBehavior_1.ProductTaxBehavior,
     "PromoCode": promoCode_1.PromoCode,
     "QRCodeDesign": qRCodeDesign_1.QRCodeDesign,
     "ReachPerformanceStats": reachPerformanceStats_1.ReachPerformanceStats,

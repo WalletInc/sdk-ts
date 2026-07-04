@@ -198,6 +198,7 @@ export * from './portalPage';
 export * from './presignedPost';
 export * from './presignedPostFields';
 export * from './product';
+export * from './productTaxBehavior';
 export * from './profileStatuses';
 export * from './promoCode';
 export * from './qRCodeDesign';
@@ -618,6 +619,7 @@ import { PortalPage } from './portalPage';
 import { PresignedPost } from './presignedPost';
 import { PresignedPostFields } from './presignedPostFields';
 import { Product } from './product';
+import { ProductTaxBehavior } from './productTaxBehavior';
 import { ProfileStatuses } from './profileStatuses';
 import { PromoCode } from './promoCode';
 import { QRCodeDesign } from './qRCodeDesign';
@@ -1050,6 +1052,7 @@ let typeMap: {[index: string]: any} = {
     "PresignedPost": PresignedPost,
     "PresignedPostFields": PresignedPostFields,
     "Product": Product,
+    "ProductTaxBehavior": ProductTaxBehavior,
     "PromoCode": PromoCode,
     "QRCodeDesign": QRCodeDesign,
     "ReachPerformanceStats": ReachPerformanceStats,

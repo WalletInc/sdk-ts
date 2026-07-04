@@ -40,6 +40,26 @@ Service.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "priceAmount",
+        "baseName": "priceAmount",
+        "type": "any"
+    },
+    {
+        "name": "currency",
+        "baseName": "currency",
+        "type": "any"
+    },
+    {
+        "name": "isBuyable",
+        "baseName": "isBuyable",
+        "type": "any"
+    },
+    {
+        "name": "taxBehavior",
+        "baseName": "taxBehavior",
+        "type": "ProductTaxBehavior"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "AmenityId"
@@ -63,6 +83,16 @@ Service.attributeTypeMap = [
         "name": "merchantID",
         "baseName": "merchantID",
         "type": "string"
+    },
+    {
+        "name": "stripeProductID",
+        "baseName": "stripeProductID",
+        "type": "any"
+    },
+    {
+        "name": "stripePriceID",
+        "baseName": "stripePriceID",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=service.js.map
