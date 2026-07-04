@@ -1,18 +1,5 @@
 /// <reference types="node" />
 import http from 'http';
-import { AdvertisementCreditBroadcast } from '../model/advertisementCreditBroadcast';
-import { DynamicVoucherBroadcast } from '../model/dynamicVoucherBroadcast';
-import { FetchInboundSMSByPage200Response } from '../model/fetchInboundSMSByPage200Response';
-import { HelpDeskRequest } from '../model/helpDeskRequest';
-import { ImportedList } from '../model/importedList';
-import { InboundSMS } from '../model/inboundSMS';
-import { OptInList } from '../model/optInList';
-import { OutboundSMS } from '../model/outboundSMS';
-import { PhoneNumber } from '../model/phoneNumber';
-import { SimpleSMSBroadcast } from '../model/simpleSMSBroadcast';
-import { StaticVoucherCampaignBroadcast } from '../model/staticVoucherCampaignBroadcast';
-import { Tcpa } from '../model/tcpa';
-import { WTCountResult } from '../model/wTCountResult';
 import { WTMerchantUpdate } from '../model/wTMerchantUpdate';
 import { WTMerchantUpdatePOSIntegration } from '../model/wTMerchantUpdatePOSIntegration';
 import { WTMerchantUpdatePointsOfContact } from '../model/wTMerchantUpdatePointsOfContact';
@@ -47,46 +34,6 @@ export declare class MerchantApi {
         response: http.IncomingMessage;
         body: any;
     }>;
-    archivePaymentObjectBroadcast(broadcastID: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: any;
-    }>;
-    countInboundSMS(phoneNumberID: string, fromPhoneNumber?: string, body?: string, startDate?: Date, endDate?: Date, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: WTCountResult;
-    }>;
-    exportInboundMessages(phoneNumberID: string, locale: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: string;
-    }>;
-    exportOutboundMessages(phoneNumberID: string, locale: string, paymentObjectBroadcastID?: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: string;
-    }>;
-    fetchAdvertisementCreditBroadcasts(isArchiveIncluded?: boolean, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<AdvertisementCreditBroadcast>;
-    }>;
     fetchCustomRoles(options?: {
         headers: {
             [name: string]: string;
@@ -94,14 +41,6 @@ export declare class MerchantApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
-    }>;
-    fetchDynamicVoucherBroadcasts(isArchiveIncluded?: boolean, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<DynamicVoucherBroadcast>;
     }>;
     fetchEmployees(options?: {
         headers: {
@@ -111,86 +50,6 @@ export declare class MerchantApi {
         response: http.IncomingMessage;
         body: any;
     }>;
-    fetchHelpDeskRequests(phoneNumberID: string, isResolved?: boolean, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<HelpDeskRequest>;
-    }>;
-    fetchImportedList(listID: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: ImportedList;
-    }>;
-    fetchImportedLists(isArchiveIncluded?: boolean, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: any;
-    }>;
-    fetchInboundSMS(phoneNumberID: string, fromPhoneNumber?: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<InboundSMS>;
-    }>;
-    fetchInboundSMSByPage(phoneNumberID: string, fromPhoneNumber?: string, pageSize?: number, pageNum?: number, startDate?: Date, endDate?: Date, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: FetchInboundSMSByPage200Response;
-    }>;
-    fetchMerchantOutboundSMS(phoneNumberID: string, toPhoneNumber: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<OutboundSMS>;
-    }>;
-    fetchMerchantPhoneNumbers(isArchiveIncluded?: boolean, isApproved?: boolean, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: any;
-    }>;
-    fetchOptInList(listID: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: OptInList;
-    }>;
-    fetchOptInLists(isArchiveIncluded?: boolean, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: any;
-    }>;
-    fetchPhoneNumber(phoneNumberID: string, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: PhoneNumber;
-    }>;
     fetchPublicEmployees(options?: {
         headers: {
             [name: string]: string;
@@ -198,30 +57,6 @@ export declare class MerchantApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
-    }>;
-    fetchSimpleSMSBroadcasts(isArchiveIncluded?: boolean, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<SimpleSMSBroadcast>;
-    }>;
-    fetchStaticVoucherCampaignBroadcasts(isArchiveIncluded?: boolean, options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<StaticVoucherCampaignBroadcast>;
-    }>;
-    fetchTCPAFilter(options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: Array<Tcpa>;
     }>;
     fetchWalletConfiguration(options?: {
         headers: {

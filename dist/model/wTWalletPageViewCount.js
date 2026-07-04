@@ -22,7 +22,7 @@ WTWalletPageViewCount.attributeTypeMap = [
     {
         "name": "dateOccurred",
         "baseName": "dateOccurred",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "walletObjectName",

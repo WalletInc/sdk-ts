@@ -69,6 +69,14 @@ export declare class DynamicVouchersApi {
         response: http.IncomingMessage;
         body: Array<WTDynamicVoucherRedemption>;
     }>;
+    fetchDynamicVouchers(isArchiveIncluded?: boolean, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Array<DynamicVoucher>;
+    }>;
     fetchReachStatsOfAllDynamicVouchers(broadcastScheduledStartAt?: Date, broadcastScheduledEndAt?: Date, options?: {
         headers: {
             [name: string]: string;

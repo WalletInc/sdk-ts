@@ -1,12 +1,19 @@
 /// <reference types="node" />
 import http from 'http';
+import { FetchOptInListSubscribersByPage200Response } from '../model/fetchOptInListSubscribersByPage200Response';
+import { OptInList } from '../model/optInList';
+import { OptInListSource } from '../model/optInListSource';
+import { OptInListSubscriber } from '../model/optInListSubscriber';
 import { WTCountResult } from '../model/wTCountResult';
+import { WTOptInListCreationParams } from '../model/wTOptInListCreationParams';
+import { WTSMSImportOptInListSubscribers } from '../model/wTSMSImportOptInListSubscribers';
+import { WTSMSOptInListSourceCreate } from '../model/wTSMSOptInListSourceCreate';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
-export declare enum DashboardSummariesApiApiKeys {
+export declare enum OptInListsApiApiKeys {
     api_key = 0
 }
-export declare class DashboardSummariesApi {
+export declare class OptInListsApi {
     protected _basePath: string;
     protected _defaultHeaders: any;
     protected _useQuerystring: boolean;
@@ -22,9 +29,9 @@ export declare class DashboardSummariesApi {
     get defaultHeaders(): any;
     get basePath(): string;
     setDefaultAuthentication(auth: Authentication): void;
-    setApiKey(key: DashboardSummariesApiApiKeys, value: string): void;
+    setApiKey(key: OptInListsApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
-    countTotalWalletSessions(startDate?: Date, endDate?: Date, options?: {
+    countOptInListSubscribers(listID: string, isSubscribed?: boolean, isPendingAge21Verification?: boolean, isArchiveIncluded?: boolean, startDate?: Date, endDate?: Date, options?: {
         headers: {
             [name: string]: string;
         };
@@ -32,7 +39,7 @@ export declare class DashboardSummariesApi {
         response: http.IncomingMessage;
         body: WTCountResult;
     }>;
-    fetchDashboardActiveStaticVouchersCount(startDateTime: Date, endDateTime: Date, options?: {
+    countOptInSourceSubscribers(sourceID: string, isSubscribed?: boolean, isPendingAge21Verification?: boolean, isArchiveIncluded?: boolean, startDate?: Date, endDate?: Date, options?: {
         headers: {
             [name: string]: string;
         };
@@ -40,132 +47,132 @@ export declare class DashboardSummariesApi {
         response: http.IncomingMessage;
         body: WTCountResult;
     }>;
-    fetchDashboardAppleWalletSubscribersCount(startDateTime: Date, endDateTime: Date, options?: {
+    createOptInList(wTOptInListCreationParams: WTOptInListCreationParams, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: OptInList;
     }>;
-    fetchDashboardEmployeesCount(startDateTime: Date, endDateTime: Date, options?: {
+    createOptInListSource(wTSMSOptInListSourceCreate: WTSMSOptInListSourceCreate, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: OptInListSource;
     }>;
-    fetchDashboardMembersCount(startDateTime: Date, endDateTime: Date, options?: {
+    exportOptInListSubscribers(listID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: string;
     }>;
-    fetchDashboardMembershipTiersCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInList(listID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: OptInList;
     }>;
-    fetchDashboardNewsArticlesCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInListSource(sourceID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: OptInListSource;
     }>;
-    fetchDashboardOptInListsCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInListSources(isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: any;
     }>;
-    fetchDashboardOptInSourcesCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInListSourcesCreatedByEmployee(options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: Array<OptInListSource>;
     }>;
-    fetchDashboardOutboundSMSCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInListSubscribers(listID: string, isSubscribed?: boolean, isPendingAge21Verification?: boolean, isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: Array<OptInListSubscriber>;
     }>;
-    fetchDashboardPOSMachinesCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInListSubscribersByPage(listID: string, pageSize?: number, pageNum?: number, isSubscribed?: boolean, isPendingAge21Verification?: boolean, isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: FetchOptInListSubscribersByPage200Response;
     }>;
-    fetchDashboardPOSTransactionsCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInLists(isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: any;
     }>;
-    fetchDashboardPerformancesCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInListsAssociatedWithPhoneNumber(phoneNumberID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: Array<OptInList>;
     }>;
-    fetchDashboardPhoneNumbersCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInSourceSubscribers(sourceID: string, isSubscribed?: boolean, isPendingAge21Verification?: boolean, isArchiveIncluded?: boolean, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: Array<OptInListSubscriber>;
     }>;
-    fetchDashboardRedemptionsCount(startDateTime: Date, endDateTime: Date, options?: {
+    fetchOptInSourcesAssociatedWithPhoneNumber(phoneNumberID: string, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: Array<OptInListSource>;
     }>;
-    fetchDashboardRefundsCount(startDateTime: Date, endDateTime: Date, options?: {
+    importOptInListSubscribers(listID: string, wTSMSImportOptInListSubscribers: WTSMSImportOptInListSubscribers, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: string;
     }>;
-    fetchDashboardWalletPageViewsCount(startDateTime: Date, endDateTime: Date, walletObjectPrefix?: string, options?: {
+    saveOptInList(listID: string, wTOptInListCreationParams: WTOptInListCreationParams, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: OptInList;
     }>;
-    fetchSubscriberCount(startDateTime: Date, endDateTime: Date, options?: {
+    saveOptInListSource(sourceID: string, wTSMSOptInListSourceCreate: WTSMSOptInListSourceCreate, options?: {
         headers: {
             [name: string]: string;
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: WTCountResult;
+        body: OptInListSource;
     }>;
 }
