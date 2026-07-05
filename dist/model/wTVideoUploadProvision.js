@@ -20,11 +20,6 @@ WTVideoUploadProvision.attributeTypeMap = [
         "type": "any"
     },
     {
-        "name": "fields",
-        "baseName": "fields",
-        "type": "{ [key: string]: any; }"
-    },
-    {
         "name": "assetId",
         "baseName": "assetId",
         "type": "any"
