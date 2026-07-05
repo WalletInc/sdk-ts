@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.1.604**, built 2026-07-04T20:29:12.695Z
+ * Wallet Inc. API reference.  **Spec version 2.1.604**, built 2026-07-05T07:29:54.586Z
  *
  * The version of the OpenAPI document: 2.1.604
  * Contact: development@wallet.inc
@@ -16,7 +16,6 @@ import { WTVideoUploadProvisionProvider } from './wTVideoUploadProvisionProvider
 export class WTVideoUploadProvision extends null<String, any> {
     'provider': WTVideoUploadProvisionProvider;
     'url': any | null;
-    'fields'?: { [key: string]: any; };
     'assetId': any | null;
     'hdIncluded': any | null;
 
@@ -32,11 +31,6 @@ export class WTVideoUploadProvision extends null<String, any> {
             "name": "url",
             "baseName": "url",
             "type": "any"
-        },
-        {
-            "name": "fields",
-            "baseName": "fields",
-            "type": "{ [key: string]: any; }"
         },
         {
             "name": "assetId",
