@@ -1455,3 +1455,24 @@ async function smsExample() {
     console.log(`Max: ${limits.max}, Sent: ${limits.sent}`);
 }
 ```
+
+
+## License
+
+Copyright 2026 Wallet Inc.
+
+This SDK is licensed under the Apache License, Version 2.0. See the `LICENSE` and
+`NOTICE` files for the full text. You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0.
+
+This SDK is auto-generated from the Wallet OpenAPI specification. Please file
+issues rather than submitting code pull requests: the generated sources are
+overwritten on each API release, so code PRs cannot be merged.
+
+Your use of the Wallet platform and API is governed by the Wallet Terms of
+Service, not by this license. The Apache-2.0 license covers this SDK's code only;
+it does not grant any right to use the Wallet platform or service.
+
+"Wallet", the Wallet logo, and "WALLET-IN-BIO" are trademarks of Wallet Inc.
+The Apache-2.0 license grants rights to the code, not to the Wallet names, logos,
+or trademarks (see Section 6 of the License).
