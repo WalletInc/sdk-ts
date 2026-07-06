@@ -106,10 +106,13 @@ jobs:
       #   env:
       #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Publish must fail LOUDLY. This ran with continue-on-error for years, which hid a broken
+      # NPMJS_AUTOMATION_TOKEN: the version bumped and dist was pushed, but every publish silently
+      # 401'd, so npm froze at 2.1.603 while the repo advanced to 2.2.x. Without continue-on-error a
+      # bad token / duplicate version turns the workflow red instead of green-but-not-published.
       - name: Publish package on NPM
         run: npm publish --access public
-        continue-on-error: true
-        # working-directory: typescript 
+        # working-directory: typescript
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTOMATION_TOKEN }}
 
