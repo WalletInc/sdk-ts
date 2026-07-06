@@ -47,6 +47,9 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
+    permissions:
+      id-token: write   # OIDC token npm exchanges for a short-lived publish credential (Trusted Publishing)
+      contents: read
     steps:
       # Checkout latest push
       - name: Checkout
@@ -57,30 +60,17 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "14.15.3"
+          node-version: "20"
           check-latest: true
           registry-url: "https://registry.npmjs.org"
-          # scope: "@walletinc"
 
-      # - name: Get yarn cache directory path
-      #   id: yarn-cache-dir-path
-      #   run: echo "dir=$(yarn cache dir)" >> "$GITHUB_OUTPUT"
-
-      # - name: Check for yarn cache
-      #   uses: actions/cache@v2
-      #   id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-      #   with:
-      #     path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-      #     key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-yarn-
-
-      - name: Setup .npmrc
-        # run: |
-          # echo -e "\nregistry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=${{ secrets.NPMJS_AUTOMATION_TOKEN }}\nalways-auth=true" >> ~/.npmrc
-          # cp -r .npmrc ~/.npmrc
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPMJS_AUTOMATION_TOKEN }}" >> ~/.npmrc
+      # Trusted Publishing (OIDC) needs a modern npm; Node 20 ships npm 10, which predates it.
+      # Upgrade to a version that supports OIDC publishing (npm >= 11.5.1). No token is used:
+      # authentication comes from the job's id-token (OIDC), which npm exchanges for a short-lived
+      # publish credential. Requires a Trusted Publisher for the wallet package on npmjs.com pointing
+      # at WalletInc/sdk-ts's ci.yml. This replaces the old NPMJS_AUTOMATION_TOKEN / .npmrc flow.
+      - name: Upgrade npm for Trusted Publishing
+        run: npm install -g npm@latest && npm --version
 
       # - name: Install NPM packages
       #   run: npm install && echo "Installed npm dependencies"
@@ -106,12 +96,11 @@ jobs:
       #   env:
       #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Publishes with provenance via Trusted Publishing (OIDC). No NODE_AUTH_TOKEN: the
+      # id-token: write permission on this job lets npm exchange the GitHub OIDC token for a
+      # short-lived publish credential. No continue-on-error, so a failed publish is visible.
       - name: Publish package on NPM
         run: npm publish --access public
-        continue-on-error: true
-        # working-directory: typescript 
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTOMATION_TOKEN }}
 
       # - name: Upload test coverage
       #   uses: actions/upload-artifact@v2
