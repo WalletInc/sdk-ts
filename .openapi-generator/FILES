@@ -376,6 +376,12 @@ model/wTInfoGenesisLookupRequestErrors.ts
 model/wTInfoGenesisRecordFilterParameters.ts
 model/wTInfoGenesisRoutingIDs.ts
 model/wTInfoGenesisUniquePostingIDs.ts
+model/wTLeadFiConsumerProfile.ts
+model/wTLeadFiConsumerProfileAddress.ts
+model/wTLeadFiConsumerProfileAssets.ts
+model/wTLeadFiConsumerProfileIncome.ts
+model/wTLeadFiCreditOffer.ts
+model/wTLeadFiInquiryResult.ts
 model/wTLocalInstance.ts
 model/wTLoungeCreateParams.ts
 model/wTLoungeUpdateParams.ts

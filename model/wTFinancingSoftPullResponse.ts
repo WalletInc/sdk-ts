@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.3.1**, built 2026-07-07T17:06:57.691Z
+ * Wallet Inc. API reference.  **Spec version 2.3.1**, built 2026-07-07T17:18:23.721Z
  *
  * The version of the OpenAPI document: 2.3.1
  * Contact: development@wallet.inc
@@ -11,12 +11,14 @@
  */
 
 import { RequestFile } from './models';
+import { WTLeadFiInquiryResult } from './wTLeadFiInquiryResult';
 
 export class WTFinancingSoftPullResponse extends null<String, any> {
     'authorizationRecordID': any | null;
     'qualificationTier'?: any | null;
+    'tier'?: any | null;
     'bureaus': any | null;
-    'result'?: any | null;
+    'result'?: WTLeadFiInquiryResult;
 
     static discriminator: string | undefined = undefined;
 
@@ -32,6 +34,11 @@ export class WTFinancingSoftPullResponse extends null<String, any> {
             "type": "any"
         },
         {
+            "name": "tier",
+            "baseName": "tier",
+            "type": "any"
+        },
+        {
             "name": "bureaus",
             "baseName": "bureaus",
             "type": "any"
@@ -39,7 +46,7 @@ export class WTFinancingSoftPullResponse extends null<String, any> {
         {
             "name": "result",
             "baseName": "result",
-            "type": "any"
+            "type": "WTLeadFiInquiryResult"
         }    ];
 
     static getAttributeTypeMap() {

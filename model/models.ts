@@ -315,6 +315,12 @@ export * from './wTInfoGenesisLookupRequestErrors';
 export * from './wTInfoGenesisRecordFilterParameters';
 export * from './wTInfoGenesisRoutingIDs';
 export * from './wTInfoGenesisUniquePostingIDs';
+export * from './wTLeadFiConsumerProfile';
+export * from './wTLeadFiConsumerProfileAddress';
+export * from './wTLeadFiConsumerProfileAssets';
+export * from './wTLeadFiConsumerProfileIncome';
+export * from './wTLeadFiCreditOffer';
+export * from './wTLeadFiInquiryResult';
 export * from './wTLocalInstance';
 export * from './wTLoungeCreateParams';
 export * from './wTLoungeUpdateParams';
@@ -739,6 +745,12 @@ import { WTInfoGenesisLookupRequestErrors } from './wTInfoGenesisLookupRequestEr
 import { WTInfoGenesisRecordFilterParameters } from './wTInfoGenesisRecordFilterParameters';
 import { WTInfoGenesisRoutingIDs } from './wTInfoGenesisRoutingIDs';
 import { WTInfoGenesisUniquePostingIDs } from './wTInfoGenesisUniquePostingIDs';
+import { WTLeadFiConsumerProfile } from './wTLeadFiConsumerProfile';
+import { WTLeadFiConsumerProfileAddress } from './wTLeadFiConsumerProfileAddress';
+import { WTLeadFiConsumerProfileAssets } from './wTLeadFiConsumerProfileAssets';
+import { WTLeadFiConsumerProfileIncome } from './wTLeadFiConsumerProfileIncome';
+import { WTLeadFiCreditOffer } from './wTLeadFiCreditOffer';
+import { WTLeadFiInquiryResult } from './wTLeadFiInquiryResult';
 import { WTLocalInstance } from './wTLocalInstance';
 import { WTLoungeCreateParams } from './wTLoungeCreateParams';
 import { WTLoungeUpdateParams } from './wTLoungeUpdateParams';
@@ -1171,6 +1183,12 @@ let typeMap: {[index: string]: any} = {
     "WTInfoGenesisRecordFilterParameters": WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": WTInfoGenesisRoutingIDs,
     "WTInfoGenesisUniquePostingIDs": WTInfoGenesisUniquePostingIDs,
+    "WTLeadFiConsumerProfile": WTLeadFiConsumerProfile,
+    "WTLeadFiConsumerProfileAddress": WTLeadFiConsumerProfileAddress,
+    "WTLeadFiConsumerProfileAssets": WTLeadFiConsumerProfileAssets,
+    "WTLeadFiConsumerProfileIncome": WTLeadFiConsumerProfileIncome,
+    "WTLeadFiCreditOffer": WTLeadFiCreditOffer,
+    "WTLeadFiInquiryResult": WTLeadFiInquiryResult,
     "WTLocalInstance": WTLocalInstance,
     "WTLoungeCreateParams": WTLoungeCreateParams,
     "WTLoungeUpdateParams": WTLoungeUpdateParams,

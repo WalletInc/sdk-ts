@@ -20,6 +20,11 @@ WTFinancingSoftPullResponse.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "tier",
+        "baseName": "tier",
+        "type": "any"
+    },
+    {
         "name": "bureaus",
         "baseName": "bureaus",
         "type": "any"
@@ -27,7 +32,7 @@ WTFinancingSoftPullResponse.attributeTypeMap = [
     {
         "name": "result",
         "baseName": "result",
-        "type": "any"
+        "type": "WTLeadFiInquiryResult"
     }
 ];
 //# sourceMappingURL=wTFinancingSoftPullResponse.js.map

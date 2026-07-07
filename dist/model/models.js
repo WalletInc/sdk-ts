@@ -330,6 +330,12 @@ __exportStar(require("./wTInfoGenesisLookupRequestErrors"), exports);
 __exportStar(require("./wTInfoGenesisRecordFilterParameters"), exports);
 __exportStar(require("./wTInfoGenesisRoutingIDs"), exports);
 __exportStar(require("./wTInfoGenesisUniquePostingIDs"), exports);
+__exportStar(require("./wTLeadFiConsumerProfile"), exports);
+__exportStar(require("./wTLeadFiConsumerProfileAddress"), exports);
+__exportStar(require("./wTLeadFiConsumerProfileAssets"), exports);
+__exportStar(require("./wTLeadFiConsumerProfileIncome"), exports);
+__exportStar(require("./wTLeadFiCreditOffer"), exports);
+__exportStar(require("./wTLeadFiInquiryResult"), exports);
 __exportStar(require("./wTLocalInstance"), exports);
 __exportStar(require("./wTLoungeCreateParams"), exports);
 __exportStar(require("./wTLoungeUpdateParams"), exports);
@@ -740,6 +746,12 @@ const wTInfoGenesisLookupRequestErrors_1 = require("./wTInfoGenesisLookupRequest
 const wTInfoGenesisRecordFilterParameters_1 = require("./wTInfoGenesisRecordFilterParameters");
 const wTInfoGenesisRoutingIDs_1 = require("./wTInfoGenesisRoutingIDs");
 const wTInfoGenesisUniquePostingIDs_1 = require("./wTInfoGenesisUniquePostingIDs");
+const wTLeadFiConsumerProfile_1 = require("./wTLeadFiConsumerProfile");
+const wTLeadFiConsumerProfileAddress_1 = require("./wTLeadFiConsumerProfileAddress");
+const wTLeadFiConsumerProfileAssets_1 = require("./wTLeadFiConsumerProfileAssets");
+const wTLeadFiConsumerProfileIncome_1 = require("./wTLeadFiConsumerProfileIncome");
+const wTLeadFiCreditOffer_1 = require("./wTLeadFiCreditOffer");
+const wTLeadFiInquiryResult_1 = require("./wTLeadFiInquiryResult");
 const wTLocalInstance_1 = require("./wTLocalInstance");
 const wTLoungeCreateParams_1 = require("./wTLoungeCreateParams");
 const wTLoungeUpdateParams_1 = require("./wTLoungeUpdateParams");
@@ -1168,6 +1180,12 @@ let typeMap = {
     "WTInfoGenesisRecordFilterParameters": wTInfoGenesisRecordFilterParameters_1.WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": wTInfoGenesisRoutingIDs_1.WTInfoGenesisRoutingIDs,
     "WTInfoGenesisUniquePostingIDs": wTInfoGenesisUniquePostingIDs_1.WTInfoGenesisUniquePostingIDs,
+    "WTLeadFiConsumerProfile": wTLeadFiConsumerProfile_1.WTLeadFiConsumerProfile,
+    "WTLeadFiConsumerProfileAddress": wTLeadFiConsumerProfileAddress_1.WTLeadFiConsumerProfileAddress,
+    "WTLeadFiConsumerProfileAssets": wTLeadFiConsumerProfileAssets_1.WTLeadFiConsumerProfileAssets,
+    "WTLeadFiConsumerProfileIncome": wTLeadFiConsumerProfileIncome_1.WTLeadFiConsumerProfileIncome,
+    "WTLeadFiCreditOffer": wTLeadFiCreditOffer_1.WTLeadFiCreditOffer,
+    "WTLeadFiInquiryResult": wTLeadFiInquiryResult_1.WTLeadFiInquiryResult,
     "WTLocalInstance": wTLocalInstance_1.WTLocalInstance,
     "WTLoungeCreateParams": wTLoungeCreateParams_1.WTLoungeCreateParams,
     "WTLoungeUpdateParams": wTLoungeUpdateParams_1.WTLoungeUpdateParams,
