@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.3.1**, built 2026-07-07T15:40:46.402Z
+ * Wallet Inc. API reference.  **Spec version 2.3.1**, built 2026-07-07T16:25:38.386Z
  *
  * The version of the OpenAPI document: 2.3.1
  * Contact: development@wallet.inc
@@ -11,9 +11,11 @@
  */
 
 import { RequestFile } from './models';
+import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingCadence';
 
 export class WTBillingChangePlan extends null<String, any> {
     'planName': any | null;
+    'billingCadence'?: WTBillingChangePlanBillingCadence;
 
     static discriminator: string | undefined = undefined;
 
@@ -22,6 +24,11 @@ export class WTBillingChangePlan extends null<String, any> {
             "name": "planName",
             "baseName": "planName",
             "type": "any"
+        },
+        {
+            "name": "billingCadence",
+            "baseName": "billingCadence",
+            "type": "WTBillingChangePlanBillingCadence"
         }    ];
 
     static getAttributeTypeMap() {

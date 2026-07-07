@@ -277,6 +277,7 @@ __exportStar(require("./wTAuthenticationRequestResetPassword"), exports);
 __exportStar(require("./wTAuthenticationResetPassword"), exports);
 __exportStar(require("./wTAuthenticationSSOLoginForDiscourse"), exports);
 __exportStar(require("./wTBillingChangePlan"), exports);
+__exportStar(require("./wTBillingChangePlanBillingCadence"), exports);
 __exportStar(require("./wTBillingSavePaymentMethod"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponse"), exports);
 __exportStar(require("./wTCountResult"), exports);
@@ -684,6 +685,7 @@ const wTAuthenticationRequestResetPassword_1 = require("./wTAuthenticationReques
 const wTAuthenticationResetPassword_1 = require("./wTAuthenticationResetPassword");
 const wTAuthenticationSSOLoginForDiscourse_1 = require("./wTAuthenticationSSOLoginForDiscourse");
 const wTBillingChangePlan_1 = require("./wTBillingChangePlan");
+const wTBillingChangePlanBillingCadence_1 = require("./wTBillingChangePlanBillingCadence");
 const wTBillingSavePaymentMethod_1 = require("./wTBillingSavePaymentMethod");
 const wTBillingVerifyPaymentMethodResponse_1 = require("./wTBillingVerifyPaymentMethodResponse");
 const wTCountResult_1 = require("./wTCountResult");
@@ -1109,6 +1111,7 @@ let typeMap = {
     "WTAuthenticationResetPassword": wTAuthenticationResetPassword_1.WTAuthenticationResetPassword,
     "WTAuthenticationSSOLoginForDiscourse": wTAuthenticationSSOLoginForDiscourse_1.WTAuthenticationSSOLoginForDiscourse,
     "WTBillingChangePlan": wTBillingChangePlan_1.WTBillingChangePlan,
+    "WTBillingChangePlanBillingCadence": wTBillingChangePlanBillingCadence_1.WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": wTBillingSavePaymentMethod_1.WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": wTBillingVerifyPaymentMethodResponse_1.WTBillingVerifyPaymentMethodResponse,
     "WTCountResult": wTCountResult_1.WTCountResult,

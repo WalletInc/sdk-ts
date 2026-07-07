@@ -263,6 +263,7 @@ export * from './wTAuthenticationRequestResetPassword';
 export * from './wTAuthenticationResetPassword';
 export * from './wTAuthenticationSSOLoginForDiscourse';
 export * from './wTBillingChangePlan';
+export * from './wTBillingChangePlanBillingCadence';
 export * from './wTBillingSavePaymentMethod';
 export * from './wTBillingVerifyPaymentMethodResponse';
 export * from './wTCountResult';

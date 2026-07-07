@@ -262,6 +262,7 @@ export * from './wTAuthenticationRequestResetPassword';
 export * from './wTAuthenticationResetPassword';
 export * from './wTAuthenticationSSOLoginForDiscourse';
 export * from './wTBillingChangePlan';
+export * from './wTBillingChangePlanBillingCadence';
 export * from './wTBillingSavePaymentMethod';
 export * from './wTBillingVerifyPaymentMethodResponse';
 export * from './wTCountResult';
@@ -683,6 +684,7 @@ import { WTAuthenticationRequestResetPassword } from './wTAuthenticationRequestR
 import { WTAuthenticationResetPassword } from './wTAuthenticationResetPassword';
 import { WTAuthenticationSSOLoginForDiscourse } from './wTAuthenticationSSOLoginForDiscourse';
 import { WTBillingChangePlan } from './wTBillingChangePlan';
+import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingCadence';
 import { WTBillingSavePaymentMethod } from './wTBillingSavePaymentMethod';
 import { WTBillingVerifyPaymentMethodResponse } from './wTBillingVerifyPaymentMethodResponse';
 import { WTCountResult } from './wTCountResult';
@@ -1112,6 +1114,7 @@ let typeMap: {[index: string]: any} = {
     "WTAuthenticationResetPassword": WTAuthenticationResetPassword,
     "WTAuthenticationSSOLoginForDiscourse": WTAuthenticationSSOLoginForDiscourse,
     "WTBillingChangePlan": WTBillingChangePlan,
+    "WTBillingChangePlanBillingCadence": WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": WTBillingVerifyPaymentMethodResponse,
     "WTCountResult": WTCountResult,

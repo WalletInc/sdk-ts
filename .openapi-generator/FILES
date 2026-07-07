@@ -323,6 +323,7 @@ model/wTAuthenticationRequestResetPassword.ts
 model/wTAuthenticationResetPassword.ts
 model/wTAuthenticationSSOLoginForDiscourse.ts
 model/wTBillingChangePlan.ts
+model/wTBillingChangePlanBillingCadence.ts
 model/wTBillingSavePaymentMethod.ts
 model/wTBillingVerifyPaymentMethodResponse.ts
 model/wTCountResult.ts
