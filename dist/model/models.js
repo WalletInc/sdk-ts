@@ -280,6 +280,13 @@ __exportStar(require("./wTBillingChangePlan"), exports);
 __exportStar(require("./wTBillingChangePlanBillingCadence"), exports);
 __exportStar(require("./wTBillingSavePaymentMethod"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponse"), exports);
+__exportStar(require("./wTConnectAccountStatus"), exports);
+__exportStar(require("./wTConnectMoney"), exports);
+__exportStar(require("./wTConnectOnboardingLinkRequest"), exports);
+__exportStar(require("./wTConnectOnboardingLinkResponse"), exports);
+__exportStar(require("./wTConnectOnboardingStatus"), exports);
+__exportStar(require("./wTConnectPaymentsSummary"), exports);
+__exportStar(require("./wTConnectPaymentsSummaryBalance"), exports);
 __exportStar(require("./wTCountResult"), exports);
 __exportStar(require("./wTCustomerSearchByMemberID"), exports);
 __exportStar(require("./wTCustomerSearchByPhoneNumber"), exports);
@@ -696,6 +703,13 @@ const wTBillingChangePlan_1 = require("./wTBillingChangePlan");
 const wTBillingChangePlanBillingCadence_1 = require("./wTBillingChangePlanBillingCadence");
 const wTBillingSavePaymentMethod_1 = require("./wTBillingSavePaymentMethod");
 const wTBillingVerifyPaymentMethodResponse_1 = require("./wTBillingVerifyPaymentMethodResponse");
+const wTConnectAccountStatus_1 = require("./wTConnectAccountStatus");
+const wTConnectMoney_1 = require("./wTConnectMoney");
+const wTConnectOnboardingLinkRequest_1 = require("./wTConnectOnboardingLinkRequest");
+const wTConnectOnboardingLinkResponse_1 = require("./wTConnectOnboardingLinkResponse");
+const wTConnectOnboardingStatus_1 = require("./wTConnectOnboardingStatus");
+const wTConnectPaymentsSummary_1 = require("./wTConnectPaymentsSummary");
+const wTConnectPaymentsSummaryBalance_1 = require("./wTConnectPaymentsSummaryBalance");
 const wTCountResult_1 = require("./wTCountResult");
 const wTCustomerSearchByMemberID_1 = require("./wTCustomerSearchByMemberID");
 const wTCustomerSearchByPhoneNumber_1 = require("./wTCustomerSearchByPhoneNumber");
@@ -1130,6 +1144,13 @@ let typeMap = {
     "WTBillingChangePlanBillingCadence": wTBillingChangePlanBillingCadence_1.WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": wTBillingSavePaymentMethod_1.WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": wTBillingVerifyPaymentMethodResponse_1.WTBillingVerifyPaymentMethodResponse,
+    "WTConnectAccountStatus": wTConnectAccountStatus_1.WTConnectAccountStatus,
+    "WTConnectMoney": wTConnectMoney_1.WTConnectMoney,
+    "WTConnectOnboardingLinkRequest": wTConnectOnboardingLinkRequest_1.WTConnectOnboardingLinkRequest,
+    "WTConnectOnboardingLinkResponse": wTConnectOnboardingLinkResponse_1.WTConnectOnboardingLinkResponse,
+    "WTConnectOnboardingStatus": wTConnectOnboardingStatus_1.WTConnectOnboardingStatus,
+    "WTConnectPaymentsSummary": wTConnectPaymentsSummary_1.WTConnectPaymentsSummary,
+    "WTConnectPaymentsSummaryBalance": wTConnectPaymentsSummaryBalance_1.WTConnectPaymentsSummaryBalance,
     "WTCountResult": wTCountResult_1.WTCountResult,
     "WTCustomerSearchByMemberID": wTCustomerSearchByMemberID_1.WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": wTCustomerSearchByPhoneNumber_1.WTCustomerSearchByPhoneNumber,

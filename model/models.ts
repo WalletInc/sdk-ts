@@ -265,6 +265,13 @@ export * from './wTBillingChangePlan';
 export * from './wTBillingChangePlanBillingCadence';
 export * from './wTBillingSavePaymentMethod';
 export * from './wTBillingVerifyPaymentMethodResponse';
+export * from './wTConnectAccountStatus';
+export * from './wTConnectMoney';
+export * from './wTConnectOnboardingLinkRequest';
+export * from './wTConnectOnboardingLinkResponse';
+export * from './wTConnectOnboardingStatus';
+export * from './wTConnectPaymentsSummary';
+export * from './wTConnectPaymentsSummaryBalance';
 export * from './wTCountResult';
 export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';
@@ -695,6 +702,13 @@ import { WTBillingChangePlan } from './wTBillingChangePlan';
 import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingCadence';
 import { WTBillingSavePaymentMethod } from './wTBillingSavePaymentMethod';
 import { WTBillingVerifyPaymentMethodResponse } from './wTBillingVerifyPaymentMethodResponse';
+import { WTConnectAccountStatus } from './wTConnectAccountStatus';
+import { WTConnectMoney } from './wTConnectMoney';
+import { WTConnectOnboardingLinkRequest } from './wTConnectOnboardingLinkRequest';
+import { WTConnectOnboardingLinkResponse } from './wTConnectOnboardingLinkResponse';
+import { WTConnectOnboardingStatus } from './wTConnectOnboardingStatus';
+import { WTConnectPaymentsSummary } from './wTConnectPaymentsSummary';
+import { WTConnectPaymentsSummaryBalance } from './wTConnectPaymentsSummaryBalance';
 import { WTCountResult } from './wTCountResult';
 import { WTCustomerSearchByMemberID } from './wTCustomerSearchByMemberID';
 import { WTCustomerSearchByPhoneNumber } from './wTCustomerSearchByPhoneNumber';
@@ -1133,6 +1147,13 @@ let typeMap: {[index: string]: any} = {
     "WTBillingChangePlanBillingCadence": WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": WTBillingVerifyPaymentMethodResponse,
+    "WTConnectAccountStatus": WTConnectAccountStatus,
+    "WTConnectMoney": WTConnectMoney,
+    "WTConnectOnboardingLinkRequest": WTConnectOnboardingLinkRequest,
+    "WTConnectOnboardingLinkResponse": WTConnectOnboardingLinkResponse,
+    "WTConnectOnboardingStatus": WTConnectOnboardingStatus,
+    "WTConnectPaymentsSummary": WTConnectPaymentsSummary,
+    "WTConnectPaymentsSummaryBalance": WTConnectPaymentsSummaryBalance,
     "WTCountResult": WTCountResult,
     "WTCustomerSearchByMemberID": WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": WTCustomerSearchByPhoneNumber,

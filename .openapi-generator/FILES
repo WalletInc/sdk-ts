@@ -49,6 +49,7 @@ api/shopifyTerminalApi.ts
 api/shortLinksApi.ts
 api/staticVoucherCampaignsApi.ts
 api/staticVouchersApi.ts
+api/stripeConnectApi.ts
 api/systemApi.ts
 api/ticketsApi.ts
 api/videosApi.ts
@@ -326,6 +327,13 @@ model/wTBillingChangePlan.ts
 model/wTBillingChangePlanBillingCadence.ts
 model/wTBillingSavePaymentMethod.ts
 model/wTBillingVerifyPaymentMethodResponse.ts
+model/wTConnectAccountStatus.ts
+model/wTConnectMoney.ts
+model/wTConnectOnboardingLinkRequest.ts
+model/wTConnectOnboardingLinkResponse.ts
+model/wTConnectOnboardingStatus.ts
+model/wTConnectPaymentsSummary.ts
+model/wTConnectPaymentsSummaryBalance.ts
 model/wTCountResult.ts
 model/wTCustomerSearchByMemberID.ts
 model/wTCustomerSearchByPhoneNumber.ts

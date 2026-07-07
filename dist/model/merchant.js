@@ -115,6 +115,11 @@ Merchant.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "stripeConnectAccountID",
+        "baseName": "stripeConnectAccountID",
+        "type": "any"
+    },
+    {
         "name": "isPaymentMethodProvided",
         "baseName": "isPaymentMethodProvided",
         "type": "any"
