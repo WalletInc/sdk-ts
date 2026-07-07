@@ -303,6 +303,8 @@ export * from './wTEmployeeSendHelpDeskResponse';
 export * from './wTEmployeeUpdate';
 export * from './wTEmployeeUpdateRecords';
 export * from './wTFetchWalletPaymentObjectsWithToken';
+export * from './wTFinancingSoftPullRequest';
+export * from './wTFinancingSoftPullResponse';
 export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
 export * from './wTImageGridCreateParams';

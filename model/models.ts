@@ -302,6 +302,8 @@ export * from './wTEmployeeSendHelpDeskResponse';
 export * from './wTEmployeeUpdate';
 export * from './wTEmployeeUpdateRecords';
 export * from './wTFetchWalletPaymentObjectsWithToken';
+export * from './wTFinancingSoftPullRequest';
+export * from './wTFinancingSoftPullResponse';
 export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
 export * from './wTImageGridCreateParams';
@@ -724,6 +726,8 @@ import { WTEmployeeSendHelpDeskResponse } from './wTEmployeeSendHelpDeskResponse
 import { WTEmployeeUpdate } from './wTEmployeeUpdate';
 import { WTEmployeeUpdateRecords } from './wTEmployeeUpdateRecords';
 import { WTFetchWalletPaymentObjectsWithToken } from './wTFetchWalletPaymentObjectsWithToken';
+import { WTFinancingSoftPullRequest } from './wTFinancingSoftPullRequest';
+import { WTFinancingSoftPullResponse } from './wTFinancingSoftPullResponse';
 import { WTGamingCreateParams } from './wTGamingCreateParams';
 import { WTGamingUpdateParams } from './wTGamingUpdateParams';
 import { WTImageGridCreateParams } from './wTImageGridCreateParams';
@@ -1154,6 +1158,8 @@ let typeMap: {[index: string]: any} = {
     "WTEmployeeUpdate": WTEmployeeUpdate,
     "WTEmployeeUpdateRecords": WTEmployeeUpdateRecords,
     "WTFetchWalletPaymentObjectsWithToken": WTFetchWalletPaymentObjectsWithToken,
+    "WTFinancingSoftPullRequest": WTFinancingSoftPullRequest,
+    "WTFinancingSoftPullResponse": WTFinancingSoftPullResponse,
     "WTGamingCreateParams": WTGamingCreateParams,
     "WTGamingUpdateParams": WTGamingUpdateParams,
     "WTImageGridCreateParams": WTImageGridCreateParams,
