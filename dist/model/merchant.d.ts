@@ -21,6 +21,10 @@ export declare class Merchant extends null<String, any> {
     'customerServiceContactEmployeeID': any | null;
     'stripeCustomerID': any | null;
     'stripeConnectAccountID'?: any | null;
+    'stripeConnectChargesEnabled'?: any | null;
+    'stripeConnectPayoutsEnabled'?: any | null;
+    'stripeConnectDetailsSubmitted'?: any | null;
+    'stripeConnectOnboardingStatus'?: any | null;
     'isPaymentMethodProvided': any | null;
     'planNickname': any | null;
     'maxSMSCount': any | null;
