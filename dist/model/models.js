@@ -374,6 +374,18 @@ __exportStar(require("./wTPerformanceUpdateParams"), exports);
 __exportStar(require("./wTPosMachine"), exports);
 __exportStar(require("./wTPosMachineCreateParams"), exports);
 __exportStar(require("./wTPosMachineUpdateParams"), exports);
+__exportStar(require("./wTPrizeGameActivePromotion"), exports);
+__exportStar(require("./wTPrizeGamePlayLimitPeriod"), exports);
+__exportStar(require("./wTPrizeGamePlayRequest"), exports);
+__exportStar(require("./wTPrizeGamePlayResult"), exports);
+__exportStar(require("./wTPrizeGamePlayResultOutcome"), exports);
+__exportStar(require("./wTPrizeGamePlayResultPrize"), exports);
+__exportStar(require("./wTPrizeGameTrigger"), exports);
+__exportStar(require("./wTPrizeGameType"), exports);
+__exportStar(require("./wTPrizePromotion"), exports);
+__exportStar(require("./wTPrizePromotionCreateParams"), exports);
+__exportStar(require("./wTPrizePromotionPrizeTier"), exports);
+__exportStar(require("./wTPrizePromotionUpdateParams"), exports);
 __exportStar(require("./wTProductCreateParams"), exports);
 __exportStar(require("./wTProductUpdateParams"), exports);
 __exportStar(require("./wTPromoCodeCreateParams"), exports);
@@ -797,6 +809,18 @@ const wTPerformanceUpdateParams_1 = require("./wTPerformanceUpdateParams");
 const wTPosMachine_1 = require("./wTPosMachine");
 const wTPosMachineCreateParams_1 = require("./wTPosMachineCreateParams");
 const wTPosMachineUpdateParams_1 = require("./wTPosMachineUpdateParams");
+const wTPrizeGameActivePromotion_1 = require("./wTPrizeGameActivePromotion");
+const wTPrizeGamePlayLimitPeriod_1 = require("./wTPrizeGamePlayLimitPeriod");
+const wTPrizeGamePlayRequest_1 = require("./wTPrizeGamePlayRequest");
+const wTPrizeGamePlayResult_1 = require("./wTPrizeGamePlayResult");
+const wTPrizeGamePlayResultOutcome_1 = require("./wTPrizeGamePlayResultOutcome");
+const wTPrizeGamePlayResultPrize_1 = require("./wTPrizeGamePlayResultPrize");
+const wTPrizeGameTrigger_1 = require("./wTPrizeGameTrigger");
+const wTPrizeGameType_1 = require("./wTPrizeGameType");
+const wTPrizePromotion_1 = require("./wTPrizePromotion");
+const wTPrizePromotionCreateParams_1 = require("./wTPrizePromotionCreateParams");
+const wTPrizePromotionPrizeTier_1 = require("./wTPrizePromotionPrizeTier");
+const wTPrizePromotionUpdateParams_1 = require("./wTPrizePromotionUpdateParams");
 const wTProductCreateParams_1 = require("./wTProductCreateParams");
 const wTProductUpdateParams_1 = require("./wTProductUpdateParams");
 const wTPromoCodeCreateParams_1 = require("./wTPromoCodeCreateParams");
@@ -1238,6 +1262,18 @@ let typeMap = {
     "WTPosMachine": wTPosMachine_1.WTPosMachine,
     "WTPosMachineCreateParams": wTPosMachineCreateParams_1.WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": wTPosMachineUpdateParams_1.WTPosMachineUpdateParams,
+    "WTPrizeGameActivePromotion": wTPrizeGameActivePromotion_1.WTPrizeGameActivePromotion,
+    "WTPrizeGamePlayLimitPeriod": wTPrizeGamePlayLimitPeriod_1.WTPrizeGamePlayLimitPeriod,
+    "WTPrizeGamePlayRequest": wTPrizeGamePlayRequest_1.WTPrizeGamePlayRequest,
+    "WTPrizeGamePlayResult": wTPrizeGamePlayResult_1.WTPrizeGamePlayResult,
+    "WTPrizeGamePlayResultOutcome": wTPrizeGamePlayResultOutcome_1.WTPrizeGamePlayResultOutcome,
+    "WTPrizeGamePlayResultPrize": wTPrizeGamePlayResultPrize_1.WTPrizeGamePlayResultPrize,
+    "WTPrizeGameTrigger": wTPrizeGameTrigger_1.WTPrizeGameTrigger,
+    "WTPrizeGameType": wTPrizeGameType_1.WTPrizeGameType,
+    "WTPrizePromotion": wTPrizePromotion_1.WTPrizePromotion,
+    "WTPrizePromotionCreateParams": wTPrizePromotionCreateParams_1.WTPrizePromotionCreateParams,
+    "WTPrizePromotionPrizeTier": wTPrizePromotionPrizeTier_1.WTPrizePromotionPrizeTier,
+    "WTPrizePromotionUpdateParams": wTPrizePromotionUpdateParams_1.WTPrizePromotionUpdateParams,
     "WTProductCreateParams": wTProductCreateParams_1.WTProductCreateParams,
     "WTProductUpdateParams": wTProductUpdateParams_1.WTProductUpdateParams,
     "WTPromoCodeCreateParams": wTPromoCodeCreateParams_1.WTPromoCodeCreateParams,

@@ -4,6 +4,9 @@ import { WTAdvertisementCredit } from '../model/wTAdvertisementCredit';
 import { WTAdvertisementCreditCreateParams } from '../model/wTAdvertisementCreditCreateParams';
 import { WTAdvertisementCreditScan } from '../model/wTAdvertisementCreditScan';
 import { WTAdvertisementCreditUpdateParams } from '../model/wTAdvertisementCreditUpdateParams';
+import { WTPrizePromotion } from '../model/wTPrizePromotion';
+import { WTPrizePromotionCreateParams } from '../model/wTPrizePromotionCreateParams';
+import { WTPrizePromotionUpdateParams } from '../model/wTPrizePromotionUpdateParams';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum PrizesApiApiKeys {
@@ -43,6 +46,14 @@ export declare class PrizesApi {
         response: http.IncomingMessage;
         body: WTAdvertisementCredit;
     }>;
+    createPrizePromotion(wTPrizePromotionCreateParams: WTPrizePromotionCreateParams, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTPrizePromotion;
+    }>;
     fetchAdvertisementCreditById(id: string, options?: {
         headers: {
             [name: string]: string;
@@ -67,6 +78,14 @@ export declare class PrizesApi {
         response: http.IncomingMessage;
         body: Array<WTAdvertisementCredit>;
     }>;
+    fetchPrizePromotions(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Array<WTPrizePromotion>;
+    }>;
     restoreAdvertisementCredit(id: string, options?: {
         headers: {
             [name: string]: string;
@@ -82,5 +101,13 @@ export declare class PrizesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: WTAdvertisementCredit;
+    }>;
+    updatePrizePromotion(promotionID: string, wTPrizePromotionUpdateParams: WTPrizePromotionUpdateParams, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTPrizePromotion;
     }>;
 }

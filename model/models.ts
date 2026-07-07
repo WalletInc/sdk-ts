@@ -359,6 +359,18 @@ export * from './wTPerformanceUpdateParams';
 export * from './wTPosMachine';
 export * from './wTPosMachineCreateParams';
 export * from './wTPosMachineUpdateParams';
+export * from './wTPrizeGameActivePromotion';
+export * from './wTPrizeGamePlayLimitPeriod';
+export * from './wTPrizeGamePlayRequest';
+export * from './wTPrizeGamePlayResult';
+export * from './wTPrizeGamePlayResultOutcome';
+export * from './wTPrizeGamePlayResultPrize';
+export * from './wTPrizeGameTrigger';
+export * from './wTPrizeGameType';
+export * from './wTPrizePromotion';
+export * from './wTPrizePromotionCreateParams';
+export * from './wTPrizePromotionPrizeTier';
+export * from './wTPrizePromotionUpdateParams';
 export * from './wTProductCreateParams';
 export * from './wTProductUpdateParams';
 export * from './wTPromoCodeCreateParams';
@@ -796,6 +808,18 @@ import { WTPerformanceUpdateParams } from './wTPerformanceUpdateParams';
 import { WTPosMachine } from './wTPosMachine';
 import { WTPosMachineCreateParams } from './wTPosMachineCreateParams';
 import { WTPosMachineUpdateParams } from './wTPosMachineUpdateParams';
+import { WTPrizeGameActivePromotion } from './wTPrizeGameActivePromotion';
+import { WTPrizeGamePlayLimitPeriod } from './wTPrizeGamePlayLimitPeriod';
+import { WTPrizeGamePlayRequest } from './wTPrizeGamePlayRequest';
+import { WTPrizeGamePlayResult } from './wTPrizeGamePlayResult';
+import { WTPrizeGamePlayResultOutcome } from './wTPrizeGamePlayResultOutcome';
+import { WTPrizeGamePlayResultPrize } from './wTPrizeGamePlayResultPrize';
+import { WTPrizeGameTrigger } from './wTPrizeGameTrigger';
+import { WTPrizeGameType } from './wTPrizeGameType';
+import { WTPrizePromotion } from './wTPrizePromotion';
+import { WTPrizePromotionCreateParams } from './wTPrizePromotionCreateParams';
+import { WTPrizePromotionPrizeTier } from './wTPrizePromotionPrizeTier';
+import { WTPrizePromotionUpdateParams } from './wTPrizePromotionUpdateParams';
 import { WTProductCreateParams } from './wTProductCreateParams';
 import { WTProductUpdateParams } from './wTProductUpdateParams';
 import { WTPromoCodeCreateParams } from './wTPromoCodeCreateParams';
@@ -1241,6 +1265,18 @@ let typeMap: {[index: string]: any} = {
     "WTPosMachine": WTPosMachine,
     "WTPosMachineCreateParams": WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": WTPosMachineUpdateParams,
+    "WTPrizeGameActivePromotion": WTPrizeGameActivePromotion,
+    "WTPrizeGamePlayLimitPeriod": WTPrizeGamePlayLimitPeriod,
+    "WTPrizeGamePlayRequest": WTPrizeGamePlayRequest,
+    "WTPrizeGamePlayResult": WTPrizeGamePlayResult,
+    "WTPrizeGamePlayResultOutcome": WTPrizeGamePlayResultOutcome,
+    "WTPrizeGamePlayResultPrize": WTPrizeGamePlayResultPrize,
+    "WTPrizeGameTrigger": WTPrizeGameTrigger,
+    "WTPrizeGameType": WTPrizeGameType,
+    "WTPrizePromotion": WTPrizePromotion,
+    "WTPrizePromotionCreateParams": WTPrizePromotionCreateParams,
+    "WTPrizePromotionPrizeTier": WTPrizePromotionPrizeTier,
+    "WTPrizePromotionUpdateParams": WTPrizePromotionUpdateParams,
     "WTProductCreateParams": WTProductCreateParams,
     "WTProductUpdateParams": WTProductUpdateParams,
     "WTPromoCodeCreateParams": WTPromoCodeCreateParams,

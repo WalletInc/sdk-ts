@@ -14,6 +14,10 @@ import { StaticVoucher } from '../model/staticVoucher';
 import { Ticket } from '../model/ticket';
 import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
 import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
+import { WTPrizeGameActivePromotion } from '../model/wTPrizeGameActivePromotion';
+import { WTPrizeGamePlayRequest } from '../model/wTPrizeGamePlayRequest';
+import { WTPrizeGamePlayResult } from '../model/wTPrizeGamePlayResult';
+import { WTPrizeGameType } from '../model/wTPrizeGameType';
 import { WTSmsSubscriberCreateParamsWalletUI } from '../model/wTSmsSubscriberCreateParamsWalletUI';
 import { WalletConfiguration } from '../model/walletConfiguration';
 import { Authentication, Interceptor } from '../model/models';
@@ -86,6 +90,14 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Array<DynamicVoucher>;
+    }>;
+    fetchActivePrizeGamePromotion(merchantID: string, gameType: WTPrizeGameType, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTPrizeGameActivePromotion;
     }>;
     fetchAdvertisementCreditScansFromList(merchantID: string, fetchAdvertisementCreditScansFromListRequest: FetchAdvertisementCreditScansFromListRequest, options?: {
         headers: {
@@ -166,6 +178,14 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
+    }>;
+    playPrizeGame(wTPrizeGamePlayRequest: WTPrizeGamePlayRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTPrizeGamePlayResult;
     }>;
     requestMerchantURLRedirect(itemID: string, browserDetails: BrowserDetails, options?: {
         headers: {

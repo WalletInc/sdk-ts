@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.3.1**, built 2026-07-07T18:06:11.567Z
+ * Wallet Inc. API reference.  **Spec version 2.3.1**, built 2026-07-07T21:13:51.937Z
  *
  * The version of the OpenAPI document: 2.3.1
  * Contact: development@wallet.inc
@@ -31,6 +31,10 @@ import { StaticVoucher } from '../model/staticVoucher';
 import { Ticket } from '../model/ticket';
 import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
 import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
+import { WTPrizeGameActivePromotion } from '../model/wTPrizeGameActivePromotion';
+import { WTPrizeGamePlayRequest } from '../model/wTPrizeGamePlayRequest';
+import { WTPrizeGamePlayResult } from '../model/wTPrizeGamePlayResult';
+import { WTPrizeGameType } from '../model/wTPrizeGameType';
 import { WTSmsSubscriberCreateParamsWalletUI } from '../model/wTSmsSubscriberCreateParamsWalletUI';
 import { WalletConfiguration } from '../model/walletConfiguration';
 
@@ -521,6 +525,85 @@ export class InteractionsApi {
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                             body = ObjectSerializer.deserialize(body, "Array<DynamicVoucher>");
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * 
+     * @summary Get the active prize-game promotion Guest-facing read that drives the game UI and the Official Rules surface: sponsor (the merchant), title, honest odds disclosure, prize list, play limits, and the minimum age. Returns { active: false } when the merchant has no live promotion for the game.
+     * @param merchantID 
+     * @param gameType 
+     */
+    public async fetchActivePrizeGamePromotion (merchantID: string, gameType: WTPrizeGameType, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTPrizeGameActivePromotion;  }> {
+        const localVarPath = this.basePath + '/wallet/prizeGame/active/{merchantID}'
+            .replace('{' + 'merchantID' + '}', encodeURIComponent(String(merchantID)));
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'merchantID' is not null or undefined
+        if (merchantID === null || merchantID === undefined) {
+            throw new Error('Required parameter merchantID was null or undefined when calling fetchActivePrizeGamePromotion.');
+        }
+
+        // verify required parameter 'gameType' is not null or undefined
+        if (gameType === null || gameType === undefined) {
+            throw new Error('Required parameter gameType was null or undefined when calling fetchActivePrizeGamePromotion.');
+        }
+
+        if (gameType !== undefined) {
+            localVarQueryParameters['gameType'] = ObjectSerializer.serialize(gameType, "WTPrizeGameType");
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'GET',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+        };
+
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: WTPrizeGameActivePromotion;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            body = ObjectSerializer.deserialize(body, "WTPrizeGameActivePromotion");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -1249,6 +1332,75 @@ export class InteractionsApi {
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                             body = ObjectSerializer.deserialize(body, "any");
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * 
+     * @summary Play a prize game Server-authoritative instant-win play (KAN-307): the server decides win/lose and the prize with a crypto-grade RNG, enforces the per-guest play limit and prize inventory, records the audited play with its odds snapshot, and on a win issues the prize into the guest\'s My Prizes via the existing Prize (Advertisement Credit) scan path. Requires the OTP-verified phone token; carries NO payment surface of any kind (plays are always free).
+     * @param wTPrizeGamePlayRequest 
+     */
+    public async playPrizeGame (wTPrizeGamePlayRequest: WTPrizeGamePlayRequest, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTPrizeGamePlayResult;  }> {
+        const localVarPath = this.basePath + '/wallet/prizeGame/play';
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'wTPrizeGamePlayRequest' is not null or undefined
+        if (wTPrizeGamePlayRequest === null || wTPrizeGamePlayRequest === undefined) {
+            throw new Error('Required parameter wTPrizeGamePlayRequest was null or undefined when calling playPrizeGame.');
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'POST',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+            body: ObjectSerializer.serialize(wTPrizeGamePlayRequest, "WTPrizeGamePlayRequest")
+        };
+
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: WTPrizeGamePlayResult;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            body = ObjectSerializer.deserialize(body, "WTPrizeGamePlayResult");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
