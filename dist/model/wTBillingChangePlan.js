@@ -13,6 +13,11 @@ WTBillingChangePlan.attributeTypeMap = [
         "name": "planName",
         "baseName": "planName",
         "type": "any"
+    },
+    {
+        "name": "billingCadence",
+        "baseName": "billingCadence",
+        "type": "WTBillingChangePlanBillingCadence"
     }
 ];
 //# sourceMappingURL=wTBillingChangePlan.js.map

@@ -6,6 +6,8 @@ import { SetDefaultPaymentMethodRequest } from '../model/setDefaultPaymentMethod
 import { WTBillingChangePlan } from '../model/wTBillingChangePlan';
 import { WTBillingSavePaymentMethod } from '../model/wTBillingSavePaymentMethod';
 import { WTBillingVerifyPaymentMethodResponse } from '../model/wTBillingVerifyPaymentMethodResponse';
+import { WTFinancingSoftPullRequest } from '../model/wTFinancingSoftPullRequest';
+import { WTFinancingSoftPullResponse } from '../model/wTFinancingSoftPullResponse';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum BillingPaymentsApiApiKeys {
@@ -124,6 +126,14 @@ export declare class BillingPaymentsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: object;
+    }>;
+    runFinancingSoftPull(wTFinancingSoftPullRequest: WTFinancingSoftPullRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTFinancingSoftPullResponse;
     }>;
     savePaymentMethod(wTBillingSavePaymentMethod: WTBillingSavePaymentMethod, options?: {
         headers: {
