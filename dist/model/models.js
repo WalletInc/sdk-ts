@@ -277,8 +277,16 @@ __exportStar(require("./wTAuthenticationRequestResetPassword"), exports);
 __exportStar(require("./wTAuthenticationResetPassword"), exports);
 __exportStar(require("./wTAuthenticationSSOLoginForDiscourse"), exports);
 __exportStar(require("./wTBillingChangePlan"), exports);
+__exportStar(require("./wTBillingChangePlanBillingCadence"), exports);
 __exportStar(require("./wTBillingSavePaymentMethod"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponse"), exports);
+__exportStar(require("./wTConnectAccountStatus"), exports);
+__exportStar(require("./wTConnectMoney"), exports);
+__exportStar(require("./wTConnectOnboardingLinkRequest"), exports);
+__exportStar(require("./wTConnectOnboardingLinkResponse"), exports);
+__exportStar(require("./wTConnectOnboardingStatus"), exports);
+__exportStar(require("./wTConnectPaymentsSummary"), exports);
+__exportStar(require("./wTConnectPaymentsSummaryBalance"), exports);
 __exportStar(require("./wTCountResult"), exports);
 __exportStar(require("./wTCustomerSearchByMemberID"), exports);
 __exportStar(require("./wTCustomerSearchByPhoneNumber"), exports);
@@ -316,6 +324,8 @@ __exportStar(require("./wTEmployeeSendHelpDeskResponse"), exports);
 __exportStar(require("./wTEmployeeUpdate"), exports);
 __exportStar(require("./wTEmployeeUpdateRecords"), exports);
 __exportStar(require("./wTFetchWalletPaymentObjectsWithToken"), exports);
+__exportStar(require("./wTFinancingSoftPullRequest"), exports);
+__exportStar(require("./wTFinancingSoftPullResponse"), exports);
 __exportStar(require("./wTGamingCreateParams"), exports);
 __exportStar(require("./wTGamingUpdateParams"), exports);
 __exportStar(require("./wTImageGridCreateParams"), exports);
@@ -327,6 +337,12 @@ __exportStar(require("./wTInfoGenesisLookupRequestErrors"), exports);
 __exportStar(require("./wTInfoGenesisRecordFilterParameters"), exports);
 __exportStar(require("./wTInfoGenesisRoutingIDs"), exports);
 __exportStar(require("./wTInfoGenesisUniquePostingIDs"), exports);
+__exportStar(require("./wTLeadFiConsumerProfile"), exports);
+__exportStar(require("./wTLeadFiConsumerProfileAddress"), exports);
+__exportStar(require("./wTLeadFiConsumerProfileAssets"), exports);
+__exportStar(require("./wTLeadFiConsumerProfileIncome"), exports);
+__exportStar(require("./wTLeadFiCreditOffer"), exports);
+__exportStar(require("./wTLeadFiInquiryResult"), exports);
 __exportStar(require("./wTLocalInstance"), exports);
 __exportStar(require("./wTLoungeCreateParams"), exports);
 __exportStar(require("./wTLoungeUpdateParams"), exports);
@@ -684,8 +700,16 @@ const wTAuthenticationRequestResetPassword_1 = require("./wTAuthenticationReques
 const wTAuthenticationResetPassword_1 = require("./wTAuthenticationResetPassword");
 const wTAuthenticationSSOLoginForDiscourse_1 = require("./wTAuthenticationSSOLoginForDiscourse");
 const wTBillingChangePlan_1 = require("./wTBillingChangePlan");
+const wTBillingChangePlanBillingCadence_1 = require("./wTBillingChangePlanBillingCadence");
 const wTBillingSavePaymentMethod_1 = require("./wTBillingSavePaymentMethod");
 const wTBillingVerifyPaymentMethodResponse_1 = require("./wTBillingVerifyPaymentMethodResponse");
+const wTConnectAccountStatus_1 = require("./wTConnectAccountStatus");
+const wTConnectMoney_1 = require("./wTConnectMoney");
+const wTConnectOnboardingLinkRequest_1 = require("./wTConnectOnboardingLinkRequest");
+const wTConnectOnboardingLinkResponse_1 = require("./wTConnectOnboardingLinkResponse");
+const wTConnectOnboardingStatus_1 = require("./wTConnectOnboardingStatus");
+const wTConnectPaymentsSummary_1 = require("./wTConnectPaymentsSummary");
+const wTConnectPaymentsSummaryBalance_1 = require("./wTConnectPaymentsSummaryBalance");
 const wTCountResult_1 = require("./wTCountResult");
 const wTCustomerSearchByMemberID_1 = require("./wTCustomerSearchByMemberID");
 const wTCustomerSearchByPhoneNumber_1 = require("./wTCustomerSearchByPhoneNumber");
@@ -723,6 +747,8 @@ const wTEmployeeSendHelpDeskResponse_1 = require("./wTEmployeeSendHelpDeskRespon
 const wTEmployeeUpdate_1 = require("./wTEmployeeUpdate");
 const wTEmployeeUpdateRecords_1 = require("./wTEmployeeUpdateRecords");
 const wTFetchWalletPaymentObjectsWithToken_1 = require("./wTFetchWalletPaymentObjectsWithToken");
+const wTFinancingSoftPullRequest_1 = require("./wTFinancingSoftPullRequest");
+const wTFinancingSoftPullResponse_1 = require("./wTFinancingSoftPullResponse");
 const wTGamingCreateParams_1 = require("./wTGamingCreateParams");
 const wTGamingUpdateParams_1 = require("./wTGamingUpdateParams");
 const wTImageGridCreateParams_1 = require("./wTImageGridCreateParams");
@@ -734,6 +760,12 @@ const wTInfoGenesisLookupRequestErrors_1 = require("./wTInfoGenesisLookupRequest
 const wTInfoGenesisRecordFilterParameters_1 = require("./wTInfoGenesisRecordFilterParameters");
 const wTInfoGenesisRoutingIDs_1 = require("./wTInfoGenesisRoutingIDs");
 const wTInfoGenesisUniquePostingIDs_1 = require("./wTInfoGenesisUniquePostingIDs");
+const wTLeadFiConsumerProfile_1 = require("./wTLeadFiConsumerProfile");
+const wTLeadFiConsumerProfileAddress_1 = require("./wTLeadFiConsumerProfileAddress");
+const wTLeadFiConsumerProfileAssets_1 = require("./wTLeadFiConsumerProfileAssets");
+const wTLeadFiConsumerProfileIncome_1 = require("./wTLeadFiConsumerProfileIncome");
+const wTLeadFiCreditOffer_1 = require("./wTLeadFiCreditOffer");
+const wTLeadFiInquiryResult_1 = require("./wTLeadFiInquiryResult");
 const wTLocalInstance_1 = require("./wTLocalInstance");
 const wTLoungeCreateParams_1 = require("./wTLoungeCreateParams");
 const wTLoungeUpdateParams_1 = require("./wTLoungeUpdateParams");
@@ -1109,8 +1141,16 @@ let typeMap = {
     "WTAuthenticationResetPassword": wTAuthenticationResetPassword_1.WTAuthenticationResetPassword,
     "WTAuthenticationSSOLoginForDiscourse": wTAuthenticationSSOLoginForDiscourse_1.WTAuthenticationSSOLoginForDiscourse,
     "WTBillingChangePlan": wTBillingChangePlan_1.WTBillingChangePlan,
+    "WTBillingChangePlanBillingCadence": wTBillingChangePlanBillingCadence_1.WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": wTBillingSavePaymentMethod_1.WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": wTBillingVerifyPaymentMethodResponse_1.WTBillingVerifyPaymentMethodResponse,
+    "WTConnectAccountStatus": wTConnectAccountStatus_1.WTConnectAccountStatus,
+    "WTConnectMoney": wTConnectMoney_1.WTConnectMoney,
+    "WTConnectOnboardingLinkRequest": wTConnectOnboardingLinkRequest_1.WTConnectOnboardingLinkRequest,
+    "WTConnectOnboardingLinkResponse": wTConnectOnboardingLinkResponse_1.WTConnectOnboardingLinkResponse,
+    "WTConnectOnboardingStatus": wTConnectOnboardingStatus_1.WTConnectOnboardingStatus,
+    "WTConnectPaymentsSummary": wTConnectPaymentsSummary_1.WTConnectPaymentsSummary,
+    "WTConnectPaymentsSummaryBalance": wTConnectPaymentsSummaryBalance_1.WTConnectPaymentsSummaryBalance,
     "WTCountResult": wTCountResult_1.WTCountResult,
     "WTCustomerSearchByMemberID": wTCustomerSearchByMemberID_1.WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": wTCustomerSearchByPhoneNumber_1.WTCustomerSearchByPhoneNumber,
@@ -1148,6 +1188,8 @@ let typeMap = {
     "WTEmployeeUpdate": wTEmployeeUpdate_1.WTEmployeeUpdate,
     "WTEmployeeUpdateRecords": wTEmployeeUpdateRecords_1.WTEmployeeUpdateRecords,
     "WTFetchWalletPaymentObjectsWithToken": wTFetchWalletPaymentObjectsWithToken_1.WTFetchWalletPaymentObjectsWithToken,
+    "WTFinancingSoftPullRequest": wTFinancingSoftPullRequest_1.WTFinancingSoftPullRequest,
+    "WTFinancingSoftPullResponse": wTFinancingSoftPullResponse_1.WTFinancingSoftPullResponse,
     "WTGamingCreateParams": wTGamingCreateParams_1.WTGamingCreateParams,
     "WTGamingUpdateParams": wTGamingUpdateParams_1.WTGamingUpdateParams,
     "WTImageGridCreateParams": wTImageGridCreateParams_1.WTImageGridCreateParams,
@@ -1159,6 +1201,12 @@ let typeMap = {
     "WTInfoGenesisRecordFilterParameters": wTInfoGenesisRecordFilterParameters_1.WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": wTInfoGenesisRoutingIDs_1.WTInfoGenesisRoutingIDs,
     "WTInfoGenesisUniquePostingIDs": wTInfoGenesisUniquePostingIDs_1.WTInfoGenesisUniquePostingIDs,
+    "WTLeadFiConsumerProfile": wTLeadFiConsumerProfile_1.WTLeadFiConsumerProfile,
+    "WTLeadFiConsumerProfileAddress": wTLeadFiConsumerProfileAddress_1.WTLeadFiConsumerProfileAddress,
+    "WTLeadFiConsumerProfileAssets": wTLeadFiConsumerProfileAssets_1.WTLeadFiConsumerProfileAssets,
+    "WTLeadFiConsumerProfileIncome": wTLeadFiConsumerProfileIncome_1.WTLeadFiConsumerProfileIncome,
+    "WTLeadFiCreditOffer": wTLeadFiCreditOffer_1.WTLeadFiCreditOffer,
+    "WTLeadFiInquiryResult": wTLeadFiInquiryResult_1.WTLeadFiInquiryResult,
     "WTLocalInstance": wTLocalInstance_1.WTLocalInstance,
     "WTLoungeCreateParams": wTLoungeCreateParams_1.WTLoungeCreateParams,
     "WTLoungeUpdateParams": wTLoungeUpdateParams_1.WTLoungeUpdateParams,

@@ -94,6 +94,8 @@ export * from './staticVoucherCampaignsApi';
 import { StaticVoucherCampaignsApi } from './staticVoucherCampaignsApi';
 export * from './staticVouchersApi';
 import { StaticVouchersApi } from './staticVouchersApi';
+export * from './stripeConnectApi';
+import { StripeConnectApi } from './stripeConnectApi';
 export * from './systemApi';
 import { SystemApi } from './systemApi';
 export * from './ticketsApi';
@@ -125,4 +127,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [APIKeysApi, AmenitiesApi, AppToPersonA2PRegistrationApi, AppleWalletSubscribersApi, AuthenticationApi, BillingPaymentsApi, BroadcastsApi, ClubMembersApi, CountriesApi, CustomerApi, DiningApi, DynamicVouchersApi, EmailSubscribersApi, EmployeesApi, FilesDocumentsApi, GalleryApi, GamingApi, HelpDeskApi, ImportExportApi, ImportedListsApi, IndustriesApi, InfoGenesisReportsApi, InteractionsApi, LoungeApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, NewsApi, OpenAIApi, OptInListsApi, PaymentDesignsApi, PerformancesApi, PhoneNumbersApi, PointOfSaleConfigurationApi, PrizesApi, ProductsApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, RoomRatesApi, SMSMessagesApi, SMSSubscribersApi, ServicesApi, ShopifyTerminalApi, ShortLinksApi, StaticVoucherCampaignsApi, StaticVouchersApi, SystemApi, TicketsApi, VideosApi, VirtualBusinessCardApi, WalletConfigurationApi, WalletMobileTerminalApi, WalletTransactionLedgerApi, WalletWebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];
+export const APIS = [APIKeysApi, AmenitiesApi, AppToPersonA2PRegistrationApi, AppleWalletSubscribersApi, AuthenticationApi, BillingPaymentsApi, BroadcastsApi, ClubMembersApi, CountriesApi, CustomerApi, DiningApi, DynamicVouchersApi, EmailSubscribersApi, EmployeesApi, FilesDocumentsApi, GalleryApi, GamingApi, HelpDeskApi, ImportExportApi, ImportedListsApi, IndustriesApi, InfoGenesisReportsApi, InteractionsApi, LoungeApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, NewsApi, OpenAIApi, OptInListsApi, PaymentDesignsApi, PerformancesApi, PhoneNumbersApi, PointOfSaleConfigurationApi, PrizesApi, ProductsApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, RoomRatesApi, SMSMessagesApi, SMSSubscribersApi, ServicesApi, ShopifyTerminalApi, ShortLinksApi, StaticVoucherCampaignsApi, StaticVouchersApi, StripeConnectApi, SystemApi, TicketsApi, VideosApi, VirtualBusinessCardApi, WalletConfigurationApi, WalletMobileTerminalApi, WalletTransactionLedgerApi, WalletWebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];

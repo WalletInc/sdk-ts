@@ -262,8 +262,16 @@ export * from './wTAuthenticationRequestResetPassword';
 export * from './wTAuthenticationResetPassword';
 export * from './wTAuthenticationSSOLoginForDiscourse';
 export * from './wTBillingChangePlan';
+export * from './wTBillingChangePlanBillingCadence';
 export * from './wTBillingSavePaymentMethod';
 export * from './wTBillingVerifyPaymentMethodResponse';
+export * from './wTConnectAccountStatus';
+export * from './wTConnectMoney';
+export * from './wTConnectOnboardingLinkRequest';
+export * from './wTConnectOnboardingLinkResponse';
+export * from './wTConnectOnboardingStatus';
+export * from './wTConnectPaymentsSummary';
+export * from './wTConnectPaymentsSummaryBalance';
 export * from './wTCountResult';
 export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';
@@ -301,6 +309,8 @@ export * from './wTEmployeeSendHelpDeskResponse';
 export * from './wTEmployeeUpdate';
 export * from './wTEmployeeUpdateRecords';
 export * from './wTFetchWalletPaymentObjectsWithToken';
+export * from './wTFinancingSoftPullRequest';
+export * from './wTFinancingSoftPullResponse';
 export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
 export * from './wTImageGridCreateParams';
@@ -312,6 +322,12 @@ export * from './wTInfoGenesisLookupRequestErrors';
 export * from './wTInfoGenesisRecordFilterParameters';
 export * from './wTInfoGenesisRoutingIDs';
 export * from './wTInfoGenesisUniquePostingIDs';
+export * from './wTLeadFiConsumerProfile';
+export * from './wTLeadFiConsumerProfileAddress';
+export * from './wTLeadFiConsumerProfileAssets';
+export * from './wTLeadFiConsumerProfileIncome';
+export * from './wTLeadFiCreditOffer';
+export * from './wTLeadFiInquiryResult';
 export * from './wTLocalInstance';
 export * from './wTLoungeCreateParams';
 export * from './wTLoungeUpdateParams';
@@ -683,8 +699,16 @@ import { WTAuthenticationRequestResetPassword } from './wTAuthenticationRequestR
 import { WTAuthenticationResetPassword } from './wTAuthenticationResetPassword';
 import { WTAuthenticationSSOLoginForDiscourse } from './wTAuthenticationSSOLoginForDiscourse';
 import { WTBillingChangePlan } from './wTBillingChangePlan';
+import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingCadence';
 import { WTBillingSavePaymentMethod } from './wTBillingSavePaymentMethod';
 import { WTBillingVerifyPaymentMethodResponse } from './wTBillingVerifyPaymentMethodResponse';
+import { WTConnectAccountStatus } from './wTConnectAccountStatus';
+import { WTConnectMoney } from './wTConnectMoney';
+import { WTConnectOnboardingLinkRequest } from './wTConnectOnboardingLinkRequest';
+import { WTConnectOnboardingLinkResponse } from './wTConnectOnboardingLinkResponse';
+import { WTConnectOnboardingStatus } from './wTConnectOnboardingStatus';
+import { WTConnectPaymentsSummary } from './wTConnectPaymentsSummary';
+import { WTConnectPaymentsSummaryBalance } from './wTConnectPaymentsSummaryBalance';
 import { WTCountResult } from './wTCountResult';
 import { WTCustomerSearchByMemberID } from './wTCustomerSearchByMemberID';
 import { WTCustomerSearchByPhoneNumber } from './wTCustomerSearchByPhoneNumber';
@@ -722,6 +746,8 @@ import { WTEmployeeSendHelpDeskResponse } from './wTEmployeeSendHelpDeskResponse
 import { WTEmployeeUpdate } from './wTEmployeeUpdate';
 import { WTEmployeeUpdateRecords } from './wTEmployeeUpdateRecords';
 import { WTFetchWalletPaymentObjectsWithToken } from './wTFetchWalletPaymentObjectsWithToken';
+import { WTFinancingSoftPullRequest } from './wTFinancingSoftPullRequest';
+import { WTFinancingSoftPullResponse } from './wTFinancingSoftPullResponse';
 import { WTGamingCreateParams } from './wTGamingCreateParams';
 import { WTGamingUpdateParams } from './wTGamingUpdateParams';
 import { WTImageGridCreateParams } from './wTImageGridCreateParams';
@@ -733,6 +759,12 @@ import { WTInfoGenesisLookupRequestErrors } from './wTInfoGenesisLookupRequestEr
 import { WTInfoGenesisRecordFilterParameters } from './wTInfoGenesisRecordFilterParameters';
 import { WTInfoGenesisRoutingIDs } from './wTInfoGenesisRoutingIDs';
 import { WTInfoGenesisUniquePostingIDs } from './wTInfoGenesisUniquePostingIDs';
+import { WTLeadFiConsumerProfile } from './wTLeadFiConsumerProfile';
+import { WTLeadFiConsumerProfileAddress } from './wTLeadFiConsumerProfileAddress';
+import { WTLeadFiConsumerProfileAssets } from './wTLeadFiConsumerProfileAssets';
+import { WTLeadFiConsumerProfileIncome } from './wTLeadFiConsumerProfileIncome';
+import { WTLeadFiCreditOffer } from './wTLeadFiCreditOffer';
+import { WTLeadFiInquiryResult } from './wTLeadFiInquiryResult';
 import { WTLocalInstance } from './wTLocalInstance';
 import { WTLoungeCreateParams } from './wTLoungeCreateParams';
 import { WTLoungeUpdateParams } from './wTLoungeUpdateParams';
@@ -1112,8 +1144,16 @@ let typeMap: {[index: string]: any} = {
     "WTAuthenticationResetPassword": WTAuthenticationResetPassword,
     "WTAuthenticationSSOLoginForDiscourse": WTAuthenticationSSOLoginForDiscourse,
     "WTBillingChangePlan": WTBillingChangePlan,
+    "WTBillingChangePlanBillingCadence": WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": WTBillingVerifyPaymentMethodResponse,
+    "WTConnectAccountStatus": WTConnectAccountStatus,
+    "WTConnectMoney": WTConnectMoney,
+    "WTConnectOnboardingLinkRequest": WTConnectOnboardingLinkRequest,
+    "WTConnectOnboardingLinkResponse": WTConnectOnboardingLinkResponse,
+    "WTConnectOnboardingStatus": WTConnectOnboardingStatus,
+    "WTConnectPaymentsSummary": WTConnectPaymentsSummary,
+    "WTConnectPaymentsSummaryBalance": WTConnectPaymentsSummaryBalance,
     "WTCountResult": WTCountResult,
     "WTCustomerSearchByMemberID": WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": WTCustomerSearchByPhoneNumber,
@@ -1151,6 +1191,8 @@ let typeMap: {[index: string]: any} = {
     "WTEmployeeUpdate": WTEmployeeUpdate,
     "WTEmployeeUpdateRecords": WTEmployeeUpdateRecords,
     "WTFetchWalletPaymentObjectsWithToken": WTFetchWalletPaymentObjectsWithToken,
+    "WTFinancingSoftPullRequest": WTFinancingSoftPullRequest,
+    "WTFinancingSoftPullResponse": WTFinancingSoftPullResponse,
     "WTGamingCreateParams": WTGamingCreateParams,
     "WTGamingUpdateParams": WTGamingUpdateParams,
     "WTImageGridCreateParams": WTImageGridCreateParams,
@@ -1162,6 +1204,12 @@ let typeMap: {[index: string]: any} = {
     "WTInfoGenesisRecordFilterParameters": WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": WTInfoGenesisRoutingIDs,
     "WTInfoGenesisUniquePostingIDs": WTInfoGenesisUniquePostingIDs,
+    "WTLeadFiConsumerProfile": WTLeadFiConsumerProfile,
+    "WTLeadFiConsumerProfileAddress": WTLeadFiConsumerProfileAddress,
+    "WTLeadFiConsumerProfileAssets": WTLeadFiConsumerProfileAssets,
+    "WTLeadFiConsumerProfileIncome": WTLeadFiConsumerProfileIncome,
+    "WTLeadFiCreditOffer": WTLeadFiCreditOffer,
+    "WTLeadFiInquiryResult": WTLeadFiInquiryResult,
     "WTLocalInstance": WTLocalInstance,
     "WTLoungeCreateParams": WTLoungeCreateParams,
     "WTLoungeUpdateParams": WTLoungeUpdateParams,

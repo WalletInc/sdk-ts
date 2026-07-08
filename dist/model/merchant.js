@@ -115,6 +115,31 @@ Merchant.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "stripeConnectAccountID",
+        "baseName": "stripeConnectAccountID",
+        "type": "any"
+    },
+    {
+        "name": "stripeConnectChargesEnabled",
+        "baseName": "stripeConnectChargesEnabled",
+        "type": "any"
+    },
+    {
+        "name": "stripeConnectPayoutsEnabled",
+        "baseName": "stripeConnectPayoutsEnabled",
+        "type": "any"
+    },
+    {
+        "name": "stripeConnectDetailsSubmitted",
+        "baseName": "stripeConnectDetailsSubmitted",
+        "type": "any"
+    },
+    {
+        "name": "stripeConnectOnboardingStatus",
+        "baseName": "stripeConnectOnboardingStatus",
+        "type": "any"
+    },
+    {
         "name": "isPaymentMethodProvided",
         "baseName": "isPaymentMethodProvided",
         "type": "any"

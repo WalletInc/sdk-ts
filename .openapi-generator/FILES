@@ -49,6 +49,7 @@ api/shopifyTerminalApi.ts
 api/shortLinksApi.ts
 api/staticVoucherCampaignsApi.ts
 api/staticVouchersApi.ts
+api/stripeConnectApi.ts
 api/systemApi.ts
 api/ticketsApi.ts
 api/videosApi.ts
@@ -323,8 +324,16 @@ model/wTAuthenticationRequestResetPassword.ts
 model/wTAuthenticationResetPassword.ts
 model/wTAuthenticationSSOLoginForDiscourse.ts
 model/wTBillingChangePlan.ts
+model/wTBillingChangePlanBillingCadence.ts
 model/wTBillingSavePaymentMethod.ts
 model/wTBillingVerifyPaymentMethodResponse.ts
+model/wTConnectAccountStatus.ts
+model/wTConnectMoney.ts
+model/wTConnectOnboardingLinkRequest.ts
+model/wTConnectOnboardingLinkResponse.ts
+model/wTConnectOnboardingStatus.ts
+model/wTConnectPaymentsSummary.ts
+model/wTConnectPaymentsSummaryBalance.ts
 model/wTCountResult.ts
 model/wTCustomerSearchByMemberID.ts
 model/wTCustomerSearchByPhoneNumber.ts
@@ -362,6 +371,8 @@ model/wTEmployeeSendHelpDeskResponse.ts
 model/wTEmployeeUpdate.ts
 model/wTEmployeeUpdateRecords.ts
 model/wTFetchWalletPaymentObjectsWithToken.ts
+model/wTFinancingSoftPullRequest.ts
+model/wTFinancingSoftPullResponse.ts
 model/wTGamingCreateParams.ts
 model/wTGamingUpdateParams.ts
 model/wTImageGridCreateParams.ts
@@ -373,6 +384,12 @@ model/wTInfoGenesisLookupRequestErrors.ts
 model/wTInfoGenesisRecordFilterParameters.ts
 model/wTInfoGenesisRoutingIDs.ts
 model/wTInfoGenesisUniquePostingIDs.ts
+model/wTLeadFiConsumerProfile.ts
+model/wTLeadFiConsumerProfileAddress.ts
+model/wTLeadFiConsumerProfileAssets.ts
+model/wTLeadFiConsumerProfileIncome.ts
+model/wTLeadFiCreditOffer.ts
+model/wTLeadFiInquiryResult.ts
 model/wTLocalInstance.ts
 model/wTLoungeCreateParams.ts
 model/wTLoungeUpdateParams.ts
