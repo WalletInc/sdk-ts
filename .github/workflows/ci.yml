@@ -62,15 +62,19 @@ jobs:
       # EMPTY token, and npm then publishes unauthenticated -> "E404 PUT /wallet". Trusted
       # Publishing (OIDC) needs NO token .npmrc at all; npm publishes to the default registry
       # (also pinned in package.json publishConfig).
+      # Node 22 (Active LTS; Node 20 is EOL since 2026-04). npm pinned to MAJOR 12, not
+      # @latest: npm 12.0.0 dropped Node 20 support and broke this job when "latest" moved
+      # (2026-07-09). A pinned major still receives 12.x patches but cannot pull a future
+      # major whose engine range abandons our Node; bump Node and npm together, deliberately.
       - name: Setup node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           check-latest: true
 
-      # Trusted Publishing (OIDC) needs npm >= 11.5.1; Node 20 ships npm 10, which predates it.
+      # Trusted Publishing (OIDC) needs npm >= 11.5.1; Node 22 ships npm 10, which predates it.
       - name: Upgrade npm for Trusted Publishing
-        run: npm install -g npm@latest && npm --version
+        run: npm install -g npm@12 && npm --version
 
       # - name: Install NPM packages
       #   run: npm install && echo "Installed npm dependencies"
