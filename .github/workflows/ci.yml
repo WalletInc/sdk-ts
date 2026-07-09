@@ -104,11 +104,27 @@ jobs:
       #   env:
       #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Idempotency guard: master pushes without a version bump (ci fixes, doc changes,
+      # duplicate release regenerations) must not attempt to publish over an existing
+      # version; that fails with a registry 403 and pages SquadCast/Slack for nothing.
+      - name: Check whether this version is already on npm
+        id: version_check
+        run: |
+          V=$(node -p "require('./package.json').version")
+          if npm view "wallet@$V" version >/dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+            echo "wallet@$V is already on npm; skipping publish."
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            echo "wallet@$V not on npm yet; will publish."
+          fi
+
       # Publishes with provenance via Trusted Publishing (OIDC). No token: the id-token: write
       # permission lets npm exchange the GitHub OIDC token for a short-lived publish credential
       # (requires a trusted publisher for the wallet package -> WalletInc/sdk-ts ci.yml on
       # npmjs.com). No continue-on-error, so a failed publish is a red workflow, not silent.
       - name: Publish package on NPM
+        if: steps.version_check.outputs.published == 'false'
         run: npm publish --access public
 
       # - name: Upload test coverage
