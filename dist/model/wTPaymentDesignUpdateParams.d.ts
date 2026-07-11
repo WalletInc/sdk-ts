@@ -6,13 +6,13 @@ export declare class WTPaymentDesignUpdateParams extends null<String, any> {
     'borderRadius': number;
     'fontColor': string;
     'fontType': string;
-    'abbreviation': string;
-    'acronym': string;
     'icon': string;
     'designName': string;
     'displayName': string;
     'backgroundImageURL'?: string;
     'companyLogoURL'?: string;
+    'abbreviation'?: string;
+    'acronym'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
