@@ -342,6 +342,7 @@ model/wTConnectOnboardingLinkResponse.ts
 model/wTConnectOnboardingStatus.ts
 model/wTConnectPaymentsSummary.ts
 model/wTConnectPaymentsSummaryBalance.ts
+model/wTConnectRequirements.ts
 model/wTCountResult.ts
 model/wTCustomerSearchByMemberID.ts
 model/wTCustomerSearchByPhoneNumber.ts

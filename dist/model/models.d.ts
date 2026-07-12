@@ -279,6 +279,7 @@ export * from './wTConnectOnboardingLinkResponse';
 export * from './wTConnectOnboardingStatus';
 export * from './wTConnectPaymentsSummary';
 export * from './wTConnectPaymentsSummaryBalance';
+export * from './wTConnectRequirements';
 export * from './wTCountResult';
 export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';

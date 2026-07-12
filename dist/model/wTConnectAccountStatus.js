@@ -38,6 +38,11 @@ WTConnectAccountStatus.attributeTypeMap = [
         "name": "ecommerceEligible",
         "baseName": "ecommerceEligible",
         "type": "any"
+    },
+    {
+        "name": "requirements",
+        "baseName": "requirements",
+        "type": "WTConnectRequirements"
     }
 ];
 //# sourceMappingURL=wTConnectAccountStatus.js.map

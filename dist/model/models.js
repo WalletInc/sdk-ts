@@ -293,6 +293,7 @@ __exportStar(require("./wTConnectOnboardingLinkResponse"), exports);
 __exportStar(require("./wTConnectOnboardingStatus"), exports);
 __exportStar(require("./wTConnectPaymentsSummary"), exports);
 __exportStar(require("./wTConnectPaymentsSummaryBalance"), exports);
+__exportStar(require("./wTConnectRequirements"), exports);
 __exportStar(require("./wTCountResult"), exports);
 __exportStar(require("./wTCustomerSearchByMemberID"), exports);
 __exportStar(require("./wTCustomerSearchByPhoneNumber"), exports);
@@ -727,6 +728,7 @@ const wTConnectOnboardingLinkResponse_1 = require("./wTConnectOnboardingLinkResp
 const wTConnectOnboardingStatus_1 = require("./wTConnectOnboardingStatus");
 const wTConnectPaymentsSummary_1 = require("./wTConnectPaymentsSummary");
 const wTConnectPaymentsSummaryBalance_1 = require("./wTConnectPaymentsSummaryBalance");
+const wTConnectRequirements_1 = require("./wTConnectRequirements");
 const wTCountResult_1 = require("./wTCountResult");
 const wTCustomerSearchByMemberID_1 = require("./wTCustomerSearchByMemberID");
 const wTCustomerSearchByPhoneNumber_1 = require("./wTCustomerSearchByPhoneNumber");
@@ -1179,6 +1181,7 @@ let typeMap = {
     "WTConnectOnboardingStatus": wTConnectOnboardingStatus_1.WTConnectOnboardingStatus,
     "WTConnectPaymentsSummary": wTConnectPaymentsSummary_1.WTConnectPaymentsSummary,
     "WTConnectPaymentsSummaryBalance": wTConnectPaymentsSummaryBalance_1.WTConnectPaymentsSummaryBalance,
+    "WTConnectRequirements": wTConnectRequirements_1.WTConnectRequirements,
     "WTCountResult": wTCountResult_1.WTCountResult,
     "WTCustomerSearchByMemberID": wTCustomerSearchByMemberID_1.WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": wTCustomerSearchByPhoneNumber_1.WTCustomerSearchByPhoneNumber,

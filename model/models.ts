@@ -278,6 +278,7 @@ export * from './wTConnectOnboardingLinkResponse';
 export * from './wTConnectOnboardingStatus';
 export * from './wTConnectPaymentsSummary';
 export * from './wTConnectPaymentsSummaryBalance';
+export * from './wTConnectRequirements';
 export * from './wTCountResult';
 export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';
@@ -726,6 +727,7 @@ import { WTConnectOnboardingLinkResponse } from './wTConnectOnboardingLinkRespon
 import { WTConnectOnboardingStatus } from './wTConnectOnboardingStatus';
 import { WTConnectPaymentsSummary } from './wTConnectPaymentsSummary';
 import { WTConnectPaymentsSummaryBalance } from './wTConnectPaymentsSummaryBalance';
+import { WTConnectRequirements } from './wTConnectRequirements';
 import { WTCountResult } from './wTCountResult';
 import { WTCustomerSearchByMemberID } from './wTCustomerSearchByMemberID';
 import { WTCustomerSearchByPhoneNumber } from './wTCustomerSearchByPhoneNumber';
@@ -1182,6 +1184,7 @@ let typeMap: {[index: string]: any} = {
     "WTConnectOnboardingStatus": WTConnectOnboardingStatus,
     "WTConnectPaymentsSummary": WTConnectPaymentsSummary,
     "WTConnectPaymentsSummaryBalance": WTConnectPaymentsSummaryBalance,
+    "WTConnectRequirements": WTConnectRequirements,
     "WTCountResult": WTCountResult,
     "WTCustomerSearchByMemberID": WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": WTCustomerSearchByPhoneNumber,

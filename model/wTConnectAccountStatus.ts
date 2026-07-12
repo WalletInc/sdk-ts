@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-12T13:05:00.071Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-12T13:15:37.660Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -12,6 +12,7 @@
 
 import { RequestFile } from './models';
 import { WTConnectOnboardingStatus } from './wTConnectOnboardingStatus';
+import { WTConnectRequirements } from './wTConnectRequirements';
 
 export class WTConnectAccountStatus extends null<String, any> {
     'accountId': any | null;
@@ -20,6 +21,7 @@ export class WTConnectAccountStatus extends null<String, any> {
     'chargesEnabled': any | null;
     'payoutsEnabled': any | null;
     'ecommerceEligible': any | null;
+    'requirements': WTConnectRequirements;
 
     static discriminator: string | undefined = undefined;
 
@@ -53,6 +55,11 @@ export class WTConnectAccountStatus extends null<String, any> {
             "name": "ecommerceEligible",
             "baseName": "ecommerceEligible",
             "type": "any"
+        },
+        {
+            "name": "requirements",
+            "baseName": "requirements",
+            "type": "WTConnectRequirements"
         }    ];
 
     static getAttributeTypeMap() {
