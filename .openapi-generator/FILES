@@ -475,6 +475,7 @@ model/wTTicketCreateParams.ts
 model/wTTicketUpdateParams.ts
 model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
+model/wTTwilioVerifyAuthyCodeResponse.ts
 model/wTVideoCreateParams.ts
 model/wTVideoPlaybackSource.ts
 model/wTVideoPlaybackSourceType.ts

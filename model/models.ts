@@ -411,6 +411,7 @@ export * from './wTTicketCreateParams';
 export * from './wTTicketUpdateParams';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
+export * from './wTTwilioVerifyAuthyCodeResponse';
 export * from './wTVideoCreateParams';
 export * from './wTVideoPlaybackSource';
 export * from './wTVideoPlaybackSourceType';
@@ -858,6 +859,7 @@ import { WTTicketCreateParams } from './wTTicketCreateParams';
 import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
+import { WTTwilioVerifyAuthyCodeResponse } from './wTTwilioVerifyAuthyCodeResponse';
 import { WTVideoCreateParams } from './wTVideoCreateParams';
 import { WTVideoPlaybackSource } from './wTVideoPlaybackSource';
 import { WTVideoPlaybackSourceType } from './wTVideoPlaybackSourceType';
@@ -1313,6 +1315,7 @@ let typeMap: {[index: string]: any} = {
     "WTTicketUpdateParams": WTTicketUpdateParams,
     "WTTwilioRequestAuthyCode": WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,
+    "WTTwilioVerifyAuthyCodeResponse": WTTwilioVerifyAuthyCodeResponse,
     "WTVideoCreateParams": WTVideoCreateParams,
     "WTVideoPlaybackSource": WTVideoPlaybackSource,
     "WTVideoPlaybackSourceType": WTVideoPlaybackSourceType,

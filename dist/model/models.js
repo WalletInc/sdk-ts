@@ -426,6 +426,7 @@ __exportStar(require("./wTTicketCreateParams"), exports);
 __exportStar(require("./wTTicketUpdateParams"), exports);
 __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
+__exportStar(require("./wTTwilioVerifyAuthyCodeResponse"), exports);
 __exportStar(require("./wTVideoCreateParams"), exports);
 __exportStar(require("./wTVideoPlaybackSource"), exports);
 __exportStar(require("./wTVideoPlaybackSourceType"), exports);
@@ -859,6 +860,7 @@ const wTTicketCreateParams_1 = require("./wTTicketCreateParams");
 const wTTicketUpdateParams_1 = require("./wTTicketUpdateParams");
 const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
+const wTTwilioVerifyAuthyCodeResponse_1 = require("./wTTwilioVerifyAuthyCodeResponse");
 const wTVideoCreateParams_1 = require("./wTVideoCreateParams");
 const wTVideoPlaybackSource_1 = require("./wTVideoPlaybackSource");
 const wTVideoPlaybackSourceType_1 = require("./wTVideoPlaybackSourceType");
@@ -1310,6 +1312,7 @@ let typeMap = {
     "WTTicketUpdateParams": wTTicketUpdateParams_1.WTTicketUpdateParams,
     "WTTwilioRequestAuthyCode": wTTwilioRequestAuthyCode_1.WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
+    "WTTwilioVerifyAuthyCodeResponse": wTTwilioVerifyAuthyCodeResponse_1.WTTwilioVerifyAuthyCodeResponse,
     "WTVideoCreateParams": wTVideoCreateParams_1.WTVideoCreateParams,
     "WTVideoPlaybackSource": wTVideoPlaybackSource_1.WTVideoPlaybackSource,
     "WTVideoPlaybackSourceType": wTVideoPlaybackSourceType_1.WTVideoPlaybackSourceType,

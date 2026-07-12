@@ -412,6 +412,7 @@ export * from './wTTicketCreateParams';
 export * from './wTTicketUpdateParams';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
+export * from './wTTwilioVerifyAuthyCodeResponse';
 export * from './wTVideoCreateParams';
 export * from './wTVideoPlaybackSource';
 export * from './wTVideoPlaybackSourceType';
