@@ -131,6 +131,7 @@ export * from './optInList';
 export * from './optInListSource';
 export * from './optInListSubscriber';
 export * from './optInListSubscriberOptInSourceID';
+export * from './orderStatus';
 export * from './outboundSMS';
 export * from './outboundSMSPaymentObjectBroadcastID';
 export * from './outboundSMSStatus';
@@ -357,6 +358,8 @@ export * from './wTNewsArticleCreateParams';
 export * from './wTNewsArticleUpdateParams';
 export * from './wTOptInList';
 export * from './wTOptInListCreationParams';
+export * from './wTOrder';
+export * from './wTOrderLineItem';
 export * from './wTPassBrandKit';
 export * from './wTPaymentDesign';
 export * from './wTPaymentDesignCreateParams';
@@ -575,6 +578,7 @@ import { OptInList } from './optInList';
 import { OptInListSource } from './optInListSource';
 import { OptInListSubscriber } from './optInListSubscriber';
 import { OptInListSubscriberOptInSourceID } from './optInListSubscriberOptInSourceID';
+import { OrderStatus } from './orderStatus';
 import { OutboundSMS } from './outboundSMS';
 import { OutboundSMSPaymentObjectBroadcastID } from './outboundSMSPaymentObjectBroadcastID';
 import { OutboundSMSStatus } from './outboundSMSStatus';
@@ -801,6 +805,8 @@ import { WTNewsArticleCreateParams } from './wTNewsArticleCreateParams';
 import { WTNewsArticleUpdateParams } from './wTNewsArticleUpdateParams';
 import { WTOptInList } from './wTOptInList';
 import { WTOptInListCreationParams } from './wTOptInListCreationParams';
+import { WTOrder } from './wTOrder';
+import { WTOrderLineItem } from './wTOrderLineItem';
 import { WTPassBrandKit } from './wTPassBrandKit';
 import { WTPaymentDesign } from './wTPaymentDesign';
 import { WTPaymentDesignCreateParams } from './wTPaymentDesignCreateParams';
@@ -1032,6 +1038,7 @@ let typeMap: {[index: string]: any} = {
     "OptInListSource": OptInListSource,
     "OptInListSubscriber": OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": OptInListSubscriberOptInSourceID,
+    "OrderStatus": OrderStatus,
     "OutboundSMS": OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": OutboundSMSPaymentObjectBroadcastID,
     "OutboundSMSStatus": OutboundSMSStatus,
@@ -1253,6 +1260,8 @@ let typeMap: {[index: string]: any} = {
     "WTNewsArticleUpdateParams": WTNewsArticleUpdateParams,
     "WTOptInList": WTOptInList,
     "WTOptInListCreationParams": WTOptInListCreationParams,
+    "WTOrder": WTOrder,
+    "WTOrderLineItem": WTOrderLineItem,
     "WTPassBrandKit": WTPassBrandKit,
     "WTPaymentDesign": WTPaymentDesign,
     "WTPaymentDesignCreateParams": WTPaymentDesignCreateParams,

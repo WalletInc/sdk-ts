@@ -146,6 +146,7 @@ __exportStar(require("./optInList"), exports);
 __exportStar(require("./optInListSource"), exports);
 __exportStar(require("./optInListSubscriber"), exports);
 __exportStar(require("./optInListSubscriberOptInSourceID"), exports);
+__exportStar(require("./orderStatus"), exports);
 __exportStar(require("./outboundSMS"), exports);
 __exportStar(require("./outboundSMSPaymentObjectBroadcastID"), exports);
 __exportStar(require("./outboundSMSStatus"), exports);
@@ -372,6 +373,8 @@ __exportStar(require("./wTNewsArticleCreateParams"), exports);
 __exportStar(require("./wTNewsArticleUpdateParams"), exports);
 __exportStar(require("./wTOptInList"), exports);
 __exportStar(require("./wTOptInListCreationParams"), exports);
+__exportStar(require("./wTOrder"), exports);
+__exportStar(require("./wTOrderLineItem"), exports);
 __exportStar(require("./wTPassBrandKit"), exports);
 __exportStar(require("./wTPaymentDesign"), exports);
 __exportStar(require("./wTPaymentDesignCreateParams"), exports);
@@ -576,6 +579,7 @@ const optInList_1 = require("./optInList");
 const optInListSource_1 = require("./optInListSource");
 const optInListSubscriber_1 = require("./optInListSubscriber");
 const optInListSubscriberOptInSourceID_1 = require("./optInListSubscriberOptInSourceID");
+const orderStatus_1 = require("./orderStatus");
 const outboundSMS_1 = require("./outboundSMS");
 const outboundSMSPaymentObjectBroadcastID_1 = require("./outboundSMSPaymentObjectBroadcastID");
 const outboundSMSStatus_1 = require("./outboundSMSStatus");
@@ -802,6 +806,8 @@ const wTNewsArticleCreateParams_1 = require("./wTNewsArticleCreateParams");
 const wTNewsArticleUpdateParams_1 = require("./wTNewsArticleUpdateParams");
 const wTOptInList_1 = require("./wTOptInList");
 const wTOptInListCreationParams_1 = require("./wTOptInListCreationParams");
+const wTOrder_1 = require("./wTOrder");
+const wTOrderLineItem_1 = require("./wTOrderLineItem");
 const wTPassBrandKit_1 = require("./wTPassBrandKit");
 const wTPaymentDesign_1 = require("./wTPaymentDesign");
 const wTPaymentDesignCreateParams_1 = require("./wTPaymentDesignCreateParams");
@@ -1029,6 +1035,7 @@ let typeMap = {
     "OptInListSource": optInListSource_1.OptInListSource,
     "OptInListSubscriber": optInListSubscriber_1.OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": optInListSubscriberOptInSourceID_1.OptInListSubscriberOptInSourceID,
+    "OrderStatus": orderStatus_1.OrderStatus,
     "OutboundSMS": outboundSMS_1.OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": outboundSMSPaymentObjectBroadcastID_1.OutboundSMSPaymentObjectBroadcastID,
     "OutboundSMSStatus": outboundSMSStatus_1.OutboundSMSStatus,
@@ -1250,6 +1257,8 @@ let typeMap = {
     "WTNewsArticleUpdateParams": wTNewsArticleUpdateParams_1.WTNewsArticleUpdateParams,
     "WTOptInList": wTOptInList_1.WTOptInList,
     "WTOptInListCreationParams": wTOptInListCreationParams_1.WTOptInListCreationParams,
+    "WTOrder": wTOrder_1.WTOrder,
+    "WTOrderLineItem": wTOrderLineItem_1.WTOrderLineItem,
     "WTPassBrandKit": wTPassBrandKit_1.WTPassBrandKit,
     "WTPaymentDesign": wTPaymentDesign_1.WTPaymentDesign,
     "WTPaymentDesignCreateParams": wTPaymentDesignCreateParams_1.WTPaymentDesignCreateParams,

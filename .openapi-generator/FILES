@@ -32,6 +32,7 @@ api/merchantCreditsApi.ts
 api/newsApi.ts
 api/openAIApi.ts
 api/optInListsApi.ts
+api/ordersApi.ts
 api/paymentDesignsApi.ts
 api/performancesApi.ts
 api/phoneNumbersApi.ts
@@ -194,6 +195,7 @@ model/optInList.ts
 model/optInListSource.ts
 model/optInListSubscriber.ts
 model/optInListSubscriberOptInSourceID.ts
+model/orderStatus.ts
 model/outboundSMS.ts
 model/outboundSMSPaymentObjectBroadcastID.ts
 model/outboundSMSStatus.ts
@@ -420,6 +422,8 @@ model/wTNewsArticleCreateParams.ts
 model/wTNewsArticleUpdateParams.ts
 model/wTOptInList.ts
 model/wTOptInListCreationParams.ts
+model/wTOrder.ts
+model/wTOrderLineItem.ts
 model/wTPassBrandKit.ts
 model/wTPaymentDesign.ts
 model/wTPaymentDesignCreateParams.ts
