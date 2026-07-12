@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-09T22:41:01.331Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-12T09:49:03.606Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -16,15 +16,13 @@ import { PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsI
 /**
 * From T, pick a set of properties whose keys are in the union K
 */
-export class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID {
+export class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym {
     'borderColor': string;
     'borderStyleType': PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType;
     'borderSize': string;
     'borderRadius': number;
     'fontColor': string;
     'fontType': string;
-    'abbreviation': string;
-    'acronym': string;
     'icon': string;
     'designName': string;
     'displayName': string;
@@ -65,16 +63,6 @@ export class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreatePar
             "type": "string"
         },
         {
-            "name": "abbreviation",
-            "baseName": "abbreviation",
-            "type": "string"
-        },
-        {
-            "name": "acronym",
-            "baseName": "acronym",
-            "type": "string"
-        },
-        {
             "name": "icon",
             "baseName": "icon",
             "type": "string"
@@ -101,7 +89,7 @@ export class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreatePar
         }    ];
 
     static getAttributeTypeMap() {
-        return PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID.attributeTypeMap;
+        return PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym.attributeTypeMap;
     }
 }
 

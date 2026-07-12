@@ -171,7 +171,7 @@ export * from './pickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisemen
 export * from './pickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate';
 export * from './pickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDateValueType';
 export * from './pickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequencyType';
-export * from './pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID';
+export * from './pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym';
 export * from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId';
 export * from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType';
 export * from './pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt';
@@ -265,6 +265,11 @@ export * from './wTBillingChangePlan';
 export * from './wTBillingChangePlanBillingCadence';
 export * from './wTBillingSavePaymentMethod';
 export * from './wTBillingVerifyPaymentMethodResponse';
+export * from './wTBillingVerifyPaymentMethodResponseBillingCadence';
+export * from './wTCertificateDealCreateRequest';
+export * from './wTCertificateDealCreateRequestEntitlementType';
+export * from './wTCertificateEntitlementSnapshot';
+export * from './wTCertificatePurchaseRequest';
 export * from './wTConnectAccountStatus';
 export * from './wTConnectMoney';
 export * from './wTConnectOnboardingLinkRequest';
@@ -313,6 +318,8 @@ export * from './wTFinancingSoftPullRequest';
 export * from './wTFinancingSoftPullResponse';
 export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
+export * from './wTGiftCardPurchaseRequest';
+export * from './wTGiftClaimRequest';
 export * from './wTImageGridCreateParams';
 export * from './wTImageGridUpdateParams';
 export * from './wTImportedList';
@@ -608,7 +615,7 @@ import { PickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditU
 import { PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate } from './pickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate';
 import { PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDateValueType } from './pickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDateValueType';
 import { PickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequencyType } from './pickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequencyType';
-import { PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID } from './pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID';
+import { PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym } from './pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym';
 import { PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId } from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId';
 import { PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType } from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType';
 import { PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt } from './pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt';
@@ -702,6 +709,11 @@ import { WTBillingChangePlan } from './wTBillingChangePlan';
 import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingCadence';
 import { WTBillingSavePaymentMethod } from './wTBillingSavePaymentMethod';
 import { WTBillingVerifyPaymentMethodResponse } from './wTBillingVerifyPaymentMethodResponse';
+import { WTBillingVerifyPaymentMethodResponseBillingCadence } from './wTBillingVerifyPaymentMethodResponseBillingCadence';
+import { WTCertificateDealCreateRequest } from './wTCertificateDealCreateRequest';
+import { WTCertificateDealCreateRequestEntitlementType } from './wTCertificateDealCreateRequestEntitlementType';
+import { WTCertificateEntitlementSnapshot } from './wTCertificateEntitlementSnapshot';
+import { WTCertificatePurchaseRequest } from './wTCertificatePurchaseRequest';
 import { WTConnectAccountStatus } from './wTConnectAccountStatus';
 import { WTConnectMoney } from './wTConnectMoney';
 import { WTConnectOnboardingLinkRequest } from './wTConnectOnboardingLinkRequest';
@@ -750,6 +762,8 @@ import { WTFinancingSoftPullRequest } from './wTFinancingSoftPullRequest';
 import { WTFinancingSoftPullResponse } from './wTFinancingSoftPullResponse';
 import { WTGamingCreateParams } from './wTGamingCreateParams';
 import { WTGamingUpdateParams } from './wTGamingUpdateParams';
+import { WTGiftCardPurchaseRequest } from './wTGiftCardPurchaseRequest';
+import { WTGiftClaimRequest } from './wTGiftClaimRequest';
 import { WTImageGridCreateParams } from './wTImageGridCreateParams';
 import { WTImageGridUpdateParams } from './wTImageGridUpdateParams';
 import { WTImportedList } from './wTImportedList';
@@ -1058,7 +1072,7 @@ let typeMap: {[index: string]: any} = {
     "PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate": PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate,
     "PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDateValueType": PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDateValueType,
     "PickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequencyType": PickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequencyType,
-    "PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID": PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID,
+    "PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym": PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym,
     "PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId": PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId,
     "PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType": PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType,
     "PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt": PickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt,
@@ -1147,6 +1161,11 @@ let typeMap: {[index: string]: any} = {
     "WTBillingChangePlanBillingCadence": WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": WTBillingVerifyPaymentMethodResponse,
+    "WTBillingVerifyPaymentMethodResponseBillingCadence": WTBillingVerifyPaymentMethodResponseBillingCadence,
+    "WTCertificateDealCreateRequest": WTCertificateDealCreateRequest,
+    "WTCertificateDealCreateRequestEntitlementType": WTCertificateDealCreateRequestEntitlementType,
+    "WTCertificateEntitlementSnapshot": WTCertificateEntitlementSnapshot,
+    "WTCertificatePurchaseRequest": WTCertificatePurchaseRequest,
     "WTConnectAccountStatus": WTConnectAccountStatus,
     "WTConnectMoney": WTConnectMoney,
     "WTConnectOnboardingLinkRequest": WTConnectOnboardingLinkRequest,
@@ -1195,6 +1214,8 @@ let typeMap: {[index: string]: any} = {
     "WTFinancingSoftPullResponse": WTFinancingSoftPullResponse,
     "WTGamingCreateParams": WTGamingCreateParams,
     "WTGamingUpdateParams": WTGamingUpdateParams,
+    "WTGiftCardPurchaseRequest": WTGiftCardPurchaseRequest,
+    "WTGiftClaimRequest": WTGiftClaimRequest,
     "WTImageGridCreateParams": WTImageGridCreateParams,
     "WTImageGridUpdateParams": WTImageGridUpdateParams,
     "WTImportedList": WTImportedList,

@@ -40,16 +40,6 @@ WTPaymentDesignCreateParams.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "abbreviation",
-        "baseName": "abbreviation",
-        "type": "string"
-    },
-    {
-        "name": "acronym",
-        "baseName": "acronym",
-        "type": "string"
-    },
-    {
         "name": "icon",
         "baseName": "icon",
         "type": "string"
@@ -72,6 +62,16 @@ WTPaymentDesignCreateParams.attributeTypeMap = [
     {
         "name": "companyLogoURL",
         "baseName": "companyLogoURL",
+        "type": "string"
+    },
+    {
+        "name": "abbreviation",
+        "baseName": "abbreviation",
+        "type": "string"
+    },
+    {
+        "name": "acronym",
+        "baseName": "acronym",
         "type": "string"
     }
 ];

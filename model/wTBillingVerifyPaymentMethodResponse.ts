@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-09T22:41:01.331Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-12T09:49:03.606Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -12,10 +12,12 @@
 
 import { RequestFile } from './models';
 import { SubscriptionPlan } from './subscriptionPlan';
+import { WTBillingVerifyPaymentMethodResponseBillingCadence } from './wTBillingVerifyPaymentMethodResponseBillingCadence';
 
 export class WTBillingVerifyPaymentMethodResponse extends null<String, any> {
     'isPaymentMethodProvided': any | null;
     'subscription': SubscriptionPlan;
+    'billingCadence': WTBillingVerifyPaymentMethodResponseBillingCadence;
 
     static discriminator: string | undefined = undefined;
 
@@ -29,6 +31,11 @@ export class WTBillingVerifyPaymentMethodResponse extends null<String, any> {
             "name": "subscription",
             "baseName": "subscription",
             "type": "SubscriptionPlan"
+        },
+        {
+            "name": "billingCadence",
+            "baseName": "billingCadence",
+            "type": "WTBillingVerifyPaymentMethodResponseBillingCadence"
         }    ];
 
     static getAttributeTypeMap() {

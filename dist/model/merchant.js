@@ -150,6 +150,11 @@ Merchant.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "billingCadence",
+        "baseName": "billingCadence",
+        "type": "WTBillingVerifyPaymentMethodResponseBillingCadence"
+    },
+    {
         "name": "maxSMSCount",
         "baseName": "maxSMSCount",
         "type": "any"
