@@ -18,6 +18,7 @@ api/employeesApi.ts
 api/filesDocumentsApi.ts
 api/galleryApi.ts
 api/gamingApi.ts
+api/giftCardsApi.ts
 api/helpDeskApi.ts
 api/importExportApi.ts
 api/importedListsApi.ts
@@ -233,7 +234,7 @@ model/pickVSAdvertisementCreditUpdateParamsExcludeKeyofVSAdvertisementCreditUpda
 model/pickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate.ts
 model/pickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDateValueType.ts
 model/pickVSDynamicVoucherExcludeKeyofVSDynamicVoucherTemporalDecreaseFrequencyType.ts
-model/pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID.ts
+model/pickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym.ts
 model/pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.ts
 model/pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType.ts
 model/pickVSStaticVoucherExcludeKeyofVSStaticVoucherRedeemedAtOrRefundedAtOrLastViewedAt.ts
@@ -327,6 +328,11 @@ model/wTBillingChangePlan.ts
 model/wTBillingChangePlanBillingCadence.ts
 model/wTBillingSavePaymentMethod.ts
 model/wTBillingVerifyPaymentMethodResponse.ts
+model/wTBillingVerifyPaymentMethodResponseBillingCadence.ts
+model/wTCertificateDealCreateRequest.ts
+model/wTCertificateDealCreateRequestEntitlementType.ts
+model/wTCertificateEntitlementSnapshot.ts
+model/wTCertificatePurchaseRequest.ts
 model/wTConnectAccountStatus.ts
 model/wTConnectMoney.ts
 model/wTConnectOnboardingLinkRequest.ts
@@ -375,6 +381,8 @@ model/wTFinancingSoftPullRequest.ts
 model/wTFinancingSoftPullResponse.ts
 model/wTGamingCreateParams.ts
 model/wTGamingUpdateParams.ts
+model/wTGiftCardPurchaseRequest.ts
+model/wTGiftClaimRequest.ts
 model/wTImageGridCreateParams.ts
 model/wTImageGridUpdateParams.ts
 model/wTImportedList.ts

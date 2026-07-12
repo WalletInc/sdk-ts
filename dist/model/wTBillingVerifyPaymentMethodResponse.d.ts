@@ -1,7 +1,9 @@
 import { SubscriptionPlan } from './subscriptionPlan';
+import { WTBillingVerifyPaymentMethodResponseBillingCadence } from './wTBillingVerifyPaymentMethodResponseBillingCadence';
 export declare class WTBillingVerifyPaymentMethodResponse extends null<String, any> {
     'isPaymentMethodProvided': any | null;
     'subscription': SubscriptionPlan;
+    'billingCadence': WTBillingVerifyPaymentMethodResponseBillingCadence;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
