@@ -280,6 +280,11 @@ __exportStar(require("./wTBillingChangePlan"), exports);
 __exportStar(require("./wTBillingChangePlanBillingCadence"), exports);
 __exportStar(require("./wTBillingSavePaymentMethod"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponse"), exports);
+__exportStar(require("./wTBillingVerifyPaymentMethodResponseBillingCadence"), exports);
+__exportStar(require("./wTCertificateDealCreateRequest"), exports);
+__exportStar(require("./wTCertificateDealCreateRequestEntitlementType"), exports);
+__exportStar(require("./wTCertificateEntitlementSnapshot"), exports);
+__exportStar(require("./wTCertificatePurchaseRequest"), exports);
 __exportStar(require("./wTConnectAccountStatus"), exports);
 __exportStar(require("./wTConnectMoney"), exports);
 __exportStar(require("./wTConnectOnboardingLinkRequest"), exports);
@@ -328,6 +333,8 @@ __exportStar(require("./wTFinancingSoftPullRequest"), exports);
 __exportStar(require("./wTFinancingSoftPullResponse"), exports);
 __exportStar(require("./wTGamingCreateParams"), exports);
 __exportStar(require("./wTGamingUpdateParams"), exports);
+__exportStar(require("./wTGiftCardPurchaseRequest"), exports);
+__exportStar(require("./wTGiftClaimRequest"), exports);
 __exportStar(require("./wTImageGridCreateParams"), exports);
 __exportStar(require("./wTImageGridUpdateParams"), exports);
 __exportStar(require("./wTImportedList"), exports);
@@ -703,6 +710,11 @@ const wTBillingChangePlan_1 = require("./wTBillingChangePlan");
 const wTBillingChangePlanBillingCadence_1 = require("./wTBillingChangePlanBillingCadence");
 const wTBillingSavePaymentMethod_1 = require("./wTBillingSavePaymentMethod");
 const wTBillingVerifyPaymentMethodResponse_1 = require("./wTBillingVerifyPaymentMethodResponse");
+const wTBillingVerifyPaymentMethodResponseBillingCadence_1 = require("./wTBillingVerifyPaymentMethodResponseBillingCadence");
+const wTCertificateDealCreateRequest_1 = require("./wTCertificateDealCreateRequest");
+const wTCertificateDealCreateRequestEntitlementType_1 = require("./wTCertificateDealCreateRequestEntitlementType");
+const wTCertificateEntitlementSnapshot_1 = require("./wTCertificateEntitlementSnapshot");
+const wTCertificatePurchaseRequest_1 = require("./wTCertificatePurchaseRequest");
 const wTConnectAccountStatus_1 = require("./wTConnectAccountStatus");
 const wTConnectMoney_1 = require("./wTConnectMoney");
 const wTConnectOnboardingLinkRequest_1 = require("./wTConnectOnboardingLinkRequest");
@@ -751,6 +763,8 @@ const wTFinancingSoftPullRequest_1 = require("./wTFinancingSoftPullRequest");
 const wTFinancingSoftPullResponse_1 = require("./wTFinancingSoftPullResponse");
 const wTGamingCreateParams_1 = require("./wTGamingCreateParams");
 const wTGamingUpdateParams_1 = require("./wTGamingUpdateParams");
+const wTGiftCardPurchaseRequest_1 = require("./wTGiftCardPurchaseRequest");
+const wTGiftClaimRequest_1 = require("./wTGiftClaimRequest");
 const wTImageGridCreateParams_1 = require("./wTImageGridCreateParams");
 const wTImageGridUpdateParams_1 = require("./wTImageGridUpdateParams");
 const wTImportedList_1 = require("./wTImportedList");
@@ -1144,6 +1158,11 @@ let typeMap = {
     "WTBillingChangePlanBillingCadence": wTBillingChangePlanBillingCadence_1.WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": wTBillingSavePaymentMethod_1.WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": wTBillingVerifyPaymentMethodResponse_1.WTBillingVerifyPaymentMethodResponse,
+    "WTBillingVerifyPaymentMethodResponseBillingCadence": wTBillingVerifyPaymentMethodResponseBillingCadence_1.WTBillingVerifyPaymentMethodResponseBillingCadence,
+    "WTCertificateDealCreateRequest": wTCertificateDealCreateRequest_1.WTCertificateDealCreateRequest,
+    "WTCertificateDealCreateRequestEntitlementType": wTCertificateDealCreateRequestEntitlementType_1.WTCertificateDealCreateRequestEntitlementType,
+    "WTCertificateEntitlementSnapshot": wTCertificateEntitlementSnapshot_1.WTCertificateEntitlementSnapshot,
+    "WTCertificatePurchaseRequest": wTCertificatePurchaseRequest_1.WTCertificatePurchaseRequest,
     "WTConnectAccountStatus": wTConnectAccountStatus_1.WTConnectAccountStatus,
     "WTConnectMoney": wTConnectMoney_1.WTConnectMoney,
     "WTConnectOnboardingLinkRequest": wTConnectOnboardingLinkRequest_1.WTConnectOnboardingLinkRequest,
@@ -1192,6 +1211,8 @@ let typeMap = {
     "WTFinancingSoftPullResponse": wTFinancingSoftPullResponse_1.WTFinancingSoftPullResponse,
     "WTGamingCreateParams": wTGamingCreateParams_1.WTGamingCreateParams,
     "WTGamingUpdateParams": wTGamingUpdateParams_1.WTGamingUpdateParams,
+    "WTGiftCardPurchaseRequest": wTGiftCardPurchaseRequest_1.WTGiftCardPurchaseRequest,
+    "WTGiftClaimRequest": wTGiftClaimRequest_1.WTGiftClaimRequest,
     "WTImageGridCreateParams": wTImageGridCreateParams_1.WTImageGridCreateParams,
     "WTImageGridUpdateParams": wTImageGridUpdateParams_1.WTImageGridUpdateParams,
     "WTImportedList": wTImportedList_1.WTImportedList,

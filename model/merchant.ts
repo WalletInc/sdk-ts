@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-11T14:00:18.428Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-12T00:43:56.031Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -11,6 +11,7 @@
  */
 
 import { RequestFile } from './models';
+import { WTBillingVerifyPaymentMethodResponseBillingCadence } from './wTBillingVerifyPaymentMethodResponseBillingCadence';
 
 export class Merchant extends null<String, any> {
     'companyName': any | null;
@@ -41,6 +42,7 @@ export class Merchant extends null<String, any> {
     'stripeConnectOnboardingStatus'?: any | null;
     'isPaymentMethodProvided': any | null;
     'planNickname': any | null;
+    'billingCadence'?: WTBillingVerifyPaymentMethodResponseBillingCadence;
     'maxSMSCount': any | null;
     'isSmsAgreement'?: any | null;
     'isWhiteLabeled'?: any | null;
@@ -188,6 +190,11 @@ export class Merchant extends null<String, any> {
             "name": "planNickname",
             "baseName": "planNickname",
             "type": "any"
+        },
+        {
+            "name": "billingCadence",
+            "baseName": "billingCadence",
+            "type": "WTBillingVerifyPaymentMethodResponseBillingCadence"
         },
         {
             "name": "maxSMSCount",

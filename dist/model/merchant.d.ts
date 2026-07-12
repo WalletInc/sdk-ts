@@ -1,3 +1,4 @@
+import { WTBillingVerifyPaymentMethodResponseBillingCadence } from './wTBillingVerifyPaymentMethodResponseBillingCadence';
 export declare class Merchant extends null<String, any> {
     'companyName': any | null;
     'address1': any | null;
@@ -27,6 +28,7 @@ export declare class Merchant extends null<String, any> {
     'stripeConnectOnboardingStatus'?: any | null;
     'isPaymentMethodProvided': any | null;
     'planNickname': any | null;
+    'billingCadence'?: WTBillingVerifyPaymentMethodResponseBillingCadence;
     'maxSMSCount': any | null;
     'isSmsAgreement'?: any | null;
     'isWhiteLabeled'?: any | null;
