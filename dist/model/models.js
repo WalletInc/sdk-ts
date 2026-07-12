@@ -146,6 +146,7 @@ __exportStar(require("./optInList"), exports);
 __exportStar(require("./optInListSource"), exports);
 __exportStar(require("./optInListSubscriber"), exports);
 __exportStar(require("./optInListSubscriberOptInSourceID"), exports);
+__exportStar(require("./orderStatus"), exports);
 __exportStar(require("./outboundSMS"), exports);
 __exportStar(require("./outboundSMSPaymentObjectBroadcastID"), exports);
 __exportStar(require("./outboundSMSStatus"), exports);
@@ -292,6 +293,7 @@ __exportStar(require("./wTConnectOnboardingLinkResponse"), exports);
 __exportStar(require("./wTConnectOnboardingStatus"), exports);
 __exportStar(require("./wTConnectPaymentsSummary"), exports);
 __exportStar(require("./wTConnectPaymentsSummaryBalance"), exports);
+__exportStar(require("./wTConnectRequirements"), exports);
 __exportStar(require("./wTCountResult"), exports);
 __exportStar(require("./wTCustomerSearchByMemberID"), exports);
 __exportStar(require("./wTCustomerSearchByPhoneNumber"), exports);
@@ -372,6 +374,8 @@ __exportStar(require("./wTNewsArticleCreateParams"), exports);
 __exportStar(require("./wTNewsArticleUpdateParams"), exports);
 __exportStar(require("./wTOptInList"), exports);
 __exportStar(require("./wTOptInListCreationParams"), exports);
+__exportStar(require("./wTOrder"), exports);
+__exportStar(require("./wTOrderLineItem"), exports);
 __exportStar(require("./wTPassBrandKit"), exports);
 __exportStar(require("./wTPaymentDesign"), exports);
 __exportStar(require("./wTPaymentDesignCreateParams"), exports);
@@ -423,6 +427,7 @@ __exportStar(require("./wTTicketCreateParams"), exports);
 __exportStar(require("./wTTicketUpdateParams"), exports);
 __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
+__exportStar(require("./wTTwilioVerifyAuthyCodeResponse"), exports);
 __exportStar(require("./wTVideoCreateParams"), exports);
 __exportStar(require("./wTVideoPlaybackSource"), exports);
 __exportStar(require("./wTVideoPlaybackSourceType"), exports);
@@ -576,6 +581,7 @@ const optInList_1 = require("./optInList");
 const optInListSource_1 = require("./optInListSource");
 const optInListSubscriber_1 = require("./optInListSubscriber");
 const optInListSubscriberOptInSourceID_1 = require("./optInListSubscriberOptInSourceID");
+const orderStatus_1 = require("./orderStatus");
 const outboundSMS_1 = require("./outboundSMS");
 const outboundSMSPaymentObjectBroadcastID_1 = require("./outboundSMSPaymentObjectBroadcastID");
 const outboundSMSStatus_1 = require("./outboundSMSStatus");
@@ -722,6 +728,7 @@ const wTConnectOnboardingLinkResponse_1 = require("./wTConnectOnboardingLinkResp
 const wTConnectOnboardingStatus_1 = require("./wTConnectOnboardingStatus");
 const wTConnectPaymentsSummary_1 = require("./wTConnectPaymentsSummary");
 const wTConnectPaymentsSummaryBalance_1 = require("./wTConnectPaymentsSummaryBalance");
+const wTConnectRequirements_1 = require("./wTConnectRequirements");
 const wTCountResult_1 = require("./wTCountResult");
 const wTCustomerSearchByMemberID_1 = require("./wTCustomerSearchByMemberID");
 const wTCustomerSearchByPhoneNumber_1 = require("./wTCustomerSearchByPhoneNumber");
@@ -802,6 +809,8 @@ const wTNewsArticleCreateParams_1 = require("./wTNewsArticleCreateParams");
 const wTNewsArticleUpdateParams_1 = require("./wTNewsArticleUpdateParams");
 const wTOptInList_1 = require("./wTOptInList");
 const wTOptInListCreationParams_1 = require("./wTOptInListCreationParams");
+const wTOrder_1 = require("./wTOrder");
+const wTOrderLineItem_1 = require("./wTOrderLineItem");
 const wTPassBrandKit_1 = require("./wTPassBrandKit");
 const wTPaymentDesign_1 = require("./wTPaymentDesign");
 const wTPaymentDesignCreateParams_1 = require("./wTPaymentDesignCreateParams");
@@ -853,6 +862,7 @@ const wTTicketCreateParams_1 = require("./wTTicketCreateParams");
 const wTTicketUpdateParams_1 = require("./wTTicketUpdateParams");
 const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
+const wTTwilioVerifyAuthyCodeResponse_1 = require("./wTTwilioVerifyAuthyCodeResponse");
 const wTVideoCreateParams_1 = require("./wTVideoCreateParams");
 const wTVideoPlaybackSource_1 = require("./wTVideoPlaybackSource");
 const wTVideoPlaybackSourceType_1 = require("./wTVideoPlaybackSourceType");
@@ -1029,6 +1039,7 @@ let typeMap = {
     "OptInListSource": optInListSource_1.OptInListSource,
     "OptInListSubscriber": optInListSubscriber_1.OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": optInListSubscriberOptInSourceID_1.OptInListSubscriberOptInSourceID,
+    "OrderStatus": orderStatus_1.OrderStatus,
     "OutboundSMS": outboundSMS_1.OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": outboundSMSPaymentObjectBroadcastID_1.OutboundSMSPaymentObjectBroadcastID,
     "OutboundSMSStatus": outboundSMSStatus_1.OutboundSMSStatus,
@@ -1170,6 +1181,7 @@ let typeMap = {
     "WTConnectOnboardingStatus": wTConnectOnboardingStatus_1.WTConnectOnboardingStatus,
     "WTConnectPaymentsSummary": wTConnectPaymentsSummary_1.WTConnectPaymentsSummary,
     "WTConnectPaymentsSummaryBalance": wTConnectPaymentsSummaryBalance_1.WTConnectPaymentsSummaryBalance,
+    "WTConnectRequirements": wTConnectRequirements_1.WTConnectRequirements,
     "WTCountResult": wTCountResult_1.WTCountResult,
     "WTCustomerSearchByMemberID": wTCustomerSearchByMemberID_1.WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": wTCustomerSearchByPhoneNumber_1.WTCustomerSearchByPhoneNumber,
@@ -1250,6 +1262,8 @@ let typeMap = {
     "WTNewsArticleUpdateParams": wTNewsArticleUpdateParams_1.WTNewsArticleUpdateParams,
     "WTOptInList": wTOptInList_1.WTOptInList,
     "WTOptInListCreationParams": wTOptInListCreationParams_1.WTOptInListCreationParams,
+    "WTOrder": wTOrder_1.WTOrder,
+    "WTOrderLineItem": wTOrderLineItem_1.WTOrderLineItem,
     "WTPassBrandKit": wTPassBrandKit_1.WTPassBrandKit,
     "WTPaymentDesign": wTPaymentDesign_1.WTPaymentDesign,
     "WTPaymentDesignCreateParams": wTPaymentDesignCreateParams_1.WTPaymentDesignCreateParams,
@@ -1301,6 +1315,7 @@ let typeMap = {
     "WTTicketUpdateParams": wTTicketUpdateParams_1.WTTicketUpdateParams,
     "WTTwilioRequestAuthyCode": wTTwilioRequestAuthyCode_1.WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
+    "WTTwilioVerifyAuthyCodeResponse": wTTwilioVerifyAuthyCodeResponse_1.WTTwilioVerifyAuthyCodeResponse,
     "WTVideoCreateParams": wTVideoCreateParams_1.WTVideoCreateParams,
     "WTVideoPlaybackSource": wTVideoPlaybackSource_1.WTVideoPlaybackSource,
     "WTVideoPlaybackSourceType": wTVideoPlaybackSourceType_1.WTVideoPlaybackSourceType,
