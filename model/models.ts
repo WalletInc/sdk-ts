@@ -131,6 +131,7 @@ export * from './optInList';
 export * from './optInListSource';
 export * from './optInListSubscriber';
 export * from './optInListSubscriberOptInSourceID';
+export * from './orderStatus';
 export * from './outboundSMS';
 export * from './outboundSMSPaymentObjectBroadcastID';
 export * from './outboundSMSStatus';
@@ -277,6 +278,7 @@ export * from './wTConnectOnboardingLinkResponse';
 export * from './wTConnectOnboardingStatus';
 export * from './wTConnectPaymentsSummary';
 export * from './wTConnectPaymentsSummaryBalance';
+export * from './wTConnectRequirements';
 export * from './wTCountResult';
 export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';
@@ -357,6 +359,8 @@ export * from './wTNewsArticleCreateParams';
 export * from './wTNewsArticleUpdateParams';
 export * from './wTOptInList';
 export * from './wTOptInListCreationParams';
+export * from './wTOrder';
+export * from './wTOrderLineItem';
 export * from './wTPassBrandKit';
 export * from './wTPaymentDesign';
 export * from './wTPaymentDesignCreateParams';
@@ -408,6 +412,7 @@ export * from './wTTicketCreateParams';
 export * from './wTTicketUpdateParams';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
+export * from './wTTwilioVerifyAuthyCodeResponse';
 export * from './wTVideoCreateParams';
 export * from './wTVideoPlaybackSource';
 export * from './wTVideoPlaybackSourceType';
@@ -575,6 +580,7 @@ import { OptInList } from './optInList';
 import { OptInListSource } from './optInListSource';
 import { OptInListSubscriber } from './optInListSubscriber';
 import { OptInListSubscriberOptInSourceID } from './optInListSubscriberOptInSourceID';
+import { OrderStatus } from './orderStatus';
 import { OutboundSMS } from './outboundSMS';
 import { OutboundSMSPaymentObjectBroadcastID } from './outboundSMSPaymentObjectBroadcastID';
 import { OutboundSMSStatus } from './outboundSMSStatus';
@@ -721,6 +727,7 @@ import { WTConnectOnboardingLinkResponse } from './wTConnectOnboardingLinkRespon
 import { WTConnectOnboardingStatus } from './wTConnectOnboardingStatus';
 import { WTConnectPaymentsSummary } from './wTConnectPaymentsSummary';
 import { WTConnectPaymentsSummaryBalance } from './wTConnectPaymentsSummaryBalance';
+import { WTConnectRequirements } from './wTConnectRequirements';
 import { WTCountResult } from './wTCountResult';
 import { WTCustomerSearchByMemberID } from './wTCustomerSearchByMemberID';
 import { WTCustomerSearchByPhoneNumber } from './wTCustomerSearchByPhoneNumber';
@@ -801,6 +808,8 @@ import { WTNewsArticleCreateParams } from './wTNewsArticleCreateParams';
 import { WTNewsArticleUpdateParams } from './wTNewsArticleUpdateParams';
 import { WTOptInList } from './wTOptInList';
 import { WTOptInListCreationParams } from './wTOptInListCreationParams';
+import { WTOrder } from './wTOrder';
+import { WTOrderLineItem } from './wTOrderLineItem';
 import { WTPassBrandKit } from './wTPassBrandKit';
 import { WTPaymentDesign } from './wTPaymentDesign';
 import { WTPaymentDesignCreateParams } from './wTPaymentDesignCreateParams';
@@ -852,6 +861,7 @@ import { WTTicketCreateParams } from './wTTicketCreateParams';
 import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
+import { WTTwilioVerifyAuthyCodeResponse } from './wTTwilioVerifyAuthyCodeResponse';
 import { WTVideoCreateParams } from './wTVideoCreateParams';
 import { WTVideoPlaybackSource } from './wTVideoPlaybackSource';
 import { WTVideoPlaybackSourceType } from './wTVideoPlaybackSourceType';
@@ -1032,6 +1042,7 @@ let typeMap: {[index: string]: any} = {
     "OptInListSource": OptInListSource,
     "OptInListSubscriber": OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": OptInListSubscriberOptInSourceID,
+    "OrderStatus": OrderStatus,
     "OutboundSMS": OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": OutboundSMSPaymentObjectBroadcastID,
     "OutboundSMSStatus": OutboundSMSStatus,
@@ -1173,6 +1184,7 @@ let typeMap: {[index: string]: any} = {
     "WTConnectOnboardingStatus": WTConnectOnboardingStatus,
     "WTConnectPaymentsSummary": WTConnectPaymentsSummary,
     "WTConnectPaymentsSummaryBalance": WTConnectPaymentsSummaryBalance,
+    "WTConnectRequirements": WTConnectRequirements,
     "WTCountResult": WTCountResult,
     "WTCustomerSearchByMemberID": WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": WTCustomerSearchByPhoneNumber,
@@ -1253,6 +1265,8 @@ let typeMap: {[index: string]: any} = {
     "WTNewsArticleUpdateParams": WTNewsArticleUpdateParams,
     "WTOptInList": WTOptInList,
     "WTOptInListCreationParams": WTOptInListCreationParams,
+    "WTOrder": WTOrder,
+    "WTOrderLineItem": WTOrderLineItem,
     "WTPassBrandKit": WTPassBrandKit,
     "WTPaymentDesign": WTPaymentDesign,
     "WTPaymentDesignCreateParams": WTPaymentDesignCreateParams,
@@ -1304,6 +1318,7 @@ let typeMap: {[index: string]: any} = {
     "WTTicketUpdateParams": WTTicketUpdateParams,
     "WTTwilioRequestAuthyCode": WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,
+    "WTTwilioVerifyAuthyCodeResponse": WTTwilioVerifyAuthyCodeResponse,
     "WTVideoCreateParams": WTVideoCreateParams,
     "WTVideoPlaybackSource": WTVideoPlaybackSource,
     "WTVideoPlaybackSourceType": WTVideoPlaybackSourceType,
