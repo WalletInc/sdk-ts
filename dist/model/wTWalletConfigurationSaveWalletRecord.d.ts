@@ -58,6 +58,7 @@ export declare class WTWalletConfigurationSaveWalletRecord extends null<String, 
     'isClaimed'?: any | null;
     'mobileAppIconURL'?: any | null;
     'isAgeGate'?: any | null;
+    'isFlipRequiredForQR'?: any | null;
     'ageGateMinimum'?: any | null;
     'ageGateDeclineURL'?: any | null;
     'socialInstagramURL'?: any | null;

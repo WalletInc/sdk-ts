@@ -10,6 +10,7 @@ import { Ticket } from '../model/ticket';
 import { TicketSortKeys } from '../model/ticketSortKeys';
 import { WTPerformanceCreateParams } from '../model/wTPerformanceCreateParams';
 import { WTPerformanceUpdateParams } from '../model/wTPerformanceUpdateParams';
+import { WTTicketReachStats } from '../model/wTTicketReachStats';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum PerformancesApiApiKeys {
@@ -104,6 +105,22 @@ export declare class PerformancesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: FetchPerformanceTicketsPage200Response;
+    }>;
+    fetchTicketReachStatsAll(startDate?: Date, endDate?: Date, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTTicketReachStats;
+    }>;
+    fetchTicketReachStatsForPerformance(id: string, startDate?: Date, endDate?: Date, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTTicketReachStats;
     }>;
     importTickets(id: string, importTicketsRequest: ImportTicketsRequest, options?: {
         headers: {
