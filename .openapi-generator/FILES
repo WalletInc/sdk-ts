@@ -473,6 +473,7 @@ model/wTTCPAOptListID.ts
 model/wTTCPAOptSourceID.ts
 model/wTTicket.ts
 model/wTTicketCreateParams.ts
+model/wTTicketReachStats.ts
 model/wTTicketUpdateParams.ts
 model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts

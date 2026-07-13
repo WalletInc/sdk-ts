@@ -409,6 +409,7 @@ export * from './wTTCPAOptListID';
 export * from './wTTCPAOptSourceID';
 export * from './wTTicket';
 export * from './wTTicketCreateParams';
+export * from './wTTicketReachStats';
 export * from './wTTicketUpdateParams';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
@@ -858,6 +859,7 @@ import { WTTCPAOptListID } from './wTTCPAOptListID';
 import { WTTCPAOptSourceID } from './wTTCPAOptSourceID';
 import { WTTicket } from './wTTicket';
 import { WTTicketCreateParams } from './wTTicketCreateParams';
+import { WTTicketReachStats } from './wTTicketReachStats';
 import { WTTicketUpdateParams } from './wTTicketUpdateParams';
 import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
@@ -1315,6 +1317,7 @@ let typeMap: {[index: string]: any} = {
     "WTTCPAOptSourceID": WTTCPAOptSourceID,
     "WTTicket": WTTicket,
     "WTTicketCreateParams": WTTicketCreateParams,
+    "WTTicketReachStats": WTTicketReachStats,
     "WTTicketUpdateParams": WTTicketUpdateParams,
     "WTTwilioRequestAuthyCode": WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,

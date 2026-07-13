@@ -410,6 +410,7 @@ export * from './wTTCPAOptListID';
 export * from './wTTCPAOptSourceID';
 export * from './wTTicket';
 export * from './wTTicketCreateParams';
+export * from './wTTicketReachStats';
 export * from './wTTicketUpdateParams';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
