@@ -424,6 +424,7 @@ __exportStar(require("./wTTCPAOptListID"), exports);
 __exportStar(require("./wTTCPAOptSourceID"), exports);
 __exportStar(require("./wTTicket"), exports);
 __exportStar(require("./wTTicketCreateParams"), exports);
+__exportStar(require("./wTTicketReachStats"), exports);
 __exportStar(require("./wTTicketUpdateParams"), exports);
 __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
@@ -859,6 +860,7 @@ const wTTCPAOptListID_1 = require("./wTTCPAOptListID");
 const wTTCPAOptSourceID_1 = require("./wTTCPAOptSourceID");
 const wTTicket_1 = require("./wTTicket");
 const wTTicketCreateParams_1 = require("./wTTicketCreateParams");
+const wTTicketReachStats_1 = require("./wTTicketReachStats");
 const wTTicketUpdateParams_1 = require("./wTTicketUpdateParams");
 const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
@@ -1312,6 +1314,7 @@ let typeMap = {
     "WTTCPAOptSourceID": wTTCPAOptSourceID_1.WTTCPAOptSourceID,
     "WTTicket": wTTicket_1.WTTicket,
     "WTTicketCreateParams": wTTicketCreateParams_1.WTTicketCreateParams,
+    "WTTicketReachStats": wTTicketReachStats_1.WTTicketReachStats,
     "WTTicketUpdateParams": wTTicketUpdateParams_1.WTTicketUpdateParams,
     "WTTwilioRequestAuthyCode": wTTwilioRequestAuthyCode_1.WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,

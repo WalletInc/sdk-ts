@@ -295,6 +295,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "isFlipRequiredForQR",
+        "baseName": "isFlipRequiredForQR",
+        "type": "any"
+    },
+    {
         "name": "ageGateMinimum",
         "baseName": "ageGateMinimum",
         "type": "any"

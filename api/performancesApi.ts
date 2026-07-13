@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-12T13:57:46.543Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-13T17:36:00.108Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -28,6 +28,7 @@ import { Ticket } from '../model/ticket';
 import { TicketSortKeys } from '../model/ticketSortKeys';
 import { WTPerformanceCreateParams } from '../model/wTPerformanceCreateParams';
 import { WTPerformanceUpdateParams } from '../model/wTPerformanceUpdateParams';
+import { WTTicketReachStats } from '../model/wTTicketReachStats';
 
 import { ObjectSerializer, Authentication, VoidAuth, Interceptor } from '../model/models';
 import { HttpBasicAuth, HttpBearerAuth, ApiKeyAuth, OAuth } from '../model/models';
@@ -761,6 +762,157 @@ export class PerformancesApi {
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                             body = ObjectSerializer.deserialize(body, "FetchPerformanceTicketsPage200Response");
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * 
+     * @summary Ticket reach funnel across all of the merchant\'s performances Merchant-wide ticket lifecycle funnel (Issued -> Claimed -> Redeemed) with seats and comp/paid splits, for the Dashboard Customer tab and the View Analytics > Customers > Tickets page. Cohort is keyed on issue date: the optional startDate/endDate filter tickets by when they were issued (createdAt), and the later stages count how far those tickets got, regardless of when.
+     * @param startDate 
+     * @param endDate 
+     */
+    public async fetchTicketReachStatsAll (startDate?: Date, endDate?: Date, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTTicketReachStats;  }> {
+        const localVarPath = this.basePath + '/v2/performances/reach/all';
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        if (startDate !== undefined) {
+            localVarQueryParameters['startDate'] = ObjectSerializer.serialize(startDate, "Date");
+        }
+
+        if (endDate !== undefined) {
+            localVarQueryParameters['endDate'] = ObjectSerializer.serialize(endDate, "Date");
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'GET',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+        };
+
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: WTTicketReachStats;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            body = ObjectSerializer.deserialize(body, "WTTicketReachStats");
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * 
+     * @summary Ticket reach funnel for a single performance Per-performance ticket lifecycle funnel (Issued -> Claimed -> Redeemed) with seats and comp/paid splits, for the /tickets \"Show Analytics\" slide-open. Optional startDate/endDate key the cohort on issue date (createdAt); omit them for the performance\'s all-time funnel.
+     * @param id 
+     * @param startDate 
+     * @param endDate 
+     */
+    public async fetchTicketReachStatsForPerformance (id: string, startDate?: Date, endDate?: Date, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WTTicketReachStats;  }> {
+        const localVarPath = this.basePath + '/v2/performances/{id}/reach'
+            .replace('{' + 'id' + '}', encodeURIComponent(String(id)));
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'id' is not null or undefined
+        if (id === null || id === undefined) {
+            throw new Error('Required parameter id was null or undefined when calling fetchTicketReachStatsForPerformance.');
+        }
+
+        if (startDate !== undefined) {
+            localVarQueryParameters['startDate'] = ObjectSerializer.serialize(startDate, "Date");
+        }
+
+        if (endDate !== undefined) {
+            localVarQueryParameters['endDate'] = ObjectSerializer.serialize(endDate, "Date");
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'GET',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+        };
+
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: WTTicketReachStats;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            body = ObjectSerializer.deserialize(body, "WTTicketReachStats");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
