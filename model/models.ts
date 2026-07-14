@@ -25,14 +25,6 @@ export * from './chatCompletionMessageFunctionCall';
 export * from './chatCompletionMessageToolCall';
 export * from './chatCompletionMessageToolCallFunction';
 export * from './claimTicketRequest';
-export * from './clickFunnelAmount';
-export * from './clickFunnelContact';
-export * from './clickFunnelContactProfile';
-export * from './clickFunnelEvent';
-export * from './clickFunnelOriginalAmount';
-export * from './clickFunnelProduct';
-export * from './clickFunnelPurchase';
-export * from './clickFunnelRegistration';
 export * from './countClaimedComps200Response';
 export * from './createFile200Response';
 export * from './createRunOnThreadRequest';
@@ -475,14 +467,6 @@ import { ChatCompletionMessageFunctionCall } from './chatCompletionMessageFuncti
 import { ChatCompletionMessageToolCall } from './chatCompletionMessageToolCall';
 import { ChatCompletionMessageToolCallFunction } from './chatCompletionMessageToolCallFunction';
 import { ClaimTicketRequest } from './claimTicketRequest';
-import { ClickFunnelAmount } from './clickFunnelAmount';
-import { ClickFunnelContact } from './clickFunnelContact';
-import { ClickFunnelContactProfile } from './clickFunnelContactProfile';
-import { ClickFunnelEvent } from './clickFunnelEvent';
-import { ClickFunnelOriginalAmount } from './clickFunnelOriginalAmount';
-import { ClickFunnelProduct } from './clickFunnelProduct';
-import { ClickFunnelPurchase } from './clickFunnelPurchase';
-import { ClickFunnelRegistration } from './clickFunnelRegistration';
 import { CountClaimedComps200Response } from './countClaimedComps200Response';
 import { CreateFile200Response } from './createFile200Response';
 import { CreateRunOnThreadRequest } from './createRunOnThreadRequest';
@@ -939,14 +923,6 @@ let typeMap: {[index: string]: any} = {
     "ChatCompletionMessageToolCall": ChatCompletionMessageToolCall,
     "ChatCompletionMessageToolCallFunction": ChatCompletionMessageToolCallFunction,
     "ClaimTicketRequest": ClaimTicketRequest,
-    "ClickFunnelAmount": ClickFunnelAmount,
-    "ClickFunnelContact": ClickFunnelContact,
-    "ClickFunnelContactProfile": ClickFunnelContactProfile,
-    "ClickFunnelEvent": ClickFunnelEvent,
-    "ClickFunnelOriginalAmount": ClickFunnelOriginalAmount,
-    "ClickFunnelProduct": ClickFunnelProduct,
-    "ClickFunnelPurchase": ClickFunnelPurchase,
-    "ClickFunnelRegistration": ClickFunnelRegistration,
     "CountClaimedComps200Response": CountClaimedComps200Response,
     "CreateFile200Response": CreateFile200Response,
     "CreateRunOnThreadRequest": CreateRunOnThreadRequest,

@@ -40,14 +40,6 @@ __exportStar(require("./chatCompletionMessageFunctionCall"), exports);
 __exportStar(require("./chatCompletionMessageToolCall"), exports);
 __exportStar(require("./chatCompletionMessageToolCallFunction"), exports);
 __exportStar(require("./claimTicketRequest"), exports);
-__exportStar(require("./clickFunnelAmount"), exports);
-__exportStar(require("./clickFunnelContact"), exports);
-__exportStar(require("./clickFunnelContactProfile"), exports);
-__exportStar(require("./clickFunnelEvent"), exports);
-__exportStar(require("./clickFunnelOriginalAmount"), exports);
-__exportStar(require("./clickFunnelProduct"), exports);
-__exportStar(require("./clickFunnelPurchase"), exports);
-__exportStar(require("./clickFunnelRegistration"), exports);
 __exportStar(require("./countClaimedComps200Response"), exports);
 __exportStar(require("./createFile200Response"), exports);
 __exportStar(require("./createRunOnThreadRequest"), exports);
@@ -476,14 +468,6 @@ const chatCompletionMessageFunctionCall_1 = require("./chatCompletionMessageFunc
 const chatCompletionMessageToolCall_1 = require("./chatCompletionMessageToolCall");
 const chatCompletionMessageToolCallFunction_1 = require("./chatCompletionMessageToolCallFunction");
 const claimTicketRequest_1 = require("./claimTicketRequest");
-const clickFunnelAmount_1 = require("./clickFunnelAmount");
-const clickFunnelContact_1 = require("./clickFunnelContact");
-const clickFunnelContactProfile_1 = require("./clickFunnelContactProfile");
-const clickFunnelEvent_1 = require("./clickFunnelEvent");
-const clickFunnelOriginalAmount_1 = require("./clickFunnelOriginalAmount");
-const clickFunnelProduct_1 = require("./clickFunnelProduct");
-const clickFunnelPurchase_1 = require("./clickFunnelPurchase");
-const clickFunnelRegistration_1 = require("./clickFunnelRegistration");
 const countClaimedComps200Response_1 = require("./countClaimedComps200Response");
 const createFile200Response_1 = require("./createFile200Response");
 const createRunOnThreadRequest_1 = require("./createRunOnThreadRequest");
@@ -936,14 +920,6 @@ let typeMap = {
     "ChatCompletionMessageToolCall": chatCompletionMessageToolCall_1.ChatCompletionMessageToolCall,
     "ChatCompletionMessageToolCallFunction": chatCompletionMessageToolCallFunction_1.ChatCompletionMessageToolCallFunction,
     "ClaimTicketRequest": claimTicketRequest_1.ClaimTicketRequest,
-    "ClickFunnelAmount": clickFunnelAmount_1.ClickFunnelAmount,
-    "ClickFunnelContact": clickFunnelContact_1.ClickFunnelContact,
-    "ClickFunnelContactProfile": clickFunnelContactProfile_1.ClickFunnelContactProfile,
-    "ClickFunnelEvent": clickFunnelEvent_1.ClickFunnelEvent,
-    "ClickFunnelOriginalAmount": clickFunnelOriginalAmount_1.ClickFunnelOriginalAmount,
-    "ClickFunnelProduct": clickFunnelProduct_1.ClickFunnelProduct,
-    "ClickFunnelPurchase": clickFunnelPurchase_1.ClickFunnelPurchase,
-    "ClickFunnelRegistration": clickFunnelRegistration_1.ClickFunnelRegistration,
     "CountClaimedComps200Response": countClaimedComps200Response_1.CountClaimedComps200Response,
     "CreateFile200Response": createFile200Response_1.CreateFile200Response,
     "CreateRunOnThreadRequest": createRunOnThreadRequest_1.CreateRunOnThreadRequest,
