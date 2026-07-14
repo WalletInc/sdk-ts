@@ -30,6 +30,13 @@ The official server-side TypeScript / Node.js SDK for the [Wallet Inc](https://w
 
 > **Access note:** this module is currently restricted to Wallet Inc customers. Need access or a hand getting started? Join us on [Discord](https://discord.gg/xzwhcNCjcQ).
 
+## Links
+
+- Website: https://wallet.inc
+- Developer docs: https://wallet.dev
+- API status: https://uptime.wallet.inc
+- All SDKs: https://github.com/walletinc
+
 ## Installation
 
 ```bash
