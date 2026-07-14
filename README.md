@@ -4,6 +4,17 @@
 
 ## Summary
 
+## About Wallet
+
+Wallet is a guest-engagement platform: a personalized mobile wallet for every guest, with no app
+and no login, unlocked by one SMS code. This is the official TypeScript / Node.js SDK for the Wallet API.
+
+- Website: https://wallet.inc
+- Developer docs: https://wallet.dev
+- API status: https://status.wallet.inc
+- All SDKs: https://github.com/walletinc
+
+
 This module provides a server-side SDK for integrating with the CRM & Digital Payments platform provided by Wallet Inc. For details about the [Wallet Platform](https://wall.et/MU8JyjoD9KwA), please visit https://wallet.inc
 
 For detailed API documentation and detailed steps to create your API key for authenticated requests, please visit the [Wallet Developer Hub](https://wall.et/MURcyjCOBfEW) (https://wallet.dev)
