@@ -88,14 +88,6 @@ model/chatCompletionMessageFunctionCall.ts
 model/chatCompletionMessageToolCall.ts
 model/chatCompletionMessageToolCallFunction.ts
 model/claimTicketRequest.ts
-model/clickFunnelAmount.ts
-model/clickFunnelContact.ts
-model/clickFunnelContactProfile.ts
-model/clickFunnelEvent.ts
-model/clickFunnelOriginalAmount.ts
-model/clickFunnelProduct.ts
-model/clickFunnelPurchase.ts
-model/clickFunnelRegistration.ts
 model/countClaimedComps200Response.ts
 model/createFile200Response.ts
 model/createRunOnThreadRequest.ts
