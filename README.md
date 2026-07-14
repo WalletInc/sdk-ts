@@ -1,42 +1,63 @@
 ![Wallet Inc](https://resources.wallet.inc/logos/wallet-350x96.png)
 
-> Access to this module is presently restricted to customers of Wallet Inc. Reach out on [Discord](https://discord.gg/xzwhcNCjcQ) for help.
+# Wallet SDK for Node.js
 
-## Summary
+[![npm version](https://img.shields.io/npm/v/wallet.svg?color=2d7ff9)](https://www.npmjs.com/package/wallet)
+[![npm downloads](https://img.shields.io/npm/dm/wallet.svg?color=2d7ff9)](https://www.npmjs.com/package/wallet)
 
-## About Wallet
+The official server-side TypeScript / Node.js SDK for the [Wallet Inc](https://wallet.inc) CRM & Digital Payments platform. Create and manage membership tiers, club members, vouchers, promotions, store credit, payment designs, SMS/MMS, and more.
 
-Wallet is a guest-engagement platform: a personalized mobile wallet for every guest, with no app
-and no login, unlocked by one SMS code. This is the official TypeScript / Node.js SDK for the Wallet API.
+> **Access note:** this module is currently restricted to Wallet Inc customers. Need access or a hand getting started? Join us on [Discord](https://discord.gg/xzwhcNCjcQ).
 
-- Website: https://wallet.inc
-- Developer docs: https://wallet.dev
-- API status: https://status.wallet.inc
-- All SDKs: https://github.com/walletinc
-
-
-This module provides a server-side SDK for integrating with the CRM & Digital Payments platform provided by Wallet Inc. For details about the [Wallet Platform](https://wall.et/MU8JyjoD9KwA), please visit https://wallet.inc
-
-For detailed API documentation and detailed steps to create your API key for authenticated requests, please visit the [Wallet Developer Hub](https://wall.et/MURcyjCOBfEW) (https://wallet.dev)
-
-## Install
+## Installation
 
 ```bash
 npm install wallet
 ```
 
-## To test examples
+## Quickstart
+
+Each resource has its own API client, constructed with your API domain. Every call takes an options object carrying your API key as an `access-token` header. Create your key in the [Wallet Developer Hub](https://wallet.dev).
+
+```typescript
+import * as api from "wallet";
+
+const domain = "https://api.wall.et";
+const options = {
+  headers: {
+    "access-token": "YOUR_API_KEY",
+  },
+};
+
+// Create a membership tier
+const membershipTiers = new api.MembershipTiersApi(domain);
+const { body: tier } = await membershipTiers.createMembershipTier(
+  { tierNumber: "1", tierName: "GOLD", tierDiscount: 20 },
+  options
+);
+console.log(tier);
+```
+
+The runnable examples below import shared `domain` and `headers` from a local `./constants` file (see [`examples/constants.ts`](examples/constants.ts)); swap in your own domain and API key. To run them:
 
 ```bash
 cd examples
-npm install # Install ts-node to run typescript examples without transpilation
+npm install   # installs ts-node to run the TypeScript examples directly
 ```
 
-## Usage
+## Documentation
 
-### Create and manipulate Membership Tiers
+Full API reference and guides live in the [Wallet Developer Hub](https://wallet.dev).
 
-```nodejs
+## Examples
+
+Click any example to expand the full runnable snippet.
+
+
+<details>
+<summary><b>Create and manipulate Membership Tiers</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -117,9 +138,12 @@ async function membershipTiers() {
 }
 ```
 
-### Create and manipulate Payment Designs
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Payment Designs</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -190,9 +214,12 @@ async function paymentDesigns() {
 }
 ```
 
-### Create and manipulate Club Members
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Club Members</b></summary>
+
+```typescript
 import * as api from "wallet";
 import { PaginationRequestWithSortOptions } from "wallet";
 import * as constants from "./constants";
@@ -282,9 +309,12 @@ async function clubMembers() {
 }
 ```
 
-### Create and manipulate Advertisement Credits
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Advertisement Credits</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -358,9 +388,12 @@ async function advertisementCredits() {
 }
 ```
 
-### Create and manipulate Link Book Links
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Link Book Links</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -421,9 +454,12 @@ async function linkBook() {
 }
 ```
 
-### Create and manipulate Merchant URLs
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Merchant URLs</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -489,9 +525,12 @@ async function merchantURLs() {
 }
 ```
 
-### Create and manipulate News Articles
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate News Articles</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -553,9 +592,12 @@ async function news() {
 }
 ```
 
-### Create and manipulate Performances
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Performances</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -621,9 +663,12 @@ async function performances() {
 }
 ```
 
-### Create and manipulate Promo Codes
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Promo Codes</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -686,9 +731,12 @@ async function promocodes() {
 }
 ```
 
-### Create and manipulate Merchant Credits
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Merchant Credits</b></summary>
+
+```typescript
 import * as api from "wallet";
 import { PaginationRequestWithSortOptions } from "wallet";
 import * as constants from "./constants";
@@ -776,9 +824,12 @@ async function merchantCredits() {
 }
 ```
 
-### Create and manipulate Dynamic Vouchers
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Dynamic Vouchers</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -888,9 +939,12 @@ async function dynamicVouchers() {
 }
 ```
 
-### Create and manipulate Static Voucher Campaigns
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Static Voucher Campaigns</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -1085,9 +1139,12 @@ async function staticVoucherCampaigns() {
 }
 ```
 
-### Create and manipulate Static Vouchers
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate Static Vouchers</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -1157,9 +1214,12 @@ async function staticVouchers() {
 }
 ```
 
-### Create and manipulate SMSes
+</details>
 
-```nodejs
+<details>
+<summary><b>Create and manipulate SMSes</b></summary>
+
+```typescript
 import * as api from "wallet";
 import * as constants from "./constants";
 
@@ -1466,6 +1526,8 @@ async function smsExample() {
     console.log(`Max: ${limits.max}, Sent: ${limits.sent}`);
 }
 ```
+
+</details>
 
 
 ## License
