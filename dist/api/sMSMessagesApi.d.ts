@@ -6,6 +6,8 @@ import { InboundSMS } from '../model/inboundSMS';
 import { OutboundSMS } from '../model/outboundSMS';
 import { SSOutboundStatuses } from '../model/sSOutboundStatuses';
 import { WTCountResult } from '../model/wTCountResult';
+import { WTSegmentEstimate } from '../model/wTSegmentEstimate';
+import { WTSegmentEstimateRequest } from '../model/wTSegmentEstimateRequest';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum SMSMessagesApiApiKeys {
@@ -44,6 +46,14 @@ export declare class SMSMessagesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: WTCountResult;
+    }>;
+    estimateSMSSegments(wTSegmentEstimateRequest: WTSegmentEstimateRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTSegmentEstimate;
     }>;
     exportInboundMessages(phoneNumberID: string, locale: string, options?: {
         headers: {

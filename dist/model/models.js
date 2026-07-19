@@ -398,6 +398,11 @@ __exportStar(require("./wTSMSImportOptInListSubscribers"), exports);
 __exportStar(require("./wTSMSImportedListCreate"), exports);
 __exportStar(require("./wTSMSOptInListSourceCreate"), exports);
 __exportStar(require("./wTSMSUpdatePhoneNumberConfig"), exports);
+__exportStar(require("./wTSegmentAdvisory"), exports);
+__exportStar(require("./wTSegmentAdvisoryRecommend"), exports);
+__exportStar(require("./wTSegmentEstimate"), exports);
+__exportStar(require("./wTSegmentEstimateEncoding"), exports);
+__exportStar(require("./wTSegmentEstimateRequest"), exports);
 __exportStar(require("./wTServiceCreateParams"), exports);
 __exportStar(require("./wTServiceUpdateParams"), exports);
 __exportStar(require("./wTSettingsSetPassword"), exports);
@@ -826,6 +831,11 @@ const wTSMSImportOptInListSubscribers_1 = require("./wTSMSImportOptInListSubscri
 const wTSMSImportedListCreate_1 = require("./wTSMSImportedListCreate");
 const wTSMSOptInListSourceCreate_1 = require("./wTSMSOptInListSourceCreate");
 const wTSMSUpdatePhoneNumberConfig_1 = require("./wTSMSUpdatePhoneNumberConfig");
+const wTSegmentAdvisory_1 = require("./wTSegmentAdvisory");
+const wTSegmentAdvisoryRecommend_1 = require("./wTSegmentAdvisoryRecommend");
+const wTSegmentEstimate_1 = require("./wTSegmentEstimate");
+const wTSegmentEstimateEncoding_1 = require("./wTSegmentEstimateEncoding");
+const wTSegmentEstimateRequest_1 = require("./wTSegmentEstimateRequest");
 const wTServiceCreateParams_1 = require("./wTServiceCreateParams");
 const wTServiceUpdateParams_1 = require("./wTServiceUpdateParams");
 const wTSettingsSetPassword_1 = require("./wTSettingsSetPassword");
@@ -1272,6 +1282,11 @@ let typeMap = {
     "WTSMSImportedListCreate": wTSMSImportedListCreate_1.WTSMSImportedListCreate,
     "WTSMSOptInListSourceCreate": wTSMSOptInListSourceCreate_1.WTSMSOptInListSourceCreate,
     "WTSMSUpdatePhoneNumberConfig": wTSMSUpdatePhoneNumberConfig_1.WTSMSUpdatePhoneNumberConfig,
+    "WTSegmentAdvisory": wTSegmentAdvisory_1.WTSegmentAdvisory,
+    "WTSegmentAdvisoryRecommend": wTSegmentAdvisoryRecommend_1.WTSegmentAdvisoryRecommend,
+    "WTSegmentEstimate": wTSegmentEstimate_1.WTSegmentEstimate,
+    "WTSegmentEstimateEncoding": wTSegmentEstimateEncoding_1.WTSegmentEstimateEncoding,
+    "WTSegmentEstimateRequest": wTSegmentEstimateRequest_1.WTSegmentEstimateRequest,
     "WTServiceCreateParams": wTServiceCreateParams_1.WTServiceCreateParams,
     "WTServiceUpdateParams": wTServiceUpdateParams_1.WTServiceUpdateParams,
     "WTSettingsSetPassword": wTSettingsSetPassword_1.WTSettingsSetPassword,
