@@ -447,6 +447,11 @@ model/wTSMSImportOptInListSubscribers.ts
 model/wTSMSImportedListCreate.ts
 model/wTSMSOptInListSourceCreate.ts
 model/wTSMSUpdatePhoneNumberConfig.ts
+model/wTSegmentAdvisory.ts
+model/wTSegmentAdvisoryRecommend.ts
+model/wTSegmentEstimate.ts
+model/wTSegmentEstimateEncoding.ts
+model/wTSegmentEstimateRequest.ts
 model/wTServiceCreateParams.ts
 model/wTServiceUpdateParams.ts
 model/wTSettingsSetPassword.ts

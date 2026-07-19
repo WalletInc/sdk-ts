@@ -383,6 +383,11 @@ export * from './wTSMSImportOptInListSubscribers';
 export * from './wTSMSImportedListCreate';
 export * from './wTSMSOptInListSourceCreate';
 export * from './wTSMSUpdatePhoneNumberConfig';
+export * from './wTSegmentAdvisory';
+export * from './wTSegmentAdvisoryRecommend';
+export * from './wTSegmentEstimate';
+export * from './wTSegmentEstimateEncoding';
+export * from './wTSegmentEstimateRequest';
 export * from './wTServiceCreateParams';
 export * from './wTServiceUpdateParams';
 export * from './wTSettingsSetPassword';
@@ -825,6 +830,11 @@ import { WTSMSImportOptInListSubscribers } from './wTSMSImportOptInListSubscribe
 import { WTSMSImportedListCreate } from './wTSMSImportedListCreate';
 import { WTSMSOptInListSourceCreate } from './wTSMSOptInListSourceCreate';
 import { WTSMSUpdatePhoneNumberConfig } from './wTSMSUpdatePhoneNumberConfig';
+import { WTSegmentAdvisory } from './wTSegmentAdvisory';
+import { WTSegmentAdvisoryRecommend } from './wTSegmentAdvisoryRecommend';
+import { WTSegmentEstimate } from './wTSegmentEstimate';
+import { WTSegmentEstimateEncoding } from './wTSegmentEstimateEncoding';
+import { WTSegmentEstimateRequest } from './wTSegmentEstimateRequest';
 import { WTServiceCreateParams } from './wTServiceCreateParams';
 import { WTServiceUpdateParams } from './wTServiceUpdateParams';
 import { WTSettingsSetPassword } from './wTSettingsSetPassword';
@@ -1275,6 +1285,11 @@ let typeMap: {[index: string]: any} = {
     "WTSMSImportedListCreate": WTSMSImportedListCreate,
     "WTSMSOptInListSourceCreate": WTSMSOptInListSourceCreate,
     "WTSMSUpdatePhoneNumberConfig": WTSMSUpdatePhoneNumberConfig,
+    "WTSegmentAdvisory": WTSegmentAdvisory,
+    "WTSegmentAdvisoryRecommend": WTSegmentAdvisoryRecommend,
+    "WTSegmentEstimate": WTSegmentEstimate,
+    "WTSegmentEstimateEncoding": WTSegmentEstimateEncoding,
+    "WTSegmentEstimateRequest": WTSegmentEstimateRequest,
     "WTServiceCreateParams": WTServiceCreateParams,
     "WTServiceUpdateParams": WTServiceUpdateParams,
     "WTSettingsSetPassword": WTSettingsSetPassword,
