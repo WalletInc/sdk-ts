@@ -4,6 +4,7 @@ export declare class WTBillingVerifyPaymentMethodResponse extends null<String, a
     'isPaymentMethodProvided': any | null;
     'subscription': SubscriptionPlan;
     'billingCadence': WTBillingVerifyPaymentMethodResponseBillingCadence;
+    'isTrialEligible': any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
