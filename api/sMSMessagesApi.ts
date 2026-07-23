@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-21T16:57:19.614Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-23T13:46:54.076Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -951,7 +951,7 @@ export class SMSMessagesApi {
     }
     /**
      * 
-     * @summary Retrieve the number of messages sent by the merchant within the current billing cycle
+     * @summary Retrieve the message segments used by the merchant within the current billing cycle
      */
     public async retrieveSentAndMaxCountOfMessages (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
         const localVarPath = this.basePath + '/v2/sms/sent';
