@@ -23,6 +23,11 @@ WTBillingVerifyPaymentMethodResponse.attributeTypeMap = [
         "name": "billingCadence",
         "baseName": "billingCadence",
         "type": "WTBillingVerifyPaymentMethodResponseBillingCadence"
+    },
+    {
+        "name": "isTrialEligible",
+        "baseName": "isTrialEligible",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTBillingVerifyPaymentMethodResponse.js.map
