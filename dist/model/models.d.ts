@@ -195,6 +195,8 @@ export * from './product';
 export * from './productKey';
 export * from './productTaxBehavior';
 export * from './productUpdateEntry';
+export * from './productUpdateIngestAck';
+export * from './productUpdateIngestBody';
 export * from './productUpdateType';
 export * from './profileStatuses';
 export * from './promoCode';

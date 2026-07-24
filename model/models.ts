@@ -194,6 +194,8 @@ export * from './product';
 export * from './productKey';
 export * from './productTaxBehavior';
 export * from './productUpdateEntry';
+export * from './productUpdateIngestAck';
+export * from './productUpdateIngestBody';
 export * from './productUpdateType';
 export * from './profileStatuses';
 export * from './promoCode';
@@ -644,6 +646,8 @@ import { Product } from './product';
 import { ProductKey } from './productKey';
 import { ProductTaxBehavior } from './productTaxBehavior';
 import { ProductUpdateEntry } from './productUpdateEntry';
+import { ProductUpdateIngestAck } from './productUpdateIngestAck';
+import { ProductUpdateIngestBody } from './productUpdateIngestBody';
 import { ProductUpdateType } from './productUpdateType';
 import { ProfileStatuses } from './profileStatuses';
 import { PromoCode } from './promoCode';
@@ -1106,6 +1110,8 @@ let typeMap: {[index: string]: any} = {
     "ProductKey": ProductKey,
     "ProductTaxBehavior": ProductTaxBehavior,
     "ProductUpdateEntry": ProductUpdateEntry,
+    "ProductUpdateIngestAck": ProductUpdateIngestAck,
+    "ProductUpdateIngestBody": ProductUpdateIngestBody,
     "ProductUpdateType": ProductUpdateType,
     "PromoCode": PromoCode,
     "QRCodeDesign": QRCodeDesign,

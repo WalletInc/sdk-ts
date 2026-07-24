@@ -209,6 +209,8 @@ __exportStar(require("./product"), exports);
 __exportStar(require("./productKey"), exports);
 __exportStar(require("./productTaxBehavior"), exports);
 __exportStar(require("./productUpdateEntry"), exports);
+__exportStar(require("./productUpdateIngestAck"), exports);
+__exportStar(require("./productUpdateIngestBody"), exports);
 __exportStar(require("./productUpdateType"), exports);
 __exportStar(require("./profileStatuses"), exports);
 __exportStar(require("./promoCode"), exports);
@@ -645,6 +647,8 @@ const product_1 = require("./product");
 const productKey_1 = require("./productKey");
 const productTaxBehavior_1 = require("./productTaxBehavior");
 const productUpdateEntry_1 = require("./productUpdateEntry");
+const productUpdateIngestAck_1 = require("./productUpdateIngestAck");
+const productUpdateIngestBody_1 = require("./productUpdateIngestBody");
 const productUpdateType_1 = require("./productUpdateType");
 const profileStatuses_1 = require("./profileStatuses");
 const promoCode_1 = require("./promoCode");
@@ -1103,6 +1107,8 @@ let typeMap = {
     "ProductKey": productKey_1.ProductKey,
     "ProductTaxBehavior": productTaxBehavior_1.ProductTaxBehavior,
     "ProductUpdateEntry": productUpdateEntry_1.ProductUpdateEntry,
+    "ProductUpdateIngestAck": productUpdateIngestAck_1.ProductUpdateIngestAck,
+    "ProductUpdateIngestBody": productUpdateIngestBody_1.ProductUpdateIngestBody,
     "ProductUpdateType": productUpdateType_1.ProductUpdateType,
     "PromoCode": promoCode_1.PromoCode,
     "QRCodeDesign": qRCodeDesign_1.QRCodeDesign,
