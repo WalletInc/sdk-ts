@@ -255,7 +255,10 @@ model/portalPage.ts
 model/presignedPost.ts
 model/presignedPostFields.ts
 model/product.ts
+model/productKey.ts
 model/productTaxBehavior.ts
+model/productUpdateEntry.ts
+model/productUpdateType.ts
 model/profileStatuses.ts
 model/promoCode.ts
 model/qRCodeDesign.ts
