@@ -12,47 +12,52 @@ SubscriptionFeature.attributeTypeMap = [
     {
         "name": "sortNum",
         "baseName": "sortNum",
-        "type": "number"
+        "type": "any"
     },
     {
         "name": "name",
         "baseName": "name",
-        "type": "string"
+        "type": "any"
+    },
+    {
+        "name": "slug",
+        "baseName": "slug",
+        "type": "any"
     },
     {
         "name": "maxVolume",
         "baseName": "maxVolume",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "measurement",
         "baseName": "measurement",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "description",
         "baseName": "description",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "currentVolume",
         "baseName": "currentVolume",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "isExceeded",
         "baseName": "isExceeded",
-        "type": "boolean"
+        "type": "any"
     },
     {
         "name": "isInUse",
         "baseName": "isInUse",
-        "type": "boolean"
+        "type": "any"
     },
     {
         "name": "isEnabled",
         "baseName": "isEnabled",
-        "type": "boolean"
+        "type": "any"
     }
 ];
 //# sourceMappingURL=subscriptionFeature.js.map
