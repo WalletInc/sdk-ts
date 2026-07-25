@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T12:24:24.069Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T13:59:52.989Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -13,15 +13,16 @@
 import { RequestFile } from './models';
 
 export class SubscriptionFeature extends null<String, any> {
-    'sortNum': number;
-    'name': string;
-    'maxVolume'?: string;
-    'measurement': string;
-    'description': string;
-    'currentVolume'?: string;
-    'isExceeded'?: boolean;
-    'isInUse'?: boolean;
-    'isEnabled'?: boolean;
+    'sortNum': any | null;
+    'name': any | null;
+    'slug'?: any | null;
+    'maxVolume'?: any | null;
+    'measurement': any | null;
+    'description': any | null;
+    'currentVolume'?: any | null;
+    'isExceeded'?: any | null;
+    'isInUse'?: any | null;
+    'isEnabled'?: any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -29,47 +30,52 @@ export class SubscriptionFeature extends null<String, any> {
         {
             "name": "sortNum",
             "baseName": "sortNum",
-            "type": "number"
+            "type": "any"
         },
         {
             "name": "name",
             "baseName": "name",
-            "type": "string"
+            "type": "any"
+        },
+        {
+            "name": "slug",
+            "baseName": "slug",
+            "type": "any"
         },
         {
             "name": "maxVolume",
             "baseName": "maxVolume",
-            "type": "string"
+            "type": "any"
         },
         {
             "name": "measurement",
             "baseName": "measurement",
-            "type": "string"
+            "type": "any"
         },
         {
             "name": "description",
             "baseName": "description",
-            "type": "string"
+            "type": "any"
         },
         {
             "name": "currentVolume",
             "baseName": "currentVolume",
-            "type": "string"
+            "type": "any"
         },
         {
             "name": "isExceeded",
             "baseName": "isExceeded",
-            "type": "boolean"
+            "type": "any"
         },
         {
             "name": "isInUse",
             "baseName": "isInUse",
-            "type": "boolean"
+            "type": "any"
         },
         {
             "name": "isEnabled",
             "baseName": "isEnabled",
-            "type": "boolean"
+            "type": "any"
         }    ];
 
     static getAttributeTypeMap() {
