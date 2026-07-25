@@ -58,7 +58,6 @@ export * from './fetchAllLedgerTransactions200Response';
 export * from './fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner';
 export * from './fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType';
 export * from './fetchCustomerTicketsWithTokenRequest';
-export * from './fetchDomainsByIndustry200Response';
 export * from './fetchImportedListRecipientsByPage200Response';
 export * from './fetchInboundSMSByPage200Response';
 export * from './fetchIndustry200Response';
@@ -510,7 +509,6 @@ import { FetchAllLedgerTransactions200Response } from './fetchAllLedgerTransacti
 import { FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner } from './fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner';
 import { FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType } from './fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType';
 import { FetchCustomerTicketsWithTokenRequest } from './fetchCustomerTicketsWithTokenRequest';
-import { FetchDomainsByIndustry200Response } from './fetchDomainsByIndustry200Response';
 import { FetchImportedListRecipientsByPage200Response } from './fetchImportedListRecipientsByPage200Response';
 import { FetchInboundSMSByPage200Response } from './fetchInboundSMSByPage200Response';
 import { FetchIndustry200Response } from './fetchIndustry200Response';
@@ -976,7 +974,6 @@ let typeMap: {[index: string]: any} = {
     "FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner": FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner,
     "FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType": FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType,
     "FetchCustomerTicketsWithTokenRequest": FetchCustomerTicketsWithTokenRequest,
-    "FetchDomainsByIndustry200Response": FetchDomainsByIndustry200Response,
     "FetchImportedListRecipientsByPage200Response": FetchImportedListRecipientsByPage200Response,
     "FetchInboundSMSByPage200Response": FetchInboundSMSByPage200Response,
     "FetchIndustry200Response": FetchIndustry200Response,

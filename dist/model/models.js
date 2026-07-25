@@ -73,7 +73,6 @@ __exportStar(require("./fetchAllLedgerTransactions200Response"), exports);
 __exportStar(require("./fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner"), exports);
 __exportStar(require("./fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType"), exports);
 __exportStar(require("./fetchCustomerTicketsWithTokenRequest"), exports);
-__exportStar(require("./fetchDomainsByIndustry200Response"), exports);
 __exportStar(require("./fetchImportedListRecipientsByPage200Response"), exports);
 __exportStar(require("./fetchInboundSMSByPage200Response"), exports);
 __exportStar(require("./fetchIndustry200Response"), exports);
@@ -511,7 +510,6 @@ const fetchAllLedgerTransactions200Response_1 = require("./fetchAllLedgerTransac
 const fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner_1 = require("./fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner");
 const fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType_1 = require("./fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType");
 const fetchCustomerTicketsWithTokenRequest_1 = require("./fetchCustomerTicketsWithTokenRequest");
-const fetchDomainsByIndustry200Response_1 = require("./fetchDomainsByIndustry200Response");
 const fetchImportedListRecipientsByPage200Response_1 = require("./fetchImportedListRecipientsByPage200Response");
 const fetchInboundSMSByPage200Response_1 = require("./fetchInboundSMSByPage200Response");
 const fetchIndustry200Response_1 = require("./fetchIndustry200Response");
@@ -973,7 +971,6 @@ let typeMap = {
     "FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner": fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner_1.FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner,
     "FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType": fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType_1.FetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType,
     "FetchCustomerTicketsWithTokenRequest": fetchCustomerTicketsWithTokenRequest_1.FetchCustomerTicketsWithTokenRequest,
-    "FetchDomainsByIndustry200Response": fetchDomainsByIndustry200Response_1.FetchDomainsByIndustry200Response,
     "FetchImportedListRecipientsByPage200Response": fetchImportedListRecipientsByPage200Response_1.FetchImportedListRecipientsByPage200Response,
     "FetchInboundSMSByPage200Response": fetchInboundSMSByPage200Response_1.FetchInboundSMSByPage200Response,
     "FetchIndustry200Response": fetchIndustry200Response_1.FetchIndustry200Response,
