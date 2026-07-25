@@ -59,7 +59,6 @@ export * from './fetchAllLedgerTransactions200Response';
 export * from './fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInner';
 export * from './fetchAllStaticVouchersAssociatedWithCustomerWithVoucherID200ResponseInnerValueType';
 export * from './fetchCustomerTicketsWithTokenRequest';
-export * from './fetchDomainsByIndustry200Response';
 export * from './fetchImportedListRecipientsByPage200Response';
 export * from './fetchInboundSMSByPage200Response';
 export * from './fetchIndustry200Response';
