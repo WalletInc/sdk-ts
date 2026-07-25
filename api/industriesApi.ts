@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-24T22:45:38.898Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T12:24:24.069Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -15,7 +15,6 @@ import localVarRequest from 'request';
 import http from 'http';
 
 /* tslint:disable:no-unused-locals */
-import { FetchDomainsByIndustry200Response } from '../model/fetchDomainsByIndustry200Response';
 import { FetchIndustry200Response } from '../model/fetchIndustry200Response';
 import { InternalServerError500 } from '../model/internalServerError500';
 
@@ -144,68 +143,6 @@ export class IndustriesApi {
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                             body = ObjectSerializer.deserialize(body, "Array<FetchIndustry200Response>");
-                            resolve({ response: response, body: body });
-                        } else {
-                            reject(new HttpError(response, body, response.statusCode));
-                        }
-                    }
-                });
-            });
-        });
-    }
-    /**
-     * 
-     * @summary Get all white-labeled custom domains by industry
-     */
-    public async fetchDomainsByIndustry (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: FetchDomainsByIndustry200Response;  }> {
-        const localVarPath = this.basePath + '/system/industries/domains';
-        let localVarQueryParameters: any = {};
-        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
-        const produces = ['application/json'];
-        // give precedence to 'application/json'
-        if (produces.indexOf('application/json') >= 0) {
-            localVarHeaderParams.Accept = 'application/json';
-        } else {
-            localVarHeaderParams.Accept = produces.join(',');
-        }
-        let localVarFormParams: any = {};
-
-        (<any>Object).assign(localVarHeaderParams, options.headers);
-
-        let localVarUseFormData = false;
-
-        let localVarRequestOptions: localVarRequest.Options = {
-            method: 'GET',
-            qs: localVarQueryParameters,
-            headers: localVarHeaderParams,
-            uri: localVarPath,
-            useQuerystring: this._useQuerystring,
-            json: true,
-        };
-
-        let authenticationPromise = Promise.resolve();
-        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
-
-        let interceptorPromise = authenticationPromise;
-        for (const interceptor of this.interceptors) {
-            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
-        }
-
-        return interceptorPromise.then(() => {
-            if (Object.keys(localVarFormParams).length) {
-                if (localVarUseFormData) {
-                    (<any>localVarRequestOptions).formData = localVarFormParams;
-                } else {
-                    localVarRequestOptions.form = localVarFormParams;
-                }
-            }
-            return new Promise<{ response: http.IncomingMessage; body: FetchDomainsByIndustry200Response;  }>((resolve, reject) => {
-                localVarRequest(localVarRequestOptions, (error, response, body) => {
-                    if (error) {
-                        reject(error);
-                    } else {
-                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "FetchDomainsByIndustry200Response");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
