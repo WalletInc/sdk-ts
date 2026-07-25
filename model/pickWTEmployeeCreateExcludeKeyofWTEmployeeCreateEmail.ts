@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T13:57:05.776Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T21:35:51.140Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -23,10 +23,10 @@ export class PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail {
     'employeeID': string;
     'firstName': string;
     'lastName': string;
+    'jobTitle': string;
     'phoneNumber': string;
     'isPublicRepresentative': boolean;
     'walletSequenceNumber': number;
-    'jobTitle': string;
     'department': string;
     'scheduleStartDay'?: PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmailScheduleStartDay;
     'scheduleStartHour'?: PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmailScheduleStartHour;
@@ -56,6 +56,11 @@ export class PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail {
             "type": "string"
         },
         {
+            "name": "jobTitle",
+            "baseName": "jobTitle",
+            "type": "string"
+        },
+        {
             "name": "phoneNumber",
             "baseName": "phoneNumber",
             "type": "string"
@@ -69,11 +74,6 @@ export class PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail {
             "name": "walletSequenceNumber",
             "baseName": "walletSequenceNumber",
             "type": "number"
-        },
-        {
-            "name": "jobTitle",
-            "baseName": "jobTitle",
-            "type": "string"
         },
         {
             "name": "department",

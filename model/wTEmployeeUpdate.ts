@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T13:57:05.776Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T21:35:51.140Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -20,10 +20,10 @@ export class WTEmployeeUpdate extends null<String, any> {
     'employeeID': any | null;
     'firstName': any | null;
     'lastName': any | null;
+    'jobTitle': any | null;
     'phoneNumber': any | null;
     'isPublicRepresentative': any | null;
     'walletSequenceNumber': any | null;
-    'jobTitle': any | null;
     'department': any | null;
     'scheduleStartDay'?: EmployeeScheduleStartDay;
     'scheduleStartHour'?: EmployeeScheduleStartHour;
@@ -53,6 +53,11 @@ export class WTEmployeeUpdate extends null<String, any> {
             "type": "any"
         },
         {
+            "name": "jobTitle",
+            "baseName": "jobTitle",
+            "type": "any"
+        },
+        {
             "name": "phoneNumber",
             "baseName": "phoneNumber",
             "type": "any"
@@ -65,11 +70,6 @@ export class WTEmployeeUpdate extends null<String, any> {
         {
             "name": "walletSequenceNumber",
             "baseName": "walletSequenceNumber",
-            "type": "any"
-        },
-        {
-            "name": "jobTitle",
-            "baseName": "jobTitle",
             "type": "any"
         },
         {

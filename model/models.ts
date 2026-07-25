@@ -1,6 +1,11 @@
 import localVarRequest from 'request';
 
 export * from './a2PApplicationSubmission';
+export * from './a2PGovernmentSubmission';
+export * from './a2PNonProfitSubmission';
+export * from './a2PPublicSubmission';
+export * from './a2PSoleProprietorSubmission';
+export * from './a2PStandardSubmission';
 export * from './advertisementCredit';
 export * from './advertisementCreditBroadcast';
 export * from './advertisementCreditScan';
@@ -13,11 +18,19 @@ export * from './authError';
 export * from './availablePhoneNumbersRequest';
 export * from './browserDetails';
 export * from './businessClassification';
+export * from './businessClassificationGovernment';
+export * from './businessClassificationNonProfit';
+export * from './businessClassificationPrivate';
+export * from './businessClassificationPublic';
 export * from './businessIndustry';
+export * from './businessIndustryGOVERNMENT';
+export * from './businessIndustryNOTFORPROFIT';
 export * from './businessRegionsOfOperation';
 export * from './businessRegistrationIdentifier';
 export * from './businessStockExchanges';
 export * from './businessType';
+export * from './businessTypeNonProfit';
+export * from './businessTypeSoleProprietorship';
 export * from './chatCompletionAudio';
 export * from './chatCompletionMessage';
 export * from './chatCompletionMessageAudio';
@@ -135,6 +148,8 @@ export * from './paymentDesign';
 export * from './performance';
 export * from './phoneNumber';
 export * from './phoneNumberCapabilities';
+export * from './pickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile';
+export * from './pickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition';
 export * from './pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive';
 export * from './pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID';
 export * from './pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID';
@@ -452,6 +467,11 @@ export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 
 
 import { A2PApplicationSubmission } from './a2PApplicationSubmission';
+import { A2PGovernmentSubmission } from './a2PGovernmentSubmission';
+import { A2PNonProfitSubmission } from './a2PNonProfitSubmission';
+import { A2PPublicSubmission } from './a2PPublicSubmission';
+import { A2PSoleProprietorSubmission } from './a2PSoleProprietorSubmission';
+import { A2PStandardSubmission } from './a2PStandardSubmission';
 import { AdvertisementCredit } from './advertisementCredit';
 import { AdvertisementCreditBroadcast } from './advertisementCreditBroadcast';
 import { AdvertisementCreditScan } from './advertisementCreditScan';
@@ -464,11 +484,19 @@ import { AuthError } from './authError';
 import { AvailablePhoneNumbersRequest } from './availablePhoneNumbersRequest';
 import { BrowserDetails } from './browserDetails';
 import { BusinessClassification } from './businessClassification';
+import { BusinessClassificationGovernment } from './businessClassificationGovernment';
+import { BusinessClassificationNonProfit } from './businessClassificationNonProfit';
+import { BusinessClassificationPrivate } from './businessClassificationPrivate';
+import { BusinessClassificationPublic } from './businessClassificationPublic';
 import { BusinessIndustry } from './businessIndustry';
+import { BusinessIndustryGOVERNMENT } from './businessIndustryGOVERNMENT';
+import { BusinessIndustryNOTFORPROFIT } from './businessIndustryNOTFORPROFIT';
 import { BusinessRegionsOfOperation } from './businessRegionsOfOperation';
 import { BusinessRegistrationIdentifier } from './businessRegistrationIdentifier';
 import { BusinessStockExchanges } from './businessStockExchanges';
 import { BusinessType } from './businessType';
+import { BusinessTypeNonProfit } from './businessTypeNonProfit';
+import { BusinessTypeSoleProprietorship } from './businessTypeSoleProprietorship';
 import { ChatCompletionAudio } from './chatCompletionAudio';
 import { ChatCompletionMessage } from './chatCompletionMessage';
 import { ChatCompletionMessageAudio } from './chatCompletionMessageAudio';
@@ -586,6 +614,8 @@ import { PaymentDesign } from './paymentDesign';
 import { Performance } from './performance';
 import { PhoneNumber } from './phoneNumber';
 import { PhoneNumberCapabilities } from './phoneNumberCapabilities';
+import { PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile } from './pickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile';
+import { PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition } from './pickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition';
 import { PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive } from './pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive';
 import { PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID } from './pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID';
 import { PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID } from './pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID';
@@ -903,11 +933,19 @@ let primitives = [
 
 let enumsMap: {[index: string]: any} = {
         "BusinessClassification": BusinessClassification,
+        "BusinessClassificationGovernment": BusinessClassificationGovernment,
+        "BusinessClassificationNonProfit": BusinessClassificationNonProfit,
+        "BusinessClassificationPrivate": BusinessClassificationPrivate,
+        "BusinessClassificationPublic": BusinessClassificationPublic,
         "BusinessIndustry": BusinessIndustry,
+        "BusinessIndustryGOVERNMENT": BusinessIndustryGOVERNMENT,
+        "BusinessIndustryNOTFORPROFIT": BusinessIndustryNOTFORPROFIT,
         "BusinessRegionsOfOperation": BusinessRegionsOfOperation,
         "BusinessRegistrationIdentifier": BusinessRegistrationIdentifier,
         "BusinessStockExchanges": BusinessStockExchanges,
         "BusinessType": BusinessType,
+        "BusinessTypeNonProfit": BusinessTypeNonProfit,
+        "BusinessTypeSoleProprietorship": BusinessTypeSoleProprietorship,
         "ChatCompletionMessage.RoleEnum": ChatCompletionMessage.RoleEnum,
         "ChatCompletionMessageToolCall.TypeEnum": ChatCompletionMessageToolCall.TypeEnum,
         "JobPosition": JobPosition,
@@ -923,6 +961,11 @@ let enumsMap: {[index: string]: any} = {
 
 let typeMap: {[index: string]: any} = {
     "A2PApplicationSubmission": A2PApplicationSubmission,
+    "A2PGovernmentSubmission": A2PGovernmentSubmission,
+    "A2PNonProfitSubmission": A2PNonProfitSubmission,
+    "A2PPublicSubmission": A2PPublicSubmission,
+    "A2PSoleProprietorSubmission": A2PSoleProprietorSubmission,
+    "A2PStandardSubmission": A2PStandardSubmission,
     "AdvertisementCredit": AdvertisementCredit,
     "AdvertisementCreditBroadcast": AdvertisementCreditBroadcast,
     "AdvertisementCreditScan": AdvertisementCreditScan,
@@ -1050,6 +1093,8 @@ let typeMap: {[index: string]: any} = {
     "Performance": Performance,
     "PhoneNumber": PhoneNumber,
     "PhoneNumberCapabilities": PhoneNumberCapabilities,
+    "PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile": PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile,
+    "PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition": PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition,
     "PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive": PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive,
     "PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID": PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID,
     "PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID": PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID,

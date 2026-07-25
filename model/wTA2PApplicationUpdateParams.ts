@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T13:57:05.776Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T21:35:51.140Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -43,6 +43,8 @@ export class WTA2PApplicationUpdateParams extends null<String, any> {
     'jobTitle': any | null;
     'jobPosition': JobPosition;
     'phoneNumber': any | null;
+    'brandContactEmail'?: any | null;
+    'verificationMobile'?: any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -165,6 +167,16 @@ export class WTA2PApplicationUpdateParams extends null<String, any> {
         {
             "name": "phoneNumber",
             "baseName": "phoneNumber",
+            "type": "any"
+        },
+        {
+            "name": "brandContactEmail",
+            "baseName": "brandContactEmail",
+            "type": "any"
+        },
+        {
+            "name": "verificationMobile",
+            "baseName": "verificationMobile",
             "type": "any"
         }    ];
 
