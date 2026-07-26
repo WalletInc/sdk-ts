@@ -1,5 +1,5 @@
 export declare class WTSmsSubscriberUpdateParams extends null<String, any> {
-    'mobileNumber': string;
+    'mobileNumber': any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T16:25:34.213Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T16:49:54.662Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -18,6 +18,7 @@ export class WTTCPAOpt extends null<String, any> {
     'listID': WTTCPAOptListID;
     'sourceID': WTTCPAOptSourceID;
     'phoneNumber': any | null;
+    'disclosureVersion'?: any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -35,6 +36,11 @@ export class WTTCPAOpt extends null<String, any> {
         {
             "name": "phoneNumber",
             "baseName": "phoneNumber",
+            "type": "any"
+        },
+        {
+            "name": "disclosureVersion",
+            "baseName": "disclosureVersion",
             "type": "any"
         }    ];
 

@@ -1,6 +1,8 @@
 import { AmenityId } from './amenityId';
 export declare class SmsSubscriber extends null<String, any> {
     'mobileNumber': any | null;
+    'optInSource'?: any | null;
+    'disclosureVersion'?: any | null;
     'id': AmenityId;
     'createdAt': any | null;
     'updatedAt': any | null;

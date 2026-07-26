@@ -4,6 +4,7 @@ export declare class WTTCPAOpt extends null<String, any> {
     'listID': WTTCPAOptListID;
     'sourceID': WTTCPAOptSourceID;
     'phoneNumber': any | null;
+    'disclosureVersion'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

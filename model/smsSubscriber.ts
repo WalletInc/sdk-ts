@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T16:25:34.213Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T16:49:54.662Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -15,6 +15,8 @@ import { AmenityId } from './amenityId';
 
 export class SmsSubscriber extends null<String, any> {
     'mobileNumber': any | null;
+    'optInSource'?: any | null;
+    'disclosureVersion'?: any | null;
     'id': AmenityId;
     'createdAt': any | null;
     'updatedAt': any | null;
@@ -27,6 +29,16 @@ export class SmsSubscriber extends null<String, any> {
         {
             "name": "mobileNumber",
             "baseName": "mobileNumber",
+            "type": "any"
+        },
+        {
+            "name": "optInSource",
+            "baseName": "optInSource",
+            "type": "any"
+        },
+        {
+            "name": "disclosureVersion",
+            "baseName": "disclosureVersion",
             "type": "any"
         },
         {

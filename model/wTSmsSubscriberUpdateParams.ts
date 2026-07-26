@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T16:25:34.213Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T16:49:54.662Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -13,7 +13,7 @@
 import { RequestFile } from './models';
 
 export class WTSmsSubscriberUpdateParams extends null<String, any> {
-    'mobileNumber': string;
+    'mobileNumber': any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -21,7 +21,7 @@ export class WTSmsSubscriberUpdateParams extends null<String, any> {
         {
             "name": "mobileNumber",
             "baseName": "mobileNumber",
-            "type": "string"
+            "type": "any"
         }    ];
 
     static getAttributeTypeMap() {
