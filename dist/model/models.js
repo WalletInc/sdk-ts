@@ -16,6 +16,11 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VoidAuth = exports.OAuth = exports.ApiKeyAuth = exports.HttpBearerAuth = exports.HttpBasicAuth = exports.ObjectSerializer = void 0;
 __exportStar(require("./a2PApplicationSubmission"), exports);
+__exportStar(require("./a2PGovernmentSubmission"), exports);
+__exportStar(require("./a2PNonProfitSubmission"), exports);
+__exportStar(require("./a2PPublicSubmission"), exports);
+__exportStar(require("./a2PSoleProprietorSubmission"), exports);
+__exportStar(require("./a2PStandardSubmission"), exports);
 __exportStar(require("./advertisementCredit"), exports);
 __exportStar(require("./advertisementCreditBroadcast"), exports);
 __exportStar(require("./advertisementCreditScan"), exports);
@@ -28,11 +33,19 @@ __exportStar(require("./authError"), exports);
 __exportStar(require("./availablePhoneNumbersRequest"), exports);
 __exportStar(require("./browserDetails"), exports);
 __exportStar(require("./businessClassification"), exports);
+__exportStar(require("./businessClassificationGovernment"), exports);
+__exportStar(require("./businessClassificationNonProfit"), exports);
+__exportStar(require("./businessClassificationPrivate"), exports);
+__exportStar(require("./businessClassificationPublic"), exports);
 __exportStar(require("./businessIndustry"), exports);
+__exportStar(require("./businessIndustryGOVERNMENT"), exports);
+__exportStar(require("./businessIndustryNOTFORPROFIT"), exports);
 __exportStar(require("./businessRegionsOfOperation"), exports);
 __exportStar(require("./businessRegistrationIdentifier"), exports);
 __exportStar(require("./businessStockExchanges"), exports);
 __exportStar(require("./businessType"), exports);
+__exportStar(require("./businessTypeNonProfit"), exports);
+__exportStar(require("./businessTypeSoleProprietorship"), exports);
 __exportStar(require("./chatCompletionAudio"), exports);
 __exportStar(require("./chatCompletionMessage"), exports);
 __exportStar(require("./chatCompletionMessageAudio"), exports);
@@ -150,6 +163,8 @@ __exportStar(require("./paymentDesign"), exports);
 __exportStar(require("./performance"), exports);
 __exportStar(require("./phoneNumber"), exports);
 __exportStar(require("./phoneNumberCapabilities"), exports);
+__exportStar(require("./pickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile"), exports);
+__exportStar(require("./pickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition"), exports);
 __exportStar(require("./pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive"), exports);
 __exportStar(require("./pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID"), exports);
 __exportStar(require("./pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID"), exports);
@@ -335,9 +350,11 @@ __exportStar(require("./wTGiftCardPurchaseRequest"), exports);
 __exportStar(require("./wTGiftClaimRequest"), exports);
 __exportStar(require("./wTImageGridCreateParams"), exports);
 __exportStar(require("./wTImageGridUpdateParams"), exports);
+__exportStar(require("./wTImportConsentBasis"), exports);
 __exportStar(require("./wTImportedList"), exports);
 __exportStar(require("./wTImportedListRecipientFromMembershipTierImport"), exports);
 __exportStar(require("./wTImportedListRecipientFromMembershipTierImportTierID"), exports);
+__exportStar(require("./wTImportedListRecipientImport"), exports);
 __exportStar(require("./wTInfoGenesisLookupRequestErrors"), exports);
 __exportStar(require("./wTInfoGenesisRecordFilterParameters"), exports);
 __exportStar(require("./wTInfoGenesisRoutingIDs"), exports);
@@ -366,6 +383,7 @@ __exportStar(require("./wTMerchantUpdate"), exports);
 __exportStar(require("./wTMerchantUpdatePOSIntegration"), exports);
 __exportStar(require("./wTMerchantUpdatePointsOfContact"), exports);
 __exportStar(require("./wTMessageInstance"), exports);
+__exportStar(require("./wTMessageType"), exports);
 __exportStar(require("./wTNewsArticleCreateParams"), exports);
 __exportStar(require("./wTNewsArticleUpdateParams"), exports);
 __exportStar(require("./wTOptInList"), exports);
@@ -453,6 +471,11 @@ __exportStar(require("./walletConfiguration"), exports);
 __exportStar(require("./walletPageView"), exports);
 __exportStar(require("./webpage"), exports);
 const a2PApplicationSubmission_1 = require("./a2PApplicationSubmission");
+const a2PGovernmentSubmission_1 = require("./a2PGovernmentSubmission");
+const a2PNonProfitSubmission_1 = require("./a2PNonProfitSubmission");
+const a2PPublicSubmission_1 = require("./a2PPublicSubmission");
+const a2PSoleProprietorSubmission_1 = require("./a2PSoleProprietorSubmission");
+const a2PStandardSubmission_1 = require("./a2PStandardSubmission");
 const advertisementCredit_1 = require("./advertisementCredit");
 const advertisementCreditBroadcast_1 = require("./advertisementCreditBroadcast");
 const advertisementCreditScan_1 = require("./advertisementCreditScan");
@@ -465,11 +488,19 @@ const authError_1 = require("./authError");
 const availablePhoneNumbersRequest_1 = require("./availablePhoneNumbersRequest");
 const browserDetails_1 = require("./browserDetails");
 const businessClassification_1 = require("./businessClassification");
+const businessClassificationGovernment_1 = require("./businessClassificationGovernment");
+const businessClassificationNonProfit_1 = require("./businessClassificationNonProfit");
+const businessClassificationPrivate_1 = require("./businessClassificationPrivate");
+const businessClassificationPublic_1 = require("./businessClassificationPublic");
 const businessIndustry_1 = require("./businessIndustry");
+const businessIndustryGOVERNMENT_1 = require("./businessIndustryGOVERNMENT");
+const businessIndustryNOTFORPROFIT_1 = require("./businessIndustryNOTFORPROFIT");
 const businessRegionsOfOperation_1 = require("./businessRegionsOfOperation");
 const businessRegistrationIdentifier_1 = require("./businessRegistrationIdentifier");
 const businessStockExchanges_1 = require("./businessStockExchanges");
 const businessType_1 = require("./businessType");
+const businessTypeNonProfit_1 = require("./businessTypeNonProfit");
+const businessTypeSoleProprietorship_1 = require("./businessTypeSoleProprietorship");
 const chatCompletionAudio_1 = require("./chatCompletionAudio");
 const chatCompletionMessage_1 = require("./chatCompletionMessage");
 const chatCompletionMessageAudio_1 = require("./chatCompletionMessageAudio");
@@ -587,6 +618,8 @@ const paymentDesign_1 = require("./paymentDesign");
 const performance_1 = require("./performance");
 const phoneNumber_1 = require("./phoneNumber");
 const phoneNumberCapabilities_1 = require("./phoneNumberCapabilities");
+const pickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile_1 = require("./pickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile");
+const pickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition_1 = require("./pickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition");
 const pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive_1 = require("./pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive");
 const pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID_1 = require("./pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID");
 const pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID_1 = require("./pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID");
@@ -772,9 +805,11 @@ const wTGiftCardPurchaseRequest_1 = require("./wTGiftCardPurchaseRequest");
 const wTGiftClaimRequest_1 = require("./wTGiftClaimRequest");
 const wTImageGridCreateParams_1 = require("./wTImageGridCreateParams");
 const wTImageGridUpdateParams_1 = require("./wTImageGridUpdateParams");
+const wTImportConsentBasis_1 = require("./wTImportConsentBasis");
 const wTImportedList_1 = require("./wTImportedList");
 const wTImportedListRecipientFromMembershipTierImport_1 = require("./wTImportedListRecipientFromMembershipTierImport");
 const wTImportedListRecipientFromMembershipTierImportTierID_1 = require("./wTImportedListRecipientFromMembershipTierImportTierID");
+const wTImportedListRecipientImport_1 = require("./wTImportedListRecipientImport");
 const wTInfoGenesisLookupRequestErrors_1 = require("./wTInfoGenesisLookupRequestErrors");
 const wTInfoGenesisRecordFilterParameters_1 = require("./wTInfoGenesisRecordFilterParameters");
 const wTInfoGenesisRoutingIDs_1 = require("./wTInfoGenesisRoutingIDs");
@@ -803,6 +838,7 @@ const wTMerchantUpdate_1 = require("./wTMerchantUpdate");
 const wTMerchantUpdatePOSIntegration_1 = require("./wTMerchantUpdatePOSIntegration");
 const wTMerchantUpdatePointsOfContact_1 = require("./wTMerchantUpdatePointsOfContact");
 const wTMessageInstance_1 = require("./wTMessageInstance");
+const wTMessageType_1 = require("./wTMessageType");
 const wTNewsArticleCreateParams_1 = require("./wTNewsArticleCreateParams");
 const wTNewsArticleUpdateParams_1 = require("./wTNewsArticleUpdateParams");
 const wTOptInList_1 = require("./wTOptInList");
@@ -901,11 +937,19 @@ let primitives = [
 ];
 let enumsMap = {
     "BusinessClassification": businessClassification_1.BusinessClassification,
+    "BusinessClassificationGovernment": businessClassificationGovernment_1.BusinessClassificationGovernment,
+    "BusinessClassificationNonProfit": businessClassificationNonProfit_1.BusinessClassificationNonProfit,
+    "BusinessClassificationPrivate": businessClassificationPrivate_1.BusinessClassificationPrivate,
+    "BusinessClassificationPublic": businessClassificationPublic_1.BusinessClassificationPublic,
     "BusinessIndustry": businessIndustry_1.BusinessIndustry,
+    "BusinessIndustryGOVERNMENT": businessIndustryGOVERNMENT_1.BusinessIndustryGOVERNMENT,
+    "BusinessIndustryNOTFORPROFIT": businessIndustryNOTFORPROFIT_1.BusinessIndustryNOTFORPROFIT,
     "BusinessRegionsOfOperation": businessRegionsOfOperation_1.BusinessRegionsOfOperation,
     "BusinessRegistrationIdentifier": businessRegistrationIdentifier_1.BusinessRegistrationIdentifier,
     "BusinessStockExchanges": businessStockExchanges_1.BusinessStockExchanges,
     "BusinessType": businessType_1.BusinessType,
+    "BusinessTypeNonProfit": businessTypeNonProfit_1.BusinessTypeNonProfit,
+    "BusinessTypeSoleProprietorship": businessTypeSoleProprietorship_1.BusinessTypeSoleProprietorship,
     "ChatCompletionMessage.RoleEnum": chatCompletionMessage_1.ChatCompletionMessage.RoleEnum,
     "ChatCompletionMessageToolCall.TypeEnum": chatCompletionMessageToolCall_1.ChatCompletionMessageToolCall.TypeEnum,
     "JobPosition": jobPosition_1.JobPosition,
@@ -920,6 +964,11 @@ let enumsMap = {
 };
 let typeMap = {
     "A2PApplicationSubmission": a2PApplicationSubmission_1.A2PApplicationSubmission,
+    "A2PGovernmentSubmission": a2PGovernmentSubmission_1.A2PGovernmentSubmission,
+    "A2PNonProfitSubmission": a2PNonProfitSubmission_1.A2PNonProfitSubmission,
+    "A2PPublicSubmission": a2PPublicSubmission_1.A2PPublicSubmission,
+    "A2PSoleProprietorSubmission": a2PSoleProprietorSubmission_1.A2PSoleProprietorSubmission,
+    "A2PStandardSubmission": a2PStandardSubmission_1.A2PStandardSubmission,
     "AdvertisementCredit": advertisementCredit_1.AdvertisementCredit,
     "AdvertisementCreditBroadcast": advertisementCreditBroadcast_1.AdvertisementCreditBroadcast,
     "AdvertisementCreditScan": advertisementCreditScan_1.AdvertisementCreditScan,
@@ -1047,6 +1096,8 @@ let typeMap = {
     "Performance": performance_1.Performance,
     "PhoneNumber": phoneNumber_1.PhoneNumber,
     "PhoneNumberCapabilities": phoneNumberCapabilities_1.PhoneNumberCapabilities,
+    "PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile": pickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile_1.PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrStockTickerOrBrandContactEmailOrVerificationMobile,
+    "PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition": pickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition_1.PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition,
     "PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive": pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive_1.PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherIsActive,
     "PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID": pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID_1.PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID,
     "PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID": pickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID_1.PickMSEmployeeAPIKeyCreateParamsExcludeKeyofMSEmployeeAPIKeyCreateParamsEmployeeID,
@@ -1227,9 +1278,11 @@ let typeMap = {
     "WTGiftClaimRequest": wTGiftClaimRequest_1.WTGiftClaimRequest,
     "WTImageGridCreateParams": wTImageGridCreateParams_1.WTImageGridCreateParams,
     "WTImageGridUpdateParams": wTImageGridUpdateParams_1.WTImageGridUpdateParams,
+    "WTImportConsentBasis": wTImportConsentBasis_1.WTImportConsentBasis,
     "WTImportedList": wTImportedList_1.WTImportedList,
     "WTImportedListRecipientFromMembershipTierImport": wTImportedListRecipientFromMembershipTierImport_1.WTImportedListRecipientFromMembershipTierImport,
     "WTImportedListRecipientFromMembershipTierImportTierID": wTImportedListRecipientFromMembershipTierImportTierID_1.WTImportedListRecipientFromMembershipTierImportTierID,
+    "WTImportedListRecipientImport": wTImportedListRecipientImport_1.WTImportedListRecipientImport,
     "WTInfoGenesisLookupRequestErrors": wTInfoGenesisLookupRequestErrors_1.WTInfoGenesisLookupRequestErrors,
     "WTInfoGenesisRecordFilterParameters": wTInfoGenesisRecordFilterParameters_1.WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": wTInfoGenesisRoutingIDs_1.WTInfoGenesisRoutingIDs,
@@ -1258,6 +1311,7 @@ let typeMap = {
     "WTMerchantUpdatePOSIntegration": wTMerchantUpdatePOSIntegration_1.WTMerchantUpdatePOSIntegration,
     "WTMerchantUpdatePointsOfContact": wTMerchantUpdatePointsOfContact_1.WTMerchantUpdatePointsOfContact,
     "WTMessageInstance": wTMessageInstance_1.WTMessageInstance,
+    "WTMessageType": wTMessageType_1.WTMessageType,
     "WTNewsArticleCreateParams": wTNewsArticleCreateParams_1.WTNewsArticleCreateParams,
     "WTNewsArticleUpdateParams": wTNewsArticleUpdateParams_1.WTNewsArticleUpdateParams,
     "WTOptInList": wTOptInList_1.WTOptInList,

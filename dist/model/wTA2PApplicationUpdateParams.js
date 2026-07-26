@@ -128,6 +128,16 @@ WTA2PApplicationUpdateParams.attributeTypeMap = [
         "name": "phoneNumber",
         "baseName": "phoneNumber",
         "type": "any"
+    },
+    {
+        "name": "brandContactEmail",
+        "baseName": "brandContactEmail",
+        "type": "any"
+    },
+    {
+        "name": "verificationMobile",
+        "baseName": "verificationMobile",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTA2PApplicationUpdateParams.js.map

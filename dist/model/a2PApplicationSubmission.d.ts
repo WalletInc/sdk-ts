@@ -41,6 +41,8 @@ export declare class A2PApplicationSubmission extends null<String, any> {
     'jobTitle': any | null;
     'jobPosition': JobPosition;
     'phoneNumber': any | null;
+    'brandContactEmail'?: any | null;
+    'verificationMobile'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -12,7 +12,7 @@ WTSmsSubscriberUpdateParams.attributeTypeMap = [
     {
         "name": "mobileNumber",
         "baseName": "mobileNumber",
-        "type": "string"
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTSmsSubscriberUpdateParams.js.map

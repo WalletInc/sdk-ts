@@ -43,6 +43,11 @@ WTEmployeeScheduleSMSCampaignBroadcast.attributeTypeMap = [
         "name": "timezone",
         "baseName": "timezone",
         "type": "any"
+    },
+    {
+        "name": "messageType",
+        "baseName": "messageType",
+        "type": "WTMessageType"
     }
 ];
 //# sourceMappingURL=wTEmployeeScheduleSMSCampaignBroadcast.js.map

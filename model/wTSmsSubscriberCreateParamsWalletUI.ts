@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-25T13:59:52.989Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T17:38:33.688Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -14,6 +14,8 @@ import { RequestFile } from './models';
 
 export class WTSmsSubscriberCreateParamsWalletUI extends null<String, any> {
     'mobileNumber': any | null;
+    'optInSource'?: any | null;
+    'disclosureVersion'?: any | null;
     'merchantID': string;
 
     static discriminator: string | undefined = undefined;
@@ -22,6 +24,16 @@ export class WTSmsSubscriberCreateParamsWalletUI extends null<String, any> {
         {
             "name": "mobileNumber",
             "baseName": "mobileNumber",
+            "type": "any"
+        },
+        {
+            "name": "optInSource",
+            "baseName": "optInSource",
+            "type": "any"
+        },
+        {
+            "name": "disclosureVersion",
+            "baseName": "disclosureVersion",
             "type": "any"
         },
         {
