@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T17:38:33.688Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T18:06:38.053Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -42,17 +42,15 @@ export class A2PPublicSubmission {
     'country': any | null;
     'phoneNumber': any | null;
     'isTwilioTermsRead': any | null;
-    'isPrivacyPolicyOnWebsite': any | null;
-    'isTosOnWebsite': any | null;
-    'isStopUnderstood': any | null;
-    'isManualRead': any | null;
-    'isCtiaShortCodeRead': any | null;
-    'isStandardsUnderstood': any | null;
-    'isShortCodeUnderstood': any | null;
-    'isOptInOutUnderstood': any | null;
-    'isShortCodeTransferUnderstood': any | null;
+    'isWalletSmsTermsRead': any | null;
     'isPricingUnderstood': any | null;
-    'isShortCodeTimelineUnderstood': any | null;
+    'isPrivacyAndTosPresent': any | null;
+    'privacyPolicyUrl'?: any | null;
+    'willObtainConsent': any | null;
+    'willHonorOptOut': any | null;
+    'willFollowContentRules': any | null;
+    'willComplyLawAndHours': any | null;
+    'infoIsAccurate': any | null;
     'brandContactEmail': string;
     'stockTicker': string;
     'stockExchange': BusinessStockExchanges;
@@ -176,48 +174,8 @@ export class A2PPublicSubmission {
             "type": "any"
         },
         {
-            "name": "isPrivacyPolicyOnWebsite",
-            "baseName": "isPrivacyPolicyOnWebsite",
-            "type": "any"
-        },
-        {
-            "name": "isTosOnWebsite",
-            "baseName": "isTosOnWebsite",
-            "type": "any"
-        },
-        {
-            "name": "isStopUnderstood",
-            "baseName": "isStopUnderstood",
-            "type": "any"
-        },
-        {
-            "name": "isManualRead",
-            "baseName": "isManualRead",
-            "type": "any"
-        },
-        {
-            "name": "isCtiaShortCodeRead",
-            "baseName": "isCtiaShortCodeRead",
-            "type": "any"
-        },
-        {
-            "name": "isStandardsUnderstood",
-            "baseName": "isStandardsUnderstood",
-            "type": "any"
-        },
-        {
-            "name": "isShortCodeUnderstood",
-            "baseName": "isShortCodeUnderstood",
-            "type": "any"
-        },
-        {
-            "name": "isOptInOutUnderstood",
-            "baseName": "isOptInOutUnderstood",
-            "type": "any"
-        },
-        {
-            "name": "isShortCodeTransferUnderstood",
-            "baseName": "isShortCodeTransferUnderstood",
+            "name": "isWalletSmsTermsRead",
+            "baseName": "isWalletSmsTermsRead",
             "type": "any"
         },
         {
@@ -226,8 +184,38 @@ export class A2PPublicSubmission {
             "type": "any"
         },
         {
-            "name": "isShortCodeTimelineUnderstood",
-            "baseName": "isShortCodeTimelineUnderstood",
+            "name": "isPrivacyAndTosPresent",
+            "baseName": "isPrivacyAndTosPresent",
+            "type": "any"
+        },
+        {
+            "name": "privacyPolicyUrl",
+            "baseName": "privacyPolicyUrl",
+            "type": "any"
+        },
+        {
+            "name": "willObtainConsent",
+            "baseName": "willObtainConsent",
+            "type": "any"
+        },
+        {
+            "name": "willHonorOptOut",
+            "baseName": "willHonorOptOut",
+            "type": "any"
+        },
+        {
+            "name": "willFollowContentRules",
+            "baseName": "willFollowContentRules",
+            "type": "any"
+        },
+        {
+            "name": "willComplyLawAndHours",
+            "baseName": "willComplyLawAndHours",
+            "type": "any"
+        },
+        {
+            "name": "infoIsAccurate",
+            "baseName": "infoIsAccurate",
             "type": "any"
         },
         {

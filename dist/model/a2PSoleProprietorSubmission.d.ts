@@ -13,17 +13,15 @@ export declare class A2PSoleProprietorSubmission {
     'country': any | null;
     'phoneNumber': any | null;
     'isTwilioTermsRead': any | null;
-    'isPrivacyPolicyOnWebsite': any | null;
-    'isTosOnWebsite': any | null;
-    'isStopUnderstood': any | null;
-    'isManualRead': any | null;
-    'isCtiaShortCodeRead': any | null;
-    'isStandardsUnderstood': any | null;
-    'isShortCodeUnderstood': any | null;
-    'isOptInOutUnderstood': any | null;
-    'isShortCodeTransferUnderstood': any | null;
+    'isWalletSmsTermsRead': any | null;
     'isPricingUnderstood': any | null;
-    'isShortCodeTimelineUnderstood': any | null;
+    'isPrivacyAndTosPresent': any | null;
+    'privacyPolicyUrl'?: any | null;
+    'willObtainConsent': any | null;
+    'willHonorOptOut': any | null;
+    'willFollowContentRules': any | null;
+    'willComplyLawAndHours': any | null;
+    'infoIsAccurate': any | null;
     'verificationMobile': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
