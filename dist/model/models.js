@@ -350,9 +350,11 @@ __exportStar(require("./wTGiftCardPurchaseRequest"), exports);
 __exportStar(require("./wTGiftClaimRequest"), exports);
 __exportStar(require("./wTImageGridCreateParams"), exports);
 __exportStar(require("./wTImageGridUpdateParams"), exports);
+__exportStar(require("./wTImportConsentBasis"), exports);
 __exportStar(require("./wTImportedList"), exports);
 __exportStar(require("./wTImportedListRecipientFromMembershipTierImport"), exports);
 __exportStar(require("./wTImportedListRecipientFromMembershipTierImportTierID"), exports);
+__exportStar(require("./wTImportedListRecipientImport"), exports);
 __exportStar(require("./wTInfoGenesisLookupRequestErrors"), exports);
 __exportStar(require("./wTInfoGenesisRecordFilterParameters"), exports);
 __exportStar(require("./wTInfoGenesisRoutingIDs"), exports);
@@ -803,9 +805,11 @@ const wTGiftCardPurchaseRequest_1 = require("./wTGiftCardPurchaseRequest");
 const wTGiftClaimRequest_1 = require("./wTGiftClaimRequest");
 const wTImageGridCreateParams_1 = require("./wTImageGridCreateParams");
 const wTImageGridUpdateParams_1 = require("./wTImageGridUpdateParams");
+const wTImportConsentBasis_1 = require("./wTImportConsentBasis");
 const wTImportedList_1 = require("./wTImportedList");
 const wTImportedListRecipientFromMembershipTierImport_1 = require("./wTImportedListRecipientFromMembershipTierImport");
 const wTImportedListRecipientFromMembershipTierImportTierID_1 = require("./wTImportedListRecipientFromMembershipTierImportTierID");
+const wTImportedListRecipientImport_1 = require("./wTImportedListRecipientImport");
 const wTInfoGenesisLookupRequestErrors_1 = require("./wTInfoGenesisLookupRequestErrors");
 const wTInfoGenesisRecordFilterParameters_1 = require("./wTInfoGenesisRecordFilterParameters");
 const wTInfoGenesisRoutingIDs_1 = require("./wTInfoGenesisRoutingIDs");
@@ -1274,9 +1278,11 @@ let typeMap = {
     "WTGiftClaimRequest": wTGiftClaimRequest_1.WTGiftClaimRequest,
     "WTImageGridCreateParams": wTImageGridCreateParams_1.WTImageGridCreateParams,
     "WTImageGridUpdateParams": wTImageGridUpdateParams_1.WTImageGridUpdateParams,
+    "WTImportConsentBasis": wTImportConsentBasis_1.WTImportConsentBasis,
     "WTImportedList": wTImportedList_1.WTImportedList,
     "WTImportedListRecipientFromMembershipTierImport": wTImportedListRecipientFromMembershipTierImport_1.WTImportedListRecipientFromMembershipTierImport,
     "WTImportedListRecipientFromMembershipTierImportTierID": wTImportedListRecipientFromMembershipTierImportTierID_1.WTImportedListRecipientFromMembershipTierImportTierID,
+    "WTImportedListRecipientImport": wTImportedListRecipientImport_1.WTImportedListRecipientImport,
     "WTInfoGenesisLookupRequestErrors": wTInfoGenesisLookupRequestErrors_1.WTInfoGenesisLookupRequestErrors,
     "WTInfoGenesisRecordFilterParameters": wTInfoGenesisRecordFilterParameters_1.WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": wTInfoGenesisRoutingIDs_1.WTInfoGenesisRoutingIDs,

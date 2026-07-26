@@ -335,9 +335,11 @@ export * from './wTGiftCardPurchaseRequest';
 export * from './wTGiftClaimRequest';
 export * from './wTImageGridCreateParams';
 export * from './wTImageGridUpdateParams';
+export * from './wTImportConsentBasis';
 export * from './wTImportedList';
 export * from './wTImportedListRecipientFromMembershipTierImport';
 export * from './wTImportedListRecipientFromMembershipTierImportTierID';
+export * from './wTImportedListRecipientImport';
 export * from './wTInfoGenesisLookupRequestErrors';
 export * from './wTInfoGenesisRecordFilterParameters';
 export * from './wTInfoGenesisRoutingIDs';
@@ -802,9 +804,11 @@ import { WTGiftCardPurchaseRequest } from './wTGiftCardPurchaseRequest';
 import { WTGiftClaimRequest } from './wTGiftClaimRequest';
 import { WTImageGridCreateParams } from './wTImageGridCreateParams';
 import { WTImageGridUpdateParams } from './wTImageGridUpdateParams';
+import { WTImportConsentBasis } from './wTImportConsentBasis';
 import { WTImportedList } from './wTImportedList';
 import { WTImportedListRecipientFromMembershipTierImport } from './wTImportedListRecipientFromMembershipTierImport';
 import { WTImportedListRecipientFromMembershipTierImportTierID } from './wTImportedListRecipientFromMembershipTierImportTierID';
+import { WTImportedListRecipientImport } from './wTImportedListRecipientImport';
 import { WTInfoGenesisLookupRequestErrors } from './wTInfoGenesisLookupRequestErrors';
 import { WTInfoGenesisRecordFilterParameters } from './wTInfoGenesisRecordFilterParameters';
 import { WTInfoGenesisRoutingIDs } from './wTInfoGenesisRoutingIDs';
@@ -1277,9 +1281,11 @@ let typeMap: {[index: string]: any} = {
     "WTGiftClaimRequest": WTGiftClaimRequest,
     "WTImageGridCreateParams": WTImageGridCreateParams,
     "WTImageGridUpdateParams": WTImageGridUpdateParams,
+    "WTImportConsentBasis": WTImportConsentBasis,
     "WTImportedList": WTImportedList,
     "WTImportedListRecipientFromMembershipTierImport": WTImportedListRecipientFromMembershipTierImport,
     "WTImportedListRecipientFromMembershipTierImportTierID": WTImportedListRecipientFromMembershipTierImportTierID,
+    "WTImportedListRecipientImport": WTImportedListRecipientImport,
     "WTInfoGenesisLookupRequestErrors": WTInfoGenesisLookupRequestErrors,
     "WTInfoGenesisRecordFilterParameters": WTInfoGenesisRecordFilterParameters,
     "WTInfoGenesisRoutingIDs": WTInfoGenesisRoutingIDs,

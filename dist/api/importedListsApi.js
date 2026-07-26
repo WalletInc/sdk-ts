@@ -633,7 +633,7 @@ class ImportedListsApi {
             });
         });
     }
-    importImportedListRecipients(importedListID, wTEmployeeImportRecords, options = { headers: {} }) {
+    importImportedListRecipients(importedListID, wTImportedListRecipientImport, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/sms/importedList/recipients/import/{importedListID}'
                 .replace('{' + 'importedListID' + '}', encodeURIComponent(String(importedListID)));
@@ -650,8 +650,8 @@ class ImportedListsApi {
             if (importedListID === null || importedListID === undefined) {
                 throw new Error('Required parameter importedListID was null or undefined when calling importImportedListRecipients.');
             }
-            if (wTEmployeeImportRecords === null || wTEmployeeImportRecords === undefined) {
-                throw new Error('Required parameter wTEmployeeImportRecords was null or undefined when calling importImportedListRecipients.');
+            if (wTImportedListRecipientImport === null || wTImportedListRecipientImport === undefined) {
+                throw new Error('Required parameter wTImportedListRecipientImport was null or undefined when calling importImportedListRecipients.');
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
@@ -662,7 +662,7 @@ class ImportedListsApi {
                 uri: localVarPath,
                 useQuerystring: this._useQuerystring,
                 json: true,
-                body: models_1.ObjectSerializer.serialize(wTEmployeeImportRecords, "WTEmployeeImportRecords")
+                body: models_1.ObjectSerializer.serialize(wTImportedListRecipientImport, "WTImportedListRecipientImport")
             };
             let authenticationPromise = Promise.resolve();
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));

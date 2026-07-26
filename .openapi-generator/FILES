@@ -399,9 +399,11 @@ model/wTGiftCardPurchaseRequest.ts
 model/wTGiftClaimRequest.ts
 model/wTImageGridCreateParams.ts
 model/wTImageGridUpdateParams.ts
+model/wTImportConsentBasis.ts
 model/wTImportedList.ts
 model/wTImportedListRecipientFromMembershipTierImport.ts
 model/wTImportedListRecipientFromMembershipTierImportTierID.ts
+model/wTImportedListRecipientImport.ts
 model/wTInfoGenesisLookupRequestErrors.ts
 model/wTInfoGenesisRecordFilterParameters.ts
 model/wTInfoGenesisRoutingIDs.ts
