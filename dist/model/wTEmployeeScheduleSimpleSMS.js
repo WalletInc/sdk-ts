@@ -38,6 +38,11 @@ WTEmployeeScheduleSimpleSMS.attributeTypeMap = [
         "name": "listID",
         "baseName": "listID",
         "type": "string"
+    },
+    {
+        "name": "messageType",
+        "baseName": "messageType",
+        "type": "WTMessageType"
     }
 ];
 //# sourceMappingURL=wTEmployeeScheduleSimpleSMS.js.map

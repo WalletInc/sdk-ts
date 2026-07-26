@@ -366,6 +366,7 @@ export * from './wTMerchantUpdate';
 export * from './wTMerchantUpdatePOSIntegration';
 export * from './wTMerchantUpdatePointsOfContact';
 export * from './wTMessageInstance';
+export * from './wTMessageType';
 export * from './wTNewsArticleCreateParams';
 export * from './wTNewsArticleUpdateParams';
 export * from './wTOptInList';
@@ -832,6 +833,7 @@ import { WTMerchantUpdate } from './wTMerchantUpdate';
 import { WTMerchantUpdatePOSIntegration } from './wTMerchantUpdatePOSIntegration';
 import { WTMerchantUpdatePointsOfContact } from './wTMerchantUpdatePointsOfContact';
 import { WTMessageInstance } from './wTMessageInstance';
+import { WTMessageType } from './wTMessageType';
 import { WTNewsArticleCreateParams } from './wTNewsArticleCreateParams';
 import { WTNewsArticleUpdateParams } from './wTNewsArticleUpdateParams';
 import { WTOptInList } from './wTOptInList';
@@ -1306,6 +1308,7 @@ let typeMap: {[index: string]: any} = {
     "WTMerchantUpdatePOSIntegration": WTMerchantUpdatePOSIntegration,
     "WTMerchantUpdatePointsOfContact": WTMerchantUpdatePointsOfContact,
     "WTMessageInstance": WTMessageInstance,
+    "WTMessageType": WTMessageType,
     "WTNewsArticleCreateParams": WTNewsArticleCreateParams,
     "WTNewsArticleUpdateParams": WTNewsArticleUpdateParams,
     "WTOptInList": WTOptInList,

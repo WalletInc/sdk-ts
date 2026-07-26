@@ -1,9 +1,11 @@
+import { WTMessageType } from './wTMessageType';
 export declare class WTEmployeeScheduleSimpleSMSToRecipient extends null<String, any> {
     'phoneNumberID': string;
     'messageTemplate': any | null;
     'mediaURLs'?: any | null;
     'broadcastScheduledAt': any | null;
     'toCellPhone': any | null;
+    'messageType'?: WTMessageType;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

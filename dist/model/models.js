@@ -381,6 +381,7 @@ __exportStar(require("./wTMerchantUpdate"), exports);
 __exportStar(require("./wTMerchantUpdatePOSIntegration"), exports);
 __exportStar(require("./wTMerchantUpdatePointsOfContact"), exports);
 __exportStar(require("./wTMessageInstance"), exports);
+__exportStar(require("./wTMessageType"), exports);
 __exportStar(require("./wTNewsArticleCreateParams"), exports);
 __exportStar(require("./wTNewsArticleUpdateParams"), exports);
 __exportStar(require("./wTOptInList"), exports);
@@ -833,6 +834,7 @@ const wTMerchantUpdate_1 = require("./wTMerchantUpdate");
 const wTMerchantUpdatePOSIntegration_1 = require("./wTMerchantUpdatePOSIntegration");
 const wTMerchantUpdatePointsOfContact_1 = require("./wTMerchantUpdatePointsOfContact");
 const wTMessageInstance_1 = require("./wTMessageInstance");
+const wTMessageType_1 = require("./wTMessageType");
 const wTNewsArticleCreateParams_1 = require("./wTNewsArticleCreateParams");
 const wTNewsArticleUpdateParams_1 = require("./wTNewsArticleUpdateParams");
 const wTOptInList_1 = require("./wTOptInList");
@@ -1303,6 +1305,7 @@ let typeMap = {
     "WTMerchantUpdatePOSIntegration": wTMerchantUpdatePOSIntegration_1.WTMerchantUpdatePOSIntegration,
     "WTMerchantUpdatePointsOfContact": wTMerchantUpdatePointsOfContact_1.WTMerchantUpdatePointsOfContact,
     "WTMessageInstance": wTMessageInstance_1.WTMessageInstance,
+    "WTMessageType": wTMessageType_1.WTMessageType,
     "WTNewsArticleCreateParams": wTNewsArticleCreateParams_1.WTNewsArticleCreateParams,
     "WTNewsArticleUpdateParams": wTNewsArticleUpdateParams_1.WTNewsArticleUpdateParams,
     "WTOptInList": wTOptInList_1.WTOptInList,

@@ -430,6 +430,7 @@ model/wTMerchantUpdate.ts
 model/wTMerchantUpdatePOSIntegration.ts
 model/wTMerchantUpdatePointsOfContact.ts
 model/wTMessageInstance.ts
+model/wTMessageType.ts
 model/wTNewsArticleCreateParams.ts
 model/wTNewsArticleUpdateParams.ts
 model/wTOptInList.ts

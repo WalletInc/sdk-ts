@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T10:38:40.665Z
+ * Wallet Inc. API reference.  **Spec version 2.4.1**, built 2026-07-26T16:25:34.213Z
  *
  * The version of the OpenAPI document: 2.4.1
  * Contact: development@wallet.inc
@@ -12,6 +12,7 @@
 
 import { RequestFile } from './models';
 import { WTEmployeeScheduleSimpleSMSListType } from './wTEmployeeScheduleSimpleSMSListType';
+import { WTMessageType } from './wTMessageType';
 
 export class WTEmployeeScheduleSimpleSMS extends null<String, any> {
     'phoneNumberID': string;
@@ -20,6 +21,7 @@ export class WTEmployeeScheduleSimpleSMS extends null<String, any> {
     'broadcastScheduledAt': any | null;
     'listType': WTEmployeeScheduleSimpleSMSListType;
     'listID': string;
+    'messageType'?: WTMessageType;
 
     static discriminator: string | undefined = undefined;
 
@@ -53,6 +55,11 @@ export class WTEmployeeScheduleSimpleSMS extends null<String, any> {
             "name": "listID",
             "baseName": "listID",
             "type": "string"
+        },
+        {
+            "name": "messageType",
+            "baseName": "messageType",
+            "type": "WTMessageType"
         }    ];
 
     static getAttributeTypeMap() {

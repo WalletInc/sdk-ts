@@ -1,3 +1,4 @@
+import { WTMessageType } from './wTMessageType';
 export declare class WTEmployeeScheduleSMSCampaignBroadcast extends null<String, any> {
     'phoneNumberID': string;
     'messageTemplate': any | null;
@@ -6,6 +7,7 @@ export declare class WTEmployeeScheduleSMSCampaignBroadcast extends null<String,
     'broadcastScheduledAt': any | null;
     'locale': any | null;
     'timezone': any | null;
+    'messageType'?: WTMessageType;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

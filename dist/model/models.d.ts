@@ -367,6 +367,7 @@ export * from './wTMerchantUpdate';
 export * from './wTMerchantUpdatePOSIntegration';
 export * from './wTMerchantUpdatePointsOfContact';
 export * from './wTMessageInstance';
+export * from './wTMessageType';
 export * from './wTNewsArticleCreateParams';
 export * from './wTNewsArticleUpdateParams';
 export * from './wTOptInList';
