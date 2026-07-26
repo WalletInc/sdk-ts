@@ -75,48 +75,8 @@ PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndust
         "type": "boolean"
     },
     {
-        "name": "isPrivacyPolicyOnWebsite",
-        "baseName": "isPrivacyPolicyOnWebsite",
-        "type": "boolean"
-    },
-    {
-        "name": "isTosOnWebsite",
-        "baseName": "isTosOnWebsite",
-        "type": "boolean"
-    },
-    {
-        "name": "isStopUnderstood",
-        "baseName": "isStopUnderstood",
-        "type": "boolean"
-    },
-    {
-        "name": "isManualRead",
-        "baseName": "isManualRead",
-        "type": "boolean"
-    },
-    {
-        "name": "isCtiaShortCodeRead",
-        "baseName": "isCtiaShortCodeRead",
-        "type": "boolean"
-    },
-    {
-        "name": "isStandardsUnderstood",
-        "baseName": "isStandardsUnderstood",
-        "type": "boolean"
-    },
-    {
-        "name": "isShortCodeUnderstood",
-        "baseName": "isShortCodeUnderstood",
-        "type": "boolean"
-    },
-    {
-        "name": "isOptInOutUnderstood",
-        "baseName": "isOptInOutUnderstood",
-        "type": "boolean"
-    },
-    {
-        "name": "isShortCodeTransferUnderstood",
-        "baseName": "isShortCodeTransferUnderstood",
+        "name": "isWalletSmsTermsRead",
+        "baseName": "isWalletSmsTermsRead",
         "type": "boolean"
     },
     {
@@ -125,8 +85,38 @@ PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndust
         "type": "boolean"
     },
     {
-        "name": "isShortCodeTimelineUnderstood",
-        "baseName": "isShortCodeTimelineUnderstood",
+        "name": "isPrivacyAndTosPresent",
+        "baseName": "isPrivacyAndTosPresent",
+        "type": "boolean"
+    },
+    {
+        "name": "privacyPolicyUrl",
+        "baseName": "privacyPolicyUrl",
+        "type": "string"
+    },
+    {
+        "name": "willObtainConsent",
+        "baseName": "willObtainConsent",
+        "type": "boolean"
+    },
+    {
+        "name": "willHonorOptOut",
+        "baseName": "willHonorOptOut",
+        "type": "boolean"
+    },
+    {
+        "name": "willFollowContentRules",
+        "baseName": "willFollowContentRules",
+        "type": "boolean"
+    },
+    {
+        "name": "willComplyLawAndHours",
+        "baseName": "willComplyLawAndHours",
+        "type": "boolean"
+    },
+    {
+        "name": "infoIsAccurate",
+        "baseName": "infoIsAccurate",
         "type": "boolean"
     }
 ];

@@ -13,17 +13,15 @@ export declare class PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassific
     'country': string;
     'phoneNumber': string;
     'isTwilioTermsRead': boolean;
-    'isPrivacyPolicyOnWebsite': boolean;
-    'isTosOnWebsite': boolean;
-    'isStopUnderstood': boolean;
-    'isManualRead': boolean;
-    'isCtiaShortCodeRead': boolean;
-    'isStandardsUnderstood': boolean;
-    'isShortCodeUnderstood': boolean;
-    'isOptInOutUnderstood': boolean;
-    'isShortCodeTransferUnderstood': boolean;
+    'isWalletSmsTermsRead': boolean;
     'isPricingUnderstood': boolean;
-    'isShortCodeTimelineUnderstood': boolean;
+    'isPrivacyAndTosPresent': boolean;
+    'privacyPolicyUrl'?: string;
+    'willObtainConsent': boolean;
+    'willHonorOptOut': boolean;
+    'willFollowContentRules': boolean;
+    'willComplyLawAndHours': boolean;
+    'infoIsAccurate': boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -125,48 +125,8 @@ A2PPublicSubmission.attributeTypeMap = [
         "type": "any"
     },
     {
-        "name": "isPrivacyPolicyOnWebsite",
-        "baseName": "isPrivacyPolicyOnWebsite",
-        "type": "any"
-    },
-    {
-        "name": "isTosOnWebsite",
-        "baseName": "isTosOnWebsite",
-        "type": "any"
-    },
-    {
-        "name": "isStopUnderstood",
-        "baseName": "isStopUnderstood",
-        "type": "any"
-    },
-    {
-        "name": "isManualRead",
-        "baseName": "isManualRead",
-        "type": "any"
-    },
-    {
-        "name": "isCtiaShortCodeRead",
-        "baseName": "isCtiaShortCodeRead",
-        "type": "any"
-    },
-    {
-        "name": "isStandardsUnderstood",
-        "baseName": "isStandardsUnderstood",
-        "type": "any"
-    },
-    {
-        "name": "isShortCodeUnderstood",
-        "baseName": "isShortCodeUnderstood",
-        "type": "any"
-    },
-    {
-        "name": "isOptInOutUnderstood",
-        "baseName": "isOptInOutUnderstood",
-        "type": "any"
-    },
-    {
-        "name": "isShortCodeTransferUnderstood",
-        "baseName": "isShortCodeTransferUnderstood",
+        "name": "isWalletSmsTermsRead",
+        "baseName": "isWalletSmsTermsRead",
         "type": "any"
     },
     {
@@ -175,8 +135,38 @@ A2PPublicSubmission.attributeTypeMap = [
         "type": "any"
     },
     {
-        "name": "isShortCodeTimelineUnderstood",
-        "baseName": "isShortCodeTimelineUnderstood",
+        "name": "isPrivacyAndTosPresent",
+        "baseName": "isPrivacyAndTosPresent",
+        "type": "any"
+    },
+    {
+        "name": "privacyPolicyUrl",
+        "baseName": "privacyPolicyUrl",
+        "type": "any"
+    },
+    {
+        "name": "willObtainConsent",
+        "baseName": "willObtainConsent",
+        "type": "any"
+    },
+    {
+        "name": "willHonorOptOut",
+        "baseName": "willHonorOptOut",
+        "type": "any"
+    },
+    {
+        "name": "willFollowContentRules",
+        "baseName": "willFollowContentRules",
+        "type": "any"
+    },
+    {
+        "name": "willComplyLawAndHours",
+        "baseName": "willComplyLawAndHours",
+        "type": "any"
+    },
+    {
+        "name": "infoIsAccurate",
+        "baseName": "infoIsAccurate",
         "type": "any"
     },
     {
