@@ -25,6 +25,11 @@ PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "jobTitle",
+        "baseName": "jobTitle",
+        "type": "string"
+    },
+    {
         "name": "phoneNumber",
         "baseName": "phoneNumber",
         "type": "string"
@@ -38,11 +43,6 @@ PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail.attributeTypeMap = [
         "name": "walletSequenceNumber",
         "baseName": "walletSequenceNumber",
         "type": "number"
-    },
-    {
-        "name": "jobTitle",
-        "baseName": "jobTitle",
-        "type": "string"
     },
     {
         "name": "department",

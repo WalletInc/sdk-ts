@@ -1,5 +1,7 @@
 export declare class WTSmsSubscriberCreateParamsWalletUI extends null<String, any> {
     'mobileNumber': any | null;
+    'optInSource'?: any | null;
+    'disclosureVersion'?: any | null;
     'merchantID': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

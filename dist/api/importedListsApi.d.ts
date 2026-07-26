@@ -5,8 +5,8 @@ import { ImportedList } from '../model/importedList';
 import { ImportedListRecipient } from '../model/importedListRecipient';
 import { SSImportedListRecipientCreateParams } from '../model/sSImportedListRecipientCreateParams';
 import { WTCountResult } from '../model/wTCountResult';
-import { WTEmployeeImportRecords } from '../model/wTEmployeeImportRecords';
 import { WTImportedListRecipientFromMembershipTierImport } from '../model/wTImportedListRecipientFromMembershipTierImport';
+import { WTImportedListRecipientImport } from '../model/wTImportedListRecipientImport';
 import { WTSMSImportedListCreate } from '../model/wTSMSImportedListCreate';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
@@ -103,7 +103,7 @@ export declare class ImportedListsApi {
         response: http.IncomingMessage;
         body: any;
     }>;
-    importImportedListRecipients(importedListID: string, wTEmployeeImportRecords: WTEmployeeImportRecords, options?: {
+    importImportedListRecipients(importedListID: string, wTImportedListRecipientImport: WTImportedListRecipientImport, options?: {
         headers: {
             [name: string]: string;
         };

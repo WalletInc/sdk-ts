@@ -25,6 +25,11 @@ WTEmployeeUpdate.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "jobTitle",
+        "baseName": "jobTitle",
+        "type": "any"
+    },
+    {
         "name": "phoneNumber",
         "baseName": "phoneNumber",
         "type": "any"
@@ -37,11 +42,6 @@ WTEmployeeUpdate.attributeTypeMap = [
     {
         "name": "walletSequenceNumber",
         "baseName": "walletSequenceNumber",
-        "type": "any"
-    },
-    {
-        "name": "jobTitle",
-        "baseName": "jobTitle",
         "type": "any"
     },
     {

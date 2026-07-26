@@ -6,10 +6,10 @@ export declare class PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmail {
     'employeeID': string;
     'firstName': string;
     'lastName': string;
+    'jobTitle': string;
     'phoneNumber': string;
     'isPublicRepresentative': boolean;
     'walletSequenceNumber': number;
-    'jobTitle': string;
     'department': string;
     'scheduleStartDay'?: PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmailScheduleStartDay;
     'scheduleStartHour'?: PickWTEmployeeCreateExcludeKeyofWTEmployeeCreateEmailScheduleStartHour;

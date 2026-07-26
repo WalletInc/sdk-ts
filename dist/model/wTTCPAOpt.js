@@ -23,6 +23,11 @@ WTTCPAOpt.attributeTypeMap = [
         "name": "phoneNumber",
         "baseName": "phoneNumber",
         "type": "any"
+    },
+    {
+        "name": "disclosureVersion",
+        "baseName": "disclosureVersion",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTTCPAOpt.js.map

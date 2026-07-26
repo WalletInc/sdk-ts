@@ -15,6 +15,16 @@ SmsSubscriber.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "optInSource",
+        "baseName": "optInSource",
+        "type": "any"
+    },
+    {
+        "name": "disclosureVersion",
+        "baseName": "disclosureVersion",
+        "type": "any"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "AmenityId"

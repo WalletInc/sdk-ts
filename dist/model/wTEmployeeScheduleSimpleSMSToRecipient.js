@@ -33,6 +33,11 @@ WTEmployeeScheduleSimpleSMSToRecipient.attributeTypeMap = [
         "name": "toCellPhone",
         "baseName": "toCellPhone",
         "type": "any"
+    },
+    {
+        "name": "messageType",
+        "baseName": "messageType",
+        "type": "WTMessageType"
     }
 ];
 //# sourceMappingURL=wTEmployeeScheduleSimpleSMSToRecipient.js.map

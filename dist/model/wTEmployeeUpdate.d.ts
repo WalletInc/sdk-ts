@@ -6,10 +6,10 @@ export declare class WTEmployeeUpdate extends null<String, any> {
     'employeeID': any | null;
     'firstName': any | null;
     'lastName': any | null;
+    'jobTitle': any | null;
     'phoneNumber': any | null;
     'isPublicRepresentative': any | null;
     'walletSequenceNumber': any | null;
-    'jobTitle': any | null;
     'department': any | null;
     'scheduleStartDay'?: EmployeeScheduleStartDay;
     'scheduleStartHour'?: EmployeeScheduleStartHour;

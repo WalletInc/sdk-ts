@@ -15,6 +15,16 @@ WTSmsSubscriberCreateParamsWalletUI.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "optInSource",
+        "baseName": "optInSource",
+        "type": "any"
+    },
+    {
+        "name": "disclosureVersion",
+        "baseName": "disclosureVersion",
+        "type": "any"
+    },
+    {
         "name": "merchantID",
         "baseName": "merchantID",
         "type": "string"
