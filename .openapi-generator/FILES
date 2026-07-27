@@ -101,6 +101,7 @@ model/chatCompletionMessageFunctionCall.ts
 model/chatCompletionMessageToolCall.ts
 model/chatCompletionMessageToolCallFunction.ts
 model/claimTicketRequest.ts
+model/contentStatus.ts
 model/countClaimedComps200Response.ts
 model/createFile200Response.ts
 model/createRunOnThreadRequest.ts

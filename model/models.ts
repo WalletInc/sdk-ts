@@ -38,6 +38,7 @@ export * from './chatCompletionMessageFunctionCall';
 export * from './chatCompletionMessageToolCall';
 export * from './chatCompletionMessageToolCallFunction';
 export * from './claimTicketRequest';
+export * from './contentStatus';
 export * from './countClaimedComps200Response';
 export * from './createFile200Response';
 export * from './createRunOnThreadRequest';
@@ -507,6 +508,7 @@ import { ChatCompletionMessageFunctionCall } from './chatCompletionMessageFuncti
 import { ChatCompletionMessageToolCall } from './chatCompletionMessageToolCall';
 import { ChatCompletionMessageToolCallFunction } from './chatCompletionMessageToolCallFunction';
 import { ClaimTicketRequest } from './claimTicketRequest';
+import { ContentStatus } from './contentStatus';
 import { CountClaimedComps200Response } from './countClaimedComps200Response';
 import { CreateFile200Response } from './createFile200Response';
 import { CreateRunOnThreadRequest } from './createRunOnThreadRequest';
@@ -990,6 +992,7 @@ let typeMap: {[index: string]: any} = {
     "ChatCompletionMessageToolCall": ChatCompletionMessageToolCall,
     "ChatCompletionMessageToolCallFunction": ChatCompletionMessageToolCallFunction,
     "ClaimTicketRequest": ClaimTicketRequest,
+    "ContentStatus": ContentStatus,
     "CountClaimedComps200Response": CountClaimedComps200Response,
     "CreateFile200Response": CreateFile200Response,
     "CreateRunOnThreadRequest": CreateRunOnThreadRequest,
