@@ -39,6 +39,7 @@ export * from './chatCompletionMessageFunctionCall';
 export * from './chatCompletionMessageToolCall';
 export * from './chatCompletionMessageToolCallFunction';
 export * from './claimTicketRequest';
+export * from './contentStatus';
 export * from './countClaimedComps200Response';
 export * from './createFile200Response';
 export * from './createRunOnThreadRequest';

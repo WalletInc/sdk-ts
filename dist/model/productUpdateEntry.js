@@ -38,6 +38,11 @@ ProductUpdateEntry.attributeTypeMap = [
         "name": "publishedAt",
         "baseName": "publishedAt",
         "type": "string"
+    },
+    {
+        "name": "contentStatus",
+        "baseName": "contentStatus",
+        "type": "ContentStatus"
     }
 ];
 //# sourceMappingURL=productUpdateEntry.js.map
