@@ -53,6 +53,7 @@ __exportStar(require("./chatCompletionMessageFunctionCall"), exports);
 __exportStar(require("./chatCompletionMessageToolCall"), exports);
 __exportStar(require("./chatCompletionMessageToolCallFunction"), exports);
 __exportStar(require("./claimTicketRequest"), exports);
+__exportStar(require("./contentStatus"), exports);
 __exportStar(require("./countClaimedComps200Response"), exports);
 __exportStar(require("./createFile200Response"), exports);
 __exportStar(require("./createRunOnThreadRequest"), exports);
@@ -508,6 +509,7 @@ const chatCompletionMessageFunctionCall_1 = require("./chatCompletionMessageFunc
 const chatCompletionMessageToolCall_1 = require("./chatCompletionMessageToolCall");
 const chatCompletionMessageToolCallFunction_1 = require("./chatCompletionMessageToolCallFunction");
 const claimTicketRequest_1 = require("./claimTicketRequest");
+const contentStatus_1 = require("./contentStatus");
 const countClaimedComps200Response_1 = require("./countClaimedComps200Response");
 const createFile200Response_1 = require("./createFile200Response");
 const createRunOnThreadRequest_1 = require("./createRunOnThreadRequest");
@@ -987,6 +989,7 @@ let typeMap = {
     "ChatCompletionMessageToolCall": chatCompletionMessageToolCall_1.ChatCompletionMessageToolCall,
     "ChatCompletionMessageToolCallFunction": chatCompletionMessageToolCallFunction_1.ChatCompletionMessageToolCallFunction,
     "ClaimTicketRequest": claimTicketRequest_1.ClaimTicketRequest,
+    "ContentStatus": contentStatus_1.ContentStatus,
     "CountClaimedComps200Response": countClaimedComps200Response_1.CountClaimedComps200Response,
     "CreateFile200Response": createFile200Response_1.CreateFile200Response,
     "CreateRunOnThreadRequest": createRunOnThreadRequest_1.CreateRunOnThreadRequest,
