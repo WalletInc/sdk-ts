@@ -343,6 +343,7 @@ model/wTBillingChangePlanBillingCadence.ts
 model/wTBillingSavePaymentMethod.ts
 model/wTBillingVerifyPaymentMethodResponse.ts
 model/wTBillingVerifyPaymentMethodResponseBillingCadence.ts
+model/wTBrandingFooterLink.ts
 model/wTCertificateDealCreateRequest.ts
 model/wTCertificateDealCreateRequestEntitlementType.ts
 model/wTCertificateEntitlementSnapshot.ts
@@ -453,6 +454,7 @@ model/wTProductCreateParams.ts
 model/wTProductUpdateParams.ts
 model/wTPromoCodeCreateParams.ts
 model/wTPromoCodeUpdateParams.ts
+model/wTPublicBranding.ts
 model/wTQRCodeDesign.ts
 model/wTQRCodeDesignCreateParams.ts
 model/wTQRCodeDesignUpdateParams.ts

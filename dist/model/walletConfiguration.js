@@ -390,6 +390,66 @@ WalletConfiguration.attributeTypeMap = [
         "type": "WTWalletConfigurationSaveWalletRecordPassBrandKit"
     },
     {
+        "name": "loginLogoURL",
+        "baseName": "loginLogoURL",
+        "type": "any"
+    },
+    {
+        "name": "loginPanelImageURL",
+        "baseName": "loginPanelImageURL",
+        "type": "any"
+    },
+    {
+        "name": "loginHeadline",
+        "baseName": "loginHeadline",
+        "type": "any"
+    },
+    {
+        "name": "loginSubcopy",
+        "baseName": "loginSubcopy",
+        "type": "any"
+    },
+    {
+        "name": "loginBackgroundColor",
+        "baseName": "loginBackgroundColor",
+        "type": "any"
+    },
+    {
+        "name": "loginBackgroundImageURL",
+        "baseName": "loginBackgroundImageURL",
+        "type": "any"
+    },
+    {
+        "name": "registerURL",
+        "baseName": "registerURL",
+        "type": "any"
+    },
+    {
+        "name": "loginFooterLinks",
+        "baseName": "loginFooterLinks",
+        "type": "any"
+    },
+    {
+        "name": "desktopFrameLogoURL",
+        "baseName": "desktopFrameLogoURL",
+        "type": "any"
+    },
+    {
+        "name": "desktopFrameBackgroundColor",
+        "baseName": "desktopFrameBackgroundColor",
+        "type": "any"
+    },
+    {
+        "name": "desktopFrameBackgroundImageURL",
+        "baseName": "desktopFrameBackgroundImageURL",
+        "type": "any"
+    },
+    {
+        "name": "desktopFrameByline",
+        "baseName": "desktopFrameByline",
+        "type": "any"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"
