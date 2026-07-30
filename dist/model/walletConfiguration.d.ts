@@ -77,6 +77,18 @@ export declare class WalletConfiguration extends null<String, any> {
     'appleAppStoreURL'?: any | null;
     'googlePlayStoreURL'?: any | null;
     'passBrandKit'?: WTWalletConfigurationSaveWalletRecordPassBrandKit;
+    'loginLogoURL'?: any | null;
+    'loginPanelImageURL'?: any | null;
+    'loginHeadline'?: any | null;
+    'loginSubcopy'?: any | null;
+    'loginBackgroundColor'?: any | null;
+    'loginBackgroundImageURL'?: any | null;
+    'registerURL'?: any | null;
+    'loginFooterLinks'?: any | null;
+    'desktopFrameLogoURL'?: any | null;
+    'desktopFrameBackgroundColor'?: any | null;
+    'desktopFrameBackgroundImageURL'?: any | null;
+    'desktopFrameByline'?: any | null;
     'id': string;
     'createdAt': any | null;
     'updatedAt': any | null;

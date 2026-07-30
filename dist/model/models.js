@@ -294,6 +294,7 @@ __exportStar(require("./wTBillingChangePlanBillingCadence"), exports);
 __exportStar(require("./wTBillingSavePaymentMethod"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponse"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponseBillingCadence"), exports);
+__exportStar(require("./wTBrandingFooterLink"), exports);
 __exportStar(require("./wTCertificateDealCreateRequest"), exports);
 __exportStar(require("./wTCertificateDealCreateRequestEntitlementType"), exports);
 __exportStar(require("./wTCertificateEntitlementSnapshot"), exports);
@@ -404,6 +405,7 @@ __exportStar(require("./wTProductCreateParams"), exports);
 __exportStar(require("./wTProductUpdateParams"), exports);
 __exportStar(require("./wTPromoCodeCreateParams"), exports);
 __exportStar(require("./wTPromoCodeUpdateParams"), exports);
+__exportStar(require("./wTPublicBranding"), exports);
 __exportStar(require("./wTQRCodeDesign"), exports);
 __exportStar(require("./wTQRCodeDesignCreateParams"), exports);
 __exportStar(require("./wTQRCodeDesignUpdateParams"), exports);
@@ -750,6 +752,7 @@ const wTBillingChangePlanBillingCadence_1 = require("./wTBillingChangePlanBillin
 const wTBillingSavePaymentMethod_1 = require("./wTBillingSavePaymentMethod");
 const wTBillingVerifyPaymentMethodResponse_1 = require("./wTBillingVerifyPaymentMethodResponse");
 const wTBillingVerifyPaymentMethodResponseBillingCadence_1 = require("./wTBillingVerifyPaymentMethodResponseBillingCadence");
+const wTBrandingFooterLink_1 = require("./wTBrandingFooterLink");
 const wTCertificateDealCreateRequest_1 = require("./wTCertificateDealCreateRequest");
 const wTCertificateDealCreateRequestEntitlementType_1 = require("./wTCertificateDealCreateRequestEntitlementType");
 const wTCertificateEntitlementSnapshot_1 = require("./wTCertificateEntitlementSnapshot");
@@ -860,6 +863,7 @@ const wTProductCreateParams_1 = require("./wTProductCreateParams");
 const wTProductUpdateParams_1 = require("./wTProductUpdateParams");
 const wTPromoCodeCreateParams_1 = require("./wTPromoCodeCreateParams");
 const wTPromoCodeUpdateParams_1 = require("./wTPromoCodeUpdateParams");
+const wTPublicBranding_1 = require("./wTPublicBranding");
 const wTQRCodeDesign_1 = require("./wTQRCodeDesign");
 const wTQRCodeDesignCreateParams_1 = require("./wTQRCodeDesignCreateParams");
 const wTQRCodeDesignUpdateParams_1 = require("./wTQRCodeDesignUpdateParams");
@@ -1224,6 +1228,7 @@ let typeMap = {
     "WTBillingSavePaymentMethod": wTBillingSavePaymentMethod_1.WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": wTBillingVerifyPaymentMethodResponse_1.WTBillingVerifyPaymentMethodResponse,
     "WTBillingVerifyPaymentMethodResponseBillingCadence": wTBillingVerifyPaymentMethodResponseBillingCadence_1.WTBillingVerifyPaymentMethodResponseBillingCadence,
+    "WTBrandingFooterLink": wTBrandingFooterLink_1.WTBrandingFooterLink,
     "WTCertificateDealCreateRequest": wTCertificateDealCreateRequest_1.WTCertificateDealCreateRequest,
     "WTCertificateDealCreateRequestEntitlementType": wTCertificateDealCreateRequestEntitlementType_1.WTCertificateDealCreateRequestEntitlementType,
     "WTCertificateEntitlementSnapshot": wTCertificateEntitlementSnapshot_1.WTCertificateEntitlementSnapshot,
@@ -1334,6 +1339,7 @@ let typeMap = {
     "WTProductUpdateParams": wTProductUpdateParams_1.WTProductUpdateParams,
     "WTPromoCodeCreateParams": wTPromoCodeCreateParams_1.WTPromoCodeCreateParams,
     "WTPromoCodeUpdateParams": wTPromoCodeUpdateParams_1.WTPromoCodeUpdateParams,
+    "WTPublicBranding": wTPublicBranding_1.WTPublicBranding,
     "WTQRCodeDesign": wTQRCodeDesign_1.WTQRCodeDesign,
     "WTQRCodeDesignCreateParams": wTQRCodeDesignCreateParams_1.WTQRCodeDesignCreateParams,
     "WTQRCodeDesignUpdateParams": wTQRCodeDesignUpdateParams_1.WTQRCodeDesignUpdateParams,
