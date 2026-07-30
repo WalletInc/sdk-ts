@@ -25,6 +25,11 @@ WTPublicBranding.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "showWalletCredit",
+        "baseName": "showWalletCredit",
+        "type": "boolean"
+    },
+    {
         "name": "loginLogoURL",
         "baseName": "loginLogoURL",
         "type": "string"

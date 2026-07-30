@@ -2,6 +2,7 @@ export declare class WTPublicBranding extends null<String, any> {
     'companyName'?: string;
     'headerBackgroundColor'?: string;
     'mobileAppIconURL'?: string;
+    'showWalletCredit'?: boolean;
     'loginLogoURL'?: string;
     'loginPanelImageURL'?: string;
     'loginHeadline'?: string;
