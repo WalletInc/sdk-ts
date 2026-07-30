@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.20.2**, built 2026-07-28T16:20:40.617Z
+ * Wallet Inc. API reference.  **Spec version 2.20.2**, built 2026-07-30T15:18:55.586Z
  *
  * The version of the OpenAPI document: 2.20.2
  * Contact: development@wallet.inc
@@ -91,6 +91,18 @@ export class WalletConfiguration extends null<String, any> {
     'appleAppStoreURL'?: any | null;
     'googlePlayStoreURL'?: any | null;
     'passBrandKit'?: WTWalletConfigurationSaveWalletRecordPassBrandKit;
+    'loginLogoURL'?: any | null;
+    'loginPanelImageURL'?: any | null;
+    'loginHeadline'?: any | null;
+    'loginSubcopy'?: any | null;
+    'loginBackgroundColor'?: any | null;
+    'loginBackgroundImageURL'?: any | null;
+    'registerURL'?: any | null;
+    'loginFooterLinks'?: any | null;
+    'desktopFrameLogoURL'?: any | null;
+    'desktopFrameBackgroundColor'?: any | null;
+    'desktopFrameBackgroundImageURL'?: any | null;
+    'desktopFrameByline'?: any | null;
     'id': string;
     'createdAt': any | null;
     'updatedAt': any | null;
@@ -482,6 +494,66 @@ export class WalletConfiguration extends null<String, any> {
             "name": "passBrandKit",
             "baseName": "passBrandKit",
             "type": "WTWalletConfigurationSaveWalletRecordPassBrandKit"
+        },
+        {
+            "name": "loginLogoURL",
+            "baseName": "loginLogoURL",
+            "type": "any"
+        },
+        {
+            "name": "loginPanelImageURL",
+            "baseName": "loginPanelImageURL",
+            "type": "any"
+        },
+        {
+            "name": "loginHeadline",
+            "baseName": "loginHeadline",
+            "type": "any"
+        },
+        {
+            "name": "loginSubcopy",
+            "baseName": "loginSubcopy",
+            "type": "any"
+        },
+        {
+            "name": "loginBackgroundColor",
+            "baseName": "loginBackgroundColor",
+            "type": "any"
+        },
+        {
+            "name": "loginBackgroundImageURL",
+            "baseName": "loginBackgroundImageURL",
+            "type": "any"
+        },
+        {
+            "name": "registerURL",
+            "baseName": "registerURL",
+            "type": "any"
+        },
+        {
+            "name": "loginFooterLinks",
+            "baseName": "loginFooterLinks",
+            "type": "any"
+        },
+        {
+            "name": "desktopFrameLogoURL",
+            "baseName": "desktopFrameLogoURL",
+            "type": "any"
+        },
+        {
+            "name": "desktopFrameBackgroundColor",
+            "baseName": "desktopFrameBackgroundColor",
+            "type": "any"
+        },
+        {
+            "name": "desktopFrameBackgroundImageURL",
+            "baseName": "desktopFrameBackgroundImageURL",
+            "type": "any"
+        },
+        {
+            "name": "desktopFrameByline",
+            "baseName": "desktopFrameByline",
+            "type": "any"
         },
         {
             "name": "id",

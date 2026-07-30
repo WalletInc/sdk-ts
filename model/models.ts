@@ -279,6 +279,7 @@ export * from './wTBillingChangePlanBillingCadence';
 export * from './wTBillingSavePaymentMethod';
 export * from './wTBillingVerifyPaymentMethodResponse';
 export * from './wTBillingVerifyPaymentMethodResponseBillingCadence';
+export * from './wTBrandingFooterLink';
 export * from './wTCertificateDealCreateRequest';
 export * from './wTCertificateDealCreateRequestEntitlementType';
 export * from './wTCertificateEntitlementSnapshot';
@@ -389,6 +390,7 @@ export * from './wTProductCreateParams';
 export * from './wTProductUpdateParams';
 export * from './wTPromoCodeCreateParams';
 export * from './wTPromoCodeUpdateParams';
+export * from './wTPublicBranding';
 export * from './wTQRCodeDesign';
 export * from './wTQRCodeDesignCreateParams';
 export * from './wTQRCodeDesignUpdateParams';
@@ -749,6 +751,7 @@ import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingC
 import { WTBillingSavePaymentMethod } from './wTBillingSavePaymentMethod';
 import { WTBillingVerifyPaymentMethodResponse } from './wTBillingVerifyPaymentMethodResponse';
 import { WTBillingVerifyPaymentMethodResponseBillingCadence } from './wTBillingVerifyPaymentMethodResponseBillingCadence';
+import { WTBrandingFooterLink } from './wTBrandingFooterLink';
 import { WTCertificateDealCreateRequest } from './wTCertificateDealCreateRequest';
 import { WTCertificateDealCreateRequestEntitlementType } from './wTCertificateDealCreateRequestEntitlementType';
 import { WTCertificateEntitlementSnapshot } from './wTCertificateEntitlementSnapshot';
@@ -859,6 +862,7 @@ import { WTProductCreateParams } from './wTProductCreateParams';
 import { WTProductUpdateParams } from './wTProductUpdateParams';
 import { WTPromoCodeCreateParams } from './wTPromoCodeCreateParams';
 import { WTPromoCodeUpdateParams } from './wTPromoCodeUpdateParams';
+import { WTPublicBranding } from './wTPublicBranding';
 import { WTQRCodeDesign } from './wTQRCodeDesign';
 import { WTQRCodeDesignCreateParams } from './wTQRCodeDesignCreateParams';
 import { WTQRCodeDesignUpdateParams } from './wTQRCodeDesignUpdateParams';
@@ -1227,6 +1231,7 @@ let typeMap: {[index: string]: any} = {
     "WTBillingSavePaymentMethod": WTBillingSavePaymentMethod,
     "WTBillingVerifyPaymentMethodResponse": WTBillingVerifyPaymentMethodResponse,
     "WTBillingVerifyPaymentMethodResponseBillingCadence": WTBillingVerifyPaymentMethodResponseBillingCadence,
+    "WTBrandingFooterLink": WTBrandingFooterLink,
     "WTCertificateDealCreateRequest": WTCertificateDealCreateRequest,
     "WTCertificateDealCreateRequestEntitlementType": WTCertificateDealCreateRequestEntitlementType,
     "WTCertificateEntitlementSnapshot": WTCertificateEntitlementSnapshot,
@@ -1337,6 +1342,7 @@ let typeMap: {[index: string]: any} = {
     "WTProductUpdateParams": WTProductUpdateParams,
     "WTPromoCodeCreateParams": WTPromoCodeCreateParams,
     "WTPromoCodeUpdateParams": WTPromoCodeUpdateParams,
+    "WTPublicBranding": WTPublicBranding,
     "WTQRCodeDesign": WTQRCodeDesign,
     "WTQRCodeDesignCreateParams": WTQRCodeDesignCreateParams,
     "WTQRCodeDesignUpdateParams": WTQRCodeDesignUpdateParams,
