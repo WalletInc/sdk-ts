@@ -63,6 +63,7 @@ var PortalPage;
     PortalPage[PortalPage["News"] = 'news'] = "News";
     PortalPage[PortalPage["VirtualBusinessCards"] = 'virtual-business-cards'] = "VirtualBusinessCards";
     PortalPage[PortalPage["QrcodeDesigns"] = 'qrcode-designs'] = "QrcodeDesigns";
+    PortalPage[PortalPage["BrandingWalletPages"] = 'branding-wallet-pages'] = "BrandingWalletPages";
     PortalPage[PortalPage["Products"] = 'products'] = "Products";
     PortalPage[PortalPage["Services"] = 'services'] = "Services";
     PortalPage[PortalPage["RoomRates"] = 'room-rates'] = "RoomRates";

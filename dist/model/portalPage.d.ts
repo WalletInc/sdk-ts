@@ -59,6 +59,7 @@ export declare enum PortalPage {
     News,
     VirtualBusinessCards,
     QrcodeDesigns,
+    BrandingWalletPages,
     Products,
     Services,
     RoomRates,
