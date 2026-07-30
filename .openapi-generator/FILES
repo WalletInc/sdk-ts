@@ -19,6 +19,7 @@ api/filesDocumentsApi.ts
 api/galleryApi.ts
 api/gamingApi.ts
 api/giftCardsApi.ts
+api/googleWalletSubscribersApi.ts
 api/helpDeskApi.ts
 api/importExportApi.ts
 api/importedListsApi.ts
