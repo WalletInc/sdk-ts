@@ -1,6 +1,7 @@
 /// <reference types="node" />
 import http from 'http';
 import { FetchIndustry200Response } from '../model/fetchIndustry200Response';
+import { SubscriptionPlan } from '../model/subscriptionPlan';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum IndustriesApiApiKeys {
@@ -31,6 +32,14 @@ export declare class IndustriesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Array<FetchIndustry200Response>;
+    }>;
+    fetchFreePlan(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: SubscriptionPlan;
     }>;
     fetchIndustriesIDs(options?: {
         headers: {
