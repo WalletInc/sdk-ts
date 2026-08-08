@@ -11,6 +11,7 @@ export declare class WTWalletConfigurationSaveWalletRecord extends null<String, 
     'headerImageURL'?: any | null;
     'headerCustomIcon'?: any | null;
     'welcomeMessage': any | null;
+    'homeTemplate'?: any | null;
     'isAppleEnabled': any | null;
     'isGoogleEnabled': any | null;
     'isSamsungEnabled': any | null;

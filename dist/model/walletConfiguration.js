@@ -60,6 +60,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "homeTemplate",
+        "baseName": "homeTemplate",
+        "type": "any"
+    },
+    {
         "name": "isAppleEnabled",
         "baseName": "isAppleEnabled",
         "type": "any"

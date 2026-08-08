@@ -11,6 +11,7 @@ export declare class WalletConfiguration extends null<String, any> {
     'headerImageURL'?: any | null;
     'headerCustomIcon'?: any | null;
     'welcomeMessage': any | null;
+    'homeTemplate'?: any | null;
     'isAppleEnabled': any | null;
     'isGoogleEnabled': any | null;
     'isSamsungEnabled': any | null;
