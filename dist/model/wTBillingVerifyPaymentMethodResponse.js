@@ -28,6 +28,16 @@ WTBillingVerifyPaymentMethodResponse.attributeTypeMap = [
         "name": "isTrialEligible",
         "baseName": "isTrialEligible",
         "type": "any"
+    },
+    {
+        "name": "subscriptionStatus",
+        "baseName": "subscriptionStatus",
+        "type": "any"
+    },
+    {
+        "name": "trialEnd",
+        "baseName": "trialEnd",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTBillingVerifyPaymentMethodResponse.js.map
