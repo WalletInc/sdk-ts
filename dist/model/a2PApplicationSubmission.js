@@ -188,6 +188,11 @@ A2PApplicationSubmission.attributeTypeMap = [
         "name": "verificationMobile",
         "baseName": "verificationMobile",
         "type": "any"
+    },
+    {
+        "name": "billingConsent",
+        "baseName": "billingConsent",
+        "type": "A2PBillingConsent"
     }
 ];
 //# sourceMappingURL=a2PApplicationSubmission.js.map

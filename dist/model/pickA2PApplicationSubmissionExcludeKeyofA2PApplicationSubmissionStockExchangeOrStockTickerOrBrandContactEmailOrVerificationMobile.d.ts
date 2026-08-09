@@ -1,3 +1,4 @@
+import { A2PBillingConsent } from './a2PBillingConsent';
 import { BusinessClassification } from './businessClassification';
 import { BusinessIndustry } from './businessIndustry';
 import { BusinessRegionsOfOperation } from './businessRegionsOfOperation';
@@ -18,6 +19,7 @@ export declare class PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmi
     'messagingVolumeHigh': boolean;
     'jobTitle': string;
     'jobPosition': JobPosition;
+    'billingConsent'?: A2PBillingConsent;
     'businessName': string;
     'businessType': BusinessType;
     'address1': string;

@@ -1,6 +1,7 @@
 import localVarRequest from 'request';
 
 export * from './a2PApplicationSubmission';
+export * from './a2PBillingConsent';
 export * from './a2PGovernmentSubmission';
 export * from './a2PNonProfitSubmission';
 export * from './a2PPublicSubmission';
@@ -473,6 +474,7 @@ export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 
 
 import { A2PApplicationSubmission } from './a2PApplicationSubmission';
+import { A2PBillingConsent } from './a2PBillingConsent';
 import { A2PGovernmentSubmission } from './a2PGovernmentSubmission';
 import { A2PNonProfitSubmission } from './a2PNonProfitSubmission';
 import { A2PPublicSubmission } from './a2PPublicSubmission';
@@ -973,6 +975,7 @@ let enumsMap: {[index: string]: any} = {
 
 let typeMap: {[index: string]: any} = {
     "A2PApplicationSubmission": A2PApplicationSubmission,
+    "A2PBillingConsent": A2PBillingConsent,
     "A2PGovernmentSubmission": A2PGovernmentSubmission,
     "A2PNonProfitSubmission": A2PNonProfitSubmission,
     "A2PPublicSubmission": A2PPublicSubmission,

@@ -1,8 +1,10 @@
+import { A2PBillingConsent } from './a2PBillingConsent';
 import { BusinessTypeSoleProprietorship } from './businessTypeSoleProprietorship';
 export declare class A2PSoleProprietorSubmission {
     'firstName': any | null;
     'lastName': any | null;
     'email': any | null;
+    'billingConsent'?: A2PBillingConsent;
     'businessName': any | null;
     'businessType': BusinessTypeSoleProprietorship;
     'address1': any | null;

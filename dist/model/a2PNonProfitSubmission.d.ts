@@ -1,3 +1,4 @@
+import { A2PBillingConsent } from './a2PBillingConsent';
 import { BusinessClassificationNonProfit } from './businessClassificationNonProfit';
 import { BusinessIndustryNOTFORPROFIT } from './businessIndustryNOTFORPROFIT';
 import { BusinessRegistrationIdentifier } from './businessRegistrationIdentifier';
@@ -17,6 +18,7 @@ export declare class A2PNonProfitSubmission {
     'messagingVolumeHigh': any | null;
     'jobTitle': any | null;
     'jobPosition': JobPosition;
+    'billingConsent'?: A2PBillingConsent;
     'businessName': any | null;
     'businessType': BusinessTypeNonProfit;
     'address1': any | null;

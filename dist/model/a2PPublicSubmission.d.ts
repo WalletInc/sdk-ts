@@ -1,3 +1,4 @@
+import { A2PBillingConsent } from './a2PBillingConsent';
 import { BusinessClassificationPublic } from './businessClassificationPublic';
 import { BusinessIndustry } from './businessIndustry';
 import { BusinessRegistrationIdentifier } from './businessRegistrationIdentifier';
@@ -18,6 +19,7 @@ export declare class A2PPublicSubmission {
     'messagingVolumeHigh': any | null;
     'jobTitle': any | null;
     'jobPosition': JobPosition;
+    'billingConsent'?: A2PBillingConsent;
     'businessName': any | null;
     'businessType': BusinessType;
     'address1': any | null;

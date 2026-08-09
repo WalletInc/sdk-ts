@@ -1,8 +1,10 @@
+import { A2PBillingConsent } from './a2PBillingConsent';
 import { BusinessType } from './businessType';
 export declare class PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndustryOrTaxIDTypeOrTaxIDOrWebsiteURLOrSocialMediaURLOrRegionsOfOperationOrMessagingVolumeHighOrJobTitleOrJobPosition {
     'firstName': string;
     'lastName': string;
     'email': string;
+    'billingConsent'?: A2PBillingConsent;
     'businessName': string;
     'businessType': BusinessType;
     'address1': string;

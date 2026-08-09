@@ -1,3 +1,4 @@
+import { A2PBillingConsent } from './a2PBillingConsent';
 import { BusinessClassification } from './businessClassification';
 import { BusinessIndustry } from './businessIndustry';
 import { BusinessRegistrationIdentifier } from './businessRegistrationIdentifier';
@@ -41,6 +42,7 @@ export declare class A2PApplicationSubmission extends null<String, any> {
     'phoneNumber': any | null;
     'brandContactEmail'?: any | null;
     'verificationMobile'?: any | null;
+    'billingConsent'?: A2PBillingConsent;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

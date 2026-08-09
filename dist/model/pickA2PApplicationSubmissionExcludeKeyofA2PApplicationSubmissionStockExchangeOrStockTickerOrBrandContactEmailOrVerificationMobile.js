@@ -75,6 +75,11 @@ PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrS
         "type": "JobPosition"
     },
     {
+        "name": "billingConsent",
+        "baseName": "billingConsent",
+        "type": "A2PBillingConsent"
+    },
+    {
         "name": "businessName",
         "baseName": "businessName",
         "type": "string"

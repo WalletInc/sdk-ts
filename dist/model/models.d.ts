@@ -2,6 +2,7 @@
 /// <reference types="node" />
 import localVarRequest from 'request';
 export * from './a2PApplicationSubmission';
+export * from './a2PBillingConsent';
 export * from './a2PGovernmentSubmission';
 export * from './a2PNonProfitSubmission';
 export * from './a2PPublicSubmission';

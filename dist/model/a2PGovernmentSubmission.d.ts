@@ -1,3 +1,4 @@
+import { A2PBillingConsent } from './a2PBillingConsent';
 import { BusinessClassificationGovernment } from './businessClassificationGovernment';
 import { BusinessIndustryGOVERNMENT } from './businessIndustryGOVERNMENT';
 import { BusinessRegistrationIdentifier } from './businessRegistrationIdentifier';
@@ -17,6 +18,7 @@ export declare class A2PGovernmentSubmission {
     'messagingVolumeHigh': any | null;
     'jobTitle': any | null;
     'jobPosition': JobPosition;
+    'billingConsent'?: A2PBillingConsent;
     'businessName': any | null;
     'businessType': BusinessTypeNonProfit;
     'address1': any | null;

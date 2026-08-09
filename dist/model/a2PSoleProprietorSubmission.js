@@ -25,6 +25,11 @@ A2PSoleProprietorSubmission.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "billingConsent",
+        "baseName": "billingConsent",
+        "type": "A2PBillingConsent"
+    },
+    {
         "name": "businessName",
         "baseName": "businessName",
         "type": "any"

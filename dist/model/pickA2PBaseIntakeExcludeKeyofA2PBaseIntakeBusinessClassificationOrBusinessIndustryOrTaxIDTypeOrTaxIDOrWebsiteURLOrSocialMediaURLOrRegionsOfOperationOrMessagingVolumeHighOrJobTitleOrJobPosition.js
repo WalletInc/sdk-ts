@@ -25,6 +25,11 @@ PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndust
         "type": "string"
     },
     {
+        "name": "billingConsent",
+        "baseName": "billingConsent",
+        "type": "A2PBillingConsent"
+    },
+    {
         "name": "businessName",
         "baseName": "businessName",
         "type": "string"

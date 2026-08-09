@@ -16,6 +16,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VoidAuth = exports.OAuth = exports.ApiKeyAuth = exports.HttpBearerAuth = exports.HttpBasicAuth = exports.ObjectSerializer = void 0;
 __exportStar(require("./a2PApplicationSubmission"), exports);
+__exportStar(require("./a2PBillingConsent"), exports);
 __exportStar(require("./a2PGovernmentSubmission"), exports);
 __exportStar(require("./a2PNonProfitSubmission"), exports);
 __exportStar(require("./a2PPublicSubmission"), exports);
@@ -474,6 +475,7 @@ __exportStar(require("./walletConfiguration"), exports);
 __exportStar(require("./walletPageView"), exports);
 __exportStar(require("./webpage"), exports);
 const a2PApplicationSubmission_1 = require("./a2PApplicationSubmission");
+const a2PBillingConsent_1 = require("./a2PBillingConsent");
 const a2PGovernmentSubmission_1 = require("./a2PGovernmentSubmission");
 const a2PNonProfitSubmission_1 = require("./a2PNonProfitSubmission");
 const a2PPublicSubmission_1 = require("./a2PPublicSubmission");
@@ -970,6 +972,7 @@ let enumsMap = {
 };
 let typeMap = {
     "A2PApplicationSubmission": a2PApplicationSubmission_1.A2PApplicationSubmission,
+    "A2PBillingConsent": a2PBillingConsent_1.A2PBillingConsent,
     "A2PGovernmentSubmission": a2PGovernmentSubmission_1.A2PGovernmentSubmission,
     "A2PNonProfitSubmission": a2PNonProfitSubmission_1.A2PNonProfitSubmission,
     "A2PPublicSubmission": a2PPublicSubmission_1.A2PPublicSubmission,

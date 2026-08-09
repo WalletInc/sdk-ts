@@ -65,6 +65,7 @@ api/wixTerminalApi.ts
 api/wooCommerceTerminalApi.ts
 git_push.sh
 model/a2PApplicationSubmission.ts
+model/a2PBillingConsent.ts
 model/a2PGovernmentSubmission.ts
 model/a2PNonProfitSubmission.ts
 model/a2PPublicSubmission.ts
