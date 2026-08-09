@@ -160,6 +160,16 @@ Merchant.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "maxPhoneNumbers",
+        "baseName": "maxPhoneNumbers",
+        "type": "any"
+    },
+    {
+        "name": "subaccountSid",
+        "baseName": "subaccountSid",
+        "type": "any"
+    },
+    {
         "name": "isSmsAgreement",
         "baseName": "isSmsAgreement",
         "type": "any"

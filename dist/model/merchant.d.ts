@@ -30,6 +30,8 @@ export declare class Merchant extends null<String, any> {
     'planNickname': any | null;
     'billingCadence'?: WTBillingVerifyPaymentMethodResponseBillingCadence;
     'maxSMSCount': any | null;
+    'maxPhoneNumbers'?: any | null;
+    'subaccountSid'?: any | null;
     'isSmsAgreement'?: any | null;
     'isWhiteLabeled'?: any | null;
     'isFeatured'?: any | null;

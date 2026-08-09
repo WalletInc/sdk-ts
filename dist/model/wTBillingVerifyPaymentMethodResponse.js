@@ -38,6 +38,21 @@ WTBillingVerifyPaymentMethodResponse.attributeTypeMap = [
         "name": "trialEnd",
         "baseName": "trialEnd",
         "type": "any"
+    },
+    {
+        "name": "nextChargeAmount",
+        "baseName": "nextChargeAmount",
+        "type": "any"
+    },
+    {
+        "name": "billingPeriod",
+        "baseName": "billingPeriod",
+        "type": "any"
+    },
+    {
+        "name": "nextChargeCurrency",
+        "baseName": "nextChargeCurrency",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTBillingVerifyPaymentMethodResponse.js.map
