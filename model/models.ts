@@ -414,6 +414,8 @@ export * from './wTSegmentAdvisoryRecommend';
 export * from './wTSegmentEstimate';
 export * from './wTSegmentEstimateEncoding';
 export * from './wTSegmentEstimateRequest';
+export * from './wTSendFreeze';
+export * from './wTSendFreezeStatus';
 export * from './wTServiceCreateParams';
 export * from './wTServiceUpdateParams';
 export * from './wTSettingsSetPassword';
@@ -887,6 +889,8 @@ import { WTSegmentAdvisoryRecommend } from './wTSegmentAdvisoryRecommend';
 import { WTSegmentEstimate } from './wTSegmentEstimate';
 import { WTSegmentEstimateEncoding } from './wTSegmentEstimateEncoding';
 import { WTSegmentEstimateRequest } from './wTSegmentEstimateRequest';
+import { WTSendFreeze } from './wTSendFreeze';
+import { WTSendFreezeStatus } from './wTSendFreezeStatus';
 import { WTServiceCreateParams } from './wTServiceCreateParams';
 import { WTServiceUpdateParams } from './wTServiceUpdateParams';
 import { WTSettingsSetPassword } from './wTSettingsSetPassword';
@@ -1368,6 +1372,8 @@ let typeMap: {[index: string]: any} = {
     "WTSegmentEstimate": WTSegmentEstimate,
     "WTSegmentEstimateEncoding": WTSegmentEstimateEncoding,
     "WTSegmentEstimateRequest": WTSegmentEstimateRequest,
+    "WTSendFreeze": WTSendFreeze,
+    "WTSendFreezeStatus": WTSendFreezeStatus,
     "WTServiceCreateParams": WTServiceCreateParams,
     "WTServiceUpdateParams": WTServiceUpdateParams,
     "WTSettingsSetPassword": WTSettingsSetPassword,

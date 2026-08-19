@@ -429,6 +429,8 @@ __exportStar(require("./wTSegmentAdvisoryRecommend"), exports);
 __exportStar(require("./wTSegmentEstimate"), exports);
 __exportStar(require("./wTSegmentEstimateEncoding"), exports);
 __exportStar(require("./wTSegmentEstimateRequest"), exports);
+__exportStar(require("./wTSendFreeze"), exports);
+__exportStar(require("./wTSendFreezeStatus"), exports);
 __exportStar(require("./wTServiceCreateParams"), exports);
 __exportStar(require("./wTServiceUpdateParams"), exports);
 __exportStar(require("./wTSettingsSetPassword"), exports);
@@ -888,6 +890,8 @@ const wTSegmentAdvisoryRecommend_1 = require("./wTSegmentAdvisoryRecommend");
 const wTSegmentEstimate_1 = require("./wTSegmentEstimate");
 const wTSegmentEstimateEncoding_1 = require("./wTSegmentEstimateEncoding");
 const wTSegmentEstimateRequest_1 = require("./wTSegmentEstimateRequest");
+const wTSendFreeze_1 = require("./wTSendFreeze");
+const wTSendFreezeStatus_1 = require("./wTSendFreezeStatus");
 const wTServiceCreateParams_1 = require("./wTServiceCreateParams");
 const wTServiceUpdateParams_1 = require("./wTServiceUpdateParams");
 const wTSettingsSetPassword_1 = require("./wTSettingsSetPassword");
@@ -1365,6 +1369,8 @@ let typeMap = {
     "WTSegmentEstimate": wTSegmentEstimate_1.WTSegmentEstimate,
     "WTSegmentEstimateEncoding": wTSegmentEstimateEncoding_1.WTSegmentEstimateEncoding,
     "WTSegmentEstimateRequest": wTSegmentEstimateRequest_1.WTSegmentEstimateRequest,
+    "WTSendFreeze": wTSendFreeze_1.WTSendFreeze,
+    "WTSendFreezeStatus": wTSendFreezeStatus_1.WTSendFreezeStatus,
     "WTServiceCreateParams": wTServiceCreateParams_1.WTServiceCreateParams,
     "WTServiceUpdateParams": wTServiceUpdateParams_1.WTServiceUpdateParams,
     "WTSettingsSetPassword": wTSettingsSetPassword_1.WTSettingsSetPassword,

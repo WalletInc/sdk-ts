@@ -415,6 +415,8 @@ export * from './wTSegmentAdvisoryRecommend';
 export * from './wTSegmentEstimate';
 export * from './wTSegmentEstimateEncoding';
 export * from './wTSegmentEstimateRequest';
+export * from './wTSendFreeze';
+export * from './wTSendFreezeStatus';
 export * from './wTServiceCreateParams';
 export * from './wTServiceUpdateParams';
 export * from './wTSettingsSetPassword';

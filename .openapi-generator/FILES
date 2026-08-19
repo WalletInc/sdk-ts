@@ -479,6 +479,8 @@ model/wTSegmentAdvisoryRecommend.ts
 model/wTSegmentEstimate.ts
 model/wTSegmentEstimateEncoding.ts
 model/wTSegmentEstimateRequest.ts
+model/wTSendFreeze.ts
+model/wTSendFreezeStatus.ts
 model/wTServiceCreateParams.ts
 model/wTServiceUpdateParams.ts
 model/wTSettingsSetPassword.ts

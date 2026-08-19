@@ -8,6 +8,7 @@ import { SSOutboundStatuses } from '../model/sSOutboundStatuses';
 import { WTCountResult } from '../model/wTCountResult';
 import { WTSegmentEstimate } from '../model/wTSegmentEstimate';
 import { WTSegmentEstimateRequest } from '../model/wTSegmentEstimateRequest';
+import { WTSendFreezeStatus } from '../model/wTSendFreezeStatus';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum SMSMessagesApiApiKeys {
@@ -110,6 +111,14 @@ export declare class SMSMessagesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: FetchOutboundSMSByPage200Response;
+    }>;
+    fetchSendFreezeStatus(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTSendFreezeStatus;
     }>;
     retrieveSentAndMaxCountOfMessages(options?: {
         headers: {
