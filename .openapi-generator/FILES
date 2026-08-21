@@ -485,6 +485,8 @@ model/wTSendFreezeStatus.ts
 model/wTServiceCreateParams.ts
 model/wTServiceUpdateParams.ts
 model/wTSettingsSetPassword.ts
+model/wTShareActivityReport.ts
+model/wTShareActivityRow.ts
 model/wTSmsSubscriberCreateParams.ts
 model/wTSmsSubscriberCreateParamsWalletUI.ts
 model/wTSmsSubscriberUpdateParams.ts

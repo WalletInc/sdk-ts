@@ -435,6 +435,8 @@ __exportStar(require("./wTSendFreezeStatus"), exports);
 __exportStar(require("./wTServiceCreateParams"), exports);
 __exportStar(require("./wTServiceUpdateParams"), exports);
 __exportStar(require("./wTSettingsSetPassword"), exports);
+__exportStar(require("./wTShareActivityReport"), exports);
+__exportStar(require("./wTShareActivityRow"), exports);
 __exportStar(require("./wTSmsSubscriberCreateParams"), exports);
 __exportStar(require("./wTSmsSubscriberCreateParamsWalletUI"), exports);
 __exportStar(require("./wTSmsSubscriberUpdateParams"), exports);
@@ -897,6 +899,8 @@ const wTSendFreezeStatus_1 = require("./wTSendFreezeStatus");
 const wTServiceCreateParams_1 = require("./wTServiceCreateParams");
 const wTServiceUpdateParams_1 = require("./wTServiceUpdateParams");
 const wTSettingsSetPassword_1 = require("./wTSettingsSetPassword");
+const wTShareActivityReport_1 = require("./wTShareActivityReport");
+const wTShareActivityRow_1 = require("./wTShareActivityRow");
 const wTSmsSubscriberCreateParams_1 = require("./wTSmsSubscriberCreateParams");
 const wTSmsSubscriberCreateParamsWalletUI_1 = require("./wTSmsSubscriberCreateParamsWalletUI");
 const wTSmsSubscriberUpdateParams_1 = require("./wTSmsSubscriberUpdateParams");
@@ -1377,6 +1381,8 @@ let typeMap = {
     "WTServiceCreateParams": wTServiceCreateParams_1.WTServiceCreateParams,
     "WTServiceUpdateParams": wTServiceUpdateParams_1.WTServiceUpdateParams,
     "WTSettingsSetPassword": wTSettingsSetPassword_1.WTSettingsSetPassword,
+    "WTShareActivityReport": wTShareActivityReport_1.WTShareActivityReport,
+    "WTShareActivityRow": wTShareActivityRow_1.WTShareActivityRow,
     "WTSmsSubscriberCreateParams": wTSmsSubscriberCreateParams_1.WTSmsSubscriberCreateParams,
     "WTSmsSubscriberCreateParamsWalletUI": wTSmsSubscriberCreateParamsWalletUI_1.WTSmsSubscriberCreateParamsWalletUI,
     "WTSmsSubscriberUpdateParams": wTSmsSubscriberUpdateParams_1.WTSmsSubscriberUpdateParams,

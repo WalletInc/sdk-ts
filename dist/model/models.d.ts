@@ -421,6 +421,8 @@ export * from './wTSendFreezeStatus';
 export * from './wTServiceCreateParams';
 export * from './wTServiceUpdateParams';
 export * from './wTSettingsSetPassword';
+export * from './wTShareActivityReport';
+export * from './wTShareActivityRow';
 export * from './wTSmsSubscriberCreateParams';
 export * from './wTSmsSubscriberCreateParamsWalletUI';
 export * from './wTSmsSubscriberUpdateParams';

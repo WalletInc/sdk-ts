@@ -420,6 +420,8 @@ export * from './wTSendFreezeStatus';
 export * from './wTServiceCreateParams';
 export * from './wTServiceUpdateParams';
 export * from './wTSettingsSetPassword';
+export * from './wTShareActivityReport';
+export * from './wTShareActivityRow';
 export * from './wTSmsSubscriberCreateParams';
 export * from './wTSmsSubscriberCreateParamsWalletUI';
 export * from './wTSmsSubscriberUpdateParams';
@@ -896,6 +898,8 @@ import { WTSendFreezeStatus } from './wTSendFreezeStatus';
 import { WTServiceCreateParams } from './wTServiceCreateParams';
 import { WTServiceUpdateParams } from './wTServiceUpdateParams';
 import { WTSettingsSetPassword } from './wTSettingsSetPassword';
+import { WTShareActivityReport } from './wTShareActivityReport';
+import { WTShareActivityRow } from './wTShareActivityRow';
 import { WTSmsSubscriberCreateParams } from './wTSmsSubscriberCreateParams';
 import { WTSmsSubscriberCreateParamsWalletUI } from './wTSmsSubscriberCreateParamsWalletUI';
 import { WTSmsSubscriberUpdateParams } from './wTSmsSubscriberUpdateParams';
@@ -1380,6 +1384,8 @@ let typeMap: {[index: string]: any} = {
     "WTServiceCreateParams": WTServiceCreateParams,
     "WTServiceUpdateParams": WTServiceUpdateParams,
     "WTSettingsSetPassword": WTSettingsSetPassword,
+    "WTShareActivityReport": WTShareActivityReport,
+    "WTShareActivityRow": WTShareActivityRow,
     "WTSmsSubscriberCreateParams": WTSmsSubscriberCreateParams,
     "WTSmsSubscriberCreateParamsWalletUI": WTSmsSubscriberCreateParamsWalletUI,
     "WTSmsSubscriberUpdateParams": WTSmsSubscriberUpdateParams,
