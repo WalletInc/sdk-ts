@@ -310,6 +310,7 @@ model/subscriptionFeature.ts
 model/subscriptionPlan.ts
 model/subscriptionPlanAnnual.ts
 model/subscriptionProduct.ts
+model/subscriptionProductValueBasis.ts
 model/tcpa.ts
 model/thread.ts
 model/ticket.ts

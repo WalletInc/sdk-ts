@@ -40,6 +40,11 @@ SubscriptionProduct.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "valueBasis",
+        "baseName": "valueBasis",
+        "type": "SubscriptionProductValueBasis"
+    },
+    {
         "name": "features",
         "baseName": "features",
         "type": "any"

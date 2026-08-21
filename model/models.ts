@@ -245,6 +245,7 @@ export * from './subscriptionFeature';
 export * from './subscriptionPlan';
 export * from './subscriptionPlanAnnual';
 export * from './subscriptionProduct';
+export * from './subscriptionProductValueBasis';
 export * from './tcpa';
 export * from './thread';
 export * from './ticket';
@@ -720,6 +721,7 @@ import { SubscriptionFeature } from './subscriptionFeature';
 import { SubscriptionPlan } from './subscriptionPlan';
 import { SubscriptionPlanAnnual } from './subscriptionPlanAnnual';
 import { SubscriptionProduct } from './subscriptionProduct';
+import { SubscriptionProductValueBasis } from './subscriptionProductValueBasis';
 import { Tcpa } from './tcpa';
 import { Thread } from './thread';
 import { Ticket } from './ticket';
@@ -1205,6 +1207,7 @@ let typeMap: {[index: string]: any} = {
     "SubscriptionPlan": SubscriptionPlan,
     "SubscriptionPlanAnnual": SubscriptionPlanAnnual,
     "SubscriptionProduct": SubscriptionProduct,
+    "SubscriptionProductValueBasis": SubscriptionProductValueBasis,
     "Tcpa": Tcpa,
     "Thread": Thread,
     "Ticket": Ticket,

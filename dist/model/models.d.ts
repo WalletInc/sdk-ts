@@ -246,6 +246,7 @@ export * from './subscriptionFeature';
 export * from './subscriptionPlan';
 export * from './subscriptionPlanAnnual';
 export * from './subscriptionProduct';
+export * from './subscriptionProductValueBasis';
 export * from './tcpa';
 export * from './thread';
 export * from './ticket';

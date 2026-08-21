@@ -28,6 +28,11 @@ WTVideoUpdateParams.attributeTypeMap = [
         "name": "additionalInfoURL",
         "baseName": "additionalInfoURL",
         "type": "any"
+    },
+    {
+        "name": "assetId",
+        "baseName": "assetId",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTVideoUpdateParams.js.map

@@ -1,3 +1,4 @@
+import { SubscriptionProductValueBasis } from './subscriptionProductValueBasis';
 export declare class SubscriptionProduct extends null<String, any> {
     'id': any | null;
     'title': any | null;
@@ -5,6 +6,7 @@ export declare class SubscriptionProduct extends null<String, any> {
     'category': any | null;
     'volume'?: any | null;
     'value'?: any | null;
+    'valueBasis'?: SubscriptionProductValueBasis;
     'features': any | null;
     'pages': any | null;
     'iconName': any | null;

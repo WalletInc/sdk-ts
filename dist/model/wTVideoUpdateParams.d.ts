@@ -3,6 +3,7 @@ export declare class WTVideoUpdateParams extends null<String, any> {
     'description': any | null;
     'orderNumber': any | null;
     'additionalInfoURL'?: any | null;
+    'assetId'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

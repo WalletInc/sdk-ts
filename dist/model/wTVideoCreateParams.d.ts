@@ -4,8 +4,8 @@ export declare class WTVideoCreateParams extends null<String, any> {
     'description': any | null;
     'orderNumber': any | null;
     'additionalInfoURL'?: any | null;
-    'provider': VideoProvider;
     'assetId': any | null;
+    'provider': VideoProvider;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

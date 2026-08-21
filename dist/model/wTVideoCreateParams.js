@@ -30,14 +30,14 @@ WTVideoCreateParams.attributeTypeMap = [
         "type": "any"
     },
     {
-        "name": "provider",
-        "baseName": "provider",
-        "type": "VideoProvider"
-    },
-    {
         "name": "assetId",
         "baseName": "assetId",
         "type": "any"
+    },
+    {
+        "name": "provider",
+        "baseName": "provider",
+        "type": "VideoProvider"
     }
 ];
 //# sourceMappingURL=wTVideoCreateParams.js.map
