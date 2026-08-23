@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import http from 'http';
-import { FetchIndustry200Response } from '../model/fetchIndustry200Response';
+import { FetchIndustry200ResponseAnyOf } from '../model/fetchIndustry200ResponseAnyOf';
 import { SubscriptionPlan } from '../model/subscriptionPlan';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
@@ -31,7 +31,7 @@ export declare class IndustriesApi {
         };
     }): Promise<{
         response: http.IncomingMessage;
-        body: Array<FetchIndustry200Response>;
+        body: Array<FetchIndustry200ResponseAnyOf>;
     }>;
     fetchFreePlan(options?: {
         headers: {

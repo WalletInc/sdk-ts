@@ -1,10 +1,12 @@
 /// <reference types="node" />
 import http from 'http';
 import { FetchIndustry200Response } from '../model/fetchIndustry200Response';
+import { FetchIndustry200ResponseAnyOf } from '../model/fetchIndustry200ResponseAnyOf';
 import { Merchant } from '../model/merchant';
 import { SetDefaultPaymentMethodRequest } from '../model/setDefaultPaymentMethodRequest';
 import { WTBillingChangePlan } from '../model/wTBillingChangePlan';
 import { WTBillingSavePaymentMethod } from '../model/wTBillingSavePaymentMethod';
+import { WTBillingSetIndustry } from '../model/wTBillingSetIndustry';
 import { WTBillingVerifyPaymentMethodResponse } from '../model/wTBillingVerifyPaymentMethodResponse';
 import { WTFinancingSoftPullRequest } from '../model/wTFinancingSoftPullRequest';
 import { WTFinancingSoftPullResponse } from '../model/wTFinancingSoftPullResponse';
@@ -150,6 +152,14 @@ export declare class BillingPaymentsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Merchant;
+    }>;
+    setIndustry(wTBillingSetIndustry: WTBillingSetIndustry, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: FetchIndustry200ResponseAnyOf;
     }>;
     upcomingInvoices(options?: {
         headers: {

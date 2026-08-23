@@ -12,27 +12,32 @@ FetchIndustry200Response.attributeTypeMap = [
     {
         "name": "plans",
         "baseName": "plans",
-        "type": "Array<SubscriptionPlan>"
+        "type": "any"
     },
     {
         "name": "title",
         "baseName": "title",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "icon",
         "baseName": "icon",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "sortNumber",
         "baseName": "sortNumber",
-        "type": "string"
+        "type": "any"
     },
     {
         "name": "id",
         "baseName": "id",
-        "type": "string"
+        "type": "any"
+    },
+    {
+        "name": "isIndustrySelected",
+        "baseName": "isIndustrySelected",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=fetchIndustry200Response.js.map

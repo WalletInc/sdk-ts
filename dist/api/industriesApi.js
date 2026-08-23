@@ -112,7 +112,7 @@ class IndustriesApi {
                         }
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                                body = models_1.ObjectSerializer.deserialize(body, "Array<FetchIndustry200Response>");
+                                body = models_1.ObjectSerializer.deserialize(body, "Array<FetchIndustry200ResponseAnyOf>");
                                 resolve({ response: response, body: body });
                             }
                             else {

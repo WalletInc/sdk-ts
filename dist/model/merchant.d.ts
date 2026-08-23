@@ -16,6 +16,7 @@ export declare class Merchant extends null<String, any> {
     'industryName': any | null;
     'infoGenesisPropertyID': any | null;
     'isFrozen': any | null;
+    'isClosed': any | null;
     'billingContactEmployeeID': any | null;
     'marketingContactEmployeeID': any | null;
     'technicalContactEmployeeID': any | null;

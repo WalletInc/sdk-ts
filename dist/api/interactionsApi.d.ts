@@ -14,6 +14,9 @@ import { StaticVoucher } from '../model/staticVoucher';
 import { Ticket } from '../model/ticket';
 import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
 import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
+import { WTGuestCreatePaymentIntentRequest } from '../model/wTGuestCreatePaymentIntentRequest';
+import { WTGuestCreatePaymentIntentResponse } from '../model/wTGuestCreatePaymentIntentResponse';
+import { WTGuestOrderReceipt } from '../model/wTGuestOrderReceipt';
 import { WTSmsSubscriberCreateParamsWalletUI } from '../model/wTSmsSubscriberCreateParamsWalletUI';
 import { WalletConfiguration } from '../model/walletConfiguration';
 import { Authentication, Interceptor } from '../model/models';
@@ -62,6 +65,14 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: string;
+    }>;
+    createGuestPaymentIntent(wTGuestCreatePaymentIntentRequest: WTGuestCreatePaymentIntentRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTGuestCreatePaymentIntentResponse;
     }>;
     createIcsFile(id: string, options?: {
         headers: {
@@ -118,6 +129,14 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: DynamicVoucher;
+    }>;
+    fetchGuestOrder(id: string, phoneVerificationToken: string, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTGuestOrderReceipt;
     }>;
     fetchMemberInformation(memberID: string, merchantID: string, options?: {
         headers: {

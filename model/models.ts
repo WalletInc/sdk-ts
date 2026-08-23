@@ -76,6 +76,8 @@ export * from './fetchCustomerTicketsWithTokenRequest';
 export * from './fetchImportedListRecipientsByPage200Response';
 export * from './fetchInboundSMSByPage200Response';
 export * from './fetchIndustry200Response';
+export * from './fetchIndustry200ResponseAnyOf';
+export * from './fetchIndustry200ResponseAnyOf1';
 export * from './fetchMembersCount200Response';
 export * from './fetchOptInListSubscribersByPage200Response';
 export * from './fetchOutboundSMSByPage200Response';
@@ -279,6 +281,7 @@ export * from './wTAuthenticationSSOLoginForDiscourse';
 export * from './wTBillingChangePlan';
 export * from './wTBillingChangePlanBillingCadence';
 export * from './wTBillingSavePaymentMethod';
+export * from './wTBillingSetIndustry';
 export * from './wTBillingVerifyPaymentMethodResponse';
 export * from './wTBillingVerifyPaymentMethodResponseBillingCadence';
 export * from './wTBrandingFooterLink';
@@ -337,6 +340,10 @@ export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
 export * from './wTGiftCardPurchaseRequest';
 export * from './wTGiftClaimRequest';
+export * from './wTGuestAmountBreakdown';
+export * from './wTGuestCreatePaymentIntentRequest';
+export * from './wTGuestCreatePaymentIntentResponse';
+export * from './wTGuestOrderReceipt';
 export * from './wTImageGridCreateParams';
 export * from './wTImageGridUpdateParams';
 export * from './wTImportConsentBasis';
@@ -554,6 +561,8 @@ import { FetchCustomerTicketsWithTokenRequest } from './fetchCustomerTicketsWith
 import { FetchImportedListRecipientsByPage200Response } from './fetchImportedListRecipientsByPage200Response';
 import { FetchInboundSMSByPage200Response } from './fetchInboundSMSByPage200Response';
 import { FetchIndustry200Response } from './fetchIndustry200Response';
+import { FetchIndustry200ResponseAnyOf } from './fetchIndustry200ResponseAnyOf';
+import { FetchIndustry200ResponseAnyOf1 } from './fetchIndustry200ResponseAnyOf1';
 import { FetchMembersCount200Response } from './fetchMembersCount200Response';
 import { FetchOptInListSubscribersByPage200Response } from './fetchOptInListSubscribersByPage200Response';
 import { FetchOutboundSMSByPage200Response } from './fetchOutboundSMSByPage200Response';
@@ -757,6 +766,7 @@ import { WTAuthenticationSSOLoginForDiscourse } from './wTAuthenticationSSOLogin
 import { WTBillingChangePlan } from './wTBillingChangePlan';
 import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingCadence';
 import { WTBillingSavePaymentMethod } from './wTBillingSavePaymentMethod';
+import { WTBillingSetIndustry } from './wTBillingSetIndustry';
 import { WTBillingVerifyPaymentMethodResponse } from './wTBillingVerifyPaymentMethodResponse';
 import { WTBillingVerifyPaymentMethodResponseBillingCadence } from './wTBillingVerifyPaymentMethodResponseBillingCadence';
 import { WTBrandingFooterLink } from './wTBrandingFooterLink';
@@ -815,6 +825,10 @@ import { WTGamingCreateParams } from './wTGamingCreateParams';
 import { WTGamingUpdateParams } from './wTGamingUpdateParams';
 import { WTGiftCardPurchaseRequest } from './wTGiftCardPurchaseRequest';
 import { WTGiftClaimRequest } from './wTGiftClaimRequest';
+import { WTGuestAmountBreakdown } from './wTGuestAmountBreakdown';
+import { WTGuestCreatePaymentIntentRequest } from './wTGuestCreatePaymentIntentRequest';
+import { WTGuestCreatePaymentIntentResponse } from './wTGuestCreatePaymentIntentResponse';
+import { WTGuestOrderReceipt } from './wTGuestOrderReceipt';
 import { WTImageGridCreateParams } from './wTImageGridCreateParams';
 import { WTImageGridUpdateParams } from './wTImageGridUpdateParams';
 import { WTImportConsentBasis } from './wTImportConsentBasis';
@@ -981,6 +995,7 @@ let enumsMap: {[index: string]: any} = {
         "TicketSortKeys": TicketSortKeys,
         "TrustBundleStatuses": TrustBundleStatuses,
         "WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum": WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum,
+        "WTGuestCreatePaymentIntentResponse.ChargeModelEnum": WTGuestCreatePaymentIntentResponse.ChargeModelEnum,
 }
 
 let typeMap: {[index: string]: any} = {
@@ -1046,6 +1061,8 @@ let typeMap: {[index: string]: any} = {
     "FetchImportedListRecipientsByPage200Response": FetchImportedListRecipientsByPage200Response,
     "FetchInboundSMSByPage200Response": FetchInboundSMSByPage200Response,
     "FetchIndustry200Response": FetchIndustry200Response,
+    "FetchIndustry200ResponseAnyOf": FetchIndustry200ResponseAnyOf,
+    "FetchIndustry200ResponseAnyOf1": FetchIndustry200ResponseAnyOf1,
     "FetchMembersCount200Response": FetchMembersCount200Response,
     "FetchOptInListSubscribersByPage200Response": FetchOptInListSubscribersByPage200Response,
     "FetchOutboundSMSByPage200Response": FetchOutboundSMSByPage200Response,
@@ -1243,6 +1260,7 @@ let typeMap: {[index: string]: any} = {
     "WTBillingChangePlan": WTBillingChangePlan,
     "WTBillingChangePlanBillingCadence": WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": WTBillingSavePaymentMethod,
+    "WTBillingSetIndustry": WTBillingSetIndustry,
     "WTBillingVerifyPaymentMethodResponse": WTBillingVerifyPaymentMethodResponse,
     "WTBillingVerifyPaymentMethodResponseBillingCadence": WTBillingVerifyPaymentMethodResponseBillingCadence,
     "WTBrandingFooterLink": WTBrandingFooterLink,
@@ -1301,6 +1319,10 @@ let typeMap: {[index: string]: any} = {
     "WTGamingUpdateParams": WTGamingUpdateParams,
     "WTGiftCardPurchaseRequest": WTGiftCardPurchaseRequest,
     "WTGiftClaimRequest": WTGiftClaimRequest,
+    "WTGuestAmountBreakdown": WTGuestAmountBreakdown,
+    "WTGuestCreatePaymentIntentRequest": WTGuestCreatePaymentIntentRequest,
+    "WTGuestCreatePaymentIntentResponse": WTGuestCreatePaymentIntentResponse,
+    "WTGuestOrderReceipt": WTGuestOrderReceipt,
     "WTImageGridCreateParams": WTImageGridCreateParams,
     "WTImageGridUpdateParams": WTImageGridUpdateParams,
     "WTImportConsentBasis": WTImportConsentBasis,

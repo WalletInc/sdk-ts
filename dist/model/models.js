@@ -91,6 +91,8 @@ __exportStar(require("./fetchCustomerTicketsWithTokenRequest"), exports);
 __exportStar(require("./fetchImportedListRecipientsByPage200Response"), exports);
 __exportStar(require("./fetchInboundSMSByPage200Response"), exports);
 __exportStar(require("./fetchIndustry200Response"), exports);
+__exportStar(require("./fetchIndustry200ResponseAnyOf"), exports);
+__exportStar(require("./fetchIndustry200ResponseAnyOf1"), exports);
 __exportStar(require("./fetchMembersCount200Response"), exports);
 __exportStar(require("./fetchOptInListSubscribersByPage200Response"), exports);
 __exportStar(require("./fetchOutboundSMSByPage200Response"), exports);
@@ -294,6 +296,7 @@ __exportStar(require("./wTAuthenticationSSOLoginForDiscourse"), exports);
 __exportStar(require("./wTBillingChangePlan"), exports);
 __exportStar(require("./wTBillingChangePlanBillingCadence"), exports);
 __exportStar(require("./wTBillingSavePaymentMethod"), exports);
+__exportStar(require("./wTBillingSetIndustry"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponse"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponseBillingCadence"), exports);
 __exportStar(require("./wTBrandingFooterLink"), exports);
@@ -352,6 +355,10 @@ __exportStar(require("./wTGamingCreateParams"), exports);
 __exportStar(require("./wTGamingUpdateParams"), exports);
 __exportStar(require("./wTGiftCardPurchaseRequest"), exports);
 __exportStar(require("./wTGiftClaimRequest"), exports);
+__exportStar(require("./wTGuestAmountBreakdown"), exports);
+__exportStar(require("./wTGuestCreatePaymentIntentRequest"), exports);
+__exportStar(require("./wTGuestCreatePaymentIntentResponse"), exports);
+__exportStar(require("./wTGuestOrderReceipt"), exports);
 __exportStar(require("./wTImageGridCreateParams"), exports);
 __exportStar(require("./wTImageGridUpdateParams"), exports);
 __exportStar(require("./wTImportConsentBasis"), exports);
@@ -555,6 +562,8 @@ const fetchCustomerTicketsWithTokenRequest_1 = require("./fetchCustomerTicketsWi
 const fetchImportedListRecipientsByPage200Response_1 = require("./fetchImportedListRecipientsByPage200Response");
 const fetchInboundSMSByPage200Response_1 = require("./fetchInboundSMSByPage200Response");
 const fetchIndustry200Response_1 = require("./fetchIndustry200Response");
+const fetchIndustry200ResponseAnyOf_1 = require("./fetchIndustry200ResponseAnyOf");
+const fetchIndustry200ResponseAnyOf1_1 = require("./fetchIndustry200ResponseAnyOf1");
 const fetchMembersCount200Response_1 = require("./fetchMembersCount200Response");
 const fetchOptInListSubscribersByPage200Response_1 = require("./fetchOptInListSubscribersByPage200Response");
 const fetchOutboundSMSByPage200Response_1 = require("./fetchOutboundSMSByPage200Response");
@@ -758,6 +767,7 @@ const wTAuthenticationSSOLoginForDiscourse_1 = require("./wTAuthenticationSSOLog
 const wTBillingChangePlan_1 = require("./wTBillingChangePlan");
 const wTBillingChangePlanBillingCadence_1 = require("./wTBillingChangePlanBillingCadence");
 const wTBillingSavePaymentMethod_1 = require("./wTBillingSavePaymentMethod");
+const wTBillingSetIndustry_1 = require("./wTBillingSetIndustry");
 const wTBillingVerifyPaymentMethodResponse_1 = require("./wTBillingVerifyPaymentMethodResponse");
 const wTBillingVerifyPaymentMethodResponseBillingCadence_1 = require("./wTBillingVerifyPaymentMethodResponseBillingCadence");
 const wTBrandingFooterLink_1 = require("./wTBrandingFooterLink");
@@ -816,6 +826,10 @@ const wTGamingCreateParams_1 = require("./wTGamingCreateParams");
 const wTGamingUpdateParams_1 = require("./wTGamingUpdateParams");
 const wTGiftCardPurchaseRequest_1 = require("./wTGiftCardPurchaseRequest");
 const wTGiftClaimRequest_1 = require("./wTGiftClaimRequest");
+const wTGuestAmountBreakdown_1 = require("./wTGuestAmountBreakdown");
+const wTGuestCreatePaymentIntentRequest_1 = require("./wTGuestCreatePaymentIntentRequest");
+const wTGuestCreatePaymentIntentResponse_1 = require("./wTGuestCreatePaymentIntentResponse");
+const wTGuestOrderReceipt_1 = require("./wTGuestOrderReceipt");
 const wTImageGridCreateParams_1 = require("./wTImageGridCreateParams");
 const wTImageGridUpdateParams_1 = require("./wTImageGridUpdateParams");
 const wTImportConsentBasis_1 = require("./wTImportConsentBasis");
@@ -979,6 +993,7 @@ let enumsMap = {
     "TicketSortKeys": ticketSortKeys_1.TicketSortKeys,
     "TrustBundleStatuses": trustBundleStatuses_1.TrustBundleStatuses,
     "WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum": wTAuthenticationCheckSessionTokenStatusResponse_1.WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum,
+    "WTGuestCreatePaymentIntentResponse.ChargeModelEnum": wTGuestCreatePaymentIntentResponse_1.WTGuestCreatePaymentIntentResponse.ChargeModelEnum,
 };
 let typeMap = {
     "A2PApplicationSubmission": a2PApplicationSubmission_1.A2PApplicationSubmission,
@@ -1043,6 +1058,8 @@ let typeMap = {
     "FetchImportedListRecipientsByPage200Response": fetchImportedListRecipientsByPage200Response_1.FetchImportedListRecipientsByPage200Response,
     "FetchInboundSMSByPage200Response": fetchInboundSMSByPage200Response_1.FetchInboundSMSByPage200Response,
     "FetchIndustry200Response": fetchIndustry200Response_1.FetchIndustry200Response,
+    "FetchIndustry200ResponseAnyOf": fetchIndustry200ResponseAnyOf_1.FetchIndustry200ResponseAnyOf,
+    "FetchIndustry200ResponseAnyOf1": fetchIndustry200ResponseAnyOf1_1.FetchIndustry200ResponseAnyOf1,
     "FetchMembersCount200Response": fetchMembersCount200Response_1.FetchMembersCount200Response,
     "FetchOptInListSubscribersByPage200Response": fetchOptInListSubscribersByPage200Response_1.FetchOptInListSubscribersByPage200Response,
     "FetchOutboundSMSByPage200Response": fetchOutboundSMSByPage200Response_1.FetchOutboundSMSByPage200Response,
@@ -1240,6 +1257,7 @@ let typeMap = {
     "WTBillingChangePlan": wTBillingChangePlan_1.WTBillingChangePlan,
     "WTBillingChangePlanBillingCadence": wTBillingChangePlanBillingCadence_1.WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": wTBillingSavePaymentMethod_1.WTBillingSavePaymentMethod,
+    "WTBillingSetIndustry": wTBillingSetIndustry_1.WTBillingSetIndustry,
     "WTBillingVerifyPaymentMethodResponse": wTBillingVerifyPaymentMethodResponse_1.WTBillingVerifyPaymentMethodResponse,
     "WTBillingVerifyPaymentMethodResponseBillingCadence": wTBillingVerifyPaymentMethodResponseBillingCadence_1.WTBillingVerifyPaymentMethodResponseBillingCadence,
     "WTBrandingFooterLink": wTBrandingFooterLink_1.WTBrandingFooterLink,
@@ -1298,6 +1316,10 @@ let typeMap = {
     "WTGamingUpdateParams": wTGamingUpdateParams_1.WTGamingUpdateParams,
     "WTGiftCardPurchaseRequest": wTGiftCardPurchaseRequest_1.WTGiftCardPurchaseRequest,
     "WTGiftClaimRequest": wTGiftClaimRequest_1.WTGiftClaimRequest,
+    "WTGuestAmountBreakdown": wTGuestAmountBreakdown_1.WTGuestAmountBreakdown,
+    "WTGuestCreatePaymentIntentRequest": wTGuestCreatePaymentIntentRequest_1.WTGuestCreatePaymentIntentRequest,
+    "WTGuestCreatePaymentIntentResponse": wTGuestCreatePaymentIntentResponse_1.WTGuestCreatePaymentIntentResponse,
+    "WTGuestOrderReceipt": wTGuestOrderReceipt_1.WTGuestOrderReceipt,
     "WTImageGridCreateParams": wTImageGridCreateParams_1.WTImageGridCreateParams,
     "WTImageGridUpdateParams": wTImageGridUpdateParams_1.WTImageGridUpdateParams,
     "WTImportConsentBasis": wTImportConsentBasis_1.WTImportConsentBasis,

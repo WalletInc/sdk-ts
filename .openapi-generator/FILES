@@ -140,6 +140,8 @@ model/fetchCustomerTicketsWithTokenRequest.ts
 model/fetchImportedListRecipientsByPage200Response.ts
 model/fetchInboundSMSByPage200Response.ts
 model/fetchIndustry200Response.ts
+model/fetchIndustry200ResponseAnyOf.ts
+model/fetchIndustry200ResponseAnyOf1.ts
 model/fetchMembersCount200Response.ts
 model/fetchOptInListSubscribersByPage200Response.ts
 model/fetchOutboundSMSByPage200Response.ts
@@ -344,6 +346,7 @@ model/wTAuthenticationSSOLoginForDiscourse.ts
 model/wTBillingChangePlan.ts
 model/wTBillingChangePlanBillingCadence.ts
 model/wTBillingSavePaymentMethod.ts
+model/wTBillingSetIndustry.ts
 model/wTBillingVerifyPaymentMethodResponse.ts
 model/wTBillingVerifyPaymentMethodResponseBillingCadence.ts
 model/wTBrandingFooterLink.ts
@@ -402,6 +405,10 @@ model/wTGamingCreateParams.ts
 model/wTGamingUpdateParams.ts
 model/wTGiftCardPurchaseRequest.ts
 model/wTGiftClaimRequest.ts
+model/wTGuestAmountBreakdown.ts
+model/wTGuestCreatePaymentIntentRequest.ts
+model/wTGuestCreatePaymentIntentResponse.ts
+model/wTGuestOrderReceipt.ts
 model/wTImageGridCreateParams.ts
 model/wTImageGridUpdateParams.ts
 model/wTImportConsentBasis.ts

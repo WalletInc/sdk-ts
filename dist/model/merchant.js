@@ -90,6 +90,11 @@ Merchant.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "isClosed",
+        "baseName": "isClosed",
+        "type": "any"
+    },
+    {
         "name": "billingContactEmployeeID",
         "baseName": "billingContactEmployeeID",
         "type": "any"

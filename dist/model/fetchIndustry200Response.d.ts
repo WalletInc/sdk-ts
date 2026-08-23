@@ -1,10 +1,10 @@
-import { SubscriptionPlan } from './subscriptionPlan';
 export declare class FetchIndustry200Response {
-    'plans': Array<SubscriptionPlan>;
-    'title': string;
-    'icon': string;
-    'sortNumber': string;
-    'id': string;
+    'plans': any | null;
+    'title': any | null;
+    'icon': any | null;
+    'sortNumber': any | null;
+    'id': any | null;
+    'isIndustrySelected': any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
