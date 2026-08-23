@@ -158,6 +158,11 @@ Employee.attributeTypeMap = [
         "name": "isEmailNotificationDisabled",
         "baseName": "isEmailNotificationDisabled",
         "type": "any"
+    },
+    {
+        "name": "chromeTheme",
+        "baseName": "chromeTheme",
+        "type": "EmployeeChromeTheme"
     }
 ];
 //# sourceMappingURL=employee.js.map

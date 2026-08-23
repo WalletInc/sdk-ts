@@ -122,6 +122,7 @@ model/employee.ts
 model/employeeAPIKey.ts
 model/employeeActivityLog.ts
 model/employeeAlert.ts
+model/employeeChromeTheme.ts
 model/employeeScheduleStartDay.ts
 model/employeeScheduleStartHour.ts
 model/employeeScheduleStartMeridiem.ts
@@ -318,6 +319,8 @@ model/thread.ts
 model/ticket.ts
 model/ticketSortKeys.ts
 model/trustBundleStatuses.ts
+model/updateChromeThemePreferenceRequest.ts
+model/updateChromeThemePreferenceRequestChromeTheme.ts
 model/updateEmailNotificationPreferenceRequest.ts
 model/updateStaticVoucherCampaignWithVoucher.ts
 model/vSCampaignGeneratedMessage.ts

@@ -73,6 +73,7 @@ __exportStar(require("./employee"), exports);
 __exportStar(require("./employeeAPIKey"), exports);
 __exportStar(require("./employeeActivityLog"), exports);
 __exportStar(require("./employeeAlert"), exports);
+__exportStar(require("./employeeChromeTheme"), exports);
 __exportStar(require("./employeeScheduleStartDay"), exports);
 __exportStar(require("./employeeScheduleStartHour"), exports);
 __exportStar(require("./employeeScheduleStartMeridiem"), exports);
@@ -268,6 +269,8 @@ __exportStar(require("./thread"), exports);
 __exportStar(require("./ticket"), exports);
 __exportStar(require("./ticketSortKeys"), exports);
 __exportStar(require("./trustBundleStatuses"), exports);
+__exportStar(require("./updateChromeThemePreferenceRequest"), exports);
+__exportStar(require("./updateChromeThemePreferenceRequestChromeTheme"), exports);
 __exportStar(require("./updateEmailNotificationPreferenceRequest"), exports);
 __exportStar(require("./updateStaticVoucherCampaignWithVoucher"), exports);
 __exportStar(require("./vSCampaignGeneratedMessage"), exports);
@@ -544,6 +547,7 @@ const employee_1 = require("./employee");
 const employeeAPIKey_1 = require("./employeeAPIKey");
 const employeeActivityLog_1 = require("./employeeActivityLog");
 const employeeAlert_1 = require("./employeeAlert");
+const employeeChromeTheme_1 = require("./employeeChromeTheme");
 const employeeScheduleStartDay_1 = require("./employeeScheduleStartDay");
 const employeeScheduleStartHour_1 = require("./employeeScheduleStartHour");
 const employeeScheduleStartMeridiem_1 = require("./employeeScheduleStartMeridiem");
@@ -739,6 +743,8 @@ const thread_1 = require("./thread");
 const ticket_1 = require("./ticket");
 const ticketSortKeys_1 = require("./ticketSortKeys");
 const trustBundleStatuses_1 = require("./trustBundleStatuses");
+const updateChromeThemePreferenceRequest_1 = require("./updateChromeThemePreferenceRequest");
+const updateChromeThemePreferenceRequestChromeTheme_1 = require("./updateChromeThemePreferenceRequestChromeTheme");
 const updateEmailNotificationPreferenceRequest_1 = require("./updateEmailNotificationPreferenceRequest");
 const updateStaticVoucherCampaignWithVoucher_1 = require("./updateStaticVoucherCampaignWithVoucher");
 const vSCampaignGeneratedMessage_1 = require("./vSCampaignGeneratedMessage");
@@ -1040,6 +1046,7 @@ let typeMap = {
     "EmployeeAPIKey": employeeAPIKey_1.EmployeeAPIKey,
     "EmployeeActivityLog": employeeActivityLog_1.EmployeeActivityLog,
     "EmployeeAlert": employeeAlert_1.EmployeeAlert,
+    "EmployeeChromeTheme": employeeChromeTheme_1.EmployeeChromeTheme,
     "EmployeeScheduleStartDay": employeeScheduleStartDay_1.EmployeeScheduleStartDay,
     "EmployeeScheduleStartHour": employeeScheduleStartHour_1.EmployeeScheduleStartHour,
     "EmployeeScheduleStartMeridiem": employeeScheduleStartMeridiem_1.EmployeeScheduleStartMeridiem,
@@ -1229,6 +1236,8 @@ let typeMap = {
     "Tcpa": tcpa_1.Tcpa,
     "Thread": thread_1.Thread,
     "Ticket": ticket_1.Ticket,
+    "UpdateChromeThemePreferenceRequest": updateChromeThemePreferenceRequest_1.UpdateChromeThemePreferenceRequest,
+    "UpdateChromeThemePreferenceRequestChromeTheme": updateChromeThemePreferenceRequestChromeTheme_1.UpdateChromeThemePreferenceRequestChromeTheme,
     "UpdateEmailNotificationPreferenceRequest": updateEmailNotificationPreferenceRequest_1.UpdateEmailNotificationPreferenceRequest,
     "UpdateStaticVoucherCampaignWithVoucher": updateStaticVoucherCampaignWithVoucher_1.UpdateStaticVoucherCampaignWithVoucher,
     "VSCampaignGeneratedMessage": vSCampaignGeneratedMessage_1.VSCampaignGeneratedMessage,

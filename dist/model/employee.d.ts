@@ -1,3 +1,4 @@
+import { EmployeeChromeTheme } from './employeeChromeTheme';
 import { EmployeeScheduleStartDay } from './employeeScheduleStartDay';
 import { EmployeeScheduleStartHour } from './employeeScheduleStartHour';
 import { EmployeeScheduleStartMeridiem } from './employeeScheduleStartMeridiem';
@@ -33,6 +34,7 @@ export declare class Employee extends null<String, any> {
     'cfuvid'?: any | null;
     'schedule'?: object;
     'isEmailNotificationDisabled'?: any | null;
+    'chromeTheme'?: EmployeeChromeTheme;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -58,6 +58,7 @@ export * from './employee';
 export * from './employeeAPIKey';
 export * from './employeeActivityLog';
 export * from './employeeAlert';
+export * from './employeeChromeTheme';
 export * from './employeeScheduleStartDay';
 export * from './employeeScheduleStartHour';
 export * from './employeeScheduleStartMeridiem';
@@ -253,6 +254,8 @@ export * from './thread';
 export * from './ticket';
 export * from './ticketSortKeys';
 export * from './trustBundleStatuses';
+export * from './updateChromeThemePreferenceRequest';
+export * from './updateChromeThemePreferenceRequestChromeTheme';
 export * from './updateEmailNotificationPreferenceRequest';
 export * from './updateStaticVoucherCampaignWithVoucher';
 export * from './vSCampaignGeneratedMessage';
@@ -543,6 +546,7 @@ import { Employee } from './employee';
 import { EmployeeAPIKey } from './employeeAPIKey';
 import { EmployeeActivityLog } from './employeeActivityLog';
 import { EmployeeAlert } from './employeeAlert';
+import { EmployeeChromeTheme } from './employeeChromeTheme';
 import { EmployeeScheduleStartDay } from './employeeScheduleStartDay';
 import { EmployeeScheduleStartHour } from './employeeScheduleStartHour';
 import { EmployeeScheduleStartMeridiem } from './employeeScheduleStartMeridiem';
@@ -738,6 +742,8 @@ import { Thread } from './thread';
 import { Ticket } from './ticket';
 import { TicketSortKeys } from './ticketSortKeys';
 import { TrustBundleStatuses } from './trustBundleStatuses';
+import { UpdateChromeThemePreferenceRequest } from './updateChromeThemePreferenceRequest';
+import { UpdateChromeThemePreferenceRequestChromeTheme } from './updateChromeThemePreferenceRequestChromeTheme';
 import { UpdateEmailNotificationPreferenceRequest } from './updateEmailNotificationPreferenceRequest';
 import { UpdateStaticVoucherCampaignWithVoucher } from './updateStaticVoucherCampaignWithVoucher';
 import { VSCampaignGeneratedMessage } from './vSCampaignGeneratedMessage';
@@ -1043,6 +1049,7 @@ let typeMap: {[index: string]: any} = {
     "EmployeeAPIKey": EmployeeAPIKey,
     "EmployeeActivityLog": EmployeeActivityLog,
     "EmployeeAlert": EmployeeAlert,
+    "EmployeeChromeTheme": EmployeeChromeTheme,
     "EmployeeScheduleStartDay": EmployeeScheduleStartDay,
     "EmployeeScheduleStartHour": EmployeeScheduleStartHour,
     "EmployeeScheduleStartMeridiem": EmployeeScheduleStartMeridiem,
@@ -1232,6 +1239,8 @@ let typeMap: {[index: string]: any} = {
     "Tcpa": Tcpa,
     "Thread": Thread,
     "Ticket": Ticket,
+    "UpdateChromeThemePreferenceRequest": UpdateChromeThemePreferenceRequest,
+    "UpdateChromeThemePreferenceRequestChromeTheme": UpdateChromeThemePreferenceRequestChromeTheme,
     "UpdateEmailNotificationPreferenceRequest": UpdateEmailNotificationPreferenceRequest,
     "UpdateStaticVoucherCampaignWithVoucher": UpdateStaticVoucherCampaignWithVoucher,
     "VSCampaignGeneratedMessage": VSCampaignGeneratedMessage,

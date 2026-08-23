@@ -3,6 +3,7 @@ import http from 'http';
 import { Employee } from '../model/employee';
 import { EmployeeActivityLog } from '../model/employeeActivityLog';
 import { Message } from '../model/message';
+import { UpdateChromeThemePreferenceRequest } from '../model/updateChromeThemePreferenceRequest';
 import { UpdateEmailNotificationPreferenceRequest } from '../model/updateEmailNotificationPreferenceRequest';
 import { WTEmployeeCreate } from '../model/wTEmployeeCreate';
 import { WTEmployeeCreateMediaFile } from '../model/wTEmployeeCreateMediaFile';
@@ -135,6 +136,14 @@ export declare class EmployeesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: string;
+    }>;
+    updateChromeThemePreference(updateChromeThemePreferenceRequest: UpdateChromeThemePreferenceRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Employee;
     }>;
     updateEmailNotificationPreference(updateEmailNotificationPreferenceRequest: UpdateEmailNotificationPreferenceRequest, options?: {
         headers: {
