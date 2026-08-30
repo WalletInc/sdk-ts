@@ -10,13 +10,13 @@ exports.PickPaginationRequestWithoutSortOptionsExcludeKeyofPaginationRequestWith
 PickPaginationRequestWithoutSortOptionsExcludeKeyofPaginationRequestWithoutSortOptionsIsArchiveIncluded.discriminator = undefined;
 PickPaginationRequestWithoutSortOptionsExcludeKeyofPaginationRequestWithoutSortOptionsIsArchiveIncluded.attributeTypeMap = [
     {
-        "name": "pageSize",
-        "baseName": "pageSize",
+        "name": "pageNum",
+        "baseName": "pageNum",
         "type": "number"
     },
     {
-        "name": "pageNum",
-        "baseName": "pageNum",
+        "name": "pageSize",
+        "baseName": "pageSize",
         "type": "number"
     }
 ];

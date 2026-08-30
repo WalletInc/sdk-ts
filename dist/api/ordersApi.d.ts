@@ -40,4 +40,12 @@ export declare class OrdersApi {
         response: http.IncomingMessage;
         body: Array<WTOrder>;
     }>;
+    redactOrderDonorNote(orderId: string, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTOrder;
+    }>;
 }

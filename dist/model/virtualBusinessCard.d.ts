@@ -11,6 +11,7 @@ export declare class VirtualBusinessCard extends null<String, any> {
     'youTube'?: any | null;
     'twitter'?: any | null;
     'linkedIn'?: any | null;
+    'tikTok'?: any | null;
     'whatsApp'?: any | null;
     'avatarURL'?: any | null;
     'id': AmenityId;

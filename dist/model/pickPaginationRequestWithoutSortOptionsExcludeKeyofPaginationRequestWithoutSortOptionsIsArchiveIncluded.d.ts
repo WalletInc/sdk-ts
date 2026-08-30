@@ -1,6 +1,6 @@
 export declare class PickPaginationRequestWithoutSortOptionsExcludeKeyofPaginationRequestWithoutSortOptionsIsArchiveIncluded {
-    'pageSize'?: number;
     'pageNum'?: number;
+    'pageSize'?: number;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -23,6 +23,11 @@ WTGuestCreatePaymentIntentRequest.attributeTypeMap = [
         "name": "creditID",
         "baseName": "creditID",
         "type": "any"
+    },
+    {
+        "name": "tipCents",
+        "baseName": "tipCents",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTGuestCreatePaymentIntentRequest.js.map

@@ -38,6 +38,11 @@ ProductUpdateIngestBody.attributeTypeMap = [
         "name": "publishedAt",
         "baseName": "publishedAt",
         "type": "any"
+    },
+    {
+        "name": "story",
+        "baseName": "story",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=productUpdateIngestBody.js.map

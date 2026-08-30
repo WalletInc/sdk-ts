@@ -43,6 +43,14 @@ export declare class CustomerApi {
         response: http.IncomingMessage;
         body: Array<StaticVoucher>;
     }>;
+    fetchCustomerByChatIdentity(chatUserID: string, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: any;
+    }>;
     fetchExpiredVouchers(memberID?: string, cellPhoneNumber?: string, options?: {
         headers: {
             [name: string]: string;

@@ -16,6 +16,7 @@ export declare class WTOrder extends null<String, any> {
     'receiptURL'?: any | null;
     'acquisitionSource'?: any | null;
     'shareId'?: any | null;
+    'donorNote'?: any | null;
     'lineItems': any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

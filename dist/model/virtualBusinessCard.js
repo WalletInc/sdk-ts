@@ -65,6 +65,11 @@ VirtualBusinessCard.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "tikTok",
+        "baseName": "tikTok",
+        "type": "any"
+    },
+    {
         "name": "whatsApp",
         "baseName": "whatsApp",
         "type": "any"

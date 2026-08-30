@@ -96,6 +96,7 @@ model/businessStockExchanges.ts
 model/businessType.ts
 model/businessTypeNonProfit.ts
 model/businessTypeSoleProprietorship.ts
+model/cSPViolationSummaryRow.ts
 model/chatCompletionAudio.ts
 model/chatCompletionMessage.ts
 model/chatCompletionMessageAudio.ts
@@ -109,7 +110,6 @@ model/createFile200Response.ts
 model/createRunOnThreadRequest.ts
 model/createStaticVoucherCampaign.ts
 model/createStaticVoucherCampaignWithVoucherWithCSV.ts
-model/dashboardWidget.ts
 model/dining.ts
 model/document.ts
 model/duplicateRowFound.ts
@@ -144,6 +144,7 @@ model/fetchIndustry200Response.ts
 model/fetchIndustry200ResponseAnyOf.ts
 model/fetchIndustry200ResponseAnyOf1.ts
 model/fetchMembersCount200Response.ts
+model/fetchMerchantURLRequestsPaged200Response.ts
 model/fetchOptInListSubscribersByPage200Response.ts
 model/fetchOutboundSMSByPage200Response.ts
 model/fetchPerformanceTicketsPage200Response.ts
@@ -205,6 +206,7 @@ model/optInList.ts
 model/optInListSource.ts
 model/optInListSubscriber.ts
 model/optInListSubscriberOptInSourceID.ts
+model/order.ts
 model/orderStatus.ts
 model/outboundSMS.ts
 model/outboundSMSPaymentObjectBroadcastID.ts
@@ -411,6 +413,8 @@ model/wTGiftClaimRequest.ts
 model/wTGuestAmountBreakdown.ts
 model/wTGuestCreatePaymentIntentRequest.ts
 model/wTGuestCreatePaymentIntentResponse.ts
+model/wTGuestDonationRequest.ts
+model/wTGuestDonationRequestType.ts
 model/wTGuestOrderReceipt.ts
 model/wTImageGridCreateParams.ts
 model/wTImageGridUpdateParams.ts
@@ -463,11 +467,25 @@ model/wTPerformanceUpdateParams.ts
 model/wTPosMachine.ts
 model/wTPosMachineCreateParams.ts
 model/wTPosMachineUpdateParams.ts
+model/wTPrizeGameActivePromotion.ts
+model/wTPrizeGamePlayLimitPeriod.ts
+model/wTPrizeGamePlayRequest.ts
+model/wTPrizeGamePlayResult.ts
+model/wTPrizeGamePlayResultOutcome.ts
+model/wTPrizeGamePlayResultPrize.ts
+model/wTPrizeGameTrigger.ts
+model/wTPrizeGameType.ts
+model/wTPrizePromotion.ts
+model/wTPrizePromotionCreateParams.ts
+model/wTPrizePromotionPrizeTier.ts
+model/wTPrizePromotionUpdateParams.ts
 model/wTProductCreateParams.ts
 model/wTProductUpdateParams.ts
 model/wTPromoCodeCreateParams.ts
 model/wTPromoCodeUpdateParams.ts
 model/wTPublicBranding.ts
+model/wTPublicVanityPage.ts
+model/wTPublicVanityPageMerchant.ts
 model/wTQRCodeDesign.ts
 model/wTQRCodeDesignCreateParams.ts
 model/wTQRCodeDesignUpdateParams.ts
@@ -527,6 +545,7 @@ model/wTVideoUploadProvisionProvider.ts
 model/wTVirtualBusinessCardCreateParams.ts
 model/wTVirtualBusinessCardUpdateParams.ts
 model/wTWalletConfigurationSaveWalletRecord.ts
+model/wTWalletConfigurationSaveWalletRecordDonationLabel.ts
 model/wTWalletConfigurationSaveWalletRecordPassBrandKit.ts
 model/wTWalletConfigurationSaveWalletRecordSmsOptInSourceID.ts
 model/wTWalletItemRedemption.ts

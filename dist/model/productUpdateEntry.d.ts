@@ -9,6 +9,7 @@ export declare class ProductUpdateEntry extends null<String, any> {
     'items': any | null;
     'publishedAt': string;
     'contentStatus'?: ContentStatus;
+    'story'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

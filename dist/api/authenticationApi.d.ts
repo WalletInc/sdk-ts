@@ -44,14 +44,6 @@ export declare class AuthenticationApi {
         response: http.IncomingMessage;
         body: LoginStatus200Response;
     }>;
-    logout(options?: {
-        headers: {
-            [name: string]: string;
-        };
-    }): Promise<{
-        response: http.IncomingMessage;
-        body: string;
-    }>;
     register(wTAuthenticationRegister: WTAuthenticationRegister, options?: {
         headers: {
             [name: string]: string;

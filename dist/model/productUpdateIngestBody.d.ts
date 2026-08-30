@@ -7,6 +7,7 @@ export declare class ProductUpdateIngestBody extends null<String, any> {
     'title': any | null;
     'items': any | null;
     'publishedAt'?: any | null;
+    'story'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

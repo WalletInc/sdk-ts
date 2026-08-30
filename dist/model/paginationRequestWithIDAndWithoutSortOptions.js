@@ -10,13 +10,13 @@ exports.PaginationRequestWithIDAndWithoutSortOptions = PaginationRequestWithIDAn
 PaginationRequestWithIDAndWithoutSortOptions.discriminator = undefined;
 PaginationRequestWithIDAndWithoutSortOptions.attributeTypeMap = [
     {
-        "name": "pageSize",
-        "baseName": "pageSize",
+        "name": "pageNum",
+        "baseName": "pageNum",
         "type": "any"
     },
     {
-        "name": "pageNum",
-        "baseName": "pageNum",
+        "name": "pageSize",
+        "baseName": "pageSize",
         "type": "any"
     },
     {

@@ -1,3 +1,4 @@
+import { WTWalletConfigurationSaveWalletRecordDonationLabel } from './wTWalletConfigurationSaveWalletRecordDonationLabel';
 import { WTWalletConfigurationSaveWalletRecordPassBrandKit } from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 import { WTWalletConfigurationSaveWalletRecordSmsOptInSourceID } from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
 export declare class WTWalletConfigurationSaveWalletRecord extends null<String, any> {
@@ -39,6 +40,8 @@ export declare class WTWalletConfigurationSaveWalletRecord extends null<String, 
     'isDining': any | null;
     'isLounges': any | null;
     'isMapDirections': any | null;
+    'isDonationEnabled': any | null;
+    'donationLabel'?: WTWalletConfigurationSaveWalletRecordDonationLabel;
     'isLinkBook': any | null;
     'isImageGrid': any | null;
     'isVideos': any | null;
@@ -67,6 +70,7 @@ export declare class WTWalletConfigurationSaveWalletRecord extends null<String, 
     'socialYouTubeURL'?: any | null;
     'socialTwitterURL'?: any | null;
     'socialLinkedInURL'?: any | null;
+    'socialTikTokURL'?: any | null;
     'socialBackgroundColor'?: any | null;
     'socialFontColor'?: any | null;
     'primaryPhoneNumber'?: any | null;

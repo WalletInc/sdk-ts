@@ -200,6 +200,16 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "isDonationEnabled",
+        "baseName": "isDonationEnabled",
+        "type": "any"
+    },
+    {
+        "name": "donationLabel",
+        "baseName": "donationLabel",
+        "type": "WTWalletConfigurationSaveWalletRecordDonationLabel"
+    },
+    {
         "name": "isLinkBook",
         "baseName": "isLinkBook",
         "type": "any"
@@ -337,6 +347,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
     {
         "name": "socialLinkedInURL",
         "baseName": "socialLinkedInURL",
+        "type": "any"
+    },
+    {
+        "name": "socialTikTokURL",
+        "baseName": "socialTikTokURL",
         "type": "any"
     },
     {

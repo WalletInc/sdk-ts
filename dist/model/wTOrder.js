@@ -85,6 +85,11 @@ WTOrder.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "donorNote",
+        "baseName": "donorNote",
+        "type": "any"
+    },
+    {
         "name": "lineItems",
         "baseName": "lineItems",
         "type": "any"

@@ -10,6 +10,7 @@ export declare class WTVirtualBusinessCardCreateParams extends null<String, any>
     'youTube'?: any | null;
     'twitter'?: any | null;
     'linkedIn'?: any | null;
+    'tikTok'?: any | null;
     'whatsApp'?: any | null;
     'avatarURL'?: any | null;
     static discriminator: string | undefined;

@@ -16,7 +16,12 @@ import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscribe
 import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
 import { WTGuestCreatePaymentIntentRequest } from '../model/wTGuestCreatePaymentIntentRequest';
 import { WTGuestCreatePaymentIntentResponse } from '../model/wTGuestCreatePaymentIntentResponse';
+import { WTGuestDonationRequest } from '../model/wTGuestDonationRequest';
 import { WTGuestOrderReceipt } from '../model/wTGuestOrderReceipt';
+import { WTPrizeGameActivePromotion } from '../model/wTPrizeGameActivePromotion';
+import { WTPrizeGamePlayRequest } from '../model/wTPrizeGamePlayRequest';
+import { WTPrizeGamePlayResult } from '../model/wTPrizeGamePlayResult';
+import { WTPrizeGameType } from '../model/wTPrizeGameType';
 import { WTSmsSubscriberCreateParamsWalletUI } from '../model/wTSmsSubscriberCreateParamsWalletUI';
 import { WalletConfiguration } from '../model/walletConfiguration';
 import { Authentication, Interceptor } from '../model/models';
@@ -66,6 +71,14 @@ export declare class InteractionsApi {
         response: http.IncomingMessage;
         body: string;
     }>;
+    createGuestDonation(wTGuestDonationRequest: WTGuestDonationRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTGuestCreatePaymentIntentResponse;
+    }>;
     createGuestPaymentIntent(wTGuestCreatePaymentIntentRequest: WTGuestCreatePaymentIntentRequest, options?: {
         headers: {
             [name: string]: string;
@@ -97,6 +110,14 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Array<DynamicVoucher>;
+    }>;
+    fetchActivePrizeGamePromotion(merchantID: string, gameType: WTPrizeGameType, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTPrizeGameActivePromotion;
     }>;
     fetchAdvertisementCreditScansFromList(merchantID: string, fetchAdvertisementCreditScansFromListRequest: FetchAdvertisementCreditScansFromListRequest, options?: {
         headers: {
@@ -185,6 +206,14 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
+    }>;
+    playPrizeGame(wTPrizeGamePlayRequest: WTPrizeGamePlayRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTPrizeGamePlayResult;
     }>;
     requestMerchantURLRedirect(itemID: string, browserDetails: BrowserDetails, options?: {
         headers: {

@@ -47,6 +47,7 @@ __exportStar(require("./businessStockExchanges"), exports);
 __exportStar(require("./businessType"), exports);
 __exportStar(require("./businessTypeNonProfit"), exports);
 __exportStar(require("./businessTypeSoleProprietorship"), exports);
+__exportStar(require("./cSPViolationSummaryRow"), exports);
 __exportStar(require("./chatCompletionAudio"), exports);
 __exportStar(require("./chatCompletionMessage"), exports);
 __exportStar(require("./chatCompletionMessageAudio"), exports);
@@ -60,7 +61,6 @@ __exportStar(require("./createFile200Response"), exports);
 __exportStar(require("./createRunOnThreadRequest"), exports);
 __exportStar(require("./createStaticVoucherCampaign"), exports);
 __exportStar(require("./createStaticVoucherCampaignWithVoucherWithCSV"), exports);
-__exportStar(require("./dashboardWidget"), exports);
 __exportStar(require("./dining"), exports);
 __exportStar(require("./document"), exports);
 __exportStar(require("./duplicateRowFound"), exports);
@@ -95,6 +95,7 @@ __exportStar(require("./fetchIndustry200Response"), exports);
 __exportStar(require("./fetchIndustry200ResponseAnyOf"), exports);
 __exportStar(require("./fetchIndustry200ResponseAnyOf1"), exports);
 __exportStar(require("./fetchMembersCount200Response"), exports);
+__exportStar(require("./fetchMerchantURLRequestsPaged200Response"), exports);
 __exportStar(require("./fetchOptInListSubscribersByPage200Response"), exports);
 __exportStar(require("./fetchOutboundSMSByPage200Response"), exports);
 __exportStar(require("./fetchPerformanceTicketsPage200Response"), exports);
@@ -155,6 +156,7 @@ __exportStar(require("./optInList"), exports);
 __exportStar(require("./optInListSource"), exports);
 __exportStar(require("./optInListSubscriber"), exports);
 __exportStar(require("./optInListSubscriberOptInSourceID"), exports);
+__exportStar(require("./order"), exports);
 __exportStar(require("./orderStatus"), exports);
 __exportStar(require("./outboundSMS"), exports);
 __exportStar(require("./outboundSMSPaymentObjectBroadcastID"), exports);
@@ -361,6 +363,8 @@ __exportStar(require("./wTGiftClaimRequest"), exports);
 __exportStar(require("./wTGuestAmountBreakdown"), exports);
 __exportStar(require("./wTGuestCreatePaymentIntentRequest"), exports);
 __exportStar(require("./wTGuestCreatePaymentIntentResponse"), exports);
+__exportStar(require("./wTGuestDonationRequest"), exports);
+__exportStar(require("./wTGuestDonationRequestType"), exports);
 __exportStar(require("./wTGuestOrderReceipt"), exports);
 __exportStar(require("./wTImageGridCreateParams"), exports);
 __exportStar(require("./wTImageGridUpdateParams"), exports);
@@ -413,11 +417,25 @@ __exportStar(require("./wTPerformanceUpdateParams"), exports);
 __exportStar(require("./wTPosMachine"), exports);
 __exportStar(require("./wTPosMachineCreateParams"), exports);
 __exportStar(require("./wTPosMachineUpdateParams"), exports);
+__exportStar(require("./wTPrizeGameActivePromotion"), exports);
+__exportStar(require("./wTPrizeGamePlayLimitPeriod"), exports);
+__exportStar(require("./wTPrizeGamePlayRequest"), exports);
+__exportStar(require("./wTPrizeGamePlayResult"), exports);
+__exportStar(require("./wTPrizeGamePlayResultOutcome"), exports);
+__exportStar(require("./wTPrizeGamePlayResultPrize"), exports);
+__exportStar(require("./wTPrizeGameTrigger"), exports);
+__exportStar(require("./wTPrizeGameType"), exports);
+__exportStar(require("./wTPrizePromotion"), exports);
+__exportStar(require("./wTPrizePromotionCreateParams"), exports);
+__exportStar(require("./wTPrizePromotionPrizeTier"), exports);
+__exportStar(require("./wTPrizePromotionUpdateParams"), exports);
 __exportStar(require("./wTProductCreateParams"), exports);
 __exportStar(require("./wTProductUpdateParams"), exports);
 __exportStar(require("./wTPromoCodeCreateParams"), exports);
 __exportStar(require("./wTPromoCodeUpdateParams"), exports);
 __exportStar(require("./wTPublicBranding"), exports);
+__exportStar(require("./wTPublicVanityPage"), exports);
+__exportStar(require("./wTPublicVanityPageMerchant"), exports);
 __exportStar(require("./wTQRCodeDesign"), exports);
 __exportStar(require("./wTQRCodeDesignCreateParams"), exports);
 __exportStar(require("./wTQRCodeDesignUpdateParams"), exports);
@@ -477,6 +495,7 @@ __exportStar(require("./wTVideoUploadProvisionProvider"), exports);
 __exportStar(require("./wTVirtualBusinessCardCreateParams"), exports);
 __exportStar(require("./wTVirtualBusinessCardUpdateParams"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecord"), exports);
+__exportStar(require("./wTWalletConfigurationSaveWalletRecordDonationLabel"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecordPassBrandKit"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecordSmsOptInSourceID"), exports);
 __exportStar(require("./wTWalletItemRedemption"), exports);
@@ -521,6 +540,7 @@ const businessStockExchanges_1 = require("./businessStockExchanges");
 const businessType_1 = require("./businessType");
 const businessTypeNonProfit_1 = require("./businessTypeNonProfit");
 const businessTypeSoleProprietorship_1 = require("./businessTypeSoleProprietorship");
+const cSPViolationSummaryRow_1 = require("./cSPViolationSummaryRow");
 const chatCompletionAudio_1 = require("./chatCompletionAudio");
 const chatCompletionMessage_1 = require("./chatCompletionMessage");
 const chatCompletionMessageAudio_1 = require("./chatCompletionMessageAudio");
@@ -534,7 +554,6 @@ const createFile200Response_1 = require("./createFile200Response");
 const createRunOnThreadRequest_1 = require("./createRunOnThreadRequest");
 const createStaticVoucherCampaign_1 = require("./createStaticVoucherCampaign");
 const createStaticVoucherCampaignWithVoucherWithCSV_1 = require("./createStaticVoucherCampaignWithVoucherWithCSV");
-const dashboardWidget_1 = require("./dashboardWidget");
 const dining_1 = require("./dining");
 const document_1 = require("./document");
 const duplicateRowFound_1 = require("./duplicateRowFound");
@@ -569,6 +588,7 @@ const fetchIndustry200Response_1 = require("./fetchIndustry200Response");
 const fetchIndustry200ResponseAnyOf_1 = require("./fetchIndustry200ResponseAnyOf");
 const fetchIndustry200ResponseAnyOf1_1 = require("./fetchIndustry200ResponseAnyOf1");
 const fetchMembersCount200Response_1 = require("./fetchMembersCount200Response");
+const fetchMerchantURLRequestsPaged200Response_1 = require("./fetchMerchantURLRequestsPaged200Response");
 const fetchOptInListSubscribersByPage200Response_1 = require("./fetchOptInListSubscribersByPage200Response");
 const fetchOutboundSMSByPage200Response_1 = require("./fetchOutboundSMSByPage200Response");
 const fetchPerformanceTicketsPage200Response_1 = require("./fetchPerformanceTicketsPage200Response");
@@ -629,6 +649,7 @@ const optInList_1 = require("./optInList");
 const optInListSource_1 = require("./optInListSource");
 const optInListSubscriber_1 = require("./optInListSubscriber");
 const optInListSubscriberOptInSourceID_1 = require("./optInListSubscriberOptInSourceID");
+const order_1 = require("./order");
 const orderStatus_1 = require("./orderStatus");
 const outboundSMS_1 = require("./outboundSMS");
 const outboundSMSPaymentObjectBroadcastID_1 = require("./outboundSMSPaymentObjectBroadcastID");
@@ -835,6 +856,8 @@ const wTGiftClaimRequest_1 = require("./wTGiftClaimRequest");
 const wTGuestAmountBreakdown_1 = require("./wTGuestAmountBreakdown");
 const wTGuestCreatePaymentIntentRequest_1 = require("./wTGuestCreatePaymentIntentRequest");
 const wTGuestCreatePaymentIntentResponse_1 = require("./wTGuestCreatePaymentIntentResponse");
+const wTGuestDonationRequest_1 = require("./wTGuestDonationRequest");
+const wTGuestDonationRequestType_1 = require("./wTGuestDonationRequestType");
 const wTGuestOrderReceipt_1 = require("./wTGuestOrderReceipt");
 const wTImageGridCreateParams_1 = require("./wTImageGridCreateParams");
 const wTImageGridUpdateParams_1 = require("./wTImageGridUpdateParams");
@@ -887,11 +910,25 @@ const wTPerformanceUpdateParams_1 = require("./wTPerformanceUpdateParams");
 const wTPosMachine_1 = require("./wTPosMachine");
 const wTPosMachineCreateParams_1 = require("./wTPosMachineCreateParams");
 const wTPosMachineUpdateParams_1 = require("./wTPosMachineUpdateParams");
+const wTPrizeGameActivePromotion_1 = require("./wTPrizeGameActivePromotion");
+const wTPrizeGamePlayLimitPeriod_1 = require("./wTPrizeGamePlayLimitPeriod");
+const wTPrizeGamePlayRequest_1 = require("./wTPrizeGamePlayRequest");
+const wTPrizeGamePlayResult_1 = require("./wTPrizeGamePlayResult");
+const wTPrizeGamePlayResultOutcome_1 = require("./wTPrizeGamePlayResultOutcome");
+const wTPrizeGamePlayResultPrize_1 = require("./wTPrizeGamePlayResultPrize");
+const wTPrizeGameTrigger_1 = require("./wTPrizeGameTrigger");
+const wTPrizeGameType_1 = require("./wTPrizeGameType");
+const wTPrizePromotion_1 = require("./wTPrizePromotion");
+const wTPrizePromotionCreateParams_1 = require("./wTPrizePromotionCreateParams");
+const wTPrizePromotionPrizeTier_1 = require("./wTPrizePromotionPrizeTier");
+const wTPrizePromotionUpdateParams_1 = require("./wTPrizePromotionUpdateParams");
 const wTProductCreateParams_1 = require("./wTProductCreateParams");
 const wTProductUpdateParams_1 = require("./wTProductUpdateParams");
 const wTPromoCodeCreateParams_1 = require("./wTPromoCodeCreateParams");
 const wTPromoCodeUpdateParams_1 = require("./wTPromoCodeUpdateParams");
 const wTPublicBranding_1 = require("./wTPublicBranding");
+const wTPublicVanityPage_1 = require("./wTPublicVanityPage");
+const wTPublicVanityPageMerchant_1 = require("./wTPublicVanityPageMerchant");
 const wTQRCodeDesign_1 = require("./wTQRCodeDesign");
 const wTQRCodeDesignCreateParams_1 = require("./wTQRCodeDesignCreateParams");
 const wTQRCodeDesignUpdateParams_1 = require("./wTQRCodeDesignUpdateParams");
@@ -951,6 +988,7 @@ const wTVideoUploadProvisionProvider_1 = require("./wTVideoUploadProvisionProvid
 const wTVirtualBusinessCardCreateParams_1 = require("./wTVirtualBusinessCardCreateParams");
 const wTVirtualBusinessCardUpdateParams_1 = require("./wTVirtualBusinessCardUpdateParams");
 const wTWalletConfigurationSaveWalletRecord_1 = require("./wTWalletConfigurationSaveWalletRecord");
+const wTWalletConfigurationSaveWalletRecordDonationLabel_1 = require("./wTWalletConfigurationSaveWalletRecordDonationLabel");
 const wTWalletConfigurationSaveWalletRecordPassBrandKit_1 = require("./wTWalletConfigurationSaveWalletRecordPassBrandKit");
 const wTWalletConfigurationSaveWalletRecordSmsOptInSourceID_1 = require("./wTWalletConfigurationSaveWalletRecordSmsOptInSourceID");
 const wTWalletItemRedemption_1 = require("./wTWalletItemRedemption");
@@ -1020,6 +1058,7 @@ let typeMap = {
     "AuthError": authError_1.AuthError,
     "AvailablePhoneNumbersRequest": availablePhoneNumbersRequest_1.AvailablePhoneNumbersRequest,
     "BrowserDetails": browserDetails_1.BrowserDetails,
+    "CSPViolationSummaryRow": cSPViolationSummaryRow_1.CSPViolationSummaryRow,
     "ChatCompletionAudio": chatCompletionAudio_1.ChatCompletionAudio,
     "ChatCompletionMessage": chatCompletionMessage_1.ChatCompletionMessage,
     "ChatCompletionMessageAudio": chatCompletionMessageAudio_1.ChatCompletionMessageAudio,
@@ -1033,7 +1072,6 @@ let typeMap = {
     "CreateRunOnThreadRequest": createRunOnThreadRequest_1.CreateRunOnThreadRequest,
     "CreateStaticVoucherCampaign": createStaticVoucherCampaign_1.CreateStaticVoucherCampaign,
     "CreateStaticVoucherCampaignWithVoucherWithCSV": createStaticVoucherCampaignWithVoucherWithCSV_1.CreateStaticVoucherCampaignWithVoucherWithCSV,
-    "DashboardWidget": dashboardWidget_1.DashboardWidget,
     "Dining": dining_1.Dining,
     "Document": document_1.Document,
     "DuplicateRowFound": duplicateRowFound_1.DuplicateRowFound,
@@ -1068,6 +1106,7 @@ let typeMap = {
     "FetchIndustry200ResponseAnyOf": fetchIndustry200ResponseAnyOf_1.FetchIndustry200ResponseAnyOf,
     "FetchIndustry200ResponseAnyOf1": fetchIndustry200ResponseAnyOf1_1.FetchIndustry200ResponseAnyOf1,
     "FetchMembersCount200Response": fetchMembersCount200Response_1.FetchMembersCount200Response,
+    "FetchMerchantURLRequestsPaged200Response": fetchMerchantURLRequestsPaged200Response_1.FetchMerchantURLRequestsPaged200Response,
     "FetchOptInListSubscribersByPage200Response": fetchOptInListSubscribersByPage200Response_1.FetchOptInListSubscribersByPage200Response,
     "FetchOutboundSMSByPage200Response": fetchOutboundSMSByPage200Response_1.FetchOutboundSMSByPage200Response,
     "FetchPerformanceTicketsPage200Response": fetchPerformanceTicketsPage200Response_1.FetchPerformanceTicketsPage200Response,
@@ -1127,6 +1166,7 @@ let typeMap = {
     "OptInListSource": optInListSource_1.OptInListSource,
     "OptInListSubscriber": optInListSubscriber_1.OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": optInListSubscriberOptInSourceID_1.OptInListSubscriberOptInSourceID,
+    "Order": order_1.Order,
     "OrderStatus": orderStatus_1.OrderStatus,
     "OutboundSMS": outboundSMS_1.OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": outboundSMSPaymentObjectBroadcastID_1.OutboundSMSPaymentObjectBroadcastID,
@@ -1328,6 +1368,8 @@ let typeMap = {
     "WTGuestAmountBreakdown": wTGuestAmountBreakdown_1.WTGuestAmountBreakdown,
     "WTGuestCreatePaymentIntentRequest": wTGuestCreatePaymentIntentRequest_1.WTGuestCreatePaymentIntentRequest,
     "WTGuestCreatePaymentIntentResponse": wTGuestCreatePaymentIntentResponse_1.WTGuestCreatePaymentIntentResponse,
+    "WTGuestDonationRequest": wTGuestDonationRequest_1.WTGuestDonationRequest,
+    "WTGuestDonationRequestType": wTGuestDonationRequestType_1.WTGuestDonationRequestType,
     "WTGuestOrderReceipt": wTGuestOrderReceipt_1.WTGuestOrderReceipt,
     "WTImageGridCreateParams": wTImageGridCreateParams_1.WTImageGridCreateParams,
     "WTImageGridUpdateParams": wTImageGridUpdateParams_1.WTImageGridUpdateParams,
@@ -1380,11 +1422,25 @@ let typeMap = {
     "WTPosMachine": wTPosMachine_1.WTPosMachine,
     "WTPosMachineCreateParams": wTPosMachineCreateParams_1.WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": wTPosMachineUpdateParams_1.WTPosMachineUpdateParams,
+    "WTPrizeGameActivePromotion": wTPrizeGameActivePromotion_1.WTPrizeGameActivePromotion,
+    "WTPrizeGamePlayLimitPeriod": wTPrizeGamePlayLimitPeriod_1.WTPrizeGamePlayLimitPeriod,
+    "WTPrizeGamePlayRequest": wTPrizeGamePlayRequest_1.WTPrizeGamePlayRequest,
+    "WTPrizeGamePlayResult": wTPrizeGamePlayResult_1.WTPrizeGamePlayResult,
+    "WTPrizeGamePlayResultOutcome": wTPrizeGamePlayResultOutcome_1.WTPrizeGamePlayResultOutcome,
+    "WTPrizeGamePlayResultPrize": wTPrizeGamePlayResultPrize_1.WTPrizeGamePlayResultPrize,
+    "WTPrizeGameTrigger": wTPrizeGameTrigger_1.WTPrizeGameTrigger,
+    "WTPrizeGameType": wTPrizeGameType_1.WTPrizeGameType,
+    "WTPrizePromotion": wTPrizePromotion_1.WTPrizePromotion,
+    "WTPrizePromotionCreateParams": wTPrizePromotionCreateParams_1.WTPrizePromotionCreateParams,
+    "WTPrizePromotionPrizeTier": wTPrizePromotionPrizeTier_1.WTPrizePromotionPrizeTier,
+    "WTPrizePromotionUpdateParams": wTPrizePromotionUpdateParams_1.WTPrizePromotionUpdateParams,
     "WTProductCreateParams": wTProductCreateParams_1.WTProductCreateParams,
     "WTProductUpdateParams": wTProductUpdateParams_1.WTProductUpdateParams,
     "WTPromoCodeCreateParams": wTPromoCodeCreateParams_1.WTPromoCodeCreateParams,
     "WTPromoCodeUpdateParams": wTPromoCodeUpdateParams_1.WTPromoCodeUpdateParams,
     "WTPublicBranding": wTPublicBranding_1.WTPublicBranding,
+    "WTPublicVanityPage": wTPublicVanityPage_1.WTPublicVanityPage,
+    "WTPublicVanityPageMerchant": wTPublicVanityPageMerchant_1.WTPublicVanityPageMerchant,
     "WTQRCodeDesign": wTQRCodeDesign_1.WTQRCodeDesign,
     "WTQRCodeDesignCreateParams": wTQRCodeDesignCreateParams_1.WTQRCodeDesignCreateParams,
     "WTQRCodeDesignUpdateParams": wTQRCodeDesignUpdateParams_1.WTQRCodeDesignUpdateParams,
@@ -1444,6 +1500,7 @@ let typeMap = {
     "WTVirtualBusinessCardCreateParams": wTVirtualBusinessCardCreateParams_1.WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": wTVirtualBusinessCardUpdateParams_1.WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": wTWalletConfigurationSaveWalletRecord_1.WTWalletConfigurationSaveWalletRecord,
+    "WTWalletConfigurationSaveWalletRecordDonationLabel": wTWalletConfigurationSaveWalletRecordDonationLabel_1.WTWalletConfigurationSaveWalletRecordDonationLabel,
     "WTWalletConfigurationSaveWalletRecordPassBrandKit": wTWalletConfigurationSaveWalletRecordPassBrandKit_1.WTWalletConfigurationSaveWalletRecordPassBrandKit,
     "WTWalletConfigurationSaveWalletRecordSmsOptInSourceID": wTWalletConfigurationSaveWalletRecordSmsOptInSourceID_1.WTWalletConfigurationSaveWalletRecordSmsOptInSourceID,
     "WTWalletItemRedemption": wTWalletItemRedemption_1.WTWalletItemRedemption,

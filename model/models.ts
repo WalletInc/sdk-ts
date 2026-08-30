@@ -32,6 +32,7 @@ export * from './businessStockExchanges';
 export * from './businessType';
 export * from './businessTypeNonProfit';
 export * from './businessTypeSoleProprietorship';
+export * from './cSPViolationSummaryRow';
 export * from './chatCompletionAudio';
 export * from './chatCompletionMessage';
 export * from './chatCompletionMessageAudio';
@@ -45,7 +46,6 @@ export * from './createFile200Response';
 export * from './createRunOnThreadRequest';
 export * from './createStaticVoucherCampaign';
 export * from './createStaticVoucherCampaignWithVoucherWithCSV';
-export * from './dashboardWidget';
 export * from './dining';
 export * from './document';
 export * from './duplicateRowFound';
@@ -80,6 +80,7 @@ export * from './fetchIndustry200Response';
 export * from './fetchIndustry200ResponseAnyOf';
 export * from './fetchIndustry200ResponseAnyOf1';
 export * from './fetchMembersCount200Response';
+export * from './fetchMerchantURLRequestsPaged200Response';
 export * from './fetchOptInListSubscribersByPage200Response';
 export * from './fetchOutboundSMSByPage200Response';
 export * from './fetchPerformanceTicketsPage200Response';
@@ -140,6 +141,7 @@ export * from './optInList';
 export * from './optInListSource';
 export * from './optInListSubscriber';
 export * from './optInListSubscriberOptInSourceID';
+export * from './order';
 export * from './orderStatus';
 export * from './outboundSMS';
 export * from './outboundSMSPaymentObjectBroadcastID';
@@ -346,6 +348,8 @@ export * from './wTGiftClaimRequest';
 export * from './wTGuestAmountBreakdown';
 export * from './wTGuestCreatePaymentIntentRequest';
 export * from './wTGuestCreatePaymentIntentResponse';
+export * from './wTGuestDonationRequest';
+export * from './wTGuestDonationRequestType';
 export * from './wTGuestOrderReceipt';
 export * from './wTImageGridCreateParams';
 export * from './wTImageGridUpdateParams';
@@ -398,11 +402,25 @@ export * from './wTPerformanceUpdateParams';
 export * from './wTPosMachine';
 export * from './wTPosMachineCreateParams';
 export * from './wTPosMachineUpdateParams';
+export * from './wTPrizeGameActivePromotion';
+export * from './wTPrizeGamePlayLimitPeriod';
+export * from './wTPrizeGamePlayRequest';
+export * from './wTPrizeGamePlayResult';
+export * from './wTPrizeGamePlayResultOutcome';
+export * from './wTPrizeGamePlayResultPrize';
+export * from './wTPrizeGameTrigger';
+export * from './wTPrizeGameType';
+export * from './wTPrizePromotion';
+export * from './wTPrizePromotionCreateParams';
+export * from './wTPrizePromotionPrizeTier';
+export * from './wTPrizePromotionUpdateParams';
 export * from './wTProductCreateParams';
 export * from './wTProductUpdateParams';
 export * from './wTPromoCodeCreateParams';
 export * from './wTPromoCodeUpdateParams';
 export * from './wTPublicBranding';
+export * from './wTPublicVanityPage';
+export * from './wTPublicVanityPageMerchant';
 export * from './wTQRCodeDesign';
 export * from './wTQRCodeDesignCreateParams';
 export * from './wTQRCodeDesignUpdateParams';
@@ -462,6 +480,7 @@ export * from './wTVideoUploadProvisionProvider';
 export * from './wTVirtualBusinessCardCreateParams';
 export * from './wTVirtualBusinessCardUpdateParams';
 export * from './wTWalletConfigurationSaveWalletRecord';
+export * from './wTWalletConfigurationSaveWalletRecordDonationLabel';
 export * from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 export * from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
 export * from './wTWalletItemRedemption';
@@ -520,6 +539,7 @@ import { BusinessStockExchanges } from './businessStockExchanges';
 import { BusinessType } from './businessType';
 import { BusinessTypeNonProfit } from './businessTypeNonProfit';
 import { BusinessTypeSoleProprietorship } from './businessTypeSoleProprietorship';
+import { CSPViolationSummaryRow } from './cSPViolationSummaryRow';
 import { ChatCompletionAudio } from './chatCompletionAudio';
 import { ChatCompletionMessage } from './chatCompletionMessage';
 import { ChatCompletionMessageAudio } from './chatCompletionMessageAudio';
@@ -533,7 +553,6 @@ import { CreateFile200Response } from './createFile200Response';
 import { CreateRunOnThreadRequest } from './createRunOnThreadRequest';
 import { CreateStaticVoucherCampaign } from './createStaticVoucherCampaign';
 import { CreateStaticVoucherCampaignWithVoucherWithCSV } from './createStaticVoucherCampaignWithVoucherWithCSV';
-import { DashboardWidget } from './dashboardWidget';
 import { Dining } from './dining';
 import { Document } from './document';
 import { DuplicateRowFound } from './duplicateRowFound';
@@ -568,6 +587,7 @@ import { FetchIndustry200Response } from './fetchIndustry200Response';
 import { FetchIndustry200ResponseAnyOf } from './fetchIndustry200ResponseAnyOf';
 import { FetchIndustry200ResponseAnyOf1 } from './fetchIndustry200ResponseAnyOf1';
 import { FetchMembersCount200Response } from './fetchMembersCount200Response';
+import { FetchMerchantURLRequestsPaged200Response } from './fetchMerchantURLRequestsPaged200Response';
 import { FetchOptInListSubscribersByPage200Response } from './fetchOptInListSubscribersByPage200Response';
 import { FetchOutboundSMSByPage200Response } from './fetchOutboundSMSByPage200Response';
 import { FetchPerformanceTicketsPage200Response } from './fetchPerformanceTicketsPage200Response';
@@ -628,6 +648,7 @@ import { OptInList } from './optInList';
 import { OptInListSource } from './optInListSource';
 import { OptInListSubscriber } from './optInListSubscriber';
 import { OptInListSubscriberOptInSourceID } from './optInListSubscriberOptInSourceID';
+import { Order } from './order';
 import { OrderStatus } from './orderStatus';
 import { OutboundSMS } from './outboundSMS';
 import { OutboundSMSPaymentObjectBroadcastID } from './outboundSMSPaymentObjectBroadcastID';
@@ -834,6 +855,8 @@ import { WTGiftClaimRequest } from './wTGiftClaimRequest';
 import { WTGuestAmountBreakdown } from './wTGuestAmountBreakdown';
 import { WTGuestCreatePaymentIntentRequest } from './wTGuestCreatePaymentIntentRequest';
 import { WTGuestCreatePaymentIntentResponse } from './wTGuestCreatePaymentIntentResponse';
+import { WTGuestDonationRequest } from './wTGuestDonationRequest';
+import { WTGuestDonationRequestType } from './wTGuestDonationRequestType';
 import { WTGuestOrderReceipt } from './wTGuestOrderReceipt';
 import { WTImageGridCreateParams } from './wTImageGridCreateParams';
 import { WTImageGridUpdateParams } from './wTImageGridUpdateParams';
@@ -886,11 +909,25 @@ import { WTPerformanceUpdateParams } from './wTPerformanceUpdateParams';
 import { WTPosMachine } from './wTPosMachine';
 import { WTPosMachineCreateParams } from './wTPosMachineCreateParams';
 import { WTPosMachineUpdateParams } from './wTPosMachineUpdateParams';
+import { WTPrizeGameActivePromotion } from './wTPrizeGameActivePromotion';
+import { WTPrizeGamePlayLimitPeriod } from './wTPrizeGamePlayLimitPeriod';
+import { WTPrizeGamePlayRequest } from './wTPrizeGamePlayRequest';
+import { WTPrizeGamePlayResult } from './wTPrizeGamePlayResult';
+import { WTPrizeGamePlayResultOutcome } from './wTPrizeGamePlayResultOutcome';
+import { WTPrizeGamePlayResultPrize } from './wTPrizeGamePlayResultPrize';
+import { WTPrizeGameTrigger } from './wTPrizeGameTrigger';
+import { WTPrizeGameType } from './wTPrizeGameType';
+import { WTPrizePromotion } from './wTPrizePromotion';
+import { WTPrizePromotionCreateParams } from './wTPrizePromotionCreateParams';
+import { WTPrizePromotionPrizeTier } from './wTPrizePromotionPrizeTier';
+import { WTPrizePromotionUpdateParams } from './wTPrizePromotionUpdateParams';
 import { WTProductCreateParams } from './wTProductCreateParams';
 import { WTProductUpdateParams } from './wTProductUpdateParams';
 import { WTPromoCodeCreateParams } from './wTPromoCodeCreateParams';
 import { WTPromoCodeUpdateParams } from './wTPromoCodeUpdateParams';
 import { WTPublicBranding } from './wTPublicBranding';
+import { WTPublicVanityPage } from './wTPublicVanityPage';
+import { WTPublicVanityPageMerchant } from './wTPublicVanityPageMerchant';
 import { WTQRCodeDesign } from './wTQRCodeDesign';
 import { WTQRCodeDesignCreateParams } from './wTQRCodeDesignCreateParams';
 import { WTQRCodeDesignUpdateParams } from './wTQRCodeDesignUpdateParams';
@@ -950,6 +987,7 @@ import { WTVideoUploadProvisionProvider } from './wTVideoUploadProvisionProvider
 import { WTVirtualBusinessCardCreateParams } from './wTVirtualBusinessCardCreateParams';
 import { WTVirtualBusinessCardUpdateParams } from './wTVirtualBusinessCardUpdateParams';
 import { WTWalletConfigurationSaveWalletRecord } from './wTWalletConfigurationSaveWalletRecord';
+import { WTWalletConfigurationSaveWalletRecordDonationLabel } from './wTWalletConfigurationSaveWalletRecordDonationLabel';
 import { WTWalletConfigurationSaveWalletRecordPassBrandKit } from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 import { WTWalletConfigurationSaveWalletRecordSmsOptInSourceID } from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
 import { WTWalletItemRedemption } from './wTWalletItemRedemption';
@@ -1023,6 +1061,7 @@ let typeMap: {[index: string]: any} = {
     "AuthError": AuthError,
     "AvailablePhoneNumbersRequest": AvailablePhoneNumbersRequest,
     "BrowserDetails": BrowserDetails,
+    "CSPViolationSummaryRow": CSPViolationSummaryRow,
     "ChatCompletionAudio": ChatCompletionAudio,
     "ChatCompletionMessage": ChatCompletionMessage,
     "ChatCompletionMessageAudio": ChatCompletionMessageAudio,
@@ -1036,7 +1075,6 @@ let typeMap: {[index: string]: any} = {
     "CreateRunOnThreadRequest": CreateRunOnThreadRequest,
     "CreateStaticVoucherCampaign": CreateStaticVoucherCampaign,
     "CreateStaticVoucherCampaignWithVoucherWithCSV": CreateStaticVoucherCampaignWithVoucherWithCSV,
-    "DashboardWidget": DashboardWidget,
     "Dining": Dining,
     "Document": Document,
     "DuplicateRowFound": DuplicateRowFound,
@@ -1071,6 +1109,7 @@ let typeMap: {[index: string]: any} = {
     "FetchIndustry200ResponseAnyOf": FetchIndustry200ResponseAnyOf,
     "FetchIndustry200ResponseAnyOf1": FetchIndustry200ResponseAnyOf1,
     "FetchMembersCount200Response": FetchMembersCount200Response,
+    "FetchMerchantURLRequestsPaged200Response": FetchMerchantURLRequestsPaged200Response,
     "FetchOptInListSubscribersByPage200Response": FetchOptInListSubscribersByPage200Response,
     "FetchOutboundSMSByPage200Response": FetchOutboundSMSByPage200Response,
     "FetchPerformanceTicketsPage200Response": FetchPerformanceTicketsPage200Response,
@@ -1130,6 +1169,7 @@ let typeMap: {[index: string]: any} = {
     "OptInListSource": OptInListSource,
     "OptInListSubscriber": OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": OptInListSubscriberOptInSourceID,
+    "Order": Order,
     "OrderStatus": OrderStatus,
     "OutboundSMS": OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": OutboundSMSPaymentObjectBroadcastID,
@@ -1331,6 +1371,8 @@ let typeMap: {[index: string]: any} = {
     "WTGuestAmountBreakdown": WTGuestAmountBreakdown,
     "WTGuestCreatePaymentIntentRequest": WTGuestCreatePaymentIntentRequest,
     "WTGuestCreatePaymentIntentResponse": WTGuestCreatePaymentIntentResponse,
+    "WTGuestDonationRequest": WTGuestDonationRequest,
+    "WTGuestDonationRequestType": WTGuestDonationRequestType,
     "WTGuestOrderReceipt": WTGuestOrderReceipt,
     "WTImageGridCreateParams": WTImageGridCreateParams,
     "WTImageGridUpdateParams": WTImageGridUpdateParams,
@@ -1383,11 +1425,25 @@ let typeMap: {[index: string]: any} = {
     "WTPosMachine": WTPosMachine,
     "WTPosMachineCreateParams": WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": WTPosMachineUpdateParams,
+    "WTPrizeGameActivePromotion": WTPrizeGameActivePromotion,
+    "WTPrizeGamePlayLimitPeriod": WTPrizeGamePlayLimitPeriod,
+    "WTPrizeGamePlayRequest": WTPrizeGamePlayRequest,
+    "WTPrizeGamePlayResult": WTPrizeGamePlayResult,
+    "WTPrizeGamePlayResultOutcome": WTPrizeGamePlayResultOutcome,
+    "WTPrizeGamePlayResultPrize": WTPrizeGamePlayResultPrize,
+    "WTPrizeGameTrigger": WTPrizeGameTrigger,
+    "WTPrizeGameType": WTPrizeGameType,
+    "WTPrizePromotion": WTPrizePromotion,
+    "WTPrizePromotionCreateParams": WTPrizePromotionCreateParams,
+    "WTPrizePromotionPrizeTier": WTPrizePromotionPrizeTier,
+    "WTPrizePromotionUpdateParams": WTPrizePromotionUpdateParams,
     "WTProductCreateParams": WTProductCreateParams,
     "WTProductUpdateParams": WTProductUpdateParams,
     "WTPromoCodeCreateParams": WTPromoCodeCreateParams,
     "WTPromoCodeUpdateParams": WTPromoCodeUpdateParams,
     "WTPublicBranding": WTPublicBranding,
+    "WTPublicVanityPage": WTPublicVanityPage,
+    "WTPublicVanityPageMerchant": WTPublicVanityPageMerchant,
     "WTQRCodeDesign": WTQRCodeDesign,
     "WTQRCodeDesignCreateParams": WTQRCodeDesignCreateParams,
     "WTQRCodeDesignUpdateParams": WTQRCodeDesignUpdateParams,
@@ -1447,6 +1503,7 @@ let typeMap: {[index: string]: any} = {
     "WTVirtualBusinessCardCreateParams": WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": WTWalletConfigurationSaveWalletRecord,
+    "WTWalletConfigurationSaveWalletRecordDonationLabel": WTWalletConfigurationSaveWalletRecordDonationLabel,
     "WTWalletConfigurationSaveWalletRecordPassBrandKit": WTWalletConfigurationSaveWalletRecordPassBrandKit,
     "WTWalletConfigurationSaveWalletRecordSmsOptInSourceID": WTWalletConfigurationSaveWalletRecordSmsOptInSourceID,
     "WTWalletItemRedemption": WTWalletItemRedemption,

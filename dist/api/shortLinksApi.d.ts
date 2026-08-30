@@ -1,5 +1,6 @@
 /// <reference types="node" />
 import http from 'http';
+import { FetchMerchantURLRequestsPaged200Response } from '../model/fetchMerchantURLRequestsPaged200Response';
 import { MerchantURL } from '../model/merchantURL';
 import { WTMerchantURLCreate } from '../model/wTMerchantURLCreate';
 import { WTMerchantURLUpdate } from '../model/wTMerchantURLUpdate';
@@ -66,6 +67,14 @@ export declare class ShortLinksApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Array<WalletPageView>;
+    }>;
+    fetchMerchantURLRequestsPaged(id: string, page?: number, limit?: number, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: FetchMerchantURLRequestsPaged200Response;
     }>;
     restoreMerchantURL(id: string, options?: {
         headers: {

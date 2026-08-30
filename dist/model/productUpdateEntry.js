@@ -43,6 +43,11 @@ ProductUpdateEntry.attributeTypeMap = [
         "name": "contentStatus",
         "baseName": "contentStatus",
         "type": "ContentStatus"
+    },
+    {
+        "name": "story",
+        "baseName": "story",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=productUpdateEntry.js.map

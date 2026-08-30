@@ -3,8 +3,8 @@ import { MemberSearchSortKey } from './memberSearchSortKey';
 import { PaginationRequestWithSortOptionsSortOrder } from './paginationRequestWithSortOptionsSortOrder';
 export declare class MemberSearch extends null<String, any> {
     'isArchiveIncluded'?: any | null;
-    'pageSize'?: any | null;
     'pageNum'?: any | null;
+    'pageSize'?: any | null;
     'sortOrder'?: PaginationRequestWithSortOptionsSortOrder;
     'sortKey'?: MemberSearchSortKey;
     'searchKey': MemberSearchSearchKey;
