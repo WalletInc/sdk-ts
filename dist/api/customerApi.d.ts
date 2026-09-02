@@ -43,7 +43,7 @@ export declare class CustomerApi {
         response: http.IncomingMessage;
         body: Array<StaticVoucher>;
     }>;
-    fetchCustomerByChatIdentity(chatUserID: string, options?: {
+    fetchCustomerByChatIdentity(chatUserID: string, identityOnly?: boolean, options?: {
         headers: {
             [name: string]: string;
         };

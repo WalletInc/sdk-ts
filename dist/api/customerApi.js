@@ -193,7 +193,7 @@ class CustomerApi {
             });
         });
     }
-    fetchCustomerByChatIdentity(chatUserID, options = { headers: {} }) {
+    fetchCustomerByChatIdentity(chatUserID, identityOnly, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/customer/chatIdentity/{chatUserID}'
                 .replace('{' + 'chatUserID' + '}', encodeURIComponent(String(chatUserID)));
@@ -209,6 +209,9 @@ class CustomerApi {
             let localVarFormParams = {};
             if (chatUserID === null || chatUserID === undefined) {
                 throw new Error('Required parameter chatUserID was null or undefined when calling fetchCustomerByChatIdentity.');
+            }
+            if (identityOnly !== undefined) {
+                localVarQueryParameters['identityOnly'] = models_1.ObjectSerializer.serialize(identityOnly, "boolean");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;
