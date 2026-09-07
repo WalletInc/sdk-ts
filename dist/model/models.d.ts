@@ -260,6 +260,7 @@ export * from './trustBundleStatuses';
 export * from './updateChromeThemePreferenceRequest';
 export * from './updateChromeThemePreferenceRequestChromeTheme';
 export * from './updateEmailNotificationPreferenceRequest';
+export * from './updatePageTipsPreferenceRequest';
 export * from './updateStaticVoucherCampaignWithVoucher';
 export * from './vSCampaignGeneratedMessage';
 export * from './vSCampaignGeneratedMessagePagination';

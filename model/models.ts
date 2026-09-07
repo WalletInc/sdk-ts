@@ -259,6 +259,7 @@ export * from './trustBundleStatuses';
 export * from './updateChromeThemePreferenceRequest';
 export * from './updateChromeThemePreferenceRequestChromeTheme';
 export * from './updateEmailNotificationPreferenceRequest';
+export * from './updatePageTipsPreferenceRequest';
 export * from './updateStaticVoucherCampaignWithVoucher';
 export * from './vSCampaignGeneratedMessage';
 export * from './vSCampaignGeneratedMessagePagination';
@@ -766,6 +767,7 @@ import { TrustBundleStatuses } from './trustBundleStatuses';
 import { UpdateChromeThemePreferenceRequest } from './updateChromeThemePreferenceRequest';
 import { UpdateChromeThemePreferenceRequestChromeTheme } from './updateChromeThemePreferenceRequestChromeTheme';
 import { UpdateEmailNotificationPreferenceRequest } from './updateEmailNotificationPreferenceRequest';
+import { UpdatePageTipsPreferenceRequest } from './updatePageTipsPreferenceRequest';
 import { UpdateStaticVoucherCampaignWithVoucher } from './updateStaticVoucherCampaignWithVoucher';
 import { VSCampaignGeneratedMessage } from './vSCampaignGeneratedMessage';
 import { VSCampaignGeneratedMessagePagination } from './vSCampaignGeneratedMessagePagination';
@@ -1282,6 +1284,7 @@ let typeMap: {[index: string]: any} = {
     "UpdateChromeThemePreferenceRequest": UpdateChromeThemePreferenceRequest,
     "UpdateChromeThemePreferenceRequestChromeTheme": UpdateChromeThemePreferenceRequestChromeTheme,
     "UpdateEmailNotificationPreferenceRequest": UpdateEmailNotificationPreferenceRequest,
+    "UpdatePageTipsPreferenceRequest": UpdatePageTipsPreferenceRequest,
     "UpdateStaticVoucherCampaignWithVoucher": UpdateStaticVoucherCampaignWithVoucher,
     "VSCampaignGeneratedMessage": VSCampaignGeneratedMessage,
     "VSCampaignGeneratedMessagePagination": VSCampaignGeneratedMessagePagination,

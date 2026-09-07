@@ -274,6 +274,7 @@ __exportStar(require("./trustBundleStatuses"), exports);
 __exportStar(require("./updateChromeThemePreferenceRequest"), exports);
 __exportStar(require("./updateChromeThemePreferenceRequestChromeTheme"), exports);
 __exportStar(require("./updateEmailNotificationPreferenceRequest"), exports);
+__exportStar(require("./updatePageTipsPreferenceRequest"), exports);
 __exportStar(require("./updateStaticVoucherCampaignWithVoucher"), exports);
 __exportStar(require("./vSCampaignGeneratedMessage"), exports);
 __exportStar(require("./vSCampaignGeneratedMessagePagination"), exports);
@@ -767,6 +768,7 @@ const trustBundleStatuses_1 = require("./trustBundleStatuses");
 const updateChromeThemePreferenceRequest_1 = require("./updateChromeThemePreferenceRequest");
 const updateChromeThemePreferenceRequestChromeTheme_1 = require("./updateChromeThemePreferenceRequestChromeTheme");
 const updateEmailNotificationPreferenceRequest_1 = require("./updateEmailNotificationPreferenceRequest");
+const updatePageTipsPreferenceRequest_1 = require("./updatePageTipsPreferenceRequest");
 const updateStaticVoucherCampaignWithVoucher_1 = require("./updateStaticVoucherCampaignWithVoucher");
 const vSCampaignGeneratedMessage_1 = require("./vSCampaignGeneratedMessage");
 const vSCampaignGeneratedMessagePagination_1 = require("./vSCampaignGeneratedMessagePagination");
@@ -1279,6 +1281,7 @@ let typeMap = {
     "UpdateChromeThemePreferenceRequest": updateChromeThemePreferenceRequest_1.UpdateChromeThemePreferenceRequest,
     "UpdateChromeThemePreferenceRequestChromeTheme": updateChromeThemePreferenceRequestChromeTheme_1.UpdateChromeThemePreferenceRequestChromeTheme,
     "UpdateEmailNotificationPreferenceRequest": updateEmailNotificationPreferenceRequest_1.UpdateEmailNotificationPreferenceRequest,
+    "UpdatePageTipsPreferenceRequest": updatePageTipsPreferenceRequest_1.UpdatePageTipsPreferenceRequest,
     "UpdateStaticVoucherCampaignWithVoucher": updateStaticVoucherCampaignWithVoucher_1.UpdateStaticVoucherCampaignWithVoucher,
     "VSCampaignGeneratedMessage": vSCampaignGeneratedMessage_1.VSCampaignGeneratedMessage,
     "VSCampaignGeneratedMessagePagination": vSCampaignGeneratedMessagePagination_1.VSCampaignGeneratedMessagePagination,

@@ -163,6 +163,11 @@ WTEmployee.attributeTypeMap = [
         "name": "chromeTheme",
         "baseName": "chromeTheme",
         "type": "EmployeeChromeTheme"
+    },
+    {
+        "name": "isPageTipsDisabled",
+        "baseName": "isPageTipsDisabled",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTEmployee.js.map

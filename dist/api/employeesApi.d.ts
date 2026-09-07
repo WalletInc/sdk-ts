@@ -5,6 +5,7 @@ import { EmployeeActivityLog } from '../model/employeeActivityLog';
 import { Message } from '../model/message';
 import { UpdateChromeThemePreferenceRequest } from '../model/updateChromeThemePreferenceRequest';
 import { UpdateEmailNotificationPreferenceRequest } from '../model/updateEmailNotificationPreferenceRequest';
+import { UpdatePageTipsPreferenceRequest } from '../model/updatePageTipsPreferenceRequest';
 import { WTEmployeeCreate } from '../model/wTEmployeeCreate';
 import { WTEmployeeCreateMediaFile } from '../model/wTEmployeeCreateMediaFile';
 import { WTEmployeePeerRoles } from '../model/wTEmployeePeerRoles';
@@ -154,6 +155,14 @@ export declare class EmployeesApi {
         body: Employee;
     }>;
     updateEmployeePeer(userID: string, wTEmployeeUpdate: WTEmployeeUpdate, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: Employee;
+    }>;
+    updatePageTipsPreference(updatePageTipsPreferenceRequest: UpdatePageTipsPreferenceRequest, options?: {
         headers: {
             [name: string]: string;
         };

@@ -35,6 +35,7 @@ export declare class Employee extends null<String, any> {
     'schedule'?: object;
     'isEmailNotificationDisabled'?: any | null;
     'chromeTheme'?: EmployeeChromeTheme;
+    'isPageTipsDisabled'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -324,6 +324,7 @@ model/trustBundleStatuses.ts
 model/updateChromeThemePreferenceRequest.ts
 model/updateChromeThemePreferenceRequestChromeTheme.ts
 model/updateEmailNotificationPreferenceRequest.ts
+model/updatePageTipsPreferenceRequest.ts
 model/updateStaticVoucherCampaignWithVoucher.ts
 model/vSCampaignGeneratedMessage.ts
 model/vSCampaignGeneratedMessagePagination.ts
