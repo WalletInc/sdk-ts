@@ -90,6 +90,56 @@ WTAuthenticationRegister.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "utmSource",
+        "baseName": "utm_source",
+        "type": "any"
+    },
+    {
+        "name": "utmMedium",
+        "baseName": "utm_medium",
+        "type": "any"
+    },
+    {
+        "name": "utmTerm",
+        "baseName": "utm_term",
+        "type": "any"
+    },
+    {
+        "name": "utmContent",
+        "baseName": "utm_content",
+        "type": "any"
+    },
+    {
+        "name": "utmCampaign",
+        "baseName": "utm_campaign",
+        "type": "any"
+    },
+    {
+        "name": "utmSourcePlatform",
+        "baseName": "utm_source_platform",
+        "type": "any"
+    },
+    {
+        "name": "utmCreativeFormat",
+        "baseName": "utm_creative_format",
+        "type": "any"
+    },
+    {
+        "name": "utmMarketingTactic",
+        "baseName": "utm_marketing_tactic",
+        "type": "any"
+    },
+    {
+        "name": "httpReferrer",
+        "baseName": "http_referrer",
+        "type": "any"
+    },
+    {
+        "name": "landingPage",
+        "baseName": "landing_page",
+        "type": "any"
+    },
+    {
         "name": "gaClientId",
         "baseName": "ga_client_id",
         "type": "any"

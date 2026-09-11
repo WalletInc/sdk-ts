@@ -15,6 +15,16 @@ export declare class WTAuthenticationRegister extends null<String, any> {
     'country'?: any | null;
     'phoneNumber'?: any | null;
     'ein'?: any | null;
+    'utmSource'?: any | null;
+    'utmMedium'?: any | null;
+    'utmTerm'?: any | null;
+    'utmContent'?: any | null;
+    'utmCampaign'?: any | null;
+    'utmSourcePlatform'?: any | null;
+    'utmCreativeFormat'?: any | null;
+    'utmMarketingTactic'?: any | null;
+    'httpReferrer'?: any | null;
+    'landingPage'?: any | null;
     'gaClientId'?: any | null;
     'gaMeasurementId'?: any | null;
     'recaptchaToken'?: any | null;
