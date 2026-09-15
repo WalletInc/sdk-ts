@@ -90,6 +90,16 @@ WTAuthenticationRegister.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "acceptedTermsVersion",
+        "baseName": "acceptedTermsVersion",
+        "type": "any"
+    },
+    {
+        "name": "acceptedPrivacyVersion",
+        "baseName": "acceptedPrivacyVersion",
+        "type": "any"
+    },
+    {
         "name": "utmSource",
         "baseName": "utm_source",
         "type": "any"

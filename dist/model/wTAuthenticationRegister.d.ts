@@ -15,6 +15,8 @@ export declare class WTAuthenticationRegister extends null<String, any> {
     'country'?: any | null;
     'phoneNumber'?: any | null;
     'ein'?: any | null;
+    'acceptedTermsVersion'?: any | null;
+    'acceptedPrivacyVersion'?: any | null;
     'utmSource'?: any | null;
     'utmMedium'?: any | null;
     'utmTerm'?: any | null;
