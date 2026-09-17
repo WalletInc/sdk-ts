@@ -29,6 +29,7 @@ export declare class WTAuthenticationRegister extends null<String, any> {
     'landingPage'?: any | null;
     'gaClientId'?: any | null;
     'gaMeasurementId'?: any | null;
+    'adsConsentDeclined'?: any | null;
     'recaptchaToken'?: any | null;
     'affiliateID'?: any | null;
     'firstPromoterTrackingID'?: any | null;

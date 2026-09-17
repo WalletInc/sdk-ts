@@ -160,6 +160,11 @@ WTAuthenticationRegister.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "adsConsentDeclined",
+        "baseName": "ads_consent_declined",
+        "type": "any"
+    },
+    {
         "name": "recaptchaToken",
         "baseName": "recaptcha_token",
         "type": "any"
