@@ -1,4 +1,6 @@
+import { WTWalletConfigurationSaveWalletRecordApplePassStyle } from './wTWalletConfigurationSaveWalletRecordApplePassStyle';
 import { WTWalletConfigurationSaveWalletRecordDonationLabel } from './wTWalletConfigurationSaveWalletRecordDonationLabel';
+import { WTWalletConfigurationSaveWalletRecordGooglePassStyle } from './wTWalletConfigurationSaveWalletRecordGooglePassStyle';
 import { WTWalletConfigurationSaveWalletRecordPassBrandKit } from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 import { WTWalletConfigurationSaveWalletRecordSmsOptInSourceID } from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
 export declare class WTWalletConfigurationSaveWalletRecord extends null<String, any> {
@@ -82,6 +84,8 @@ export declare class WTWalletConfigurationSaveWalletRecord extends null<String, 
     'appleAppStoreURL'?: any | null;
     'googlePlayStoreURL'?: any | null;
     'passBrandKit'?: WTWalletConfigurationSaveWalletRecordPassBrandKit;
+    'googlePassStyle'?: WTWalletConfigurationSaveWalletRecordGooglePassStyle;
+    'applePassStyle'?: WTWalletConfigurationSaveWalletRecordApplePassStyle;
     'loginLogoURL'?: any | null;
     'loginPanelImageURL'?: any | null;
     'loginHeadline'?: any | null;

@@ -341,6 +341,7 @@ model/wTAdvertisementCreditUpdateParams.ts
 model/wTAmenityCreateParams.ts
 model/wTAmenityUpdateParams.ts
 model/wTAndroidKeystoreResponse.ts
+model/wTApplePassStyle.ts
 model/wTAuthenticationCheckSessionTokenStatusResponse.ts
 model/wTAuthenticationForgotPassword.ts
 model/wTAuthenticationLoginRequest.ts
@@ -411,6 +412,7 @@ model/wTGamingCreateParams.ts
 model/wTGamingUpdateParams.ts
 model/wTGiftCardPurchaseRequest.ts
 model/wTGiftClaimRequest.ts
+model/wTGooglePassStyle.ts
 model/wTGuestAmountBreakdown.ts
 model/wTGuestCreatePaymentIntentRequest.ts
 model/wTGuestCreatePaymentIntentResponse.ts
@@ -460,6 +462,11 @@ model/wTOptInListCreationParams.ts
 model/wTOrder.ts
 model/wTOrderLineItem.ts
 model/wTPassBrandKit.ts
+model/wTPassStyleResponse.ts
+model/wTPassStyleResponseApple.ts
+model/wTPassStyleResponseGoogle.ts
+model/wTPassStyleResponseProviders.ts
+model/wTPassStyleResponseProvidersApple.ts
 model/wTPaymentDesign.ts
 model/wTPaymentDesignCreateParams.ts
 model/wTPaymentDesignUpdateParams.ts
@@ -546,7 +553,9 @@ model/wTVideoUploadProvisionProvider.ts
 model/wTVirtualBusinessCardCreateParams.ts
 model/wTVirtualBusinessCardUpdateParams.ts
 model/wTWalletConfigurationSaveWalletRecord.ts
+model/wTWalletConfigurationSaveWalletRecordApplePassStyle.ts
 model/wTWalletConfigurationSaveWalletRecordDonationLabel.ts
+model/wTWalletConfigurationSaveWalletRecordGooglePassStyle.ts
 model/wTWalletConfigurationSaveWalletRecordPassBrandKit.ts
 model/wTWalletConfigurationSaveWalletRecordSmsOptInSourceID.ts
 model/wTWalletItemRedemption.ts
@@ -554,6 +563,7 @@ model/wTWalletObjectPrefixCounts.ts
 model/wTWalletPageView.ts
 model/wTWalletPageViewCount.ts
 model/wTWalletPageViewGeoPoint.ts
+model/wTWalletPassProvider.ts
 model/wTWhatsAppInboundWebhook.ts
 model/wTWhatsAppStatusCallback.ts
 model/walletConfiguration.ts

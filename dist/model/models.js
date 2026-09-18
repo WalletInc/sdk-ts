@@ -291,6 +291,7 @@ __exportStar(require("./wTAdvertisementCreditUpdateParams"), exports);
 __exportStar(require("./wTAmenityCreateParams"), exports);
 __exportStar(require("./wTAmenityUpdateParams"), exports);
 __exportStar(require("./wTAndroidKeystoreResponse"), exports);
+__exportStar(require("./wTApplePassStyle"), exports);
 __exportStar(require("./wTAuthenticationCheckSessionTokenStatusResponse"), exports);
 __exportStar(require("./wTAuthenticationForgotPassword"), exports);
 __exportStar(require("./wTAuthenticationLoginRequest"), exports);
@@ -361,6 +362,7 @@ __exportStar(require("./wTGamingCreateParams"), exports);
 __exportStar(require("./wTGamingUpdateParams"), exports);
 __exportStar(require("./wTGiftCardPurchaseRequest"), exports);
 __exportStar(require("./wTGiftClaimRequest"), exports);
+__exportStar(require("./wTGooglePassStyle"), exports);
 __exportStar(require("./wTGuestAmountBreakdown"), exports);
 __exportStar(require("./wTGuestCreatePaymentIntentRequest"), exports);
 __exportStar(require("./wTGuestCreatePaymentIntentResponse"), exports);
@@ -410,6 +412,11 @@ __exportStar(require("./wTOptInListCreationParams"), exports);
 __exportStar(require("./wTOrder"), exports);
 __exportStar(require("./wTOrderLineItem"), exports);
 __exportStar(require("./wTPassBrandKit"), exports);
+__exportStar(require("./wTPassStyleResponse"), exports);
+__exportStar(require("./wTPassStyleResponseApple"), exports);
+__exportStar(require("./wTPassStyleResponseGoogle"), exports);
+__exportStar(require("./wTPassStyleResponseProviders"), exports);
+__exportStar(require("./wTPassStyleResponseProvidersApple"), exports);
 __exportStar(require("./wTPaymentDesign"), exports);
 __exportStar(require("./wTPaymentDesignCreateParams"), exports);
 __exportStar(require("./wTPaymentDesignUpdateParams"), exports);
@@ -496,7 +503,9 @@ __exportStar(require("./wTVideoUploadProvisionProvider"), exports);
 __exportStar(require("./wTVirtualBusinessCardCreateParams"), exports);
 __exportStar(require("./wTVirtualBusinessCardUpdateParams"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecord"), exports);
+__exportStar(require("./wTWalletConfigurationSaveWalletRecordApplePassStyle"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecordDonationLabel"), exports);
+__exportStar(require("./wTWalletConfigurationSaveWalletRecordGooglePassStyle"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecordPassBrandKit"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecordSmsOptInSourceID"), exports);
 __exportStar(require("./wTWalletItemRedemption"), exports);
@@ -504,6 +513,7 @@ __exportStar(require("./wTWalletObjectPrefixCounts"), exports);
 __exportStar(require("./wTWalletPageView"), exports);
 __exportStar(require("./wTWalletPageViewCount"), exports);
 __exportStar(require("./wTWalletPageViewGeoPoint"), exports);
+__exportStar(require("./wTWalletPassProvider"), exports);
 __exportStar(require("./wTWhatsAppInboundWebhook"), exports);
 __exportStar(require("./wTWhatsAppStatusCallback"), exports);
 __exportStar(require("./walletConfiguration"), exports);
@@ -785,6 +795,7 @@ const wTAdvertisementCreditUpdateParams_1 = require("./wTAdvertisementCreditUpda
 const wTAmenityCreateParams_1 = require("./wTAmenityCreateParams");
 const wTAmenityUpdateParams_1 = require("./wTAmenityUpdateParams");
 const wTAndroidKeystoreResponse_1 = require("./wTAndroidKeystoreResponse");
+const wTApplePassStyle_1 = require("./wTApplePassStyle");
 const wTAuthenticationCheckSessionTokenStatusResponse_1 = require("./wTAuthenticationCheckSessionTokenStatusResponse");
 const wTAuthenticationForgotPassword_1 = require("./wTAuthenticationForgotPassword");
 const wTAuthenticationLoginRequest_1 = require("./wTAuthenticationLoginRequest");
@@ -855,6 +866,7 @@ const wTGamingCreateParams_1 = require("./wTGamingCreateParams");
 const wTGamingUpdateParams_1 = require("./wTGamingUpdateParams");
 const wTGiftCardPurchaseRequest_1 = require("./wTGiftCardPurchaseRequest");
 const wTGiftClaimRequest_1 = require("./wTGiftClaimRequest");
+const wTGooglePassStyle_1 = require("./wTGooglePassStyle");
 const wTGuestAmountBreakdown_1 = require("./wTGuestAmountBreakdown");
 const wTGuestCreatePaymentIntentRequest_1 = require("./wTGuestCreatePaymentIntentRequest");
 const wTGuestCreatePaymentIntentResponse_1 = require("./wTGuestCreatePaymentIntentResponse");
@@ -904,6 +916,11 @@ const wTOptInListCreationParams_1 = require("./wTOptInListCreationParams");
 const wTOrder_1 = require("./wTOrder");
 const wTOrderLineItem_1 = require("./wTOrderLineItem");
 const wTPassBrandKit_1 = require("./wTPassBrandKit");
+const wTPassStyleResponse_1 = require("./wTPassStyleResponse");
+const wTPassStyleResponseApple_1 = require("./wTPassStyleResponseApple");
+const wTPassStyleResponseGoogle_1 = require("./wTPassStyleResponseGoogle");
+const wTPassStyleResponseProviders_1 = require("./wTPassStyleResponseProviders");
+const wTPassStyleResponseProvidersApple_1 = require("./wTPassStyleResponseProvidersApple");
 const wTPaymentDesign_1 = require("./wTPaymentDesign");
 const wTPaymentDesignCreateParams_1 = require("./wTPaymentDesignCreateParams");
 const wTPaymentDesignUpdateParams_1 = require("./wTPaymentDesignUpdateParams");
@@ -990,7 +1007,9 @@ const wTVideoUploadProvisionProvider_1 = require("./wTVideoUploadProvisionProvid
 const wTVirtualBusinessCardCreateParams_1 = require("./wTVirtualBusinessCardCreateParams");
 const wTVirtualBusinessCardUpdateParams_1 = require("./wTVirtualBusinessCardUpdateParams");
 const wTWalletConfigurationSaveWalletRecord_1 = require("./wTWalletConfigurationSaveWalletRecord");
+const wTWalletConfigurationSaveWalletRecordApplePassStyle_1 = require("./wTWalletConfigurationSaveWalletRecordApplePassStyle");
 const wTWalletConfigurationSaveWalletRecordDonationLabel_1 = require("./wTWalletConfigurationSaveWalletRecordDonationLabel");
+const wTWalletConfigurationSaveWalletRecordGooglePassStyle_1 = require("./wTWalletConfigurationSaveWalletRecordGooglePassStyle");
 const wTWalletConfigurationSaveWalletRecordPassBrandKit_1 = require("./wTWalletConfigurationSaveWalletRecordPassBrandKit");
 const wTWalletConfigurationSaveWalletRecordSmsOptInSourceID_1 = require("./wTWalletConfigurationSaveWalletRecordSmsOptInSourceID");
 const wTWalletItemRedemption_1 = require("./wTWalletItemRedemption");
@@ -998,6 +1017,7 @@ const wTWalletObjectPrefixCounts_1 = require("./wTWalletObjectPrefixCounts");
 const wTWalletPageView_1 = require("./wTWalletPageView");
 const wTWalletPageViewCount_1 = require("./wTWalletPageViewCount");
 const wTWalletPageViewGeoPoint_1 = require("./wTWalletPageViewGeoPoint");
+const wTWalletPassProvider_1 = require("./wTWalletPassProvider");
 const wTWhatsAppInboundWebhook_1 = require("./wTWhatsAppInboundWebhook");
 const wTWhatsAppStatusCallback_1 = require("./wTWhatsAppStatusCallback");
 const walletConfiguration_1 = require("./walletConfiguration");
@@ -1298,6 +1318,7 @@ let typeMap = {
     "WTAmenityCreateParams": wTAmenityCreateParams_1.WTAmenityCreateParams,
     "WTAmenityUpdateParams": wTAmenityUpdateParams_1.WTAmenityUpdateParams,
     "WTAndroidKeystoreResponse": wTAndroidKeystoreResponse_1.WTAndroidKeystoreResponse,
+    "WTApplePassStyle": wTApplePassStyle_1.WTApplePassStyle,
     "WTAuthenticationCheckSessionTokenStatusResponse": wTAuthenticationCheckSessionTokenStatusResponse_1.WTAuthenticationCheckSessionTokenStatusResponse,
     "WTAuthenticationForgotPassword": wTAuthenticationForgotPassword_1.WTAuthenticationForgotPassword,
     "WTAuthenticationLoginRequest": wTAuthenticationLoginRequest_1.WTAuthenticationLoginRequest,
@@ -1368,6 +1389,7 @@ let typeMap = {
     "WTGamingUpdateParams": wTGamingUpdateParams_1.WTGamingUpdateParams,
     "WTGiftCardPurchaseRequest": wTGiftCardPurchaseRequest_1.WTGiftCardPurchaseRequest,
     "WTGiftClaimRequest": wTGiftClaimRequest_1.WTGiftClaimRequest,
+    "WTGooglePassStyle": wTGooglePassStyle_1.WTGooglePassStyle,
     "WTGuestAmountBreakdown": wTGuestAmountBreakdown_1.WTGuestAmountBreakdown,
     "WTGuestCreatePaymentIntentRequest": wTGuestCreatePaymentIntentRequest_1.WTGuestCreatePaymentIntentRequest,
     "WTGuestCreatePaymentIntentResponse": wTGuestCreatePaymentIntentResponse_1.WTGuestCreatePaymentIntentResponse,
@@ -1417,6 +1439,11 @@ let typeMap = {
     "WTOrder": wTOrder_1.WTOrder,
     "WTOrderLineItem": wTOrderLineItem_1.WTOrderLineItem,
     "WTPassBrandKit": wTPassBrandKit_1.WTPassBrandKit,
+    "WTPassStyleResponse": wTPassStyleResponse_1.WTPassStyleResponse,
+    "WTPassStyleResponseApple": wTPassStyleResponseApple_1.WTPassStyleResponseApple,
+    "WTPassStyleResponseGoogle": wTPassStyleResponseGoogle_1.WTPassStyleResponseGoogle,
+    "WTPassStyleResponseProviders": wTPassStyleResponseProviders_1.WTPassStyleResponseProviders,
+    "WTPassStyleResponseProvidersApple": wTPassStyleResponseProvidersApple_1.WTPassStyleResponseProvidersApple,
     "WTPaymentDesign": wTPaymentDesign_1.WTPaymentDesign,
     "WTPaymentDesignCreateParams": wTPaymentDesignCreateParams_1.WTPaymentDesignCreateParams,
     "WTPaymentDesignUpdateParams": wTPaymentDesignUpdateParams_1.WTPaymentDesignUpdateParams,
@@ -1503,7 +1530,9 @@ let typeMap = {
     "WTVirtualBusinessCardCreateParams": wTVirtualBusinessCardCreateParams_1.WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": wTVirtualBusinessCardUpdateParams_1.WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": wTWalletConfigurationSaveWalletRecord_1.WTWalletConfigurationSaveWalletRecord,
+    "WTWalletConfigurationSaveWalletRecordApplePassStyle": wTWalletConfigurationSaveWalletRecordApplePassStyle_1.WTWalletConfigurationSaveWalletRecordApplePassStyle,
     "WTWalletConfigurationSaveWalletRecordDonationLabel": wTWalletConfigurationSaveWalletRecordDonationLabel_1.WTWalletConfigurationSaveWalletRecordDonationLabel,
+    "WTWalletConfigurationSaveWalletRecordGooglePassStyle": wTWalletConfigurationSaveWalletRecordGooglePassStyle_1.WTWalletConfigurationSaveWalletRecordGooglePassStyle,
     "WTWalletConfigurationSaveWalletRecordPassBrandKit": wTWalletConfigurationSaveWalletRecordPassBrandKit_1.WTWalletConfigurationSaveWalletRecordPassBrandKit,
     "WTWalletConfigurationSaveWalletRecordSmsOptInSourceID": wTWalletConfigurationSaveWalletRecordSmsOptInSourceID_1.WTWalletConfigurationSaveWalletRecordSmsOptInSourceID,
     "WTWalletItemRedemption": wTWalletItemRedemption_1.WTWalletItemRedemption,
@@ -1511,6 +1540,7 @@ let typeMap = {
     "WTWalletPageView": wTWalletPageView_1.WTWalletPageView,
     "WTWalletPageViewCount": wTWalletPageViewCount_1.WTWalletPageViewCount,
     "WTWalletPageViewGeoPoint": wTWalletPageViewGeoPoint_1.WTWalletPageViewGeoPoint,
+    "WTWalletPassProvider": wTWalletPassProvider_1.WTWalletPassProvider,
     "WTWhatsAppInboundWebhook": wTWhatsAppInboundWebhook_1.WTWhatsAppInboundWebhook,
     "WTWhatsAppStatusCallback": wTWhatsAppStatusCallback_1.WTWhatsAppStatusCallback,
     "WalletConfiguration": walletConfiguration_1.WalletConfiguration,

@@ -276,6 +276,7 @@ export * from './wTAdvertisementCreditUpdateParams';
 export * from './wTAmenityCreateParams';
 export * from './wTAmenityUpdateParams';
 export * from './wTAndroidKeystoreResponse';
+export * from './wTApplePassStyle';
 export * from './wTAuthenticationCheckSessionTokenStatusResponse';
 export * from './wTAuthenticationForgotPassword';
 export * from './wTAuthenticationLoginRequest';
@@ -346,6 +347,7 @@ export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
 export * from './wTGiftCardPurchaseRequest';
 export * from './wTGiftClaimRequest';
+export * from './wTGooglePassStyle';
 export * from './wTGuestAmountBreakdown';
 export * from './wTGuestCreatePaymentIntentRequest';
 export * from './wTGuestCreatePaymentIntentResponse';
@@ -395,6 +397,11 @@ export * from './wTOptInListCreationParams';
 export * from './wTOrder';
 export * from './wTOrderLineItem';
 export * from './wTPassBrandKit';
+export * from './wTPassStyleResponse';
+export * from './wTPassStyleResponseApple';
+export * from './wTPassStyleResponseGoogle';
+export * from './wTPassStyleResponseProviders';
+export * from './wTPassStyleResponseProvidersApple';
 export * from './wTPaymentDesign';
 export * from './wTPaymentDesignCreateParams';
 export * from './wTPaymentDesignUpdateParams';
@@ -481,7 +488,9 @@ export * from './wTVideoUploadProvisionProvider';
 export * from './wTVirtualBusinessCardCreateParams';
 export * from './wTVirtualBusinessCardUpdateParams';
 export * from './wTWalletConfigurationSaveWalletRecord';
+export * from './wTWalletConfigurationSaveWalletRecordApplePassStyle';
 export * from './wTWalletConfigurationSaveWalletRecordDonationLabel';
+export * from './wTWalletConfigurationSaveWalletRecordGooglePassStyle';
 export * from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 export * from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
 export * from './wTWalletItemRedemption';
@@ -489,6 +498,7 @@ export * from './wTWalletObjectPrefixCounts';
 export * from './wTWalletPageView';
 export * from './wTWalletPageViewCount';
 export * from './wTWalletPageViewGeoPoint';
+export * from './wTWalletPassProvider';
 export * from './wTWhatsAppInboundWebhook';
 export * from './wTWhatsAppStatusCallback';
 export * from './walletConfiguration';
@@ -784,6 +794,7 @@ import { WTAdvertisementCreditUpdateParams } from './wTAdvertisementCreditUpdate
 import { WTAmenityCreateParams } from './wTAmenityCreateParams';
 import { WTAmenityUpdateParams } from './wTAmenityUpdateParams';
 import { WTAndroidKeystoreResponse } from './wTAndroidKeystoreResponse';
+import { WTApplePassStyle } from './wTApplePassStyle';
 import { WTAuthenticationCheckSessionTokenStatusResponse } from './wTAuthenticationCheckSessionTokenStatusResponse';
 import { WTAuthenticationForgotPassword } from './wTAuthenticationForgotPassword';
 import { WTAuthenticationLoginRequest } from './wTAuthenticationLoginRequest';
@@ -854,6 +865,7 @@ import { WTGamingCreateParams } from './wTGamingCreateParams';
 import { WTGamingUpdateParams } from './wTGamingUpdateParams';
 import { WTGiftCardPurchaseRequest } from './wTGiftCardPurchaseRequest';
 import { WTGiftClaimRequest } from './wTGiftClaimRequest';
+import { WTGooglePassStyle } from './wTGooglePassStyle';
 import { WTGuestAmountBreakdown } from './wTGuestAmountBreakdown';
 import { WTGuestCreatePaymentIntentRequest } from './wTGuestCreatePaymentIntentRequest';
 import { WTGuestCreatePaymentIntentResponse } from './wTGuestCreatePaymentIntentResponse';
@@ -903,6 +915,11 @@ import { WTOptInListCreationParams } from './wTOptInListCreationParams';
 import { WTOrder } from './wTOrder';
 import { WTOrderLineItem } from './wTOrderLineItem';
 import { WTPassBrandKit } from './wTPassBrandKit';
+import { WTPassStyleResponse } from './wTPassStyleResponse';
+import { WTPassStyleResponseApple } from './wTPassStyleResponseApple';
+import { WTPassStyleResponseGoogle } from './wTPassStyleResponseGoogle';
+import { WTPassStyleResponseProviders } from './wTPassStyleResponseProviders';
+import { WTPassStyleResponseProvidersApple } from './wTPassStyleResponseProvidersApple';
 import { WTPaymentDesign } from './wTPaymentDesign';
 import { WTPaymentDesignCreateParams } from './wTPaymentDesignCreateParams';
 import { WTPaymentDesignUpdateParams } from './wTPaymentDesignUpdateParams';
@@ -989,7 +1006,9 @@ import { WTVideoUploadProvisionProvider } from './wTVideoUploadProvisionProvider
 import { WTVirtualBusinessCardCreateParams } from './wTVirtualBusinessCardCreateParams';
 import { WTVirtualBusinessCardUpdateParams } from './wTVirtualBusinessCardUpdateParams';
 import { WTWalletConfigurationSaveWalletRecord } from './wTWalletConfigurationSaveWalletRecord';
+import { WTWalletConfigurationSaveWalletRecordApplePassStyle } from './wTWalletConfigurationSaveWalletRecordApplePassStyle';
 import { WTWalletConfigurationSaveWalletRecordDonationLabel } from './wTWalletConfigurationSaveWalletRecordDonationLabel';
+import { WTWalletConfigurationSaveWalletRecordGooglePassStyle } from './wTWalletConfigurationSaveWalletRecordGooglePassStyle';
 import { WTWalletConfigurationSaveWalletRecordPassBrandKit } from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 import { WTWalletConfigurationSaveWalletRecordSmsOptInSourceID } from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
 import { WTWalletItemRedemption } from './wTWalletItemRedemption';
@@ -997,6 +1016,7 @@ import { WTWalletObjectPrefixCounts } from './wTWalletObjectPrefixCounts';
 import { WTWalletPageView } from './wTWalletPageView';
 import { WTWalletPageViewCount } from './wTWalletPageViewCount';
 import { WTWalletPageViewGeoPoint } from './wTWalletPageViewGeoPoint';
+import { WTWalletPassProvider } from './wTWalletPassProvider';
 import { WTWhatsAppInboundWebhook } from './wTWhatsAppInboundWebhook';
 import { WTWhatsAppStatusCallback } from './wTWhatsAppStatusCallback';
 import { WalletConfiguration } from './walletConfiguration';
@@ -1301,6 +1321,7 @@ let typeMap: {[index: string]: any} = {
     "WTAmenityCreateParams": WTAmenityCreateParams,
     "WTAmenityUpdateParams": WTAmenityUpdateParams,
     "WTAndroidKeystoreResponse": WTAndroidKeystoreResponse,
+    "WTApplePassStyle": WTApplePassStyle,
     "WTAuthenticationCheckSessionTokenStatusResponse": WTAuthenticationCheckSessionTokenStatusResponse,
     "WTAuthenticationForgotPassword": WTAuthenticationForgotPassword,
     "WTAuthenticationLoginRequest": WTAuthenticationLoginRequest,
@@ -1371,6 +1392,7 @@ let typeMap: {[index: string]: any} = {
     "WTGamingUpdateParams": WTGamingUpdateParams,
     "WTGiftCardPurchaseRequest": WTGiftCardPurchaseRequest,
     "WTGiftClaimRequest": WTGiftClaimRequest,
+    "WTGooglePassStyle": WTGooglePassStyle,
     "WTGuestAmountBreakdown": WTGuestAmountBreakdown,
     "WTGuestCreatePaymentIntentRequest": WTGuestCreatePaymentIntentRequest,
     "WTGuestCreatePaymentIntentResponse": WTGuestCreatePaymentIntentResponse,
@@ -1420,6 +1442,11 @@ let typeMap: {[index: string]: any} = {
     "WTOrder": WTOrder,
     "WTOrderLineItem": WTOrderLineItem,
     "WTPassBrandKit": WTPassBrandKit,
+    "WTPassStyleResponse": WTPassStyleResponse,
+    "WTPassStyleResponseApple": WTPassStyleResponseApple,
+    "WTPassStyleResponseGoogle": WTPassStyleResponseGoogle,
+    "WTPassStyleResponseProviders": WTPassStyleResponseProviders,
+    "WTPassStyleResponseProvidersApple": WTPassStyleResponseProvidersApple,
     "WTPaymentDesign": WTPaymentDesign,
     "WTPaymentDesignCreateParams": WTPaymentDesignCreateParams,
     "WTPaymentDesignUpdateParams": WTPaymentDesignUpdateParams,
@@ -1506,7 +1533,9 @@ let typeMap: {[index: string]: any} = {
     "WTVirtualBusinessCardCreateParams": WTVirtualBusinessCardCreateParams,
     "WTVirtualBusinessCardUpdateParams": WTVirtualBusinessCardUpdateParams,
     "WTWalletConfigurationSaveWalletRecord": WTWalletConfigurationSaveWalletRecord,
+    "WTWalletConfigurationSaveWalletRecordApplePassStyle": WTWalletConfigurationSaveWalletRecordApplePassStyle,
     "WTWalletConfigurationSaveWalletRecordDonationLabel": WTWalletConfigurationSaveWalletRecordDonationLabel,
+    "WTWalletConfigurationSaveWalletRecordGooglePassStyle": WTWalletConfigurationSaveWalletRecordGooglePassStyle,
     "WTWalletConfigurationSaveWalletRecordPassBrandKit": WTWalletConfigurationSaveWalletRecordPassBrandKit,
     "WTWalletConfigurationSaveWalletRecordSmsOptInSourceID": WTWalletConfigurationSaveWalletRecordSmsOptInSourceID,
     "WTWalletItemRedemption": WTWalletItemRedemption,
@@ -1514,6 +1543,7 @@ let typeMap: {[index: string]: any} = {
     "WTWalletPageView": WTWalletPageView,
     "WTWalletPageViewCount": WTWalletPageViewCount,
     "WTWalletPageViewGeoPoint": WTWalletPageViewGeoPoint,
+    "WTWalletPassProvider": WTWalletPassProvider,
     "WTWhatsAppInboundWebhook": WTWhatsAppInboundWebhook,
     "WTWhatsAppStatusCallback": WTWhatsAppStatusCallback,
     "WalletConfiguration": WalletConfiguration,

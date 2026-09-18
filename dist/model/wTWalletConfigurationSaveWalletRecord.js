@@ -410,6 +410,16 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "WTWalletConfigurationSaveWalletRecordPassBrandKit"
     },
     {
+        "name": "googlePassStyle",
+        "baseName": "googlePassStyle",
+        "type": "WTWalletConfigurationSaveWalletRecordGooglePassStyle"
+    },
+    {
+        "name": "applePassStyle",
+        "baseName": "applePassStyle",
+        "type": "WTWalletConfigurationSaveWalletRecordApplePassStyle"
+    },
+    {
         "name": "loginLogoURL",
         "baseName": "loginLogoURL",
         "type": "any"

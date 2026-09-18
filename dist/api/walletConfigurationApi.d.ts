@@ -2,7 +2,9 @@
 import http from 'http';
 import { SaveMerchantCreditPaymentDesignRequest } from '../model/saveMerchantCreditPaymentDesignRequest';
 import { WTAndroidKeystoreResponse } from '../model/wTAndroidKeystoreResponse';
+import { WTPassStyleResponse } from '../model/wTPassStyleResponse';
 import { WTWalletConfigurationSaveWalletRecord } from '../model/wTWalletConfigurationSaveWalletRecord';
+import { WTWalletPassProvider } from '../model/wTWalletPassProvider';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum WalletConfigurationApiApiKeys {
@@ -26,6 +28,14 @@ export declare class WalletConfigurationApi {
     setDefaultAuthentication(auth: Authentication): void;
     setApiKey(key: WalletConfigurationApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
+    fetchPassStyle(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTPassStyleResponse;
+    }>;
     generateAndroidKeystore(regenerate?: boolean, options?: {
         headers: {
             [name: string]: string;
@@ -33,6 +43,14 @@ export declare class WalletConfigurationApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: WTAndroidKeystoreResponse;
+    }>;
+    resetPassStyle(provider: WTWalletPassProvider, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTPassStyleResponse;
     }>;
     saveMerchantCreditPaymentDesign(saveMerchantCreditPaymentDesignRequest: SaveMerchantCreditPaymentDesignRequest, options?: {
         headers: {

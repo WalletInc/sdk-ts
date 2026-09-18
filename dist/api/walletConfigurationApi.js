@@ -67,6 +67,63 @@ class WalletConfigurationApi {
     addInterceptor(interceptor) {
         this.interceptors.push(interceptor);
     }
+    fetchPassStyle(options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/wallet/passStyle';
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'GET',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "WTPassStyleResponse");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
     generateAndroidKeystore(regenerate, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/wallet/android/keystore';
@@ -116,6 +173,67 @@ class WalletConfigurationApi {
                         else {
                             if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                                 body = models_1.ObjectSerializer.deserialize(body, "WTAndroidKeystoreResponse");
+                                resolve({ response: response, body: body });
+                            }
+                            else {
+                                reject(new apis_1.HttpError(response, body, response.statusCode));
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    }
+    resetPassStyle(provider, options = { headers: {} }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = this.basePath + '/wallet/passStyle/{provider}'
+                .replace('{' + 'provider' + '}', encodeURIComponent(String(provider)));
+            let localVarQueryParameters = {};
+            let localVarHeaderParams = Object.assign({}, this._defaultHeaders);
+            const produces = ['application/json'];
+            if (produces.indexOf('application/json') >= 0) {
+                localVarHeaderParams.Accept = 'application/json';
+            }
+            else {
+                localVarHeaderParams.Accept = produces.join(',');
+            }
+            let localVarFormParams = {};
+            if (provider === null || provider === undefined) {
+                throw new Error('Required parameter provider was null or undefined when calling resetPassStyle.');
+            }
+            Object.assign(localVarHeaderParams, options.headers);
+            let localVarUseFormData = false;
+            let localVarRequestOptions = {
+                method: 'DELETE',
+                qs: localVarQueryParameters,
+                headers: localVarHeaderParams,
+                uri: localVarPath,
+                useQuerystring: this._useQuerystring,
+                json: true,
+            };
+            let authenticationPromise = Promise.resolve();
+            authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+            let interceptorPromise = authenticationPromise;
+            for (const interceptor of this.interceptors) {
+                interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+            }
+            return interceptorPromise.then(() => {
+                if (Object.keys(localVarFormParams).length) {
+                    if (localVarUseFormData) {
+                        localVarRequestOptions.formData = localVarFormParams;
+                    }
+                    else {
+                        localVarRequestOptions.form = localVarFormParams;
+                    }
+                }
+                return new Promise((resolve, reject) => {
+                    (0, request_1.default)(localVarRequestOptions, (error, response, body) => {
+                        if (error) {
+                            reject(error);
+                        }
+                        else {
+                            if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                                body = models_1.ObjectSerializer.deserialize(body, "WTPassStyleResponse");
                                 resolve({ response: response, body: body });
                             }
                             else {
