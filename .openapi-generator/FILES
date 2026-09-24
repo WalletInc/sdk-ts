@@ -195,6 +195,7 @@ model/memberSearchSortKey.ts
 model/merchant.ts
 model/merchantCreditSearch.ts
 model/merchantNotInitialized.ts
+model/merchantTermsDocumentType.ts
 model/merchantURL.ts
 model/message.ts
 model/models.ts
@@ -370,6 +371,7 @@ model/wTConnectPaymentsSummary.ts
 model/wTConnectPaymentsSummaryBalance.ts
 model/wTConnectRequirements.ts
 model/wTCountResult.ts
+model/wTCurrentMerchantTermsVersion.ts
 model/wTCustomerSearchByMemberID.ts
 model/wTCustomerSearchByPhoneNumber.ts
 model/wTDiningCreateParams.ts

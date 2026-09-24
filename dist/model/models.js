@@ -146,6 +146,7 @@ __exportStar(require("./memberSearchSortKey"), exports);
 __exportStar(require("./merchant"), exports);
 __exportStar(require("./merchantCreditSearch"), exports);
 __exportStar(require("./merchantNotInitialized"), exports);
+__exportStar(require("./merchantTermsDocumentType"), exports);
 __exportStar(require("./merchantURL"), exports);
 __exportStar(require("./message"), exports);
 __exportStar(require("./moduleError"), exports);
@@ -320,6 +321,7 @@ __exportStar(require("./wTConnectPaymentsSummary"), exports);
 __exportStar(require("./wTConnectPaymentsSummaryBalance"), exports);
 __exportStar(require("./wTConnectRequirements"), exports);
 __exportStar(require("./wTCountResult"), exports);
+__exportStar(require("./wTCurrentMerchantTermsVersion"), exports);
 __exportStar(require("./wTCustomerSearchByMemberID"), exports);
 __exportStar(require("./wTCustomerSearchByPhoneNumber"), exports);
 __exportStar(require("./wTDiningCreateParams"), exports);
@@ -650,6 +652,7 @@ const memberSearchSortKey_1 = require("./memberSearchSortKey");
 const merchant_1 = require("./merchant");
 const merchantCreditSearch_1 = require("./merchantCreditSearch");
 const merchantNotInitialized_1 = require("./merchantNotInitialized");
+const merchantTermsDocumentType_1 = require("./merchantTermsDocumentType");
 const merchantURL_1 = require("./merchantURL");
 const message_1 = require("./message");
 const moduleError_1 = require("./moduleError");
@@ -824,6 +827,7 @@ const wTConnectPaymentsSummary_1 = require("./wTConnectPaymentsSummary");
 const wTConnectPaymentsSummaryBalance_1 = require("./wTConnectPaymentsSummaryBalance");
 const wTConnectRequirements_1 = require("./wTConnectRequirements");
 const wTCountResult_1 = require("./wTCountResult");
+const wTCurrentMerchantTermsVersion_1 = require("./wTCurrentMerchantTermsVersion");
 const wTCustomerSearchByMemberID_1 = require("./wTCustomerSearchByMemberID");
 const wTCustomerSearchByPhoneNumber_1 = require("./wTCustomerSearchByPhoneNumber");
 const wTDiningCreateParams_1 = require("./wTDiningCreateParams");
@@ -1178,6 +1182,7 @@ let typeMap = {
     "Merchant": merchant_1.Merchant,
     "MerchantCreditSearch": merchantCreditSearch_1.MerchantCreditSearch,
     "MerchantNotInitialized": merchantNotInitialized_1.MerchantNotInitialized,
+    "MerchantTermsDocumentType": merchantTermsDocumentType_1.MerchantTermsDocumentType,
     "MerchantURL": merchantURL_1.MerchantURL,
     "Message": message_1.Message,
     "ModuleError": moduleError_1.ModuleError,
@@ -1347,6 +1352,7 @@ let typeMap = {
     "WTConnectPaymentsSummaryBalance": wTConnectPaymentsSummaryBalance_1.WTConnectPaymentsSummaryBalance,
     "WTConnectRequirements": wTConnectRequirements_1.WTConnectRequirements,
     "WTCountResult": wTCountResult_1.WTCountResult,
+    "WTCurrentMerchantTermsVersion": wTCurrentMerchantTermsVersion_1.WTCurrentMerchantTermsVersion,
     "WTCustomerSearchByMemberID": wTCustomerSearchByMemberID_1.WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": wTCustomerSearchByPhoneNumber_1.WTCustomerSearchByPhoneNumber,
     "WTDiningCreateParams": wTDiningCreateParams_1.WTDiningCreateParams,

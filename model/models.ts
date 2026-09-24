@@ -131,6 +131,7 @@ export * from './memberSearchSortKey';
 export * from './merchant';
 export * from './merchantCreditSearch';
 export * from './merchantNotInitialized';
+export * from './merchantTermsDocumentType';
 export * from './merchantURL';
 export * from './message';
 export * from './moduleError';
@@ -305,6 +306,7 @@ export * from './wTConnectPaymentsSummary';
 export * from './wTConnectPaymentsSummaryBalance';
 export * from './wTConnectRequirements';
 export * from './wTCountResult';
+export * from './wTCurrentMerchantTermsVersion';
 export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';
 export * from './wTDiningCreateParams';
@@ -649,6 +651,7 @@ import { MemberSearchSortKey } from './memberSearchSortKey';
 import { Merchant } from './merchant';
 import { MerchantCreditSearch } from './merchantCreditSearch';
 import { MerchantNotInitialized } from './merchantNotInitialized';
+import { MerchantTermsDocumentType } from './merchantTermsDocumentType';
 import { MerchantURL } from './merchantURL';
 import { Message } from './message';
 import { ModuleError } from './moduleError';
@@ -823,6 +826,7 @@ import { WTConnectPaymentsSummary } from './wTConnectPaymentsSummary';
 import { WTConnectPaymentsSummaryBalance } from './wTConnectPaymentsSummaryBalance';
 import { WTConnectRequirements } from './wTConnectRequirements';
 import { WTCountResult } from './wTCountResult';
+import { WTCurrentMerchantTermsVersion } from './wTCurrentMerchantTermsVersion';
 import { WTCustomerSearchByMemberID } from './wTCustomerSearchByMemberID';
 import { WTCustomerSearchByPhoneNumber } from './wTCustomerSearchByPhoneNumber';
 import { WTDiningCreateParams } from './wTDiningCreateParams';
@@ -1181,6 +1185,7 @@ let typeMap: {[index: string]: any} = {
     "Merchant": Merchant,
     "MerchantCreditSearch": MerchantCreditSearch,
     "MerchantNotInitialized": MerchantNotInitialized,
+    "MerchantTermsDocumentType": MerchantTermsDocumentType,
     "MerchantURL": MerchantURL,
     "Message": Message,
     "ModuleError": ModuleError,
@@ -1350,6 +1355,7 @@ let typeMap: {[index: string]: any} = {
     "WTConnectPaymentsSummaryBalance": WTConnectPaymentsSummaryBalance,
     "WTConnectRequirements": WTConnectRequirements,
     "WTCountResult": WTCountResult,
+    "WTCurrentMerchantTermsVersion": WTCurrentMerchantTermsVersion,
     "WTCustomerSearchByMemberID": WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": WTCustomerSearchByPhoneNumber,
     "WTDiningCreateParams": WTDiningCreateParams,
