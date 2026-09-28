@@ -26,6 +26,7 @@ api/importedListsApi.ts
 api/industriesApi.ts
 api/infoGenesisReportsApi.ts
 api/interactionsApi.ts
+api/keywordAutoRespondersApi.ts
 api/loungeApi.ts
 api/membershipTiersApi.ts
 api/merchantApi.ts
@@ -351,6 +352,11 @@ model/wTAuthenticationRegister.ts
 model/wTAuthenticationRequestResetPassword.ts
 model/wTAuthenticationResetPassword.ts
 model/wTAuthenticationSSOLoginForDiscourse.ts
+model/wTAutoResponder.ts
+model/wTAutoResponderCreateParams.ts
+model/wTAutoResponderHit.ts
+model/wTAutoResponderHitOutcome.ts
+model/wTAutoResponderUpdateParams.ts
 model/wTBillingChangePlan.ts
 model/wTBillingChangePlanBillingCadence.ts
 model/wTBillingSavePaymentMethod.ts

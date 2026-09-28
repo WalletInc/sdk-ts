@@ -15,6 +15,7 @@ export declare enum PortalPage {
     CommunicationsGoogleWallet,
     CommunicationsSmsMedia,
     CommunicationsSmsAgreement,
+    CommunicationsSmsAutoresponders,
     CommunicationsSmsCreate,
     CommunicationsSmsCustomerService,
     CommunicationsSmsKeywords,

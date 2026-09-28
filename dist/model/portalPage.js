@@ -19,6 +19,7 @@ var PortalPage;
     PortalPage[PortalPage["CommunicationsGoogleWallet"] = 'communications-google-wallet'] = "CommunicationsGoogleWallet";
     PortalPage[PortalPage["CommunicationsSmsMedia"] = 'communications-sms-media'] = "CommunicationsSmsMedia";
     PortalPage[PortalPage["CommunicationsSmsAgreement"] = 'communications-sms-agreement'] = "CommunicationsSmsAgreement";
+    PortalPage[PortalPage["CommunicationsSmsAutoresponders"] = 'communications-sms-autoresponders'] = "CommunicationsSmsAutoresponders";
     PortalPage[PortalPage["CommunicationsSmsCreate"] = 'communications-sms-create'] = "CommunicationsSmsCreate";
     PortalPage[PortalPage["CommunicationsSmsCustomerService"] = 'communications-sms-customer-service'] = "CommunicationsSmsCustomerService";
     PortalPage[PortalPage["CommunicationsSmsKeywords"] = 'communications-sms-keywords'] = "CommunicationsSmsKeywords";

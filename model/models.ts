@@ -286,6 +286,11 @@ export * from './wTAuthenticationRegister';
 export * from './wTAuthenticationRequestResetPassword';
 export * from './wTAuthenticationResetPassword';
 export * from './wTAuthenticationSSOLoginForDiscourse';
+export * from './wTAutoResponder';
+export * from './wTAutoResponderCreateParams';
+export * from './wTAutoResponderHit';
+export * from './wTAutoResponderHitOutcome';
+export * from './wTAutoResponderUpdateParams';
 export * from './wTBillingChangePlan';
 export * from './wTBillingChangePlanBillingCadence';
 export * from './wTBillingSavePaymentMethod';
@@ -806,6 +811,11 @@ import { WTAuthenticationRegister } from './wTAuthenticationRegister';
 import { WTAuthenticationRequestResetPassword } from './wTAuthenticationRequestResetPassword';
 import { WTAuthenticationResetPassword } from './wTAuthenticationResetPassword';
 import { WTAuthenticationSSOLoginForDiscourse } from './wTAuthenticationSSOLoginForDiscourse';
+import { WTAutoResponder } from './wTAutoResponder';
+import { WTAutoResponderCreateParams } from './wTAutoResponderCreateParams';
+import { WTAutoResponderHit } from './wTAutoResponderHit';
+import { WTAutoResponderHitOutcome } from './wTAutoResponderHitOutcome';
+import { WTAutoResponderUpdateParams } from './wTAutoResponderUpdateParams';
 import { WTBillingChangePlan } from './wTBillingChangePlan';
 import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingCadence';
 import { WTBillingSavePaymentMethod } from './wTBillingSavePaymentMethod';
@@ -1335,6 +1345,11 @@ let typeMap: {[index: string]: any} = {
     "WTAuthenticationRequestResetPassword": WTAuthenticationRequestResetPassword,
     "WTAuthenticationResetPassword": WTAuthenticationResetPassword,
     "WTAuthenticationSSOLoginForDiscourse": WTAuthenticationSSOLoginForDiscourse,
+    "WTAutoResponder": WTAutoResponder,
+    "WTAutoResponderCreateParams": WTAutoResponderCreateParams,
+    "WTAutoResponderHit": WTAutoResponderHit,
+    "WTAutoResponderHitOutcome": WTAutoResponderHitOutcome,
+    "WTAutoResponderUpdateParams": WTAutoResponderUpdateParams,
     "WTBillingChangePlan": WTBillingChangePlan,
     "WTBillingChangePlanBillingCadence": WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": WTBillingSavePaymentMethod,

@@ -301,6 +301,11 @@ __exportStar(require("./wTAuthenticationRegister"), exports);
 __exportStar(require("./wTAuthenticationRequestResetPassword"), exports);
 __exportStar(require("./wTAuthenticationResetPassword"), exports);
 __exportStar(require("./wTAuthenticationSSOLoginForDiscourse"), exports);
+__exportStar(require("./wTAutoResponder"), exports);
+__exportStar(require("./wTAutoResponderCreateParams"), exports);
+__exportStar(require("./wTAutoResponderHit"), exports);
+__exportStar(require("./wTAutoResponderHitOutcome"), exports);
+__exportStar(require("./wTAutoResponderUpdateParams"), exports);
 __exportStar(require("./wTBillingChangePlan"), exports);
 __exportStar(require("./wTBillingChangePlanBillingCadence"), exports);
 __exportStar(require("./wTBillingSavePaymentMethod"), exports);
@@ -807,6 +812,11 @@ const wTAuthenticationRegister_1 = require("./wTAuthenticationRegister");
 const wTAuthenticationRequestResetPassword_1 = require("./wTAuthenticationRequestResetPassword");
 const wTAuthenticationResetPassword_1 = require("./wTAuthenticationResetPassword");
 const wTAuthenticationSSOLoginForDiscourse_1 = require("./wTAuthenticationSSOLoginForDiscourse");
+const wTAutoResponder_1 = require("./wTAutoResponder");
+const wTAutoResponderCreateParams_1 = require("./wTAutoResponderCreateParams");
+const wTAutoResponderHit_1 = require("./wTAutoResponderHit");
+const wTAutoResponderHitOutcome_1 = require("./wTAutoResponderHitOutcome");
+const wTAutoResponderUpdateParams_1 = require("./wTAutoResponderUpdateParams");
 const wTBillingChangePlan_1 = require("./wTBillingChangePlan");
 const wTBillingChangePlanBillingCadence_1 = require("./wTBillingChangePlanBillingCadence");
 const wTBillingSavePaymentMethod_1 = require("./wTBillingSavePaymentMethod");
@@ -1332,6 +1342,11 @@ let typeMap = {
     "WTAuthenticationRequestResetPassword": wTAuthenticationRequestResetPassword_1.WTAuthenticationRequestResetPassword,
     "WTAuthenticationResetPassword": wTAuthenticationResetPassword_1.WTAuthenticationResetPassword,
     "WTAuthenticationSSOLoginForDiscourse": wTAuthenticationSSOLoginForDiscourse_1.WTAuthenticationSSOLoginForDiscourse,
+    "WTAutoResponder": wTAutoResponder_1.WTAutoResponder,
+    "WTAutoResponderCreateParams": wTAutoResponderCreateParams_1.WTAutoResponderCreateParams,
+    "WTAutoResponderHit": wTAutoResponderHit_1.WTAutoResponderHit,
+    "WTAutoResponderHitOutcome": wTAutoResponderHitOutcome_1.WTAutoResponderHitOutcome,
+    "WTAutoResponderUpdateParams": wTAutoResponderUpdateParams_1.WTAutoResponderUpdateParams,
     "WTBillingChangePlan": wTBillingChangePlan_1.WTBillingChangePlan,
     "WTBillingChangePlanBillingCadence": wTBillingChangePlanBillingCadence_1.WTBillingChangePlanBillingCadence,
     "WTBillingSavePaymentMethod": wTBillingSavePaymentMethod_1.WTBillingSavePaymentMethod,
