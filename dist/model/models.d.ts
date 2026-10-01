@@ -512,6 +512,8 @@ export * from './wTWhatsAppStatusCallback';
 export * from './walletConfiguration';
 export * from './walletPageView';
 export * from './webpage';
+export * from './whatsNewArticle';
+export * from './whatsNewStage';
 import * as fs from 'fs';
 export interface RequestDetailedFile {
     value: Buffer;

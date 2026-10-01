@@ -577,5 +577,7 @@ model/wTWhatsAppStatusCallback.ts
 model/walletConfiguration.ts
 model/walletPageView.ts
 model/webpage.ts
+model/whatsNewArticle.ts
+model/whatsNewStage.ts
 package.json
 tsconfig.json

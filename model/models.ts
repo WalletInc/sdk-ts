@@ -511,6 +511,8 @@ export * from './wTWhatsAppStatusCallback';
 export * from './walletConfiguration';
 export * from './walletPageView';
 export * from './webpage';
+export * from './whatsNewArticle';
+export * from './whatsNewStage';
 
 import * as fs from 'fs';
 
@@ -1036,6 +1038,8 @@ import { WTWhatsAppStatusCallback } from './wTWhatsAppStatusCallback';
 import { WalletConfiguration } from './walletConfiguration';
 import { WalletPageView } from './walletPageView';
 import { Webpage } from './webpage';
+import { WhatsNewArticle } from './whatsNewArticle';
+import { WhatsNewStage } from './whatsNewStage';
 
 /* tslint:disable:no-unused-variable */
 let primitives = [
@@ -1570,6 +1574,8 @@ let typeMap: {[index: string]: any} = {
     "WalletConfiguration": WalletConfiguration,
     "WalletPageView": WalletPageView,
     "Webpage": Webpage,
+    "WhatsNewArticle": WhatsNewArticle,
+    "WhatsNewStage": WhatsNewStage,
 }
 
 export class ObjectSerializer {

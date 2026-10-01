@@ -526,6 +526,8 @@ __exportStar(require("./wTWhatsAppStatusCallback"), exports);
 __exportStar(require("./walletConfiguration"), exports);
 __exportStar(require("./walletPageView"), exports);
 __exportStar(require("./webpage"), exports);
+__exportStar(require("./whatsNewArticle"), exports);
+__exportStar(require("./whatsNewStage"), exports);
 const a2PApplicationSubmission_1 = require("./a2PApplicationSubmission");
 const a2PBillingConsent_1 = require("./a2PBillingConsent");
 const a2PGovernmentSubmission_1 = require("./a2PGovernmentSubmission");
@@ -1037,6 +1039,8 @@ const wTWhatsAppStatusCallback_1 = require("./wTWhatsAppStatusCallback");
 const walletConfiguration_1 = require("./walletConfiguration");
 const walletPageView_1 = require("./walletPageView");
 const webpage_1 = require("./webpage");
+const whatsNewArticle_1 = require("./whatsNewArticle");
+const whatsNewStage_1 = require("./whatsNewStage");
 let primitives = [
     "string",
     "boolean",
@@ -1567,6 +1571,8 @@ let typeMap = {
     "WalletConfiguration": walletConfiguration_1.WalletConfiguration,
     "WalletPageView": walletPageView_1.WalletPageView,
     "Webpage": webpage_1.Webpage,
+    "WhatsNewArticle": whatsNewArticle_1.WhatsNewArticle,
+    "WhatsNewStage": whatsNewStage_1.WhatsNewStage,
 };
 class ObjectSerializer {
     static findCorrectType(data, expectedType) {
