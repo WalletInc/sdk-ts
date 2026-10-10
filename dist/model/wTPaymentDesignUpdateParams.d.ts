@@ -13,6 +13,10 @@ export declare class WTPaymentDesignUpdateParams extends null<String, any> {
     'companyLogoURL'?: string;
     'abbreviation'?: string;
     'acronym'?: string;
+    'textPlate'?: boolean;
+    'textPlateOpacity'?: any | null;
+    'textPlateColor'?: any | null;
+    'guestInstructions'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

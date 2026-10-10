@@ -136,6 +136,7 @@ export * from './merchantURL';
 export * from './message';
 export * from './moduleError';
 export * from './newsArticle';
+export * from './notFound';
 export * from './oAIAssistantUpdateParams';
 export * from './oAIAssistantUpdateParamsCreateParams';
 export * from './optInList';
@@ -663,6 +664,7 @@ import { MerchantURL } from './merchantURL';
 import { Message } from './message';
 import { ModuleError } from './moduleError';
 import { NewsArticle } from './newsArticle';
+import { NotFound } from './notFound';
 import { OAIAssistantUpdateParams } from './oAIAssistantUpdateParams';
 import { OAIAssistantUpdateParamsCreateParams } from './oAIAssistantUpdateParamsCreateParams';
 import { OptInList } from './optInList';
@@ -1204,6 +1206,7 @@ let typeMap: {[index: string]: any} = {
     "Message": Message,
     "ModuleError": ModuleError,
     "NewsArticle": NewsArticle,
+    "NotFound": NotFound,
     "OAIAssistantUpdateParams": OAIAssistantUpdateParams,
     "OAIAssistantUpdateParamsCreateParams": OAIAssistantUpdateParamsCreateParams,
     "OptInList": OptInList,

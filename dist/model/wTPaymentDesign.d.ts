@@ -20,6 +20,10 @@ export declare class WTPaymentDesign extends null<String, any> {
     'createdAt': Date;
     'updatedAt': Date;
     'isActive': boolean;
+    'textPlate': boolean;
+    'textPlateOpacity': number;
+    'textPlateColor'?: string;
+    'guestInstructions': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

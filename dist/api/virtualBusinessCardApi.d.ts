@@ -1,5 +1,6 @@
 /// <reference types="node" />
 import http from 'http';
+import { FetchMerchantURLRequestsPaged200Response } from '../model/fetchMerchantURLRequestsPaged200Response';
 import { VirtualBusinessCard } from '../model/virtualBusinessCard';
 import { WTVirtualBusinessCardCreateParams } from '../model/wTVirtualBusinessCardCreateParams';
 import { WTVirtualBusinessCardUpdateParams } from '../model/wTVirtualBusinessCardUpdateParams';
@@ -66,6 +67,14 @@ export declare class VirtualBusinessCardApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Array<WalletPageView>;
+    }>;
+    fetchVirtualBusinessCardRequestsPaged(id: string, page?: number, limit?: number, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: FetchMerchantURLRequestsPaged200Response;
     }>;
     restoreVirtualBusinessCard(id: string, options?: {
         headers: {

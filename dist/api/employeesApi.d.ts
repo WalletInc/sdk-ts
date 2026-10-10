@@ -66,7 +66,7 @@ export declare class EmployeesApi {
         response: http.IncomingMessage;
         body: Array<Message>;
     }>;
-    fetchPeerActivity(employeeID: string, options?: {
+    fetchPeerActivity(employeeID: string, startDateTime?: Date, endDateTime?: Date, pageSize?: number, pageNum?: number, options?: {
         headers: {
             [name: string]: string;
         };

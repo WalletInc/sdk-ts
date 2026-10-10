@@ -3,6 +3,7 @@ export declare class WTImportedListRecipientFromMembershipTierImport extends nul
     'listName': any | null;
     'phoneNumberID': string;
     'tierID': WTImportedListRecipientFromMembershipTierImportTierID;
+    'isOver21Required'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -103,6 +103,26 @@ WTPaymentDesign.attributeTypeMap = [
         "name": "isActive",
         "baseName": "isActive",
         "type": "boolean"
+    },
+    {
+        "name": "textPlate",
+        "baseName": "textPlate",
+        "type": "boolean"
+    },
+    {
+        "name": "textPlateOpacity",
+        "baseName": "textPlateOpacity",
+        "type": "number"
+    },
+    {
+        "name": "textPlateColor",
+        "baseName": "textPlateColor",
+        "type": "string"
+    },
+    {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTPaymentDesign.js.map

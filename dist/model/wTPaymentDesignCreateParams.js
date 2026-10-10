@@ -73,6 +73,26 @@ WTPaymentDesignCreateParams.attributeTypeMap = [
         "name": "acronym",
         "baseName": "acronym",
         "type": "string"
+    },
+    {
+        "name": "textPlate",
+        "baseName": "textPlate",
+        "type": "boolean"
+    },
+    {
+        "name": "textPlateOpacity",
+        "baseName": "textPlateOpacity",
+        "type": "any"
+    },
+    {
+        "name": "textPlateColor",
+        "baseName": "textPlateColor",
+        "type": "any"
+    },
+    {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTPaymentDesignCreateParams.js.map

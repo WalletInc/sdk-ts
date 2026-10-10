@@ -15,13 +15,13 @@ PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptions
         "type": "boolean"
     },
     {
-        "name": "pageNum",
-        "baseName": "pageNum",
+        "name": "pageSize",
+        "baseName": "pageSize",
         "type": "number"
     },
     {
-        "name": "pageSize",
-        "baseName": "pageSize",
+        "name": "pageNum",
+        "baseName": "pageNum",
         "type": "number"
     },
     {

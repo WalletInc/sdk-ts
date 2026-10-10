@@ -23,6 +23,11 @@ WTImportedListRecipientFromMembershipTierImport.attributeTypeMap = [
         "name": "tierID",
         "baseName": "tierID",
         "type": "WTImportedListRecipientFromMembershipTierImportTierID"
+    },
+    {
+        "name": "isOver21Required",
+        "baseName": "isOver21Required",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTImportedListRecipientFromMembershipTierImport.js.map

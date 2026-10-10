@@ -23,6 +23,11 @@ WTSMSImportedListCreate.attributeTypeMap = [
         "name": "listName",
         "baseName": "listName",
         "type": "any"
+    },
+    {
+        "name": "isOver21Required",
+        "baseName": "isOver21Required",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTSMSImportedListCreate.js.map

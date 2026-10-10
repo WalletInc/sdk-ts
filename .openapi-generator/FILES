@@ -202,6 +202,7 @@ model/message.ts
 model/models.ts
 model/moduleError.ts
 model/newsArticle.ts
+model/notFound.ts
 model/oAIAssistantUpdateParams.ts
 model/oAIAssistantUpdateParamsCreateParams.ts
 model/optInList.ts

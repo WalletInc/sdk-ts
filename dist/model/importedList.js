@@ -48,6 +48,11 @@ ImportedList.attributeTypeMap = [
         "name": "updatedAt",
         "baseName": "updatedAt",
         "type": "Date"
+    },
+    {
+        "name": "isOver21Required",
+        "baseName": "isOver21Required",
+        "type": "boolean"
     }
 ];
 //# sourceMappingURL=importedList.js.map

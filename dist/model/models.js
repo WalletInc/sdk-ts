@@ -151,6 +151,7 @@ __exportStar(require("./merchantURL"), exports);
 __exportStar(require("./message"), exports);
 __exportStar(require("./moduleError"), exports);
 __exportStar(require("./newsArticle"), exports);
+__exportStar(require("./notFound"), exports);
 __exportStar(require("./oAIAssistantUpdateParams"), exports);
 __exportStar(require("./oAIAssistantUpdateParamsCreateParams"), exports);
 __exportStar(require("./optInList"), exports);
@@ -664,6 +665,7 @@ const merchantURL_1 = require("./merchantURL");
 const message_1 = require("./message");
 const moduleError_1 = require("./moduleError");
 const newsArticle_1 = require("./newsArticle");
+const notFound_1 = require("./notFound");
 const oAIAssistantUpdateParams_1 = require("./oAIAssistantUpdateParams");
 const oAIAssistantUpdateParamsCreateParams_1 = require("./oAIAssistantUpdateParamsCreateParams");
 const optInList_1 = require("./optInList");
@@ -1201,6 +1203,7 @@ let typeMap = {
     "Message": message_1.Message,
     "ModuleError": moduleError_1.ModuleError,
     "NewsArticle": newsArticle_1.NewsArticle,
+    "NotFound": notFound_1.NotFound,
     "OAIAssistantUpdateParams": oAIAssistantUpdateParams_1.OAIAssistantUpdateParams,
     "OAIAssistantUpdateParamsCreateParams": oAIAssistantUpdateParamsCreateParams_1.OAIAssistantUpdateParamsCreateParams,
     "OptInList": optInList_1.OptInList,

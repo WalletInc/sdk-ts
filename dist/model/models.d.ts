@@ -137,6 +137,7 @@ export * from './merchantURL';
 export * from './message';
 export * from './moduleError';
 export * from './newsArticle';
+export * from './notFound';
 export * from './oAIAssistantUpdateParams';
 export * from './oAIAssistantUpdateParamsCreateParams';
 export * from './optInList';

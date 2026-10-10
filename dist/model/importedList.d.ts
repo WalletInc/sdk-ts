@@ -8,6 +8,7 @@ export declare class ImportedList extends null<String, any> {
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
+    'isOver21Required'?: boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

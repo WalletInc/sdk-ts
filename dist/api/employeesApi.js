@@ -307,7 +307,7 @@ class EmployeesApi {
             });
         });
     }
-    fetchPeerActivity(employeeID, options = { headers: {} }) {
+    fetchPeerActivity(employeeID, startDateTime, endDateTime, pageSize, pageNum, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/v2/employee/peer/activity/{employeeID}'
                 .replace('{' + 'employeeID' + '}', encodeURIComponent(String(employeeID)));
@@ -323,6 +323,18 @@ class EmployeesApi {
             let localVarFormParams = {};
             if (employeeID === null || employeeID === undefined) {
                 throw new Error('Required parameter employeeID was null or undefined when calling fetchPeerActivity.');
+            }
+            if (startDateTime !== undefined) {
+                localVarQueryParameters['startDateTime'] = models_1.ObjectSerializer.serialize(startDateTime, "Date");
+            }
+            if (endDateTime !== undefined) {
+                localVarQueryParameters['endDateTime'] = models_1.ObjectSerializer.serialize(endDateTime, "Date");
+            }
+            if (pageSize !== undefined) {
+                localVarQueryParameters['pageSize'] = models_1.ObjectSerializer.serialize(pageSize, "number");
+            }
+            if (pageNum !== undefined) {
+                localVarQueryParameters['pageNum'] = models_1.ObjectSerializer.serialize(pageNum, "number");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;

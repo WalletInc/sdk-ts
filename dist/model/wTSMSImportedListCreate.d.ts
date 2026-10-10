@@ -2,6 +2,7 @@ export declare class WTSMSImportedListCreate extends null<String, any> {
     'phoneNumberID': string;
     'isActive': any | null;
     'listName': any | null;
+    'isOver21Required'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

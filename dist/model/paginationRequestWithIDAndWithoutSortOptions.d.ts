@@ -1,6 +1,6 @@
 export declare class PaginationRequestWithIDAndWithoutSortOptions extends null<String, any> {
-    'pageNum'?: any | null;
     'pageSize'?: any | null;
+    'pageNum'?: any | null;
     'id': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

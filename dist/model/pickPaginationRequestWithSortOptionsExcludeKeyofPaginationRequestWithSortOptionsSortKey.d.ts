@@ -1,8 +1,8 @@
 import { PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKeySortOrder } from './pickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKeySortOrder';
 export declare class PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKey {
     'isArchiveIncluded'?: boolean;
-    'pageNum'?: number;
     'pageSize'?: number;
+    'pageNum'?: number;
     'sortOrder'?: PickPaginationRequestWithSortOptionsExcludeKeyofPaginationRequestWithSortOptionsSortKeySortOrder;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
