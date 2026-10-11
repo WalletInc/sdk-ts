@@ -2,6 +2,8 @@
 import http from 'http';
 import { SaveMerchantCreditPaymentDesignRequest } from '../model/saveMerchantCreditPaymentDesignRequest';
 import { WTAndroidKeystoreResponse } from '../model/wTAndroidKeystoreResponse';
+import { WTCustomDomain } from '../model/wTCustomDomain';
+import { WTCustomDomainRequest } from '../model/wTCustomDomainRequest';
 import { WTPassStyleResponse } from '../model/wTPassStyleResponse';
 import { WTWalletConfigurationSaveWalletRecord } from '../model/wTWalletConfigurationSaveWalletRecord';
 import { WTWalletPassProvider } from '../model/wTWalletPassProvider';
@@ -28,6 +30,22 @@ export declare class WalletConfigurationApi {
     setDefaultAuthentication(auth: Authentication): void;
     setApiKey(key: WalletConfigurationApiApiKeys, value: string): void;
     addInterceptor(interceptor: Interceptor): void;
+    deleteCustomDomain(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTCustomDomain;
+    }>;
+    fetchCustomDomain(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTCustomDomain;
+    }>;
     fetchPassStyle(options?: {
         headers: {
             [name: string]: string;
@@ -51,6 +69,14 @@ export declare class WalletConfigurationApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: WTPassStyleResponse;
+    }>;
+    saveCustomDomain(wTCustomDomainRequest: WTCustomDomainRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTCustomDomain;
     }>;
     saveMerchantCreditPaymentDesign(saveMerchantCreditPaymentDesignRequest: SaveMerchantCreditPaymentDesignRequest, options?: {
         headers: {

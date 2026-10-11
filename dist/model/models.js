@@ -328,6 +328,11 @@ __exportStar(require("./wTConnectPaymentsSummaryBalance"), exports);
 __exportStar(require("./wTConnectRequirements"), exports);
 __exportStar(require("./wTCountResult"), exports);
 __exportStar(require("./wTCurrentMerchantTermsVersion"), exports);
+__exportStar(require("./wTCustomDomain"), exports);
+__exportStar(require("./wTCustomDomainError"), exports);
+__exportStar(require("./wTCustomDomainRequest"), exports);
+__exportStar(require("./wTCustomDomainState"), exports);
+__exportStar(require("./wTCustomDomainTXT"), exports);
 __exportStar(require("./wTCustomerSearchByMemberID"), exports);
 __exportStar(require("./wTCustomerSearchByPhoneNumber"), exports);
 __exportStar(require("./wTDiningCreateParams"), exports);
@@ -850,6 +855,11 @@ const wTConnectPaymentsSummaryBalance_1 = require("./wTConnectPaymentsSummaryBal
 const wTConnectRequirements_1 = require("./wTConnectRequirements");
 const wTCountResult_1 = require("./wTCountResult");
 const wTCurrentMerchantTermsVersion_1 = require("./wTCurrentMerchantTermsVersion");
+const wTCustomDomain_1 = require("./wTCustomDomain");
+const wTCustomDomainError_1 = require("./wTCustomDomainError");
+const wTCustomDomainRequest_1 = require("./wTCustomDomainRequest");
+const wTCustomDomainState_1 = require("./wTCustomDomainState");
+const wTCustomDomainTXT_1 = require("./wTCustomDomainTXT");
 const wTCustomerSearchByMemberID_1 = require("./wTCustomerSearchByMemberID");
 const wTCustomerSearchByPhoneNumber_1 = require("./wTCustomerSearchByPhoneNumber");
 const wTDiningCreateParams_1 = require("./wTDiningCreateParams");
@@ -1391,6 +1401,11 @@ let typeMap = {
     "WTConnectRequirements": wTConnectRequirements_1.WTConnectRequirements,
     "WTCountResult": wTCountResult_1.WTCountResult,
     "WTCurrentMerchantTermsVersion": wTCurrentMerchantTermsVersion_1.WTCurrentMerchantTermsVersion,
+    "WTCustomDomain": wTCustomDomain_1.WTCustomDomain,
+    "WTCustomDomainError": wTCustomDomainError_1.WTCustomDomainError,
+    "WTCustomDomainRequest": wTCustomDomainRequest_1.WTCustomDomainRequest,
+    "WTCustomDomainState": wTCustomDomainState_1.WTCustomDomainState,
+    "WTCustomDomainTXT": wTCustomDomainTXT_1.WTCustomDomainTXT,
     "WTCustomerSearchByMemberID": wTCustomerSearchByMemberID_1.WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": wTCustomerSearchByPhoneNumber_1.WTCustomerSearchByPhoneNumber,
     "WTDiningCreateParams": wTDiningCreateParams_1.WTDiningCreateParams,

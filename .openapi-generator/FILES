@@ -379,6 +379,11 @@ model/wTConnectPaymentsSummaryBalance.ts
 model/wTConnectRequirements.ts
 model/wTCountResult.ts
 model/wTCurrentMerchantTermsVersion.ts
+model/wTCustomDomain.ts
+model/wTCustomDomainError.ts
+model/wTCustomDomainRequest.ts
+model/wTCustomDomainState.ts
+model/wTCustomDomainTXT.ts
 model/wTCustomerSearchByMemberID.ts
 model/wTCustomerSearchByPhoneNumber.ts
 model/wTDiningCreateParams.ts

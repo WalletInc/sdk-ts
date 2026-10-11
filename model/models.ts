@@ -313,6 +313,11 @@ export * from './wTConnectPaymentsSummaryBalance';
 export * from './wTConnectRequirements';
 export * from './wTCountResult';
 export * from './wTCurrentMerchantTermsVersion';
+export * from './wTCustomDomain';
+export * from './wTCustomDomainError';
+export * from './wTCustomDomainRequest';
+export * from './wTCustomDomainState';
+export * from './wTCustomDomainTXT';
 export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';
 export * from './wTDiningCreateParams';
@@ -849,6 +854,11 @@ import { WTConnectPaymentsSummaryBalance } from './wTConnectPaymentsSummaryBalan
 import { WTConnectRequirements } from './wTConnectRequirements';
 import { WTCountResult } from './wTCountResult';
 import { WTCurrentMerchantTermsVersion } from './wTCurrentMerchantTermsVersion';
+import { WTCustomDomain } from './wTCustomDomain';
+import { WTCustomDomainError } from './wTCustomDomainError';
+import { WTCustomDomainRequest } from './wTCustomDomainRequest';
+import { WTCustomDomainState } from './wTCustomDomainState';
+import { WTCustomDomainTXT } from './wTCustomDomainTXT';
 import { WTCustomerSearchByMemberID } from './wTCustomerSearchByMemberID';
 import { WTCustomerSearchByPhoneNumber } from './wTCustomerSearchByPhoneNumber';
 import { WTDiningCreateParams } from './wTDiningCreateParams';
@@ -1394,6 +1404,11 @@ let typeMap: {[index: string]: any} = {
     "WTConnectRequirements": WTConnectRequirements,
     "WTCountResult": WTCountResult,
     "WTCurrentMerchantTermsVersion": WTCurrentMerchantTermsVersion,
+    "WTCustomDomain": WTCustomDomain,
+    "WTCustomDomainError": WTCustomDomainError,
+    "WTCustomDomainRequest": WTCustomDomainRequest,
+    "WTCustomDomainState": WTCustomDomainState,
+    "WTCustomDomainTXT": WTCustomDomainTXT,
     "WTCustomerSearchByMemberID": WTCustomerSearchByMemberID,
     "WTCustomerSearchByPhoneNumber": WTCustomerSearchByPhoneNumber,
     "WTDiningCreateParams": WTDiningCreateParams,
