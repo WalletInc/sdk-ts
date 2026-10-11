@@ -13,7 +13,7 @@ The official server-side TypeScript / Node.js SDK for the [Wallet Inc](https://w
 
 - Website: https://wallet.inc
 - Developer docs: https://wallet.dev
-- API status: https://uptime.wallet.inc
+- API status: https://status.wallet.inc
 - All SDKs: https://github.com/walletinc
 
 ## Installation
