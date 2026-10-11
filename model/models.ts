@@ -382,6 +382,12 @@ export * from './wTLeadFiInquiryResult';
 export * from './wTLocalInstance';
 export * from './wTLoungeCreateParams';
 export * from './wTLoungeUpdateParams';
+export * from './wTMediaFile';
+export * from './wTMediaFileStatus';
+export * from './wTMediaProcessedReport';
+export * from './wTMediaProcessedReportStatus';
+export * from './wTMediaUploadRequest';
+export * from './wTMediaUploadTicket';
 export * from './wTMember';
 export * from './wTMemberCreationParams';
 export * from './wTMembershipTier';
@@ -446,6 +452,7 @@ export * from './wTQuickLinkLinkBookSectionID';
 export * from './wTQuickLinkSectionCreateParams';
 export * from './wTQuickLinkSectionUpdateParams';
 export * from './wTQuickLinkUpdateParams';
+export * from './wTQuietHoursStatus';
 export * from './wTRole';
 export * from './wTRoomRateCreateParams';
 export * from './wTRoomRateUpdateParams';
@@ -910,6 +917,12 @@ import { WTLeadFiInquiryResult } from './wTLeadFiInquiryResult';
 import { WTLocalInstance } from './wTLocalInstance';
 import { WTLoungeCreateParams } from './wTLoungeCreateParams';
 import { WTLoungeUpdateParams } from './wTLoungeUpdateParams';
+import { WTMediaFile } from './wTMediaFile';
+import { WTMediaFileStatus } from './wTMediaFileStatus';
+import { WTMediaProcessedReport } from './wTMediaProcessedReport';
+import { WTMediaProcessedReportStatus } from './wTMediaProcessedReportStatus';
+import { WTMediaUploadRequest } from './wTMediaUploadRequest';
+import { WTMediaUploadTicket } from './wTMediaUploadTicket';
 import { WTMember } from './wTMember';
 import { WTMemberCreationParams } from './wTMemberCreationParams';
 import { WTMembershipTier } from './wTMembershipTier';
@@ -974,6 +987,7 @@ import { WTQuickLinkLinkBookSectionID } from './wTQuickLinkLinkBookSectionID';
 import { WTQuickLinkSectionCreateParams } from './wTQuickLinkSectionCreateParams';
 import { WTQuickLinkSectionUpdateParams } from './wTQuickLinkSectionUpdateParams';
 import { WTQuickLinkUpdateParams } from './wTQuickLinkUpdateParams';
+import { WTQuietHoursStatus } from './wTQuietHoursStatus';
 import { WTRole } from './wTRole';
 import { WTRoomRateCreateParams } from './wTRoomRateCreateParams';
 import { WTRoomRateUpdateParams } from './wTRoomRateUpdateParams';
@@ -1447,6 +1461,12 @@ let typeMap: {[index: string]: any} = {
     "WTLocalInstance": WTLocalInstance,
     "WTLoungeCreateParams": WTLoungeCreateParams,
     "WTLoungeUpdateParams": WTLoungeUpdateParams,
+    "WTMediaFile": WTMediaFile,
+    "WTMediaFileStatus": WTMediaFileStatus,
+    "WTMediaProcessedReport": WTMediaProcessedReport,
+    "WTMediaProcessedReportStatus": WTMediaProcessedReportStatus,
+    "WTMediaUploadRequest": WTMediaUploadRequest,
+    "WTMediaUploadTicket": WTMediaUploadTicket,
     "WTMember": WTMember,
     "WTMemberCreationParams": WTMemberCreationParams,
     "WTMembershipTier": WTMembershipTier,
@@ -1511,6 +1531,7 @@ let typeMap: {[index: string]: any} = {
     "WTQuickLinkSectionCreateParams": WTQuickLinkSectionCreateParams,
     "WTQuickLinkSectionUpdateParams": WTQuickLinkSectionUpdateParams,
     "WTQuickLinkUpdateParams": WTQuickLinkUpdateParams,
+    "WTQuietHoursStatus": WTQuietHoursStatus,
     "WTRole": WTRole,
     "WTRoomRateCreateParams": WTRoomRateCreateParams,
     "WTRoomRateUpdateParams": WTRoomRateUpdateParams,

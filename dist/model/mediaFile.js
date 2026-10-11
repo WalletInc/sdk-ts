@@ -17,12 +17,12 @@ MediaFile.attributeTypeMap = [
     {
         "name": "createdAt",
         "baseName": "createdAt",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "updatedAt",
         "baseName": "updatedAt",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "merchantID",
@@ -58,6 +58,11 @@ MediaFile.attributeTypeMap = [
         "name": "employeeID",
         "baseName": "employeeID",
         "type": "string"
+    },
+    {
+        "name": "status",
+        "baseName": "status",
+        "type": "WTMediaFileStatus"
     }
 ];
 //# sourceMappingURL=mediaFile.js.map

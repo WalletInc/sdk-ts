@@ -6,6 +6,7 @@ import { InboundSMS } from '../model/inboundSMS';
 import { OutboundSMS } from '../model/outboundSMS';
 import { SSOutboundStatuses } from '../model/sSOutboundStatuses';
 import { WTCountResult } from '../model/wTCountResult';
+import { WTQuietHoursStatus } from '../model/wTQuietHoursStatus';
 import { WTSegmentEstimate } from '../model/wTSegmentEstimate';
 import { WTSegmentEstimateRequest } from '../model/wTSegmentEstimateRequest';
 import { WTSendFreezeStatus } from '../model/wTSendFreezeStatus';
@@ -111,6 +112,14 @@ export declare class SMSMessagesApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: FetchOutboundSMSByPage200Response;
+    }>;
+    fetchSMSQuietHoursStatus(at?: string, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTQuietHoursStatus;
     }>;
     fetchSendFreezeStatus(options?: {
         headers: {

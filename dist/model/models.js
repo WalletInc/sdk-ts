@@ -397,6 +397,12 @@ __exportStar(require("./wTLeadFiInquiryResult"), exports);
 __exportStar(require("./wTLocalInstance"), exports);
 __exportStar(require("./wTLoungeCreateParams"), exports);
 __exportStar(require("./wTLoungeUpdateParams"), exports);
+__exportStar(require("./wTMediaFile"), exports);
+__exportStar(require("./wTMediaFileStatus"), exports);
+__exportStar(require("./wTMediaProcessedReport"), exports);
+__exportStar(require("./wTMediaProcessedReportStatus"), exports);
+__exportStar(require("./wTMediaUploadRequest"), exports);
+__exportStar(require("./wTMediaUploadTicket"), exports);
 __exportStar(require("./wTMember"), exports);
 __exportStar(require("./wTMemberCreationParams"), exports);
 __exportStar(require("./wTMembershipTier"), exports);
@@ -461,6 +467,7 @@ __exportStar(require("./wTQuickLinkLinkBookSectionID"), exports);
 __exportStar(require("./wTQuickLinkSectionCreateParams"), exports);
 __exportStar(require("./wTQuickLinkSectionUpdateParams"), exports);
 __exportStar(require("./wTQuickLinkUpdateParams"), exports);
+__exportStar(require("./wTQuietHoursStatus"), exports);
 __exportStar(require("./wTRole"), exports);
 __exportStar(require("./wTRoomRateCreateParams"), exports);
 __exportStar(require("./wTRoomRateUpdateParams"), exports);
@@ -911,6 +918,12 @@ const wTLeadFiInquiryResult_1 = require("./wTLeadFiInquiryResult");
 const wTLocalInstance_1 = require("./wTLocalInstance");
 const wTLoungeCreateParams_1 = require("./wTLoungeCreateParams");
 const wTLoungeUpdateParams_1 = require("./wTLoungeUpdateParams");
+const wTMediaFile_1 = require("./wTMediaFile");
+const wTMediaFileStatus_1 = require("./wTMediaFileStatus");
+const wTMediaProcessedReport_1 = require("./wTMediaProcessedReport");
+const wTMediaProcessedReportStatus_1 = require("./wTMediaProcessedReportStatus");
+const wTMediaUploadRequest_1 = require("./wTMediaUploadRequest");
+const wTMediaUploadTicket_1 = require("./wTMediaUploadTicket");
 const wTMember_1 = require("./wTMember");
 const wTMemberCreationParams_1 = require("./wTMemberCreationParams");
 const wTMembershipTier_1 = require("./wTMembershipTier");
@@ -975,6 +988,7 @@ const wTQuickLinkLinkBookSectionID_1 = require("./wTQuickLinkLinkBookSectionID")
 const wTQuickLinkSectionCreateParams_1 = require("./wTQuickLinkSectionCreateParams");
 const wTQuickLinkSectionUpdateParams_1 = require("./wTQuickLinkSectionUpdateParams");
 const wTQuickLinkUpdateParams_1 = require("./wTQuickLinkUpdateParams");
+const wTQuietHoursStatus_1 = require("./wTQuietHoursStatus");
 const wTRole_1 = require("./wTRole");
 const wTRoomRateCreateParams_1 = require("./wTRoomRateCreateParams");
 const wTRoomRateUpdateParams_1 = require("./wTRoomRateUpdateParams");
@@ -1444,6 +1458,12 @@ let typeMap = {
     "WTLocalInstance": wTLocalInstance_1.WTLocalInstance,
     "WTLoungeCreateParams": wTLoungeCreateParams_1.WTLoungeCreateParams,
     "WTLoungeUpdateParams": wTLoungeUpdateParams_1.WTLoungeUpdateParams,
+    "WTMediaFile": wTMediaFile_1.WTMediaFile,
+    "WTMediaFileStatus": wTMediaFileStatus_1.WTMediaFileStatus,
+    "WTMediaProcessedReport": wTMediaProcessedReport_1.WTMediaProcessedReport,
+    "WTMediaProcessedReportStatus": wTMediaProcessedReportStatus_1.WTMediaProcessedReportStatus,
+    "WTMediaUploadRequest": wTMediaUploadRequest_1.WTMediaUploadRequest,
+    "WTMediaUploadTicket": wTMediaUploadTicket_1.WTMediaUploadTicket,
     "WTMember": wTMember_1.WTMember,
     "WTMemberCreationParams": wTMemberCreationParams_1.WTMemberCreationParams,
     "WTMembershipTier": wTMembershipTier_1.WTMembershipTier,
@@ -1508,6 +1528,7 @@ let typeMap = {
     "WTQuickLinkSectionCreateParams": wTQuickLinkSectionCreateParams_1.WTQuickLinkSectionCreateParams,
     "WTQuickLinkSectionUpdateParams": wTQuickLinkSectionUpdateParams_1.WTQuickLinkSectionUpdateParams,
     "WTQuickLinkUpdateParams": wTQuickLinkUpdateParams_1.WTQuickLinkUpdateParams,
+    "WTQuietHoursStatus": wTQuietHoursStatus_1.WTQuietHoursStatus,
     "WTRole": wTRole_1.WTRole,
     "WTRoomRateCreateParams": wTRoomRateCreateParams_1.WTRoomRateCreateParams,
     "WTRoomRateUpdateParams": wTRoomRateUpdateParams_1.WTRoomRateUpdateParams,

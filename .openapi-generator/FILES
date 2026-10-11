@@ -448,6 +448,12 @@ model/wTLeadFiInquiryResult.ts
 model/wTLocalInstance.ts
 model/wTLoungeCreateParams.ts
 model/wTLoungeUpdateParams.ts
+model/wTMediaFile.ts
+model/wTMediaFileStatus.ts
+model/wTMediaProcessedReport.ts
+model/wTMediaProcessedReportStatus.ts
+model/wTMediaUploadRequest.ts
+model/wTMediaUploadTicket.ts
 model/wTMember.ts
 model/wTMemberCreationParams.ts
 model/wTMembershipTier.ts
@@ -512,6 +518,7 @@ model/wTQuickLinkLinkBookSectionID.ts
 model/wTQuickLinkSectionCreateParams.ts
 model/wTQuickLinkSectionUpdateParams.ts
 model/wTQuickLinkUpdateParams.ts
+model/wTQuietHoursStatus.ts
 model/wTRole.ts
 model/wTRoomRateCreateParams.ts
 model/wTRoomRateUpdateParams.ts

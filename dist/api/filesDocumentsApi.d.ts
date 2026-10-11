@@ -8,6 +8,8 @@ import { WTEmployeeCreateDocument } from '../model/wTEmployeeCreateDocument';
 import { WTEmployeeCreateMediaFile } from '../model/wTEmployeeCreateMediaFile';
 import { WTEmployeeFileCreate } from '../model/wTEmployeeFileCreate';
 import { WTEmployeeS3FilePresign } from '../model/wTEmployeeS3FilePresign';
+import { WTMediaUploadRequest } from '../model/wTMediaUploadRequest';
+import { WTMediaUploadTicket } from '../model/wTMediaUploadTicket';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum FilesDocumentsApiApiKeys {
@@ -110,5 +112,13 @@ export declare class FilesDocumentsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: PresignedPost;
+    }>;
+    requestMediaFileUpload(wTMediaUploadRequest: WTMediaUploadRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTMediaUploadTicket;
     }>;
 }
