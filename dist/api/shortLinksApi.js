@@ -371,7 +371,7 @@ class ShortLinksApi {
             });
         });
     }
-    fetchMerchantURLRequestsPaged(id, page, limit, options = { headers: {} }) {
+    fetchMerchantURLRequestsPaged(id, page, limit, trafficClass, options = { headers: {} }) {
         return __awaiter(this, void 0, void 0, function* () {
             const localVarPath = this.basePath + '/business/merchantUrl/requests/{id}/paged'
                 .replace('{' + 'id' + '}', encodeURIComponent(String(id)));
@@ -393,6 +393,9 @@ class ShortLinksApi {
             }
             if (limit !== undefined) {
                 localVarQueryParameters['limit'] = models_1.ObjectSerializer.serialize(limit, "number");
+            }
+            if (trafficClass !== undefined) {
+                localVarQueryParameters['trafficClass'] = models_1.ObjectSerializer.serialize(trafficClass, "WTTrafficClass");
             }
             Object.assign(localVarHeaderParams, options.headers);
             let localVarUseFormData = false;

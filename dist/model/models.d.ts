@@ -491,6 +491,7 @@ export * from './wTTicket';
 export * from './wTTicketCreateParams';
 export * from './wTTicketReachStats';
 export * from './wTTicketUpdateParams';
+export * from './wTTrafficClass';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
 export * from './wTTwilioVerifyAuthyCodeResponse';

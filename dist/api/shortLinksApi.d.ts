@@ -4,6 +4,7 @@ import { FetchMerchantURLRequestsPaged200Response } from '../model/fetchMerchant
 import { MerchantURL } from '../model/merchantURL';
 import { WTMerchantURLCreate } from '../model/wTMerchantURLCreate';
 import { WTMerchantURLUpdate } from '../model/wTMerchantURLUpdate';
+import { WTTrafficClass } from '../model/wTTrafficClass';
 import { WalletPageView } from '../model/walletPageView';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
@@ -68,7 +69,7 @@ export declare class ShortLinksApi {
         response: http.IncomingMessage;
         body: Array<WalletPageView>;
     }>;
-    fetchMerchantURLRequestsPaged(id: string, page?: number, limit?: number, options?: {
+    fetchMerchantURLRequestsPaged(id: string, page?: number, limit?: number, trafficClass?: WTTrafficClass, options?: {
         headers: {
             [name: string]: string;
         };

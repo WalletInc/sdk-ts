@@ -505,6 +505,7 @@ __exportStar(require("./wTTicket"), exports);
 __exportStar(require("./wTTicketCreateParams"), exports);
 __exportStar(require("./wTTicketReachStats"), exports);
 __exportStar(require("./wTTicketUpdateParams"), exports);
+__exportStar(require("./wTTrafficClass"), exports);
 __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCodeResponse"), exports);
@@ -1026,6 +1027,7 @@ const wTTicket_1 = require("./wTTicket");
 const wTTicketCreateParams_1 = require("./wTTicketCreateParams");
 const wTTicketReachStats_1 = require("./wTTicketReachStats");
 const wTTicketUpdateParams_1 = require("./wTTicketUpdateParams");
+const wTTrafficClass_1 = require("./wTTrafficClass");
 const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
 const wTTwilioVerifyAuthyCodeResponse_1 = require("./wTTwilioVerifyAuthyCodeResponse");
@@ -1566,6 +1568,7 @@ let typeMap = {
     "WTTicketCreateParams": wTTicketCreateParams_1.WTTicketCreateParams,
     "WTTicketReachStats": wTTicketReachStats_1.WTTicketReachStats,
     "WTTicketUpdateParams": wTTicketUpdateParams_1.WTTicketUpdateParams,
+    "WTTrafficClass": wTTrafficClass_1.WTTrafficClass,
     "WTTwilioRequestAuthyCode": wTTwilioRequestAuthyCode_1.WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
     "WTTwilioVerifyAuthyCodeResponse": wTTwilioVerifyAuthyCodeResponse_1.WTTwilioVerifyAuthyCodeResponse,

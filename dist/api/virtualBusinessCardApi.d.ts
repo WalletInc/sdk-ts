@@ -2,6 +2,7 @@
 import http from 'http';
 import { FetchMerchantURLRequestsPaged200Response } from '../model/fetchMerchantURLRequestsPaged200Response';
 import { VirtualBusinessCard } from '../model/virtualBusinessCard';
+import { WTTrafficClass } from '../model/wTTrafficClass';
 import { WTVirtualBusinessCardCreateParams } from '../model/wTVirtualBusinessCardCreateParams';
 import { WTVirtualBusinessCardUpdateParams } from '../model/wTVirtualBusinessCardUpdateParams';
 import { WalletPageView } from '../model/walletPageView';
@@ -68,7 +69,7 @@ export declare class VirtualBusinessCardApi {
         response: http.IncomingMessage;
         body: Array<WalletPageView>;
     }>;
-    fetchVirtualBusinessCardRequestsPaged(id: string, page?: number, limit?: number, options?: {
+    fetchVirtualBusinessCardRequestsPaged(id: string, page?: number, limit?: number, trafficClass?: WTTrafficClass, options?: {
         headers: {
             [name: string]: string;
         };

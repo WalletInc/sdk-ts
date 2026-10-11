@@ -556,6 +556,7 @@ model/wTTicket.ts
 model/wTTicketCreateParams.ts
 model/wTTicketReachStats.ts
 model/wTTicketUpdateParams.ts
+model/wTTrafficClass.ts
 model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
 model/wTTwilioVerifyAuthyCodeResponse.ts
