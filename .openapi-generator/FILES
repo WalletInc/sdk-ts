@@ -512,6 +512,7 @@ model/wTProductUpdateParams.ts
 model/wTPromoCodeCreateParams.ts
 model/wTPromoCodeUpdateParams.ts
 model/wTPublicBranding.ts
+model/wTPublicItemBranding.ts
 model/wTPublicVanityPage.ts
 model/wTPublicVanityPageMerchant.ts
 model/wTQRCodeDesign.ts

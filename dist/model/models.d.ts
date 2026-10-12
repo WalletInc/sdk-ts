@@ -447,6 +447,7 @@ export * from './wTProductUpdateParams';
 export * from './wTPromoCodeCreateParams';
 export * from './wTPromoCodeUpdateParams';
 export * from './wTPublicBranding';
+export * from './wTPublicItemBranding';
 export * from './wTPublicVanityPage';
 export * from './wTPublicVanityPageMerchant';
 export * from './wTQRCodeDesign';

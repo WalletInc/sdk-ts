@@ -461,6 +461,7 @@ __exportStar(require("./wTProductUpdateParams"), exports);
 __exportStar(require("./wTPromoCodeCreateParams"), exports);
 __exportStar(require("./wTPromoCodeUpdateParams"), exports);
 __exportStar(require("./wTPublicBranding"), exports);
+__exportStar(require("./wTPublicItemBranding"), exports);
 __exportStar(require("./wTPublicVanityPage"), exports);
 __exportStar(require("./wTPublicVanityPageMerchant"), exports);
 __exportStar(require("./wTQRCodeDesign"), exports);
@@ -988,6 +989,7 @@ const wTProductUpdateParams_1 = require("./wTProductUpdateParams");
 const wTPromoCodeCreateParams_1 = require("./wTPromoCodeCreateParams");
 const wTPromoCodeUpdateParams_1 = require("./wTPromoCodeUpdateParams");
 const wTPublicBranding_1 = require("./wTPublicBranding");
+const wTPublicItemBranding_1 = require("./wTPublicItemBranding");
 const wTPublicVanityPage_1 = require("./wTPublicVanityPage");
 const wTPublicVanityPageMerchant_1 = require("./wTPublicVanityPageMerchant");
 const wTQRCodeDesign_1 = require("./wTQRCodeDesign");
@@ -1534,6 +1536,7 @@ let typeMap = {
     "WTPromoCodeCreateParams": wTPromoCodeCreateParams_1.WTPromoCodeCreateParams,
     "WTPromoCodeUpdateParams": wTPromoCodeUpdateParams_1.WTPromoCodeUpdateParams,
     "WTPublicBranding": wTPublicBranding_1.WTPublicBranding,
+    "WTPublicItemBranding": wTPublicItemBranding_1.WTPublicItemBranding,
     "WTPublicVanityPage": wTPublicVanityPage_1.WTPublicVanityPage,
     "WTPublicVanityPageMerchant": wTPublicVanityPageMerchant_1.WTPublicVanityPageMerchant,
     "WTQRCodeDesign": wTQRCodeDesign_1.WTQRCodeDesign,

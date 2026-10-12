@@ -446,6 +446,7 @@ export * from './wTProductUpdateParams';
 export * from './wTPromoCodeCreateParams';
 export * from './wTPromoCodeUpdateParams';
 export * from './wTPublicBranding';
+export * from './wTPublicItemBranding';
 export * from './wTPublicVanityPage';
 export * from './wTPublicVanityPageMerchant';
 export * from './wTQRCodeDesign';
@@ -987,6 +988,7 @@ import { WTProductUpdateParams } from './wTProductUpdateParams';
 import { WTPromoCodeCreateParams } from './wTPromoCodeCreateParams';
 import { WTPromoCodeUpdateParams } from './wTPromoCodeUpdateParams';
 import { WTPublicBranding } from './wTPublicBranding';
+import { WTPublicItemBranding } from './wTPublicItemBranding';
 import { WTPublicVanityPage } from './wTPublicVanityPage';
 import { WTPublicVanityPageMerchant } from './wTPublicVanityPageMerchant';
 import { WTQRCodeDesign } from './wTQRCodeDesign';
@@ -1537,6 +1539,7 @@ let typeMap: {[index: string]: any} = {
     "WTPromoCodeCreateParams": WTPromoCodeCreateParams,
     "WTPromoCodeUpdateParams": WTPromoCodeUpdateParams,
     "WTPublicBranding": WTPublicBranding,
+    "WTPublicItemBranding": WTPublicItemBranding,
     "WTPublicVanityPage": WTPublicVanityPage,
     "WTPublicVanityPageMerchant": WTPublicVanityPageMerchant,
     "WTQRCodeDesign": WTQRCodeDesign,
