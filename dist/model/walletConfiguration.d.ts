@@ -3,9 +3,11 @@ import { WTWalletConfigurationSaveWalletRecordDonationLabel } from './wTWalletCo
 import { WTWalletConfigurationSaveWalletRecordGooglePassStyle } from './wTWalletConfigurationSaveWalletRecordGooglePassStyle';
 import { WTWalletConfigurationSaveWalletRecordPassBrandKit } from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 import { WTWalletConfigurationSaveWalletRecordSmsOptInSourceID } from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
+import { WTWalletHeaderStyle } from './wTWalletHeaderStyle';
 export declare class WalletConfiguration extends null<String, any> {
     'headerBackgroundColor': any | null;
     'headerButtonColor': any | null;
+    'headerStyle'?: WTWalletHeaderStyle;
     'leftMenuHeaderBackgroundColor': any | null;
     'leftMenuHeaderFontColor': any | null;
     'leftMenuSectionBackgroundColor': any | null;

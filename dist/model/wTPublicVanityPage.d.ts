@@ -1,10 +1,12 @@
 import { WTPublicVanityPageMerchant } from './wTPublicVanityPageMerchant';
+import { WTWalletHeaderStyle } from './wTWalletHeaderStyle';
 export declare class WTPublicVanityPage extends null<String, any> {
     'id'?: string;
     'merchantID'?: string;
     'vanityPageWalletPrefix'?: string;
     'companyLogoURL'?: string;
     'headerBackgroundColor'?: string;
+    'headerStyle'?: WTWalletHeaderStyle;
     'mobileAppIconURL'?: string;
     'androidSHA256Fingerprint'?: any | null;
     'isCall'?: boolean;

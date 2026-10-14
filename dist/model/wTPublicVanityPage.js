@@ -35,6 +35,11 @@ WTPublicVanityPage.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "headerStyle",
+        "baseName": "headerStyle",
+        "type": "WTWalletHeaderStyle"
+    },
+    {
         "name": "mobileAppIconURL",
         "baseName": "mobileAppIconURL",
         "type": "string"

@@ -516,6 +516,7 @@ export * from './wTWalletConfigurationSaveWalletRecordDonationLabel';
 export * from './wTWalletConfigurationSaveWalletRecordGooglePassStyle';
 export * from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 export * from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
+export * from './wTWalletHeaderStyle';
 export * from './wTWalletItemRedemption';
 export * from './wTWalletObjectPrefixCounts';
 export * from './wTWalletPageView';
@@ -1059,6 +1060,7 @@ import { WTWalletConfigurationSaveWalletRecordDonationLabel } from './wTWalletCo
 import { WTWalletConfigurationSaveWalletRecordGooglePassStyle } from './wTWalletConfigurationSaveWalletRecordGooglePassStyle';
 import { WTWalletConfigurationSaveWalletRecordPassBrandKit } from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 import { WTWalletConfigurationSaveWalletRecordSmsOptInSourceID } from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
+import { WTWalletHeaderStyle } from './wTWalletHeaderStyle';
 import { WTWalletItemRedemption } from './wTWalletItemRedemption';
 import { WTWalletObjectPrefixCounts } from './wTWalletObjectPrefixCounts';
 import { WTWalletPageView } from './wTWalletPageView';
@@ -1611,6 +1613,7 @@ let typeMap: {[index: string]: any} = {
     "WTWalletConfigurationSaveWalletRecordGooglePassStyle": WTWalletConfigurationSaveWalletRecordGooglePassStyle,
     "WTWalletConfigurationSaveWalletRecordPassBrandKit": WTWalletConfigurationSaveWalletRecordPassBrandKit,
     "WTWalletConfigurationSaveWalletRecordSmsOptInSourceID": WTWalletConfigurationSaveWalletRecordSmsOptInSourceID,
+    "WTWalletHeaderStyle": WTWalletHeaderStyle,
     "WTWalletItemRedemption": WTWalletItemRedemption,
     "WTWalletObjectPrefixCounts": WTWalletObjectPrefixCounts,
     "WTWalletPageView": WTWalletPageView,

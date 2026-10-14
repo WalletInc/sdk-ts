@@ -20,6 +20,11 @@ WTWalletConfigurationSaveWalletRecord.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "headerStyle",
+        "baseName": "headerStyle",
+        "type": "WTWalletHeaderStyle"
+    },
+    {
         "name": "leftMenuHeaderBackgroundColor",
         "baseName": "leftMenuHeaderBackgroundColor",
         "type": "any"

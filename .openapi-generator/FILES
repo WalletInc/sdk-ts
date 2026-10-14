@@ -582,6 +582,7 @@ model/wTWalletConfigurationSaveWalletRecordDonationLabel.ts
 model/wTWalletConfigurationSaveWalletRecordGooglePassStyle.ts
 model/wTWalletConfigurationSaveWalletRecordPassBrandKit.ts
 model/wTWalletConfigurationSaveWalletRecordSmsOptInSourceID.ts
+model/wTWalletHeaderStyle.ts
 model/wTWalletItemRedemption.ts
 model/wTWalletObjectPrefixCounts.ts
 model/wTWalletPageView.ts

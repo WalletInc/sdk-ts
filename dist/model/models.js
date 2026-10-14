@@ -531,6 +531,7 @@ __exportStar(require("./wTWalletConfigurationSaveWalletRecordDonationLabel"), ex
 __exportStar(require("./wTWalletConfigurationSaveWalletRecordGooglePassStyle"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecordPassBrandKit"), exports);
 __exportStar(require("./wTWalletConfigurationSaveWalletRecordSmsOptInSourceID"), exports);
+__exportStar(require("./wTWalletHeaderStyle"), exports);
 __exportStar(require("./wTWalletItemRedemption"), exports);
 __exportStar(require("./wTWalletObjectPrefixCounts"), exports);
 __exportStar(require("./wTWalletPageView"), exports);
@@ -1060,6 +1061,7 @@ const wTWalletConfigurationSaveWalletRecordDonationLabel_1 = require("./wTWallet
 const wTWalletConfigurationSaveWalletRecordGooglePassStyle_1 = require("./wTWalletConfigurationSaveWalletRecordGooglePassStyle");
 const wTWalletConfigurationSaveWalletRecordPassBrandKit_1 = require("./wTWalletConfigurationSaveWalletRecordPassBrandKit");
 const wTWalletConfigurationSaveWalletRecordSmsOptInSourceID_1 = require("./wTWalletConfigurationSaveWalletRecordSmsOptInSourceID");
+const wTWalletHeaderStyle_1 = require("./wTWalletHeaderStyle");
 const wTWalletItemRedemption_1 = require("./wTWalletItemRedemption");
 const wTWalletObjectPrefixCounts_1 = require("./wTWalletObjectPrefixCounts");
 const wTWalletPageView_1 = require("./wTWalletPageView");
@@ -1608,6 +1610,7 @@ let typeMap = {
     "WTWalletConfigurationSaveWalletRecordGooglePassStyle": wTWalletConfigurationSaveWalletRecordGooglePassStyle_1.WTWalletConfigurationSaveWalletRecordGooglePassStyle,
     "WTWalletConfigurationSaveWalletRecordPassBrandKit": wTWalletConfigurationSaveWalletRecordPassBrandKit_1.WTWalletConfigurationSaveWalletRecordPassBrandKit,
     "WTWalletConfigurationSaveWalletRecordSmsOptInSourceID": wTWalletConfigurationSaveWalletRecordSmsOptInSourceID_1.WTWalletConfigurationSaveWalletRecordSmsOptInSourceID,
+    "WTWalletHeaderStyle": wTWalletHeaderStyle_1.WTWalletHeaderStyle,
     "WTWalletItemRedemption": wTWalletItemRedemption_1.WTWalletItemRedemption,
     "WTWalletObjectPrefixCounts": wTWalletObjectPrefixCounts_1.WTWalletObjectPrefixCounts,
     "WTWalletPageView": wTWalletPageView_1.WTWalletPageView,

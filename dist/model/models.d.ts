@@ -517,6 +517,7 @@ export * from './wTWalletConfigurationSaveWalletRecordDonationLabel';
 export * from './wTWalletConfigurationSaveWalletRecordGooglePassStyle';
 export * from './wTWalletConfigurationSaveWalletRecordPassBrandKit';
 export * from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
+export * from './wTWalletHeaderStyle';
 export * from './wTWalletItemRedemption';
 export * from './wTWalletObjectPrefixCounts';
 export * from './wTWalletPageView';
