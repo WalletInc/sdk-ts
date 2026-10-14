@@ -8,6 +8,7 @@ export declare class WTCustomDomain extends null<String, any> {
     'dnsTarget': any | null;
     'txt'?: WTCustomDomainTXT;
     'error'?: WTCustomDomainError;
+    'paused'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

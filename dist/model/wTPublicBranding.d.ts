@@ -15,6 +15,7 @@ export declare class WTPublicBranding extends null<String, any> {
     'desktopFrameBackgroundColor'?: string;
     'desktopFrameBackgroundImageURL'?: string;
     'desktopFrameByline'?: string;
+    'customDomainPaused'?: boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

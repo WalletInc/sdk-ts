@@ -88,6 +88,11 @@ WTPublicBranding.attributeTypeMap = [
         "name": "desktopFrameByline",
         "baseName": "desktopFrameByline",
         "type": "string"
+    },
+    {
+        "name": "customDomainPaused",
+        "baseName": "customDomainPaused",
+        "type": "boolean"
     }
 ];
 //# sourceMappingURL=wTPublicBranding.js.map

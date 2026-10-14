@@ -38,6 +38,11 @@ WTCustomDomain.attributeTypeMap = [
         "name": "error",
         "baseName": "error",
         "type": "WTCustomDomainError"
+    },
+    {
+        "name": "paused",
+        "baseName": "paused",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTCustomDomain.js.map
