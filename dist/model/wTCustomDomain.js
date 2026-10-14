@@ -43,6 +43,16 @@ WTCustomDomain.attributeTypeMap = [
         "name": "paused",
         "baseName": "paused",
         "type": "any"
+    },
+    {
+        "name": "adoption",
+        "baseName": "adoption",
+        "type": "WTCustomDomainAdoption"
+    },
+    {
+        "name": "certificateTxt",
+        "baseName": "certificateTxt",
+        "type": "WTCustomDomainTXT"
     }
 ];
 //# sourceMappingURL=wTCustomDomain.js.map

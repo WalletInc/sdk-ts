@@ -329,6 +329,7 @@ __exportStar(require("./wTConnectRequirements"), exports);
 __exportStar(require("./wTCountResult"), exports);
 __exportStar(require("./wTCurrentMerchantTermsVersion"), exports);
 __exportStar(require("./wTCustomDomain"), exports);
+__exportStar(require("./wTCustomDomainAdoption"), exports);
 __exportStar(require("./wTCustomDomainError"), exports);
 __exportStar(require("./wTCustomDomainRequest"), exports);
 __exportStar(require("./wTCustomDomainState"), exports);
@@ -857,6 +858,7 @@ const wTConnectRequirements_1 = require("./wTConnectRequirements");
 const wTCountResult_1 = require("./wTCountResult");
 const wTCurrentMerchantTermsVersion_1 = require("./wTCurrentMerchantTermsVersion");
 const wTCustomDomain_1 = require("./wTCustomDomain");
+const wTCustomDomainAdoption_1 = require("./wTCustomDomainAdoption");
 const wTCustomDomainError_1 = require("./wTCustomDomainError");
 const wTCustomDomainRequest_1 = require("./wTCustomDomainRequest");
 const wTCustomDomainState_1 = require("./wTCustomDomainState");
@@ -1404,6 +1406,7 @@ let typeMap = {
     "WTCountResult": wTCountResult_1.WTCountResult,
     "WTCurrentMerchantTermsVersion": wTCurrentMerchantTermsVersion_1.WTCurrentMerchantTermsVersion,
     "WTCustomDomain": wTCustomDomain_1.WTCustomDomain,
+    "WTCustomDomainAdoption": wTCustomDomainAdoption_1.WTCustomDomainAdoption,
     "WTCustomDomainError": wTCustomDomainError_1.WTCustomDomainError,
     "WTCustomDomainRequest": wTCustomDomainRequest_1.WTCustomDomainRequest,
     "WTCustomDomainState": wTCustomDomainState_1.WTCustomDomainState,

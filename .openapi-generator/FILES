@@ -380,6 +380,7 @@ model/wTConnectRequirements.ts
 model/wTCountResult.ts
 model/wTCurrentMerchantTermsVersion.ts
 model/wTCustomDomain.ts
+model/wTCustomDomainAdoption.ts
 model/wTCustomDomainError.ts
 model/wTCustomDomainRequest.ts
 model/wTCustomDomainState.ts

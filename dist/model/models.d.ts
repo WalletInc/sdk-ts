@@ -315,6 +315,7 @@ export * from './wTConnectRequirements';
 export * from './wTCountResult';
 export * from './wTCurrentMerchantTermsVersion';
 export * from './wTCustomDomain';
+export * from './wTCustomDomainAdoption';
 export * from './wTCustomDomainError';
 export * from './wTCustomDomainRequest';
 export * from './wTCustomDomainState';

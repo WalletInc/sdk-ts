@@ -1,3 +1,4 @@
+import { WTCustomDomainAdoption } from './wTCustomDomainAdoption';
 import { WTCustomDomainError } from './wTCustomDomainError';
 import { WTCustomDomainState } from './wTCustomDomainState';
 import { WTCustomDomainTXT } from './wTCustomDomainTXT';
@@ -9,6 +10,8 @@ export declare class WTCustomDomain extends null<String, any> {
     'txt'?: WTCustomDomainTXT;
     'error'?: WTCustomDomainError;
     'paused'?: any | null;
+    'adoption'?: WTCustomDomainAdoption;
+    'certificateTxt'?: WTCustomDomainTXT;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

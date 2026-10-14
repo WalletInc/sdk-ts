@@ -314,6 +314,7 @@ export * from './wTConnectRequirements';
 export * from './wTCountResult';
 export * from './wTCurrentMerchantTermsVersion';
 export * from './wTCustomDomain';
+export * from './wTCustomDomainAdoption';
 export * from './wTCustomDomainError';
 export * from './wTCustomDomainRequest';
 export * from './wTCustomDomainState';
@@ -856,6 +857,7 @@ import { WTConnectRequirements } from './wTConnectRequirements';
 import { WTCountResult } from './wTCountResult';
 import { WTCurrentMerchantTermsVersion } from './wTCurrentMerchantTermsVersion';
 import { WTCustomDomain } from './wTCustomDomain';
+import { WTCustomDomainAdoption } from './wTCustomDomainAdoption';
 import { WTCustomDomainError } from './wTCustomDomainError';
 import { WTCustomDomainRequest } from './wTCustomDomainRequest';
 import { WTCustomDomainState } from './wTCustomDomainState';
@@ -1407,6 +1409,7 @@ let typeMap: {[index: string]: any} = {
     "WTCountResult": WTCountResult,
     "WTCurrentMerchantTermsVersion": WTCurrentMerchantTermsVersion,
     "WTCustomDomain": WTCustomDomain,
+    "WTCustomDomainAdoption": WTCustomDomainAdoption,
     "WTCustomDomainError": WTCustomDomainError,
     "WTCustomDomainRequest": WTCustomDomainRequest,
     "WTCustomDomainState": WTCustomDomainState,
