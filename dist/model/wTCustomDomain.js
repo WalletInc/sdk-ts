@@ -53,6 +53,11 @@ WTCustomDomain.attributeTypeMap = [
         "name": "certificateTxt",
         "baseName": "certificateTxt",
         "type": "WTCustomDomainTXT"
+    },
+    {
+        "name": "grandfathered",
+        "baseName": "grandfathered",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTCustomDomain.js.map

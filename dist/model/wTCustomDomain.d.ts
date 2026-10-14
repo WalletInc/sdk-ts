@@ -12,6 +12,7 @@ export declare class WTCustomDomain extends null<String, any> {
     'paused'?: any | null;
     'adoption'?: WTCustomDomainAdoption;
     'certificateTxt'?: WTCustomDomainTXT;
+    'grandfathered'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;
