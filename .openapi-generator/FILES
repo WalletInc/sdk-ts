@@ -568,8 +568,10 @@ model/wTTwilioRequestAuthyCode.ts
 model/wTTwilioVerifyAuthyCode.ts
 model/wTTwilioVerifyAuthyCodeResponse.ts
 model/wTVideoCreateParams.ts
+model/wTVideoOrientation.ts
 model/wTVideoPlaybackSource.ts
 model/wTVideoPlaybackSourceType.ts
+model/wTVideoStatus.ts
 model/wTVideoUpdateParams.ts
 model/wTVideoUploadProvision.ts
 model/wTVideoUploadProvisionParams.ts

@@ -17,37 +17,37 @@ Video.attributeTypeMap = [
     {
         "name": "createdAt",
         "baseName": "createdAt",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "updatedAt",
         "baseName": "updatedAt",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "title",
         "baseName": "title",
-        "type": "any"
+        "type": "string"
     },
     {
         "name": "description",
         "baseName": "description",
-        "type": "any"
+        "type": "string"
     },
     {
         "name": "orderNumber",
         "baseName": "orderNumber",
-        "type": "any"
+        "type": "number"
     },
     {
         "name": "additionalInfoURL",
         "baseName": "additionalInfoURL",
-        "type": "any"
+        "type": "string"
     },
     {
         "name": "isActive",
         "baseName": "isActive",
-        "type": "any"
+        "type": "boolean"
     },
     {
         "name": "merchantID",
@@ -68,6 +68,36 @@ Video.attributeTypeMap = [
         "name": "source",
         "baseName": "source",
         "type": "WTVideoPlaybackSource"
+    },
+    {
+        "name": "width",
+        "baseName": "width",
+        "type": "any"
+    },
+    {
+        "name": "height",
+        "baseName": "height",
+        "type": "any"
+    },
+    {
+        "name": "orientation",
+        "baseName": "orientation",
+        "type": "WTVideoOrientation"
+    },
+    {
+        "name": "durationSeconds",
+        "baseName": "durationSeconds",
+        "type": "any"
+    },
+    {
+        "name": "posterURL",
+        "baseName": "posterURL",
+        "type": "any"
+    },
+    {
+        "name": "status",
+        "baseName": "status",
+        "type": "WTVideoStatus"
     }
 ];
 //# sourceMappingURL=video.js.map

@@ -22,7 +22,7 @@ WTVideoCreateParams.attributeTypeMap = [
     {
         "name": "orderNumber",
         "baseName": "orderNumber",
-        "type": "any"
+        "type": "number"
     },
     {
         "name": "additionalInfoURL",
@@ -38,6 +38,26 @@ WTVideoCreateParams.attributeTypeMap = [
         "name": "provider",
         "baseName": "provider",
         "type": "VideoProvider"
+    },
+    {
+        "name": "width",
+        "baseName": "width",
+        "type": "any"
+    },
+    {
+        "name": "height",
+        "baseName": "height",
+        "type": "any"
+    },
+    {
+        "name": "durationSeconds",
+        "baseName": "durationSeconds",
+        "type": "any"
+    },
+    {
+        "name": "posterURL",
+        "baseName": "posterURL",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTVideoCreateParams.js.map

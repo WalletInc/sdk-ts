@@ -502,8 +502,10 @@ export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
 export * from './wTTwilioVerifyAuthyCodeResponse';
 export * from './wTVideoCreateParams';
+export * from './wTVideoOrientation';
 export * from './wTVideoPlaybackSource';
 export * from './wTVideoPlaybackSourceType';
+export * from './wTVideoStatus';
 export * from './wTVideoUpdateParams';
 export * from './wTVideoUploadProvision';
 export * from './wTVideoUploadProvisionParams';
@@ -1046,8 +1048,10 @@ import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
 import { WTTwilioVerifyAuthyCodeResponse } from './wTTwilioVerifyAuthyCodeResponse';
 import { WTVideoCreateParams } from './wTVideoCreateParams';
+import { WTVideoOrientation } from './wTVideoOrientation';
 import { WTVideoPlaybackSource } from './wTVideoPlaybackSource';
 import { WTVideoPlaybackSourceType } from './wTVideoPlaybackSourceType';
+import { WTVideoStatus } from './wTVideoStatus';
 import { WTVideoUpdateParams } from './wTVideoUpdateParams';
 import { WTVideoUploadProvision } from './wTVideoUploadProvision';
 import { WTVideoUploadProvisionParams } from './wTVideoUploadProvisionParams';
@@ -1599,8 +1603,10 @@ let typeMap: {[index: string]: any} = {
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,
     "WTTwilioVerifyAuthyCodeResponse": WTTwilioVerifyAuthyCodeResponse,
     "WTVideoCreateParams": WTVideoCreateParams,
+    "WTVideoOrientation": WTVideoOrientation,
     "WTVideoPlaybackSource": WTVideoPlaybackSource,
     "WTVideoPlaybackSourceType": WTVideoPlaybackSourceType,
+    "WTVideoStatus": WTVideoStatus,
     "WTVideoUpdateParams": WTVideoUpdateParams,
     "WTVideoUploadProvision": WTVideoUploadProvision,
     "WTVideoUploadProvisionParams": WTVideoUploadProvisionParams,

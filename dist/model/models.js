@@ -517,8 +517,10 @@ __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCodeResponse"), exports);
 __exportStar(require("./wTVideoCreateParams"), exports);
+__exportStar(require("./wTVideoOrientation"), exports);
 __exportStar(require("./wTVideoPlaybackSource"), exports);
 __exportStar(require("./wTVideoPlaybackSourceType"), exports);
+__exportStar(require("./wTVideoStatus"), exports);
 __exportStar(require("./wTVideoUpdateParams"), exports);
 __exportStar(require("./wTVideoUploadProvision"), exports);
 __exportStar(require("./wTVideoUploadProvisionParams"), exports);
@@ -1047,8 +1049,10 @@ const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
 const wTTwilioVerifyAuthyCodeResponse_1 = require("./wTTwilioVerifyAuthyCodeResponse");
 const wTVideoCreateParams_1 = require("./wTVideoCreateParams");
+const wTVideoOrientation_1 = require("./wTVideoOrientation");
 const wTVideoPlaybackSource_1 = require("./wTVideoPlaybackSource");
 const wTVideoPlaybackSourceType_1 = require("./wTVideoPlaybackSourceType");
+const wTVideoStatus_1 = require("./wTVideoStatus");
 const wTVideoUpdateParams_1 = require("./wTVideoUpdateParams");
 const wTVideoUploadProvision_1 = require("./wTVideoUploadProvision");
 const wTVideoUploadProvisionParams_1 = require("./wTVideoUploadProvisionParams");
@@ -1596,8 +1600,10 @@ let typeMap = {
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
     "WTTwilioVerifyAuthyCodeResponse": wTTwilioVerifyAuthyCodeResponse_1.WTTwilioVerifyAuthyCodeResponse,
     "WTVideoCreateParams": wTVideoCreateParams_1.WTVideoCreateParams,
+    "WTVideoOrientation": wTVideoOrientation_1.WTVideoOrientation,
     "WTVideoPlaybackSource": wTVideoPlaybackSource_1.WTVideoPlaybackSource,
     "WTVideoPlaybackSourceType": wTVideoPlaybackSourceType_1.WTVideoPlaybackSourceType,
+    "WTVideoStatus": wTVideoStatus_1.WTVideoStatus,
     "WTVideoUpdateParams": wTVideoUpdateParams_1.WTVideoUpdateParams,
     "WTVideoUploadProvision": wTVideoUploadProvision_1.WTVideoUploadProvision,
     "WTVideoUploadProvisionParams": wTVideoUploadProvisionParams_1.WTVideoUploadProvisionParams,
