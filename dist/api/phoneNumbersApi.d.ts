@@ -4,6 +4,8 @@ import { PhoneNumber } from '../model/phoneNumber';
 import { Tcpa } from '../model/tcpa';
 import { WTSMSAcquirePhoneNumber } from '../model/wTSMSAcquirePhoneNumber';
 import { WTSMSUpdatePhoneNumberConfig } from '../model/wTSMSUpdatePhoneNumberConfig';
+import { WTTCPAPrivacyRequest } from '../model/wTTCPAPrivacyRequest';
+import { WTTCPAPrivacyRequestResult } from '../model/wTTCPAPrivacyRequestResult';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum PhoneNumbersApiApiKeys {
@@ -82,6 +84,14 @@ export declare class PhoneNumbersApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: Array<Tcpa>;
+    }>;
+    recordSMSPrivacyRequest(wTTCPAPrivacyRequest: WTTCPAPrivacyRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTTCPAPrivacyRequestResult;
     }>;
     restorePhoneNumber(phoneNumberID: string, options?: {
         headers: {

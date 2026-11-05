@@ -10,6 +10,31 @@ exports.Service = Service;
 Service.discriminator = undefined;
 Service.attributeTypeMap = [
     {
+        "name": "ageRestriction",
+        "baseName": "ageRestriction",
+        "type": "WTAgeRestriction"
+    },
+    {
+        "name": "idCheckOnHandoff",
+        "baseName": "idCheckOnHandoff",
+        "type": "any"
+    },
+    {
+        "name": "isSoldOut",
+        "baseName": "isSoldOut",
+        "type": "any"
+    },
+    {
+        "name": "soldOutUntil",
+        "baseName": "soldOutUntil",
+        "type": "any"
+    },
+    {
+        "name": "fulfillmentModes",
+        "baseName": "fulfillmentModes",
+        "type": "any"
+    },
+    {
         "name": "title",
         "baseName": "title",
         "type": "any"

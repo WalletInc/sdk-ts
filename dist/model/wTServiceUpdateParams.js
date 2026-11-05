@@ -10,6 +10,31 @@ exports.WTServiceUpdateParams = WTServiceUpdateParams;
 WTServiceUpdateParams.discriminator = undefined;
 WTServiceUpdateParams.attributeTypeMap = [
     {
+        "name": "ageRestriction",
+        "baseName": "ageRestriction",
+        "type": "WTAgeRestriction"
+    },
+    {
+        "name": "idCheckOnHandoff",
+        "baseName": "idCheckOnHandoff",
+        "type": "boolean"
+    },
+    {
+        "name": "isSoldOut",
+        "baseName": "isSoldOut",
+        "type": "boolean"
+    },
+    {
+        "name": "soldOutUntil",
+        "baseName": "soldOutUntil",
+        "type": "Date"
+    },
+    {
+        "name": "fulfillmentModes",
+        "baseName": "fulfillmentModes",
+        "type": "any"
+    },
+    {
         "name": "title",
         "baseName": "title",
         "type": "any"

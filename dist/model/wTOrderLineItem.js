@@ -38,6 +38,21 @@ WTOrderLineItem.attributeTypeMap = [
         "name": "quantity",
         "baseName": "quantity",
         "type": "any"
+    },
+    {
+        "name": "note",
+        "baseName": "note",
+        "type": "any"
+    },
+    {
+        "name": "menuItemID",
+        "baseName": "menuItemID",
+        "type": "any"
+    },
+    {
+        "name": "options",
+        "baseName": "options",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTOrderLineItem.js.map

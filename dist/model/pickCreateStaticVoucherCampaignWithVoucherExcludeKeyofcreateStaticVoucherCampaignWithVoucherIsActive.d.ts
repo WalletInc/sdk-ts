@@ -13,6 +13,7 @@ export declare class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreat
     'memberID'?: string;
     'offerAmountCents': number;
     'cellPhone'?: string;
+    'guestInstructions'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

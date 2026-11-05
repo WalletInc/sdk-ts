@@ -5,6 +5,7 @@ import { WTVideoPlaybackSource } from './wTVideoPlaybackSource';
 import { WTVideoStatus } from './wTVideoStatus';
 export declare class Video extends null<String, any> {
     'id': AmenityId;
+    'pageID'?: any | null;
     'createdAt': Date;
     'updatedAt': Date;
     'title': string;
@@ -22,6 +23,7 @@ export declare class Video extends null<String, any> {
     'durationSeconds'?: any | null;
     'posterURL'?: any | null;
     'status'?: WTVideoStatus;
+    'paused'?: boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

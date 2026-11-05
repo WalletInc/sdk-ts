@@ -125,6 +125,11 @@ A2PStandardSubmission.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "privacyPolicyUrl",
+        "baseName": "privacyPolicyUrl",
+        "type": "any"
+    },
+    {
         "name": "isTwilioTermsRead",
         "baseName": "isTwilioTermsRead",
         "type": "any"
@@ -142,11 +147,6 @@ A2PStandardSubmission.attributeTypeMap = [
     {
         "name": "isPrivacyAndTosPresent",
         "baseName": "isPrivacyAndTosPresent",
-        "type": "any"
-    },
-    {
-        "name": "privacyPolicyUrl",
-        "baseName": "privacyPolicyUrl",
         "type": "any"
     },
     {

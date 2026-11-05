@@ -133,6 +133,11 @@ StaticVoucherCampaign.attributeTypeMap = [
         "name": "expirationDate",
         "baseName": "expirationDate",
         "type": "any"
+    },
+    {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=staticVoucherCampaign.js.map

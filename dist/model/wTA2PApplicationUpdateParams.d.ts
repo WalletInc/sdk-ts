@@ -31,6 +31,7 @@ export declare class WTA2PApplicationUpdateParams extends null<String, any> {
     'phoneNumber': any | null;
     'brandContactEmail'?: any | null;
     'verificationMobile'?: any | null;
+    'privacyPolicyUrl'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

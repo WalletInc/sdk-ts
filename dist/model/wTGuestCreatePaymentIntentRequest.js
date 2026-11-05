@@ -20,6 +20,16 @@ WTGuestCreatePaymentIntentRequest.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "lines",
+        "baseName": "lines",
+        "type": "any"
+    },
+    {
+        "name": "ageConfirmed",
+        "baseName": "ageConfirmed",
+        "type": "any"
+    },
+    {
         "name": "creditID",
         "baseName": "creditID",
         "type": "any"

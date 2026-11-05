@@ -67,6 +67,7 @@ var PortalPage;
     PortalPage[PortalPage["BrandingWalletPages"] = 'branding-wallet-pages'] = "BrandingWalletPages";
     PortalPage[PortalPage["Products"] = 'products'] = "Products";
     PortalPage[PortalPage["Services"] = 'services'] = "Services";
+    PortalPage[PortalPage["Menu"] = 'menu'] = "Menu";
     PortalPage[PortalPage["RoomRates"] = 'room-rates'] = "RoomRates";
     PortalPage[PortalPage["Amenities"] = 'amenities'] = "Amenities";
     PortalPage[PortalPage["Dining"] = 'dining'] = "Dining";

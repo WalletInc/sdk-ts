@@ -9,6 +9,7 @@ export declare class CreateStaticVoucherCampaignWithVoucherWithCSV extends null<
     'merchantsReferenceID'?: any | null;
     'validOnlyAtPOSRegisterIDs'?: any | null;
     'paymentDesignID': string;
+    'guestInstructions'?: any | null;
     'bucket': any | null;
     'fileName': any | null;
     'sourceID': any | null;

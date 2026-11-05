@@ -15,6 +15,11 @@ Video.attributeTypeMap = [
         "type": "AmenityId"
     },
     {
+        "name": "pageID",
+        "baseName": "pageID",
+        "type": "any"
+    },
+    {
         "name": "createdAt",
         "baseName": "createdAt",
         "type": "Date"
@@ -98,6 +103,11 @@ Video.attributeTypeMap = [
         "name": "status",
         "baseName": "status",
         "type": "WTVideoStatus"
+    },
+    {
+        "name": "paused",
+        "baseName": "paused",
+        "type": "boolean"
     }
 ];
 //# sourceMappingURL=video.js.map

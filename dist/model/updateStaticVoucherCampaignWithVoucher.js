@@ -70,6 +70,11 @@ UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
+    },
+    {
         "name": "voucherID",
         "baseName": "voucherID",
         "type": "string"

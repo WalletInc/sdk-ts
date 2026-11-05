@@ -133,6 +133,11 @@ WTStaticVoucherCampaign.attributeTypeMap = [
         "name": "expirationDate",
         "baseName": "expirationDate",
         "type": "any"
+    },
+    {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTStaticVoucherCampaign.js.map

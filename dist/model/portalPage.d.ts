@@ -63,6 +63,7 @@ export declare enum PortalPage {
     BrandingWalletPages,
     Products,
     Services,
+    Menu,
     RoomRates,
     Amenities,
     Dining,

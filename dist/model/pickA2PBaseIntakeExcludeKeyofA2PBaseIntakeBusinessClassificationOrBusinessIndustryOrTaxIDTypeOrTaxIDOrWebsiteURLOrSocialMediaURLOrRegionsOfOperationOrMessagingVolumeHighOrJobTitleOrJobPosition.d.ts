@@ -14,11 +14,11 @@ export declare class PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassific
     'postalCode': string;
     'country': string;
     'phoneNumber': string;
+    'privacyPolicyUrl'?: string;
     'isTwilioTermsRead': boolean;
     'isWalletSmsTermsRead': boolean;
     'isPricingUnderstood': boolean;
     'isPrivacyAndTosPresent': boolean;
-    'privacyPolicyUrl'?: string;
     'willObtainConsent': boolean;
     'willHonorOptOut': boolean;
     'willFollowContentRules': boolean;

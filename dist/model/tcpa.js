@@ -12,7 +12,7 @@ Tcpa.attributeTypeMap = [
     {
         "name": "cellPhone",
         "baseName": "cellPhone",
-        "type": "any"
+        "type": "string"
     },
     {
         "name": "phoneNumberID",
@@ -32,17 +32,17 @@ Tcpa.attributeTypeMap = [
     {
         "name": "createdAt",
         "baseName": "createdAt",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "updatedAt",
         "baseName": "updatedAt",
-        "type": "any"
+        "type": "Date"
     },
     {
         "name": "isActive",
         "baseName": "isActive",
-        "type": "any"
+        "type": "boolean"
     }
 ];
 //# sourceMappingURL=tcpa.js.map

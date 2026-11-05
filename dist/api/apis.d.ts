@@ -55,6 +55,8 @@ export * from './loungeApi';
 import { LoungeApi } from './loungeApi';
 export * from './membershipTiersApi';
 import { MembershipTiersApi } from './membershipTiersApi';
+export * from './menusApi';
+import { MenusApi } from './menusApi';
 export * from './merchantApi';
 import { MerchantApi } from './merchantApi';
 export * from './merchantCreditsApi';
@@ -87,6 +89,8 @@ export * from './quickLinksApi';
 import { QuickLinksApi } from './quickLinksApi';
 export * from './quickLinksSectionApi';
 import { QuickLinksSectionApi } from './quickLinksSectionApi';
+export * from './relatedItemsApi';
+import { RelatedItemsApi } from './relatedItemsApi';
 export * from './roomRatesApi';
 import { RoomRatesApi } from './roomRatesApi';
 export * from './sMSMessagesApi';
@@ -133,4 +137,4 @@ export declare class HttpError extends Error {
     constructor(response: http.IncomingMessage, body: any, statusCode?: number | undefined);
 }
 export { RequestFile } from '../model/models';
-export declare const APIS: (typeof APIKeysApi | typeof AmenitiesApi | typeof AppToPersonA2PRegistrationApi | typeof AppleWalletSubscribersApi | typeof AuthenticationApi | typeof BillingPaymentsApi | typeof BroadcastsApi | typeof ClubMembersApi | typeof CountriesApi | typeof CustomerApi | typeof DiningApi | typeof DynamicVouchersApi | typeof EmailSubscribersApi | typeof EmployeesApi | typeof FilesDocumentsApi | typeof GalleryApi | typeof GamingApi | typeof GiftCardsApi | typeof GoogleWalletSubscribersApi | typeof HelpDeskApi | typeof ImportExportApi | typeof ImportedListsApi | typeof IndustriesApi | typeof InfoGenesisReportsApi | typeof InteractionsApi | typeof KeywordAutoRespondersApi | typeof LoungeApi | typeof MembershipTiersApi | typeof MerchantApi | typeof MerchantCreditsApi | typeof NewsApi | typeof OpenAIApi | typeof OptInListsApi | typeof OrdersApi | typeof PaymentDesignsApi | typeof PerformancesApi | typeof PhoneNumbersApi | typeof PointOfSaleConfigurationApi | typeof PrizesApi | typeof ProductsApi | typeof PromotionCodesApi | typeof QRCodeDesignsApi | typeof QuickLinksApi | typeof QuickLinksSectionApi | typeof RoomRatesApi | typeof SMSMessagesApi | typeof SMSSubscribersApi | typeof ServicesApi | typeof ShopifyTerminalApi | typeof ShortLinksApi | typeof StaticVoucherCampaignsApi | typeof StaticVouchersApi | typeof StripeConnectApi | typeof SystemApi | typeof TicketsApi | typeof VideosApi | typeof VirtualBusinessCardApi | typeof WalletConfigurationApi | typeof WalletMobileTerminalApi | typeof WalletTransactionLedgerApi | typeof WalletWebTerminalApi | typeof WixTerminalApi | typeof WooCommerceTerminalApi)[];
+export declare const APIS: (typeof APIKeysApi | typeof AmenitiesApi | typeof AppToPersonA2PRegistrationApi | typeof AppleWalletSubscribersApi | typeof AuthenticationApi | typeof BillingPaymentsApi | typeof BroadcastsApi | typeof ClubMembersApi | typeof CountriesApi | typeof CustomerApi | typeof DiningApi | typeof DynamicVouchersApi | typeof EmailSubscribersApi | typeof EmployeesApi | typeof FilesDocumentsApi | typeof GalleryApi | typeof GamingApi | typeof GiftCardsApi | typeof GoogleWalletSubscribersApi | typeof HelpDeskApi | typeof ImportExportApi | typeof ImportedListsApi | typeof IndustriesApi | typeof InfoGenesisReportsApi | typeof InteractionsApi | typeof KeywordAutoRespondersApi | typeof LoungeApi | typeof MembershipTiersApi | typeof MenusApi | typeof MerchantApi | typeof MerchantCreditsApi | typeof NewsApi | typeof OpenAIApi | typeof OptInListsApi | typeof OrdersApi | typeof PaymentDesignsApi | typeof PerformancesApi | typeof PhoneNumbersApi | typeof PointOfSaleConfigurationApi | typeof PrizesApi | typeof ProductsApi | typeof PromotionCodesApi | typeof QRCodeDesignsApi | typeof QuickLinksApi | typeof QuickLinksSectionApi | typeof RelatedItemsApi | typeof RoomRatesApi | typeof SMSMessagesApi | typeof SMSSubscribersApi | typeof ServicesApi | typeof ShopifyTerminalApi | typeof ShortLinksApi | typeof StaticVoucherCampaignsApi | typeof StaticVouchersApi | typeof StripeConnectApi | typeof SystemApi | typeof TicketsApi | typeof VideosApi | typeof VirtualBusinessCardApi | typeof WalletConfigurationApi | typeof WalletMobileTerminalApi | typeof WalletTransactionLedgerApi | typeof WalletWebTerminalApi | typeof WixTerminalApi | typeof WooCommerceTerminalApi)[];

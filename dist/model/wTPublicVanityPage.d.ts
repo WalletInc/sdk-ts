@@ -16,6 +16,7 @@ export declare class WTPublicVanityPage extends null<String, any> {
     'isRepresentatives'?: boolean;
     'isProducts'?: boolean;
     'isServices'?: boolean;
+    'isMenu'?: boolean;
     'isRoomRates'?: boolean;
     'isAmenities'?: boolean;
     'isGaming'?: boolean;

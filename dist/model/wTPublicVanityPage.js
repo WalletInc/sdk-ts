@@ -85,6 +85,11 @@ WTPublicVanityPage.attributeTypeMap = [
         "type": "boolean"
     },
     {
+        "name": "isMenu",
+        "baseName": "isMenu",
+        "type": "boolean"
+    },
+    {
         "name": "isRoomRates",
         "baseName": "isRoomRates",
         "type": "boolean"

@@ -45,6 +45,11 @@ NewsArticle.attributeTypeMap = [
         "type": "AmenityId"
     },
     {
+        "name": "pageID",
+        "baseName": "pageID",
+        "type": "any"
+    },
+    {
         "name": "createdAt",
         "baseName": "createdAt",
         "type": "any"

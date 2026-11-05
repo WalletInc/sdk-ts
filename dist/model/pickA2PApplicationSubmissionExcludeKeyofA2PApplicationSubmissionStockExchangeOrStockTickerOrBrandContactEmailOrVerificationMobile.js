@@ -125,6 +125,11 @@ PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrS
         "type": "string"
     },
     {
+        "name": "privacyPolicyUrl",
+        "baseName": "privacyPolicyUrl",
+        "type": "string"
+    },
+    {
         "name": "isTwilioTermsRead",
         "baseName": "isTwilioTermsRead",
         "type": "boolean"
@@ -143,11 +148,6 @@ PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmissionStockExchangeOrS
         "name": "isPrivacyAndTosPresent",
         "baseName": "isPrivacyAndTosPresent",
         "type": "boolean"
-    },
-    {
-        "name": "privacyPolicyUrl",
-        "baseName": "privacyPolicyUrl",
-        "type": "string"
     },
     {
         "name": "willObtainConsent",

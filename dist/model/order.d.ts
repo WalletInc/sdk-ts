@@ -1,5 +1,7 @@
 import { AmenityId } from './amenityId';
 import { OrderStatus } from './orderStatus';
+import { WTAgeRestriction } from './wTAgeRestriction';
+import { WTMenuVenueType } from './wTMenuVenueType';
 export declare class Order extends null<String, any> {
     'id': AmenityId;
     'createdAt': any | null;
@@ -17,6 +19,11 @@ export declare class Order extends null<String, any> {
     'acquisitionSource'?: any | null;
     'shareId'?: any | null;
     'donorNote'?: any | null;
+    'ageRequirement'?: WTAgeRestriction;
+    'idCheckRequired'?: any | null;
+    'venueType'?: WTMenuVenueType;
+    'venueID'?: any | null;
+    'venueTitle'?: any | null;
     'lineItems': any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

@@ -138,6 +138,11 @@ WTA2PApplicationUpdateParams.attributeTypeMap = [
         "name": "verificationMobile",
         "baseName": "verificationMobile",
         "type": "any"
+    },
+    {
+        "name": "privacyPolicyUrl",
+        "baseName": "privacyPolicyUrl",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTA2PApplicationUpdateParams.js.map

@@ -68,6 +68,11 @@ PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaig
         "name": "cellPhone",
         "baseName": "cellPhone",
         "type": "string"
+    },
+    {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=pickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaignWithVoucherSourceID.js.map

@@ -38,6 +38,7 @@ export declare class WTWalletConfigurationSaveWalletRecord extends null<String, 
     'isRepresentatives'?: any | null;
     'isProducts'?: any | null;
     'isServices'?: any | null;
+    'isMenu'?: any | null;
     'isRoomRates'?: any | null;
     'isAmenities'?: any | null;
     'isGaming'?: any | null;

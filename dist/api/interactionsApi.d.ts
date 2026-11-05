@@ -12,6 +12,8 @@ import { Member } from '../model/member';
 import { SmsSubscriber } from '../model/smsSubscriber';
 import { StaticVoucher } from '../model/staticVoucher';
 import { Ticket } from '../model/ticket';
+import { WTCartPriceRequest } from '../model/wTCartPriceRequest';
+import { WTCartQuote } from '../model/wTCartQuote';
 import { WTEmailSubscriberCreateParamsWalletUI } from '../model/wTEmailSubscriberCreateParamsWalletUI';
 import { WTFetchWalletPaymentObjectsWithToken } from '../model/wTFetchWalletPaymentObjectsWithToken';
 import { WTGuestCreatePaymentIntentRequest } from '../model/wTGuestCreatePaymentIntentRequest';
@@ -214,6 +216,14 @@ export declare class InteractionsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: WTPrizeGamePlayResult;
+    }>;
+    priceGuestCart(wTCartPriceRequest: WTCartPriceRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTCartQuote;
     }>;
     requestMerchantURLRedirect(itemID: string, browserDetails: BrowserDetails, options?: {
         headers: {

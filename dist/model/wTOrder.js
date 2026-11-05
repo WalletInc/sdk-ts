@@ -90,6 +90,31 @@ WTOrder.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "ageRequirement",
+        "baseName": "ageRequirement",
+        "type": "WTAgeRestriction"
+    },
+    {
+        "name": "idCheckRequired",
+        "baseName": "idCheckRequired",
+        "type": "any"
+    },
+    {
+        "name": "venueType",
+        "baseName": "venueType",
+        "type": "WTMenuVenueType"
+    },
+    {
+        "name": "venueID",
+        "baseName": "venueID",
+        "type": "any"
+    },
+    {
+        "name": "venueTitle",
+        "baseName": "venueTitle",
+        "type": "any"
+    },
+    {
         "name": "lineItems",
         "baseName": "lineItems",
         "type": "any"

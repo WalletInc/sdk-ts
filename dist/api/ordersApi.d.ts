@@ -1,6 +1,8 @@
 /// <reference types="node" />
 import http from 'http';
 import { WTOrder } from '../model/wTOrder';
+import { WTOrderingSettings } from '../model/wTOrderingSettings';
+import { WTOrderingSettingsUpdateParams } from '../model/wTOrderingSettingsUpdateParams';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum OrdersApiApiKeys {
@@ -32,7 +34,15 @@ export declare class OrdersApi {
         response: http.IncomingMessage;
         body: WTOrder;
     }>;
-    listOrders(options?: {
+    fetchOrderingSettings(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTOrderingSettings;
+    }>;
+    listOrders(venueID?: string, options?: {
         headers: {
             [name: string]: string;
         };
@@ -47,5 +57,13 @@ export declare class OrdersApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: WTOrder;
+    }>;
+    updateOrderingSettings(wTOrderingSettingsUpdateParams: WTOrderingSettingsUpdateParams, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTOrderingSettings;
     }>;
 }

@@ -275,6 +275,7 @@ export * from './wTAdvertisementCredit';
 export * from './wTAdvertisementCreditCreateParams';
 export * from './wTAdvertisementCreditScan';
 export * from './wTAdvertisementCreditUpdateParams';
+export * from './wTAgeRestriction';
 export * from './wTAmenityCreateParams';
 export * from './wTAmenityUpdateParams';
 export * from './wTAndroidKeystoreResponse';
@@ -294,11 +295,18 @@ export * from './wTAutoResponderHitOutcome';
 export * from './wTAutoResponderUpdateParams';
 export * from './wTBillingChangePlan';
 export * from './wTBillingChangePlanBillingCadence';
+export * from './wTBillingKeepPlanResponse';
 export * from './wTBillingSavePaymentMethod';
 export * from './wTBillingSetIndustry';
 export * from './wTBillingVerifyPaymentMethodResponse';
 export * from './wTBillingVerifyPaymentMethodResponseBillingCadence';
 export * from './wTBrandingFooterLink';
+export * from './wTCartLineInput';
+export * from './wTCartLineOption';
+export * from './wTCartLineProblem';
+export * from './wTCartLineQuote';
+export * from './wTCartPriceRequest';
+export * from './wTCartQuote';
 export * from './wTCertificateDealCreateRequest';
 export * from './wTCertificateDealCreateRequestEntitlementType';
 export * from './wTCertificateEntitlementSnapshot';
@@ -323,6 +331,7 @@ export * from './wTCustomerSearchByMemberID';
 export * from './wTCustomerSearchByPhoneNumber';
 export * from './wTDiningCreateParams';
 export * from './wTDiningUpdateParams';
+export * from './wTDisclosureBasis';
 export * from './wTDynamicVoucher';
 export * from './wTDynamicVoucherCreateParams';
 export * from './wTDynamicVoucherRedemption';
@@ -330,6 +339,13 @@ export * from './wTDynamicVoucherRedemptionTransactionType';
 export * from './wTDynamicVoucherSummary';
 export * from './wTDynamicVoucherSummaryStatus';
 export * from './wTDynamicVoucherUpdateParams';
+export * from './wTEarlyOptIn';
+export * from './wTEarlyOptInCount';
+export * from './wTEarlyOptInImportRequest';
+export * from './wTEarlyOptInImportResult';
+export * from './wTEarlyOptInPage';
+export * from './wTEarlyOptInSkipCount';
+export * from './wTEarlyOptInTier';
 export * from './wTEmailSubscriberCreateParams';
 export * from './wTEmailSubscriberCreateParamsWalletUI';
 export * from './wTEmailSubscriberUpdateParams';
@@ -357,6 +373,7 @@ export * from './wTEmployeeUpdateRecords';
 export * from './wTFetchWalletPaymentObjectsWithToken';
 export * from './wTFinancingSoftPullRequest';
 export * from './wTFinancingSoftPullResponse';
+export * from './wTFulfillmentMode';
 export * from './wTGamingCreateParams';
 export * from './wTGamingUpdateParams';
 export * from './wTGiftCardPurchaseRequest';
@@ -396,11 +413,36 @@ export * from './wTMediaUploadRequest';
 export * from './wTMediaUploadTicket';
 export * from './wTMember';
 export * from './wTMemberCreationParams';
+export * from './wTMemberUpdateAppliedReport';
+export * from './wTMemberUpdateAppliedReportStatus';
+export * from './wTMemberUpdateJob';
+export * from './wTMemberUpdateJobRequest';
+export * from './wTMemberUpdateJobStatus';
+export * from './wTMemberUpdatePreviewReport';
+export * from './wTMemberUpdateRevertRefusal';
+export * from './wTMemberUpdateRevertRefusalReason';
+export * from './wTMemberUpdateRevertResult';
 export * from './wTMembershipTier';
 export * from './wTMembershipTierCreationParams';
 export * from './wTMembershipTierId';
 export * from './wTMembershipTierUpdateParams';
 export * from './wTMembershipTierWithMemberCount';
+export * from './wTMenu';
+export * from './wTMenuCategory';
+export * from './wTMenuCreateParams';
+export * from './wTMenuDietaryTag';
+export * from './wTMenuItem';
+export * from './wTMenuItemCreateParams';
+export * from './wTMenuItemUpdateParams';
+export * from './wTMenuOption';
+export * from './wTMenuOptionGroup';
+export * from './wTMenuOptionGroupCreateParams';
+export * from './wTMenuOptionGroupUpdateParams';
+export * from './wTMenuScheduleWindow';
+export * from './wTMenuTaxCategory';
+export * from './wTMenuUpdateParams';
+export * from './wTMenuVenue';
+export * from './wTMenuVenueType';
 export * from './wTMerchantCredit';
 export * from './wTMerchantCreditCreationParams';
 export * from './wTMerchantURLCreate';
@@ -416,6 +458,9 @@ export * from './wTOptInList';
 export * from './wTOptInListCreationParams';
 export * from './wTOrder';
 export * from './wTOrderLineItem';
+export * from './wTOrderLineOption';
+export * from './wTOrderingSettings';
+export * from './wTOrderingSettingsUpdateParams';
 export * from './wTPassBrandKit';
 export * from './wTPassStyleResponse';
 export * from './wTPassStyleResponseApple';
@@ -427,9 +472,11 @@ export * from './wTPaymentDesignCreateParams';
 export * from './wTPaymentDesignUpdateParams';
 export * from './wTPerformanceCreateParams';
 export * from './wTPerformanceUpdateParams';
+export * from './wTPlanTier';
 export * from './wTPosMachine';
 export * from './wTPosMachineCreateParams';
 export * from './wTPosMachineUpdateParams';
+export * from './wTPrivacyRequestChannel';
 export * from './wTPrizeGameActivePromotion';
 export * from './wTPrizeGamePlayLimitPeriod';
 export * from './wTPrizeGamePlayRequest';
@@ -460,6 +507,16 @@ export * from './wTQuickLinkSectionCreateParams';
 export * from './wTQuickLinkSectionUpdateParams';
 export * from './wTQuickLinkUpdateParams';
 export * from './wTQuietHoursStatus';
+export * from './wTRelatedItemAdminRef';
+export * from './wTRelatedItemRef';
+export * from './wTRelatedItemSearchResult';
+export * from './wTRelatedItemSearchResults';
+export * from './wTRelatedItemSourceType';
+export * from './wTRelatedItemStatus';
+export * from './wTRelatedItemType';
+export * from './wTRelatedItemUsage';
+export * from './wTRelatedItems';
+export * from './wTRelatedItemsUpdate';
 export * from './wTRole';
 export * from './wTRoomRateCreateParams';
 export * from './wTRoomRateUpdateParams';
@@ -490,9 +547,14 @@ export * from './wTStaticVoucherCreateParams';
 export * from './wTStaticVoucherUpdateParams';
 export * from './wTSystemApprovePhoneNumber';
 export * from './wTSystemRoleCreate';
+export * from './wTTCPAFilter';
 export * from './wTTCPAOpt';
 export * from './wTTCPAOptListID';
 export * from './wTTCPAOptSourceID';
+export * from './wTTCPAPrivacyRequest';
+export * from './wTTCPAPrivacyRequestForMerchant';
+export * from './wTTCPAPrivacyRequestForMerchantMerchantID';
+export * from './wTTCPAPrivacyRequestResult';
 export * from './wTTicket';
 export * from './wTTicketCreateParams';
 export * from './wTTicketReachStats';
@@ -521,10 +583,14 @@ export * from './wTWalletConfigurationSaveWalletRecordSmsOptInSourceID';
 export * from './wTWalletHeaderStyle';
 export * from './wTWalletItemRedemption';
 export * from './wTWalletObjectPrefixCounts';
+export * from './wTWalletOrdering';
 export * from './wTWalletPageView';
 export * from './wTWalletPageViewCount';
 export * from './wTWalletPageViewGeoPoint';
 export * from './wTWalletPassProvider';
+export * from './wTWalletSectionAccess';
+export * from './wTWalletSectionTopItem';
+export * from './wTWalletSectionViews';
 export * from './wTWhatsAppInboundWebhook';
 export * from './wTWhatsAppStatusCallback';
 export * from './walletConfiguration';
@@ -821,6 +887,7 @@ import { WTAdvertisementCredit } from './wTAdvertisementCredit';
 import { WTAdvertisementCreditCreateParams } from './wTAdvertisementCreditCreateParams';
 import { WTAdvertisementCreditScan } from './wTAdvertisementCreditScan';
 import { WTAdvertisementCreditUpdateParams } from './wTAdvertisementCreditUpdateParams';
+import { WTAgeRestriction } from './wTAgeRestriction';
 import { WTAmenityCreateParams } from './wTAmenityCreateParams';
 import { WTAmenityUpdateParams } from './wTAmenityUpdateParams';
 import { WTAndroidKeystoreResponse } from './wTAndroidKeystoreResponse';
@@ -840,11 +907,18 @@ import { WTAutoResponderHitOutcome } from './wTAutoResponderHitOutcome';
 import { WTAutoResponderUpdateParams } from './wTAutoResponderUpdateParams';
 import { WTBillingChangePlan } from './wTBillingChangePlan';
 import { WTBillingChangePlanBillingCadence } from './wTBillingChangePlanBillingCadence';
+import { WTBillingKeepPlanResponse } from './wTBillingKeepPlanResponse';
 import { WTBillingSavePaymentMethod } from './wTBillingSavePaymentMethod';
 import { WTBillingSetIndustry } from './wTBillingSetIndustry';
 import { WTBillingVerifyPaymentMethodResponse } from './wTBillingVerifyPaymentMethodResponse';
 import { WTBillingVerifyPaymentMethodResponseBillingCadence } from './wTBillingVerifyPaymentMethodResponseBillingCadence';
 import { WTBrandingFooterLink } from './wTBrandingFooterLink';
+import { WTCartLineInput } from './wTCartLineInput';
+import { WTCartLineOption } from './wTCartLineOption';
+import { WTCartLineProblem } from './wTCartLineProblem';
+import { WTCartLineQuote } from './wTCartLineQuote';
+import { WTCartPriceRequest } from './wTCartPriceRequest';
+import { WTCartQuote } from './wTCartQuote';
 import { WTCertificateDealCreateRequest } from './wTCertificateDealCreateRequest';
 import { WTCertificateDealCreateRequestEntitlementType } from './wTCertificateDealCreateRequestEntitlementType';
 import { WTCertificateEntitlementSnapshot } from './wTCertificateEntitlementSnapshot';
@@ -869,6 +943,7 @@ import { WTCustomerSearchByMemberID } from './wTCustomerSearchByMemberID';
 import { WTCustomerSearchByPhoneNumber } from './wTCustomerSearchByPhoneNumber';
 import { WTDiningCreateParams } from './wTDiningCreateParams';
 import { WTDiningUpdateParams } from './wTDiningUpdateParams';
+import { WTDisclosureBasis } from './wTDisclosureBasis';
 import { WTDynamicVoucher } from './wTDynamicVoucher';
 import { WTDynamicVoucherCreateParams } from './wTDynamicVoucherCreateParams';
 import { WTDynamicVoucherRedemption } from './wTDynamicVoucherRedemption';
@@ -876,6 +951,13 @@ import { WTDynamicVoucherRedemptionTransactionType } from './wTDynamicVoucherRed
 import { WTDynamicVoucherSummary } from './wTDynamicVoucherSummary';
 import { WTDynamicVoucherSummaryStatus } from './wTDynamicVoucherSummaryStatus';
 import { WTDynamicVoucherUpdateParams } from './wTDynamicVoucherUpdateParams';
+import { WTEarlyOptIn } from './wTEarlyOptIn';
+import { WTEarlyOptInCount } from './wTEarlyOptInCount';
+import { WTEarlyOptInImportRequest } from './wTEarlyOptInImportRequest';
+import { WTEarlyOptInImportResult } from './wTEarlyOptInImportResult';
+import { WTEarlyOptInPage } from './wTEarlyOptInPage';
+import { WTEarlyOptInSkipCount } from './wTEarlyOptInSkipCount';
+import { WTEarlyOptInTier } from './wTEarlyOptInTier';
 import { WTEmailSubscriberCreateParams } from './wTEmailSubscriberCreateParams';
 import { WTEmailSubscriberCreateParamsWalletUI } from './wTEmailSubscriberCreateParamsWalletUI';
 import { WTEmailSubscriberUpdateParams } from './wTEmailSubscriberUpdateParams';
@@ -903,6 +985,7 @@ import { WTEmployeeUpdateRecords } from './wTEmployeeUpdateRecords';
 import { WTFetchWalletPaymentObjectsWithToken } from './wTFetchWalletPaymentObjectsWithToken';
 import { WTFinancingSoftPullRequest } from './wTFinancingSoftPullRequest';
 import { WTFinancingSoftPullResponse } from './wTFinancingSoftPullResponse';
+import { WTFulfillmentMode } from './wTFulfillmentMode';
 import { WTGamingCreateParams } from './wTGamingCreateParams';
 import { WTGamingUpdateParams } from './wTGamingUpdateParams';
 import { WTGiftCardPurchaseRequest } from './wTGiftCardPurchaseRequest';
@@ -942,11 +1025,36 @@ import { WTMediaUploadRequest } from './wTMediaUploadRequest';
 import { WTMediaUploadTicket } from './wTMediaUploadTicket';
 import { WTMember } from './wTMember';
 import { WTMemberCreationParams } from './wTMemberCreationParams';
+import { WTMemberUpdateAppliedReport } from './wTMemberUpdateAppliedReport';
+import { WTMemberUpdateAppliedReportStatus } from './wTMemberUpdateAppliedReportStatus';
+import { WTMemberUpdateJob } from './wTMemberUpdateJob';
+import { WTMemberUpdateJobRequest } from './wTMemberUpdateJobRequest';
+import { WTMemberUpdateJobStatus } from './wTMemberUpdateJobStatus';
+import { WTMemberUpdatePreviewReport } from './wTMemberUpdatePreviewReport';
+import { WTMemberUpdateRevertRefusal } from './wTMemberUpdateRevertRefusal';
+import { WTMemberUpdateRevertRefusalReason } from './wTMemberUpdateRevertRefusalReason';
+import { WTMemberUpdateRevertResult } from './wTMemberUpdateRevertResult';
 import { WTMembershipTier } from './wTMembershipTier';
 import { WTMembershipTierCreationParams } from './wTMembershipTierCreationParams';
 import { WTMembershipTierId } from './wTMembershipTierId';
 import { WTMembershipTierUpdateParams } from './wTMembershipTierUpdateParams';
 import { WTMembershipTierWithMemberCount } from './wTMembershipTierWithMemberCount';
+import { WTMenu } from './wTMenu';
+import { WTMenuCategory } from './wTMenuCategory';
+import { WTMenuCreateParams } from './wTMenuCreateParams';
+import { WTMenuDietaryTag } from './wTMenuDietaryTag';
+import { WTMenuItem } from './wTMenuItem';
+import { WTMenuItemCreateParams } from './wTMenuItemCreateParams';
+import { WTMenuItemUpdateParams } from './wTMenuItemUpdateParams';
+import { WTMenuOption } from './wTMenuOption';
+import { WTMenuOptionGroup } from './wTMenuOptionGroup';
+import { WTMenuOptionGroupCreateParams } from './wTMenuOptionGroupCreateParams';
+import { WTMenuOptionGroupUpdateParams } from './wTMenuOptionGroupUpdateParams';
+import { WTMenuScheduleWindow } from './wTMenuScheduleWindow';
+import { WTMenuTaxCategory } from './wTMenuTaxCategory';
+import { WTMenuUpdateParams } from './wTMenuUpdateParams';
+import { WTMenuVenue } from './wTMenuVenue';
+import { WTMenuVenueType } from './wTMenuVenueType';
 import { WTMerchantCredit } from './wTMerchantCredit';
 import { WTMerchantCreditCreationParams } from './wTMerchantCreditCreationParams';
 import { WTMerchantURLCreate } from './wTMerchantURLCreate';
@@ -962,6 +1070,9 @@ import { WTOptInList } from './wTOptInList';
 import { WTOptInListCreationParams } from './wTOptInListCreationParams';
 import { WTOrder } from './wTOrder';
 import { WTOrderLineItem } from './wTOrderLineItem';
+import { WTOrderLineOption } from './wTOrderLineOption';
+import { WTOrderingSettings } from './wTOrderingSettings';
+import { WTOrderingSettingsUpdateParams } from './wTOrderingSettingsUpdateParams';
 import { WTPassBrandKit } from './wTPassBrandKit';
 import { WTPassStyleResponse } from './wTPassStyleResponse';
 import { WTPassStyleResponseApple } from './wTPassStyleResponseApple';
@@ -973,9 +1084,11 @@ import { WTPaymentDesignCreateParams } from './wTPaymentDesignCreateParams';
 import { WTPaymentDesignUpdateParams } from './wTPaymentDesignUpdateParams';
 import { WTPerformanceCreateParams } from './wTPerformanceCreateParams';
 import { WTPerformanceUpdateParams } from './wTPerformanceUpdateParams';
+import { WTPlanTier } from './wTPlanTier';
 import { WTPosMachine } from './wTPosMachine';
 import { WTPosMachineCreateParams } from './wTPosMachineCreateParams';
 import { WTPosMachineUpdateParams } from './wTPosMachineUpdateParams';
+import { WTPrivacyRequestChannel } from './wTPrivacyRequestChannel';
 import { WTPrizeGameActivePromotion } from './wTPrizeGameActivePromotion';
 import { WTPrizeGamePlayLimitPeriod } from './wTPrizeGamePlayLimitPeriod';
 import { WTPrizeGamePlayRequest } from './wTPrizeGamePlayRequest';
@@ -1006,6 +1119,16 @@ import { WTQuickLinkSectionCreateParams } from './wTQuickLinkSectionCreateParams
 import { WTQuickLinkSectionUpdateParams } from './wTQuickLinkSectionUpdateParams';
 import { WTQuickLinkUpdateParams } from './wTQuickLinkUpdateParams';
 import { WTQuietHoursStatus } from './wTQuietHoursStatus';
+import { WTRelatedItemAdminRef } from './wTRelatedItemAdminRef';
+import { WTRelatedItemRef } from './wTRelatedItemRef';
+import { WTRelatedItemSearchResult } from './wTRelatedItemSearchResult';
+import { WTRelatedItemSearchResults } from './wTRelatedItemSearchResults';
+import { WTRelatedItemSourceType } from './wTRelatedItemSourceType';
+import { WTRelatedItemStatus } from './wTRelatedItemStatus';
+import { WTRelatedItemType } from './wTRelatedItemType';
+import { WTRelatedItemUsage } from './wTRelatedItemUsage';
+import { WTRelatedItems } from './wTRelatedItems';
+import { WTRelatedItemsUpdate } from './wTRelatedItemsUpdate';
 import { WTRole } from './wTRole';
 import { WTRoomRateCreateParams } from './wTRoomRateCreateParams';
 import { WTRoomRateUpdateParams } from './wTRoomRateUpdateParams';
@@ -1036,9 +1159,14 @@ import { WTStaticVoucherCreateParams } from './wTStaticVoucherCreateParams';
 import { WTStaticVoucherUpdateParams } from './wTStaticVoucherUpdateParams';
 import { WTSystemApprovePhoneNumber } from './wTSystemApprovePhoneNumber';
 import { WTSystemRoleCreate } from './wTSystemRoleCreate';
+import { WTTCPAFilter } from './wTTCPAFilter';
 import { WTTCPAOpt } from './wTTCPAOpt';
 import { WTTCPAOptListID } from './wTTCPAOptListID';
 import { WTTCPAOptSourceID } from './wTTCPAOptSourceID';
+import { WTTCPAPrivacyRequest } from './wTTCPAPrivacyRequest';
+import { WTTCPAPrivacyRequestForMerchant } from './wTTCPAPrivacyRequestForMerchant';
+import { WTTCPAPrivacyRequestForMerchantMerchantID } from './wTTCPAPrivacyRequestForMerchantMerchantID';
+import { WTTCPAPrivacyRequestResult } from './wTTCPAPrivacyRequestResult';
 import { WTTicket } from './wTTicket';
 import { WTTicketCreateParams } from './wTTicketCreateParams';
 import { WTTicketReachStats } from './wTTicketReachStats';
@@ -1067,10 +1195,14 @@ import { WTWalletConfigurationSaveWalletRecordSmsOptInSourceID } from './wTWalle
 import { WTWalletHeaderStyle } from './wTWalletHeaderStyle';
 import { WTWalletItemRedemption } from './wTWalletItemRedemption';
 import { WTWalletObjectPrefixCounts } from './wTWalletObjectPrefixCounts';
+import { WTWalletOrdering } from './wTWalletOrdering';
 import { WTWalletPageView } from './wTWalletPageView';
 import { WTWalletPageViewCount } from './wTWalletPageViewCount';
 import { WTWalletPageViewGeoPoint } from './wTWalletPageViewGeoPoint';
 import { WTWalletPassProvider } from './wTWalletPassProvider';
+import { WTWalletSectionAccess } from './wTWalletSectionAccess';
+import { WTWalletSectionTopItem } from './wTWalletSectionTopItem';
+import { WTWalletSectionViews } from './wTWalletSectionViews';
 import { WTWhatsAppInboundWebhook } from './wTWhatsAppInboundWebhook';
 import { WTWhatsAppStatusCallback } from './wTWhatsAppStatusCallback';
 import { WalletConfiguration } from './walletConfiguration';
@@ -1376,6 +1508,7 @@ let typeMap: {[index: string]: any} = {
     "WTAdvertisementCreditCreateParams": WTAdvertisementCreditCreateParams,
     "WTAdvertisementCreditScan": WTAdvertisementCreditScan,
     "WTAdvertisementCreditUpdateParams": WTAdvertisementCreditUpdateParams,
+    "WTAgeRestriction": WTAgeRestriction,
     "WTAmenityCreateParams": WTAmenityCreateParams,
     "WTAmenityUpdateParams": WTAmenityUpdateParams,
     "WTAndroidKeystoreResponse": WTAndroidKeystoreResponse,
@@ -1395,11 +1528,18 @@ let typeMap: {[index: string]: any} = {
     "WTAutoResponderUpdateParams": WTAutoResponderUpdateParams,
     "WTBillingChangePlan": WTBillingChangePlan,
     "WTBillingChangePlanBillingCadence": WTBillingChangePlanBillingCadence,
+    "WTBillingKeepPlanResponse": WTBillingKeepPlanResponse,
     "WTBillingSavePaymentMethod": WTBillingSavePaymentMethod,
     "WTBillingSetIndustry": WTBillingSetIndustry,
     "WTBillingVerifyPaymentMethodResponse": WTBillingVerifyPaymentMethodResponse,
     "WTBillingVerifyPaymentMethodResponseBillingCadence": WTBillingVerifyPaymentMethodResponseBillingCadence,
     "WTBrandingFooterLink": WTBrandingFooterLink,
+    "WTCartLineInput": WTCartLineInput,
+    "WTCartLineOption": WTCartLineOption,
+    "WTCartLineProblem": WTCartLineProblem,
+    "WTCartLineQuote": WTCartLineQuote,
+    "WTCartPriceRequest": WTCartPriceRequest,
+    "WTCartQuote": WTCartQuote,
     "WTCertificateDealCreateRequest": WTCertificateDealCreateRequest,
     "WTCertificateDealCreateRequestEntitlementType": WTCertificateDealCreateRequestEntitlementType,
     "WTCertificateEntitlementSnapshot": WTCertificateEntitlementSnapshot,
@@ -1424,6 +1564,7 @@ let typeMap: {[index: string]: any} = {
     "WTCustomerSearchByPhoneNumber": WTCustomerSearchByPhoneNumber,
     "WTDiningCreateParams": WTDiningCreateParams,
     "WTDiningUpdateParams": WTDiningUpdateParams,
+    "WTDisclosureBasis": WTDisclosureBasis,
     "WTDynamicVoucher": WTDynamicVoucher,
     "WTDynamicVoucherCreateParams": WTDynamicVoucherCreateParams,
     "WTDynamicVoucherRedemption": WTDynamicVoucherRedemption,
@@ -1431,6 +1572,13 @@ let typeMap: {[index: string]: any} = {
     "WTDynamicVoucherSummary": WTDynamicVoucherSummary,
     "WTDynamicVoucherSummaryStatus": WTDynamicVoucherSummaryStatus,
     "WTDynamicVoucherUpdateParams": WTDynamicVoucherUpdateParams,
+    "WTEarlyOptIn": WTEarlyOptIn,
+    "WTEarlyOptInCount": WTEarlyOptInCount,
+    "WTEarlyOptInImportRequest": WTEarlyOptInImportRequest,
+    "WTEarlyOptInImportResult": WTEarlyOptInImportResult,
+    "WTEarlyOptInPage": WTEarlyOptInPage,
+    "WTEarlyOptInSkipCount": WTEarlyOptInSkipCount,
+    "WTEarlyOptInTier": WTEarlyOptInTier,
     "WTEmailSubscriberCreateParams": WTEmailSubscriberCreateParams,
     "WTEmailSubscriberCreateParamsWalletUI": WTEmailSubscriberCreateParamsWalletUI,
     "WTEmailSubscriberUpdateParams": WTEmailSubscriberUpdateParams,
@@ -1458,6 +1606,7 @@ let typeMap: {[index: string]: any} = {
     "WTFetchWalletPaymentObjectsWithToken": WTFetchWalletPaymentObjectsWithToken,
     "WTFinancingSoftPullRequest": WTFinancingSoftPullRequest,
     "WTFinancingSoftPullResponse": WTFinancingSoftPullResponse,
+    "WTFulfillmentMode": WTFulfillmentMode,
     "WTGamingCreateParams": WTGamingCreateParams,
     "WTGamingUpdateParams": WTGamingUpdateParams,
     "WTGiftCardPurchaseRequest": WTGiftCardPurchaseRequest,
@@ -1497,11 +1646,36 @@ let typeMap: {[index: string]: any} = {
     "WTMediaUploadTicket": WTMediaUploadTicket,
     "WTMember": WTMember,
     "WTMemberCreationParams": WTMemberCreationParams,
+    "WTMemberUpdateAppliedReport": WTMemberUpdateAppliedReport,
+    "WTMemberUpdateAppliedReportStatus": WTMemberUpdateAppliedReportStatus,
+    "WTMemberUpdateJob": WTMemberUpdateJob,
+    "WTMemberUpdateJobRequest": WTMemberUpdateJobRequest,
+    "WTMemberUpdateJobStatus": WTMemberUpdateJobStatus,
+    "WTMemberUpdatePreviewReport": WTMemberUpdatePreviewReport,
+    "WTMemberUpdateRevertRefusal": WTMemberUpdateRevertRefusal,
+    "WTMemberUpdateRevertRefusalReason": WTMemberUpdateRevertRefusalReason,
+    "WTMemberUpdateRevertResult": WTMemberUpdateRevertResult,
     "WTMembershipTier": WTMembershipTier,
     "WTMembershipTierCreationParams": WTMembershipTierCreationParams,
     "WTMembershipTierId": WTMembershipTierId,
     "WTMembershipTierUpdateParams": WTMembershipTierUpdateParams,
     "WTMembershipTierWithMemberCount": WTMembershipTierWithMemberCount,
+    "WTMenu": WTMenu,
+    "WTMenuCategory": WTMenuCategory,
+    "WTMenuCreateParams": WTMenuCreateParams,
+    "WTMenuDietaryTag": WTMenuDietaryTag,
+    "WTMenuItem": WTMenuItem,
+    "WTMenuItemCreateParams": WTMenuItemCreateParams,
+    "WTMenuItemUpdateParams": WTMenuItemUpdateParams,
+    "WTMenuOption": WTMenuOption,
+    "WTMenuOptionGroup": WTMenuOptionGroup,
+    "WTMenuOptionGroupCreateParams": WTMenuOptionGroupCreateParams,
+    "WTMenuOptionGroupUpdateParams": WTMenuOptionGroupUpdateParams,
+    "WTMenuScheduleWindow": WTMenuScheduleWindow,
+    "WTMenuTaxCategory": WTMenuTaxCategory,
+    "WTMenuUpdateParams": WTMenuUpdateParams,
+    "WTMenuVenue": WTMenuVenue,
+    "WTMenuVenueType": WTMenuVenueType,
     "WTMerchantCredit": WTMerchantCredit,
     "WTMerchantCreditCreationParams": WTMerchantCreditCreationParams,
     "WTMerchantURLCreate": WTMerchantURLCreate,
@@ -1517,6 +1691,9 @@ let typeMap: {[index: string]: any} = {
     "WTOptInListCreationParams": WTOptInListCreationParams,
     "WTOrder": WTOrder,
     "WTOrderLineItem": WTOrderLineItem,
+    "WTOrderLineOption": WTOrderLineOption,
+    "WTOrderingSettings": WTOrderingSettings,
+    "WTOrderingSettingsUpdateParams": WTOrderingSettingsUpdateParams,
     "WTPassBrandKit": WTPassBrandKit,
     "WTPassStyleResponse": WTPassStyleResponse,
     "WTPassStyleResponseApple": WTPassStyleResponseApple,
@@ -1528,9 +1705,11 @@ let typeMap: {[index: string]: any} = {
     "WTPaymentDesignUpdateParams": WTPaymentDesignUpdateParams,
     "WTPerformanceCreateParams": WTPerformanceCreateParams,
     "WTPerformanceUpdateParams": WTPerformanceUpdateParams,
+    "WTPlanTier": WTPlanTier,
     "WTPosMachine": WTPosMachine,
     "WTPosMachineCreateParams": WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": WTPosMachineUpdateParams,
+    "WTPrivacyRequestChannel": WTPrivacyRequestChannel,
     "WTPrizeGameActivePromotion": WTPrizeGameActivePromotion,
     "WTPrizeGamePlayLimitPeriod": WTPrizeGamePlayLimitPeriod,
     "WTPrizeGamePlayRequest": WTPrizeGamePlayRequest,
@@ -1561,6 +1740,16 @@ let typeMap: {[index: string]: any} = {
     "WTQuickLinkSectionUpdateParams": WTQuickLinkSectionUpdateParams,
     "WTQuickLinkUpdateParams": WTQuickLinkUpdateParams,
     "WTQuietHoursStatus": WTQuietHoursStatus,
+    "WTRelatedItemAdminRef": WTRelatedItemAdminRef,
+    "WTRelatedItemRef": WTRelatedItemRef,
+    "WTRelatedItemSearchResult": WTRelatedItemSearchResult,
+    "WTRelatedItemSearchResults": WTRelatedItemSearchResults,
+    "WTRelatedItemSourceType": WTRelatedItemSourceType,
+    "WTRelatedItemStatus": WTRelatedItemStatus,
+    "WTRelatedItemType": WTRelatedItemType,
+    "WTRelatedItemUsage": WTRelatedItemUsage,
+    "WTRelatedItems": WTRelatedItems,
+    "WTRelatedItemsUpdate": WTRelatedItemsUpdate,
     "WTRole": WTRole,
     "WTRoomRateCreateParams": WTRoomRateCreateParams,
     "WTRoomRateUpdateParams": WTRoomRateUpdateParams,
@@ -1591,9 +1780,14 @@ let typeMap: {[index: string]: any} = {
     "WTStaticVoucherUpdateParams": WTStaticVoucherUpdateParams,
     "WTSystemApprovePhoneNumber": WTSystemApprovePhoneNumber,
     "WTSystemRoleCreate": WTSystemRoleCreate,
+    "WTTCPAFilter": WTTCPAFilter,
     "WTTCPAOpt": WTTCPAOpt,
     "WTTCPAOptListID": WTTCPAOptListID,
     "WTTCPAOptSourceID": WTTCPAOptSourceID,
+    "WTTCPAPrivacyRequest": WTTCPAPrivacyRequest,
+    "WTTCPAPrivacyRequestForMerchant": WTTCPAPrivacyRequestForMerchant,
+    "WTTCPAPrivacyRequestForMerchantMerchantID": WTTCPAPrivacyRequestForMerchantMerchantID,
+    "WTTCPAPrivacyRequestResult": WTTCPAPrivacyRequestResult,
     "WTTicket": WTTicket,
     "WTTicketCreateParams": WTTicketCreateParams,
     "WTTicketReachStats": WTTicketReachStats,
@@ -1622,10 +1816,14 @@ let typeMap: {[index: string]: any} = {
     "WTWalletHeaderStyle": WTWalletHeaderStyle,
     "WTWalletItemRedemption": WTWalletItemRedemption,
     "WTWalletObjectPrefixCounts": WTWalletObjectPrefixCounts,
+    "WTWalletOrdering": WTWalletOrdering,
     "WTWalletPageView": WTWalletPageView,
     "WTWalletPageViewCount": WTWalletPageViewCount,
     "WTWalletPageViewGeoPoint": WTWalletPageViewGeoPoint,
     "WTWalletPassProvider": WTWalletPassProvider,
+    "WTWalletSectionAccess": WTWalletSectionAccess,
+    "WTWalletSectionTopItem": WTWalletSectionTopItem,
+    "WTWalletSectionViews": WTWalletSectionViews,
     "WTWhatsAppInboundWebhook": WTWhatsAppInboundWebhook,
     "WTWhatsAppStatusCallback": WTWhatsAppStatusCallback,
     "WalletConfiguration": WalletConfiguration,

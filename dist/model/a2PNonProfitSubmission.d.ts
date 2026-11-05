@@ -28,11 +28,11 @@ export declare class A2PNonProfitSubmission {
     'postalCode': any | null;
     'country': any | null;
     'phoneNumber': any | null;
+    'privacyPolicyUrl'?: any | null;
     'isTwilioTermsRead': any | null;
     'isWalletSmsTermsRead': any | null;
     'isPricingUnderstood': any | null;
     'isPrivacyAndTosPresent': any | null;
-    'privacyPolicyUrl'?: any | null;
     'willObtainConsent': any | null;
     'willHonorOptOut': any | null;
     'willFollowContentRules': any | null;

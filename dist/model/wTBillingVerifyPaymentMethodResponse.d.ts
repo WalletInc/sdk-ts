@@ -10,6 +10,7 @@ export declare class WTBillingVerifyPaymentMethodResponse extends null<String, a
     'nextChargeAmount'?: any | null;
     'billingPeriod'?: any | null;
     'nextChargeCurrency'?: any | null;
+    'scheduledDowngradeAt'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

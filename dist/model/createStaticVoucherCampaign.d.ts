@@ -9,6 +9,7 @@ export declare class CreateStaticVoucherCampaign extends null<String, any> {
     'merchantsReferenceID'?: any | null;
     'validOnlyAtPOSRegisterIDs'?: any | null;
     'paymentDesignID': string;
+    'guestInstructions'?: any | null;
     'bucket'?: any | null;
     'fileName'?: any | null;
     'sourceID': any | null;

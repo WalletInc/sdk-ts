@@ -1,5 +1,11 @@
 import { ProductTaxBehavior } from './productTaxBehavior';
+import { WTAgeRestriction } from './wTAgeRestriction';
 export declare class WTProductCreateParams extends null<String, any> {
+    'ageRestriction'?: WTAgeRestriction;
+    'idCheckOnHandoff'?: boolean;
+    'isSoldOut'?: boolean;
+    'soldOutUntil'?: Date;
+    'fulfillmentModes'?: any | null;
     'title': any | null;
     'description': any | null;
     'displayedPrice'?: any | null;

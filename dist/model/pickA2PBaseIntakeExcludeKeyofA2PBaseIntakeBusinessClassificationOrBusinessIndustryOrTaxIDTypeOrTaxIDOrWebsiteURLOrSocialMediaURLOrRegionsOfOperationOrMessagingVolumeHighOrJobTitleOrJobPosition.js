@@ -75,6 +75,11 @@ PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndust
         "type": "string"
     },
     {
+        "name": "privacyPolicyUrl",
+        "baseName": "privacyPolicyUrl",
+        "type": "string"
+    },
+    {
         "name": "isTwilioTermsRead",
         "baseName": "isTwilioTermsRead",
         "type": "boolean"
@@ -93,11 +98,6 @@ PickA2PBaseIntakeExcludeKeyofA2PBaseIntakeBusinessClassificationOrBusinessIndust
         "name": "isPrivacyAndTosPresent",
         "baseName": "isPrivacyAndTosPresent",
         "type": "boolean"
-    },
-    {
-        "name": "privacyPolicyUrl",
-        "baseName": "privacyPolicyUrl",
-        "type": "string"
     },
     {
         "name": "willObtainConsent",

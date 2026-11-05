@@ -29,11 +29,11 @@ export declare class PickA2PApplicationSubmissionExcludeKeyofA2PApplicationSubmi
     'postalCode': string;
     'country': string;
     'phoneNumber': string;
+    'privacyPolicyUrl'?: string;
     'isTwilioTermsRead': boolean;
     'isWalletSmsTermsRead': boolean;
     'isPricingUnderstood': boolean;
     'isPrivacyAndTosPresent': boolean;
-    'privacyPolicyUrl'?: string;
     'willObtainConsent': boolean;
     'willHonorOptOut': boolean;
     'willFollowContentRules': boolean;

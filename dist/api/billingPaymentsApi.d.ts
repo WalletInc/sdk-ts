@@ -5,6 +5,7 @@ import { FetchIndustry200ResponseAnyOf } from '../model/fetchIndustry200Response
 import { Merchant } from '../model/merchant';
 import { SetDefaultPaymentMethodRequest } from '../model/setDefaultPaymentMethodRequest';
 import { WTBillingChangePlan } from '../model/wTBillingChangePlan';
+import { WTBillingKeepPlanResponse } from '../model/wTBillingKeepPlanResponse';
 import { WTBillingSavePaymentMethod } from '../model/wTBillingSavePaymentMethod';
 import { WTBillingSetIndustry } from '../model/wTBillingSetIndustry';
 import { WTBillingVerifyPaymentMethodResponse } from '../model/wTBillingVerifyPaymentMethodResponse';
@@ -128,6 +129,14 @@ export declare class BillingPaymentsApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: object;
+    }>;
+    keepPlan(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTBillingKeepPlanResponse;
     }>;
     runFinancingSoftPull(wTFinancingSoftPullRequest: WTFinancingSoftPullRequest, options?: {
         headers: {

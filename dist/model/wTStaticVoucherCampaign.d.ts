@@ -26,6 +26,7 @@ export declare class WTStaticVoucherCampaign extends null<String, any> {
     'reinvestmentSumString': any | null;
     'startDate': any | null;
     'expirationDate': any | null;
+    'guestInstructions'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

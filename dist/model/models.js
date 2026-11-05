@@ -290,6 +290,7 @@ __exportStar(require("./wTAdvertisementCredit"), exports);
 __exportStar(require("./wTAdvertisementCreditCreateParams"), exports);
 __exportStar(require("./wTAdvertisementCreditScan"), exports);
 __exportStar(require("./wTAdvertisementCreditUpdateParams"), exports);
+__exportStar(require("./wTAgeRestriction"), exports);
 __exportStar(require("./wTAmenityCreateParams"), exports);
 __exportStar(require("./wTAmenityUpdateParams"), exports);
 __exportStar(require("./wTAndroidKeystoreResponse"), exports);
@@ -309,11 +310,18 @@ __exportStar(require("./wTAutoResponderHitOutcome"), exports);
 __exportStar(require("./wTAutoResponderUpdateParams"), exports);
 __exportStar(require("./wTBillingChangePlan"), exports);
 __exportStar(require("./wTBillingChangePlanBillingCadence"), exports);
+__exportStar(require("./wTBillingKeepPlanResponse"), exports);
 __exportStar(require("./wTBillingSavePaymentMethod"), exports);
 __exportStar(require("./wTBillingSetIndustry"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponse"), exports);
 __exportStar(require("./wTBillingVerifyPaymentMethodResponseBillingCadence"), exports);
 __exportStar(require("./wTBrandingFooterLink"), exports);
+__exportStar(require("./wTCartLineInput"), exports);
+__exportStar(require("./wTCartLineOption"), exports);
+__exportStar(require("./wTCartLineProblem"), exports);
+__exportStar(require("./wTCartLineQuote"), exports);
+__exportStar(require("./wTCartPriceRequest"), exports);
+__exportStar(require("./wTCartQuote"), exports);
 __exportStar(require("./wTCertificateDealCreateRequest"), exports);
 __exportStar(require("./wTCertificateDealCreateRequestEntitlementType"), exports);
 __exportStar(require("./wTCertificateEntitlementSnapshot"), exports);
@@ -338,6 +346,7 @@ __exportStar(require("./wTCustomerSearchByMemberID"), exports);
 __exportStar(require("./wTCustomerSearchByPhoneNumber"), exports);
 __exportStar(require("./wTDiningCreateParams"), exports);
 __exportStar(require("./wTDiningUpdateParams"), exports);
+__exportStar(require("./wTDisclosureBasis"), exports);
 __exportStar(require("./wTDynamicVoucher"), exports);
 __exportStar(require("./wTDynamicVoucherCreateParams"), exports);
 __exportStar(require("./wTDynamicVoucherRedemption"), exports);
@@ -345,6 +354,13 @@ __exportStar(require("./wTDynamicVoucherRedemptionTransactionType"), exports);
 __exportStar(require("./wTDynamicVoucherSummary"), exports);
 __exportStar(require("./wTDynamicVoucherSummaryStatus"), exports);
 __exportStar(require("./wTDynamicVoucherUpdateParams"), exports);
+__exportStar(require("./wTEarlyOptIn"), exports);
+__exportStar(require("./wTEarlyOptInCount"), exports);
+__exportStar(require("./wTEarlyOptInImportRequest"), exports);
+__exportStar(require("./wTEarlyOptInImportResult"), exports);
+__exportStar(require("./wTEarlyOptInPage"), exports);
+__exportStar(require("./wTEarlyOptInSkipCount"), exports);
+__exportStar(require("./wTEarlyOptInTier"), exports);
 __exportStar(require("./wTEmailSubscriberCreateParams"), exports);
 __exportStar(require("./wTEmailSubscriberCreateParamsWalletUI"), exports);
 __exportStar(require("./wTEmailSubscriberUpdateParams"), exports);
@@ -372,6 +388,7 @@ __exportStar(require("./wTEmployeeUpdateRecords"), exports);
 __exportStar(require("./wTFetchWalletPaymentObjectsWithToken"), exports);
 __exportStar(require("./wTFinancingSoftPullRequest"), exports);
 __exportStar(require("./wTFinancingSoftPullResponse"), exports);
+__exportStar(require("./wTFulfillmentMode"), exports);
 __exportStar(require("./wTGamingCreateParams"), exports);
 __exportStar(require("./wTGamingUpdateParams"), exports);
 __exportStar(require("./wTGiftCardPurchaseRequest"), exports);
@@ -411,11 +428,36 @@ __exportStar(require("./wTMediaUploadRequest"), exports);
 __exportStar(require("./wTMediaUploadTicket"), exports);
 __exportStar(require("./wTMember"), exports);
 __exportStar(require("./wTMemberCreationParams"), exports);
+__exportStar(require("./wTMemberUpdateAppliedReport"), exports);
+__exportStar(require("./wTMemberUpdateAppliedReportStatus"), exports);
+__exportStar(require("./wTMemberUpdateJob"), exports);
+__exportStar(require("./wTMemberUpdateJobRequest"), exports);
+__exportStar(require("./wTMemberUpdateJobStatus"), exports);
+__exportStar(require("./wTMemberUpdatePreviewReport"), exports);
+__exportStar(require("./wTMemberUpdateRevertRefusal"), exports);
+__exportStar(require("./wTMemberUpdateRevertRefusalReason"), exports);
+__exportStar(require("./wTMemberUpdateRevertResult"), exports);
 __exportStar(require("./wTMembershipTier"), exports);
 __exportStar(require("./wTMembershipTierCreationParams"), exports);
 __exportStar(require("./wTMembershipTierId"), exports);
 __exportStar(require("./wTMembershipTierUpdateParams"), exports);
 __exportStar(require("./wTMembershipTierWithMemberCount"), exports);
+__exportStar(require("./wTMenu"), exports);
+__exportStar(require("./wTMenuCategory"), exports);
+__exportStar(require("./wTMenuCreateParams"), exports);
+__exportStar(require("./wTMenuDietaryTag"), exports);
+__exportStar(require("./wTMenuItem"), exports);
+__exportStar(require("./wTMenuItemCreateParams"), exports);
+__exportStar(require("./wTMenuItemUpdateParams"), exports);
+__exportStar(require("./wTMenuOption"), exports);
+__exportStar(require("./wTMenuOptionGroup"), exports);
+__exportStar(require("./wTMenuOptionGroupCreateParams"), exports);
+__exportStar(require("./wTMenuOptionGroupUpdateParams"), exports);
+__exportStar(require("./wTMenuScheduleWindow"), exports);
+__exportStar(require("./wTMenuTaxCategory"), exports);
+__exportStar(require("./wTMenuUpdateParams"), exports);
+__exportStar(require("./wTMenuVenue"), exports);
+__exportStar(require("./wTMenuVenueType"), exports);
 __exportStar(require("./wTMerchantCredit"), exports);
 __exportStar(require("./wTMerchantCreditCreationParams"), exports);
 __exportStar(require("./wTMerchantURLCreate"), exports);
@@ -431,6 +473,9 @@ __exportStar(require("./wTOptInList"), exports);
 __exportStar(require("./wTOptInListCreationParams"), exports);
 __exportStar(require("./wTOrder"), exports);
 __exportStar(require("./wTOrderLineItem"), exports);
+__exportStar(require("./wTOrderLineOption"), exports);
+__exportStar(require("./wTOrderingSettings"), exports);
+__exportStar(require("./wTOrderingSettingsUpdateParams"), exports);
 __exportStar(require("./wTPassBrandKit"), exports);
 __exportStar(require("./wTPassStyleResponse"), exports);
 __exportStar(require("./wTPassStyleResponseApple"), exports);
@@ -442,9 +487,11 @@ __exportStar(require("./wTPaymentDesignCreateParams"), exports);
 __exportStar(require("./wTPaymentDesignUpdateParams"), exports);
 __exportStar(require("./wTPerformanceCreateParams"), exports);
 __exportStar(require("./wTPerformanceUpdateParams"), exports);
+__exportStar(require("./wTPlanTier"), exports);
 __exportStar(require("./wTPosMachine"), exports);
 __exportStar(require("./wTPosMachineCreateParams"), exports);
 __exportStar(require("./wTPosMachineUpdateParams"), exports);
+__exportStar(require("./wTPrivacyRequestChannel"), exports);
 __exportStar(require("./wTPrizeGameActivePromotion"), exports);
 __exportStar(require("./wTPrizeGamePlayLimitPeriod"), exports);
 __exportStar(require("./wTPrizeGamePlayRequest"), exports);
@@ -475,6 +522,16 @@ __exportStar(require("./wTQuickLinkSectionCreateParams"), exports);
 __exportStar(require("./wTQuickLinkSectionUpdateParams"), exports);
 __exportStar(require("./wTQuickLinkUpdateParams"), exports);
 __exportStar(require("./wTQuietHoursStatus"), exports);
+__exportStar(require("./wTRelatedItemAdminRef"), exports);
+__exportStar(require("./wTRelatedItemRef"), exports);
+__exportStar(require("./wTRelatedItemSearchResult"), exports);
+__exportStar(require("./wTRelatedItemSearchResults"), exports);
+__exportStar(require("./wTRelatedItemSourceType"), exports);
+__exportStar(require("./wTRelatedItemStatus"), exports);
+__exportStar(require("./wTRelatedItemType"), exports);
+__exportStar(require("./wTRelatedItemUsage"), exports);
+__exportStar(require("./wTRelatedItems"), exports);
+__exportStar(require("./wTRelatedItemsUpdate"), exports);
 __exportStar(require("./wTRole"), exports);
 __exportStar(require("./wTRoomRateCreateParams"), exports);
 __exportStar(require("./wTRoomRateUpdateParams"), exports);
@@ -505,9 +562,14 @@ __exportStar(require("./wTStaticVoucherCreateParams"), exports);
 __exportStar(require("./wTStaticVoucherUpdateParams"), exports);
 __exportStar(require("./wTSystemApprovePhoneNumber"), exports);
 __exportStar(require("./wTSystemRoleCreate"), exports);
+__exportStar(require("./wTTCPAFilter"), exports);
 __exportStar(require("./wTTCPAOpt"), exports);
 __exportStar(require("./wTTCPAOptListID"), exports);
 __exportStar(require("./wTTCPAOptSourceID"), exports);
+__exportStar(require("./wTTCPAPrivacyRequest"), exports);
+__exportStar(require("./wTTCPAPrivacyRequestForMerchant"), exports);
+__exportStar(require("./wTTCPAPrivacyRequestForMerchantMerchantID"), exports);
+__exportStar(require("./wTTCPAPrivacyRequestResult"), exports);
 __exportStar(require("./wTTicket"), exports);
 __exportStar(require("./wTTicketCreateParams"), exports);
 __exportStar(require("./wTTicketReachStats"), exports);
@@ -536,10 +598,14 @@ __exportStar(require("./wTWalletConfigurationSaveWalletRecordSmsOptInSourceID"),
 __exportStar(require("./wTWalletHeaderStyle"), exports);
 __exportStar(require("./wTWalletItemRedemption"), exports);
 __exportStar(require("./wTWalletObjectPrefixCounts"), exports);
+__exportStar(require("./wTWalletOrdering"), exports);
 __exportStar(require("./wTWalletPageView"), exports);
 __exportStar(require("./wTWalletPageViewCount"), exports);
 __exportStar(require("./wTWalletPageViewGeoPoint"), exports);
 __exportStar(require("./wTWalletPassProvider"), exports);
+__exportStar(require("./wTWalletSectionAccess"), exports);
+__exportStar(require("./wTWalletSectionTopItem"), exports);
+__exportStar(require("./wTWalletSectionViews"), exports);
 __exportStar(require("./wTWhatsAppInboundWebhook"), exports);
 __exportStar(require("./wTWhatsAppStatusCallback"), exports);
 __exportStar(require("./walletConfiguration"), exports);
@@ -822,6 +888,7 @@ const wTAdvertisementCredit_1 = require("./wTAdvertisementCredit");
 const wTAdvertisementCreditCreateParams_1 = require("./wTAdvertisementCreditCreateParams");
 const wTAdvertisementCreditScan_1 = require("./wTAdvertisementCreditScan");
 const wTAdvertisementCreditUpdateParams_1 = require("./wTAdvertisementCreditUpdateParams");
+const wTAgeRestriction_1 = require("./wTAgeRestriction");
 const wTAmenityCreateParams_1 = require("./wTAmenityCreateParams");
 const wTAmenityUpdateParams_1 = require("./wTAmenityUpdateParams");
 const wTAndroidKeystoreResponse_1 = require("./wTAndroidKeystoreResponse");
@@ -841,11 +908,18 @@ const wTAutoResponderHitOutcome_1 = require("./wTAutoResponderHitOutcome");
 const wTAutoResponderUpdateParams_1 = require("./wTAutoResponderUpdateParams");
 const wTBillingChangePlan_1 = require("./wTBillingChangePlan");
 const wTBillingChangePlanBillingCadence_1 = require("./wTBillingChangePlanBillingCadence");
+const wTBillingKeepPlanResponse_1 = require("./wTBillingKeepPlanResponse");
 const wTBillingSavePaymentMethod_1 = require("./wTBillingSavePaymentMethod");
 const wTBillingSetIndustry_1 = require("./wTBillingSetIndustry");
 const wTBillingVerifyPaymentMethodResponse_1 = require("./wTBillingVerifyPaymentMethodResponse");
 const wTBillingVerifyPaymentMethodResponseBillingCadence_1 = require("./wTBillingVerifyPaymentMethodResponseBillingCadence");
 const wTBrandingFooterLink_1 = require("./wTBrandingFooterLink");
+const wTCartLineInput_1 = require("./wTCartLineInput");
+const wTCartLineOption_1 = require("./wTCartLineOption");
+const wTCartLineProblem_1 = require("./wTCartLineProblem");
+const wTCartLineQuote_1 = require("./wTCartLineQuote");
+const wTCartPriceRequest_1 = require("./wTCartPriceRequest");
+const wTCartQuote_1 = require("./wTCartQuote");
 const wTCertificateDealCreateRequest_1 = require("./wTCertificateDealCreateRequest");
 const wTCertificateDealCreateRequestEntitlementType_1 = require("./wTCertificateDealCreateRequestEntitlementType");
 const wTCertificateEntitlementSnapshot_1 = require("./wTCertificateEntitlementSnapshot");
@@ -870,6 +944,7 @@ const wTCustomerSearchByMemberID_1 = require("./wTCustomerSearchByMemberID");
 const wTCustomerSearchByPhoneNumber_1 = require("./wTCustomerSearchByPhoneNumber");
 const wTDiningCreateParams_1 = require("./wTDiningCreateParams");
 const wTDiningUpdateParams_1 = require("./wTDiningUpdateParams");
+const wTDisclosureBasis_1 = require("./wTDisclosureBasis");
 const wTDynamicVoucher_1 = require("./wTDynamicVoucher");
 const wTDynamicVoucherCreateParams_1 = require("./wTDynamicVoucherCreateParams");
 const wTDynamicVoucherRedemption_1 = require("./wTDynamicVoucherRedemption");
@@ -877,6 +952,13 @@ const wTDynamicVoucherRedemptionTransactionType_1 = require("./wTDynamicVoucherR
 const wTDynamicVoucherSummary_1 = require("./wTDynamicVoucherSummary");
 const wTDynamicVoucherSummaryStatus_1 = require("./wTDynamicVoucherSummaryStatus");
 const wTDynamicVoucherUpdateParams_1 = require("./wTDynamicVoucherUpdateParams");
+const wTEarlyOptIn_1 = require("./wTEarlyOptIn");
+const wTEarlyOptInCount_1 = require("./wTEarlyOptInCount");
+const wTEarlyOptInImportRequest_1 = require("./wTEarlyOptInImportRequest");
+const wTEarlyOptInImportResult_1 = require("./wTEarlyOptInImportResult");
+const wTEarlyOptInPage_1 = require("./wTEarlyOptInPage");
+const wTEarlyOptInSkipCount_1 = require("./wTEarlyOptInSkipCount");
+const wTEarlyOptInTier_1 = require("./wTEarlyOptInTier");
 const wTEmailSubscriberCreateParams_1 = require("./wTEmailSubscriberCreateParams");
 const wTEmailSubscriberCreateParamsWalletUI_1 = require("./wTEmailSubscriberCreateParamsWalletUI");
 const wTEmailSubscriberUpdateParams_1 = require("./wTEmailSubscriberUpdateParams");
@@ -904,6 +986,7 @@ const wTEmployeeUpdateRecords_1 = require("./wTEmployeeUpdateRecords");
 const wTFetchWalletPaymentObjectsWithToken_1 = require("./wTFetchWalletPaymentObjectsWithToken");
 const wTFinancingSoftPullRequest_1 = require("./wTFinancingSoftPullRequest");
 const wTFinancingSoftPullResponse_1 = require("./wTFinancingSoftPullResponse");
+const wTFulfillmentMode_1 = require("./wTFulfillmentMode");
 const wTGamingCreateParams_1 = require("./wTGamingCreateParams");
 const wTGamingUpdateParams_1 = require("./wTGamingUpdateParams");
 const wTGiftCardPurchaseRequest_1 = require("./wTGiftCardPurchaseRequest");
@@ -943,11 +1026,36 @@ const wTMediaUploadRequest_1 = require("./wTMediaUploadRequest");
 const wTMediaUploadTicket_1 = require("./wTMediaUploadTicket");
 const wTMember_1 = require("./wTMember");
 const wTMemberCreationParams_1 = require("./wTMemberCreationParams");
+const wTMemberUpdateAppliedReport_1 = require("./wTMemberUpdateAppliedReport");
+const wTMemberUpdateAppliedReportStatus_1 = require("./wTMemberUpdateAppliedReportStatus");
+const wTMemberUpdateJob_1 = require("./wTMemberUpdateJob");
+const wTMemberUpdateJobRequest_1 = require("./wTMemberUpdateJobRequest");
+const wTMemberUpdateJobStatus_1 = require("./wTMemberUpdateJobStatus");
+const wTMemberUpdatePreviewReport_1 = require("./wTMemberUpdatePreviewReport");
+const wTMemberUpdateRevertRefusal_1 = require("./wTMemberUpdateRevertRefusal");
+const wTMemberUpdateRevertRefusalReason_1 = require("./wTMemberUpdateRevertRefusalReason");
+const wTMemberUpdateRevertResult_1 = require("./wTMemberUpdateRevertResult");
 const wTMembershipTier_1 = require("./wTMembershipTier");
 const wTMembershipTierCreationParams_1 = require("./wTMembershipTierCreationParams");
 const wTMembershipTierId_1 = require("./wTMembershipTierId");
 const wTMembershipTierUpdateParams_1 = require("./wTMembershipTierUpdateParams");
 const wTMembershipTierWithMemberCount_1 = require("./wTMembershipTierWithMemberCount");
+const wTMenu_1 = require("./wTMenu");
+const wTMenuCategory_1 = require("./wTMenuCategory");
+const wTMenuCreateParams_1 = require("./wTMenuCreateParams");
+const wTMenuDietaryTag_1 = require("./wTMenuDietaryTag");
+const wTMenuItem_1 = require("./wTMenuItem");
+const wTMenuItemCreateParams_1 = require("./wTMenuItemCreateParams");
+const wTMenuItemUpdateParams_1 = require("./wTMenuItemUpdateParams");
+const wTMenuOption_1 = require("./wTMenuOption");
+const wTMenuOptionGroup_1 = require("./wTMenuOptionGroup");
+const wTMenuOptionGroupCreateParams_1 = require("./wTMenuOptionGroupCreateParams");
+const wTMenuOptionGroupUpdateParams_1 = require("./wTMenuOptionGroupUpdateParams");
+const wTMenuScheduleWindow_1 = require("./wTMenuScheduleWindow");
+const wTMenuTaxCategory_1 = require("./wTMenuTaxCategory");
+const wTMenuUpdateParams_1 = require("./wTMenuUpdateParams");
+const wTMenuVenue_1 = require("./wTMenuVenue");
+const wTMenuVenueType_1 = require("./wTMenuVenueType");
 const wTMerchantCredit_1 = require("./wTMerchantCredit");
 const wTMerchantCreditCreationParams_1 = require("./wTMerchantCreditCreationParams");
 const wTMerchantURLCreate_1 = require("./wTMerchantURLCreate");
@@ -963,6 +1071,9 @@ const wTOptInList_1 = require("./wTOptInList");
 const wTOptInListCreationParams_1 = require("./wTOptInListCreationParams");
 const wTOrder_1 = require("./wTOrder");
 const wTOrderLineItem_1 = require("./wTOrderLineItem");
+const wTOrderLineOption_1 = require("./wTOrderLineOption");
+const wTOrderingSettings_1 = require("./wTOrderingSettings");
+const wTOrderingSettingsUpdateParams_1 = require("./wTOrderingSettingsUpdateParams");
 const wTPassBrandKit_1 = require("./wTPassBrandKit");
 const wTPassStyleResponse_1 = require("./wTPassStyleResponse");
 const wTPassStyleResponseApple_1 = require("./wTPassStyleResponseApple");
@@ -974,9 +1085,11 @@ const wTPaymentDesignCreateParams_1 = require("./wTPaymentDesignCreateParams");
 const wTPaymentDesignUpdateParams_1 = require("./wTPaymentDesignUpdateParams");
 const wTPerformanceCreateParams_1 = require("./wTPerformanceCreateParams");
 const wTPerformanceUpdateParams_1 = require("./wTPerformanceUpdateParams");
+const wTPlanTier_1 = require("./wTPlanTier");
 const wTPosMachine_1 = require("./wTPosMachine");
 const wTPosMachineCreateParams_1 = require("./wTPosMachineCreateParams");
 const wTPosMachineUpdateParams_1 = require("./wTPosMachineUpdateParams");
+const wTPrivacyRequestChannel_1 = require("./wTPrivacyRequestChannel");
 const wTPrizeGameActivePromotion_1 = require("./wTPrizeGameActivePromotion");
 const wTPrizeGamePlayLimitPeriod_1 = require("./wTPrizeGamePlayLimitPeriod");
 const wTPrizeGamePlayRequest_1 = require("./wTPrizeGamePlayRequest");
@@ -1007,6 +1120,16 @@ const wTQuickLinkSectionCreateParams_1 = require("./wTQuickLinkSectionCreatePara
 const wTQuickLinkSectionUpdateParams_1 = require("./wTQuickLinkSectionUpdateParams");
 const wTQuickLinkUpdateParams_1 = require("./wTQuickLinkUpdateParams");
 const wTQuietHoursStatus_1 = require("./wTQuietHoursStatus");
+const wTRelatedItemAdminRef_1 = require("./wTRelatedItemAdminRef");
+const wTRelatedItemRef_1 = require("./wTRelatedItemRef");
+const wTRelatedItemSearchResult_1 = require("./wTRelatedItemSearchResult");
+const wTRelatedItemSearchResults_1 = require("./wTRelatedItemSearchResults");
+const wTRelatedItemSourceType_1 = require("./wTRelatedItemSourceType");
+const wTRelatedItemStatus_1 = require("./wTRelatedItemStatus");
+const wTRelatedItemType_1 = require("./wTRelatedItemType");
+const wTRelatedItemUsage_1 = require("./wTRelatedItemUsage");
+const wTRelatedItems_1 = require("./wTRelatedItems");
+const wTRelatedItemsUpdate_1 = require("./wTRelatedItemsUpdate");
 const wTRole_1 = require("./wTRole");
 const wTRoomRateCreateParams_1 = require("./wTRoomRateCreateParams");
 const wTRoomRateUpdateParams_1 = require("./wTRoomRateUpdateParams");
@@ -1037,9 +1160,14 @@ const wTStaticVoucherCreateParams_1 = require("./wTStaticVoucherCreateParams");
 const wTStaticVoucherUpdateParams_1 = require("./wTStaticVoucherUpdateParams");
 const wTSystemApprovePhoneNumber_1 = require("./wTSystemApprovePhoneNumber");
 const wTSystemRoleCreate_1 = require("./wTSystemRoleCreate");
+const wTTCPAFilter_1 = require("./wTTCPAFilter");
 const wTTCPAOpt_1 = require("./wTTCPAOpt");
 const wTTCPAOptListID_1 = require("./wTTCPAOptListID");
 const wTTCPAOptSourceID_1 = require("./wTTCPAOptSourceID");
+const wTTCPAPrivacyRequest_1 = require("./wTTCPAPrivacyRequest");
+const wTTCPAPrivacyRequestForMerchant_1 = require("./wTTCPAPrivacyRequestForMerchant");
+const wTTCPAPrivacyRequestForMerchantMerchantID_1 = require("./wTTCPAPrivacyRequestForMerchantMerchantID");
+const wTTCPAPrivacyRequestResult_1 = require("./wTTCPAPrivacyRequestResult");
 const wTTicket_1 = require("./wTTicket");
 const wTTicketCreateParams_1 = require("./wTTicketCreateParams");
 const wTTicketReachStats_1 = require("./wTTicketReachStats");
@@ -1068,10 +1196,14 @@ const wTWalletConfigurationSaveWalletRecordSmsOptInSourceID_1 = require("./wTWal
 const wTWalletHeaderStyle_1 = require("./wTWalletHeaderStyle");
 const wTWalletItemRedemption_1 = require("./wTWalletItemRedemption");
 const wTWalletObjectPrefixCounts_1 = require("./wTWalletObjectPrefixCounts");
+const wTWalletOrdering_1 = require("./wTWalletOrdering");
 const wTWalletPageView_1 = require("./wTWalletPageView");
 const wTWalletPageViewCount_1 = require("./wTWalletPageViewCount");
 const wTWalletPageViewGeoPoint_1 = require("./wTWalletPageViewGeoPoint");
 const wTWalletPassProvider_1 = require("./wTWalletPassProvider");
+const wTWalletSectionAccess_1 = require("./wTWalletSectionAccess");
+const wTWalletSectionTopItem_1 = require("./wTWalletSectionTopItem");
+const wTWalletSectionViews_1 = require("./wTWalletSectionViews");
 const wTWhatsAppInboundWebhook_1 = require("./wTWhatsAppInboundWebhook");
 const wTWhatsAppStatusCallback_1 = require("./wTWhatsAppStatusCallback");
 const walletConfiguration_1 = require("./walletConfiguration");
@@ -1373,6 +1505,7 @@ let typeMap = {
     "WTAdvertisementCreditCreateParams": wTAdvertisementCreditCreateParams_1.WTAdvertisementCreditCreateParams,
     "WTAdvertisementCreditScan": wTAdvertisementCreditScan_1.WTAdvertisementCreditScan,
     "WTAdvertisementCreditUpdateParams": wTAdvertisementCreditUpdateParams_1.WTAdvertisementCreditUpdateParams,
+    "WTAgeRestriction": wTAgeRestriction_1.WTAgeRestriction,
     "WTAmenityCreateParams": wTAmenityCreateParams_1.WTAmenityCreateParams,
     "WTAmenityUpdateParams": wTAmenityUpdateParams_1.WTAmenityUpdateParams,
     "WTAndroidKeystoreResponse": wTAndroidKeystoreResponse_1.WTAndroidKeystoreResponse,
@@ -1392,11 +1525,18 @@ let typeMap = {
     "WTAutoResponderUpdateParams": wTAutoResponderUpdateParams_1.WTAutoResponderUpdateParams,
     "WTBillingChangePlan": wTBillingChangePlan_1.WTBillingChangePlan,
     "WTBillingChangePlanBillingCadence": wTBillingChangePlanBillingCadence_1.WTBillingChangePlanBillingCadence,
+    "WTBillingKeepPlanResponse": wTBillingKeepPlanResponse_1.WTBillingKeepPlanResponse,
     "WTBillingSavePaymentMethod": wTBillingSavePaymentMethod_1.WTBillingSavePaymentMethod,
     "WTBillingSetIndustry": wTBillingSetIndustry_1.WTBillingSetIndustry,
     "WTBillingVerifyPaymentMethodResponse": wTBillingVerifyPaymentMethodResponse_1.WTBillingVerifyPaymentMethodResponse,
     "WTBillingVerifyPaymentMethodResponseBillingCadence": wTBillingVerifyPaymentMethodResponseBillingCadence_1.WTBillingVerifyPaymentMethodResponseBillingCadence,
     "WTBrandingFooterLink": wTBrandingFooterLink_1.WTBrandingFooterLink,
+    "WTCartLineInput": wTCartLineInput_1.WTCartLineInput,
+    "WTCartLineOption": wTCartLineOption_1.WTCartLineOption,
+    "WTCartLineProblem": wTCartLineProblem_1.WTCartLineProblem,
+    "WTCartLineQuote": wTCartLineQuote_1.WTCartLineQuote,
+    "WTCartPriceRequest": wTCartPriceRequest_1.WTCartPriceRequest,
+    "WTCartQuote": wTCartQuote_1.WTCartQuote,
     "WTCertificateDealCreateRequest": wTCertificateDealCreateRequest_1.WTCertificateDealCreateRequest,
     "WTCertificateDealCreateRequestEntitlementType": wTCertificateDealCreateRequestEntitlementType_1.WTCertificateDealCreateRequestEntitlementType,
     "WTCertificateEntitlementSnapshot": wTCertificateEntitlementSnapshot_1.WTCertificateEntitlementSnapshot,
@@ -1421,6 +1561,7 @@ let typeMap = {
     "WTCustomerSearchByPhoneNumber": wTCustomerSearchByPhoneNumber_1.WTCustomerSearchByPhoneNumber,
     "WTDiningCreateParams": wTDiningCreateParams_1.WTDiningCreateParams,
     "WTDiningUpdateParams": wTDiningUpdateParams_1.WTDiningUpdateParams,
+    "WTDisclosureBasis": wTDisclosureBasis_1.WTDisclosureBasis,
     "WTDynamicVoucher": wTDynamicVoucher_1.WTDynamicVoucher,
     "WTDynamicVoucherCreateParams": wTDynamicVoucherCreateParams_1.WTDynamicVoucherCreateParams,
     "WTDynamicVoucherRedemption": wTDynamicVoucherRedemption_1.WTDynamicVoucherRedemption,
@@ -1428,6 +1569,13 @@ let typeMap = {
     "WTDynamicVoucherSummary": wTDynamicVoucherSummary_1.WTDynamicVoucherSummary,
     "WTDynamicVoucherSummaryStatus": wTDynamicVoucherSummaryStatus_1.WTDynamicVoucherSummaryStatus,
     "WTDynamicVoucherUpdateParams": wTDynamicVoucherUpdateParams_1.WTDynamicVoucherUpdateParams,
+    "WTEarlyOptIn": wTEarlyOptIn_1.WTEarlyOptIn,
+    "WTEarlyOptInCount": wTEarlyOptInCount_1.WTEarlyOptInCount,
+    "WTEarlyOptInImportRequest": wTEarlyOptInImportRequest_1.WTEarlyOptInImportRequest,
+    "WTEarlyOptInImportResult": wTEarlyOptInImportResult_1.WTEarlyOptInImportResult,
+    "WTEarlyOptInPage": wTEarlyOptInPage_1.WTEarlyOptInPage,
+    "WTEarlyOptInSkipCount": wTEarlyOptInSkipCount_1.WTEarlyOptInSkipCount,
+    "WTEarlyOptInTier": wTEarlyOptInTier_1.WTEarlyOptInTier,
     "WTEmailSubscriberCreateParams": wTEmailSubscriberCreateParams_1.WTEmailSubscriberCreateParams,
     "WTEmailSubscriberCreateParamsWalletUI": wTEmailSubscriberCreateParamsWalletUI_1.WTEmailSubscriberCreateParamsWalletUI,
     "WTEmailSubscriberUpdateParams": wTEmailSubscriberUpdateParams_1.WTEmailSubscriberUpdateParams,
@@ -1455,6 +1603,7 @@ let typeMap = {
     "WTFetchWalletPaymentObjectsWithToken": wTFetchWalletPaymentObjectsWithToken_1.WTFetchWalletPaymentObjectsWithToken,
     "WTFinancingSoftPullRequest": wTFinancingSoftPullRequest_1.WTFinancingSoftPullRequest,
     "WTFinancingSoftPullResponse": wTFinancingSoftPullResponse_1.WTFinancingSoftPullResponse,
+    "WTFulfillmentMode": wTFulfillmentMode_1.WTFulfillmentMode,
     "WTGamingCreateParams": wTGamingCreateParams_1.WTGamingCreateParams,
     "WTGamingUpdateParams": wTGamingUpdateParams_1.WTGamingUpdateParams,
     "WTGiftCardPurchaseRequest": wTGiftCardPurchaseRequest_1.WTGiftCardPurchaseRequest,
@@ -1494,11 +1643,36 @@ let typeMap = {
     "WTMediaUploadTicket": wTMediaUploadTicket_1.WTMediaUploadTicket,
     "WTMember": wTMember_1.WTMember,
     "WTMemberCreationParams": wTMemberCreationParams_1.WTMemberCreationParams,
+    "WTMemberUpdateAppliedReport": wTMemberUpdateAppliedReport_1.WTMemberUpdateAppliedReport,
+    "WTMemberUpdateAppliedReportStatus": wTMemberUpdateAppliedReportStatus_1.WTMemberUpdateAppliedReportStatus,
+    "WTMemberUpdateJob": wTMemberUpdateJob_1.WTMemberUpdateJob,
+    "WTMemberUpdateJobRequest": wTMemberUpdateJobRequest_1.WTMemberUpdateJobRequest,
+    "WTMemberUpdateJobStatus": wTMemberUpdateJobStatus_1.WTMemberUpdateJobStatus,
+    "WTMemberUpdatePreviewReport": wTMemberUpdatePreviewReport_1.WTMemberUpdatePreviewReport,
+    "WTMemberUpdateRevertRefusal": wTMemberUpdateRevertRefusal_1.WTMemberUpdateRevertRefusal,
+    "WTMemberUpdateRevertRefusalReason": wTMemberUpdateRevertRefusalReason_1.WTMemberUpdateRevertRefusalReason,
+    "WTMemberUpdateRevertResult": wTMemberUpdateRevertResult_1.WTMemberUpdateRevertResult,
     "WTMembershipTier": wTMembershipTier_1.WTMembershipTier,
     "WTMembershipTierCreationParams": wTMembershipTierCreationParams_1.WTMembershipTierCreationParams,
     "WTMembershipTierId": wTMembershipTierId_1.WTMembershipTierId,
     "WTMembershipTierUpdateParams": wTMembershipTierUpdateParams_1.WTMembershipTierUpdateParams,
     "WTMembershipTierWithMemberCount": wTMembershipTierWithMemberCount_1.WTMembershipTierWithMemberCount,
+    "WTMenu": wTMenu_1.WTMenu,
+    "WTMenuCategory": wTMenuCategory_1.WTMenuCategory,
+    "WTMenuCreateParams": wTMenuCreateParams_1.WTMenuCreateParams,
+    "WTMenuDietaryTag": wTMenuDietaryTag_1.WTMenuDietaryTag,
+    "WTMenuItem": wTMenuItem_1.WTMenuItem,
+    "WTMenuItemCreateParams": wTMenuItemCreateParams_1.WTMenuItemCreateParams,
+    "WTMenuItemUpdateParams": wTMenuItemUpdateParams_1.WTMenuItemUpdateParams,
+    "WTMenuOption": wTMenuOption_1.WTMenuOption,
+    "WTMenuOptionGroup": wTMenuOptionGroup_1.WTMenuOptionGroup,
+    "WTMenuOptionGroupCreateParams": wTMenuOptionGroupCreateParams_1.WTMenuOptionGroupCreateParams,
+    "WTMenuOptionGroupUpdateParams": wTMenuOptionGroupUpdateParams_1.WTMenuOptionGroupUpdateParams,
+    "WTMenuScheduleWindow": wTMenuScheduleWindow_1.WTMenuScheduleWindow,
+    "WTMenuTaxCategory": wTMenuTaxCategory_1.WTMenuTaxCategory,
+    "WTMenuUpdateParams": wTMenuUpdateParams_1.WTMenuUpdateParams,
+    "WTMenuVenue": wTMenuVenue_1.WTMenuVenue,
+    "WTMenuVenueType": wTMenuVenueType_1.WTMenuVenueType,
     "WTMerchantCredit": wTMerchantCredit_1.WTMerchantCredit,
     "WTMerchantCreditCreationParams": wTMerchantCreditCreationParams_1.WTMerchantCreditCreationParams,
     "WTMerchantURLCreate": wTMerchantURLCreate_1.WTMerchantURLCreate,
@@ -1514,6 +1688,9 @@ let typeMap = {
     "WTOptInListCreationParams": wTOptInListCreationParams_1.WTOptInListCreationParams,
     "WTOrder": wTOrder_1.WTOrder,
     "WTOrderLineItem": wTOrderLineItem_1.WTOrderLineItem,
+    "WTOrderLineOption": wTOrderLineOption_1.WTOrderLineOption,
+    "WTOrderingSettings": wTOrderingSettings_1.WTOrderingSettings,
+    "WTOrderingSettingsUpdateParams": wTOrderingSettingsUpdateParams_1.WTOrderingSettingsUpdateParams,
     "WTPassBrandKit": wTPassBrandKit_1.WTPassBrandKit,
     "WTPassStyleResponse": wTPassStyleResponse_1.WTPassStyleResponse,
     "WTPassStyleResponseApple": wTPassStyleResponseApple_1.WTPassStyleResponseApple,
@@ -1525,9 +1702,11 @@ let typeMap = {
     "WTPaymentDesignUpdateParams": wTPaymentDesignUpdateParams_1.WTPaymentDesignUpdateParams,
     "WTPerformanceCreateParams": wTPerformanceCreateParams_1.WTPerformanceCreateParams,
     "WTPerformanceUpdateParams": wTPerformanceUpdateParams_1.WTPerformanceUpdateParams,
+    "WTPlanTier": wTPlanTier_1.WTPlanTier,
     "WTPosMachine": wTPosMachine_1.WTPosMachine,
     "WTPosMachineCreateParams": wTPosMachineCreateParams_1.WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": wTPosMachineUpdateParams_1.WTPosMachineUpdateParams,
+    "WTPrivacyRequestChannel": wTPrivacyRequestChannel_1.WTPrivacyRequestChannel,
     "WTPrizeGameActivePromotion": wTPrizeGameActivePromotion_1.WTPrizeGameActivePromotion,
     "WTPrizeGamePlayLimitPeriod": wTPrizeGamePlayLimitPeriod_1.WTPrizeGamePlayLimitPeriod,
     "WTPrizeGamePlayRequest": wTPrizeGamePlayRequest_1.WTPrizeGamePlayRequest,
@@ -1558,6 +1737,16 @@ let typeMap = {
     "WTQuickLinkSectionUpdateParams": wTQuickLinkSectionUpdateParams_1.WTQuickLinkSectionUpdateParams,
     "WTQuickLinkUpdateParams": wTQuickLinkUpdateParams_1.WTQuickLinkUpdateParams,
     "WTQuietHoursStatus": wTQuietHoursStatus_1.WTQuietHoursStatus,
+    "WTRelatedItemAdminRef": wTRelatedItemAdminRef_1.WTRelatedItemAdminRef,
+    "WTRelatedItemRef": wTRelatedItemRef_1.WTRelatedItemRef,
+    "WTRelatedItemSearchResult": wTRelatedItemSearchResult_1.WTRelatedItemSearchResult,
+    "WTRelatedItemSearchResults": wTRelatedItemSearchResults_1.WTRelatedItemSearchResults,
+    "WTRelatedItemSourceType": wTRelatedItemSourceType_1.WTRelatedItemSourceType,
+    "WTRelatedItemStatus": wTRelatedItemStatus_1.WTRelatedItemStatus,
+    "WTRelatedItemType": wTRelatedItemType_1.WTRelatedItemType,
+    "WTRelatedItemUsage": wTRelatedItemUsage_1.WTRelatedItemUsage,
+    "WTRelatedItems": wTRelatedItems_1.WTRelatedItems,
+    "WTRelatedItemsUpdate": wTRelatedItemsUpdate_1.WTRelatedItemsUpdate,
     "WTRole": wTRole_1.WTRole,
     "WTRoomRateCreateParams": wTRoomRateCreateParams_1.WTRoomRateCreateParams,
     "WTRoomRateUpdateParams": wTRoomRateUpdateParams_1.WTRoomRateUpdateParams,
@@ -1588,9 +1777,14 @@ let typeMap = {
     "WTStaticVoucherUpdateParams": wTStaticVoucherUpdateParams_1.WTStaticVoucherUpdateParams,
     "WTSystemApprovePhoneNumber": wTSystemApprovePhoneNumber_1.WTSystemApprovePhoneNumber,
     "WTSystemRoleCreate": wTSystemRoleCreate_1.WTSystemRoleCreate,
+    "WTTCPAFilter": wTTCPAFilter_1.WTTCPAFilter,
     "WTTCPAOpt": wTTCPAOpt_1.WTTCPAOpt,
     "WTTCPAOptListID": wTTCPAOptListID_1.WTTCPAOptListID,
     "WTTCPAOptSourceID": wTTCPAOptSourceID_1.WTTCPAOptSourceID,
+    "WTTCPAPrivacyRequest": wTTCPAPrivacyRequest_1.WTTCPAPrivacyRequest,
+    "WTTCPAPrivacyRequestForMerchant": wTTCPAPrivacyRequestForMerchant_1.WTTCPAPrivacyRequestForMerchant,
+    "WTTCPAPrivacyRequestForMerchantMerchantID": wTTCPAPrivacyRequestForMerchantMerchantID_1.WTTCPAPrivacyRequestForMerchantMerchantID,
+    "WTTCPAPrivacyRequestResult": wTTCPAPrivacyRequestResult_1.WTTCPAPrivacyRequestResult,
     "WTTicket": wTTicket_1.WTTicket,
     "WTTicketCreateParams": wTTicketCreateParams_1.WTTicketCreateParams,
     "WTTicketReachStats": wTTicketReachStats_1.WTTicketReachStats,
@@ -1619,10 +1813,14 @@ let typeMap = {
     "WTWalletHeaderStyle": wTWalletHeaderStyle_1.WTWalletHeaderStyle,
     "WTWalletItemRedemption": wTWalletItemRedemption_1.WTWalletItemRedemption,
     "WTWalletObjectPrefixCounts": wTWalletObjectPrefixCounts_1.WTWalletObjectPrefixCounts,
+    "WTWalletOrdering": wTWalletOrdering_1.WTWalletOrdering,
     "WTWalletPageView": wTWalletPageView_1.WTWalletPageView,
     "WTWalletPageViewCount": wTWalletPageViewCount_1.WTWalletPageViewCount,
     "WTWalletPageViewGeoPoint": wTWalletPageViewGeoPoint_1.WTWalletPageViewGeoPoint,
     "WTWalletPassProvider": wTWalletPassProvider_1.WTWalletPassProvider,
+    "WTWalletSectionAccess": wTWalletSectionAccess_1.WTWalletSectionAccess,
+    "WTWalletSectionTopItem": wTWalletSectionTopItem_1.WTWalletSectionTopItem,
+    "WTWalletSectionViews": wTWalletSectionViews_1.WTWalletSectionViews,
     "WTWhatsAppInboundWebhook": wTWhatsAppInboundWebhook_1.WTWhatsAppInboundWebhook,
     "WTWhatsAppStatusCallback": wTWhatsAppStatusCallback_1.WTWhatsAppStatusCallback,
     "WalletConfiguration": walletConfiguration_1.WalletConfiguration,

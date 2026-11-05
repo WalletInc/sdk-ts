@@ -175,6 +175,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "isMenu",
+        "baseName": "isMenu",
+        "type": "any"
+    },
+    {
         "name": "isRoomRates",
         "baseName": "isRoomRates",
         "type": "any"

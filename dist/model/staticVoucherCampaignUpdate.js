@@ -53,6 +53,11 @@ StaticVoucherCampaignUpdate.attributeTypeMap = [
         "name": "paymentDesignID",
         "baseName": "paymentDesignID",
         "type": "string"
+    },
+    {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=staticVoucherCampaignUpdate.js.map

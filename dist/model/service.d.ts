@@ -1,6 +1,12 @@
 import { AmenityId } from './amenityId';
 import { ProductTaxBehavior } from './productTaxBehavior';
+import { WTAgeRestriction } from './wTAgeRestriction';
 export declare class Service extends null<String, any> {
+    'ageRestriction'?: WTAgeRestriction;
+    'idCheckOnHandoff'?: any | null;
+    'isSoldOut'?: any | null;
+    'soldOutUntil'?: any | null;
+    'fulfillmentModes'?: any | null;
     'title': any | null;
     'description': any | null;
     'displayedPrice'?: any | null;

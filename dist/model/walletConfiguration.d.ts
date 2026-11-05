@@ -38,6 +38,7 @@ export declare class WalletConfiguration extends null<String, any> {
     'isRepresentatives': any | null;
     'isProducts': any | null;
     'isServices': any | null;
+    'isMenu': any | null;
     'isRoomRates': any | null;
     'isAmenities': any | null;
     'isGaming': any | null;

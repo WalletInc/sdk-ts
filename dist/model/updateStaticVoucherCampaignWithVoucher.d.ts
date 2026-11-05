@@ -12,6 +12,7 @@ export declare class UpdateStaticVoucherCampaignWithVoucher extends null<String,
     'memberID'?: any | null;
     'offerAmountCents': any | null;
     'cellPhone'?: any | null;
+    'guestInstructions'?: any | null;
     'voucherID': string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

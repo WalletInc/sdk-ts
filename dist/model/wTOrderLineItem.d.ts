@@ -6,6 +6,9 @@ export declare class WTOrderLineItem extends null<String, any> {
     'titleSnapshot': any | null;
     'unitAmount': any | null;
     'quantity': any | null;
+    'note'?: any | null;
+    'menuItemID'?: any | null;
+    'options'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

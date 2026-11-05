@@ -7,6 +7,7 @@ export declare class NewsArticle extends null<String, any> {
     'mediaURL'?: any | null;
     'publishedDate'?: any | null;
     'id': AmenityId;
+    'pageID'?: any | null;
     'createdAt': any | null;
     'updatedAt': any | null;
     'isActive': any | null;

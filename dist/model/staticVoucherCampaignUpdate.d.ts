@@ -9,6 +9,7 @@ export declare class StaticVoucherCampaignUpdate extends null<String, any> {
     'merchantsReferenceID'?: any | null;
     'validOnlyAtPOSRegisterIDs'?: any | null;
     'paymentDesignID': string;
+    'guestInstructions'?: any | null;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

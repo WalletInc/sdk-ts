@@ -20,6 +20,11 @@ WTGuestAmountBreakdown.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "taxCents",
+        "baseName": "taxCents",
+        "type": "any"
+    },
+    {
         "name": "tipCents",
         "baseName": "tipCents",
         "type": "any"

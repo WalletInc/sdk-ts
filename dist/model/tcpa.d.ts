@@ -1,12 +1,12 @@
 import { StaticVoucherId } from './staticVoucherId';
 export declare class Tcpa extends null<String, any> {
-    'cellPhone': any | null;
+    'cellPhone': string;
     'phoneNumberID': string;
     'id': StaticVoucherId;
     'merchantID': string;
-    'createdAt': any | null;
-    'updatedAt': any | null;
-    'isActive': any | null;
+    'createdAt': Date;
+    'updatedAt': Date;
+    'isActive': boolean;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

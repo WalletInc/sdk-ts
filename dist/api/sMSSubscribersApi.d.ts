@@ -1,6 +1,10 @@
 /// <reference types="node" />
 import http from 'http';
 import { SmsSubscriber } from '../model/smsSubscriber';
+import { WTEarlyOptInCount } from '../model/wTEarlyOptInCount';
+import { WTEarlyOptInImportRequest } from '../model/wTEarlyOptInImportRequest';
+import { WTEarlyOptInImportResult } from '../model/wTEarlyOptInImportResult';
+import { WTEarlyOptInPage } from '../model/wTEarlyOptInPage';
 import { WTSmsSubscriberCreateParams } from '../model/wTSmsSubscriberCreateParams';
 import { WTSmsSubscriberUpdateParams } from '../model/wTSmsSubscriberUpdateParams';
 import { Authentication, Interceptor } from '../model/models';
@@ -34,6 +38,14 @@ export declare class SMSSubscribersApi {
         response: http.IncomingMessage;
         body: SmsSubscriber;
     }>;
+    countEarlySmsOptIns(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTEarlyOptInCount;
+    }>;
     createSmsSubscriber(wTSmsSubscriberCreateParams: WTSmsSubscriberCreateParams, options?: {
         headers: {
             [name: string]: string;
@@ -49,6 +61,30 @@ export declare class SMSSubscribersApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
+    }>;
+    fetchEarlySmsOptIns(page?: number, pageSize?: number, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTEarlyOptInPage;
+    }>;
+    importEarlySmsOptIns(wTEarlyOptInImportRequest?: WTEarlyOptInImportRequest, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTEarlyOptInImportResult;
+    }>;
+    previewEarlySmsOptInImport(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTEarlyOptInImportResult;
     }>;
     restoreSmsSubscriber(id: string, options?: {
         headers: {

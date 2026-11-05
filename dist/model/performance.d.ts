@@ -13,6 +13,7 @@ export declare class Performance extends null<String, any> {
     'ticketExpirationDateTime'?: any | null;
     'redemptionInstructions'?: any | null;
     'id': AmenityId;
+    'pageID'?: any | null;
     'createdAt': any | null;
     'updatedAt': any | null;
     'isActive': any | null;

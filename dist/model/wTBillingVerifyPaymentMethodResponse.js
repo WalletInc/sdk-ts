@@ -53,6 +53,11 @@ WTBillingVerifyPaymentMethodResponse.attributeTypeMap = [
         "name": "nextChargeCurrency",
         "baseName": "nextChargeCurrency",
         "type": "any"
+    },
+    {
+        "name": "scheduledDowngradeAt",
+        "baseName": "scheduledDowngradeAt",
+        "type": "any"
     }
 ];
 //# sourceMappingURL=wTBillingVerifyPaymentMethodResponse.js.map

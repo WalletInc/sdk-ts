@@ -55,6 +55,11 @@ CreateStaticVoucherCampaignWithVoucherWithCSV.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
+    },
+    {
         "name": "bucket",
         "baseName": "bucket",
         "type": "any"

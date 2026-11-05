@@ -54,6 +54,8 @@ export * from './loungeApi';
 import { LoungeApi } from './loungeApi';
 export * from './membershipTiersApi';
 import { MembershipTiersApi } from './membershipTiersApi';
+export * from './menusApi';
+import { MenusApi } from './menusApi';
 export * from './merchantApi';
 import { MerchantApi } from './merchantApi';
 export * from './merchantCreditsApi';
@@ -86,6 +88,8 @@ export * from './quickLinksApi';
 import { QuickLinksApi } from './quickLinksApi';
 export * from './quickLinksSectionApi';
 import { QuickLinksSectionApi } from './quickLinksSectionApi';
+export * from './relatedItemsApi';
+import { RelatedItemsApi } from './relatedItemsApi';
 export * from './roomRatesApi';
 import { RoomRatesApi } from './roomRatesApi';
 export * from './sMSMessagesApi';
@@ -135,4 +139,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [APIKeysApi, AmenitiesApi, AppToPersonA2PRegistrationApi, AppleWalletSubscribersApi, AuthenticationApi, BillingPaymentsApi, BroadcastsApi, ClubMembersApi, CountriesApi, CustomerApi, DiningApi, DynamicVouchersApi, EmailSubscribersApi, EmployeesApi, FilesDocumentsApi, GalleryApi, GamingApi, GiftCardsApi, GoogleWalletSubscribersApi, HelpDeskApi, ImportExportApi, ImportedListsApi, IndustriesApi, InfoGenesisReportsApi, InteractionsApi, KeywordAutoRespondersApi, LoungeApi, MembershipTiersApi, MerchantApi, MerchantCreditsApi, NewsApi, OpenAIApi, OptInListsApi, OrdersApi, PaymentDesignsApi, PerformancesApi, PhoneNumbersApi, PointOfSaleConfigurationApi, PrizesApi, ProductsApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, RoomRatesApi, SMSMessagesApi, SMSSubscribersApi, ServicesApi, ShopifyTerminalApi, ShortLinksApi, StaticVoucherCampaignsApi, StaticVouchersApi, StripeConnectApi, SystemApi, TicketsApi, VideosApi, VirtualBusinessCardApi, WalletConfigurationApi, WalletMobileTerminalApi, WalletTransactionLedgerApi, WalletWebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];
+export const APIS = [APIKeysApi, AmenitiesApi, AppToPersonA2PRegistrationApi, AppleWalletSubscribersApi, AuthenticationApi, BillingPaymentsApi, BroadcastsApi, ClubMembersApi, CountriesApi, CustomerApi, DiningApi, DynamicVouchersApi, EmailSubscribersApi, EmployeesApi, FilesDocumentsApi, GalleryApi, GamingApi, GiftCardsApi, GoogleWalletSubscribersApi, HelpDeskApi, ImportExportApi, ImportedListsApi, IndustriesApi, InfoGenesisReportsApi, InteractionsApi, KeywordAutoRespondersApi, LoungeApi, MembershipTiersApi, MenusApi, MerchantApi, MerchantCreditsApi, NewsApi, OpenAIApi, OptInListsApi, OrdersApi, PaymentDesignsApi, PerformancesApi, PhoneNumbersApi, PointOfSaleConfigurationApi, PrizesApi, ProductsApi, PromotionCodesApi, QRCodeDesignsApi, QuickLinksApi, QuickLinksSectionApi, RelatedItemsApi, RoomRatesApi, SMSMessagesApi, SMSSubscribersApi, ServicesApi, ShopifyTerminalApi, ShortLinksApi, StaticVoucherCampaignsApi, StaticVouchersApi, StripeConnectApi, SystemApi, TicketsApi, VideosApi, VirtualBusinessCardApi, WalletConfigurationApi, WalletMobileTerminalApi, WalletTransactionLedgerApi, WalletWebTerminalApi, WixTerminalApi, WooCommerceTerminalApi];
