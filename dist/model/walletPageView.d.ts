@@ -1,3 +1,4 @@
+import { TrafficClass } from './trafficClass';
 import { WTWalletPageViewGeoPoint } from './wTWalletPageViewGeoPoint';
 export declare class WalletPageView extends null<String, any> {
     'ip': any | null;
@@ -20,6 +21,7 @@ export declare class WalletPageView extends null<String, any> {
     'phoneVerificationToken': any | null;
     'referringDomain'?: any | null;
     'referrer'?: any | null;
+    'trafficClass'?: TrafficClass;
     'id': string;
     'status': any | null;
     'country': any | null;

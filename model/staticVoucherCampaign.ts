@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-05T12:09:27.528Z
+ * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-06T16:23:55.690Z
  *
  * The version of the OpenAPI document: 2.61.0
  * Contact: development@wallet.inc
@@ -27,6 +27,7 @@ export class StaticVoucherCampaign extends null<String, any> {
     'employeeID': string;
     'reinvestmentSum': any | null;
     'numberOfVouchersInFile': any | null;
+    'guestInstructions'?: any | null;
     'campaignGroupID'?: string;
     'bucket'?: any | null;
     'createdBySourceID': any | null;
@@ -40,7 +41,6 @@ export class StaticVoucherCampaign extends null<String, any> {
     'reinvestmentSumString': any | null;
     'startDate': any | null;
     'expirationDate': any | null;
-    'guestInstructions'?: any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -106,6 +106,11 @@ export class StaticVoucherCampaign extends null<String, any> {
             "type": "any"
         },
         {
+            "name": "guestInstructions",
+            "baseName": "guestInstructions",
+            "type": "any"
+        },
+        {
             "name": "campaignGroupID",
             "baseName": "campaignGroupID",
             "type": "string"
@@ -168,11 +173,6 @@ export class StaticVoucherCampaign extends null<String, any> {
         {
             "name": "expirationDate",
             "baseName": "expirationDate",
-            "type": "any"
-        },
-        {
-            "name": "guestInstructions",
-            "baseName": "guestInstructions",
             "type": "any"
         }    ];
 

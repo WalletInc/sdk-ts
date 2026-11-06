@@ -10,6 +10,11 @@ exports.PaymentDesign = PaymentDesign;
 PaymentDesign.discriminator = undefined;
 PaymentDesign.attributeTypeMap = [
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "string"
+    },
+    {
         "name": "borderColor",
         "baseName": "borderColor",
         "type": "string"
@@ -75,6 +80,21 @@ PaymentDesign.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "textPlate",
+        "baseName": "textPlate",
+        "type": "boolean"
+    },
+    {
+        "name": "textPlateOpacity",
+        "baseName": "textPlateOpacity",
+        "type": "number"
+    },
+    {
+        "name": "textPlateColor",
+        "baseName": "textPlateColor",
+        "type": "string"
+    },
+    {
         "name": "employeeID",
         "baseName": "employeeID",
         "type": "string"
@@ -103,26 +123,6 @@ PaymentDesign.attributeTypeMap = [
         "name": "isActive",
         "baseName": "isActive",
         "type": "boolean"
-    },
-    {
-        "name": "textPlate",
-        "baseName": "textPlate",
-        "type": "boolean"
-    },
-    {
-        "name": "textPlateOpacity",
-        "baseName": "textPlateOpacity",
-        "type": "number"
-    },
-    {
-        "name": "textPlateColor",
-        "baseName": "textPlateColor",
-        "type": "string"
-    },
-    {
-        "name": "guestInstructions",
-        "baseName": "guestInstructions",
-        "type": "string"
     }
 ];
 //# sourceMappingURL=paymentDesign.js.map

@@ -10,6 +10,11 @@ exports.WTPaymentDesignCreateParams = WTPaymentDesignCreateParams;
 WTPaymentDesignCreateParams.discriminator = undefined;
 WTPaymentDesignCreateParams.attributeTypeMap = [
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
+    },
+    {
         "name": "borderColor",
         "baseName": "borderColor",
         "type": "string"
@@ -65,16 +70,6 @@ WTPaymentDesignCreateParams.attributeTypeMap = [
         "type": "string"
     },
     {
-        "name": "abbreviation",
-        "baseName": "abbreviation",
-        "type": "string"
-    },
-    {
-        "name": "acronym",
-        "baseName": "acronym",
-        "type": "string"
-    },
-    {
         "name": "textPlate",
         "baseName": "textPlate",
         "type": "boolean"
@@ -87,12 +82,17 @@ WTPaymentDesignCreateParams.attributeTypeMap = [
     {
         "name": "textPlateColor",
         "baseName": "textPlateColor",
-        "type": "any"
+        "type": "string"
     },
     {
-        "name": "guestInstructions",
-        "baseName": "guestInstructions",
-        "type": "any"
+        "name": "abbreviation",
+        "baseName": "abbreviation",
+        "type": "string"
+    },
+    {
+        "name": "acronym",
+        "baseName": "acronym",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTPaymentDesignCreateParams.js.map

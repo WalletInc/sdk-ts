@@ -258,6 +258,7 @@ export * from './tcpa';
 export * from './thread';
 export * from './ticket';
 export * from './ticketSortKeys';
+export * from './trafficClass';
 export * from './trustBundleStatuses';
 export * from './updateChromeThemePreferenceRequest';
 export * from './updateChromeThemePreferenceRequestChromeTheme';

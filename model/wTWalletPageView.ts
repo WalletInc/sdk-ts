@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-05T12:09:27.528Z
+ * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-06T16:23:55.690Z
  *
  * The version of the OpenAPI document: 2.61.0
  * Contact: development@wallet.inc
@@ -11,6 +11,7 @@
  */
 
 import { RequestFile } from './models';
+import { TrafficClass } from './trafficClass';
 import { WTWalletPageViewGeoPoint } from './wTWalletPageViewGeoPoint';
 
 export class WTWalletPageView extends null<String, any> {
@@ -34,6 +35,7 @@ export class WTWalletPageView extends null<String, any> {
     'phoneVerificationToken': any | null;
     'referringDomain'?: any | null;
     'referrer'?: any | null;
+    'trafficClass'?: TrafficClass;
     'id': string;
     'status': any | null;
     'country': any | null;
@@ -159,6 +161,11 @@ export class WTWalletPageView extends null<String, any> {
             "name": "referrer",
             "baseName": "referrer",
             "type": "any"
+        },
+        {
+            "name": "trafficClass",
+            "baseName": "trafficClass",
+            "type": "TrafficClass"
         },
         {
             "name": "id",

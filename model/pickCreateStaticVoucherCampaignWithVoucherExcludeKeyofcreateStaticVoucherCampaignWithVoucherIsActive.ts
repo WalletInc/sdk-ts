@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-05T12:09:27.528Z
+ * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-06T16:23:55.690Z
  *
  * The version of the OpenAPI document: 2.61.0
  * Contact: development@wallet.inc
@@ -24,13 +24,13 @@ export class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticV
     'merchantsReferenceID'?: string;
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
+    'guestInstructions'?: string;
     'startDateTime': Date;
     'expirationDateTime': Date;
     'sourceID': number;
     'memberID'?: string;
     'offerAmountCents': number;
     'cellPhone'?: string;
-    'guestInstructions'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -71,6 +71,11 @@ export class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticV
             "type": "string"
         },
         {
+            "name": "guestInstructions",
+            "baseName": "guestInstructions",
+            "type": "string"
+        },
+        {
             "name": "startDateTime",
             "baseName": "startDateTime",
             "type": "Date"
@@ -98,11 +103,6 @@ export class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticV
         {
             "name": "cellPhone",
             "baseName": "cellPhone",
-            "type": "string"
-        },
-        {
-            "name": "guestInstructions",
-            "baseName": "guestInstructions",
             "type": "string"
         }    ];
 

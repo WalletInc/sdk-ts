@@ -1,5 +1,6 @@
 import { PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType } from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType';
 export declare class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym {
+    'guestInstructions'?: string;
     'borderColor': string;
     'borderStyleType': PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType;
     'borderSize': string;
@@ -11,6 +12,9 @@ export declare class PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignC
     'displayName': string;
     'backgroundImageURL'?: string;
     'companyLogoURL'?: string;
+    'textPlate'?: boolean;
+    'textPlateOpacity'?: number;
+    'textPlateColor'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

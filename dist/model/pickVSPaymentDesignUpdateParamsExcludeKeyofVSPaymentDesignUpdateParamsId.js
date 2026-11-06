@@ -10,6 +10,11 @@ exports.PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId
 PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.discriminator = undefined;
 PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.attributeTypeMap = [
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "string"
+    },
+    {
         "name": "borderColor",
         "baseName": "borderColor",
         "type": "string"
@@ -72,6 +77,21 @@ PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsId.attribu
     {
         "name": "companyLogoURL",
         "baseName": "companyLogoURL",
+        "type": "string"
+    },
+    {
+        "name": "textPlate",
+        "baseName": "textPlate",
+        "type": "boolean"
+    },
+    {
+        "name": "textPlateOpacity",
+        "baseName": "textPlateOpacity",
+        "type": "number"
+    },
+    {
+        "name": "textPlateColor",
+        "baseName": "textPlateColor",
         "type": "string"
     }
 ];

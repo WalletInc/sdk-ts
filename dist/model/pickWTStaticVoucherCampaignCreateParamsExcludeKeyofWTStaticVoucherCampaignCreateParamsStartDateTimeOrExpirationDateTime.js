@@ -55,6 +55,11 @@ PickWTStaticVoucherCampaignCreateParamsExcludeKeyofWTStaticVoucherCampaignCreate
         "type": "string"
     },
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "string"
+    },
+    {
         "name": "campaignGroupID",
         "baseName": "campaignGroupID",
         "type": "string"

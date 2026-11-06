@@ -272,6 +272,7 @@ __exportStar(require("./tcpa"), exports);
 __exportStar(require("./thread"), exports);
 __exportStar(require("./ticket"), exports);
 __exportStar(require("./ticketSortKeys"), exports);
+__exportStar(require("./trafficClass"), exports);
 __exportStar(require("./trustBundleStatuses"), exports);
 __exportStar(require("./updateChromeThemePreferenceRequest"), exports);
 __exportStar(require("./updateChromeThemePreferenceRequestChromeTheme"), exports);
@@ -870,6 +871,7 @@ const tcpa_1 = require("./tcpa");
 const thread_1 = require("./thread");
 const ticket_1 = require("./ticket");
 const ticketSortKeys_1 = require("./ticketSortKeys");
+const trafficClass_1 = require("./trafficClass");
 const trustBundleStatuses_1 = require("./trustBundleStatuses");
 const updateChromeThemePreferenceRequest_1 = require("./updateChromeThemePreferenceRequest");
 const updateChromeThemePreferenceRequestChromeTheme_1 = require("./updateChromeThemePreferenceRequestChromeTheme");
@@ -1488,6 +1490,7 @@ let typeMap = {
     "Tcpa": tcpa_1.Tcpa,
     "Thread": thread_1.Thread,
     "Ticket": ticket_1.Ticket,
+    "TrafficClass": trafficClass_1.TrafficClass,
     "UpdateChromeThemePreferenceRequest": updateChromeThemePreferenceRequest_1.UpdateChromeThemePreferenceRequest,
     "UpdateChromeThemePreferenceRequestChromeTheme": updateChromeThemePreferenceRequestChromeTheme_1.UpdateChromeThemePreferenceRequestChromeTheme,
     "UpdateEmailNotificationPreferenceRequest": updateEmailNotificationPreferenceRequest_1.UpdateEmailNotificationPreferenceRequest,

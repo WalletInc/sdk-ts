@@ -68,6 +68,11 @@ PickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpiratio
         "name": "numberOfVouchersInFile",
         "baseName": "numberOfVouchersInFile",
         "type": "number"
+    },
+    {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=pickVSCampaignUpdateParamsExcludeKeyofVSCampaignUpdateParamsStartDateOrExpirationDate.js.map

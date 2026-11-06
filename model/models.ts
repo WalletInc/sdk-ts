@@ -257,6 +257,7 @@ export * from './tcpa';
 export * from './thread';
 export * from './ticket';
 export * from './ticketSortKeys';
+export * from './trafficClass';
 export * from './trustBundleStatuses';
 export * from './updateChromeThemePreferenceRequest';
 export * from './updateChromeThemePreferenceRequestChromeTheme';
@@ -869,6 +870,7 @@ import { Tcpa } from './tcpa';
 import { Thread } from './thread';
 import { Ticket } from './ticket';
 import { TicketSortKeys } from './ticketSortKeys';
+import { TrafficClass } from './trafficClass';
 import { TrustBundleStatuses } from './trustBundleStatuses';
 import { UpdateChromeThemePreferenceRequest } from './updateChromeThemePreferenceRequest';
 import { UpdateChromeThemePreferenceRequestChromeTheme } from './updateChromeThemePreferenceRequestChromeTheme';
@@ -1491,6 +1493,7 @@ let typeMap: {[index: string]: any} = {
     "Tcpa": Tcpa,
     "Thread": Thread,
     "Ticket": Ticket,
+    "TrafficClass": TrafficClass,
     "UpdateChromeThemePreferenceRequest": UpdateChromeThemePreferenceRequest,
     "UpdateChromeThemePreferenceRequestChromeTheme": UpdateChromeThemePreferenceRequestChromeTheme,
     "UpdateEmailNotificationPreferenceRequest": UpdateEmailNotificationPreferenceRequest,

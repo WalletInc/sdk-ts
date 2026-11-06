@@ -9,6 +9,7 @@ export declare class PickWTStaticVoucherCampaignCreateParamsExcludeKeyofWTStatic
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
     'employeeID': string;
+    'guestInstructions'?: string;
     'campaignGroupID'?: string;
     'bucket'?: string;
     'createdBySourceID': number;

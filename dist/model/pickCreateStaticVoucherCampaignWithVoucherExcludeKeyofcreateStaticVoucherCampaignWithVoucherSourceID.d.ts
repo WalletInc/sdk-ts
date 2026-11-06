@@ -7,12 +7,12 @@ export declare class PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreat
     'merchantsReferenceID'?: string;
     'validOnlyAtPOSRegisterIDs'?: Array<string>;
     'paymentDesignID': string;
+    'guestInstructions'?: string;
     'startDateTime': Date;
     'expirationDateTime': Date;
     'memberID'?: string;
     'offerAmountCents': number;
     'cellPhone'?: string;
-    'guestInstructions'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

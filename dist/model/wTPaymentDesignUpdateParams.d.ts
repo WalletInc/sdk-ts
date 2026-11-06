@@ -1,5 +1,6 @@
 import { PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType } from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType';
 export declare class WTPaymentDesignUpdateParams extends null<String, any> {
+    'guestInstructions'?: any | null;
     'borderColor': string;
     'borderStyleType': PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType;
     'borderSize': string;
@@ -11,12 +12,11 @@ export declare class WTPaymentDesignUpdateParams extends null<String, any> {
     'displayName': string;
     'backgroundImageURL'?: string;
     'companyLogoURL'?: string;
-    'abbreviation'?: string;
-    'acronym'?: string;
     'textPlate'?: boolean;
     'textPlateOpacity'?: any | null;
-    'textPlateColor'?: any | null;
-    'guestInstructions'?: any | null;
+    'textPlateColor'?: string;
+    'abbreviation'?: string;
+    'acronym'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

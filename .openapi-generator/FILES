@@ -325,6 +325,7 @@ model/tcpa.ts
 model/thread.ts
 model/ticket.ts
 model/ticketSortKeys.ts
+model/trafficClass.ts
 model/trustBundleStatuses.ts
 model/updateChromeThemePreferenceRequest.ts
 model/updateChromeThemePreferenceRequestChromeTheme.ts

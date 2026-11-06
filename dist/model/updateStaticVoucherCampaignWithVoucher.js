@@ -45,6 +45,11 @@ UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
         "type": "string"
     },
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
+    },
+    {
         "name": "startDateTime",
         "baseName": "startDateTime",
         "type": "any"
@@ -67,11 +72,6 @@ UpdateStaticVoucherCampaignWithVoucher.attributeTypeMap = [
     {
         "name": "cellPhone",
         "baseName": "cellPhone",
-        "type": "any"
-    },
-    {
-        "name": "guestInstructions",
-        "baseName": "guestInstructions",
         "type": "any"
     },
     {

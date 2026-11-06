@@ -110,6 +110,11 @@ WTWalletPageView.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "trafficClass",
+        "baseName": "trafficClass",
+        "type": "TrafficClass"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "string"

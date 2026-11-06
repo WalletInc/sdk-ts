@@ -45,6 +45,11 @@ PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaig
         "type": "string"
     },
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "string"
+    },
+    {
         "name": "startDateTime",
         "baseName": "startDateTime",
         "type": "Date"
@@ -72,11 +77,6 @@ PickCreateStaticVoucherCampaignWithVoucherExcludeKeyofcreateStaticVoucherCampaig
     {
         "name": "cellPhone",
         "baseName": "cellPhone",
-        "type": "string"
-    },
-    {
-        "name": "guestInstructions",
-        "baseName": "guestInstructions",
         "type": "string"
     }
 ];

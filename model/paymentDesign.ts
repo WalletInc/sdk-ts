@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-05T12:09:27.528Z
+ * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-06T16:23:55.690Z
  *
  * The version of the OpenAPI document: 2.61.0
  * Contact: development@wallet.inc
@@ -15,6 +15,7 @@ import { PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsI
 import { StaticVoucherId } from './staticVoucherId';
 
 export class PaymentDesign extends null<String, any> {
+    'guestInstructions': string;
     'borderColor': string;
     'borderStyleType': PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType;
     'borderSize': string;
@@ -28,20 +29,24 @@ export class PaymentDesign extends null<String, any> {
     'displayName': string;
     'backgroundImageURL'?: string;
     'companyLogoURL'?: string;
+    'textPlate': boolean;
+    'textPlateOpacity': number;
+    'textPlateColor'?: string;
     'employeeID': string;
     'id': StaticVoucherId;
     'merchantID': string;
     'createdAt': Date;
     'updatedAt': Date;
     'isActive': boolean;
-    'textPlate': boolean;
-    'textPlateOpacity': number;
-    'textPlateColor'?: string;
-    'guestInstructions': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "guestInstructions",
+            "baseName": "guestInstructions",
+            "type": "string"
+        },
         {
             "name": "borderColor",
             "baseName": "borderColor",
@@ -108,6 +113,21 @@ export class PaymentDesign extends null<String, any> {
             "type": "string"
         },
         {
+            "name": "textPlate",
+            "baseName": "textPlate",
+            "type": "boolean"
+        },
+        {
+            "name": "textPlateOpacity",
+            "baseName": "textPlateOpacity",
+            "type": "number"
+        },
+        {
+            "name": "textPlateColor",
+            "baseName": "textPlateColor",
+            "type": "string"
+        },
+        {
             "name": "employeeID",
             "baseName": "employeeID",
             "type": "string"
@@ -136,26 +156,6 @@ export class PaymentDesign extends null<String, any> {
             "name": "isActive",
             "baseName": "isActive",
             "type": "boolean"
-        },
-        {
-            "name": "textPlate",
-            "baseName": "textPlate",
-            "type": "boolean"
-        },
-        {
-            "name": "textPlateOpacity",
-            "baseName": "textPlateOpacity",
-            "type": "number"
-        },
-        {
-            "name": "textPlateColor",
-            "baseName": "textPlateColor",
-            "type": "string"
-        },
-        {
-            "name": "guestInstructions",
-            "baseName": "guestInstructions",
-            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {

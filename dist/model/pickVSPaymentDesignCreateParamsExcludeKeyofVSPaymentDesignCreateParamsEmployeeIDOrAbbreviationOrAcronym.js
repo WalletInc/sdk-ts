@@ -10,6 +10,11 @@ exports.PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEm
 PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym.discriminator = undefined;
 PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeIDOrAbbreviationOrAcronym.attributeTypeMap = [
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "string"
+    },
+    {
         "name": "borderColor",
         "baseName": "borderColor",
         "type": "string"
@@ -62,6 +67,21 @@ PickVSPaymentDesignCreateParamsExcludeKeyofVSPaymentDesignCreateParamsEmployeeID
     {
         "name": "companyLogoURL",
         "baseName": "companyLogoURL",
+        "type": "string"
+    },
+    {
+        "name": "textPlate",
+        "baseName": "textPlate",
+        "type": "boolean"
+    },
+    {
+        "name": "textPlateOpacity",
+        "baseName": "textPlateOpacity",
+        "type": "number"
+    },
+    {
+        "name": "textPlateColor",
+        "baseName": "textPlateColor",
         "type": "string"
     }
 ];

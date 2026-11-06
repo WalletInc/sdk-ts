@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-05T12:09:27.528Z
+ * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-06T16:23:55.690Z
  *
  * The version of the OpenAPI document: 2.61.0
  * Contact: development@wallet.inc
@@ -14,6 +14,7 @@ import { RequestFile } from './models';
 import { PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType } from './pickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType';
 
 export class WTPaymentDesignCreateParams extends null<String, any> {
+    'guestInstructions'?: any | null;
     'borderColor': string;
     'borderStyleType': PickVSPaymentDesignUpdateParamsExcludeKeyofVSPaymentDesignUpdateParamsIdBorderStyleType;
     'borderSize': string;
@@ -25,16 +26,20 @@ export class WTPaymentDesignCreateParams extends null<String, any> {
     'displayName': string;
     'backgroundImageURL'?: string;
     'companyLogoURL'?: string;
-    'abbreviation'?: string;
-    'acronym'?: string;
     'textPlate'?: boolean;
     'textPlateOpacity'?: any | null;
-    'textPlateColor'?: any | null;
-    'guestInstructions'?: any | null;
+    'textPlateColor'?: string;
+    'abbreviation'?: string;
+    'acronym'?: string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "guestInstructions",
+            "baseName": "guestInstructions",
+            "type": "any"
+        },
         {
             "name": "borderColor",
             "baseName": "borderColor",
@@ -91,16 +96,6 @@ export class WTPaymentDesignCreateParams extends null<String, any> {
             "type": "string"
         },
         {
-            "name": "abbreviation",
-            "baseName": "abbreviation",
-            "type": "string"
-        },
-        {
-            "name": "acronym",
-            "baseName": "acronym",
-            "type": "string"
-        },
-        {
             "name": "textPlate",
             "baseName": "textPlate",
             "type": "boolean"
@@ -113,12 +108,17 @@ export class WTPaymentDesignCreateParams extends null<String, any> {
         {
             "name": "textPlateColor",
             "baseName": "textPlateColor",
-            "type": "any"
+            "type": "string"
         },
         {
-            "name": "guestInstructions",
-            "baseName": "guestInstructions",
-            "type": "any"
+            "name": "abbreviation",
+            "baseName": "abbreviation",
+            "type": "string"
+        },
+        {
+            "name": "acronym",
+            "baseName": "acronym",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {

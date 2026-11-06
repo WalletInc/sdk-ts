@@ -70,6 +70,11 @@ StaticVoucherCampaign.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "guestInstructions",
+        "baseName": "guestInstructions",
+        "type": "any"
+    },
+    {
         "name": "campaignGroupID",
         "baseName": "campaignGroupID",
         "type": "string"
@@ -132,11 +137,6 @@ StaticVoucherCampaign.attributeTypeMap = [
     {
         "name": "expirationDate",
         "baseName": "expirationDate",
-        "type": "any"
-    },
-    {
-        "name": "guestInstructions",
-        "baseName": "guestInstructions",
         "type": "any"
     }
 ];

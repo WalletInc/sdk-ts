@@ -1,6 +1,6 @@
 /**
  * wallet-api
- * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-05T12:09:27.528Z
+ * Wallet Inc. API reference.  **Spec version 2.61.0**, built 2026-11-06T16:23:55.690Z
  *
  * The version of the OpenAPI document: 2.61.0
  * Contact: development@wallet.inc
@@ -21,12 +21,12 @@ export class UpdateStaticVoucherCampaignWithVoucher extends null<String, any> {
     'merchantsReferenceID'?: any | null;
     'validOnlyAtPOSRegisterIDs'?: any | null;
     'paymentDesignID': string;
+    'guestInstructions'?: any | null;
     'startDateTime': any | null;
     'expirationDateTime': any | null;
     'memberID'?: any | null;
     'offerAmountCents': any | null;
     'cellPhone'?: any | null;
-    'guestInstructions'?: any | null;
     'voucherID': string;
 
     static discriminator: string | undefined = undefined;
@@ -68,6 +68,11 @@ export class UpdateStaticVoucherCampaignWithVoucher extends null<String, any> {
             "type": "string"
         },
         {
+            "name": "guestInstructions",
+            "baseName": "guestInstructions",
+            "type": "any"
+        },
+        {
             "name": "startDateTime",
             "baseName": "startDateTime",
             "type": "any"
@@ -90,11 +95,6 @@ export class UpdateStaticVoucherCampaignWithVoucher extends null<String, any> {
         {
             "name": "cellPhone",
             "baseName": "cellPhone",
-            "type": "any"
-        },
-        {
-            "name": "guestInstructions",
-            "baseName": "guestInstructions",
             "type": "any"
         },
         {
