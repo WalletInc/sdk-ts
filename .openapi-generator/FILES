@@ -202,7 +202,6 @@ model/merchantTermsDocumentType.ts
 model/merchantURL.ts
 model/message.ts
 model/models.ts
-model/moduleError.ts
 model/newsArticle.ts
 model/notFound.ts
 model/oAIAssistantUpdateParams.ts
@@ -211,7 +210,6 @@ model/optInList.ts
 model/optInListSource.ts
 model/optInListSubscriber.ts
 model/optInListSubscriberOptInSourceID.ts
-model/order.ts
 model/orderStatus.ts
 model/outboundSMS.ts
 model/outboundSMSPaymentObjectBroadcastID.ts
@@ -660,6 +658,9 @@ model/wTWalletPassProvider.ts
 model/wTWalletSectionAccess.ts
 model/wTWalletSectionTopItem.ts
 model/wTWalletSectionViews.ts
+model/wTWebsiteWidget.ts
+model/wTWebsiteWidgetEmbedders.ts
+model/wTWebsiteWidgetOriginsUpdate.ts
 model/wTWhatsAppInboundWebhook.ts
 model/wTWhatsAppStatusCallback.ts
 model/walletConfiguration.ts

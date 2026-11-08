@@ -149,7 +149,6 @@ __exportStar(require("./merchantNotInitialized"), exports);
 __exportStar(require("./merchantTermsDocumentType"), exports);
 __exportStar(require("./merchantURL"), exports);
 __exportStar(require("./message"), exports);
-__exportStar(require("./moduleError"), exports);
 __exportStar(require("./newsArticle"), exports);
 __exportStar(require("./notFound"), exports);
 __exportStar(require("./oAIAssistantUpdateParams"), exports);
@@ -158,7 +157,6 @@ __exportStar(require("./optInList"), exports);
 __exportStar(require("./optInListSource"), exports);
 __exportStar(require("./optInListSubscriber"), exports);
 __exportStar(require("./optInListSubscriberOptInSourceID"), exports);
-__exportStar(require("./order"), exports);
 __exportStar(require("./orderStatus"), exports);
 __exportStar(require("./outboundSMS"), exports);
 __exportStar(require("./outboundSMSPaymentObjectBroadcastID"), exports);
@@ -607,6 +605,9 @@ __exportStar(require("./wTWalletPassProvider"), exports);
 __exportStar(require("./wTWalletSectionAccess"), exports);
 __exportStar(require("./wTWalletSectionTopItem"), exports);
 __exportStar(require("./wTWalletSectionViews"), exports);
+__exportStar(require("./wTWebsiteWidget"), exports);
+__exportStar(require("./wTWebsiteWidgetEmbedders"), exports);
+__exportStar(require("./wTWebsiteWidgetOriginsUpdate"), exports);
 __exportStar(require("./wTWhatsAppInboundWebhook"), exports);
 __exportStar(require("./wTWhatsAppStatusCallback"), exports);
 __exportStar(require("./walletConfiguration"), exports);
@@ -748,7 +749,6 @@ const merchantNotInitialized_1 = require("./merchantNotInitialized");
 const merchantTermsDocumentType_1 = require("./merchantTermsDocumentType");
 const merchantURL_1 = require("./merchantURL");
 const message_1 = require("./message");
-const moduleError_1 = require("./moduleError");
 const newsArticle_1 = require("./newsArticle");
 const notFound_1 = require("./notFound");
 const oAIAssistantUpdateParams_1 = require("./oAIAssistantUpdateParams");
@@ -757,7 +757,6 @@ const optInList_1 = require("./optInList");
 const optInListSource_1 = require("./optInListSource");
 const optInListSubscriber_1 = require("./optInListSubscriber");
 const optInListSubscriberOptInSourceID_1 = require("./optInListSubscriberOptInSourceID");
-const order_1 = require("./order");
 const orderStatus_1 = require("./orderStatus");
 const outboundSMS_1 = require("./outboundSMS");
 const outboundSMSPaymentObjectBroadcastID_1 = require("./outboundSMSPaymentObjectBroadcastID");
@@ -1206,6 +1205,9 @@ const wTWalletPassProvider_1 = require("./wTWalletPassProvider");
 const wTWalletSectionAccess_1 = require("./wTWalletSectionAccess");
 const wTWalletSectionTopItem_1 = require("./wTWalletSectionTopItem");
 const wTWalletSectionViews_1 = require("./wTWalletSectionViews");
+const wTWebsiteWidget_1 = require("./wTWebsiteWidget");
+const wTWebsiteWidgetEmbedders_1 = require("./wTWebsiteWidgetEmbedders");
+const wTWebsiteWidgetOriginsUpdate_1 = require("./wTWebsiteWidgetOriginsUpdate");
 const wTWhatsAppInboundWebhook_1 = require("./wTWhatsAppInboundWebhook");
 const wTWhatsAppStatusCallback_1 = require("./wTWhatsAppStatusCallback");
 const walletConfiguration_1 = require("./walletConfiguration");
@@ -1371,7 +1373,6 @@ let typeMap = {
     "MerchantTermsDocumentType": merchantTermsDocumentType_1.MerchantTermsDocumentType,
     "MerchantURL": merchantURL_1.MerchantURL,
     "Message": message_1.Message,
-    "ModuleError": moduleError_1.ModuleError,
     "NewsArticle": newsArticle_1.NewsArticle,
     "NotFound": notFound_1.NotFound,
     "OAIAssistantUpdateParams": oAIAssistantUpdateParams_1.OAIAssistantUpdateParams,
@@ -1380,7 +1381,6 @@ let typeMap = {
     "OptInListSource": optInListSource_1.OptInListSource,
     "OptInListSubscriber": optInListSubscriber_1.OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": optInListSubscriberOptInSourceID_1.OptInListSubscriberOptInSourceID,
-    "Order": order_1.Order,
     "OrderStatus": orderStatus_1.OrderStatus,
     "OutboundSMS": outboundSMS_1.OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": outboundSMSPaymentObjectBroadcastID_1.OutboundSMSPaymentObjectBroadcastID,
@@ -1824,6 +1824,9 @@ let typeMap = {
     "WTWalletSectionAccess": wTWalletSectionAccess_1.WTWalletSectionAccess,
     "WTWalletSectionTopItem": wTWalletSectionTopItem_1.WTWalletSectionTopItem,
     "WTWalletSectionViews": wTWalletSectionViews_1.WTWalletSectionViews,
+    "WTWebsiteWidget": wTWebsiteWidget_1.WTWebsiteWidget,
+    "WTWebsiteWidgetEmbedders": wTWebsiteWidgetEmbedders_1.WTWebsiteWidgetEmbedders,
+    "WTWebsiteWidgetOriginsUpdate": wTWebsiteWidgetOriginsUpdate_1.WTWebsiteWidgetOriginsUpdate,
     "WTWhatsAppInboundWebhook": wTWhatsAppInboundWebhook_1.WTWhatsAppInboundWebhook,
     "WTWhatsAppStatusCallback": wTWhatsAppStatusCallback_1.WTWhatsAppStatusCallback,
     "WalletConfiguration": walletConfiguration_1.WalletConfiguration,

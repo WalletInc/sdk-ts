@@ -7,6 +7,8 @@ import { WTCustomDomainRequest } from '../model/wTCustomDomainRequest';
 import { WTPassStyleResponse } from '../model/wTPassStyleResponse';
 import { WTWalletConfigurationSaveWalletRecord } from '../model/wTWalletConfigurationSaveWalletRecord';
 import { WTWalletPassProvider } from '../model/wTWalletPassProvider';
+import { WTWebsiteWidget } from '../model/wTWebsiteWidget';
+import { WTWebsiteWidgetOriginsUpdate } from '../model/wTWebsiteWidgetOriginsUpdate';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum WalletConfigurationApiApiKeys {
@@ -54,6 +56,14 @@ export declare class WalletConfigurationApi {
         response: http.IncomingMessage;
         body: WTPassStyleResponse;
     }>;
+    fetchWebsiteWidget(options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTWebsiteWidget;
+    }>;
     generateAndroidKeystore(regenerate?: boolean, options?: {
         headers: {
             [name: string]: string;
@@ -93,5 +103,13 @@ export declare class WalletConfigurationApi {
     }): Promise<{
         response: http.IncomingMessage;
         body: any;
+    }>;
+    saveWebsiteWidgetOrigins(wTWebsiteWidgetOriginsUpdate: WTWebsiteWidgetOriginsUpdate, options?: {
+        headers: {
+            [name: string]: string;
+        };
+    }): Promise<{
+        response: http.IncomingMessage;
+        body: WTWebsiteWidget;
     }>;
 }

@@ -78,5 +78,6 @@ var PortalPage;
     PortalPage[PortalPage["StripeConnect"] = 'stripe-connect'] = "StripeConnect";
     PortalPage[PortalPage["AiAssistants"] = 'ai-assistants'] = "AiAssistants";
     PortalPage[PortalPage["N8nIo"] = 'n8n-io'] = "N8nIo";
+    PortalPage[PortalPage["WebsiteWidget"] = 'website-widget'] = "WebsiteWidget";
 })(PortalPage = exports.PortalPage || (exports.PortalPage = {}));
 //# sourceMappingURL=portalPage.js.map

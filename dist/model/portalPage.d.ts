@@ -73,5 +73,6 @@ export declare enum PortalPage {
     Zapier,
     StripeConnect,
     AiAssistants,
-    N8nIo
+    N8nIo,
+    WebsiteWidget
 }

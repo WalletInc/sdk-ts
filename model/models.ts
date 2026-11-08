@@ -134,7 +134,6 @@ export * from './merchantNotInitialized';
 export * from './merchantTermsDocumentType';
 export * from './merchantURL';
 export * from './message';
-export * from './moduleError';
 export * from './newsArticle';
 export * from './notFound';
 export * from './oAIAssistantUpdateParams';
@@ -143,7 +142,6 @@ export * from './optInList';
 export * from './optInListSource';
 export * from './optInListSubscriber';
 export * from './optInListSubscriberOptInSourceID';
-export * from './order';
 export * from './orderStatus';
 export * from './outboundSMS';
 export * from './outboundSMSPaymentObjectBroadcastID';
@@ -592,6 +590,9 @@ export * from './wTWalletPassProvider';
 export * from './wTWalletSectionAccess';
 export * from './wTWalletSectionTopItem';
 export * from './wTWalletSectionViews';
+export * from './wTWebsiteWidget';
+export * from './wTWebsiteWidgetEmbedders';
+export * from './wTWebsiteWidgetOriginsUpdate';
 export * from './wTWhatsAppInboundWebhook';
 export * from './wTWhatsAppStatusCallback';
 export * from './walletConfiguration';
@@ -747,7 +748,6 @@ import { MerchantNotInitialized } from './merchantNotInitialized';
 import { MerchantTermsDocumentType } from './merchantTermsDocumentType';
 import { MerchantURL } from './merchantURL';
 import { Message } from './message';
-import { ModuleError } from './moduleError';
 import { NewsArticle } from './newsArticle';
 import { NotFound } from './notFound';
 import { OAIAssistantUpdateParams } from './oAIAssistantUpdateParams';
@@ -756,7 +756,6 @@ import { OptInList } from './optInList';
 import { OptInListSource } from './optInListSource';
 import { OptInListSubscriber } from './optInListSubscriber';
 import { OptInListSubscriberOptInSourceID } from './optInListSubscriberOptInSourceID';
-import { Order } from './order';
 import { OrderStatus } from './orderStatus';
 import { OutboundSMS } from './outboundSMS';
 import { OutboundSMSPaymentObjectBroadcastID } from './outboundSMSPaymentObjectBroadcastID';
@@ -1205,6 +1204,9 @@ import { WTWalletPassProvider } from './wTWalletPassProvider';
 import { WTWalletSectionAccess } from './wTWalletSectionAccess';
 import { WTWalletSectionTopItem } from './wTWalletSectionTopItem';
 import { WTWalletSectionViews } from './wTWalletSectionViews';
+import { WTWebsiteWidget } from './wTWebsiteWidget';
+import { WTWebsiteWidgetEmbedders } from './wTWebsiteWidgetEmbedders';
+import { WTWebsiteWidgetOriginsUpdate } from './wTWebsiteWidgetOriginsUpdate';
 import { WTWhatsAppInboundWebhook } from './wTWhatsAppInboundWebhook';
 import { WTWhatsAppStatusCallback } from './wTWhatsAppStatusCallback';
 import { WalletConfiguration } from './walletConfiguration';
@@ -1374,7 +1376,6 @@ let typeMap: {[index: string]: any} = {
     "MerchantTermsDocumentType": MerchantTermsDocumentType,
     "MerchantURL": MerchantURL,
     "Message": Message,
-    "ModuleError": ModuleError,
     "NewsArticle": NewsArticle,
     "NotFound": NotFound,
     "OAIAssistantUpdateParams": OAIAssistantUpdateParams,
@@ -1383,7 +1384,6 @@ let typeMap: {[index: string]: any} = {
     "OptInListSource": OptInListSource,
     "OptInListSubscriber": OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": OptInListSubscriberOptInSourceID,
-    "Order": Order,
     "OrderStatus": OrderStatus,
     "OutboundSMS": OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": OutboundSMSPaymentObjectBroadcastID,
@@ -1827,6 +1827,9 @@ let typeMap: {[index: string]: any} = {
     "WTWalletSectionAccess": WTWalletSectionAccess,
     "WTWalletSectionTopItem": WTWalletSectionTopItem,
     "WTWalletSectionViews": WTWalletSectionViews,
+    "WTWebsiteWidget": WTWebsiteWidget,
+    "WTWebsiteWidgetEmbedders": WTWebsiteWidgetEmbedders,
+    "WTWebsiteWidgetOriginsUpdate": WTWebsiteWidgetOriginsUpdate,
     "WTWhatsAppInboundWebhook": WTWhatsAppInboundWebhook,
     "WTWhatsAppStatusCallback": WTWhatsAppStatusCallback,
     "WalletConfiguration": WalletConfiguration,
