@@ -134,6 +134,7 @@ export * from './merchantNotInitialized';
 export * from './merchantTermsDocumentType';
 export * from './merchantURL';
 export * from './message';
+export * from './moduleError';
 export * from './newsArticle';
 export * from './notFound';
 export * from './oAIAssistantUpdateParams';
@@ -142,6 +143,7 @@ export * from './optInList';
 export * from './optInListSource';
 export * from './optInListSubscriber';
 export * from './optInListSubscriberOptInSourceID';
+export * from './order';
 export * from './orderStatus';
 export * from './outboundSMS';
 export * from './outboundSMSPaymentObjectBroadcastID';
@@ -748,6 +750,7 @@ import { MerchantNotInitialized } from './merchantNotInitialized';
 import { MerchantTermsDocumentType } from './merchantTermsDocumentType';
 import { MerchantURL } from './merchantURL';
 import { Message } from './message';
+import { ModuleError } from './moduleError';
 import { NewsArticle } from './newsArticle';
 import { NotFound } from './notFound';
 import { OAIAssistantUpdateParams } from './oAIAssistantUpdateParams';
@@ -756,6 +759,7 @@ import { OptInList } from './optInList';
 import { OptInListSource } from './optInListSource';
 import { OptInListSubscriber } from './optInListSubscriber';
 import { OptInListSubscriberOptInSourceID } from './optInListSubscriberOptInSourceID';
+import { Order } from './order';
 import { OrderStatus } from './orderStatus';
 import { OutboundSMS } from './outboundSMS';
 import { OutboundSMSPaymentObjectBroadcastID } from './outboundSMSPaymentObjectBroadcastID';
@@ -1376,6 +1380,7 @@ let typeMap: {[index: string]: any} = {
     "MerchantTermsDocumentType": MerchantTermsDocumentType,
     "MerchantURL": MerchantURL,
     "Message": Message,
+    "ModuleError": ModuleError,
     "NewsArticle": NewsArticle,
     "NotFound": NotFound,
     "OAIAssistantUpdateParams": OAIAssistantUpdateParams,
@@ -1384,6 +1389,7 @@ let typeMap: {[index: string]: any} = {
     "OptInListSource": OptInListSource,
     "OptInListSubscriber": OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": OptInListSubscriberOptInSourceID,
+    "Order": Order,
     "OrderStatus": OrderStatus,
     "OutboundSMS": OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": OutboundSMSPaymentObjectBroadcastID,

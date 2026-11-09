@@ -149,6 +149,7 @@ __exportStar(require("./merchantNotInitialized"), exports);
 __exportStar(require("./merchantTermsDocumentType"), exports);
 __exportStar(require("./merchantURL"), exports);
 __exportStar(require("./message"), exports);
+__exportStar(require("./moduleError"), exports);
 __exportStar(require("./newsArticle"), exports);
 __exportStar(require("./notFound"), exports);
 __exportStar(require("./oAIAssistantUpdateParams"), exports);
@@ -157,6 +158,7 @@ __exportStar(require("./optInList"), exports);
 __exportStar(require("./optInListSource"), exports);
 __exportStar(require("./optInListSubscriber"), exports);
 __exportStar(require("./optInListSubscriberOptInSourceID"), exports);
+__exportStar(require("./order"), exports);
 __exportStar(require("./orderStatus"), exports);
 __exportStar(require("./outboundSMS"), exports);
 __exportStar(require("./outboundSMSPaymentObjectBroadcastID"), exports);
@@ -749,6 +751,7 @@ const merchantNotInitialized_1 = require("./merchantNotInitialized");
 const merchantTermsDocumentType_1 = require("./merchantTermsDocumentType");
 const merchantURL_1 = require("./merchantURL");
 const message_1 = require("./message");
+const moduleError_1 = require("./moduleError");
 const newsArticle_1 = require("./newsArticle");
 const notFound_1 = require("./notFound");
 const oAIAssistantUpdateParams_1 = require("./oAIAssistantUpdateParams");
@@ -757,6 +760,7 @@ const optInList_1 = require("./optInList");
 const optInListSource_1 = require("./optInListSource");
 const optInListSubscriber_1 = require("./optInListSubscriber");
 const optInListSubscriberOptInSourceID_1 = require("./optInListSubscriberOptInSourceID");
+const order_1 = require("./order");
 const orderStatus_1 = require("./orderStatus");
 const outboundSMS_1 = require("./outboundSMS");
 const outboundSMSPaymentObjectBroadcastID_1 = require("./outboundSMSPaymentObjectBroadcastID");
@@ -1373,6 +1377,7 @@ let typeMap = {
     "MerchantTermsDocumentType": merchantTermsDocumentType_1.MerchantTermsDocumentType,
     "MerchantURL": merchantURL_1.MerchantURL,
     "Message": message_1.Message,
+    "ModuleError": moduleError_1.ModuleError,
     "NewsArticle": newsArticle_1.NewsArticle,
     "NotFound": notFound_1.NotFound,
     "OAIAssistantUpdateParams": oAIAssistantUpdateParams_1.OAIAssistantUpdateParams,
@@ -1381,6 +1386,7 @@ let typeMap = {
     "OptInListSource": optInListSource_1.OptInListSource,
     "OptInListSubscriber": optInListSubscriber_1.OptInListSubscriber,
     "OptInListSubscriberOptInSourceID": optInListSubscriberOptInSourceID_1.OptInListSubscriberOptInSourceID,
+    "Order": order_1.Order,
     "OrderStatus": orderStatus_1.OrderStatus,
     "OutboundSMS": outboundSMS_1.OutboundSMS,
     "OutboundSMSPaymentObjectBroadcastID": outboundSMSPaymentObjectBroadcastID_1.OutboundSMSPaymentObjectBroadcastID,
