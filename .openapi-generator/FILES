@@ -606,6 +606,10 @@ model/wTServiceUpdateParams.ts
 model/wTSettingsSetPassword.ts
 model/wTShareActivityReport.ts
 model/wTShareActivityRow.ts
+model/wTSmsCreditGrant.ts
+model/wTSmsCreditGrantCreate.ts
+model/wTSmsCreditOverdraftUpdate.ts
+model/wTSmsCreditSummary.ts
 model/wTSmsSubscriberCreateParams.ts
 model/wTSmsSubscriberCreateParamsWalletUI.ts
 model/wTSmsSubscriberUpdateParams.ts

@@ -553,6 +553,10 @@ __exportStar(require("./wTServiceUpdateParams"), exports);
 __exportStar(require("./wTSettingsSetPassword"), exports);
 __exportStar(require("./wTShareActivityReport"), exports);
 __exportStar(require("./wTShareActivityRow"), exports);
+__exportStar(require("./wTSmsCreditGrant"), exports);
+__exportStar(require("./wTSmsCreditGrantCreate"), exports);
+__exportStar(require("./wTSmsCreditOverdraftUpdate"), exports);
+__exportStar(require("./wTSmsCreditSummary"), exports);
 __exportStar(require("./wTSmsSubscriberCreateParams"), exports);
 __exportStar(require("./wTSmsSubscriberCreateParamsWalletUI"), exports);
 __exportStar(require("./wTSmsSubscriberUpdateParams"), exports);
@@ -1155,6 +1159,10 @@ const wTServiceUpdateParams_1 = require("./wTServiceUpdateParams");
 const wTSettingsSetPassword_1 = require("./wTSettingsSetPassword");
 const wTShareActivityReport_1 = require("./wTShareActivityReport");
 const wTShareActivityRow_1 = require("./wTShareActivityRow");
+const wTSmsCreditGrant_1 = require("./wTSmsCreditGrant");
+const wTSmsCreditGrantCreate_1 = require("./wTSmsCreditGrantCreate");
+const wTSmsCreditOverdraftUpdate_1 = require("./wTSmsCreditOverdraftUpdate");
+const wTSmsCreditSummary_1 = require("./wTSmsCreditSummary");
 const wTSmsSubscriberCreateParams_1 = require("./wTSmsSubscriberCreateParams");
 const wTSmsSubscriberCreateParamsWalletUI_1 = require("./wTSmsSubscriberCreateParamsWalletUI");
 const wTSmsSubscriberUpdateParams_1 = require("./wTSmsSubscriberUpdateParams");
@@ -1776,6 +1784,10 @@ let typeMap = {
     "WTSettingsSetPassword": wTSettingsSetPassword_1.WTSettingsSetPassword,
     "WTShareActivityReport": wTShareActivityReport_1.WTShareActivityReport,
     "WTShareActivityRow": wTShareActivityRow_1.WTShareActivityRow,
+    "WTSmsCreditGrant": wTSmsCreditGrant_1.WTSmsCreditGrant,
+    "WTSmsCreditGrantCreate": wTSmsCreditGrantCreate_1.WTSmsCreditGrantCreate,
+    "WTSmsCreditOverdraftUpdate": wTSmsCreditOverdraftUpdate_1.WTSmsCreditOverdraftUpdate,
+    "WTSmsCreditSummary": wTSmsCreditSummary_1.WTSmsCreditSummary,
     "WTSmsSubscriberCreateParams": wTSmsSubscriberCreateParams_1.WTSmsSubscriberCreateParams,
     "WTSmsSubscriberCreateParamsWalletUI": wTSmsSubscriberCreateParamsWalletUI_1.WTSmsSubscriberCreateParamsWalletUI,
     "WTSmsSubscriberUpdateParams": wTSmsSubscriberUpdateParams_1.WTSmsSubscriberUpdateParams,

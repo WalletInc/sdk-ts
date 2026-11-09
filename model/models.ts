@@ -538,6 +538,10 @@ export * from './wTServiceUpdateParams';
 export * from './wTSettingsSetPassword';
 export * from './wTShareActivityReport';
 export * from './wTShareActivityRow';
+export * from './wTSmsCreditGrant';
+export * from './wTSmsCreditGrantCreate';
+export * from './wTSmsCreditOverdraftUpdate';
+export * from './wTSmsCreditSummary';
 export * from './wTSmsSubscriberCreateParams';
 export * from './wTSmsSubscriberCreateParamsWalletUI';
 export * from './wTSmsSubscriberUpdateParams';
@@ -1154,6 +1158,10 @@ import { WTServiceUpdateParams } from './wTServiceUpdateParams';
 import { WTSettingsSetPassword } from './wTSettingsSetPassword';
 import { WTShareActivityReport } from './wTShareActivityReport';
 import { WTShareActivityRow } from './wTShareActivityRow';
+import { WTSmsCreditGrant } from './wTSmsCreditGrant';
+import { WTSmsCreditGrantCreate } from './wTSmsCreditGrantCreate';
+import { WTSmsCreditOverdraftUpdate } from './wTSmsCreditOverdraftUpdate';
+import { WTSmsCreditSummary } from './wTSmsCreditSummary';
 import { WTSmsSubscriberCreateParams } from './wTSmsSubscriberCreateParams';
 import { WTSmsSubscriberCreateParamsWalletUI } from './wTSmsSubscriberCreateParamsWalletUI';
 import { WTSmsSubscriberUpdateParams } from './wTSmsSubscriberUpdateParams';
@@ -1779,6 +1787,10 @@ let typeMap: {[index: string]: any} = {
     "WTSettingsSetPassword": WTSettingsSetPassword,
     "WTShareActivityReport": WTShareActivityReport,
     "WTShareActivityRow": WTShareActivityRow,
+    "WTSmsCreditGrant": WTSmsCreditGrant,
+    "WTSmsCreditGrantCreate": WTSmsCreditGrantCreate,
+    "WTSmsCreditOverdraftUpdate": WTSmsCreditOverdraftUpdate,
+    "WTSmsCreditSummary": WTSmsCreditSummary,
     "WTSmsSubscriberCreateParams": WTSmsSubscriberCreateParams,
     "WTSmsSubscriberCreateParamsWalletUI": WTSmsSubscriberCreateParamsWalletUI,
     "WTSmsSubscriberUpdateParams": WTSmsSubscriberUpdateParams,
