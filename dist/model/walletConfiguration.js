@@ -270,6 +270,11 @@ WalletConfiguration.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "isSocialHub",
+        "baseName": "isSocialHub",
+        "type": "any"
+    },
+    {
         "name": "googleAnalyticsID",
         "baseName": "googleAnalyticsID",
         "type": "any"

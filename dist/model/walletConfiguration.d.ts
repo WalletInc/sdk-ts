@@ -57,6 +57,7 @@ export declare class WalletConfiguration extends null<String, any> {
     'isSmsOptIn': any | null;
     'smsOptInSourceID'?: WTWalletConfigurationSaveWalletRecordSmsOptInSourceID;
     'isEmailSubscriber': any | null;
+    'isSocialHub'?: any | null;
     'googleAnalyticsID'?: any | null;
     'facebookPixelID'?: any | null;
     'publicChatRoomChannelID'?: any | null;
