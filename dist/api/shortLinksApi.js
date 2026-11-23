@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var ShortLinksApiApiKeys;
 (function (ShortLinksApiApiKeys) {
     ShortLinksApiApiKeys[ShortLinksApiApiKeys["api_key"] = 0] = "api_key";
+    ShortLinksApiApiKeys[ShortLinksApiApiKeys["api_token"] = 1] = "api_token";
 })(ShortLinksApiApiKeys = exports.ShortLinksApiApiKeys || (exports.ShortLinksApiApiKeys = {}));
 class ShortLinksApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class ShortLinksApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {
@@ -95,6 +97,9 @@ class ShortLinksApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -156,6 +161,9 @@ class ShortLinksApi {
                 body: models_1.ObjectSerializer.serialize(wTMerchantURLCreate, "WTMerchantURLCreate")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -216,6 +224,9 @@ class ShortLinksApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -277,6 +288,9 @@ class ShortLinksApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -338,6 +352,9 @@ class ShortLinksApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -408,6 +425,9 @@ class ShortLinksApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -469,6 +489,9 @@ class ShortLinksApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -534,6 +557,9 @@ class ShortLinksApi {
                 body: models_1.ObjectSerializer.serialize(wTMerchantURLUpdate, "WTMerchantURLUpdate")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {

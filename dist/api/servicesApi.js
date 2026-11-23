@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var ServicesApiApiKeys;
 (function (ServicesApiApiKeys) {
     ServicesApiApiKeys[ServicesApiApiKeys["api_key"] = 0] = "api_key";
+    ServicesApiApiKeys[ServicesApiApiKeys["api_token"] = 1] = "api_token";
 })(ServicesApiApiKeys = exports.ServicesApiApiKeys || (exports.ServicesApiApiKeys = {}));
 class ServicesApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class ServicesApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {
@@ -95,6 +97,9 @@ class ServicesApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -156,6 +161,9 @@ class ServicesApi {
                 body: models_1.ObjectSerializer.serialize(wTServiceCreateParams, "WTServiceCreateParams")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -216,6 +224,9 @@ class ServicesApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -277,6 +288,9 @@ class ServicesApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -342,6 +356,9 @@ class ServicesApi {
                 body: models_1.ObjectSerializer.serialize(wTServiceUpdateParams, "WTServiceUpdateParams")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {

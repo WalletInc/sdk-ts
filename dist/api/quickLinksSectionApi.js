@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var QuickLinksSectionApiApiKeys;
 (function (QuickLinksSectionApiApiKeys) {
     QuickLinksSectionApiApiKeys[QuickLinksSectionApiApiKeys["api_key"] = 0] = "api_key";
+    QuickLinksSectionApiApiKeys[QuickLinksSectionApiApiKeys["api_token"] = 1] = "api_token";
 })(QuickLinksSectionApiApiKeys = exports.QuickLinksSectionApiApiKeys || (exports.QuickLinksSectionApiApiKeys = {}));
 class QuickLinksSectionApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class QuickLinksSectionApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {
@@ -95,6 +97,9 @@ class QuickLinksSectionApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -156,6 +161,9 @@ class QuickLinksSectionApi {
                 body: models_1.ObjectSerializer.serialize(wTQuickLinkSectionCreateParams, "WTQuickLinkSectionCreateParams")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -216,6 +224,9 @@ class QuickLinksSectionApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -277,6 +288,9 @@ class QuickLinksSectionApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -342,6 +356,9 @@ class QuickLinksSectionApi {
                 body: models_1.ObjectSerializer.serialize(wTQuickLinkSectionUpdateParams, "WTQuickLinkSectionUpdateParams")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {

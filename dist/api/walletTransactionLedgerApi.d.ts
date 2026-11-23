@@ -5,7 +5,8 @@ import { FetchAllLedgerTransactions200Response } from '../model/fetchAllLedgerTr
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum WalletTransactionLedgerApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class WalletTransactionLedgerApi {
     protected _basePath: string;
@@ -14,6 +15,7 @@ export declare class WalletTransactionLedgerApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

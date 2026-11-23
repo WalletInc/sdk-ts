@@ -6,7 +6,8 @@ import { WTLoungeUpdateParams } from '../model/wTLoungeUpdateParams';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum LoungeApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class LoungeApi {
     protected _basePath: string;
@@ -15,6 +16,7 @@ export declare class LoungeApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

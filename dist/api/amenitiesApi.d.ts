@@ -6,7 +6,8 @@ import { WTAmenityUpdateParams } from '../model/wTAmenityUpdateParams';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum AmenitiesApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class AmenitiesApi {
     protected _basePath: string;
@@ -15,6 +16,7 @@ export declare class AmenitiesApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

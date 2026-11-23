@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var GiftCardsApiApiKeys;
 (function (GiftCardsApiApiKeys) {
     GiftCardsApiApiKeys[GiftCardsApiApiKeys["api_key"] = 0] = "api_key";
+    GiftCardsApiApiKeys[GiftCardsApiApiKeys["api_token"] = 1] = "api_token";
 })(GiftCardsApiApiKeys = exports.GiftCardsApiApiKeys || (exports.GiftCardsApiApiKeys = {}));
 class GiftCardsApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class GiftCardsApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {
@@ -99,6 +101,9 @@ class GiftCardsApi {
                 body: models_1.ObjectSerializer.serialize(wTGiftClaimRequest, "WTGiftClaimRequest")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -160,6 +165,9 @@ class GiftCardsApi {
                 body: models_1.ObjectSerializer.serialize(wTCertificateDealCreateRequest, "WTCertificateDealCreateRequest")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -221,6 +229,9 @@ class GiftCardsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -282,6 +293,9 @@ class GiftCardsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -343,6 +357,9 @@ class GiftCardsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -408,6 +425,9 @@ class GiftCardsApi {
                 body: models_1.ObjectSerializer.serialize(wTCertificatePurchaseRequest, "WTCertificatePurchaseRequest")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -469,6 +489,9 @@ class GiftCardsApi {
                 body: models_1.ObjectSerializer.serialize(wTGiftCardPurchaseRequest, "WTGiftCardPurchaseRequest")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {

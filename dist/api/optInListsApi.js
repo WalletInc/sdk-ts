@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var OptInListsApiApiKeys;
 (function (OptInListsApiApiKeys) {
     OptInListsApiApiKeys[OptInListsApiApiKeys["api_key"] = 0] = "api_key";
+    OptInListsApiApiKeys[OptInListsApiApiKeys["api_token"] = 1] = "api_token";
 })(OptInListsApiApiKeys = exports.OptInListsApiApiKeys || (exports.OptInListsApiApiKeys = {}));
 class OptInListsApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class OptInListsApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {
@@ -110,6 +112,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -186,6 +191,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -247,6 +255,9 @@ class OptInListsApi {
                 body: models_1.ObjectSerializer.serialize(wTOptInListCreationParams, "WTOptInListCreationParams")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -308,6 +319,9 @@ class OptInListsApi {
                 body: models_1.ObjectSerializer.serialize(wTSMSOptInListSourceCreate, "WTSMSOptInListSourceCreate")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -369,6 +383,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -430,6 +447,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -491,6 +511,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -551,6 +574,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -608,6 +634,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -678,6 +707,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -754,6 +786,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -814,6 +849,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -875,6 +913,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -945,6 +986,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -1006,6 +1050,9 @@ class OptInListsApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -1071,6 +1118,9 @@ class OptInListsApi {
                 body: models_1.ObjectSerializer.serialize(wTSMSImportOptInListSubscribers, "WTSMSImportOptInListSubscribers")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -1136,6 +1186,9 @@ class OptInListsApi {
                 body: models_1.ObjectSerializer.serialize(wTOptInListCreationParams, "WTOptInListCreationParams")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -1201,6 +1254,9 @@ class OptInListsApi {
                 body: models_1.ObjectSerializer.serialize(wTSMSOptInListSourceCreate, "WTSMSOptInListSourceCreate")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {

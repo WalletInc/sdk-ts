@@ -9,7 +9,8 @@ import { Webpage } from '../model/webpage';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum SystemApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class SystemApi {
     protected _basePath: string;
@@ -18,6 +19,7 @@ export declare class SystemApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

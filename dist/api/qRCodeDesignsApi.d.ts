@@ -7,7 +7,8 @@ import { WTQRCodeDesignUpdateParams } from '../model/wTQRCodeDesignUpdateParams'
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum QRCodeDesignsApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class QRCodeDesignsApi {
     protected _basePath: string;
@@ -16,6 +17,7 @@ export declare class QRCodeDesignsApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

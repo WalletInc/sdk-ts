@@ -7,7 +7,8 @@ import { WalletPageView } from '../model/walletPageView';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum CustomerApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class CustomerApi {
     protected _basePath: string;
@@ -16,6 +17,7 @@ export declare class CustomerApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

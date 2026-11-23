@@ -13,7 +13,8 @@ import { WTMemberCreationParams } from '../model/wTMemberCreationParams';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum ClubMembersApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class ClubMembersApi {
     protected _basePath: string;
@@ -22,6 +23,7 @@ export declare class ClubMembersApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

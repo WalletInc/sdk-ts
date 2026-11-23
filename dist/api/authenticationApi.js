@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var AuthenticationApiApiKeys;
 (function (AuthenticationApiApiKeys) {
     AuthenticationApiApiKeys[AuthenticationApiApiKeys["api_key"] = 0] = "api_key";
+    AuthenticationApiApiKeys[AuthenticationApiApiKeys["api_token"] = 1] = "api_token";
 })(AuthenticationApiApiKeys = exports.AuthenticationApiApiKeys || (exports.AuthenticationApiApiKeys = {}));
 class AuthenticationApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class AuthenticationApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {

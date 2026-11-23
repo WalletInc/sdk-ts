@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var CountriesApiApiKeys;
 (function (CountriesApiApiKeys) {
     CountriesApiApiKeys[CountriesApiApiKeys["api_key"] = 0] = "api_key";
+    CountriesApiApiKeys[CountriesApiApiKeys["api_token"] = 1] = "api_token";
 })(CountriesApiApiKeys = exports.CountriesApiApiKeys || (exports.CountriesApiApiKeys = {}));
 class CountriesApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class CountriesApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {

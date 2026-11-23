@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var IndustriesApiApiKeys;
 (function (IndustriesApiApiKeys) {
     IndustriesApiApiKeys[IndustriesApiApiKeys["api_key"] = 0] = "api_key";
+    IndustriesApiApiKeys[IndustriesApiApiKeys["api_token"] = 1] = "api_token";
 })(IndustriesApiApiKeys = exports.IndustriesApiApiKeys || (exports.IndustriesApiApiKeys = {}));
 class IndustriesApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class IndustriesApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {

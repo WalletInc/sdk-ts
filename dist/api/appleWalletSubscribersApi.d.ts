@@ -3,7 +3,8 @@ import http from 'http';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum AppleWalletSubscribersApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class AppleWalletSubscribersApi {
     protected _basePath: string;
@@ -12,6 +13,7 @@ export declare class AppleWalletSubscribersApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

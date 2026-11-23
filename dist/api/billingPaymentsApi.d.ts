@@ -14,7 +14,8 @@ import { WTFinancingSoftPullResponse } from '../model/wTFinancingSoftPullRespons
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum BillingPaymentsApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class BillingPaymentsApi {
     protected _basePath: string;
@@ -23,6 +24,7 @@ export declare class BillingPaymentsApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

@@ -6,7 +6,8 @@ import { WTDiningUpdateParams } from '../model/wTDiningUpdateParams';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum DiningApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class DiningApi {
     protected _basePath: string;
@@ -15,6 +16,7 @@ export declare class DiningApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

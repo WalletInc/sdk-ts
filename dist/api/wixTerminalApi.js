@@ -21,6 +21,7 @@ let defaultBasePath = 'https://api.wall.et';
 var WixTerminalApiApiKeys;
 (function (WixTerminalApiApiKeys) {
     WixTerminalApiApiKeys[WixTerminalApiApiKeys["api_key"] = 0] = "api_key";
+    WixTerminalApiApiKeys[WixTerminalApiApiKeys["api_token"] = 1] = "api_token";
 })(WixTerminalApiApiKeys = exports.WixTerminalApiApiKeys || (exports.WixTerminalApiApiKeys = {}));
 class WixTerminalApi {
     constructor(basePathOrUsername, password, basePath) {
@@ -30,6 +31,7 @@ class WixTerminalApi {
         this.authentications = {
             'default': new models_1.VoidAuth(),
             'api_key': new models_2.ApiKeyAuth('header', 'access-token'),
+            'api_token': new models_2.ApiKeyAuth('header', 'access-token'),
         };
         this.interceptors = [];
         if (password) {
@@ -95,6 +97,9 @@ class WixTerminalApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -160,6 +165,9 @@ class WixTerminalApi {
                 body: models_1.ObjectSerializer.serialize(wTWalletItemRedemption, "WTWalletItemRedemption")
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {
@@ -221,6 +229,9 @@ class WixTerminalApi {
                 json: true,
             };
             let authenticationPromise = Promise.resolve();
+            if (this.authentications.api_token.apiKey) {
+                authenticationPromise = authenticationPromise.then(() => this.authentications.api_token.applyToRequest(localVarRequestOptions));
+            }
             authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
             let interceptorPromise = authenticationPromise;
             for (const interceptor of this.interceptors) {

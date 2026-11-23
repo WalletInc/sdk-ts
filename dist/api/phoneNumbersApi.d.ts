@@ -9,7 +9,8 @@ import { WTTCPAPrivacyRequestResult } from '../model/wTTCPAPrivacyRequestResult'
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum PhoneNumbersApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class PhoneNumbersApi {
     protected _basePath: string;
@@ -18,6 +19,7 @@ export declare class PhoneNumbersApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);

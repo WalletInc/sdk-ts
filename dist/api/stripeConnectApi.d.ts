@@ -7,7 +7,8 @@ import { WTConnectPaymentsSummary } from '../model/wTConnectPaymentsSummary';
 import { Authentication, Interceptor } from '../model/models';
 import { ApiKeyAuth } from '../model/models';
 export declare enum StripeConnectApiApiKeys {
-    api_key = 0
+    api_key = 0,
+    api_token = 1
 }
 export declare class StripeConnectApi {
     protected _basePath: string;
@@ -16,6 +17,7 @@ export declare class StripeConnectApi {
     protected authentications: {
         default: Authentication;
         api_key: ApiKeyAuth;
+        api_token: ApiKeyAuth;
     };
     protected interceptors: Interceptor[];
     constructor(basePath?: string);
