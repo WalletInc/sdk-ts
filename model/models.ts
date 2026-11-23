@@ -474,6 +474,19 @@ export * from './wTPaymentDesignUpdateParams';
 export * from './wTPerformanceCreateParams';
 export * from './wTPerformanceUpdateParams';
 export * from './wTPlanTier';
+export * from './wTPointsAdjustParams';
+export * from './wTPointsAdjustResult';
+export * from './wTPointsAwardParams';
+export * from './wTPointsAwardResult';
+export * from './wTPointsAwardUndoResult';
+export * from './wTPointsAwardUndoResultTierReverted';
+export * from './wTPointsLedgerEntry';
+export * from './wTPointsLedgerEntryType';
+export * from './wTPointsLedgerPage';
+export * from './wTPointsSettings';
+export * from './wTPointsSettingsSaveParams';
+export * from './wTPointsSkipReason';
+export * from './wTPointsTierReverted';
 export * from './wTPosMachine';
 export * from './wTPosMachineCreateParams';
 export * from './wTPosMachineUpdateParams';
@@ -564,6 +577,14 @@ export * from './wTTicket';
 export * from './wTTicketCreateParams';
 export * from './wTTicketReachStats';
 export * from './wTTicketUpdateParams';
+export * from './wTTierThresholdApplyResult';
+export * from './wTTierThresholdDirection';
+export * from './wTTierThresholdParams';
+export * from './wTTierThresholdPreview';
+export * from './wTTierThresholdUndoParams';
+export * from './wTTierThresholdUndoResult';
+export * from './wTTierThresholdVersion';
+export * from './wTTierThresholdVersionKind';
 export * from './wTTrafficClass';
 export * from './wTTwilioRequestAuthyCode';
 export * from './wTTwilioVerifyAuthyCode';
@@ -1094,6 +1115,19 @@ import { WTPaymentDesignUpdateParams } from './wTPaymentDesignUpdateParams';
 import { WTPerformanceCreateParams } from './wTPerformanceCreateParams';
 import { WTPerformanceUpdateParams } from './wTPerformanceUpdateParams';
 import { WTPlanTier } from './wTPlanTier';
+import { WTPointsAdjustParams } from './wTPointsAdjustParams';
+import { WTPointsAdjustResult } from './wTPointsAdjustResult';
+import { WTPointsAwardParams } from './wTPointsAwardParams';
+import { WTPointsAwardResult } from './wTPointsAwardResult';
+import { WTPointsAwardUndoResult } from './wTPointsAwardUndoResult';
+import { WTPointsAwardUndoResultTierReverted } from './wTPointsAwardUndoResultTierReverted';
+import { WTPointsLedgerEntry } from './wTPointsLedgerEntry';
+import { WTPointsLedgerEntryType } from './wTPointsLedgerEntryType';
+import { WTPointsLedgerPage } from './wTPointsLedgerPage';
+import { WTPointsSettings } from './wTPointsSettings';
+import { WTPointsSettingsSaveParams } from './wTPointsSettingsSaveParams';
+import { WTPointsSkipReason } from './wTPointsSkipReason';
+import { WTPointsTierReverted } from './wTPointsTierReverted';
 import { WTPosMachine } from './wTPosMachine';
 import { WTPosMachineCreateParams } from './wTPosMachineCreateParams';
 import { WTPosMachineUpdateParams } from './wTPosMachineUpdateParams';
@@ -1184,6 +1218,14 @@ import { WTTicket } from './wTTicket';
 import { WTTicketCreateParams } from './wTTicketCreateParams';
 import { WTTicketReachStats } from './wTTicketReachStats';
 import { WTTicketUpdateParams } from './wTTicketUpdateParams';
+import { WTTierThresholdApplyResult } from './wTTierThresholdApplyResult';
+import { WTTierThresholdDirection } from './wTTierThresholdDirection';
+import { WTTierThresholdParams } from './wTTierThresholdParams';
+import { WTTierThresholdPreview } from './wTTierThresholdPreview';
+import { WTTierThresholdUndoParams } from './wTTierThresholdUndoParams';
+import { WTTierThresholdUndoResult } from './wTTierThresholdUndoResult';
+import { WTTierThresholdVersion } from './wTTierThresholdVersion';
+import { WTTierThresholdVersionKind } from './wTTierThresholdVersionKind';
 import { WTTrafficClass } from './wTTrafficClass';
 import { WTTwilioRequestAuthyCode } from './wTTwilioRequestAuthyCode';
 import { WTTwilioVerifyAuthyCode } from './wTTwilioVerifyAuthyCode';
@@ -1266,6 +1308,7 @@ let enumsMap: {[index: string]: any} = {
         "TrustBundleStatuses": TrustBundleStatuses,
         "WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum": WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum,
         "WTGuestCreatePaymentIntentResponse.ChargeModelEnum": WTGuestCreatePaymentIntentResponse.ChargeModelEnum,
+        "WTPointsSkipReason": WTPointsSkipReason,
 }
 
 let typeMap: {[index: string]: any} = {
@@ -1723,6 +1766,18 @@ let typeMap: {[index: string]: any} = {
     "WTPerformanceCreateParams": WTPerformanceCreateParams,
     "WTPerformanceUpdateParams": WTPerformanceUpdateParams,
     "WTPlanTier": WTPlanTier,
+    "WTPointsAdjustParams": WTPointsAdjustParams,
+    "WTPointsAdjustResult": WTPointsAdjustResult,
+    "WTPointsAwardParams": WTPointsAwardParams,
+    "WTPointsAwardResult": WTPointsAwardResult,
+    "WTPointsAwardUndoResult": WTPointsAwardUndoResult,
+    "WTPointsAwardUndoResultTierReverted": WTPointsAwardUndoResultTierReverted,
+    "WTPointsLedgerEntry": WTPointsLedgerEntry,
+    "WTPointsLedgerEntryType": WTPointsLedgerEntryType,
+    "WTPointsLedgerPage": WTPointsLedgerPage,
+    "WTPointsSettings": WTPointsSettings,
+    "WTPointsSettingsSaveParams": WTPointsSettingsSaveParams,
+    "WTPointsTierReverted": WTPointsTierReverted,
     "WTPosMachine": WTPosMachine,
     "WTPosMachineCreateParams": WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": WTPosMachineUpdateParams,
@@ -1813,6 +1868,14 @@ let typeMap: {[index: string]: any} = {
     "WTTicketCreateParams": WTTicketCreateParams,
     "WTTicketReachStats": WTTicketReachStats,
     "WTTicketUpdateParams": WTTicketUpdateParams,
+    "WTTierThresholdApplyResult": WTTierThresholdApplyResult,
+    "WTTierThresholdDirection": WTTierThresholdDirection,
+    "WTTierThresholdParams": WTTierThresholdParams,
+    "WTTierThresholdPreview": WTTierThresholdPreview,
+    "WTTierThresholdUndoParams": WTTierThresholdUndoParams,
+    "WTTierThresholdUndoResult": WTTierThresholdUndoResult,
+    "WTTierThresholdVersion": WTTierThresholdVersion,
+    "WTTierThresholdVersionKind": WTTierThresholdVersionKind,
     "WTTrafficClass": WTTrafficClass,
     "WTTwilioRequestAuthyCode": WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": WTTwilioVerifyAuthyCode,

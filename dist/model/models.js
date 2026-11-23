@@ -489,6 +489,19 @@ __exportStar(require("./wTPaymentDesignUpdateParams"), exports);
 __exportStar(require("./wTPerformanceCreateParams"), exports);
 __exportStar(require("./wTPerformanceUpdateParams"), exports);
 __exportStar(require("./wTPlanTier"), exports);
+__exportStar(require("./wTPointsAdjustParams"), exports);
+__exportStar(require("./wTPointsAdjustResult"), exports);
+__exportStar(require("./wTPointsAwardParams"), exports);
+__exportStar(require("./wTPointsAwardResult"), exports);
+__exportStar(require("./wTPointsAwardUndoResult"), exports);
+__exportStar(require("./wTPointsAwardUndoResultTierReverted"), exports);
+__exportStar(require("./wTPointsLedgerEntry"), exports);
+__exportStar(require("./wTPointsLedgerEntryType"), exports);
+__exportStar(require("./wTPointsLedgerPage"), exports);
+__exportStar(require("./wTPointsSettings"), exports);
+__exportStar(require("./wTPointsSettingsSaveParams"), exports);
+__exportStar(require("./wTPointsSkipReason"), exports);
+__exportStar(require("./wTPointsTierReverted"), exports);
 __exportStar(require("./wTPosMachine"), exports);
 __exportStar(require("./wTPosMachineCreateParams"), exports);
 __exportStar(require("./wTPosMachineUpdateParams"), exports);
@@ -579,6 +592,14 @@ __exportStar(require("./wTTicket"), exports);
 __exportStar(require("./wTTicketCreateParams"), exports);
 __exportStar(require("./wTTicketReachStats"), exports);
 __exportStar(require("./wTTicketUpdateParams"), exports);
+__exportStar(require("./wTTierThresholdApplyResult"), exports);
+__exportStar(require("./wTTierThresholdDirection"), exports);
+__exportStar(require("./wTTierThresholdParams"), exports);
+__exportStar(require("./wTTierThresholdPreview"), exports);
+__exportStar(require("./wTTierThresholdUndoParams"), exports);
+__exportStar(require("./wTTierThresholdUndoResult"), exports);
+__exportStar(require("./wTTierThresholdVersion"), exports);
+__exportStar(require("./wTTierThresholdVersionKind"), exports);
 __exportStar(require("./wTTrafficClass"), exports);
 __exportStar(require("./wTTwilioRequestAuthyCode"), exports);
 __exportStar(require("./wTTwilioVerifyAuthyCode"), exports);
@@ -1095,6 +1116,19 @@ const wTPaymentDesignUpdateParams_1 = require("./wTPaymentDesignUpdateParams");
 const wTPerformanceCreateParams_1 = require("./wTPerformanceCreateParams");
 const wTPerformanceUpdateParams_1 = require("./wTPerformanceUpdateParams");
 const wTPlanTier_1 = require("./wTPlanTier");
+const wTPointsAdjustParams_1 = require("./wTPointsAdjustParams");
+const wTPointsAdjustResult_1 = require("./wTPointsAdjustResult");
+const wTPointsAwardParams_1 = require("./wTPointsAwardParams");
+const wTPointsAwardResult_1 = require("./wTPointsAwardResult");
+const wTPointsAwardUndoResult_1 = require("./wTPointsAwardUndoResult");
+const wTPointsAwardUndoResultTierReverted_1 = require("./wTPointsAwardUndoResultTierReverted");
+const wTPointsLedgerEntry_1 = require("./wTPointsLedgerEntry");
+const wTPointsLedgerEntryType_1 = require("./wTPointsLedgerEntryType");
+const wTPointsLedgerPage_1 = require("./wTPointsLedgerPage");
+const wTPointsSettings_1 = require("./wTPointsSettings");
+const wTPointsSettingsSaveParams_1 = require("./wTPointsSettingsSaveParams");
+const wTPointsSkipReason_1 = require("./wTPointsSkipReason");
+const wTPointsTierReverted_1 = require("./wTPointsTierReverted");
 const wTPosMachine_1 = require("./wTPosMachine");
 const wTPosMachineCreateParams_1 = require("./wTPosMachineCreateParams");
 const wTPosMachineUpdateParams_1 = require("./wTPosMachineUpdateParams");
@@ -1185,6 +1219,14 @@ const wTTicket_1 = require("./wTTicket");
 const wTTicketCreateParams_1 = require("./wTTicketCreateParams");
 const wTTicketReachStats_1 = require("./wTTicketReachStats");
 const wTTicketUpdateParams_1 = require("./wTTicketUpdateParams");
+const wTTierThresholdApplyResult_1 = require("./wTTierThresholdApplyResult");
+const wTTierThresholdDirection_1 = require("./wTTierThresholdDirection");
+const wTTierThresholdParams_1 = require("./wTTierThresholdParams");
+const wTTierThresholdPreview_1 = require("./wTTierThresholdPreview");
+const wTTierThresholdUndoParams_1 = require("./wTTierThresholdUndoParams");
+const wTTierThresholdUndoResult_1 = require("./wTTierThresholdUndoResult");
+const wTTierThresholdVersion_1 = require("./wTTierThresholdVersion");
+const wTTierThresholdVersionKind_1 = require("./wTTierThresholdVersionKind");
 const wTTrafficClass_1 = require("./wTTrafficClass");
 const wTTwilioRequestAuthyCode_1 = require("./wTTwilioRequestAuthyCode");
 const wTTwilioVerifyAuthyCode_1 = require("./wTTwilioVerifyAuthyCode");
@@ -1264,6 +1306,7 @@ let enumsMap = {
     "TrustBundleStatuses": trustBundleStatuses_1.TrustBundleStatuses,
     "WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum": wTAuthenticationCheckSessionTokenStatusResponse_1.WTAuthenticationCheckSessionTokenStatusResponse.StatusEnum,
     "WTGuestCreatePaymentIntentResponse.ChargeModelEnum": wTGuestCreatePaymentIntentResponse_1.WTGuestCreatePaymentIntentResponse.ChargeModelEnum,
+    "WTPointsSkipReason": wTPointsSkipReason_1.WTPointsSkipReason,
 };
 let typeMap = {
     "A2PApplicationSubmission": a2PApplicationSubmission_1.A2PApplicationSubmission,
@@ -1720,6 +1763,18 @@ let typeMap = {
     "WTPerformanceCreateParams": wTPerformanceCreateParams_1.WTPerformanceCreateParams,
     "WTPerformanceUpdateParams": wTPerformanceUpdateParams_1.WTPerformanceUpdateParams,
     "WTPlanTier": wTPlanTier_1.WTPlanTier,
+    "WTPointsAdjustParams": wTPointsAdjustParams_1.WTPointsAdjustParams,
+    "WTPointsAdjustResult": wTPointsAdjustResult_1.WTPointsAdjustResult,
+    "WTPointsAwardParams": wTPointsAwardParams_1.WTPointsAwardParams,
+    "WTPointsAwardResult": wTPointsAwardResult_1.WTPointsAwardResult,
+    "WTPointsAwardUndoResult": wTPointsAwardUndoResult_1.WTPointsAwardUndoResult,
+    "WTPointsAwardUndoResultTierReverted": wTPointsAwardUndoResultTierReverted_1.WTPointsAwardUndoResultTierReverted,
+    "WTPointsLedgerEntry": wTPointsLedgerEntry_1.WTPointsLedgerEntry,
+    "WTPointsLedgerEntryType": wTPointsLedgerEntryType_1.WTPointsLedgerEntryType,
+    "WTPointsLedgerPage": wTPointsLedgerPage_1.WTPointsLedgerPage,
+    "WTPointsSettings": wTPointsSettings_1.WTPointsSettings,
+    "WTPointsSettingsSaveParams": wTPointsSettingsSaveParams_1.WTPointsSettingsSaveParams,
+    "WTPointsTierReverted": wTPointsTierReverted_1.WTPointsTierReverted,
     "WTPosMachine": wTPosMachine_1.WTPosMachine,
     "WTPosMachineCreateParams": wTPosMachineCreateParams_1.WTPosMachineCreateParams,
     "WTPosMachineUpdateParams": wTPosMachineUpdateParams_1.WTPosMachineUpdateParams,
@@ -1810,6 +1865,14 @@ let typeMap = {
     "WTTicketCreateParams": wTTicketCreateParams_1.WTTicketCreateParams,
     "WTTicketReachStats": wTTicketReachStats_1.WTTicketReachStats,
     "WTTicketUpdateParams": wTTicketUpdateParams_1.WTTicketUpdateParams,
+    "WTTierThresholdApplyResult": wTTierThresholdApplyResult_1.WTTierThresholdApplyResult,
+    "WTTierThresholdDirection": wTTierThresholdDirection_1.WTTierThresholdDirection,
+    "WTTierThresholdParams": wTTierThresholdParams_1.WTTierThresholdParams,
+    "WTTierThresholdPreview": wTTierThresholdPreview_1.WTTierThresholdPreview,
+    "WTTierThresholdUndoParams": wTTierThresholdUndoParams_1.WTTierThresholdUndoParams,
+    "WTTierThresholdUndoResult": wTTierThresholdUndoResult_1.WTTierThresholdUndoResult,
+    "WTTierThresholdVersion": wTTierThresholdVersion_1.WTTierThresholdVersion,
+    "WTTierThresholdVersionKind": wTTierThresholdVersionKind_1.WTTierThresholdVersionKind,
     "WTTrafficClass": wTTrafficClass_1.WTTrafficClass,
     "WTTwilioRequestAuthyCode": wTTwilioRequestAuthyCode_1.WTTwilioRequestAuthyCode,
     "WTTwilioVerifyAuthyCode": wTTwilioVerifyAuthyCode_1.WTTwilioVerifyAuthyCode,
