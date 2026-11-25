@@ -2,6 +2,7 @@ import { AmenityId } from './amenityId';
 export declare class MerchantURL extends null<String, any> {
     'nickname': any | null;
     'destinationURL': any | null;
+    'customPath'?: any | null;
     'id': AmenityId;
     'createdAt': any | null;
     'updatedAt': any | null;

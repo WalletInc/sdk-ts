@@ -18,6 +18,11 @@ PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.attributeTypeMap = [
         "name": "destinationURL",
         "baseName": "destinationURL",
         "type": "string"
+    },
+    {
+        "name": "customPath",
+        "baseName": "customPath",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=pickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID.js.map

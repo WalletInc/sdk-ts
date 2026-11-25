@@ -20,6 +20,11 @@ MerchantURL.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "customPath",
+        "baseName": "customPath",
+        "type": "any"
+    },
+    {
         "name": "id",
         "baseName": "id",
         "type": "AmenityId"

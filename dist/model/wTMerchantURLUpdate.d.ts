@@ -1,6 +1,7 @@
 export declare class WTMerchantURLUpdate extends null<String, any> {
     'nickname': string;
     'destinationURL': string;
+    'customPath'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

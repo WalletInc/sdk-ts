@@ -18,6 +18,11 @@ WTMerchantURLCreate.attributeTypeMap = [
         "name": "destinationURL",
         "baseName": "destinationURL",
         "type": "string"
+    },
+    {
+        "name": "customPath",
+        "baseName": "customPath",
+        "type": "string"
     }
 ];
 //# sourceMappingURL=wTMerchantURLCreate.js.map

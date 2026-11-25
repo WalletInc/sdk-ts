@@ -447,6 +447,7 @@ export * from './wTMenuVenueType';
 export * from './wTMerchantCredit';
 export * from './wTMerchantCreditCreationParams';
 export * from './wTMerchantURLCreate';
+export * from './wTMerchantURLPathRequest';
 export * from './wTMerchantURLUpdate';
 export * from './wTMerchantUpdate';
 export * from './wTMerchantUpdatePOSIntegration';
@@ -1088,6 +1089,7 @@ import { WTMenuVenueType } from './wTMenuVenueType';
 import { WTMerchantCredit } from './wTMerchantCredit';
 import { WTMerchantCreditCreationParams } from './wTMerchantCreditCreationParams';
 import { WTMerchantURLCreate } from './wTMerchantURLCreate';
+import { WTMerchantURLPathRequest } from './wTMerchantURLPathRequest';
 import { WTMerchantURLUpdate } from './wTMerchantURLUpdate';
 import { WTMerchantUpdate } from './wTMerchantUpdate';
 import { WTMerchantUpdatePOSIntegration } from './wTMerchantUpdatePOSIntegration';
@@ -1739,6 +1741,7 @@ let typeMap: {[index: string]: any} = {
     "WTMerchantCredit": WTMerchantCredit,
     "WTMerchantCreditCreationParams": WTMerchantCreditCreationParams,
     "WTMerchantURLCreate": WTMerchantURLCreate,
+    "WTMerchantURLPathRequest": WTMerchantURLPathRequest,
     "WTMerchantURLUpdate": WTMerchantURLUpdate,
     "WTMerchantUpdate": WTMerchantUpdate,
     "WTMerchantUpdatePOSIntegration": WTMerchantUpdatePOSIntegration,

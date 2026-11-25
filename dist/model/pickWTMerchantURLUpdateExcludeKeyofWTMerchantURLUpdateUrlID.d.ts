@@ -1,6 +1,7 @@
 export declare class PickWTMerchantURLUpdateExcludeKeyofWTMerchantURLUpdateUrlID {
     'nickname': string;
     'destinationURL': string;
+    'customPath'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

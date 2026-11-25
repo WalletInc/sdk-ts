@@ -448,6 +448,7 @@ export * from './wTMenuVenueType';
 export * from './wTMerchantCredit';
 export * from './wTMerchantCreditCreationParams';
 export * from './wTMerchantURLCreate';
+export * from './wTMerchantURLPathRequest';
 export * from './wTMerchantURLUpdate';
 export * from './wTMerchantUpdate';
 export * from './wTMerchantUpdatePOSIntegration';

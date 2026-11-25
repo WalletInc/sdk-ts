@@ -462,6 +462,7 @@ __exportStar(require("./wTMenuVenueType"), exports);
 __exportStar(require("./wTMerchantCredit"), exports);
 __exportStar(require("./wTMerchantCreditCreationParams"), exports);
 __exportStar(require("./wTMerchantURLCreate"), exports);
+__exportStar(require("./wTMerchantURLPathRequest"), exports);
 __exportStar(require("./wTMerchantURLUpdate"), exports);
 __exportStar(require("./wTMerchantUpdate"), exports);
 __exportStar(require("./wTMerchantUpdatePOSIntegration"), exports);
@@ -1089,6 +1090,7 @@ const wTMenuVenueType_1 = require("./wTMenuVenueType");
 const wTMerchantCredit_1 = require("./wTMerchantCredit");
 const wTMerchantCreditCreationParams_1 = require("./wTMerchantCreditCreationParams");
 const wTMerchantURLCreate_1 = require("./wTMerchantURLCreate");
+const wTMerchantURLPathRequest_1 = require("./wTMerchantURLPathRequest");
 const wTMerchantURLUpdate_1 = require("./wTMerchantURLUpdate");
 const wTMerchantUpdate_1 = require("./wTMerchantUpdate");
 const wTMerchantUpdatePOSIntegration_1 = require("./wTMerchantUpdatePOSIntegration");
@@ -1736,6 +1738,7 @@ let typeMap = {
     "WTMerchantCredit": wTMerchantCredit_1.WTMerchantCredit,
     "WTMerchantCreditCreationParams": wTMerchantCreditCreationParams_1.WTMerchantCreditCreationParams,
     "WTMerchantURLCreate": wTMerchantURLCreate_1.WTMerchantURLCreate,
+    "WTMerchantURLPathRequest": wTMerchantURLPathRequest_1.WTMerchantURLPathRequest,
     "WTMerchantURLUpdate": wTMerchantURLUpdate_1.WTMerchantURLUpdate,
     "WTMerchantUpdate": wTMerchantUpdate_1.WTMerchantUpdate,
     "WTMerchantUpdatePOSIntegration": wTMerchantUpdatePOSIntegration_1.WTMerchantUpdatePOSIntegration,
