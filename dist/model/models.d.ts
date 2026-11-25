@@ -464,6 +464,7 @@ export * from './wTOrderLineItem';
 export * from './wTOrderLineOption';
 export * from './wTOrderingSettings';
 export * from './wTOrderingSettingsUpdateParams';
+export * from './wTOtpChannel';
 export * from './wTPassBrandKit';
 export * from './wTPassStyleResponse';
 export * from './wTPassStyleResponseApple';

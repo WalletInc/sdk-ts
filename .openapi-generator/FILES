@@ -531,6 +531,7 @@ model/wTOrderLineItem.ts
 model/wTOrderLineOption.ts
 model/wTOrderingSettings.ts
 model/wTOrderingSettingsUpdateParams.ts
+model/wTOtpChannel.ts
 model/wTPassBrandKit.ts
 model/wTPassStyleResponse.ts
 model/wTPassStyleResponseApple.ts

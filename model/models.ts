@@ -463,6 +463,7 @@ export * from './wTOrderLineItem';
 export * from './wTOrderLineOption';
 export * from './wTOrderingSettings';
 export * from './wTOrderingSettingsUpdateParams';
+export * from './wTOtpChannel';
 export * from './wTPassBrandKit';
 export * from './wTPassStyleResponse';
 export * from './wTPassStyleResponseApple';
@@ -1105,6 +1106,7 @@ import { WTOrderLineItem } from './wTOrderLineItem';
 import { WTOrderLineOption } from './wTOrderLineOption';
 import { WTOrderingSettings } from './wTOrderingSettings';
 import { WTOrderingSettingsUpdateParams } from './wTOrderingSettingsUpdateParams';
+import { WTOtpChannel } from './wTOtpChannel';
 import { WTPassBrandKit } from './wTPassBrandKit';
 import { WTPassStyleResponse } from './wTPassStyleResponse';
 import { WTPassStyleResponseApple } from './wTPassStyleResponseApple';
@@ -1757,6 +1759,7 @@ let typeMap: {[index: string]: any} = {
     "WTOrderLineOption": WTOrderLineOption,
     "WTOrderingSettings": WTOrderingSettings,
     "WTOrderingSettingsUpdateParams": WTOrderingSettingsUpdateParams,
+    "WTOtpChannel": WTOtpChannel,
     "WTPassBrandKit": WTPassBrandKit,
     "WTPassStyleResponse": WTPassStyleResponse,
     "WTPassStyleResponseApple": WTPassStyleResponseApple,

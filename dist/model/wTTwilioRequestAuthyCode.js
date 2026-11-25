@@ -18,6 +18,11 @@ WTTwilioRequestAuthyCode.attributeTypeMap = [
         "name": "phoneNumber",
         "baseName": "phoneNumber",
         "type": "any"
+    },
+    {
+        "name": "channel",
+        "baseName": "channel",
+        "type": "WTOtpChannel"
     }
 ];
 //# sourceMappingURL=wTTwilioRequestAuthyCode.js.map

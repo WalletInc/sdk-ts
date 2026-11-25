@@ -1,6 +1,8 @@
+import { WTOtpChannel } from './wTOtpChannel';
 export declare class WTTwilioRequestAuthyCode extends null<String, any> {
     'merchantID': string;
     'phoneNumber': any | null;
+    'channel'?: WTOtpChannel;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -478,6 +478,7 @@ __exportStar(require("./wTOrderLineItem"), exports);
 __exportStar(require("./wTOrderLineOption"), exports);
 __exportStar(require("./wTOrderingSettings"), exports);
 __exportStar(require("./wTOrderingSettingsUpdateParams"), exports);
+__exportStar(require("./wTOtpChannel"), exports);
 __exportStar(require("./wTPassBrandKit"), exports);
 __exportStar(require("./wTPassStyleResponse"), exports);
 __exportStar(require("./wTPassStyleResponseApple"), exports);
@@ -1106,6 +1107,7 @@ const wTOrderLineItem_1 = require("./wTOrderLineItem");
 const wTOrderLineOption_1 = require("./wTOrderLineOption");
 const wTOrderingSettings_1 = require("./wTOrderingSettings");
 const wTOrderingSettingsUpdateParams_1 = require("./wTOrderingSettingsUpdateParams");
+const wTOtpChannel_1 = require("./wTOtpChannel");
 const wTPassBrandKit_1 = require("./wTPassBrandKit");
 const wTPassStyleResponse_1 = require("./wTPassStyleResponse");
 const wTPassStyleResponseApple_1 = require("./wTPassStyleResponseApple");
@@ -1754,6 +1756,7 @@ let typeMap = {
     "WTOrderLineOption": wTOrderLineOption_1.WTOrderLineOption,
     "WTOrderingSettings": wTOrderingSettings_1.WTOrderingSettings,
     "WTOrderingSettingsUpdateParams": wTOrderingSettingsUpdateParams_1.WTOrderingSettingsUpdateParams,
+    "WTOtpChannel": wTOtpChannel_1.WTOtpChannel,
     "WTPassBrandKit": wTPassBrandKit_1.WTPassBrandKit,
     "WTPassStyleResponse": wTPassStyleResponse_1.WTPassStyleResponse,
     "WTPassStyleResponseApple": wTPassStyleResponseApple_1.WTPassStyleResponseApple,

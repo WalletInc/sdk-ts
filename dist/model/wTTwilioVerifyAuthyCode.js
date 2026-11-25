@@ -20,6 +20,11 @@ WTTwilioVerifyAuthyCode.attributeTypeMap = [
         "type": "any"
     },
     {
+        "name": "channel",
+        "baseName": "channel",
+        "type": "WTOtpChannel"
+    },
+    {
         "name": "otp",
         "baseName": "otp",
         "type": "any"
